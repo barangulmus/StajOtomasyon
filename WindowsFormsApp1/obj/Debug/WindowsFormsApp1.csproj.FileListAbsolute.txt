@@ -1,0 +1,435 @@
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Prog6-2\Desktop\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RBush.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\RBush.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Memory.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.config
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Yeni klasör\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\devba\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\Prog6-2\Desktop\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\yeni\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\QRCoder.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\QRCoder.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\devba\Videos\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\QRCoder.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\K0-04\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\devba\Desktop\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.application
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\QRCoder.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.dll
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.pdb
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ClosedXML.Parser.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\EPPlus.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\ExcelNumberFormat.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\RBush.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\SixLabors.Fonts.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Buffers.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.pdb
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Drawing.Common.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Memory.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\bin\Debug\System.Security.Cryptography.Xml.xml
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe.manifest
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.application
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\devba\Desktop\StajOtomasyon\StajOtomasyon\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -1,0 +1,7 @@
+form ilk yüklendiğinde aktarılan öğrencilerden hepsinin koordinatör öğretmeni varmı null mu diye kontrol etsin eğer ki null sa kırmızı yazı ile eksik öğretmenler var desin
+
+fotorafı olmayan kişilerin profiline girdiğimizde default pp olsun, pp yok diye hata vermesin yani
+
+toplu otomatik foto aktarımı yapılabilsin
+
+barkod işlemleri kısmı sol tarafa sığdırılsın
