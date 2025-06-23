@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
                     csSettinsClass.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi = true;
                     csSettinsClass.SorguOzellestirmeleriOgrenci = "[OgrenciAd],[OgrenciSoyad],[OgrenciOkulNo],[OgrenciSinif],[OgrencininFirmaAdi],[OgreciTelNo],[OgrenciTCKimlikNo],[OgrenciAlanAdi],[OgrenciDalAdi],[OgrenciGrup],[OgrenciStajaBaslangicTarihi],[OgrenciStajBitistarihi],[OgrenciKoordinatorOgretmeni],[OgrenciStajDonemi],[OgrenciAnneAdi],[OgrenciAnneTelNo],[OgrenciBabaAdi],[OgrenciBabaTelNo],[HowUsePhone]";
                     csSettinsClass.SorguOzellestirmeleriOgretmen = "[OgretmenAd],[OgretmenSoyad],[OgretmenIsletmeGunu1],[OgretmenIsletmeGunu2],[OgretmenAlanAdi],[OgretmenDalAdi],[OgretmenTelNo]";
-                    csSettinsClass.SorguOzellestirmeleriIsletme = "[IsletmeAd],[IsletmeAdresIl],[IsletmeAdresIlce],[IsletmeTamAdres],[IsletmeYetkilisi],[IsletmeTelNo],[IsletmeUstaOgreticilikVarmiYokmu],[IsletmeBolum],[IsletmeDal],[IsletmeUstaOgreticiAdi],[IsletmeUstaOgreticiSoyadi],[IsletmeUstaOgreticiDogumTarihi],[IsletmeSicilNo],[IsletmeIbanNo]";
+                    csSettinsClass.SorguOzellestirmeleriIsletme = "[IsletmeAd],[IsletmeAdresIl],[IsletmeAdresIlce],[IsletmeTamAdres],[IsletmeYetkilisi],[IsletmeTelNo],[IsletmeUstaOgreticilikVarmiYokmu],[IsletmeBolum],[IsletmeDal],[IsletmeUstaOgreticiAdi],[IsletmeUstaOgreticiSoyadi],[IsletmeUstaOgreticiDogumTarihi],[IsletmeSicilNo],[IsletmeIbanNo],[IsletmeUstaOgreticiTcNo]";
                     csSettinsClass.MudurYardimcisiAdi = "";
                     csSettinsClass.KoordinatorMuduryardimcisiIsmi = "";
                     csSettinsClass.okulMuduruIsmi = "";
@@ -259,6 +259,7 @@ namespace WindowsFormsApp1
             addUOAdi_txt.Text = string.Empty;
             addUOSoyadi_txt.Text = string.Empty;
             addUODogumTarihi_datetime.Value = DateTime.Now;
+            addUOTcNo_txt.Text = string.Empty;
             addIsletmeSicilNo_txt.Text = string.Empty;
             addIsletmeIbanNo_txt.Text = string.Empty;
             addUstaOgreticilikVarmiVVar_radio.Checked = false;
@@ -317,6 +318,10 @@ namespace WindowsFormsApp1
             upIsletmeYetkilisi_txt.Text = string.Empty;
             upUstaOgreticilikVarmiVar_radio.Checked = false;
             upUstaOgreticilikVarmiYok_radio.Checked = false;
+            upUOAdi_txt.Text = string.Empty;
+            upUOSoyadi_txt.Text = string.Empty;
+            upUOTcNo_txt.Text = string.Empty;
+            upUODogumTarihi_datetime.Value = DateTime.Now;
             upBolum_combo.SelectedItem = null;
             upDal_combo.SelectedItem = null;
         }
@@ -1296,7 +1301,8 @@ namespace WindowsFormsApp1
                     IsletmeDal = addDal_combo.SelectedItem?.ToString() ?? "",
                     IsletmeUstaOgreticiAdi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUOAdi_txt.Text.Trim() : null,
                     IsletmeUstaOgreticiSoyadi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUOSoyadi_txt.Text.Trim() : null,
-                    IsletmeUstaOgreticiDogumTarihi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUODogumTarihi_datetime.Value : DateTime.Now
+                    IsletmeUstaOgreticiDogumTarihi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUODogumTarihi_datetime.Value : DateTime.Now,
+                    IsletmeUstaOgreticiTcNo = addUstaOgreticilikVarmiVVar_radio.Checked ? addUOTcNo_txt.Text.Trim() : null
                 };
 
                 if (ConnectToDatabase.IsletmeTablo.Any(i => i.IsletmeAd == yeniIsletme.IsletmeAd))
@@ -1343,6 +1349,7 @@ namespace WindowsFormsApp1
                     upUstaOgretici_groupBox.Enabled = true;
                     upUOAdi_txt.Text = hedef.IsletmeUstaOgreticiAdi;
                     upUOSoyadi_txt.Text = hedef.IsletmeUstaOgreticiSoyadi;
+                    upUOTcNo_txt.Text = hedef.IsletmeUstaOgreticiTcNo;
                     upUODogumTarihi_datetime.Value = hedef.IsletmeUstaOgreticiDogumTarihi;
                     upUstaOgreticilikVarmiVar_radio.Checked = true;
                     upUstaOgreticilikVarmiYok_radio.Checked = false;
@@ -1422,6 +1429,7 @@ namespace WindowsFormsApp1
                 hedef.IsletmeSicilNo = upIsletmeSicilNo_txt.Text.Trim();
                 hedef.IsletmeUstaOgreticiAdi = upUstaOgreticilikVarmiVar_radio.Checked ? upUOAdi_txt.Text.Trim() : null;
                 hedef.IsletmeUstaOgreticiSoyadi = upUstaOgreticilikVarmiVar_radio.Checked ? upUOSoyadi_txt.Text.Trim() : null;
+                hedef.IsletmeUstaOgreticiTcNo = upUstaOgreticilikVarmiVar_radio.Checked ? upUOTcNo_txt.Text.Trim() : null;
                 hedef.IsletmeUstaOgreticiDogumTarihi = upUstaOgreticilikVarmiVar_radio.Checked ? upUODogumTarihi_datetime.Value : DateTime.Now;
                 hedef.IsletmeBolum = upBolum_combo.SelectedItem?.ToString() ?? "";
                 hedef.IsletmeDal = upDal_combo.SelectedItem?.ToString() ?? "";
@@ -1819,6 +1827,7 @@ namespace WindowsFormsApp1
             settingsColonNameIsletmeUOAdi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiAdi");
             settingsColonNameIsletmeUOSoyadi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiSoyadi");
             settingsColonNameIsletmeUODT_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiDogumTarihi");
+            settingsColonNameIsletmeUOTC_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiTcNo");
             settingsColonNameIsletmeIbanNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeIbanNo");
             settingsColonNameIsletmeSicilNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeSicilNo");
         }
@@ -1846,7 +1855,17 @@ namespace WindowsFormsApp1
             string yil = settingsFirstRow.EgitimOgretimYili.Trim(); // Boşlukları temizle
 
             // Yılı "-" karakterine göre böl
-            string[] yillar = yil.Split('/');
+            string[] yillar;
+            try
+            {
+                yillar = yil.Split('-');
+                if (yillar.Length < 2)
+                    throw new Exception();
+            }
+            catch
+            {
+                yillar = yil.Split('/');
+            }
 
             // İlk ve ikinci yılı ilgili textbox'lara atama
             if (yillar[0] != null && yillar[1] != null)
@@ -2180,6 +2199,9 @@ namespace WindowsFormsApp1
 
                     IsletmeListDatagridView.Columns["IsletmeUstaOgreticiSoyadi"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiSoyadi");
                     IsletmeUOSoyadi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiSoyadi");
+
+                    IsletmeListDatagridView.Columns["IsletmeUstaOgreticiTcNo"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiTcNo");
+                    IsletmeUOTcNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiTcNo");
 
                     IsletmeListDatagridView.Columns["IsletmeUstaOgreticiDogumTarihi"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiDogumTarihi");
                     IsletmeUODT_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiDogumTarihi");
@@ -2949,6 +2971,35 @@ namespace WindowsFormsApp1
         private void IsletmeDal_checkbox_CheckedChanged(object sender, EventArgs e)
         {
             IsletmeListDatagridView.Columns[IsletmeDal_checkbox.Tag.ToString()].Visible = IsletmeDal_checkbox.Checked;
+        }
+        private void IsletmeUOAdi_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsletmeListDatagridView.Columns[IsletmeUOAdi_checkbox.Tag.ToString()].Visible = IsletmeUOAdi_checkbox.Checked;
+        }
+
+        private void IsletmeUOSoyadi_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsletmeListDatagridView.Columns[IsletmeUOSoyadi_checkbox.Tag.ToString()].Visible = IsletmeUOSoyadi_checkbox.Checked;
+        }
+
+        private void IsletmeUOTcNo_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsletmeListDatagridView.Columns[IsletmeUOTcNo_checkbox.Tag.ToString()].Visible = IsletmeUOTcNo_checkbox.Checked;
+        }
+
+        private void IsletmeUODT_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsletmeListDatagridView.Columns[IsletmeUODT_checkbox.Tag.ToString()].Visible = IsletmeUODT_checkbox.Checked;
+        }
+
+        private void IsletmeSicilNo_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsletmeListDatagridView.Columns[IsletmeSicilNo_checkbox.Tag.ToString()].Visible = IsletmeSicilNo_checkbox.Checked;
+        }
+
+        private void IsletmeIbanNo_checkbox_CheckedChanged(object sender, EventArgs e)
+        {
+            IsletmeListDatagridView.Columns[IsletmeIbanNo_checkbox.Tag.ToString()].Visible = IsletmeIbanNo_checkbox.Checked;
         }
         #endregion
 
@@ -4029,6 +4080,8 @@ namespace WindowsFormsApp1
                 selectedTagsIsletme.Add(settingsColonNameIsletmeUOAdi_checkbox.Tag?.ToString());
             if (settingsColonNameIsletmeUOSoyadi_checkbox.Checked)
                 selectedTagsIsletme.Add(settingsColonNameIsletmeUOSoyadi_checkbox.Tag?.ToString());
+            if (settingsColonNameIsletmeUOTC_checkbox.Checked)
+                selectedTagsIsletme.Add(settingsColonNameIsletmeUOTC_checkbox.Tag?.ToString());
             if (settingsColonNameIsletmeUODT_checkbox.Checked)
                 selectedTagsIsletme.Add(settingsColonNameIsletmeUODT_checkbox.Tag?.ToString());
 

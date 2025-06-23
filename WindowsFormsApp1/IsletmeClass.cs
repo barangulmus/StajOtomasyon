@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
         public string IsletmeIbanNo { get; set; } = string.Empty;
         public string IsletmeUstaOgreticiAdi { get; set; } = string.Empty;
         public string IsletmeUstaOgreticiSoyadi { get; set; } = string.Empty;
+        public string IsletmeUstaOgreticiTcNo { get; set; } = string.Empty;
         public DateTime IsletmeUstaOgreticiDogumTarihi { get; set; }
         public string IsletmeTelNo { get; set; } = string.Empty;
         public string IsletmeUstaOgreticilikVarmiYokmu { get; set; } = string.Empty;
