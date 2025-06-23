@@ -4167,161 +4167,323 @@ namespace WindowsFormsApp1
         }
         private void ogrenciDetayOgrenciAdCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciAdi);
-            ogrenciDetayOgrenciAdCopy_button.Text = "Kopyalandı!";
-            ogrenciDetayOgrenciAdCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciAdi);
+                ogrenciDetayOgrenciAdCopy_button.Text = "Kopyalandı!";
+                ogrenciDetayOgrenciAdCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciAdCopy_button.Text = "Adı Kopyala"; // Orijinal buton adı
-                    ogrenciDetayOgrenciAdCopy_button.Image = Properties.Resources.clipboard; // Orijinal resim
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciAdCopy_button.Text = "Adı Kopyala"; // Orijinal buton adı
+                        ogrenciDetayOgrenciAdCopy_button.Image = Properties.Resources.clipboard; // Orijinal resim
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu:\n" + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void ogrenciDetayOgrenciSoyadCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciSoyadi);
-            ogrenciDetayOgrenciSoyadCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciSoyadi);
+                ogrenciDetayOgrenciSoyadCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciSoyadCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciSoyadCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu:\n" + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciOkulNoCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciOkulNo);
-            ogrenciDetayOgrenciOkulNoCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciOkulNo);
+                ogrenciDetayOgrenciOkulNoCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciOkulNoCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciOkulNoCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciSinifCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciSinifi);
-            ogrenciDetayOgrenciSinifCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciSinifi);
+                ogrenciDetayOgrenciSinifCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciSinifCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciSinifCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciAlanAdiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciAlanAdi);
-            ogrenciDetayOgrenciAlanAdiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciAlanAdi);
+                ogrenciDetayOgrenciAlanAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciAlanAdiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciAlanAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciDalAdiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciDalAdi);
-            ogrenciDetayOgrenciDalAdiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciDalAdi);
+                ogrenciDetayOgrenciDalAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciDalAdiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciDalAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciKoordinatorOgretmeniCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciKoordinatorOgretmen);
-            ogrenciDetayOgrenciKoordinatorOgretmeniCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciKoordinatorOgretmen);
+                ogrenciDetayOgrenciKoordinatorOgretmeniCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciKoordinatorOgretmeniCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciKoordinatorOgretmeniCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciFirmaAdiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciFirma);
-            ogrenciDetayOgrenciFirmaAdiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciFirma);
+                ogrenciDetayOgrenciFirmaAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciFirmaAdiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciFirmaAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciTcKimlikCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciTC);
-            ogrenciDetayOgrenciTcKimlikCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciTC);
+                ogrenciDetayOgrenciTcKimlikCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciTcKimlikCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciTcKimlikCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciTelNoCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciTelNo);
-            ogrenciDetayOgrenciTelNoCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciTelNo);
+                ogrenciDetayOgrenciTelNoCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciTelNoCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciTelNoCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciStajBaslangicTarihiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciStajAbaslangicTarihi);
-            ogrenciDetayOgrenciStajBaslangicTarihiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciStajAbaslangicTarihi);
+                ogrenciDetayOgrenciStajBaslangicTarihiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciStajBaslangicTarihiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciStajBaslangicTarihiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ogrenciDetayOgrenciStajBitisTarihiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_OgrenciStajBitisTarihi);
-            ogrenciDetayOgrenciStajBitisTarihiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_OgrenciStajBitisTarihi);
+                ogrenciDetayOgrenciStajBitisTarihiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    ogrenciDetayOgrenciStajBitisTarihiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciStajBitisTarihiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void ogrenciDetayOgrenciAnneAdiCopy_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Clipboard.SetText(infoOgrenciAnneAdi_label.Text);
+                ogrenciDetayOgrenciAnneAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
+                {
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciAnneAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        private void ogrenciDetayOgrenciAnneTelNoCopy_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Clipboard.SetText(infoOgrenciAnneTelNo_label.Text);
+                ogrenciDetayOgrenciAnneTelNoCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
+                {
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciAnneTelNoCopy_button.Image = Properties.Resources.clipboard;
+                    });
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ogrenciDetayOgrenciBabaAdiCopy_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Clipboard.SetText(infoOgrenciBabaAdi_label.Text);
+                ogrenciDetayOgrenciBabaAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
+                {
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciBabaAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ogrenciDetayOgrenciBabaTelNoCopy_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Clipboard.SetText(infoOgrenciBabaTelNo_label.Text);
+                ogrenciDetayOgrenciBabaTelNoCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
+                {
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        ogrenciDetayOgrenciBabaTelNoCopy_button.Image = Properties.Resources.clipboard;
+                    });
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message + "\n\n" + ex, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void ogrenciDetayOgrenciFirmaAdiINFO_button_Click(object sender, EventArgs e)
         {
             var ogrenci = (from i in ConnectToDatabase.OgrenciTablo where i.id == OgrenciDetayOgrenciID select i).FirstOrDefault();
@@ -4341,6 +4503,7 @@ namespace WindowsFormsApp1
             int IsletmeID = isletme.id;
             IsletmeDetaylariClick(IsletmeID);
         }
+
         private void ogrenciDetayOgrenciKoordinatorOgretmenAdiINFO_button_Click(object sender, EventArgs e)
         {
             var ogrenci = (from i in ConnectToDatabase.OgrenciTablo where i.id == OgrenciDetayOgrenciID select i).FirstOrDefault();
@@ -4421,6 +4584,10 @@ namespace WindowsFormsApp1
             infoOgrenciStajBaslangicTarihi_label.Text = ogrenci.OgrenciStajaBaslangicTarihi.ToString("dd.MM.yyyy");
             infoOgrenciStajBitisTarihi_label.Text = ogrenci.OgrenciStajBitistarihi.ToString("dd.MM.yyyy");
             infoOgrenciFirmaAdi_label.Text = KisaMetin(ogrenci.OgrencininFirmaAdi ?? string.Empty, 35);
+            infoOgrenciAnneAdi_label.Text = KisaMetin(ogrenci.OgrenciAnneAdi ?? string.Empty, 35);
+            infoOgrenciAnneTelNo_label.Text = KisaMetin(ogrenci.OgrenciAnneTelNo?? string.Empty, 35);
+            infoOgrenciBabaAdi_label.Text = KisaMetin(ogrenci.OgrenciBabaAdi ?? string.Empty, 35);
+            infoOgrenciBabaTelNo_label.Text = KisaMetin(ogrenci.OgrenciBabaTelNo ?? string.Empty, 35);
             infoOgrenciKoordinatorOgretmen_label.Text = KisaMetin(ogrenci.OgrenciKoordinatorOgretmeni ?? string.Empty, 35);
             infoOgrenciGrubu_label.Text = KisaMetin((ogrenci.OgrenciGrup ?? string.Empty) + " Grubu, " + (ogrenci.OgrenciStajDonemi ?? string.Empty), 35);
             ogrenciDetayxHakkindaBaziBilgiler_label.Text = $"{(ogrenci.OgrenciAd?.Split(' ')[0] ?? "Unknown")} hakkında bazı bilgiler";
@@ -4958,119 +5125,182 @@ namespace WindowsFormsApp1
         //////////////////////////////////////////////////////////////////////////////////
         private void IsletmeDetayIsletmeAdiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmeadi);
-            IsletmeDetayIsletmeAdiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmeadi);
+                IsletmeDetayIsletmeAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeAdiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeAdresIlCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmeadi);
-            IsletmeDetayIsletmeAdresIlCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmeadi);
+                IsletmeDetayIsletmeAdresIlCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeAdresIlCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeAdresIlCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeAdresIlceCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmeadresilce);
-            IsletmeDetayIsletmeAdresIlceCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmeadresilce);
+                IsletmeDetayIsletmeAdresIlceCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeAdresIlceCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeAdresIlceCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeTamAdresCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_tamadres);
-            IsletmeDetayIsletmeTamAdresCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_tamadres);
+                IsletmeDetayIsletmeTamAdresCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeTamAdresCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeTamAdresCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeIsletmeYetkilisiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmeyetkilisi);
-            IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmeyetkilisi);
+                IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeTelNoCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmetelno);
-            IsletmeDetayIsletmeTelNoCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmetelno);
+                IsletmeDetayIsletmeTelNoCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeTelNoCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeTelNoCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_ustaogreticilikteyit);
-            IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_ustaogreticilikteyit);
+                IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeAlanAdiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmealan);
-            IsletmeDetayIsletmeAlanAdiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmealan);
+                IsletmeDetayIsletmeAlanAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeAlanAdiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeAlanAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
 
         private void IsletmeDetayIsletmeDalAdiCopy_button_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(copy_isletmedal);
-            IsletmeDetayIsletmeDalAdiCopy_button.Image = Properties.Resources.clipboard_check;
-            Task.Delay(1000).ContinueWith(t =>
+            try
             {
-                this.Invoke((MethodInvoker)delegate
+                Clipboard.SetText(copy_isletmedal);
+                IsletmeDetayIsletmeDalAdiCopy_button.Image = Properties.Resources.clipboard_check;
+                Task.Delay(1000).ContinueWith(t =>
                 {
-                    IsletmeDetayIsletmeDalAdiCopy_button.Image = Properties.Resources.clipboard;
+                    this.Invoke((MethodInvoker)delegate
+                    {
+                        IsletmeDetayIsletmeDalAdiCopy_button.Image = Properties.Resources.clipboard;
+                    });
                 });
-            });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Kopyalama işlemi sırasında bir hata oluştu: " + ex.Message);
+            }
         }
         //////////////////////////////////////////////////////////////////////////////////////////////
         string copy_isletmeadi = "", copy_isletmeadresil = "", copy_isletmeadresilce = "", copy_tamadres = "", copy_isletmeyetkilisi = "", copy_isletmetelno = "", copy_ustaogreticilikteyit = "", copy_isletmealan = "", copy_isletmedal = "";
@@ -5114,6 +5344,9 @@ namespace WindowsFormsApp1
             infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Text = KisaMetin(isletme.IsletmeUstaOgreticilikVarmiYokmu, 35);
             infoIsletmeDetayIsletmeAlan_label.Text = KisaMetin(isletme.IsletmeBolum, 35);
             infoIsletmeDetayIsletmeDal_label.Text = KisaMetin(isletme.IsletmeDal, 35);
+            infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Text = KisaMetin(isletme.IsletmeUstaOgreticiAdi + " " + isletme.IsletmeUstaOgreticiSoyadi, 35);
+            infoIsletmeDetayUstaOgreticiTCNO_label.Text = KisaMetin(isletme.IsletmeUstaOgreticiTcNo, 35);
+            infoIsletmeDetayUstaOgreticiDT_label.Text = KisaMetin(isletme.IsletmeUstaOgreticiDogumTarihi.ToString("dd.MM.yyyy"), 35);
             IsletmeHakkindaBaziBilgiler_label.Text = $"{isletme.IsletmeAd.Split(' ')[0]} hakkında bazı bilgiler";
             // Aynı sınıftaki öğrencilerin ad ve soyadlarını listeleme
             var BuradaStajYapanOgrencilerimiz = (from i in ConnectToDatabase.OgrenciTablo
@@ -7087,22 +7320,28 @@ namespace WindowsFormsApp1
                 {
                     case "Öğrenci":
                         var studentFieldInfos = new List<FieldImportInfo>
-                        {
-                            new FieldImportInfo { DbFieldName = "OgrenciOkulNo", FieldDisplayName="Öğrenci Okul No", ColumnTextBox = ogrColumnOgrOkulNo_textbox, StartRowTextBox = ogrStartOgrOkulNo_textbox, EndRowTextBox = ogrEndOgrOkulNo_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciTCKimlikNo", FieldDisplayName="TC Kimlik No", ColumnTextBox = ogrColumnOgrTc_textbox, StartRowTextBox = ogrStartOgrTc_textbox, EndRowTextBox = ogrEndOgrTc_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciAd", FieldDisplayName="Öğrenci Adı", ColumnTextBox = ogrColumnOgrAd_textbox, StartRowTextBox = ogrStartOgrAd_textbox, EndRowTextBox = ogrEndOgrAd_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciSoyad", FieldDisplayName="Öğrenci Soyadı", ColumnTextBox = ogrColumnOgrSoyad_textbox, StartRowTextBox = ogrStartOgrSoyad_textbox, EndRowTextBox = ogrEndOgrSoyad_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciSinif", FieldDisplayName="Öğrenci Sınıfı", ColumnTextBox = ogrColumnOgrSinif_textbox, StartRowTextBox = ogrStartOgrSinif_textbox, EndRowTextBox = ogrEndOgrSinif_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrencininFirmaAdi", FieldDisplayName="Firma Adı", ColumnTextBox = ogrColumnOgrFirmaAdi_textbox, StartRowTextBox = ogrStartOgrFirmaAdi_textbox, EndRowTextBox = ogrEndOgrFirmaAdi_textbox },
-                            new FieldImportInfo { DbFieldName = "OgreciTelNo", FieldDisplayName="Telefon No", ColumnTextBox = ogrColumnOgrTelNo_textbox, StartRowTextBox = ogrStartOgrTelNo_textbox, EndRowTextBox = ogrEndOgrTelNo_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciAlanAdi", FieldDisplayName="Alan Adı", ColumnTextBox = ogrColumnOgrAlanAdi_textbox, StartRowTextBox = ogrStartOgrAlanAdi_textbox, EndRowTextBox = ogrEndOgrAlanAdi_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciDalAdi", FieldDisplayName="Dal Adı", ColumnTextBox = ogrColumnOgrDalAdi_textbox, StartRowTextBox = ogrStartOgrDalAdi_textbox, EndRowTextBox = ogrEndOgrDalAdi_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciGrup", FieldDisplayName="Grup", ColumnTextBox = ogrColumnOgrGrup_textbox, StartRowTextBox = ogrStartOgrGrup_textbox, EndRowTextBox = ogrEndOgrGrup_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciStajaBaslangicTarihi", FieldDisplayName="Staj Başlangıç Tarihi", ColumnTextBox = ogrColumnOgrStajBaslangicTarihi_textbox, StartRowTextBox = ogrStartOgrStajBaslangicTarihi_textbox, EndRowTextBox = ogrEndOgrStajBaslangicTarihi_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciStajBitistarihi", FieldDisplayName="Staj Bitiş Tarihi", ColumnTextBox = ogrColumnOgrStajBitisTarihi_textbox, StartRowTextBox = ogrStartOgrStajBitisTarihi_textbox, EndRowTextBox = ogrEndOgrStajBitisTarihi_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciKoordinatorOgretmeni", FieldDisplayName="Koordinatör Öğretmen", ColumnTextBox = ogrColumnOgrKoordinatorOgretmeni_textbox, StartRowTextBox = ogrStartOgrKoordinatorOgretmeni_textbox, EndRowTextBox = ogrEndOgrKoordinatorOgretmeni_textbox },
-                            new FieldImportInfo { DbFieldName = "OgrenciStajDonemi", FieldDisplayName="Staj Dönemi", ColumnTextBox = ogrColumnOgrStajDonemi_textbox, StartRowTextBox = ogrStartOgrStajDonemi_textbox, EndRowTextBox = ogrEndOgrStajDonemi_textbox },
-                        };
+                {
+                    new FieldImportInfo { DbFieldName = "OgrenciOkulNo", FieldDisplayName="Öğrenci Okul No", ColumnTextBox = ogrColumnOgrOkulNo_textbox, StartRowTextBox = ogrStartOgrOkulNo_textbox, EndRowTextBox = ogrEndOgrOkulNo_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciTCKimlikNo", FieldDisplayName="TC Kimlik No", ColumnTextBox = ogrColumnOgrTc_textbox, StartRowTextBox = ogrStartOgrTc_textbox, EndRowTextBox = ogrEndOgrTc_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciAd", FieldDisplayName="Öğrenci Adı", ColumnTextBox = ogrColumnOgrAd_textbox, StartRowTextBox = ogrStartOgrAd_textbox, EndRowTextBox = ogrEndOgrAd_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciSoyad", FieldDisplayName="Öğrenci Soyadı", ColumnTextBox = ogrColumnOgrSoyad_textbox, StartRowTextBox = ogrStartOgrSoyad_textbox, EndRowTextBox = ogrEndOgrSoyad_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciSinif", FieldDisplayName="Öğrenci Sınıfı", ColumnTextBox = ogrColumnOgrSinif_textbox, StartRowTextBox = ogrStartOgrSinif_textbox, EndRowTextBox = ogrEndOgrSinif_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrencininFirmaAdi", FieldDisplayName="Firma Adı", ColumnTextBox = ogrColumnOgrFirmaAdi_textbox, StartRowTextBox = ogrStartOgrFirmaAdi_textbox, EndRowTextBox = ogrEndOgrFirmaAdi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgreciTelNo", FieldDisplayName="Telefon No", ColumnTextBox = ogrColumnOgrTelNo_textbox, StartRowTextBox = ogrStartOgrTelNo_textbox, EndRowTextBox = ogrEndOgrTelNo_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciAlanAdi", FieldDisplayName="Alan Adı", ColumnTextBox = ogrColumnOgrAlanAdi_textbox, StartRowTextBox = ogrStartOgrAlanAdi_textbox, EndRowTextBox = ogrEndOgrAlanAdi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciDalAdi", FieldDisplayName="Dal Adı", ColumnTextBox = ogrColumnOgrDalAdi_textbox, StartRowTextBox = ogrStartOgrDalAdi_textbox, EndRowTextBox = ogrEndOgrDalAdi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciGrup", FieldDisplayName="Grup", ColumnTextBox = ogrColumnOgrGrup_textbox, StartRowTextBox = ogrStartOgrGrup_textbox, EndRowTextBox = ogrEndOgrGrup_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciStajaBaslangicTarihi", FieldDisplayName="Staj Başlangıç Tarihi", ColumnTextBox = ogrColumnOgrStajBaslangicTarihi_textbox, StartRowTextBox = ogrStartOgrStajBaslangicTarihi_textbox, EndRowTextBox = ogrEndOgrStajBaslangicTarihi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciStajBitistarihi", FieldDisplayName="Staj Bitiş Tarihi", ColumnTextBox = ogrColumnOgrStajBitisTarihi_textbox, StartRowTextBox = ogrStartOgrStajBitisTarihi_textbox, EndRowTextBox = ogrEndOgrStajBitisTarihi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciKoordinatorOgretmeni", FieldDisplayName="Koordinatör Öğretmen", ColumnTextBox = ogrColumnOgrKoordinatorOgretmeni_textbox, StartRowTextBox = ogrStartOgrKoordinatorOgretmeni_textbox, EndRowTextBox = ogrEndOgrKoordinatorOgretmeni_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciStajDonemi", FieldDisplayName="Staj Dönemi", ColumnTextBox = ogrColumnOgrStajDonemi_textbox, StartRowTextBox = ogrStartOgrStajDonemi_textbox, EndRowTextBox = ogrEndOgrStajDonemi_textbox },
+                    
+                    // --- YENİ EKLENEN ÖĞRENCİ ALANLARI ---
+                    new FieldImportInfo { DbFieldName = "OgrenciAnneAdi", FieldDisplayName="Anne Adı", ColumnTextBox = ogrColumnOgrAnneAdi_textbox, StartRowTextBox = ogrStartOgrAnneAdi_textbox, EndRowTextBox = ogrEndOgrAnneAdi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciAnneTelNo", FieldDisplayName="Anne Tel No", ColumnTextBox = ogrColumnOgrAnneTelNo_textbox, StartRowTextBox = ogrStartOgrAnneTelNo_textbox, EndRowTextBox = ogrEndOgrAnneTelNo_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciBabaAdi", FieldDisplayName="Baba Adı", ColumnTextBox = ogrColumnOgrBabaAdi_textbox, StartRowTextBox = ogrStartOgrBabaAdi_textbox, EndRowTextBox = ogrEndOgrBabaAdi_textbox },
+                    new FieldImportInfo { DbFieldName = "OgrenciBabaTelNo", FieldDisplayName="Baba Tel No", ColumnTextBox = ogrColumnOgrBabaTelNo_textbox, StartRowTextBox = ogrStartOgrBabaTelNo_textbox, EndRowTextBox = ogrEndOgrBabaTelNo_textbox },
+                };
 
                         foreach (var fieldInfo in studentFieldInfos)
                         {
@@ -7223,6 +7462,11 @@ namespace WindowsFormsApp1
                                                             student.OgrenciStajDonemi = (stajDonemi == "KİS") ? "KIŞ" : stajDonemi;
                                                         else if (!string.IsNullOrWhiteSpace(stajDonemi)) importLog.Add($"UYARI: Satır {r}, Anahtar '{dictionaryKey}', Alan '{fieldInfo.FieldDisplayName}': Staj dönemi ('{stajDonemi}') geçersiz (KIŞ, YAZ, MESEM olmalı). Varsayılan '{student.OgrenciStajDonemi}' korundu.");
                                                         break;
+                                                    // --- YENİ EKLENEN ÖĞRENCİ ALANLARI İÇİN CASE'LER ---
+                                                    case "OgrenciAnneAdi": student.OgrenciAnneAdi = cellValueStr; break;
+                                                    case "OgrenciAnneTelNo": student.OgrenciAnneTelNo = cellValueStr; break;
+                                                    case "OgrenciBabaAdi": student.OgrenciBabaAdi = cellValueStr; break;
+                                                    case "OgrenciBabaTelNo": student.OgrenciBabaTelNo = cellValueStr; break;
                                                 }
                                             }
                                         }
@@ -7261,22 +7505,21 @@ namespace WindowsFormsApp1
                         break;
 
                     case "Öğretmen":
+                        // Öğretmen kısmı değişmediği için olduğu gibi bırakıldı.
                         var teacherFieldInfos = new List<FieldImportInfo>
-                        {
-                            // Sağladığınız UI eleman adlarına göre güncellendi.
-                            // StartRow ve EndRow TextBox'larının adlarını da tahmin ediyorum.
-                            new FieldImportInfo { DbFieldName = "OgretmenAd", FieldDisplayName="Öğretmen Adı", ColumnTextBox = ogrtColumnOgrtAd_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtAd_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtAd_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "OgretmenSoyad", FieldDisplayName="Öğretmen Soyadı", ColumnTextBox = ogrtColumnOgrtSoyad_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtSoyad_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtSoyad_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "OgretmenIsletmeGunu1", FieldDisplayName="İşletme Günü 1", ColumnTextBox = ogrtColumnOgrtIsletmeGunu1_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtIsletmeGunu1_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtIsletmeGunu1_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "OgretmenIsletmeGunu2", FieldDisplayName="İşletme Günü 2", ColumnTextBox = ogrtColumnOgrtIsletmeGunu2_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtIsletmeGunu2_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtIsletmeGunu2_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "OgretmenAlanAdi", FieldDisplayName="Alan Adı", ColumnTextBox = ogrtColumnOgrtAlanAdi_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtAlanAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtAlanAdi_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "OgretmenDalAdi", FieldDisplayName="Dal Adı", ColumnTextBox = ogrtColumnOgrtDalAdi_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtDalAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtDalAdi_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "OgretmenTelNo", FieldDisplayName="Telefon No", ColumnTextBox = ogrtColumnOgrtTelNo_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtTelNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtTelNo_textbox", true).FirstOrDefault() as TextBox },
-                        };
+                {
+                    new FieldImportInfo { DbFieldName = "OgretmenAd", FieldDisplayName="Öğretmen Adı", ColumnTextBox = ogrtColumnOgrtAd_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtAd_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtAd_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "OgretmenSoyad", FieldDisplayName="Öğretmen Soyadı", ColumnTextBox = ogrtColumnOgrtSoyad_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtSoyad_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtSoyad_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "OgretmenIsletmeGunu1", FieldDisplayName="İşletme Günü 1", ColumnTextBox = ogrtColumnOgrtIsletmeGunu1_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtIsletmeGunu1_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtIsletmeGunu1_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "OgretmenIsletmeGunu2", FieldDisplayName="İşletme Günü 2", ColumnTextBox = ogrtColumnOgrtIsletmeGunu2_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtIsletmeGunu2_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtIsletmeGunu2_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "OgretmenAlanAdi", FieldDisplayName="Alan Adı", ColumnTextBox = ogrtColumnOgrtAlanAdi_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtAlanAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtAlanAdi_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "OgretmenDalAdi", FieldDisplayName="Dal Adı", ColumnTextBox = ogrtColumnOgrtDalAdi_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtDalAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtDalAdi_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "OgretmenTelNo", FieldDisplayName="Telefon No", ColumnTextBox = ogrtColumnOgrtTelNo_textbox, StartRowTextBox = Controls.Find("ogrtStartOgrtTelNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("ogrtEndOgrtTelNo_textbox", true).FirstOrDefault() as TextBox },
+                };
 
                         foreach (var fieldInfo in teacherFieldInfos)
                         {
-                            if (fieldInfo.StartRowTextBox == null || fieldInfo.EndRowTextBox == null) // TextBox bulunamadıysa
+                            if (fieldInfo.StartRowTextBox == null || fieldInfo.EndRowTextBox == null)
                             {
                                 string textBoxNamePart = fieldInfo.ColumnTextBox.Name.Replace("ogrtColumnOgrt", "").Replace("_textbox", "");
                                 MessageBox.Show($"'{fieldInfo.FieldDisplayName}' için başlangıç (ogrtStartOgrt{textBoxNamePart}_textbox) veya bitiş (ogrtEndOgrt{textBoxNamePart}_textbox) satır metin kutusu formda bulunamadı. Lütfen UI eleman adlarını kontrol edin.", "UI Elemanı Eksik", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -7412,25 +7655,33 @@ namespace WindowsFormsApp1
 
                     case "İşletme":
                         var businessFieldInfos = new List<FieldImportInfo>
-                        {
-                            // Sağladığınız UI eleman adlarına göre güncellendi.
-                            // StartRow ve EndRow TextBox'larının adlarını da tahmin ediyorum.
-                            new FieldImportInfo { DbFieldName = "IsletmeAd", FieldDisplayName="İşletme Adı", ColumnTextBox = isletmeColumnOgrIsletmeAd_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAd_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAd_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeAdresIl", FieldDisplayName="Adres İl", ColumnTextBox = isletmeColumnOgrIsletmeAdresIl_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAdresIl_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAdresIl_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeAdresIlce", FieldDisplayName="Adres İlçe", ColumnTextBox = isletmeColumnOgrIsletmeAdresIlce_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAdresIlce_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAdresIlce_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeTamAdres", FieldDisplayName="Tam Adres", ColumnTextBox = isletmeColumnOgrIsletmeTamAdres_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeTamAdres_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeTamAdres_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeYetkilisi", FieldDisplayName="Yetkili", ColumnTextBox = isletmeColumnOgrIsletmeYetkilisi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeYetkilisi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeYetkilisi_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeTelNo", FieldDisplayName="Telefon No", ColumnTextBox = isletmeColumnOgrIsletmeTelNo_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeTelNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeTelNo_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeUstaOgreticilikVarmiYokmu", FieldDisplayName="Usta Öğreticilik", ColumnTextBox = isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeBolum", FieldDisplayName="Bölüm/Alan", ColumnTextBox = isletmeColumnOgrIsletmeAlanAdi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAlanAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAlanAdi_textbox", true).FirstOrDefault() as TextBox },
-                            new FieldImportInfo { DbFieldName = "IsletmeDal", FieldDisplayName="Dal", ColumnTextBox = isletmeColumnOgrIsletmeDalAdi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeDalAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeDalAdi_textbox", true).FirstOrDefault() as TextBox },
-                        };
+                {
+                    // Mevcut alanlar
+                    new FieldImportInfo { DbFieldName = "IsletmeAd", FieldDisplayName="İşletme Adı", ColumnTextBox = isletmeColumnOgrIsletmeAd_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAd_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAd_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeAdresIl", FieldDisplayName="Adres İl", ColumnTextBox = isletmeColumnOgrIsletmeAdresIl_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAdresIl_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAdresIl_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeAdresIlce", FieldDisplayName="Adres İlçe", ColumnTextBox = isletmeColumnOgrIsletmeAdresIlce_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAdresIlce_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAdresIlce_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeTamAdres", FieldDisplayName="Tam Adres", ColumnTextBox = isletmeColumnOgrIsletmeTamAdres_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeTamAdres_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeTamAdres_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeYetkilisi", FieldDisplayName="Yetkili", ColumnTextBox = isletmeColumnOgrIsletmeYetkilisi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeYetkilisi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeYetkilisi_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeTelNo", FieldDisplayName="Telefon No", ColumnTextBox = isletmeColumnOgrIsletmeTelNo_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeTelNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeTelNo_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeUstaOgreticilikVarmiYokmu", FieldDisplayName="Usta Öğreticilik", ColumnTextBox = isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeBolum", FieldDisplayName="Bölüm/Alan", ColumnTextBox = isletmeColumnOgrIsletmeAlanAdi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeAlanAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeAlanAdi_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeDal", FieldDisplayName="Dal", ColumnTextBox = isletmeColumnOgrIsletmeDalAdi_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeDalAdi_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeDalAdi_textbox", true).FirstOrDefault() as TextBox },
+                    
+                    // --- YENİ EKLENEN İŞLETME ALANLARI ---
+                    // Not: Başlangıç/Bitiş satır textbox isimlerinin UI'da doğru olduğundan emin olunuz. (Örn: isletmeStartOgrIsletmeSicilNo_textbox)
+                    new FieldImportInfo { DbFieldName = "IsletmeSicilNo", FieldDisplayName="Sicil No", ColumnTextBox = isletmeColumnOgrIsletmeSicilNo_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeSicilNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeSicilNo_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeIbanNo", FieldDisplayName="IBAN No", ColumnTextBox = isletmeColumnOgrIsletmeIbanNo_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeIbanNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeIbanNo_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeUstaOgreticiAdi", FieldDisplayName="Usta Öğretici Adı", ColumnTextBox = isletmeColumnOgrIsletmeUOAd_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeUOAd_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeUOAd_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeUstaOgreticiSoyadi", FieldDisplayName="Usta Öğretici Soyadı", ColumnTextBox = isletmeColumnOgrIsletmeSoyad_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeSoyad_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeSoyad_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeUstaOgreticiTcNo", FieldDisplayName="Usta Öğretici TC No", ColumnTextBox = isletmeColumnOgrIsletmeUOTCNo_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeUOTCNo_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeUOTCNo_textbox", true).FirstOrDefault() as TextBox },
+                    new FieldImportInfo { DbFieldName = "IsletmeUstaOgreticiDogumTarihi", FieldDisplayName="Usta Öğretici Doğum Tarihi", ColumnTextBox = isletmeColumnOgrIsletmeUODT_textbox, StartRowTextBox = Controls.Find("isletmeStartOgrIsletmeUODT_textbox", true).FirstOrDefault() as TextBox, EndRowTextBox = Controls.Find("isletmeEndOgrIsletmeUODT_textbox", true).FirstOrDefault() as TextBox },
+                };
 
                         foreach (var fieldInfo in businessFieldInfos)
                         {
                             if (fieldInfo.StartRowTextBox == null || fieldInfo.EndRowTextBox == null)
                             {
-                                string textBoxNamePart = fieldInfo.ColumnTextBox.Name.Replace("isletmeColumnOgrIsletme", "").Replace("BelgesiVarmi", "").Replace("_textbox", ""); // Daha genel bir isim çıkarma
+                                string textBoxNamePart = fieldInfo.ColumnTextBox.Name.Replace("isletmeColumnOgrIsletme", "").Replace("BelgesiVarmi", "").Replace("_textbox", "");
                                 MessageBox.Show($"'{fieldInfo.FieldDisplayName}' için başlangıç (isletmeStartOgrIsletme{textBoxNamePart}_textbox) veya bitiş (isletmeEndOgrIsletme{textBoxNamePart}_textbox) satır metin kutusu formda bulunamadı. Lütfen UI eleman adlarını kontrol edin.", "UI Elemanı Eksik", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 this.Cursor = Cursors.Default; exceldenDByeAktarim_button.Enabled = true; return;
                             }
@@ -7523,6 +7774,17 @@ namespace WindowsFormsApp1
                                                         break;
                                                     case "IsletmeBolum": business.IsletmeBolum = cellValueStr; break;
                                                     case "IsletmeDal": business.IsletmeDal = cellValueStr; break;
+
+                                                    // --- YENİ EKLENEN İŞLETME ALANLARI İÇİN CASE'LER ---
+                                                    case "IsletmeSicilNo": business.IsletmeSicilNo = cellValueStr; break;
+                                                    case "IsletmeIbanNo": business.IsletmeIbanNo = cellValueStr; break;
+                                                    case "IsletmeUstaOgreticiAdi": business.IsletmeUstaOgreticiAdi = cellValueStr; break;
+                                                    case "IsletmeUstaOgreticiSoyadi": business.IsletmeUstaOgreticiSoyadi = cellValueStr; break;
+                                                    case "IsletmeUstaOgreticiTcNo": business.IsletmeUstaOgreticiTcNo = cellValueStr; break;
+                                                    case "IsletmeUstaOgreticiDogumTarihi":
+                                                        if (TryParseExcelDate(dataCell, out DateTime dogumTarihi)) business.IsletmeUstaOgreticiDogumTarihi = dogumTarihi;
+                                                        else if (!string.IsNullOrWhiteSpace(cellValueStr)) importLog.Add($"UYARI: Satır {r}, Anahtar '{dictionaryKey}', Alan '{fieldInfo.FieldDisplayName}': Tarih formatı ('{cellValueStr}') geçersiz. Bu alan boş bırakıldı.");
+                                                        break;
                                                 }
                                             }
                                         }
@@ -7589,17 +7851,21 @@ namespace WindowsFormsApp1
             }
             catch (DbUpdateException dbEx)
             {
-                // En içteki hata mesajını alalım, genellikle daha bilgilendiricidir.
                 var innermostException = dbEx;
                 while (innermostException.InnerException != null)
                 {
-                    innermostException = (DbUpdateException)innermostException.InnerException;
+                    // Bu cast'in her zaman geçerli olmayabileceğini unutmayın, daha genel bir Exception'a cast etmek daha güvenli olabilir.
+                    if (innermostException.InnerException is DbUpdateException innerDbEx)
+                    {
+                        innermostException = innerDbEx;
+                    }
+                    else
+                    {
+                        break; // İç içe DbUpdateException yoksa döngüden çık
+                    }
                 }
-                string errorMessage = innermostException.Message;
+                string errorMessage = innermostException.InnerException?.Message ?? innermostException.Message;
 
-                // Kullanıcıya daha anlaşılır bir mesaj göstermeye çalışalım.
-                // EF Core'da "Validation failed" gibi standart bir mesaj olmayabilir,
-                // ancak mesajın içeriğine göre bir tahmin yapabiliriz.
                 string displayMessage = $"Veritabanına kaydederken bir hata oluştu:\n{errorMessage}";
 
                 if (errorMessage.ToLowerInvariant().Contains("required") || errorMessage.ToLowerInvariant().Contains("maximum length") || errorMessage.ToLowerInvariant().Contains("cannot be null"))
@@ -7607,13 +7873,9 @@ namespace WindowsFormsApp1
                     displayMessage += "\n\n(Bu hata, modeldeki zorunlu alanların boş olması veya uzunluk kısıtlamalarıyla ilgili olabilir.)";
                 }
 
-
                 MessageBox.Show(displayMessage, "Veritabanı Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                // Loglama için daha detaylı bilgi eklenebilir
                 importLog.Add($"KRİTİK HATA (Veritabanı): {errorMessage}");
-                // Gerekirse tüm istisna detayını loglayın:
-                // importLog.Add($"KRİTİK HATA (Veritabanı Detay): {dbEx.ToString()}");
             }
             catch (Exception ex)
             {

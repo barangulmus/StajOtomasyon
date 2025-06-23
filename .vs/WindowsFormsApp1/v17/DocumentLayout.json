@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\x\\documents\\github\\stajotomasyon\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\windowsformsapp1\\isletmeclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\isletmeclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|c:\\users\\x\\documents\\github\\stajotomasyon\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\windowsformsapp1\\ogrenciclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\ogrenciclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\windowsformsapp1\\isletmeclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B9C223-838C-4006-86A2-A18D5D198895}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\isletmeclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form2.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\Form2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form2.cs",
@@ -43,13 +43,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\Form2.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form2.cs",
               "ToolTip": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\Form2.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form2.cs",
-              "ViewState": "AgIAACoHAAAAAAAAAAAMwD0HAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAO0WAAAAAAAAAAAgwAYXAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T12:23:38.117Z",
               "IsPinned": true,
@@ -57,26 +57,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IsletmeClass.cs",
               "DocumentMoniker": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\IsletmeClass.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\IsletmeClass.cs",
               "ToolTip": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\IsletmeClass.cs",
               "RelativeToolTip": "WindowsFormsApp1\\IsletmeClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T19:21:57.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "OgrenciClass.cs",
               "DocumentMoniker": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\OgrenciClass.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\OgrenciClass.cs",
               "ToolTip": "C:\\Users\\x\\Documents\\GitHub\\StajOtomasyon\\WindowsFormsApp1\\OgrenciClass.cs",
               "RelativeToolTip": "WindowsFormsApp1\\OgrenciClass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T14:48:27.033Z",
               "EditorCaption": ""
