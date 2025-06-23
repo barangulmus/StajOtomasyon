@@ -16,6 +16,11 @@ namespace WindowsFormsApp1
         public string OgrenciSinif { get; set; } = string.Empty;
         public string OgrencininFirmaAdi { get; set; } = string.Empty;
         public string OgreciTelNo { get; set; } = string.Empty;
+        public string OgrenciAnneAdi { get; set; }
+        public string OgrenciAnneTelNo { get; set; }
+        public string OgrenciBabaAdi { get; set; }
+        public string OgrenciBabaTelNo { get; set; }
+        public string HowUsePhone { get; set; }
         public string OgrenciTCKimlikNo { get; set; } = string.Empty;
         public string OgrenciAlanAdi { get; set; } = string.Empty;
         public string OgrenciDalAdi { get; set; } = string.Empty;

@@ -90,9 +90,9 @@ namespace WindowsFormsApp1
                     csSettinsClass.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin = "Ayarlar";
                     csSettinsClass.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasin = false;
                     csSettinsClass.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi = true;
-                    csSettinsClass.SorguOzellestirmeleriOgrenci = "[OgrenciAd],[OgrenciSoyad],[OgrenciOkulNo],[OgrenciSinif],[OgrencininFirmaAdi],[OgreciTelNo],[OgrenciTCKimlikNo],[OgrenciAlanAdi],[OgrenciDalAdi],[OgrenciGrup],[OgrenciStajaBaslangicTarihi],[OgrenciStajBitistarihi],[OgrenciKoordinatorOgretmeni],[OgrenciStajDonemi]";
+                    csSettinsClass.SorguOzellestirmeleriOgrenci = "[OgrenciAd],[OgrenciSoyad],[OgrenciOkulNo],[OgrenciSinif],[OgrencininFirmaAdi],[OgreciTelNo],[OgrenciTCKimlikNo],[OgrenciAlanAdi],[OgrenciDalAdi],[OgrenciGrup],[OgrenciStajaBaslangicTarihi],[OgrenciStajBitistarihi],[OgrenciKoordinatorOgretmeni],[OgrenciStajDonemi],[OgrenciAnneAdi],[OgrenciAnneTelNo],[OgrenciBabaAdi],[OgrenciBabaTelNo],[HowUsePhone]";
                     csSettinsClass.SorguOzellestirmeleriOgretmen = "[OgretmenAd],[OgretmenSoyad],[OgretmenIsletmeGunu1],[OgretmenIsletmeGunu2],[OgretmenAlanAdi],[OgretmenDalAdi],[OgretmenTelNo]";
-                    csSettinsClass.SorguOzellestirmeleriIsletme = "[IsletmeAd],[IsletmeAdresIl],[IsletmeAdresIlce],[IsletmeTamAdres],[IsletmeYetkilisi],[IsletmeTelNo],[IsletmeUstaOgreticilikVarmiYokmu],[IsletmeBolum],[IsletmeDal]";
+                    csSettinsClass.SorguOzellestirmeleriIsletme = "[IsletmeAd],[IsletmeAdresIl],[IsletmeAdresIlce],[IsletmeTamAdres],[IsletmeYetkilisi],[IsletmeTelNo],[IsletmeUstaOgreticilikVarmiYokmu],[IsletmeBolum],[IsletmeDal],[IsletmeUstaOgreticiAdi],[IsletmeUstaOgreticiSoyadi],[IsletmeUstaOgreticiDogumTarihi],[IsletmeSicilNo],[IsletmeIbanNo]";
                     csSettinsClass.MudurYardimcisiAdi = "";
                     csSettinsClass.KoordinatorMuduryardimcisiIsmi = "";
                     csSettinsClass.okulMuduruIsmi = "";
@@ -123,86 +123,91 @@ namespace WindowsFormsApp1
             }
         }
         #region İller ve İlçeler        
-        private Dictionary<string, List<string>> illerVeIlceler = new Dictionary<string, List<string>>()
+        Dictionary<string, List<string>> illerVeIlceler = new Dictionary<string, List<string>>()
         {
-                { "Adana", new List<string> { "Aladağ", "Ceyhan", "Çukurova", "Feke", "İmamoğlu", "Karaisalı", "Karataş", "Kozan", "Pozantı", "Saimbeyli", "Sarıçam", "Seyhan", "Tufanbeyli", "Yumurtalık", "Yüreğir" }},
-                { "Adıyaman", new List<string> { "Besni", "Çelikhan", "Gerger", "Gölbaşı", "Kahta", "Merkez", "Samsat", "Sincik", "Tut" }},
-                { "Afyonkarahisar", new List<string> { "Başmakçı", "Bayat", "Bolvadin", "Çay", "Çobanlar", "Dazkırı", "Dinar", "Emirdağ", "Evciler", "Hocalar", "İhsaniye", "Kızılören", "Merkez", "Sandıklı", "Sinanpaşa", "Sultandağı", "Şuhut" }},
-                { "Ağrı", new List<string> { "Diyadin", "Doğubayazıt", "Hamur", "Merkez", "Patnos", "Taşlıçay", "Tuzluca" }},
-                { "Aksaray", new List<string> { "Ağaçören", "Eskil", "Gülağaç", "Kızılkaya", "Merkez", "Sarayönü", "Sultanhanı", "Şereflikoçhisar", "Ortakonak", "Kızılkaya" }},
-                { "Amasya", new List<string> { "Merzifon", "Suluova", "Taşova", "Gümüşhacıköy", "Hamamözü", "Amasya Merkez" }},
-                { "Ankara", new List<string> { "Altındağ", "Çankaya", "Etimesgut", "Gölbaşı", "Mamak", "Sincan", "Keçiören", "Yenimahalle", "Pursaklar", "Akyurt", "Polatlı", "Kızılcahamam", "Bala", "Çubuk", "Evren", "Haymana", "Kahramankazan", "Nallıhan", "Şereflikoçhisar", "Güdül", "Ayaş", "Çamlıdere" }},
-                { "Antalya", new List<string> { "Akseki", "Alanya", "Demre", "Finike", "Gazipaşa", "İbradı", "Kale", "Kemer", "Kepez", "Konyaaltı", "Kumluca", "Manavgat", "Serik", "Muratpaşa", "Aksu", "Döşemealtı" }},
-                { "Artvin", new List<string> { "Ardanuç", "Arhavi", "Hopa", "Murgul", "Borçka", "Şavşat", "Yusufeli", "Merkez" }},
-                { "Aydın", new List<string> { "Bozdoğan", "Çine", "Didim", "Efeler", "Germencik", "İncirliova", "Karacasu", "Kuşadası", "Köşk", "Nazilli", "Söke", "Yenipazar" }},
-                { "Balıkesir", new List<string> { "Ayvalık", "Balya", "Bigadiç", "Burhaniye", "Dursunbey", "Edremit", "Gömeç", "Gönen", "Havran", "İvrindi", "Kepsut", "Karesi", "Marmara", "Mithatpaşa", "Savaştepe", "Sındırgı", "Susurluk" }},
-                { "Bartın", new List<string> { "Amasra", "Bartın Merkez", "Kurucaşile", "Ulus" }},
-                { "Batman", new List<string> { "Beşiri", "Gercüş", "Hasankeyf", "Kozluk", "Merkez", "Sason" }},
-                { "Bayburt", new List<string> { "Bayburt Merkez", "Aydıntepe", "Demirözü" }},
-                { "Bilecik", new List<string> { "İnhisar", "Gölpazarı", "Bozüyük", "Bilecik Merkez", "Pazaryeri", "Söğüt", "Vezirhan" }},
-                { "Bingöl", new List<string> { "Adaklı", "Genç", "Karlıova", "Kiğı", "Merkez", "Solhan", "Yedisu" }},
-                { "Bitlis", new List<string> { "Adilcevaz", "Ahlat", "Güroymak", "Hizan", "Merkez", "Mutki", "Tatoğlu" }},
-                { "Bolu", new List<string> { "Gerede", "Göynük", "Kıbrıscık", "Mengen", "Mudurnu", "Seben", "Merkez", "Dörtdivan" }},
-                { "Burdur", new List<string> { "Ağlasun", "Bucak", "Çavdır", "Çeltikçi", "Göller", "Kemer", "Merkez", "Tefenni", "Yeşilova" }},
-                { "Bursa", new List<string> { "Gemlik", "Gürsu", "Harmancık", "İnegöl", "İznik", "Keles", "Karacabey", "Kestel", "Mudanya", "Mustafakemalpaşa", "Nilüfer", "Orhaneli", "Orhangazi", "Osmangazi", "Yıldırım" }},
-                { "Çanakkale", new List<string> { "Ayvacık", "Bayramiç", "Biga", "Bozcaada", "Çan", "Eceabat", "Ezine", "Gelibolu", "Lapseki", "Merkez", "Yenice" }},
-                { "Çankırı", new List<string> { "Atkaracalar", "Çerkeş", "Eldivan", "Ilgaz", "Kızılcahamam", "Kurşunlu", "Merkez", "Orta", "Şabanözü", "Yapraklı" }},
-                { "Çorum", new List<string> { "Alaca", "Bayat", "Boğazkale", "Dodurga", "İskilip", "Kargı", "Laçin", "Mecitözü", "Osmancık", "Sungurlu", "Merkez", "Uğurludağ" }},
-                { "Denizli", new List<string> { "Acıpayam", "Babadağ", "Baklan", "Bekilli", "Bozkurt", "Çal", "Çivril", "Güney", "Kale", "Merkezefendi", "Pamukkale", "Serinhisar", "Tavas" }},
-                { "Diyarbakır", new List<string> { "Bağlar", "Bismil", "Çermik", "Çınar", "Dicle", "Ergani", "Hani", "Hazro", "Kocaköy", "Kulp", "Lice", "Silvan", "Sur", "Yenişehir" }},
-                { "Düzce", new List<string> { "Akçakoca", "Beyköy", "Cumayeri", "Çilimli", "Gölyaka", "Gönen", "Merkez", "Yığılca" }},
-                { "Edirne", new List<string> { "Enez", "Havsa", "İpsala", "Lalapaşa", "Meriç", "Süloğlu", "Uzunköprü", "Merkez" }},
-                { "Elazığ", new List<string> { "Ağın", "Arıcak", "Baskil", "Karakoçan", "Keban", "Kovancılar", "Maden", "Merkez", "Palu", "Sivrice" }},
-                { "Erzincan", new List<string> { "Aziziye", "Çayırlı", "Erzincan Merkez", "İliç", "Kemaliye", "Otlukbeli", "Refahiye", "Sivrihisar", "Tercan", "Üzümlü", "Pasinler" }},
-                { "Erzurum", new List<string> { "Aziziye", "Palandöken", "Yakutiye", "Karaçoban", "Oltu", "Horasan", "İspir", "Pasinler", "Tekman", "Narman", "Aşkale", "Köprüköy", "Kozan", "Şenkaya", "Çat" }},
-                { "Eskişehir", new List<string> { "Çifteler", "Günyüzü", "Han", "Mihalıççık", "Odunpazarı", "Tepebaşı", "Sarıcakaya", "Mahmudiye", "Alpu", "Beylikova", "İnönü", "Odunpazarı", "Porsuk" }},
-                { "Gaziantep", new List<string> { "Şahinbey", "Şehitkamil", "Oğuzeli", "Nizip", "Araban", "Karkamış", "Yavuzeli" }},
-                { "Giresun", new List<string> { "Alucra", "Bulancak", "Çamoluk", "Dereli", "Doğankent", "Espiye", "Eynesil", "Görele", "Keşap", "Piraziz", "Şebinkarahisar", "Tirebolu", "Yağlıdere", "Merkez" }},
-                { "Gümüşhane", new List<string> { "Kelkit", "Kürtün", "Merkez", "Şiran", "Torul", "Başpınar" }},
-                { "Hakkari", new List<string> { "Çukurca", "Merkez", "Şemdinli", "Yüksekova", "Beytüşşebap", "Düziçi" }},
-                { "Hatay", new List<string> { "Antakya", "Defne", "İskenderun", "Dörtyol", "Erzin", "Altınözü", "Belen", "Reyhanlı", "Kumlu", "Hassa" }},
-                { "Iğdır", new List<string> { "Aralık", "Merkez", "Karakoyunlu", "Tuzluca", "Iğdır Merkez" }},
-                { "Isparta", new List<string> { "Atabey", "Eğirdir", "Gelendost", "Göller", "Keçiborlu", "Merkez", "Senirkent", "Şarkikaraağaç", "Uluborlu", "Yalvaç" }},
-                { "İstanbul", new List<string> { "Adalar", "Arnavutköy", "Ataşehir", "Avcılar", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", "Beşiktaş", "Beylikdüzü", "Beyoğlu", "Büyükçekmece", "Çatalca", "Çekmeköy", "Esenler", "Esenyurt", "Eyüp", "Fatih", "Gaziosmanpaşa", "Kadıköy", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sancaktepe", "Silivri", "Sultanbeyli", "Sultangazi", "Şile", "Şişli", "Tuzla", "Zeytinburnu" }},
-                { "İzmir", new List<string> { "Aliağa", "Balçova", "Bayındır", "Bergama", "Buca", "Bornova", "Çeşme", "Dikili", "Foça", "Gaziemir", "Kemalpaşa", "Karabağlar", "Karaburun", "Kınık", "Konak", "Menderes", "Menemen", "Narlıdere", "Ödemiş", "Seferihisar", "Selçuk", "Tire", "Torbalı", "Urla" }},
-                { "Kahramanmaraş", new List<string> { "Andırın", "Dulkadiroğlu", "Elbistan", "Göksun", "Kahramanmaraş Merkez", "Pazarcık", "Türkoğlu" }},
-                { "Karabük", new List<string> { "Eflani", "Eskipazar", "Karabük Merkez", "Ovacık", "Safranbolu", "Yenice" }},
-                { "Karaman", new List<string> { "Ayrancı", "Başyayla", "Karaman Merkez", "Kazımkarabekir", "Ermenek", "Sarıveliler" }},
-                { "Kars", new List<string> { "Ardahan", "Digor", "Kağızman", "Merkez", "Sarıkamış", "Selim" }},
-                { "Kastamonu", new List<string> { "Ağlı", "Araç", "Cide", "Çatalzeytin", "Devrekani", "Doğanyurt", "Hanönü", "İhsangazi", "Kastamonu Merkez", "Küre", "Pınarbaşı", "Şenpazar", "Taşköprü", "Tosya" }},
-                { "Kayseri", new List<string> { "Bünyan", "Develi", "Felahiye", "Hacılar", "Kocasinan", "Melikgazi", "Özvatan", "Pınarbaşı", "Talas", "Yeşilhisar" }},
-                { "Kırklareli", new List<string> { "Demirköy", "Kırklareli Merkez", "Lüleburgaz", "Pehlivanköy", "Pınarhisar", "Vize" }},
-                { "Kırşehir", new List<string> { "Akpınar", "Kaman", "Mucur", "Kırşehir Merkez", "Çiçekdağı", "Boztepe" }},
-                { "Kocaeli", new List<string> { "Başiskele", "Çayırova", "Derince", "Dilovası", "Gölcük", "İzmit", "Kartepe", "Körfez", "Kocaeli Merkez", "Gebze" }},
-                { "Konya", new List<string> { "Ahırlı", "Akşehir", "Beyşehir", "Bozkır", "Çumra", "Derbent", "Doğanhisar", "Ereğli", "Gölbahçe", "Halkapınar", "Hadim", "Ilgın", "Kadınhanı", "Karatay", "Meram", "Selçuklu", "Seydişehir", "Yunak" }},
-                { "Kütahya", new List<string> { "Altıntaş", "Aslanapa", "Çavdarhisar", "Domaniç", "Dumlupınar", "Emet", "Gediz", "Kütahya Merkez", "Pazarlar", "Simav", "Şaphane", "Tavşanlı" }},
-                { "Malatya", new List<string> { "Akçadağ", "Arapgir", "Battalgazi", "Darende", "Doğanyol", "Hekimhan", "Kale", "Kuluncak", "Pütürge", "Yazıhan", "Yeşilyurt" }},
-                { "Manisa", new List<string> { "Akhisar", "Demirci", "Gördes", "Kula", "Salihli", "Soma", "Turgutlu", "Merkez", "Şehzadeler", "Yunusemre" }},
-                { "Mardin", new List<string> { "Artuklu", "Dargeçit", "Derik", "Kızıltepe", "Mazıdağı", "Midyat", "Nusaybin", "Ömerli", "Savur", "Yeşilli" }},
-                { "Mersin", new List<string> { "Akdeniz", "Anamur", "Erdemli", "Gülnar", "Mezitli", "Mut", "Silifke", "Tarsus", "Toroslar", "Yumuktepe" }},
-                { "Muğla", new List<string> { "Bodrum", "Dalaman", "Datça", "Fethiye", "Kavaklıdere", "Köyceğiz", "Marmaris", "Menteşe", "Ortaca", "Seydikemer", "Ula", "Yatağan" }},
-                { "Muş", new List<string> { "Bulanık", "Malazgirt", "Merkez", "Varto" }},
-                { "Nevşehir", new List<string> { "Acıgöl", "Avanos", "Derinkuyu", "Gülşehir", "Hacıbektaş", "Kozaklı", "Nevşehir Merkez" }},
-                { "Niğde", new List<string> { "Altunhisar", "Bor", "Çamardı", "Merkez", "Ulukışla" }},
-                { "Ordu", new List<string> { "Akkuş", "Altınordu", "Çamaş", "Fatsa", "Gölköy", "Gülyalı", "İkizce", "Kabataş", "Kabadüz", "Karadenizkent", "Korgan", "Kumru", "Perşembe", "Ulubey", "Ünye" }},
-                { "Osmaniye", new List<string> { "Düziçi", "Kadirli", "Merkez", "Sumbas", "Toprakkale" }},
-                { "Rize", new List<string> { "Ardeşen", "Çamlıhemşin", "Derepazarı", "Fındıklı", "Güneysu", "Hemşin", "İyidere", "Kalkandere", "Pazar", "Rize Merkez" }},
-                { "Sakarya", new List<string> { "Adapazarı", "Akyazı", "Erenler", "Ferizli", "Geyve", "Hendek", "Karapürçek", "Kaynarca", "Kocaali", "Pamukova", "Söğütlü", "Serdivan", "Taraklı" }},
-                { "Samsun", new List<string> { "19 Mayıs", "Atakum", "Canik", "Havza", "İlkadım", "Kavak", "Ladik", "Salıpazarı", "Terme", "Vezirköprü", "Yakakent" }},
-                { "Şanlıurfa", new List<string> { "Birecik", "Bozova", "Ceylanpınar", "Eyyübiye", "Haliliye", "Hilvan", "Karaköprü", "Siverek", "Viranşehir" }},
-                { "Siirt", new List<string> { "Baykan", "Merkez", "Pervari", "Şirvan", "Tillo", "Eruh" }},
-                { "Sinop", new List<string> { "Ayancık", "Boyabat", "Dikmen", "Erfelek", "Gerze", "Merkez", "Saraydüzü", "Türkeli" }},
-                { "Sivas", new List<string> { "Akıncılar", "Altınyayla", "Divriği", "Gemerek", "Gölova", "Hafik", "İmranlı", "Kangal", "Koyulhisar", "Merkez", "Sarkışla", "Suşehri", "Yıldızeli", "Zara" }},
-                { "Tekirdağ", new List<string> { "Çerkezköy", "Çorlu", "Ergene", "Hayrabolu", "Malkara", "Marmara Ereğlisi", "Şarköy", "Süleymanpaşa", "Kapaklı" }},
-                { "Tokat", new List<string> { "Almus", "Artova", "Başçiftlik", "Erbaa", "Merkez", "Niksar", "Pazar", "Reşadiye", "Sulusaray", "Turhal", "Zile" }},
-                { "Trabzon", new List<string> { "Akçaabat", "Araklı", "Arsin", "Beşikdüzü", "Çarşıbaşı", "Dernekpazarı", "Düzköy", "Hayrat", "Köprübaşı", "Maçka", "Of", "Ortahisar", "Sürmene", "Şalpazarı", "Vakfıkebir", "Yomra" }},
-                { "Tunceli", new List<string> { "Çemişgezek", "Hozat", "Mazgirt", "Merkez", "Nazımiye", "Ovacık", "Pertek", "Pülümür" }},
-                { "Uşak", new List<string> { "Banaz", "Eşme", "Karahallı", "Merkez", "Sivaslı", "Ulubey" }},
-                { "Van", new List<string> { "Edremit", "Gevaş", "İpekyolu", "Muradiye", "Özalp", "Saray", "Tuşba", "Bahçesaray", "Çatak", "Erciş", "Gürpınar", "Aşkale" }},
-                { "Yalova", new List<string> { "Altınova", "Armutlu", "Çınarcık", "Çiftlikköy", "Merkez", "Termal" }},
-                { "Yozgat", new List<string> { "Akdağmadeni", "Aydıncık", "Boğazlıyan", "Çekerek", "Kadışehri", "Saraykent", "Sorgun", "Yozgat Merkez", "Zile" }},
-                { "Zonguldak", new List<string> { "Alaplı", "Çaycuma", "Devrek", "Ereğli", "Gökçebey", "Merkez", "Kilimli", "Zonguldak Merkez" }}
+            {"Adana", new List<string>{"Aladağ", "Ceyhan", "Feke", "Karaisalı", "Karataş", "Kozan", "Pozantı", "Saimbeyli", "Sarıçam", "Seyhan", "Tufanbeyli", "Yumurtalık", "Yüreğir", "Çukurova", "İmamoğlu"}},
+            {"Adıyaman", new List<string>{"Besni", "Gerger", "Gölbaşı", "Kahta", "Merkez", "Samsat", "Sincik", "Tut", "Çelikhan"}},
+            {"Afyonkarahisar", new List<string>{"Bayat", "Başmakçı", "Bolvadin", "Çay", "Çobanlar", "Dazkırı", "Dinar", "Emirdağ", "Evciler", "Hocalar", "İhsaniye", "İscehisar", "Kızılören", "Merkez", "Sandıklı", "Sinanpaşa", "Şuhut", "Sultandağı"}},
+            {"Ağrı", new List<string>{"Diyadin", "Doğubayazıt", "Eleşkirt", "Hamur", "Merkez", "Patnos", "Taşlıçay", "Tutak"}},
+            {"Aksaray", new List<string>{"Ağaçören", "Eskil", "Gülağaç", "Güzelyurt", "Merkez", "Ortaköy", "Sarıyahşi", "Sultanhanı"}},
+            {"Amasya", new List<string>{"Göynücek", "Gümüşhacıköy", "Hamamözü", "Merkez", "Merzifon", "Suluova", "Taşova"}},
+            {"Ankara", new List<string>{"Akyurt", "Altındağ", "Ayaş", "Bala", "Beypazarı", "Çamlıdere", "Çankaya", "Çubuk", "Elmadağ", "Etimesgut", "Evren", "Gölbaşı", "Güdül", "Haymana", "Kahramankazan", "Kalecik", "Keçiören", "Kızılcahamam", "Mamak", "Nallıhan", "Polatlı", "Pursaklar", "Sincan", "Şereflikoçhisar", "Yenimahalle"}},
+            {"Antalya", new List<string>{"Akseki", "Aksu", "Alanya", "Demre", "Döşemealtı", "Elmalı", "Finike", "Gazipaşa", "Gündoğmuş", "İbradı", "Kaş", "Kemer", "Kepez", "Konyaaltı", "Korkuteli", "Kumluca", "Manavgat", "Muratpaşa", "Serik"}},
+            {"Ardahan", new List<string>{"Çıldır", "Damal", "Göle", "Hanak", "Merkez", "Posof"}},
+            {"Artvin", new List<string>{"Ardanuç", "Arhavi", "Borçka", "Hopa", "Kemalpaşa", "Merkez", "Murgul", "Şavşat", "Yusufeli"}},
+            {"Aydın", new List<string>{"Bozdoğan", "Buharkent", "Çine", "Didim", "Efeler", "Germencik", "İncirliova", "Karacasu", "Karpuzlu", "Koçarlı", "Köşk", "Kuşadası", "Kuyucak", "Nazilli", "Söke", "Sultanhisar", "Yenipazar"}},
+            {"Balıkesir", new List<string>{"Altıeylül", "Ayvalık", "Balya", "Bandırma", "Bigadiç", "Burhaniye", "Dursunbey", "Edremit", "Erdek", "Gömeç", "Gönen", "Havran", "İvrindi", "Karesi", "Kepsut", "Manyas", "Marmara", "Savaştepe", "Sındırgı", "Susurluk"}},
+            {"Bartın", new List<string>{"Amasra", "Kurucaşile", "Merkez", "Ulus"}},
+            {"Batman", new List<string>{"Beşiri", "Gercüş", "Hasankeyf", "Kozluk", "Merkez", "Sason"}},
+            {"Bayburt", new List<string>{"Aydıntepe", "Demirözü", "Merkez"}},
+            {"Bilecik", new List<string>{"Bozüyük", "Gölpazarı", "İnhisar", "Merkez", "Osmaneli", "Pazaryeri", "Söğüt", "Yenipazar"}},
+            {"Bingöl", new List<string>{"Adaklı", "Genç", "Karlıova", "Kiğı", "Merkez", "Solhan", "Yayladere", "Yedisu"}},
+            {"Bitlis", new List<string>{"Adilcevaz", "Ahlat", "Güroymak", "Hizan", "Merkez", "Mutki", "Tatvan"}},
+            {"Bolu", new List<string>{"Dörtdivan", "Gerede", "Göynük", "Kıbrıscık", "Mengen", "Merkez", "Mudurnu", "Seben", "Yeniçağa"}},
+            {"Burdur", new List<string>{"Ağlasun", "Altınyayla", "Bucak", "Çavdır", "Çeltikçi", "Gölhisar", "Karamanlı", "Kemer", "Merkez", "Tefenni", "Yeşilova"}},
+            {"Bursa", new List<string>{"Büyükorhan", "Gemlik", "Gürsu", "Harmancık", "İnegöl", "İznik", "Karacabey", "Keles", "Kestel", "Mudanya", "Mustafakemalpaşa", "Nilüfer", "Orhaneli", "Orhangazi", "Osmangazi", "Yenişehir", "Yıldırım"}},
+            {"Çanakkale", new List<string>{"Ayvacık", "Bayramiç", "Biga", "Bozcaada", "Çan", "Eceabat", "Ezine", "Gelibolu", "Gökçeada", "Lapseki", "Merkez", "Yenice"}},
+            {"Çankırı", new List<string>{"Atkaracalar", "Bayramören", "Çerkeş", "Eldivan", "Ilgaz", "Kızılırmak", "Korgun", "Kurşunlu", "Merkez", "Orta", "Şabanözü", "Yapraklı"}},
+            {"Çorum", new List<string>{"Alaca", "Bayat", "Boğazkale", "Dodurga", "İskilip", "Kargı", "Laçin", "Mecitözü", "Merkez", "Oğuzlar", "Ortaköy", "Osmancık", "Sungurlu", "Uğurludağ"}},
+            {"Denizli", new List<string>{"Acıpayam", "Babadağ", "Baklan", "Bekilli", "Beyağaç", "Bozkurt", "Buldan", "Çal", "Çameli", "Çardak", "Çivril", "Güney", "Honaz", "Kale", "Merkezefendi", "Pamukkale", "Sarayköy", "Serinhisar", "Tavas"}},
+            {"Diyarbakır", new List<string>{"Bağlar", "Bismil", "Çermik", "Çınar", "Çüngüş", "Dicle", "Eğil", "Ergani", "Hani", "Hazro", "Kayapınar", "Kocaköy", "Kulp", "Lice", "Silvan", "Sur", "Yenişehir"}},
+            {"Düzce", new List<string>{"Akçakoca", "Çilimli", "Cumayeri", "Gölyaka", "Gümüşova", "Kaynaşlı", "Merkez", "Yığılca"}},
+            {"Edirne", new List<string>{"Enez", "Havsa", "İpsala", "Keşan", "Lalapaşa", "Meriç", "Merkez", "Süloğlu", "Uzunköprü"}},
+            {"Elazığ", new List<string>{"Ağın", "Alacakaya", "Arıcak", "Baskil", "Karakoçan", "Keban", "Kovancılar", "Maden", "Merkez", "Palu", "Sivrice"}},
+            {"Erzincan", new List<string>{"Çayırlı", "İliç", "Kemah", "Kemaliye", "Merkez", "Otlukbeli", "Refahiye", "Tercan", "Üzümlü"}},
+            {"Erzurum", new List<string>{"Aşkale", "Aziziye", "Çat", "Hınıs", "Horasan", "İspir", "Karaçoban", "Karayazı", "Köprüköy", "Narman", "Oltu", "Olur", "Palandöken", "Pasinler", "Pazaryolu", "Şenkaya", "Tekman", "Tortum", "Uzundere", "Yakutiye"}},
+            {"Eskişehir", new List<string>{"Alpu", "Beylikova", "Çifteler", "Günyüzü", "Han", "İnönü", "Mahmudiye", "Mihalgazi", "Mihalıççık", "Odunpazarı", "Sarıcakaya", "Seyitgazi", "Sivrihisar", "Tepebaşı"}},
+            {"Gaziantep", new List<string>{"Araban", "İslahiye", "Karkamış", "Nizip", "Nurdağı", "Oğuzeli", "Şahinbey", "Şehitkamil", "Yavuzeli"}},
+            {"Giresun", new List<string>{"Alucra", "Bulancak", "Çamoluk", "Çanakçı", "Dereli", "Doğankent", "Espiye", "Eynesil", "Görele", "Güce", "Keşap", "Merkez", "Piraziz", "Şebinkarahisar", "Tirebolu", "Yağlıdere"}},
+            {"Gümüşhane", new List<string>{"Kelkit", "Köse", "Kürtün", "Merkez", "Şiran", "Torul"}},
+            {"Hakkâri", new List<string>{"Çukurca", "Derecik", "Merkez", "Şemdinli", "Yüksekova"}},
+            {"Hatay", new List<string>{"Altınözü", "Antakya", "Arsuz", "Belen", "Defne", "Dörtyol", "Erzin", "Hassa", "İskenderun", "Kırıkhan", "Kumlu", "Payas", "Reyhanlı", "Samandağ", "Yayladağı"}},
+            {"Iğdır", new List<string>{"Aralık", "Karakoyunlu", "Merkez", "Tuzluca"}},
+            {"Isparta", new List<string>{"Aksu", "Atabey", "Eğirdir", "Gelendost", "Gönen", "Keçiborlu", "Merkez", "Şarkikaraağaç", "Senirkent", "Sütçüler", "Uluborlu", "Yalvaç", "Yenişarbademli"}},
+            {"İstanbul", new List<string>{"Adalar", "Arnavutköy", "Ataşehir", "Avcılar", "Bağcılar", "Bahçelievler", "Bakırköy", "Başakşehir", "Bayrampaşa", "Beşiktaş", "Beykoz", "Beylikdüzü", "Beyoğlu", "Büyükçekmece", "Çatalca", "Çekmeköy", "Esenler", "Esenyurt", "Eyüpsultan", "Fatih", "Gaziosmanpaşa", "Güngören", "Kadıköy", "Kağıthane", "Kartal", "Küçükçekmece", "Maltepe", "Pendik", "Sancaktepe", "Sarıyer", "Şile", "Silivri", "Şişli", "Sultanbeyli", "Sultangazi", "Tuzla", "Ümraniye", "Üsküdar", "Zeytinburnu"}},
+            {"İzmir", new List<string>{"Aliağa", "Balçova", "Bayındır", "Bayraklı", "Bergama", "Beydağ", "Bornova", "Buca", "Çeşme", "Çiğli", "Dikili", "Foça", "Gaziemir", "Güzelbahçe", "Karabağlar", "Karaburun", "Karşıyaka", "Kemalpaşa", "Kınık", "Kiraz", "Konak", "Menderes", "Menemen", "Narlıdere", "Ödemiş", "Seferihisar", "Selçuk", "Tire", "Torbalı", "Urla"}},
+            {"Kahramanmaraş", new List<string>{"Afşin", "Andırın", "Çağlayancerit", "Dulkadiroğlu", "Ekinözü", "Elbistan", "Göksun", "Nurhak", "Onikişubat", "Pazarcık", "Türkoğlu"}},
+            {"Karabük", new List<string>{"Eflani", "Eskipazar", "Merkez", "Ovacık", "Safranbolu", "Yenice"}},
+            {"Karaman", new List<string>{"Ayrancı", "Başyayla", "Ermenek", "Kazımkarabekir", "Merkez", "Sarıveliler"}},
+            {"Kars", new List<string>{"Akyaka", "Arpaçay", "Digor", "Kağızman", "Merkez", "Sarıkamış", "Selim", "Susuz"}},
+            {"Kastamonu", new List<string>{"Abana", "Ağlı", "Araç", "Azdavay", "Bozkurt", "Çatalzeytin", "Cide", "Daday", "Devrekani", "Doğanyurt", "Hanönü", "İhsangazi", "İnebolu", "Küre", "Merkez", "Pınarbaşı", "Şenpazar", "Seydiler", "Taşköprü", "Tosya"}},
+            {"Kayseri", new List<string>{"Akkışla", "Bünyan", "Develi", "Felahiye", "Hacılar", "İncesu", "Kocasinan", "Melikgazi", "Özvatan", "Pınarbaşı", "Sarıoğlan", "Sarız", "Talas", "Tomarza", "Yahyalı", "Yeşilhisar"}},
+            {"Kırıkkale", new List<string>{"Bahşılı", "Balışeyh", "Çelebi", "Delice", "Karakeçili", "Keskin", "Merkez", "Sulakyurt", "Yahşihan"}},
+            {"Kırklareli", new List<string>{"Babaeski", "Demirköy", "Kofçaz", "Lüleburgaz", "Merkez", "Pehlivanköy", "Pınarhisar", "Vize"}},
+            {"Kırşehir", new List<string>{"Akçakent", "Akpınar", "Boztepe", "Çiçekdağı", "Kaman", "Merkez", "Mucur"}},
+            {"Kilis", new List<string>{"Elbeyli", "Merkez", "Musabeyli", "Polateli"}},
+            {"Kocaeli", new List<string>{"Başiskele", "Çayırova", "Darıca", "Derince", "Dilovası", "Gebze", "Gölcük", "İzmit", "Kandıra", "Karamürsel", "Kartepe", "Körfez"}},
+            {"Konya", new List<string>{"Ahırlı", "Akören", "Akşehir", "Altınekin", "Beyşehir", "Bozkır", "Çeltik", "Cihanbeyli", "Çumra", "Derbent", "Derebucak", "Doğanhisar", "Emirgazi", "Ereğli", "Güneysınır", "Hadim", "Halkapınar", "Hüyük", "Ilgın", "Kadınhanı", "Karapınar", "Karatay", "Kulu", "Meram", "Sarayönü", "Selçuklu", "Seydişehir", "Taşkent", "Tuzlukçu", "Yalıhüyük", "Yunak"}},
+            {"Kütahya", new List<string>{"Altıntaş", "Aslanapa", "Çavdarhisar", "Domaniç", "Dumlupınar", "Emet", "Gediz", "Hisarcık", "Merkez", "Pazarlar", "Şaphane", "Simav", "Tavşanlı"}},
+            {"Malatya", new List<string>{"Akçadağ", "Arapgir", "Arguvan", "Battalgazi", "Darende", "Doğanşehir", "Doğanyol", "Hekimhan", "Kale", "Kuluncak", "Pütürge", "Yazıhan", "Yeşilyurt"}},
+            {"Manisa", new List<string>{"Ahmetli", "Akhisar", "Alaşehir", "Demirci", "Gölmarmara", "Gördes", "Kırkağaç", "Köprübaşı", "Kula", "Salihli", "Sarıgöl", "Saruhanlı", "Şehzadeler", "Selendi", "Soma", "Turgutlu", "Yunusemre"}},
+            {"Mardin", new List<string>{"Artuklu", "Dargeçit", "Derik", "Kızıltepe", "Mazıdağı", "Midyat", "Nusaybin", "Ömerli", "Savur", "Yeşilli"}},
+            {"Mersin", new List<string>{"Akdeniz", "Anamur", "Aydıncık", "Bozyazı", "Çamlıyayla", "Erdemli", "Gülnar", "Mezitli", "Mut", "Silifke", "Tarsus", "Toroslar", "Yenişehir"}},
+            {"Muğla", new List<string>{"Bodrum", "Dalaman", "Datça", "Fethiye", "Kavaklıdere", "Köyceğiz", "Marmaris", "Menteşe", "Milas", "Ortaca", "Seydikemer", "Ula", "Yatağan"}},
+            {"Muş", new List<string>{"Bulanık", "Hasköy", "Korkut", "Malazgirt", "Merkez", "Varto"}},
+            {"Nevşehir", new List<string>{"Acıgöl", "Avanos", "Derinkuyu", "Gülşehir", "Hacıbektaş", "Kozaklı", "Merkez", "Ürgüp"}},
+            {"Niğde", new List<string>{"Altunhisar", "Bor", "Çamardı", "Çiftlik", "Merkez", "Ulukışla"}},
+            {"Ordu", new List<string>{"Akkuş", "Altınordu", "Aybastı", "Çamaş", "Çatalpınar", "Çaybaşı", "Fatsa", "Gölköy", "Gülyalı", "Gürgentepe", "İkizce", "Kabadüz", "Kabataş", "Korgan", "Kumru", "Mesudiye", "Perşembe", "Ulubey", "Ünye"}},
+            {"Osmaniye", new List<string>{"Bahçe", "Düziçi", "Hasanbeyli", "Kadirli", "Merkez", "Sumbas", "Toprakkale"}},
+            {"Rize", new List<string>{"Ardeşen", "Çamlıhemşin", "Çayeli", "Derepazarı", "Fındıklı", "Güneysu", "Hemşin", "İkizdere", "İyidere", "Kalkandere", "Merkez", "Pazar"}},
+            {"Sakarya", new List<string>{"Adapazarı", "Akyazı", "Arifiye", "Erenler", "Ferizli", "Geyve", "Hendek", "Karapürçek", "Karasu", "Kaynarca", "Kocaali", "Pamukova", "Sapanca", "Serdivan", "Söğütlü", "Taraklı"}},
+            {"Samsun", new List<string>{"19 Mayıs", "Alaçam", "Asarcık", "Atakum", "Ayvacık", "Bafra", "Canik", "Çarşamba", "Havza", "İlkadım", "Kavak", "Ladik", "Samsun", "Salıpazarı", "Tekkeköy", "Terme", "Vezirköprü", "Yakakent"}},
+            {"Şanlıurfa", new List<string>{"Akçakale", "Birecik", "Bozova", "Ceylanpınar", "Eyyübiye", "Halfeti", "Haliliye", "Harran", "Hilvan", "Karaköprü", "Siverek", "Suruç", "Viranşehir"}},
+            {"Siirt", new List<string>{"Baykan", "Eruh", "Kurtalan", "Merkez", "Pervari", "Şirvan", "Tillo"}},
+            {"Sinop", new List<string>{"Ayancık", "Boyabat", "Dikmen", "Durağan", "Erfelek", "Gerze", "Merkez", "Saraydüzü", "Türkeli"}},
+            {"Şırnak", new List<string>{"Beytüşşebap", "Cizre", "Güçlükonak", "İdil", "Merkez", "Silopi", "Uludere"}},
+            {"Sivas", new List<string>{"Akıncılar", "Altınyayla", "Divriği", "Doğanşar", "Gemerek", "Gölova", "Gürün", "Hafik", "İmranlı", "Kangal", "Koyulhisar", "Merkez", "Şarkışla", "Suşehri", "Ulaş", "Yıldızeli", "Zara"}},
+            {"Tekirdağ", new List<string>{"Çerkezköy", "Çorlu", "Ergene", "Hayrabolu", "Kapaklı", "Malkara", "Marmaraereğlisi", "Muratlı", "Saray", "Şarköy", "Süleymanpaşa"}},
+            {"Tokat", new List<string>{"Almus", "Artova", "Başçiftlik", "Erbaa", "Merkez", "Niksar", "Pazar", "Reşadiye", "Sulusaray", "Turhal", "Yeşilyurt", "Zile"}},
+            {"Trabzon", new List<string>{"Akçaabat", "Araklı", "Arsin", "Beşikdüzü", "Çarşıbaşı", "Çaykara", "Dernekpazarı", "Düzköy", "Hayrat", "Köprübaşı", "Maçka", "Of", "Ortahisar", "Şalpazarı", "Sürmene", "Tonya", "Vakfıkebir", "Yomra"}},
+            {"Tunceli", new List<string>{"Çemişgezek", "Hozat", "Mazgirt", "Merkez", "Nazımiye", "Ovacık", "Pertek", "Pülümür"}},
+            {"Uşak", new List<string>{"Banaz", "Eşme", "Karahallı", "Merkez", "Sivaslı", "Ulubey"}},
+            {"Van", new List<string>{"Bahçesaray", "Başkale", "Çaldıran", "Çatak", "Edremit", "Erciş", "Gevaş", "Gürpınar", "İpekyolu", "Muradiye", "Özalp", "Saray", "Tuşba"}},
+            {"Yalova", new List<string>{"Altınova", "Armutlu", "Çınarcık", "Çiftlikköy", "Merkez", "Termal"}},
+            {"Yozgat", new List<string>{"Akdağmadeni", "Aydıncık", "Boğazlıyan", "Çandır", "Çayıralan", "Çekerek", "Kadışehri", "Merkez", "Saraykent", "Sarıkaya", "Şefaatli", "Sorgun", "Yenifakılı", "Yerköy"}},
+            {"Zonguldak", new List<string>{"Alaplı", "Çaycuma", "Devrek", "Karadeniz Ereğli", "Gökçebey", "Kilimli", "Kozlu", "Merkez"}}
         };
+
         #endregion
 
         #region Ekleme ve güncelleme işlemlerinde temizleme butonlarına tıklandığında dönecek olan methodlar
@@ -214,6 +219,12 @@ namespace WindowsFormsApp1
             addOgrenciSinifi_combo.SelectedItem = null;
             addOgrenciTc_txt.Text = string.Empty;
             addOgrenciTelNo_txt.Text = string.Empty;
+            addOgrenciAnneTelNo_txt.Text = string.Empty;
+            addOgrenciAnneAdi_txt.Text = string.Empty;
+            addOgrenciBabaAdi_txt.Text = string.Empty;
+            addOgrenciBabaTelNo_txt.Text = string.Empty;
+            addOgrenciUsePhoneAnne_radio.Checked = false;
+            addOgrenciUsePhoneBaba_radio.Checked = false;
             addOgrenciAlanAdi_txt.SelectedItem = null;
             addOgrGrupA_radio.Checked = false;
             addOgrGrupB_radio.Checked = false;
@@ -245,6 +256,11 @@ namespace WindowsFormsApp1
             addIlce_combo.SelectedItem = null;
             addTamAdres_richtext.Text = string.Empty;
             addIsletmeYetkilisi_txt.Text = string.Empty;
+            addUOAdi_txt.Text = string.Empty;
+            addUOSoyadi_txt.Text = string.Empty;
+            addUODogumTarihi_datetime.Value = DateTime.Now;
+            addIsletmeSicilNo_txt.Text = string.Empty;
+            addIsletmeIbanNo_txt.Text = string.Empty;
             addUstaOgreticilikVarmiVVar_radio.Checked = false;
             addUstaOgreticilikVarmiYok_radio.Checked = true;
             addBolum_combo.SelectedItem = null;
@@ -260,6 +276,12 @@ namespace WindowsFormsApp1
             upOgrenciSinifi_combo.SelectedItem = null;
             upOgrenciTc_txt.Text = string.Empty;
             upOgrenciTelNo_txt.Text = string.Empty;
+            upOgrenciAnneAdi_txt.Text = string.Empty;
+            upOgrenciAnneTelNo_txt.Text = string.Empty;
+            upOgrenciBabaAdi_txt.Text = string.Empty;
+            upOgrenciBabaTelNo_txt.Text = string.Empty;
+            upOgrenciUsePhoneAnne_radio.Checked = false;
+            upOgrenciUsePhoneBaba_radio.Checked = false;
             upOgrenciAlanAdi_txt.SelectedItem = null;
             upOgrGrupA_radio.Checked = false;
             upOgrGrupB_radio.Checked = false;
@@ -371,6 +393,8 @@ namespace WindowsFormsApp1
 
             deleteIsletmeAdi_combo.Items.Clear();
 
+            ustaogreticiGroupBox.Enabled = false;
+            upUstaOgretici_groupBox.Enabled = false;
 
             IsletmeIsimleriListeleMethod();
             OgretmenIsimleriListeleMethod();
@@ -539,8 +563,20 @@ namespace WindowsFormsApp1
                 csOgrenciClass.OgrencininFirmaAdi = addOgrenciFirmaAdi_combo.SelectedItem?.ToString() ?? "";
                 csOgrenciClass.OgrenciKoordinatorOgretmeni = addOgrenciKordinatorOgretmen_combo.SelectedItem?.ToString() ?? "";
                 csOgrenciClass.OgreciTelNo = addOgrenciTelNo_txt.Text;
+                csOgrenciClass.OgrenciAnneAdi = addOgrenciAnneAdi_txt.Text;
+                csOgrenciClass.OgrenciAnneTelNo = addOgrenciAnneTelNo_txt.Text;
+                csOgrenciClass.OgrenciBabaAdi = addOgrenciBabaAdi_txt.Text;
+                csOgrenciClass.OgrenciBabaTelNo = addOgrenciBabaTelNo_txt.Text;
+                if (addOgrenciUsePhoneAnne_radio.Checked)
+                {
+                    csOgrenciClass.HowUsePhone = "Anne";
+                }
+                else if (addOgrenciUsePhoneBaba_radio.Checked)
+                {
+                    csOgrenciClass.HowUsePhone = "Baba";
+                }
                 csOgrenciClass.OgrenciTCKimlikNo = addOgrenciTc_txt.Text;
-                csOgrenciClass.OgrenciAlanAdi = addOgrenciAlanAdi_txt.Text; // TextBox ise Text alınır
+                csOgrenciClass.OgrenciAlanAdi = addOgrenciAlanAdi_txt.Text;
                 csOgrenciClass.OgrenciDalAdi = addOgrenciDalAdi_combo.SelectedItem?.ToString() ?? "";
                 csOgrenciClass.OgrenciStajDonemi = StajDonemi;
 
@@ -632,8 +668,29 @@ namespace WindowsFormsApp1
                 upOgrenciSinifi_combo.SelectedItem = hedef.OgrenciSinif;
                 upOgrenciTc_txt.Text = hedef.OgrenciTCKimlikNo;
                 upOgrenciTelNo_txt.Text = hedef.OgreciTelNo;
+                upOgrenciAnneAdi_txt.Text = hedef.OgrenciAnneAdi;
+                upOgrenciAnneTelNo_txt.Text = hedef.OgrenciAnneTelNo;
+                upOgrenciBabaAdi_txt.Text = hedef.OgrenciBabaAdi;
+                upOgrenciBabaTelNo_txt.Text = hedef.OgrenciBabaTelNo;
                 upOgrenciAlanAdi_txt.SelectedItem = hedef.OgrenciAlanAdi;
                 upOgrenciDalAdi_combo.SelectedItem = hedef.OgrenciDalAdi;
+
+                if (hedef.HowUsePhone == "Anne")
+                {
+                    upOgrenciUsePhoneAnne_radio.Checked = true;
+                    upOgrenciUsePhoneBaba_radio.Checked = false;
+                }
+                else if (hedef.HowUsePhone == "Baba")
+                {
+                    upOgrenciUsePhoneAnne_radio.Checked = false;
+                    upOgrenciUsePhoneBaba_radio.Checked = true;
+                }
+                else
+                {
+                    upOgrenciUsePhoneAnne_radio.Checked = false;
+                    upOgrenciUsePhoneBaba_radio.Checked = false;
+                }
+
                 if (hedef.OgrenciGrup == "A")
                 {
                     upOgrGrupA_radio.Checked = true;
@@ -779,6 +836,22 @@ namespace WindowsFormsApp1
                 hedef.OgrenciSinif = upOgrenciSinifi_combo.SelectedItem?.ToString() ?? "";
                 hedef.OgrenciTCKimlikNo = upOgrenciTc_txt.Text;
                 hedef.OgreciTelNo = upOgrenciTelNo_txt.Text;
+                hedef.OgrenciAnneAdi = upOgrenciAnneAdi_txt.Text;
+                hedef.OgrenciAnneTelNo = upOgrenciAnneTelNo_txt.Text;
+                hedef.OgrenciBabaAdi = upOgrenciBabaAdi_txt.Text;
+                hedef.OgrenciBabaTelNo = upOgrenciBabaTelNo_txt.Text;
+                if (upOgrenciUsePhoneAnne_radio.Checked)
+                {
+                    hedef.HowUsePhone = "Anne";
+                }
+                else if (upOgrenciUsePhoneBaba_radio.Checked)
+                {
+                    hedef.HowUsePhone = "Baba";
+                }
+                else
+                {
+                    hedef.HowUsePhone = "None"; // Hiçbiri seçilmemişse
+                }
                 hedef.OgrenciAlanAdi = upOgrenciAlanAdi_txt.SelectedItem?.ToString() ?? "";
                 hedef.OgrenciDalAdi = upOgrenciDalAdi_combo.SelectedItem?.ToString() ?? "";
 
@@ -806,7 +879,7 @@ namespace WindowsFormsApp1
                     string savePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyPictures), "StajOtomasyon", "OgrenciFotograflari", upOgrenciNo_txt.Text + ".jpg");
                     File.Copy(selectedImagePath, savePath, true);
                 }
-                
+
 
                 // 9. Veritabanı Güncelleme
                 ConnectToDatabase.SaveChanges();
@@ -1202,7 +1275,12 @@ namespace WindowsFormsApp1
 
             try
             {
-                // 5. Yeni Nesne Oluşturma
+                if (string.IsNullOrWhiteSpace(addIsletmeIbanNo_txt.Text) || string.IsNullOrWhiteSpace(addIsletmeSicilNo_txt.Text))
+                {
+                    MessageBox.Show("IBAN ve Sicil No boş bırakılamaz!");
+                    return;
+                }
+
                 var yeniIsletme = new IsletmeClass
                 {
                     IsletmeAd = addIsletmeAdi_txt.Text.Trim(),
@@ -1210,20 +1288,23 @@ namespace WindowsFormsApp1
                     IsletmeAdresIlce = addIlce_combo.SelectedItem?.ToString() ?? "",
                     IsletmeTamAdres = addTamAdres_richtext.Text.Trim(),
                     IsletmeYetkilisi = addIsletmeYetkilisi_txt.Text.Trim(),
+                    IsletmeIbanNo = addIsletmeIbanNo_txt.Text.Trim(),
+                    IsletmeSicilNo = addIsletmeSicilNo_txt.Text.Trim(),
                     IsletmeTelNo = addIsletmeTelNo_txt.Text.Trim(),
                     IsletmeUstaOgreticilikVarmiYokmu = addUstaOgreticilikVarmiVVar_radio.Checked ? "Var" : "Yok",
                     IsletmeBolum = addBolum_combo.SelectedItem?.ToString() ?? "",
-                    IsletmeDal = addDal_combo.SelectedItem?.ToString() ?? ""
+                    IsletmeDal = addDal_combo.SelectedItem?.ToString() ?? "",
+                    IsletmeUstaOgreticiAdi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUOAdi_txt.Text.Trim() : null,
+                    IsletmeUstaOgreticiSoyadi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUOSoyadi_txt.Text.Trim() : null,
+                    IsletmeUstaOgreticiDogumTarihi = addUstaOgreticilikVarmiVVar_radio.Checked ? addUODogumTarihi_datetime.Value : DateTime.Now
                 };
 
-                // 6. Benzersizlik Kontrolü
                 if (ConnectToDatabase.IsletmeTablo.Any(i => i.IsletmeAd == yeniIsletme.IsletmeAd))
                 {
                     MessageBox.Show("Bu işletme adı zaten kayıtlı!");
                     return;
                 }
 
-                // 7. Veritabanı İşlemleri
                 ConnectToDatabase.IsletmeTablo.Add(yeniIsletme);
                 ConnectToDatabase.SaveChanges();
                 MessageBox.Show("İşletme başarıyla eklendi.");
@@ -1255,8 +1336,14 @@ namespace WindowsFormsApp1
                 upTamAdres_richtext.Text = hedef.IsletmeTamAdres;
                 upIsletmeYetkilisi_txt.Text = hedef.IsletmeYetkilisi;
                 upIsletmeTelNo_txt.Text = hedef.IsletmeTelNo;
+                upIsletmeSicilNo_txt.Text = hedef.IsletmeSicilNo;
+                upIsletmeIbanNo_txt.Text = hedef.IsletmeIbanNo;
                 if (hedef.IsletmeUstaOgreticilikVarmiYokmu == "Var")
                 {
+                    upUstaOgretici_groupBox.Enabled = true;
+                    upUOAdi_txt.Text = hedef.IsletmeUstaOgreticiAdi;
+                    upUOSoyadi_txt.Text = hedef.IsletmeUstaOgreticiSoyadi;
+                    upUODogumTarihi_datetime.Value = hedef.IsletmeUstaOgreticiDogumTarihi;
                     upUstaOgreticilikVarmiVar_radio.Checked = true;
                     upUstaOgreticilikVarmiYok_radio.Checked = false;
                 }
@@ -1331,6 +1418,11 @@ namespace WindowsFormsApp1
                 hedef.IsletmeYetkilisi = upIsletmeYetkilisi_txt.Text.Trim();
                 hedef.IsletmeTelNo = upIsletmeTelNo_txt.Text.Trim();
                 hedef.IsletmeUstaOgreticilikVarmiYokmu = upUstaOgreticilikVarmiVar_radio.Checked ? "Var" : "Yok";
+                hedef.IsletmeIbanNo = upIsletmeIbanNo_txt.Text.Trim();
+                hedef.IsletmeSicilNo = upIsletmeSicilNo_txt.Text.Trim();
+                hedef.IsletmeUstaOgreticiAdi = upUstaOgreticilikVarmiVar_radio.Checked ? upUOAdi_txt.Text.Trim() : null;
+                hedef.IsletmeUstaOgreticiSoyadi = upUstaOgreticilikVarmiVar_radio.Checked ? upUOSoyadi_txt.Text.Trim() : null;
+                hedef.IsletmeUstaOgreticiDogumTarihi = upUstaOgreticilikVarmiVar_radio.Checked ? upUODogumTarihi_datetime.Value : DateTime.Now;
                 hedef.IsletmeBolum = upBolum_combo.SelectedItem?.ToString() ?? "";
                 hedef.IsletmeDal = upDal_combo.SelectedItem?.ToString() ?? "";
 
@@ -1701,6 +1793,12 @@ namespace WindowsFormsApp1
             settingsColonNameOgrenciStajBitisTarihi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciStajBitistarihi");
             settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciKoordinatorOgretmeni");
             settingsColonNameOgrenciStajDonemi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciStajDonemi");
+            settingsColonNameOgrenciAnneAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciAnneAdi");
+            settingsColonNameOgrenciAnneTelefonu_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciAnneTelNo");
+            settingsColonNameOgrenciBabaAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciBabaAdi");
+            settingsColonNameOgrenciBabaTelefonu_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciBabaTelNo");
+            settingsColonNameOgrenciHowToUSE_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("HowUsePhone");
+
             settingsColonNameOgretmenAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgretmen.Contains("OgretmenAd");
             settingsColonNameOgretmenSoyadi_checkbox.Checked = hedef.SorguOzellestirmeleriOgretmen.Contains("OgretmenSoyad");
             settingsColonNameOgretmenIsletmeGunu1_checkbox.Checked = hedef.SorguOzellestirmeleriOgretmen.Contains("OgretmenIsletmeGunu1");
@@ -1708,6 +1806,7 @@ namespace WindowsFormsApp1
             settingsColonNameOgretmenAlanAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgretmen.Contains("OgretmenAlanAdi");
             settingsColonNameOgretmenDalAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgretmen.Contains("OgretmenDalAdi");
             settingsColonNameOgretmenTelefonNumarasi_checkbox.Checked = hedef.SorguOzellestirmeleriOgretmen.Contains("OgretmenTelNo");
+
             settingsColonNameIsletmeAd_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeAd");
             settingsColonNameIsletmeAdresIl_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeAdresIl");
             settingsColonNameIsletmeAdresIlce_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeAdresIlce");
@@ -1717,6 +1816,11 @@ namespace WindowsFormsApp1
             settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticilikVarmiYokmu");
             settingsColonNameIsletmeBolum_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeBolum");
             settingsColonNameIsletmeDal_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeDal");
+            settingsColonNameIsletmeUOAdi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiAdi");
+            settingsColonNameIsletmeUOSoyadi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiSoyadi");
+            settingsColonNameIsletmeUODT_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiDogumTarihi");
+            settingsColonNameIsletmeIbanNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeIbanNo");
+            settingsColonNameIsletmeSicilNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeSicilNo");
         }
         public void ZorunluAyarlar()
         {
@@ -1742,7 +1846,7 @@ namespace WindowsFormsApp1
             string yil = settingsFirstRow.EgitimOgretimYili.Trim(); // Boşlukları temizle
 
             // Yılı "-" karakterine göre böl
-            string[] yillar = yil.Split('-');
+            string[] yillar = yil.Split('/');
 
             // İlk ve ikinci yılı ilgili textbox'lara atama
             if (yillar[0] != null && yillar[1] != null)
@@ -1977,6 +2081,21 @@ namespace WindowsFormsApp1
 
                     ogrenciListDatagridView.Columns["OgrenciStajDonemi"].Visible = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciStajDonemi");
                     ogrenciFiltreleOgrenciStajDonemi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciStajDonemi");
+
+                    ogrenciListDatagridView.Columns["OgrenciAnneAdi"].Visible = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciAnneAdi");
+                    ogrenciFiltreleOgrenciAnneAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciAnneAdi");
+
+                    ogrenciListDatagridView.Columns["OgrenciAnneTelNo"].Visible = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciAnneTelNo");
+                    ogrenciFiltreleOgrenciAnneTel_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciAnneTelNo");
+
+                    ogrenciListDatagridView.Columns["OgrenciBabaAdi"].Visible = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciBabaAdi");
+                    ogrenciFiltreleOgrenciBabaAdi_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciBabaAdi");
+
+                    ogrenciListDatagridView.Columns["OgrenciBabaTelNo"].Visible = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciBabaTelNo");
+                    ogrenciFiltreleOgrenciBabaTel_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("OgrenciBabaTelNo");
+
+                    ogrenciListDatagridView.Columns["HowUsePhone"].Visible = hedef.SorguOzellestirmeleriOgrenci.Contains("HowUsePhone");
+                    ogrenciFiltreleOgrenciHowToUSE_checkbox.Checked = hedef.SorguOzellestirmeleriOgrenci.Contains("HowUsePhone");
                 }
                 catch (Exception ex)
                 {
@@ -2049,6 +2168,21 @@ namespace WindowsFormsApp1
 
                     IsletmeListDatagridView.Columns["IsletmeDal"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeDal");
                     IsletmeDal_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeDal");
+
+                    IsletmeListDatagridView.Columns["IsletmeIbanNo"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeIbanNo");
+                    IsletmeIbanNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeIbanNo");
+
+                    IsletmeListDatagridView.Columns["IsletmeSicilNo"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeSicilNo");
+                    IsletmeSicilNo_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeSicilNo");
+
+                    IsletmeListDatagridView.Columns["IsletmeUstaOgreticiAdi"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiAdi");
+                    IsletmeUOAdi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiAdi");
+
+                    IsletmeListDatagridView.Columns["IsletmeUstaOgreticiSoyadi"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiSoyadi");
+                    IsletmeUOSoyadi_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiSoyadi");
+
+                    IsletmeListDatagridView.Columns["IsletmeUstaOgreticiDogumTarihi"].Visible = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiDogumTarihi");
+                    IsletmeUODT_checkbox.Checked = hedef.SorguOzellestirmeleriIsletme.Contains("IsletmeUstaOgreticiDogumTarihi");
                 }
                 catch (Exception ex)
                 {
@@ -3833,6 +3967,16 @@ namespace WindowsFormsApp1
                 selectedTagsOgrenci.Add(settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Tag?.ToString());
             if (settingsColonNameOgrenciStajDonemi_checkbox.Checked)
                 selectedTagsOgrenci.Add(settingsColonNameOgrenciStajDonemi_checkbox.Tag?.ToString());
+            if (settingsColonNameOgrenciAnneAdi_checkbox.Checked)
+                selectedTagsOgrenci.Add(settingsColonNameOgrenciAnneAdi_checkbox.Tag?.ToString());
+            if (settingsColonNameOgrenciAnneTelefonu_checkbox.Checked)
+                selectedTagsOgrenci.Add(settingsColonNameOgrenciAnneTelefonu_checkbox.Tag?.ToString());
+            if (settingsColonNameOgrenciBabaAdi_checkbox.Checked)
+                selectedTagsOgrenci.Add(settingsColonNameOgrenciBabaAdi_checkbox.Tag?.ToString());
+            if (settingsColonNameOgrenciBabaTelefonu_checkbox.Checked)
+                selectedTagsOgrenci.Add(settingsColonNameOgrenciBabaTelefonu_checkbox.Tag?.ToString());
+            if (settingsColonNameOgrenciHowToUSE_checkbox.Checked)
+                selectedTagsOgrenci.Add(settingsColonNameOgrenciHowToUSE_checkbox.Tag?.ToString());
 
             string fakeJsonOgrenci = "[" + string.Join("],[", selectedTagsOgrenci) + "]";
 
@@ -3877,6 +4021,16 @@ namespace WindowsFormsApp1
                 selectedTagsIsletme.Add(settingsColonNameIsletmeBolum_checkbox.Tag?.ToString());
             if (settingsColonNameIsletmeDal_checkbox.Checked)
                 selectedTagsIsletme.Add(settingsColonNameIsletmeDal_checkbox.Tag?.ToString());
+            if (settingsColonNameIsletmeSicilNo_checkbox.Checked)
+                selectedTagsIsletme.Add(settingsColonNameIsletmeSicilNo_checkbox.Tag?.ToString());
+            if (settingsColonNameIsletmeIbanNo_checkbox.Checked)
+                selectedTagsIsletme.Add(settingsColonNameIsletmeIbanNo_checkbox.Tag?.ToString());
+            if (settingsColonNameIsletmeUOAdi_checkbox.Checked)
+                selectedTagsIsletme.Add(settingsColonNameIsletmeUOAdi_checkbox.Tag?.ToString());
+            if (settingsColonNameIsletmeUOSoyadi_checkbox.Checked)
+                selectedTagsIsletme.Add(settingsColonNameIsletmeUOSoyadi_checkbox.Tag?.ToString());
+            if (settingsColonNameIsletmeUODT_checkbox.Checked)
+                selectedTagsIsletme.Add(settingsColonNameIsletmeUODT_checkbox.Tag?.ToString());
 
             string fakeJsonIsletme = "[" + string.Join("],[", selectedTagsIsletme) + "]";
 
@@ -5388,12 +5542,18 @@ namespace WindowsFormsApp1
         {
             FormatPhoneNumber(sender, e);
         }
-
+        private void addOgrenciAnneTelNo_txt_TextChanged(object sender, EventArgs e)
+        {
+            FormatPhoneNumber(sender, e);
+        }
+        private void addOgrenciBabaTelNo_txt_TextChanged(object sender, EventArgs e)
+        {
+            FormatPhoneNumber(sender, e);
+        }
         private void upOgrenciTelNo_txt_TextChanged(object sender, EventArgs e)
         {
             FormatPhoneNumber(sender, e);
         }
-
         private void addOgretmenTelNo_txt_TextChanged(object sender, EventArgs e)
         {
             FormatPhoneNumber(sender, e);
@@ -5553,7 +5713,7 @@ namespace WindowsFormsApp1
 
             // *** 2. QR Kod Oluşturma ve Veritabanı Etkileşiminin Koşullu Yönetimi ***
             string prospectiveQrContent = null;
-            QRClass qrRecordToUse = null; // Kullanılacak QR kaydı (mevcut veya yeni oluşturulacak)
+            QRClass qrRecordToUse = null;
             Bitmap qrCodeImage = null;
             bool shouldAddQrToExcel = true;
 
@@ -5563,21 +5723,17 @@ namespace WindowsFormsApp1
             }
             else
             {
-                // Oluşturulacak QR kod içeriği (aynı gün basılsa bile aynı mantıksal QR kodu üretir)
                 prospectiveQrContent = GenerateFullQrCodeContent(ilgiliOgretmen.id, belgeKoduChar, DateTime.Now, ilgiliEntityId);
-
-                // Veritabanında tam olarak bu QR kod stringine sahip bir kayıt var mı?
                 var existingQrRecord = ConnectToDatabase.QRTablo.FirstOrDefault(q => q.QRCode == prospectiveQrContent);
 
                 if (existingQrRecord != null)
                 {
-                    // QR kodu veritabanında zaten mevcut. Kullanıcıya sor.
-                    DateTime? creationDate = ParseDateFromQrCode(existingQrRecord.QRCode); // Tarihi QR kod stringinden ayrıştır
+                    DateTime? creationDate = ParseDateFromQrCode(existingQrRecord.QRCode);
                     string dateInfo = creationDate.HasValue ? $"Şu tarihte oluşturulmuş: {creationDate.Value:dd.MM.yyyy HH:mm:ss}\n\n" : "";
 
                     string confirmationMessage =
                         $"Bu belgeye ait QR kodu veritabanında zaten mevcut.\n" +
-                        $"{dateInfo}" + // Tarih bilgisini ekle
+                        $"{dateInfo}" +
                         "Buna rağmen yeni bir tane oluşturmak istiyor musunuz? " +
                         "(Evet: Eski QR kodu silinip aynı içerikte yeni bir kayıt oluşturulacak ve belge basılacaktır. " +
                         "Hayır: Mevcut QR kodu kullanılacak ve belge basılacaktır (veritabanında değişiklik yapılmayacaktır). " +
@@ -5586,23 +5742,18 @@ namespace WindowsFormsApp1
                     DialogResult dialogResult = MessageBox.Show(
                         confirmationMessage,
                         "QR Kodu Zaten Var",
-                        MessageBoxButtons.YesNoCancel, // YENİ: YesNoCancel butonları
+                        MessageBoxButtons.YesNoCancel,
                         MessageBoxIcon.Question
                     );
 
                     if (dialogResult == DialogResult.Yes)
                     {
-                        // Kullanıcı "Evet" dedi, eskiyi sil, yenisini oluştur.
                         try
                         {
                             ConnectToDatabase.QRTablo.Remove(existingQrRecord);
                             await Task.Run(() => ConnectToDatabase.SaveChanges());
 
-                            // Yeni kayıt oluştur (bu, CreationDate'i şimdiki zaman olarak varsayar)
-                            qrRecordToUse = new QRClass
-                            {
-                                QRCode = prospectiveQrContent
-                            };
+                            qrRecordToUse = new QRClass { QRCode = prospectiveQrContent };
                             ConnectToDatabase.QRTablo.Add(qrRecordToUse);
                             await Task.Run(() => ConnectToDatabase.SaveChanges());
                         }
@@ -5619,24 +5770,20 @@ namespace WindowsFormsApp1
                             return;
                         }
                     }
-                    else if (dialogResult == DialogResult.No) // Kullanıcı "Hayır" dedi, mevcut olanı kullan
+                    else if (dialogResult == DialogResult.No)
                     {
                         qrRecordToUse = existingQrRecord;
                     }
-                    else // Kullanıcı "İptal" dedi veya çarpı butonuna bastı
+                    else
                     {
                         MessageBox.Show("Belge oluşturma/yazdırma işlemi iptal edildi.", "İşlem İptal Edildi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ResetCursorAndButton(); // İmleci ve butonu sıfırla
-                        return; // Metottan tamamen çık
+                        ResetCursorAndButton();
+                        return;
                     }
                 }
                 else
                 {
-                    // QR kodu veritabanında yok, yeni bir kayıt oluştur.
-                    qrRecordToUse = new QRClass
-                    {
-                        QRCode = prospectiveQrContent
-                    };
+                    qrRecordToUse = new QRClass { QRCode = prospectiveQrContent };
                     ConnectToDatabase.QRTablo.Add(qrRecordToUse);
                     try
                     {
@@ -5670,7 +5817,6 @@ namespace WindowsFormsApp1
                     }
                 }
 
-                // Her durumda (yeni veya mevcut QR kodu kullanılsın), QR kod görselini oluştur
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrRecordToUse.QRCode, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
@@ -5680,7 +5826,7 @@ namespace WindowsFormsApp1
             // *** 3. Excel Şablon Yolu Belirleme ***
             string projeDizin = AppDomain.CurrentDomain.BaseDirectory;
             string excelTemplatePath = "";
-            string pdfFileName = "";
+            string pdfFileName = ""; // Bu değişken artık genel çıktı dosya adı kökü olarak kullanılıyor.
 
             if (StajDonemi == "YAZ")
             {
@@ -5704,6 +5850,7 @@ namespace WindowsFormsApp1
                 {
                     var ws = workbook.Worksheet(StajDonemi == "YAZ" ? "Form" : belgeTipiInternal);
 
+                    // ... (Mevcut kodunuzun bu kısımları değişmeden kalıyor) ...
                     if (shouldAddQrToExcel && qrCodeImage != null)
                     {
                         using (MemoryStream ms = new MemoryStream())
@@ -5748,7 +5895,8 @@ namespace WindowsFormsApp1
                             .OrderBy(o => o.OgrenciAd)
                             .ToList();
                     }
-
+                    // ... (Tüm veri doldurma blokları aynı kalıyor) ...
+                    // ... (Bu kısımları kısalık için atlıyorum) ...
                     if (StajDonemi == "YAZ")
                     {
                         ws.Cell("A1").Value = $"{Xayarlar.EgitimOgretimYili} YILI YAZ STAJI KOORDİNATÖRLERİN İŞLETMEYE YAPACAĞI GÜNLÜK REHBERLİK RAPOR FORMU";
@@ -5766,6 +5914,10 @@ namespace WindowsFormsApp1
                         ws.Cell("F6").Value = ilgiliIsletme.IsletmeAdresIlce;
                         ws.Cell("B8").Value = "……/……/…………";
                         ws.Cell("E8").Value = "";
+
+                        //Staj başlangıç ve bitiş tarihleri
+                        ws.Cell("C13").Value = ilgiliOgrenci.OgrenciStajaBaslangicTarihi.ToString("dd/MM/yyyy");
+                        ws.Cell("F13").Value = ilgiliOgrenci.OgrenciStajBitistarihi.ToString("dd/MM/yyyy");
 
                         ws.Cell("B10").Value = ilgiliOgrenci.OgrenciAd + " " + ilgiliOgrenci.OgrenciSoyad;
                         ws.Cell("D10").Value = ilgiliOgrenci.OgrenciSinif + " / " + ilgiliOgrenci.OgrenciOkulNo;
@@ -5928,6 +6080,8 @@ namespace WindowsFormsApp1
                         worksheetInterop.PageSetup.Orientation = Excel.XlPageOrientation.xlPortrait;
                     }
 
+                    // --- DEĞİŞİKLİĞİN BAŞLADIĞI BÖLGE ---
+
                     if (selectedPrinter == "PDF")
                     {
                         string pdfDosyaYolu = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", $"{pdfFileName}.pdf");
@@ -5953,24 +6107,54 @@ namespace WindowsFormsApp1
                             System.Diagnostics.Process.Start("explorer.exe", folderPath);
                         }
                     }
+                    // YENİ: Excel olarak kaydetme seçeneği
+                    else if (selectedPrinter == "EXCEL")
+                    {
+                        // Doldurulmuş Excel dosyasının kaydedileceği son konumu ve adını belirle
+                        string excelDosyaYolu = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", $"{pdfFileName}.xlsx");
+
+                        // Interop üzerinden açılan geçici çalışma kitabını son hedef yoluna kaydet.
+                        // Bu, sayfa yapısı gibi Interop ile yapılan ayarları da korur.
+                        // Not: Close metodunda `SaveChanges` false olmalı, çünkü burada zaten kaydediyoruz.
+                        workbookInterop.SaveAs(excelDosyaYolu, Excel.XlFileFormat.xlOpenXMLWorkbook);
+
+                        DialogResult result = MessageBox.Show($"Excel dosyası başarıyla kaydedildi:\n{excelDosyaYolu}\n\nDosyayı açmak ister misiniz?",
+                                                              "Başarılı",
+                                                              MessageBoxButtons.YesNoCancel,
+                                                              MessageBoxIcon.Information);
+
+                        if (result == DialogResult.Yes)
+                        {
+                            System.Diagnostics.Process.Start(new ProcessStartInfo(excelDosyaYolu) { UseShellExecute = true });
+                        }
+                        else if (result == DialogResult.No)
+                        {
+                            string folderPath = System.IO.Path.GetDirectoryName(excelDosyaYolu);
+                            System.Diagnostics.Process.Start("explorer.exe", folderPath);
+                        }
+                    }
+                    // DEĞİŞTİ: Bu `else` bloğu artık sadece fiziksel yazıcı durumunu ele alıyor.
                     else
                     {
                         for (int i = 1; i <= numericUpDown1.Value; i++)
                         {
-                            worksheetInterop.PrintOutEx();
+                            worksheetInterop.PrintOutEx(ActivePrinter: selectedPrinter); // Yazıcıyı burada belirtmek daha güvenilirdir.
                         }
-                        MessageBox.Show("Yazdırma işlemi başarıyla tamamlandı.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"{selectedPrinter} yazıcısına gönderildi.", "Yazdırma Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
+
+                    // --- DEĞİŞİKLİĞİN BİTTİĞİ BÖLGE ---
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Yazdırma/PDF dönüştürme sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Yazdırma/Dönüştürme sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
                     if (worksheetInterop != null) { Marshal.ReleaseComObject(worksheetInterop); worksheetInterop = null; }
                     if (workbookInterop != null)
                     {
+                        // Değişiklikleri kaydetmeden kapat (çünkü PDF/Excel olarak zaten kaydedildi, yazıcıya zaten gönderildi)
                         workbookInterop.Close(false);
                         Marshal.ReleaseComObject(workbookInterop); workbookInterop = null;
                     }
@@ -7640,6 +7824,26 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void addUstaOgreticilikVarmiVVar_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            ustaogreticiGroupBox.Enabled = true;
+        }
+
+        private void addUstaOgreticilikVarmiYok_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            ustaogreticiGroupBox.Enabled = false;
+        }
+
+        private void upUstaOgreticilikVarmiVar_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            upUstaOgretici_groupBox.Enabled = true;
+        }
+
+        private void upUstaOgreticilikVarmiYok_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            upUstaOgretici_groupBox.Enabled = false;
+        }
+
         private void yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_KeyDown(object sender, KeyEventArgs e)
         {
             HandleComboBoxKeyDown(sender, e);
@@ -7916,6 +8120,12 @@ namespace WindowsFormsApp1
         {
             panel26.Enabled = true;
             selectedPrinter = "PDF";
+            numericUpDown1.Enabled = false;
+        }
+        private void settingsExcel_radio_CheckedChanged(object sender, EventArgs e)
+        {
+            panel26.Enabled = true;
+            selectedPrinter = "EXCEL";
             numericUpDown1.Enabled = false;
         }
     }

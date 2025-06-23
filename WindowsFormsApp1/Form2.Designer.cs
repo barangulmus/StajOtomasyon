@@ -48,144 +48,6 @@ namespace WindowsFormsApp1
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.ISLETMEtabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.panel40 = new System.Windows.Forms.Panel();
-            this.splitContainer6 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
-            this.IsletmeListDatagridView = new System.Windows.Forms.DataGridView();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.IsletmeDal_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeBolum_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeTelNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeYetkilisi_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeTamAdres_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeAdresIlce_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeAdresIl_checkbox = new System.Windows.Forms.CheckBox();
-            this.IsletmeAd_checkbox = new System.Windows.Forms.CheckBox();
-            this.panel42 = new System.Windows.Forms.Panel();
-            this.IsletmeListSiralama_combobox = new System.Windows.Forms.ComboBox();
-            this.IsletmeListAlanAdlari_combobox = new System.Windows.Forms.ComboBox();
-            this.IsletmeListText_textbox = new System.Windows.Forms.TextBox();
-            this.IsletmeListFiltreleme_combobox = new System.Windows.Forms.ComboBox();
-            this.panel43 = new System.Windows.Forms.Panel();
-            this.IsletmeListSORGULAbuton_Button = new System.Windows.Forms.Button();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.addIsletmeTelNo_txt = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
-            this.addDal_combo = new System.Windows.Forms.ComboBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.addIsletmeYetkilisi_txt = new System.Windows.Forms.TextBox();
-            this.addUstaOgreticilikVarmiYok_radio = new System.Windows.Forms.RadioButton();
-            this.addUstaOgreticilikVarmiVVar_radio = new System.Windows.Forms.RadioButton();
-            this.addTamAdres_richtext = new System.Windows.Forms.RichTextBox();
-            this.addIlce_combo = new System.Windows.Forms.ComboBox();
-            this.addIl_combo = new System.Windows.Forms.ComboBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.addısletmeTemizle_button = new System.Windows.Forms.Button();
-            this.label51 = new System.Windows.Forms.Label();
-            this.addIsletmeEkle_button = new System.Windows.Forms.Button();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.addBolum_combo = new System.Windows.Forms.ComboBox();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.addIsletmeAdi_txt = new System.Windows.Forms.TextBox();
-            this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.updateIsletmePanelSol_panel = new System.Windows.Forms.Panel();
-            this.upIsletmeTelNo_txt = new System.Windows.Forms.TextBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.upDal_combo = new System.Windows.Forms.ComboBox();
-            this.label57 = new System.Windows.Forms.Label();
-            this.upIsletmeYetkilisi_txt = new System.Windows.Forms.TextBox();
-            this.upUstaOgreticilikVarmiYok_radio = new System.Windows.Forms.RadioButton();
-            this.upUstaOgreticilikVarmiVar_radio = new System.Windows.Forms.RadioButton();
-            this.upTamAdres_richtext = new System.Windows.Forms.RichTextBox();
-            this.upIlce_combo = new System.Windows.Forms.ComboBox();
-            this.upIl_combo = new System.Windows.Forms.ComboBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.upBolum_combo = new System.Windows.Forms.ComboBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.upIsletmeAdi_txt = new System.Windows.Forms.TextBox();
-            this.updateIsletmePanelSag_panel = new System.Windows.Forms.Panel();
-            this.updateIsletmeAdi_combo = new System.Windows.Forms.ComboBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.upısletmeAktar_button = new System.Windows.Forms.Button();
-            this.upIsletmeGuncelle_button = new System.Windows.Forms.Button();
-            this.label66 = new System.Windows.Forms.Label();
-            this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.deleteIsletmeAdi_combo = new System.Windows.Forms.ComboBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.deleteısletme_button = new System.Windows.Forms.Button();
-            this.label68 = new System.Windows.Forms.Label();
-            this.YAZDIRtabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage21 = new System.Windows.Forms.TabPage();
-            this.yazdirYanPanel_panel = new System.Windows.Forms.Panel();
-            this.yazdirNotFisi_panel = new System.Windows.Forms.Panel();
-            this.label90 = new System.Windows.Forms.Label();
-            this.yazdirilacakNotFisiDonem2_radio = new System.Windows.Forms.RadioButton();
-            this.yazdirilacakNotFisiDonem1_radio = new System.Windows.Forms.RadioButton();
-            this.label96 = new System.Windows.Forms.Label();
-            this.yazdirDevamsizlikRaporu_panel = new System.Windows.Forms.Panel();
-            this.label89 = new System.Windows.Forms.Label();
-            this.yazdirilacakDevamsizlikAYI_combobox = new System.Windows.Forms.ComboBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.yazdirAyliikGunlukRapor_panel = new System.Windows.Forms.Panel();
-            this.panel79 = new System.Windows.Forms.Panel();
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio = new System.Windows.Forms.RadioButton();
-            this.yazdirilacakAyGunlukRaporAYLIK_radio = new System.Windows.Forms.RadioButton();
-            this.label93 = new System.Windows.Forms.Label();
-            this.GorevTarihleri_panel = new System.Windows.Forms.Panel();
-            this.label120 = new System.Windows.Forms.Label();
-            this.GorevTarihiGunleri_richTextBox = new System.Windows.Forms.RichTextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel80 = new System.Windows.Forms.Panel();
-            this.settingsPDFeDonustur_radio = new System.Windows.Forms.RadioButton();
-            this.settingsYazdir_radio = new System.Windows.Forms.RadioButton();
-            this.label92 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label91 = new System.Windows.Forms.Label();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.label122 = new System.Windows.Forms.Label();
-            this.label121 = new System.Windows.Forms.Label();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label86 = new System.Windows.Forms.Label();
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox = new System.Windows.Forms.ListBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.yazdirilacakIsletme_listbox = new System.Windows.Forms.ListBox();
-            this.label88 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.label87 = new System.Windows.Forms.Label();
-            this.yazdirilacakOgretmeniFiltrele_listbox = new System.Windows.Forms.ListBox();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo = new System.Windows.Forms.ComboBox();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.QrTextBox = new System.Windows.Forms.TextBox();
-            this.label108 = new System.Windows.Forms.Label();
             this.SETTINGStabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage20 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -274,6 +136,11 @@ namespace WindowsFormsApp1
             this.panel46 = new System.Windows.Forms.Panel();
             this.panel51 = new System.Windows.Forms.Panel();
             this.panel52 = new System.Windows.Forms.Panel();
+            this.settingsColonNameIsletmeIbanNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeSicilNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUODT_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUOSoyadi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUOAdi_checkbox = new System.Windows.Forms.CheckBox();
             this.settingsColonNameIsletmeDal_checkbox = new System.Windows.Forms.CheckBox();
             this.settingsColonNameIsletmeBolum_checkbox = new System.Windows.Forms.CheckBox();
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox = new System.Windows.Forms.CheckBox();
@@ -299,6 +166,11 @@ namespace WindowsFormsApp1
             this.label98 = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
             this.panel56 = new System.Windows.Forms.Panel();
+            this.settingsColonNameOgrenciHowToUSE_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciBabaAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciAnneAdi_checkbox = new System.Windows.Forms.CheckBox();
             this.settingsColonNameOgrenciDalAdi_checkbox = new System.Windows.Forms.CheckBox();
             this.settingsColonNameOgrenciStajDonemi_checkbox = new System.Windows.Forms.CheckBox();
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox = new System.Windows.Forms.CheckBox();
@@ -696,6 +568,18 @@ namespace WindowsFormsApp1
             this.listFiltreleOgrenciButon_button = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.addOgrenciUsePhoneBaba_radio = new System.Windows.Forms.RadioButton();
+            this.addOgrenciUsePhoneAnne_radio = new System.Windows.Forms.RadioButton();
+            this.label251 = new System.Windows.Forms.Label();
+            this.label249 = new System.Windows.Forms.Label();
+            this.addOgrenciBabaAdi_txt = new System.Windows.Forms.TextBox();
+            this.addOgrenciBabaTelNo_txt = new System.Windows.Forms.TextBox();
+            this.label250 = new System.Windows.Forms.Label();
+            this.label247 = new System.Windows.Forms.Label();
+            this.addOgrenciAnneAdi_txt = new System.Windows.Forms.TextBox();
+            this.addOgrenciAnneTelNo_txt = new System.Windows.Forms.TextBox();
+            this.label248 = new System.Windows.Forms.Label();
             this.panel81 = new System.Windows.Forms.Panel();
             this.panel83 = new System.Windows.Forms.Panel();
             this.addOgrenciFotografi_button = new System.Windows.Forms.Button();
@@ -740,27 +624,39 @@ namespace WindowsFormsApp1
             this.label29 = new System.Windows.Forms.Label();
             this.updateOgrenciNo_txt = new System.Windows.Forms.TextBox();
             this.updateOgrenciPanelSol_panel = new System.Windows.Forms.Panel();
+            this.upOgrenciUsePhoneBaba_radio = new System.Windows.Forms.RadioButton();
+            this.upOgrenciTelNo_txt = new System.Windows.Forms.TextBox();
+            this.upOgrenciUsePhoneAnne_radio = new System.Windows.Forms.RadioButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label234 = new System.Windows.Forms.Label();
             this.panel90 = new System.Windows.Forms.Panel();
             this.panel91 = new System.Windows.Forms.Panel();
             this.upOgrenciFotografi_button = new System.Windows.Forms.Button();
             this.panel92 = new System.Windows.Forms.Panel();
             this.upOgrenciFotografi_picturebox = new System.Windows.Forms.PictureBox();
+            this.label235 = new System.Windows.Forms.Label();
             this.panel78 = new System.Windows.Forms.Panel();
             this.upOgrenciStajDonemiMesem_radio = new System.Windows.Forms.RadioButton();
             this.upOgrenciStajDonemiYaz_radio = new System.Windows.Forms.RadioButton();
             this.upOgrenciStajDonemiKis_radio = new System.Windows.Forms.RadioButton();
+            this.upOgrenciBabaAdi_txt = new System.Windows.Forms.TextBox();
             this.label119 = new System.Windows.Forms.Label();
+            this.upOgrenciBabaTelNo_txt = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
+            this.label246 = new System.Windows.Forms.Label();
             this.upOgrenciDalAdi_combo = new System.Windows.Forms.ComboBox();
+            this.label252 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.upOgrenciAnneAdi_txt = new System.Windows.Forms.TextBox();
+            this.upOgrenciAnneTelNo_txt = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.label253 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.upOgrGrupD_radio = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
             this.upOgrGrupC_radio = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
             this.upOgrenciFirmaAdi_combo = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.upOgrenciKordinatorOgretmen_combo = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.upOgrenciStajBitis_datetime = new System.Windows.Forms.DateTimePicker();
@@ -773,7 +669,6 @@ namespace WindowsFormsApp1
             this.label27 = new System.Windows.Forms.Label();
             this.upOgrenciAlanAdi_txt = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.upOgrenciTelNo_txt = new System.Windows.Forms.TextBox();
             this.upOgrenciAdi_txt = new System.Windows.Forms.TextBox();
             this.upOgrenciTc_txt = new System.Windows.Forms.TextBox();
             this.upOgrenciSoyadi_txt = new System.Windows.Forms.TextBox();
@@ -863,6 +758,167 @@ namespace WindowsFormsApp1
             this.label47 = new System.Windows.Forms.Label();
             this.deleteOgretmen_button = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
+            this.ISLETMEtabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.panel40 = new System.Windows.Forms.Panel();
+            this.splitContainer6 = new System.Windows.Forms.SplitContainer();
+            this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.IsletmeListDatagridView = new System.Windows.Forms.DataGridView();
+            this.panel41 = new System.Windows.Forms.Panel();
+            this.IsletmeDal_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeBolum_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeTelNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeYetkilisi_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeTamAdres_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeAdresIlce_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeAdresIl_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeAd_checkbox = new System.Windows.Forms.CheckBox();
+            this.panel42 = new System.Windows.Forms.Panel();
+            this.IsletmeListSiralama_combobox = new System.Windows.Forms.ComboBox();
+            this.IsletmeListAlanAdlari_combobox = new System.Windows.Forms.ComboBox();
+            this.IsletmeListText_textbox = new System.Windows.Forms.TextBox();
+            this.IsletmeListFiltreleme_combobox = new System.Windows.Forms.ComboBox();
+            this.panel43 = new System.Windows.Forms.Panel();
+            this.IsletmeListSORGULAbuton_Button = new System.Windows.Forms.Button();
+            this.tabPage16 = new System.Windows.Forms.TabPage();
+            this.ustaogreticiGroupBox = new System.Windows.Forms.GroupBox();
+            this.addUODogumTarihi_datetime = new System.Windows.Forms.DateTimePicker();
+            this.label238 = new System.Windows.Forms.Label();
+            this.label237 = new System.Windows.Forms.Label();
+            this.addUOSoyadi_txt = new System.Windows.Forms.TextBox();
+            this.label236 = new System.Windows.Forms.Label();
+            this.addUOAdi_txt = new System.Windows.Forms.TextBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label240 = new System.Windows.Forms.Label();
+            this.addIsletmeIbanNo_txt = new System.Windows.Forms.TextBox();
+            this.label239 = new System.Windows.Forms.Label();
+            this.addIsletmeSicilNo_txt = new System.Windows.Forms.TextBox();
+            this.addIsletmeTelNo_txt = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.addDal_combo = new System.Windows.Forms.ComboBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.addIsletmeYetkilisi_txt = new System.Windows.Forms.TextBox();
+            this.addUstaOgreticilikVarmiYok_radio = new System.Windows.Forms.RadioButton();
+            this.addUstaOgreticilikVarmiVVar_radio = new System.Windows.Forms.RadioButton();
+            this.addTamAdres_richtext = new System.Windows.Forms.RichTextBox();
+            this.addIlce_combo = new System.Windows.Forms.ComboBox();
+            this.addIl_combo = new System.Windows.Forms.ComboBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.addısletmeTemizle_button = new System.Windows.Forms.Button();
+            this.label51 = new System.Windows.Forms.Label();
+            this.addIsletmeEkle_button = new System.Windows.Forms.Button();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.addBolum_combo = new System.Windows.Forms.ComboBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.addIsletmeAdi_txt = new System.Windows.Forms.TextBox();
+            this.tabPage17 = new System.Windows.Forms.TabPage();
+            this.upUstaOgretici_groupBox = new System.Windows.Forms.GroupBox();
+            this.upUODogumTarihi_datetime = new System.Windows.Forms.DateTimePicker();
+            this.label243 = new System.Windows.Forms.Label();
+            this.label244 = new System.Windows.Forms.Label();
+            this.upUOSoyadi_txt = new System.Windows.Forms.TextBox();
+            this.label245 = new System.Windows.Forms.Label();
+            this.upUOAdi_txt = new System.Windows.Forms.TextBox();
+            this.updateIsletmePanelSol_panel = new System.Windows.Forms.Panel();
+            this.label241 = new System.Windows.Forms.Label();
+            this.upIsletmeIbanNo_txt = new System.Windows.Forms.TextBox();
+            this.label242 = new System.Windows.Forms.Label();
+            this.upIsletmeSicilNo_txt = new System.Windows.Forms.TextBox();
+            this.upIsletmeTelNo_txt = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.upDal_combo = new System.Windows.Forms.ComboBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.upIsletmeYetkilisi_txt = new System.Windows.Forms.TextBox();
+            this.upUstaOgreticilikVarmiYok_radio = new System.Windows.Forms.RadioButton();
+            this.upUstaOgreticilikVarmiVar_radio = new System.Windows.Forms.RadioButton();
+            this.upTamAdres_richtext = new System.Windows.Forms.RichTextBox();
+            this.upIlce_combo = new System.Windows.Forms.ComboBox();
+            this.upIl_combo = new System.Windows.Forms.ComboBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.upBolum_combo = new System.Windows.Forms.ComboBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.upIsletmeAdi_txt = new System.Windows.Forms.TextBox();
+            this.updateIsletmePanelSag_panel = new System.Windows.Forms.Panel();
+            this.updateIsletmeAdi_combo = new System.Windows.Forms.ComboBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.upısletmeAktar_button = new System.Windows.Forms.Button();
+            this.upIsletmeGuncelle_button = new System.Windows.Forms.Button();
+            this.label66 = new System.Windows.Forms.Label();
+            this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.deleteIsletmeAdi_combo = new System.Windows.Forms.ComboBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.deleteısletme_button = new System.Windows.Forms.Button();
+            this.label68 = new System.Windows.Forms.Label();
+            this.YAZDIRtabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage21 = new System.Windows.Forms.TabPage();
+            this.yazdirYanPanel_panel = new System.Windows.Forms.Panel();
+            this.yazdirNotFisi_panel = new System.Windows.Forms.Panel();
+            this.label90 = new System.Windows.Forms.Label();
+            this.yazdirilacakNotFisiDonem2_radio = new System.Windows.Forms.RadioButton();
+            this.yazdirilacakNotFisiDonem1_radio = new System.Windows.Forms.RadioButton();
+            this.label96 = new System.Windows.Forms.Label();
+            this.yazdirDevamsizlikRaporu_panel = new System.Windows.Forms.Panel();
+            this.label89 = new System.Windows.Forms.Label();
+            this.yazdirilacakDevamsizlikAYI_combobox = new System.Windows.Forms.ComboBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.yazdirAyliikGunlukRapor_panel = new System.Windows.Forms.Panel();
+            this.panel79 = new System.Windows.Forms.Panel();
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio = new System.Windows.Forms.RadioButton();
+            this.yazdirilacakAyGunlukRaporAYLIK_radio = new System.Windows.Forms.RadioButton();
+            this.label93 = new System.Windows.Forms.Label();
+            this.GorevTarihleri_panel = new System.Windows.Forms.Panel();
+            this.label120 = new System.Windows.Forms.Label();
+            this.GorevTarihiGunleri_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel80 = new System.Windows.Forms.Panel();
+            this.settingsExcel_radio = new System.Windows.Forms.RadioButton();
+            this.settingsPDFeDonustur_radio = new System.Windows.Forms.RadioButton();
+            this.settingsYazdir_radio = new System.Windows.Forms.RadioButton();
+            this.label92 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label91 = new System.Windows.Forms.Label();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label86 = new System.Windows.Forms.Label();
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox = new System.Windows.Forms.ListBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.yazdirilacakIsletme_listbox = new System.Windows.Forms.ListBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.label87 = new System.Windows.Forms.Label();
+            this.yazdirilacakOgretmeniFiltrele_listbox = new System.Windows.Forms.ListBox();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo = new System.Windows.Forms.ComboBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.QrTextBox = new System.Windows.Forms.TextBox();
+            this.label108 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SettingsButton_button = new System.Windows.Forms.Button();
             this.HomeYazdirmaIslemleri_button = new System.Windows.Forms.Button();
@@ -873,6 +929,17 @@ namespace WindowsFormsApp1
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox = new System.Windows.Forms.CheckBox();
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox = new System.Windows.Forms.CheckBox();
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox = new System.Windows.Forms.CheckBox();
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeIbanNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeSicilNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeUODT_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeUOSoyadi_checkbox = new System.Windows.Forms.CheckBox();
+            this.IsletmeUOAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -882,54 +949,6 @@ namespace WindowsFormsApp1
             this.panel61.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel35.SuspendLayout();
-            this.ISLETMEtabControl1.SuspendLayout();
-            this.tabPage15.SuspendLayout();
-            this.panel40.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
-            this.splitContainer6.Panel1.SuspendLayout();
-            this.splitContainer6.Panel2.SuspendLayout();
-            this.splitContainer6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
-            this.splitContainer7.Panel1.SuspendLayout();
-            this.splitContainer7.Panel2.SuspendLayout();
-            this.splitContainer7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IsletmeListDatagridView)).BeginInit();
-            this.panel41.SuspendLayout();
-            this.panel42.SuspendLayout();
-            this.panel43.SuspendLayout();
-            this.tabPage16.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.tabPage17.SuspendLayout();
-            this.updateIsletmePanelSol_panel.SuspendLayout();
-            this.updateIsletmePanelSag_panel.SuspendLayout();
-            this.tabPage18.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.YAZDIRtabControl1.SuspendLayout();
-            this.tabPage21.SuspendLayout();
-            this.yazdirYanPanel_panel.SuspendLayout();
-            this.yazdirNotFisi_panel.SuspendLayout();
-            this.yazdirDevamsizlikRaporu_panel.SuspendLayout();
-            this.yazdirAyliikGunlukRapor_panel.SuspendLayout();
-            this.panel79.SuspendLayout();
-            this.GorevTarihleri_panel.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel80.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.panel76.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.tabPage14.SuspendLayout();
-            this.panel97.SuspendLayout();
             this.SETTINGStabControl1.SuspendLayout();
             this.tabPage20.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -1059,6 +1078,7 @@ namespace WindowsFormsApp1
             this.panel31.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.groupBox14.SuspendLayout();
             this.panel81.SuspendLayout();
             this.panel83.SuspendLayout();
             this.panel82.SuspendLayout();
@@ -1103,6 +1123,56 @@ namespace WindowsFormsApp1
             ((System.ComponentModel.ISupportInitialize)(this.upOgretmenFotografi_picturebox)).BeginInit();
             this.tabPage13.SuspendLayout();
             this.deleteOgretmenPanel_panel.SuspendLayout();
+            this.ISLETMEtabControl1.SuspendLayout();
+            this.tabPage15.SuspendLayout();
+            this.panel40.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
+            this.splitContainer6.Panel1.SuspendLayout();
+            this.splitContainer6.Panel2.SuspendLayout();
+            this.splitContainer6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
+            this.splitContainer7.Panel1.SuspendLayout();
+            this.splitContainer7.Panel2.SuspendLayout();
+            this.splitContainer7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IsletmeListDatagridView)).BeginInit();
+            this.panel41.SuspendLayout();
+            this.panel42.SuspendLayout();
+            this.panel43.SuspendLayout();
+            this.tabPage16.SuspendLayout();
+            this.ustaogreticiGroupBox.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.tabPage17.SuspendLayout();
+            this.upUstaOgretici_groupBox.SuspendLayout();
+            this.updateIsletmePanelSol_panel.SuspendLayout();
+            this.updateIsletmePanelSag_panel.SuspendLayout();
+            this.tabPage18.SuspendLayout();
+            this.panel15.SuspendLayout();
+            this.YAZDIRtabControl1.SuspendLayout();
+            this.tabPage21.SuspendLayout();
+            this.yazdirYanPanel_panel.SuspendLayout();
+            this.yazdirNotFisi_panel.SuspendLayout();
+            this.yazdirDevamsizlikRaporu_panel.SuspendLayout();
+            this.yazdirAyliikGunlukRapor_panel.SuspendLayout();
+            this.panel79.SuspendLayout();
+            this.GorevTarihleri_panel.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel80.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel76.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.tabPage14.SuspendLayout();
+            this.panel97.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1319,1609 +1389,19 @@ namespace WindowsFormsApp1
             // 
             // panel35
             // 
+            this.panel35.Controls.Add(this.SETTINGStabControl1);
+            this.panel35.Controls.Add(this.IsletmeDETAYtabControl1);
+            this.panel35.Controls.Add(this.OgretmenDETAYtabControl1);
             this.panel35.Controls.Add(this.OgrenciDETAYtabControl1);
             this.panel35.Controls.Add(this.OGRtabControl1);
             this.panel35.Controls.Add(this.OGRTtabControl1);
             this.panel35.Controls.Add(this.ISLETMEtabControl1);
             this.panel35.Controls.Add(this.YAZDIRtabControl1);
-            this.panel35.Controls.Add(this.SETTINGStabControl1);
-            this.panel35.Controls.Add(this.IsletmeDETAYtabControl1);
-            this.panel35.Controls.Add(this.OgretmenDETAYtabControl1);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel35.Location = new System.Drawing.Point(0, 84);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(1151, 650);
             this.panel35.TabIndex = 1;
-            // 
-            // ISLETMEtabControl1
-            // 
-            this.ISLETMEtabControl1.Controls.Add(this.tabPage15);
-            this.ISLETMEtabControl1.Controls.Add(this.tabPage16);
-            this.ISLETMEtabControl1.Controls.Add(this.tabPage17);
-            this.ISLETMEtabControl1.Controls.Add(this.tabPage18);
-            this.ISLETMEtabControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ISLETMEtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ISLETMEtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ISLETMEtabControl1.Location = new System.Drawing.Point(0, 0);
-            this.ISLETMEtabControl1.Name = "ISLETMEtabControl1";
-            this.ISLETMEtabControl1.Padding = new System.Drawing.Point(50, 3);
-            this.ISLETMEtabControl1.SelectedIndex = 0;
-            this.ISLETMEtabControl1.Size = new System.Drawing.Size(1151, 650);
-            this.ISLETMEtabControl1.TabIndex = 4;
-            // 
-            // tabPage15
-            // 
-            this.tabPage15.Controls.Add(this.panel40);
-            this.tabPage15.Location = new System.Drawing.Point(4, 28);
-            this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage15.TabIndex = 0;
-            this.tabPage15.Text = "LISTELE";
-            this.tabPage15.UseVisualStyleBackColor = true;
-            // 
-            // panel40
-            // 
-            this.panel40.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel40.Controls.Add(this.splitContainer6);
-            this.panel40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel40.Location = new System.Drawing.Point(3, 3);
-            this.panel40.Name = "panel40";
-            this.panel40.Padding = new System.Windows.Forms.Padding(10);
-            this.panel40.Size = new System.Drawing.Size(1137, 612);
-            this.panel40.TabIndex = 4;
-            // 
-            // splitContainer6
-            // 
-            this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer6.Location = new System.Drawing.Point(10, 10);
-            this.splitContainer6.Name = "splitContainer6";
-            this.splitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer6.Panel1
-            // 
-            this.splitContainer6.Panel1.Controls.Add(this.splitContainer7);
-            // 
-            // splitContainer6.Panel2
-            // 
-            this.splitContainer6.Panel2.Controls.Add(this.panel42);
-            this.splitContainer6.Panel2.Controls.Add(this.panel43);
-            this.splitContainer6.Size = new System.Drawing.Size(1117, 592);
-            this.splitContainer6.SplitterDistance = 491;
-            this.splitContainer6.TabIndex = 0;
-            // 
-            // splitContainer7
-            // 
-            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer7.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer7.Name = "splitContainer7";
-            // 
-            // splitContainer7.Panel1
-            // 
-            this.splitContainer7.Panel1.Controls.Add(this.IsletmeListDatagridView);
-            // 
-            // splitContainer7.Panel2
-            // 
-            this.splitContainer7.Panel2.Controls.Add(this.panel41);
-            this.splitContainer7.Size = new System.Drawing.Size(1117, 491);
-            this.splitContainer7.SplitterDistance = 906;
-            this.splitContainer7.TabIndex = 1;
-            // 
-            // IsletmeListDatagridView
-            // 
-            this.IsletmeListDatagridView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.IsletmeListDatagridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.IsletmeListDatagridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IsletmeListDatagridView.Location = new System.Drawing.Point(0, 0);
-            this.IsletmeListDatagridView.Name = "IsletmeListDatagridView";
-            this.IsletmeListDatagridView.Size = new System.Drawing.Size(906, 491);
-            this.IsletmeListDatagridView.TabIndex = 0;
-            this.IsletmeListDatagridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.IsletmeListDatagridView_CellDoubleClick);
-            // 
-            // panel41
-            // 
-            this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel41.Controls.Add(this.IsletmeDal_checkbox);
-            this.panel41.Controls.Add(this.IsletmeBolum_checkbox);
-            this.panel41.Controls.Add(this.IsletmeUstaOgreticilikVarmiYokmu_checkbox);
-            this.panel41.Controls.Add(this.IsletmeTelNo_checkbox);
-            this.panel41.Controls.Add(this.IsletmeYetkilisi_checkbox);
-            this.panel41.Controls.Add(this.IsletmeTamAdres_checkbox);
-            this.panel41.Controls.Add(this.IsletmeAdresIlce_checkbox);
-            this.panel41.Controls.Add(this.IsletmeAdresIl_checkbox);
-            this.panel41.Controls.Add(this.IsletmeAd_checkbox);
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel41.Location = new System.Drawing.Point(0, 0);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(207, 491);
-            this.panel41.TabIndex = 0;
-            // 
-            // IsletmeDal_checkbox
-            // 
-            this.IsletmeDal_checkbox.AutoSize = true;
-            this.IsletmeDal_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDal_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeDal_checkbox.Location = new System.Drawing.Point(14, 259);
-            this.IsletmeDal_checkbox.Name = "IsletmeDal_checkbox";
-            this.IsletmeDal_checkbox.Size = new System.Drawing.Size(118, 25);
-            this.IsletmeDal_checkbox.TabIndex = 21;
-            this.IsletmeDal_checkbox.Tag = "IsletmeDal";
-            this.IsletmeDal_checkbox.Text = "İşletme Dalı";
-            this.IsletmeDal_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeDal_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeDal_checkbox_CheckedChanged);
-            // 
-            // IsletmeBolum_checkbox
-            // 
-            this.IsletmeBolum_checkbox.AutoSize = true;
-            this.IsletmeBolum_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeBolum_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeBolum_checkbox.Location = new System.Drawing.Point(14, 228);
-            this.IsletmeBolum_checkbox.Name = "IsletmeBolum_checkbox";
-            this.IsletmeBolum_checkbox.Size = new System.Drawing.Size(127, 25);
-            this.IsletmeBolum_checkbox.TabIndex = 20;
-            this.IsletmeBolum_checkbox.Tag = "IsletmeBolum";
-            this.IsletmeBolum_checkbox.Text = "İşletme Alanı";
-            this.IsletmeBolum_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeBolum_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeBolum_checkbox_CheckedChanged);
-            // 
-            // IsletmeUstaOgreticilikVarmiYokmu_checkbox
-            // 
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.AutoSize = true;
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Location = new System.Drawing.Point(14, 197);
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Name = "IsletmeUstaOgreticilikVarmiYokmu_checkbox";
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Size = new System.Drawing.Size(145, 25);
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.TabIndex = 19;
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Tag = "IsletmeUstaOgreticilikVarmiYokmu";
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Text = "Usta Öğreticilik";
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeUstaOgreticilikVarmiYokmu_checkbox_CheckedChanged);
-            // 
-            // IsletmeTelNo_checkbox
-            // 
-            this.IsletmeTelNo_checkbox.AutoSize = true;
-            this.IsletmeTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeTelNo_checkbox.Location = new System.Drawing.Point(14, 166);
-            this.IsletmeTelNo_checkbox.Name = "IsletmeTelNo_checkbox";
-            this.IsletmeTelNo_checkbox.Size = new System.Drawing.Size(86, 25);
-            this.IsletmeTelNo_checkbox.TabIndex = 18;
-            this.IsletmeTelNo_checkbox.Tag = "IsletmeTelNo";
-            this.IsletmeTelNo_checkbox.Text = "Telefon";
-            this.IsletmeTelNo_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeTelNo_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeTelNo_checkbox_CheckedChanged);
-            // 
-            // IsletmeYetkilisi_checkbox
-            // 
-            this.IsletmeYetkilisi_checkbox.AutoSize = true;
-            this.IsletmeYetkilisi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeYetkilisi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeYetkilisi_checkbox.Location = new System.Drawing.Point(14, 135);
-            this.IsletmeYetkilisi_checkbox.Name = "IsletmeYetkilisi_checkbox";
-            this.IsletmeYetkilisi_checkbox.Size = new System.Drawing.Size(146, 25);
-            this.IsletmeYetkilisi_checkbox.TabIndex = 17;
-            this.IsletmeYetkilisi_checkbox.Tag = "IsletmeYetkilisi";
-            this.IsletmeYetkilisi_checkbox.Text = "İşletme Yetkilisi";
-            this.IsletmeYetkilisi_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeYetkilisi_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeYetkilisi_checkbox_CheckedChanged);
-            // 
-            // IsletmeTamAdres_checkbox
-            // 
-            this.IsletmeTamAdres_checkbox.AutoSize = true;
-            this.IsletmeTamAdres_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeTamAdres_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeTamAdres_checkbox.Location = new System.Drawing.Point(14, 107);
-            this.IsletmeTamAdres_checkbox.Name = "IsletmeTamAdres_checkbox";
-            this.IsletmeTamAdres_checkbox.Size = new System.Drawing.Size(110, 25);
-            this.IsletmeTamAdres_checkbox.TabIndex = 16;
-            this.IsletmeTamAdres_checkbox.Tag = "IsletmeTamAdres";
-            this.IsletmeTamAdres_checkbox.Text = "Tam Adres";
-            this.IsletmeTamAdres_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeTamAdres_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeTamAdres_checkbox_CheckedChanged);
-            // 
-            // IsletmeAdresIlce_checkbox
-            // 
-            this.IsletmeAdresIlce_checkbox.AutoSize = true;
-            this.IsletmeAdresIlce_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeAdresIlce_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeAdresIlce_checkbox.Location = new System.Drawing.Point(14, 76);
-            this.IsletmeAdresIlce_checkbox.Name = "IsletmeAdresIlce_checkbox";
-            this.IsletmeAdresIlce_checkbox.Size = new System.Drawing.Size(55, 25);
-            this.IsletmeAdresIlce_checkbox.TabIndex = 15;
-            this.IsletmeAdresIlce_checkbox.Tag = "IsletmeAdresIlce";
-            this.IsletmeAdresIlce_checkbox.Text = "İlçe";
-            this.IsletmeAdresIlce_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeAdresIlce_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeAdresIlce_checkbox_CheckedChanged);
-            // 
-            // IsletmeAdresIl_checkbox
-            // 
-            this.IsletmeAdresIl_checkbox.AutoSize = true;
-            this.IsletmeAdresIl_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeAdresIl_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeAdresIl_checkbox.Location = new System.Drawing.Point(14, 45);
-            this.IsletmeAdresIl_checkbox.Name = "IsletmeAdresIl_checkbox";
-            this.IsletmeAdresIl_checkbox.Size = new System.Drawing.Size(38, 25);
-            this.IsletmeAdresIl_checkbox.TabIndex = 14;
-            this.IsletmeAdresIl_checkbox.Tag = "IsletmeAdresIl";
-            this.IsletmeAdresIl_checkbox.Text = "İl";
-            this.IsletmeAdresIl_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeAdresIl_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeAdresIl_checkbox_CheckedChanged);
-            // 
-            // IsletmeAd_checkbox
-            // 
-            this.IsletmeAd_checkbox.AutoSize = true;
-            this.IsletmeAd_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeAd_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeAd_checkbox.Location = new System.Drawing.Point(14, 14);
-            this.IsletmeAd_checkbox.Name = "IsletmeAd_checkbox";
-            this.IsletmeAd_checkbox.Size = new System.Drawing.Size(114, 25);
-            this.IsletmeAd_checkbox.TabIndex = 13;
-            this.IsletmeAd_checkbox.Tag = "IsletmeAd";
-            this.IsletmeAd_checkbox.Text = "İşletme Adı";
-            this.IsletmeAd_checkbox.UseVisualStyleBackColor = true;
-            this.IsletmeAd_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeAd_checkbox_CheckedChanged);
-            // 
-            // panel42
-            // 
-            this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel42.Controls.Add(this.IsletmeListSiralama_combobox);
-            this.panel42.Controls.Add(this.IsletmeListAlanAdlari_combobox);
-            this.panel42.Controls.Add(this.IsletmeListText_textbox);
-            this.panel42.Controls.Add(this.IsletmeListFiltreleme_combobox);
-            this.panel42.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel42.Location = new System.Drawing.Point(0, 0);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(906, 97);
-            this.panel42.TabIndex = 4;
-            // 
-            // IsletmeListSiralama_combobox
-            // 
-            this.IsletmeListSiralama_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeListSiralama_combobox.FormattingEnabled = true;
-            this.IsletmeListSiralama_combobox.Items.AddRange(new object[] {
-            "Ada göre A-Z",
-            "Ada göre Z-A",
-            "Usta Ö. Belgesi olanlar",
-            "Usta Ö. Belgesi olmayanlar",
-            "En çok öğrencinin gittiği",
-            "En az öğrencinin gittiği"});
-            this.IsletmeListSiralama_combobox.Location = new System.Drawing.Point(683, 27);
-            this.IsletmeListSiralama_combobox.Name = "IsletmeListSiralama_combobox";
-            this.IsletmeListSiralama_combobox.Size = new System.Drawing.Size(218, 36);
-            this.IsletmeListSiralama_combobox.TabIndex = 3;
-            this.IsletmeListSiralama_combobox.TextChanged += new System.EventHandler(this.IsletmeListSiralama_combobox_TextChanged);
-            this.IsletmeListSiralama_combobox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IsletmeListSiralama_combobox_KeyDown);
-            // 
-            // IsletmeListAlanAdlari_combobox
-            // 
-            this.IsletmeListAlanAdlari_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeListAlanAdlari_combobox.FormattingEnabled = true;
-            this.IsletmeListAlanAdlari_combobox.Location = new System.Drawing.Point(427, 27);
-            this.IsletmeListAlanAdlari_combobox.Name = "IsletmeListAlanAdlari_combobox";
-            this.IsletmeListAlanAdlari_combobox.Size = new System.Drawing.Size(251, 36);
-            this.IsletmeListAlanAdlari_combobox.TabIndex = 11;
-            this.IsletmeListAlanAdlari_combobox.TextChanged += new System.EventHandler(this.IsletmeListAlanAdlari_combobox_TextChanged);
-            this.IsletmeListAlanAdlari_combobox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IsletmeListAlanAdlari_combobox_KeyDown);
-            // 
-            // IsletmeListText_textbox
-            // 
-            this.IsletmeListText_textbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeListText_textbox.Location = new System.Drawing.Point(427, 28);
-            this.IsletmeListText_textbox.Name = "IsletmeListText_textbox";
-            this.IsletmeListText_textbox.Size = new System.Drawing.Size(251, 34);
-            this.IsletmeListText_textbox.TabIndex = 5;
-            // 
-            // IsletmeListFiltreleme_combobox
-            // 
-            this.IsletmeListFiltreleme_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeListFiltreleme_combobox.FormattingEnabled = true;
-            this.IsletmeListFiltreleme_combobox.Items.AddRange(new object[] {
-            "Filtrelemeden listele",
-            "İşletme adı ... olan işletmeleri sırala",
-            "İşletme yetkilisi adı ... olan işletmeleri sırala",
-            "... ilçesindeki işletmeleri sırala",
-            "Alanı ... olan işletmeleri sırala"});
-            this.IsletmeListFiltreleme_combobox.Location = new System.Drawing.Point(3, 27);
-            this.IsletmeListFiltreleme_combobox.Name = "IsletmeListFiltreleme_combobox";
-            this.IsletmeListFiltreleme_combobox.Size = new System.Drawing.Size(419, 36);
-            this.IsletmeListFiltreleme_combobox.TabIndex = 3;
-            this.IsletmeListFiltreleme_combobox.SelectedIndexChanged += new System.EventHandler(this.IsletmeListFiltreleme_combobox_SelectedIndexChanged);
-            this.IsletmeListFiltreleme_combobox.TextChanged += new System.EventHandler(this.IsletmeListFiltreleme_combobox_TextChanged);
-            this.IsletmeListFiltreleme_combobox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IsletmeListFiltreleme_combobox_KeyDown);
-            // 
-            // panel43
-            // 
-            this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel43.Controls.Add(this.IsletmeListSORGULAbuton_Button);
-            this.panel43.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel43.Location = new System.Drawing.Point(910, 0);
-            this.panel43.Name = "panel43";
-            this.panel43.Padding = new System.Windows.Forms.Padding(4);
-            this.panel43.Size = new System.Drawing.Size(207, 97);
-            this.panel43.TabIndex = 3;
-            // 
-            // IsletmeListSORGULAbuton_Button
-            // 
-            this.IsletmeListSORGULAbuton_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeListSORGULAbuton_Button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IsletmeListSORGULAbuton_Button.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeListSORGULAbuton_Button.Location = new System.Drawing.Point(4, 4);
-            this.IsletmeListSORGULAbuton_Button.Name = "IsletmeListSORGULAbuton_Button";
-            this.IsletmeListSORGULAbuton_Button.Size = new System.Drawing.Size(197, 87);
-            this.IsletmeListSORGULAbuton_Button.TabIndex = 6;
-            this.IsletmeListSORGULAbuton_Button.Text = "SORGULA";
-            this.IsletmeListSORGULAbuton_Button.UseVisualStyleBackColor = true;
-            this.IsletmeListSORGULAbuton_Button.Click += new System.EventHandler(this.IsletmeListSORGULAbuton_Button_Click);
-            // 
-            // tabPage16
-            // 
-            this.tabPage16.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage16.Controls.Add(this.panel12);
-            this.tabPage16.Location = new System.Drawing.Point(4, 28);
-            this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage16.TabIndex = 1;
-            this.tabPage16.Text = "EKLE";
-            // 
-            // panel12
-            // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel12.Controls.Add(this.addIsletmeTelNo_txt);
-            this.panel12.Controls.Add(this.label84);
-            this.panel12.Controls.Add(this.addDal_combo);
-            this.panel12.Controls.Add(this.label49);
-            this.panel12.Controls.Add(this.addIsletmeYetkilisi_txt);
-            this.panel12.Controls.Add(this.addUstaOgreticilikVarmiYok_radio);
-            this.panel12.Controls.Add(this.addUstaOgreticilikVarmiVVar_radio);
-            this.panel12.Controls.Add(this.addTamAdres_richtext);
-            this.panel12.Controls.Add(this.addIlce_combo);
-            this.panel12.Controls.Add(this.addIl_combo);
-            this.panel12.Controls.Add(this.label50);
-            this.panel12.Controls.Add(this.addısletmeTemizle_button);
-            this.panel12.Controls.Add(this.label51);
-            this.panel12.Controls.Add(this.addIsletmeEkle_button);
-            this.panel12.Controls.Add(this.label52);
-            this.panel12.Controls.Add(this.label53);
-            this.panel12.Controls.Add(this.addBolum_combo);
-            this.panel12.Controls.Add(this.label54);
-            this.panel12.Controls.Add(this.label55);
-            this.panel12.Controls.Add(this.label56);
-            this.panel12.Controls.Add(this.addIsletmeAdi_txt);
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(452, 534);
-            this.panel12.TabIndex = 79;
-            // 
-            // addIsletmeTelNo_txt
-            // 
-            this.addIsletmeTelNo_txt.Location = new System.Drawing.Point(200, 242);
-            this.addIsletmeTelNo_txt.Name = "addIsletmeTelNo_txt";
-            this.addIsletmeTelNo_txt.Size = new System.Drawing.Size(225, 24);
-            this.addIsletmeTelNo_txt.TabIndex = 91;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(80, 243);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(108, 19);
-            this.label84.TabIndex = 90;
-            this.label84.Text = "İşletme Tel No : ";
-            // 
-            // addDal_combo
-            // 
-            this.addDal_combo.FormattingEnabled = true;
-            this.addDal_combo.Location = new System.Drawing.Point(199, 350);
-            this.addDal_combo.Name = "addDal_combo";
-            this.addDal_combo.Size = new System.Drawing.Size(225, 27);
-            this.addDal_combo.TabIndex = 89;
-            this.addDal_combo.TextChanged += new System.EventHandler(this.addDal_combo_TextChanged);
-            this.addDal_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addDal_combo_KeyDown);
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(148, 353);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(40, 19);
-            this.label49.TabIndex = 88;
-            this.label49.Text = "Dal : ";
-            // 
-            // addIsletmeYetkilisi_txt
-            // 
-            this.addIsletmeYetkilisi_txt.Location = new System.Drawing.Point(200, 207);
-            this.addIsletmeYetkilisi_txt.Name = "addIsletmeYetkilisi_txt";
-            this.addIsletmeYetkilisi_txt.Size = new System.Drawing.Size(225, 24);
-            this.addIsletmeYetkilisi_txt.TabIndex = 84;
-            // 
-            // addUstaOgreticilikVarmiYok_radio
-            // 
-            this.addUstaOgreticilikVarmiYok_radio.AutoSize = true;
-            this.addUstaOgreticilikVarmiYok_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addUstaOgreticilikVarmiYok_radio.Location = new System.Drawing.Point(272, 277);
-            this.addUstaOgreticilikVarmiYok_radio.Name = "addUstaOgreticilikVarmiYok_radio";
-            this.addUstaOgreticilikVarmiYok_radio.Size = new System.Drawing.Size(50, 23);
-            this.addUstaOgreticilikVarmiYok_radio.TabIndex = 83;
-            this.addUstaOgreticilikVarmiYok_radio.TabStop = true;
-            this.addUstaOgreticilikVarmiYok_radio.Text = "Yok";
-            this.addUstaOgreticilikVarmiYok_radio.UseVisualStyleBackColor = true;
-            // 
-            // addUstaOgreticilikVarmiVVar_radio
-            // 
-            this.addUstaOgreticilikVarmiVVar_radio.AutoSize = true;
-            this.addUstaOgreticilikVarmiVVar_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addUstaOgreticilikVarmiVVar_radio.Location = new System.Drawing.Point(199, 277);
-            this.addUstaOgreticilikVarmiVVar_radio.Name = "addUstaOgreticilikVarmiVVar_radio";
-            this.addUstaOgreticilikVarmiVVar_radio.Size = new System.Drawing.Size(48, 23);
-            this.addUstaOgreticilikVarmiVVar_radio.TabIndex = 82;
-            this.addUstaOgreticilikVarmiVVar_radio.TabStop = true;
-            this.addUstaOgreticilikVarmiVVar_radio.Text = "Var";
-            this.addUstaOgreticilikVarmiVVar_radio.UseVisualStyleBackColor = true;
-            // 
-            // addTamAdres_richtext
-            // 
-            this.addTamAdres_richtext.Location = new System.Drawing.Point(200, 131);
-            this.addTamAdres_richtext.Name = "addTamAdres_richtext";
-            this.addTamAdres_richtext.Size = new System.Drawing.Size(225, 62);
-            this.addTamAdres_richtext.TabIndex = 81;
-            this.addTamAdres_richtext.Text = "";
-            // 
-            // addIlce_combo
-            // 
-            this.addIlce_combo.FormattingEnabled = true;
-            this.addIlce_combo.Location = new System.Drawing.Point(200, 92);
-            this.addIlce_combo.Name = "addIlce_combo";
-            this.addIlce_combo.Size = new System.Drawing.Size(225, 27);
-            this.addIlce_combo.TabIndex = 80;
-            this.addIlce_combo.TextChanged += new System.EventHandler(this.addIlce_combo_TextChanged);
-            this.addIlce_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addIlce_combo_KeyDown);
-            // 
-            // addIl_combo
-            // 
-            this.addIl_combo.FormattingEnabled = true;
-            this.addIl_combo.Location = new System.Drawing.Point(200, 54);
-            this.addIl_combo.Name = "addIl_combo";
-            this.addIl_combo.Size = new System.Drawing.Size(225, 27);
-            this.addIl_combo.TabIndex = 79;
-            this.addIl_combo.TextChanged += new System.EventHandler(this.addIl_combo_TextChanged);
-            this.addIl_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addIl_combo_KeyDown);
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(100, 19);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(88, 19);
-            this.label50.TabIndex = 50;
-            this.label50.Text = "İşletme Adı : ";
-            // 
-            // addısletmeTemizle_button
-            // 
-            this.addısletmeTemizle_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addısletmeTemizle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.addısletmeTemizle_button.Location = new System.Drawing.Point(19, 392);
-            this.addısletmeTemizle_button.Name = "addısletmeTemizle_button";
-            this.addısletmeTemizle_button.Size = new System.Drawing.Size(409, 44);
-            this.addısletmeTemizle_button.TabIndex = 78;
-            this.addısletmeTemizle_button.Text = "TEMİZLE";
-            this.addısletmeTemizle_button.UseVisualStyleBackColor = true;
-            this.addısletmeTemizle_button.Click += new System.EventHandler(this.addısletmeTemizle_button_Click);
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(161, 57);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(27, 19);
-            this.label51.TabIndex = 51;
-            this.label51.Text = "İl : ";
-            // 
-            // addIsletmeEkle_button
-            // 
-            this.addIsletmeEkle_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addIsletmeEkle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.addIsletmeEkle_button.Location = new System.Drawing.Point(19, 439);
-            this.addIsletmeEkle_button.Name = "addIsletmeEkle_button";
-            this.addIsletmeEkle_button.Size = new System.Drawing.Size(409, 76);
-            this.addIsletmeEkle_button.TabIndex = 77;
-            this.addIsletmeEkle_button.Text = "EKLE";
-            this.addIsletmeEkle_button.UseVisualStyleBackColor = true;
-            this.addIsletmeEkle_button.Click += new System.EventHandler(this.addIsletmeEkle_button_Click);
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(147, 95);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(41, 19);
-            this.label52.TabIndex = 52;
-            this.label52.Text = "İlçe : ";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(103, 131);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(85, 19);
-            this.label53.TabIndex = 53;
-            this.label53.Text = "Tam Adres : ";
-            // 
-            // addBolum_combo
-            // 
-            this.addBolum_combo.FormattingEnabled = true;
-            this.addBolum_combo.Location = new System.Drawing.Point(200, 310);
-            this.addBolum_combo.Name = "addBolum_combo";
-            this.addBolum_combo.Size = new System.Drawing.Size(225, 27);
-            this.addBolum_combo.TabIndex = 73;
-            this.addBolum_combo.SelectedIndexChanged += new System.EventHandler(this.addBolum_combo_SelectedIndexChanged);
-            this.addBolum_combo.TextChanged += new System.EventHandler(this.addBolum_combo_TextChanged);
-            this.addBolum_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addBolum_combo_KeyDown);
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(35, 280);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(153, 19);
-            this.label54.TabIndex = 58;
-            this.label54.Text = "Usta Öğreticilik Var mı?";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(75, 210);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(113, 19);
-            this.label55.TabIndex = 60;
-            this.label55.Text = "İşletme Yetkilisi : ";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(141, 313);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(47, 19);
-            this.label56.TabIndex = 61;
-            this.label56.Text = "Alan : ";
-            // 
-            // addIsletmeAdi_txt
-            // 
-            this.addIsletmeAdi_txt.Location = new System.Drawing.Point(200, 17);
-            this.addIsletmeAdi_txt.Name = "addIsletmeAdi_txt";
-            this.addIsletmeAdi_txt.Size = new System.Drawing.Size(225, 24);
-            this.addIsletmeAdi_txt.TabIndex = 62;
-            // 
-            // tabPage17
-            // 
-            this.tabPage17.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage17.Controls.Add(this.updateIsletmePanelSol_panel);
-            this.tabPage17.Controls.Add(this.updateIsletmePanelSag_panel);
-            this.tabPage17.Location = new System.Drawing.Point(4, 28);
-            this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage17.TabIndex = 2;
-            this.tabPage17.Text = "GÜNCELLE";
-            // 
-            // updateIsletmePanelSol_panel
-            // 
-            this.updateIsletmePanelSol_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeTelNo_txt);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label85);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upDal_combo);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label57);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeYetkilisi_txt);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upUstaOgreticilikVarmiYok_radio);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upUstaOgreticilikVarmiVar_radio);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upTamAdres_richtext);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upIlce_combo);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upIl_combo);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label58);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label59);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label60);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label61);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upBolum_combo);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label62);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label63);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.label64);
-            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeAdi_txt);
-            this.updateIsletmePanelSol_panel.Location = new System.Drawing.Point(0, 0);
-            this.updateIsletmePanelSol_panel.Name = "updateIsletmePanelSol_panel";
-            this.updateIsletmePanelSol_panel.Size = new System.Drawing.Size(452, 385);
-            this.updateIsletmePanelSol_panel.TabIndex = 82;
-            // 
-            // upIsletmeTelNo_txt
-            // 
-            this.upIsletmeTelNo_txt.Location = new System.Drawing.Point(200, 242);
-            this.upIsletmeTelNo_txt.Name = "upIsletmeTelNo_txt";
-            this.upIsletmeTelNo_txt.Size = new System.Drawing.Size(225, 24);
-            this.upIsletmeTelNo_txt.TabIndex = 93;
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(80, 243);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(108, 19);
-            this.label85.TabIndex = 92;
-            this.label85.Text = "İşletme Tel No : ";
-            // 
-            // upDal_combo
-            // 
-            this.upDal_combo.FormattingEnabled = true;
-            this.upDal_combo.Location = new System.Drawing.Point(199, 345);
-            this.upDal_combo.Name = "upDal_combo";
-            this.upDal_combo.Size = new System.Drawing.Size(225, 27);
-            this.upDal_combo.TabIndex = 87;
-            this.upDal_combo.TextChanged += new System.EventHandler(this.upDal_combo_TextChanged);
-            this.upDal_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upDal_combo_KeyDown);
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(148, 348);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(40, 19);
-            this.label57.TabIndex = 86;
-            this.label57.Text = "Dal : ";
-            // 
-            // upIsletmeYetkilisi_txt
-            // 
-            this.upIsletmeYetkilisi_txt.Location = new System.Drawing.Point(200, 207);
-            this.upIsletmeYetkilisi_txt.Name = "upIsletmeYetkilisi_txt";
-            this.upIsletmeYetkilisi_txt.Size = new System.Drawing.Size(225, 24);
-            this.upIsletmeYetkilisi_txt.TabIndex = 84;
-            // 
-            // upUstaOgreticilikVarmiYok_radio
-            // 
-            this.upUstaOgreticilikVarmiYok_radio.AutoSize = true;
-            this.upUstaOgreticilikVarmiYok_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upUstaOgreticilikVarmiYok_radio.Location = new System.Drawing.Point(272, 273);
-            this.upUstaOgreticilikVarmiYok_radio.Name = "upUstaOgreticilikVarmiYok_radio";
-            this.upUstaOgreticilikVarmiYok_radio.Size = new System.Drawing.Size(50, 23);
-            this.upUstaOgreticilikVarmiYok_radio.TabIndex = 83;
-            this.upUstaOgreticilikVarmiYok_radio.TabStop = true;
-            this.upUstaOgreticilikVarmiYok_radio.Text = "Yok";
-            this.upUstaOgreticilikVarmiYok_radio.UseVisualStyleBackColor = true;
-            // 
-            // upUstaOgreticilikVarmiVar_radio
-            // 
-            this.upUstaOgreticilikVarmiVar_radio.AutoSize = true;
-            this.upUstaOgreticilikVarmiVar_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upUstaOgreticilikVarmiVar_radio.Location = new System.Drawing.Point(199, 273);
-            this.upUstaOgreticilikVarmiVar_radio.Name = "upUstaOgreticilikVarmiVar_radio";
-            this.upUstaOgreticilikVarmiVar_radio.Size = new System.Drawing.Size(48, 23);
-            this.upUstaOgreticilikVarmiVar_radio.TabIndex = 82;
-            this.upUstaOgreticilikVarmiVar_radio.TabStop = true;
-            this.upUstaOgreticilikVarmiVar_radio.Text = "Var";
-            this.upUstaOgreticilikVarmiVar_radio.UseVisualStyleBackColor = true;
-            // 
-            // upTamAdres_richtext
-            // 
-            this.upTamAdres_richtext.Location = new System.Drawing.Point(200, 131);
-            this.upTamAdres_richtext.Name = "upTamAdres_richtext";
-            this.upTamAdres_richtext.Size = new System.Drawing.Size(225, 62);
-            this.upTamAdres_richtext.TabIndex = 81;
-            this.upTamAdres_richtext.Text = "";
-            // 
-            // upIlce_combo
-            // 
-            this.upIlce_combo.FormattingEnabled = true;
-            this.upIlce_combo.Location = new System.Drawing.Point(200, 92);
-            this.upIlce_combo.Name = "upIlce_combo";
-            this.upIlce_combo.Size = new System.Drawing.Size(225, 27);
-            this.upIlce_combo.TabIndex = 80;
-            this.upIlce_combo.TextChanged += new System.EventHandler(this.upIlce_combo_TextChanged);
-            this.upIlce_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upIlce_combo_KeyDown);
-            // 
-            // upIl_combo
-            // 
-            this.upIl_combo.FormattingEnabled = true;
-            this.upIl_combo.Location = new System.Drawing.Point(200, 54);
-            this.upIl_combo.Name = "upIl_combo";
-            this.upIl_combo.Size = new System.Drawing.Size(225, 27);
-            this.upIl_combo.TabIndex = 79;
-            this.upIl_combo.TextChanged += new System.EventHandler(this.upIl_combo_TextChanged);
-            this.upIl_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upIl_combo_KeyDown);
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(100, 19);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(88, 19);
-            this.label58.TabIndex = 50;
-            this.label58.Text = "İşletme Adı : ";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(161, 57);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(27, 19);
-            this.label59.TabIndex = 51;
-            this.label59.Text = "İl : ";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(147, 95);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(41, 19);
-            this.label60.TabIndex = 52;
-            this.label60.Text = "İlçe : ";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(103, 131);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(85, 19);
-            this.label61.TabIndex = 53;
-            this.label61.Text = "Tam Adres : ";
-            // 
-            // upBolum_combo
-            // 
-            this.upBolum_combo.FormattingEnabled = true;
-            this.upBolum_combo.Location = new System.Drawing.Point(200, 306);
-            this.upBolum_combo.Name = "upBolum_combo";
-            this.upBolum_combo.Size = new System.Drawing.Size(225, 27);
-            this.upBolum_combo.TabIndex = 73;
-            this.upBolum_combo.SelectedIndexChanged += new System.EventHandler(this.upBolum_combo_SelectedIndexChanged);
-            this.upBolum_combo.TextChanged += new System.EventHandler(this.upBolum_combo_TextChanged);
-            this.upBolum_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upBolum_combo_KeyDown);
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(35, 276);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(153, 19);
-            this.label62.TabIndex = 58;
-            this.label62.Text = "Usta Öğreticilik Var mı?";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(75, 207);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(113, 19);
-            this.label63.TabIndex = 60;
-            this.label63.Text = "İşletme Yetkilisi : ";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(141, 308);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(47, 19);
-            this.label64.TabIndex = 61;
-            this.label64.Text = "Alan : ";
-            // 
-            // upIsletmeAdi_txt
-            // 
-            this.upIsletmeAdi_txt.Location = new System.Drawing.Point(200, 17);
-            this.upIsletmeAdi_txt.Name = "upIsletmeAdi_txt";
-            this.upIsletmeAdi_txt.Size = new System.Drawing.Size(225, 24);
-            this.upIsletmeAdi_txt.TabIndex = 62;
-            // 
-            // updateIsletmePanelSag_panel
-            // 
-            this.updateIsletmePanelSag_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.updateIsletmePanelSag_panel.Controls.Add(this.updateIsletmeAdi_combo);
-            this.updateIsletmePanelSag_panel.Controls.Add(this.label65);
-            this.updateIsletmePanelSag_panel.Controls.Add(this.upısletmeAktar_button);
-            this.updateIsletmePanelSag_panel.Controls.Add(this.upIsletmeGuncelle_button);
-            this.updateIsletmePanelSag_panel.Controls.Add(this.label66);
-            this.updateIsletmePanelSag_panel.Location = new System.Drawing.Point(458, 0);
-            this.updateIsletmePanelSag_panel.Name = "updateIsletmePanelSag_panel";
-            this.updateIsletmePanelSag_panel.Size = new System.Drawing.Size(427, 203);
-            this.updateIsletmePanelSag_panel.TabIndex = 81;
-            // 
-            // updateIsletmeAdi_combo
-            // 
-            this.updateIsletmeAdi_combo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updateIsletmeAdi_combo.FormattingEnabled = true;
-            this.updateIsletmeAdi_combo.Location = new System.Drawing.Point(111, 51);
-            this.updateIsletmeAdi_combo.Name = "updateIsletmeAdi_combo";
-            this.updateIsletmeAdi_combo.Size = new System.Drawing.Size(225, 27);
-            this.updateIsletmeAdi_combo.TabIndex = 83;
-            this.updateIsletmeAdi_combo.TextChanged += new System.EventHandler(this.updateIsletmeAdi_combo_TextChanged);
-            this.updateIsletmeAdi_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.updateIsletmeAdi_combo_KeyDown);
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(17, 54);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(88, 19);
-            this.label65.TabIndex = 82;
-            this.label65.Text = "İşletme Adı : ";
-            // 
-            // upısletmeAktar_button
-            // 
-            this.upısletmeAktar_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upısletmeAktar_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.upısletmeAktar_button.Location = new System.Drawing.Point(9, 88);
-            this.upısletmeAktar_button.Name = "upısletmeAktar_button";
-            this.upısletmeAktar_button.Size = new System.Drawing.Size(409, 44);
-            this.upısletmeAktar_button.TabIndex = 80;
-            this.upısletmeAktar_button.Text = "AKTAR";
-            this.upısletmeAktar_button.UseVisualStyleBackColor = true;
-            this.upısletmeAktar_button.Click += new System.EventHandler(this.upısletmeAktar_button_Click);
-            // 
-            // upIsletmeGuncelle_button
-            // 
-            this.upIsletmeGuncelle_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upIsletmeGuncelle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.upIsletmeGuncelle_button.Location = new System.Drawing.Point(9, 133);
-            this.upIsletmeGuncelle_button.Name = "upIsletmeGuncelle_button";
-            this.upIsletmeGuncelle_button.Size = new System.Drawing.Size(409, 64);
-            this.upIsletmeGuncelle_button.TabIndex = 79;
-            this.upIsletmeGuncelle_button.Text = "GÜNCELLE";
-            this.upIsletmeGuncelle_button.UseVisualStyleBackColor = true;
-            this.upIsletmeGuncelle_button.Click += new System.EventHandler(this.upIsletmeGuncelle_button_Click);
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label66.Location = new System.Drawing.Point(133, 17);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(160, 21);
-            this.label66.TabIndex = 63;
-            this.label66.Text = "Güncelleme Bilgileri";
-            // 
-            // tabPage18
-            // 
-            this.tabPage18.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage18.Controls.Add(this.panel15);
-            this.tabPage18.Location = new System.Drawing.Point(4, 28);
-            this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage18.TabIndex = 3;
-            this.tabPage18.Text = "SİL";
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel15.Controls.Add(this.deleteIsletmeAdi_combo);
-            this.panel15.Controls.Add(this.label67);
-            this.panel15.Controls.Add(this.deleteısletme_button);
-            this.panel15.Controls.Add(this.label68);
-            this.panel15.Location = new System.Drawing.Point(0, 0);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(427, 203);
-            this.panel15.TabIndex = 82;
-            // 
-            // deleteIsletmeAdi_combo
-            // 
-            this.deleteIsletmeAdi_combo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteIsletmeAdi_combo.FormattingEnabled = true;
-            this.deleteIsletmeAdi_combo.Location = new System.Drawing.Point(103, 50);
-            this.deleteIsletmeAdi_combo.Name = "deleteIsletmeAdi_combo";
-            this.deleteIsletmeAdi_combo.Size = new System.Drawing.Size(225, 27);
-            this.deleteIsletmeAdi_combo.TabIndex = 84;
-            this.deleteIsletmeAdi_combo.TextChanged += new System.EventHandler(this.deleteIsletmeAdi_combo_TextChanged);
-            this.deleteIsletmeAdi_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.deleteIsletmeAdi_combo_KeyDown);
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(9, 54);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(88, 19);
-            this.label67.TabIndex = 81;
-            this.label67.Text = "İşletme Adı : ";
-            // 
-            // deleteısletme_button
-            // 
-            this.deleteısletme_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.deleteısletme_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.deleteısletme_button.Location = new System.Drawing.Point(9, 133);
-            this.deleteısletme_button.Name = "deleteısletme_button";
-            this.deleteısletme_button.Size = new System.Drawing.Size(409, 64);
-            this.deleteısletme_button.TabIndex = 79;
-            this.deleteısletme_button.Text = "SİL";
-            this.deleteısletme_button.UseVisualStyleBackColor = true;
-            this.deleteısletme_button.Click += new System.EventHandler(this.deleteısletme_button_Click);
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label68.Location = new System.Drawing.Point(166, 15);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(111, 21);
-            this.label68.TabIndex = 63;
-            this.label68.Text = "Silme Bilgileri";
-            // 
-            // YAZDIRtabControl1
-            // 
-            this.YAZDIRtabControl1.Controls.Add(this.tabPage21);
-            this.YAZDIRtabControl1.Controls.Add(this.tabPage14);
-            this.YAZDIRtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.YAZDIRtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.YAZDIRtabControl1.Location = new System.Drawing.Point(0, 0);
-            this.YAZDIRtabControl1.Name = "YAZDIRtabControl1";
-            this.YAZDIRtabControl1.Padding = new System.Drawing.Point(50, 3);
-            this.YAZDIRtabControl1.SelectedIndex = 0;
-            this.YAZDIRtabControl1.Size = new System.Drawing.Size(1151, 650);
-            this.YAZDIRtabControl1.TabIndex = 85;
-            // 
-            // tabPage21
-            // 
-            this.tabPage21.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage21.Controls.Add(this.yazdirYanPanel_panel);
-            this.tabPage21.Controls.Add(this.panel17);
-            this.tabPage21.Location = new System.Drawing.Point(4, 28);
-            this.tabPage21.Name = "tabPage21";
-            this.tabPage21.Padding = new System.Windows.Forms.Padding(10);
-            this.tabPage21.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage21.TabIndex = 0;
-            this.tabPage21.Text = "YAZDIR";
-            // 
-            // yazdirYanPanel_panel
-            // 
-            this.yazdirYanPanel_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.yazdirYanPanel_panel.Controls.Add(this.yazdirNotFisi_panel);
-            this.yazdirYanPanel_panel.Controls.Add(this.yazdirDevamsizlikRaporu_panel);
-            this.yazdirYanPanel_panel.Controls.Add(this.yazdirAyliikGunlukRapor_panel);
-            this.yazdirYanPanel_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.yazdirYanPanel_panel.Location = new System.Drawing.Point(722, 10);
-            this.yazdirYanPanel_panel.Name = "yazdirYanPanel_panel";
-            this.yazdirYanPanel_panel.Padding = new System.Windows.Forms.Padding(10);
-            this.yazdirYanPanel_panel.Size = new System.Drawing.Size(411, 598);
-            this.yazdirYanPanel_panel.TabIndex = 85;
-            // 
-            // yazdirNotFisi_panel
-            // 
-            this.yazdirNotFisi_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.yazdirNotFisi_panel.Controls.Add(this.label90);
-            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem2_radio);
-            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem1_radio);
-            this.yazdirNotFisi_panel.Controls.Add(this.label96);
-            this.yazdirNotFisi_panel.Location = new System.Drawing.Point(6, 399);
-            this.yazdirNotFisi_panel.Name = "yazdirNotFisi_panel";
-            this.yazdirNotFisi_panel.Padding = new System.Windows.Forms.Padding(10);
-            this.yazdirNotFisi_panel.Size = new System.Drawing.Size(400, 187);
-            this.yazdirNotFisi_panel.TabIndex = 86;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label90.Location = new System.Drawing.Point(19, 63);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(137, 21);
-            this.label90.TabIndex = 88;
-            this.label90.Text = "Dönem Seçiniz : ";
-            // 
-            // yazdirilacakNotFisiDonem2_radio
-            // 
-            this.yazdirilacakNotFisiDonem2_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yazdirilacakNotFisiDonem2_radio.Location = new System.Drawing.Point(291, 63);
-            this.yazdirilacakNotFisiDonem2_radio.Name = "yazdirilacakNotFisiDonem2_radio";
-            this.yazdirilacakNotFisiDonem2_radio.Size = new System.Drawing.Size(108, 23);
-            this.yazdirilacakNotFisiDonem2_radio.TabIndex = 87;
-            this.yazdirilacakNotFisiDonem2_radio.TabStop = true;
-            this.yazdirilacakNotFisiDonem2_radio.Text = "2. Dönem";
-            this.yazdirilacakNotFisiDonem2_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakNotFisiDonem2_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem2_radio_CheckedChanged);
-            // 
-            // yazdirilacakNotFisiDonem1_radio
-            // 
-            this.yazdirilacakNotFisiDonem1_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yazdirilacakNotFisiDonem1_radio.Location = new System.Drawing.Point(168, 63);
-            this.yazdirilacakNotFisiDonem1_radio.Name = "yazdirilacakNotFisiDonem1_radio";
-            this.yazdirilacakNotFisiDonem1_radio.Size = new System.Drawing.Size(108, 23);
-            this.yazdirilacakNotFisiDonem1_radio.TabIndex = 86;
-            this.yazdirilacakNotFisiDonem1_radio.TabStop = true;
-            this.yazdirilacakNotFisiDonem1_radio.Text = "1. Dönem";
-            this.yazdirilacakNotFisiDonem1_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakNotFisiDonem1_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem1_radio_CheckedChanged);
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label96.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label96.Location = new System.Drawing.Point(10, 10);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(68, 21);
-            this.label96.TabIndex = 82;
-            this.label96.Text = "Not Fişi";
-            // 
-            // yazdirDevamsizlikRaporu_panel
-            // 
-            this.yazdirDevamsizlikRaporu_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label89);
-            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.yazdirilacakDevamsizlikAYI_combobox);
-            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label94);
-            this.yazdirDevamsizlikRaporu_panel.Location = new System.Drawing.Point(6, 206);
-            this.yazdirDevamsizlikRaporu_panel.Name = "yazdirDevamsizlikRaporu_panel";
-            this.yazdirDevamsizlikRaporu_panel.Padding = new System.Windows.Forms.Padding(10);
-            this.yazdirDevamsizlikRaporu_panel.Size = new System.Drawing.Size(400, 187);
-            this.yazdirDevamsizlikRaporu_panel.TabIndex = 85;
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label89.Location = new System.Drawing.Point(10, 66);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(141, 21);
-            this.label89.TabIndex = 86;
-            this.label89.Text = "Devamsızlık Ayı : ";
-            // 
-            // yazdirilacakDevamsizlikAYI_combobox
-            // 
-            this.yazdirilacakDevamsizlikAYI_combobox.FormattingEnabled = true;
-            this.yazdirilacakDevamsizlikAYI_combobox.Items.AddRange(new object[] {
-            "Ocak",
-            "Şubat",
-            "Mart",
-            "Nisan",
-            "Mayıs",
-            "Haziran",
-            "Temmuz",
-            "Ağustos",
-            "Eylül",
-            "Ekim",
-            "Kasım",
-            "Aralık"});
-            this.yazdirilacakDevamsizlikAYI_combobox.Location = new System.Drawing.Point(157, 65);
-            this.yazdirilacakDevamsizlikAYI_combobox.Name = "yazdirilacakDevamsizlikAYI_combobox";
-            this.yazdirilacakDevamsizlikAYI_combobox.Size = new System.Drawing.Size(210, 27);
-            this.yazdirilacakDevamsizlikAYI_combobox.TabIndex = 85;
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label94.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label94.Location = new System.Drawing.Point(10, 10);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(159, 21);
-            this.label94.TabIndex = 82;
-            this.label94.Text = "Devamsızlık Raporu";
-            // 
-            // yazdirAyliikGunlukRapor_panel
-            // 
-            this.yazdirAyliikGunlukRapor_panel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.yazdirAyliikGunlukRapor_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.panel79);
-            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.GorevTarihleri_panel);
-            this.yazdirAyliikGunlukRapor_panel.Location = new System.Drawing.Point(6, 13);
-            this.yazdirAyliikGunlukRapor_panel.Name = "yazdirAyliikGunlukRapor_panel";
-            this.yazdirAyliikGunlukRapor_panel.Size = new System.Drawing.Size(400, 187);
-            this.yazdirAyliikGunlukRapor_panel.TabIndex = 84;
-            // 
-            // panel79
-            // 
-            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporHAFTALIK_radio);
-            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporAYLIK_radio);
-            this.panel79.Controls.Add(this.label93);
-            this.panel79.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel79.Location = new System.Drawing.Point(0, 0);
-            this.panel79.Name = "panel79";
-            this.panel79.Padding = new System.Windows.Forms.Padding(10);
-            this.panel79.Size = new System.Drawing.Size(262, 183);
-            this.panel79.TabIndex = 90;
-            // 
-            // yazdirilacakAyGunlukRaporHAFTALIK_radio
-            // 
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Location = new System.Drawing.Point(108, 58);
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Name = "yazdirilacakAyGunlukRaporHAFTALIK_radio";
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Size = new System.Drawing.Size(103, 23);
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabIndex = 84;
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabStop = true;
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Text = "HAFTALIK";
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporHAFTALIK_radio_CheckedChanged);
-            // 
-            // yazdirilacakAyGunlukRaporAYLIK_radio
-            // 
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Location = new System.Drawing.Point(31, 58);
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Name = "yazdirilacakAyGunlukRaporAYLIK_radio";
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Size = new System.Drawing.Size(70, 23);
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabIndex = 83;
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabStop = true;
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Text = "AYLIK";
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporAYLIK_radio_CheckedChanged);
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label93.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label93.Location = new System.Drawing.Point(10, 10);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(168, 21);
-            this.label93.TabIndex = 85;
-            this.label93.Text = "Aylık / Günlük Rapor";
-            // 
-            // GorevTarihleri_panel
-            // 
-            this.GorevTarihleri_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.GorevTarihleri_panel.Controls.Add(this.label120);
-            this.GorevTarihleri_panel.Controls.Add(this.GorevTarihiGunleri_richTextBox);
-            this.GorevTarihleri_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.GorevTarihleri_panel.Location = new System.Drawing.Point(261, 0);
-            this.GorevTarihleri_panel.Name = "GorevTarihleri_panel";
-            this.GorevTarihleri_panel.Padding = new System.Windows.Forms.Padding(8, 8, 10, 10);
-            this.GorevTarihleri_panel.Size = new System.Drawing.Size(135, 183);
-            this.GorevTarihleri_panel.TabIndex = 89;
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label120.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label120.Location = new System.Drawing.Point(8, 8);
-            this.label120.Margin = new System.Windows.Forms.Padding(0);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(116, 20);
-            this.label120.TabIndex = 82;
-            this.label120.Text = "Görev Tarihleri";
-            // 
-            // GorevTarihiGunleri_richTextBox
-            // 
-            this.GorevTarihiGunleri_richTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.GorevTarihiGunleri_richTextBox.Location = new System.Drawing.Point(8, 31);
-            this.GorevTarihiGunleri_richTextBox.Name = "GorevTarihiGunleri_richTextBox";
-            this.GorevTarihiGunleri_richTextBox.Size = new System.Drawing.Size(113, 138);
-            this.GorevTarihiGunleri_richTextBox.TabIndex = 87;
-            this.GorevTarihiGunleri_richTextBox.Text = "";
-            // 
-            // panel17
-            // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.panel28);
-            this.panel17.Controls.Add(this.panel20);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel17.Location = new System.Drawing.Point(10, 10);
-            this.panel17.Name = "panel17";
-            this.panel17.Padding = new System.Windows.Forms.Padding(10);
-            this.panel17.Size = new System.Drawing.Size(716, 598);
-            this.panel17.TabIndex = 86;
-            // 
-            // panel28
-            // 
-            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.panel27);
-            this.panel28.Controls.Add(this.panel30);
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel28.Location = new System.Drawing.Point(10, 350);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(694, 236);
-            this.panel28.TabIndex = 89;
-            // 
-            // panel27
-            // 
-            this.panel27.Controls.Add(this.panel24);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel27.Location = new System.Drawing.Point(436, 0);
-            this.panel27.Name = "panel27";
-            this.panel27.Padding = new System.Windows.Forms.Padding(4);
-            this.panel27.Size = new System.Drawing.Size(256, 234);
-            this.panel27.TabIndex = 87;
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel24.Controls.Add(this.panel80);
-            this.panel24.Controls.Add(this.panel76);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel24.Location = new System.Drawing.Point(4, 4);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(248, 226);
-            this.panel24.TabIndex = 83;
-            // 
-            // panel80
-            // 
-            this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel80.Controls.Add(this.settingsPDFeDonustur_radio);
-            this.panel80.Controls.Add(this.settingsYazdir_radio);
-            this.panel80.Controls.Add(this.label92);
-            this.panel80.Controls.Add(this.numericUpDown1);
-            this.panel80.Controls.Add(this.label91);
-            this.panel80.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel80.Location = new System.Drawing.Point(0, 0);
-            this.panel80.Name = "panel80";
-            this.panel80.Size = new System.Drawing.Size(244, 168);
-            this.panel80.TabIndex = 90;
-            // 
-            // settingsPDFeDonustur_radio
-            // 
-            this.settingsPDFeDonustur_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsPDFeDonustur_radio.Location = new System.Drawing.Point(18, 137);
-            this.settingsPDFeDonustur_radio.Name = "settingsPDFeDonustur_radio";
-            this.settingsPDFeDonustur_radio.Size = new System.Drawing.Size(215, 23);
-            this.settingsPDFeDonustur_radio.TabIndex = 95;
-            this.settingsPDFeDonustur_radio.TabStop = true;
-            this.settingsPDFeDonustur_radio.Text = "PDF\'e dönüştür";
-            this.settingsPDFeDonustur_radio.UseVisualStyleBackColor = true;
-            this.settingsPDFeDonustur_radio.CheckedChanged += new System.EventHandler(this.settingsPDFeDonustur_radio_CheckedChanged);
-            // 
-            // settingsYazdir_radio
-            // 
-            this.settingsYazdir_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsYazdir_radio.Location = new System.Drawing.Point(18, 108);
-            this.settingsYazdir_radio.Name = "settingsYazdir_radio";
-            this.settingsYazdir_radio.Size = new System.Drawing.Size(215, 23);
-            this.settingsYazdir_radio.TabIndex = 94;
-            this.settingsYazdir_radio.TabStop = true;
-            this.settingsYazdir_radio.Text = "Yazdır(Varsayılan Yazıcı)";
-            this.settingsYazdir_radio.UseVisualStyleBackColor = true;
-            this.settingsYazdir_radio.CheckedChanged += new System.EventHandler(this.settingsYazdir_radio_CheckedChanged);
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label92.Location = new System.Drawing.Point(2, 76);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(181, 21);
-            this.label92.TabIndex = 93;
-            this.label92.Text = "İşlem Türünü Seçiniz : ";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(24, 42);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(209, 24);
-            this.numericUpDown1.TabIndex = 92;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label91.Location = new System.Drawing.Point(2, 7);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(200, 21);
-            this.label91.TabIndex = 91;
-            this.label91.Text = "Kaç Adet Çıktı Alınacak : ";
-            // 
-            // panel76
-            // 
-            this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel76.Controls.Add(this.label122);
-            this.panel76.Controls.Add(this.label121);
-            this.panel76.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel76.Location = new System.Drawing.Point(0, 168);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(244, 54);
-            this.panel76.TabIndex = 89;
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label122.Location = new System.Drawing.Point(16, 29);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(57, 17);
-            this.label122.TabIndex = 94;
-            this.label122.Text = "label122";
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label121.Location = new System.Drawing.Point(3, 3);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(124, 20);
-            this.label121.TabIndex = 93;
-            this.label121.Text = "Varsayılan yazıcı";
-            // 
-            // panel30
-            // 
-            this.panel30.Controls.Add(this.panel26);
-            this.panel30.Controls.Add(this.panel25);
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel30.Location = new System.Drawing.Point(0, 0);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(433, 234);
-            this.panel30.TabIndex = 86;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.button6);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel26.Location = new System.Drawing.Point(0, 138);
-            this.panel26.Name = "panel26";
-            this.panel26.Padding = new System.Windows.Forms.Padding(2);
-            this.panel26.Size = new System.Drawing.Size(433, 96);
-            this.panel26.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Location = new System.Drawing.Point(2, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(429, 92);
-            this.button6.TabIndex = 85;
-            this.button6.Text = "YAZDIR";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.Transparent;
-            this.panel25.Controls.Add(this.button10);
-            this.panel25.Controls.Add(this.button5);
-            this.panel25.Controls.Add(this.button8);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel25.Location = new System.Drawing.Point(0, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Padding = new System.Windows.Forms.Padding(4);
-            this.panel25.Size = new System.Drawing.Size(433, 138);
-            this.panel25.TabIndex = 86;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button10.Location = new System.Drawing.Point(292, 4);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(138, 130);
-            this.button10.TabIndex = 84;
-            this.button10.Text = "Not Fişi";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.Location = new System.Drawing.Point(148, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 130);
-            this.button5.TabIndex = 84;
-            this.button5.Text = "Aylık / Günlük Rapor";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button8.Location = new System.Drawing.Point(4, 4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 130);
-            this.button8.TabIndex = 84;
-            this.button8.Text = "Devamsızlık Raporu";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.panel21);
-            this.panel20.Controls.Add(this.panel22);
-            this.panel20.Location = new System.Drawing.Point(10, 180);
-            this.panel20.Name = "panel20";
-            this.panel20.Padding = new System.Windows.Forms.Padding(5);
-            this.panel20.Size = new System.Drawing.Size(694, 164);
-            this.panel20.TabIndex = 88;
-            // 
-            // panel21
-            // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel21.Controls.Add(this.label86);
-            this.panel21.Controls.Add(this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel21.Location = new System.Drawing.Point(384, 5);
-            this.panel21.Name = "panel21";
-            this.panel21.Padding = new System.Windows.Forms.Padding(10);
-            this.panel21.Size = new System.Drawing.Size(305, 154);
-            this.panel21.TabIndex = 83;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label86.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label86.Location = new System.Drawing.Point(10, 10);
-            this.label86.Name = "label86";
-            this.label86.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
-            this.label86.Size = new System.Drawing.Size(200, 31);
-            this.label86.TabIndex = 5;
-            this.label86.Text = "İşletmeye Ait Alan Bilgisi";
-            // 
-            // yazdirilacakIsletmeyeAitAlanBilgisi_listbox
-            // 
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.FormattingEnabled = true;
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.ItemHeight = 19;
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Location = new System.Drawing.Point(10, 41);
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Name = "yazdirilacakIsletmeyeAitAlanBilgisi_listbox";
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Size = new System.Drawing.Size(281, 99);
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.TabIndex = 4;
-            // 
-            // panel22
-            // 
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel22.Controls.Add(this.yazdirilacakIsletme_listbox);
-            this.panel22.Controls.Add(this.label88);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel22.Location = new System.Drawing.Point(5, 5);
-            this.panel22.Name = "panel22";
-            this.panel22.Padding = new System.Windows.Forms.Padding(10);
-            this.panel22.Size = new System.Drawing.Size(374, 154);
-            this.panel22.TabIndex = 0;
-            // 
-            // yazdirilacakIsletme_listbox
-            // 
-            this.yazdirilacakIsletme_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yazdirilacakIsletme_listbox.FormattingEnabled = true;
-            this.yazdirilacakIsletme_listbox.ItemHeight = 19;
-            this.yazdirilacakIsletme_listbox.Location = new System.Drawing.Point(10, 41);
-            this.yazdirilacakIsletme_listbox.Name = "yazdirilacakIsletme_listbox";
-            this.yazdirilacakIsletme_listbox.Size = new System.Drawing.Size(350, 99);
-            this.yazdirilacakIsletme_listbox.TabIndex = 83;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label88.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label88.Location = new System.Drawing.Point(10, 10);
-            this.label88.Name = "label88";
-            this.label88.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
-            this.label88.Size = new System.Drawing.Size(70, 31);
-            this.label88.TabIndex = 82;
-            this.label88.Text = "İşletme";
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.panel19);
-            this.panel18.Controls.Add(this.panel32);
-            this.panel18.Location = new System.Drawing.Point(10, 9);
-            this.panel18.Name = "panel18";
-            this.panel18.Padding = new System.Windows.Forms.Padding(5);
-            this.panel18.Size = new System.Drawing.Size(694, 164);
-            this.panel18.TabIndex = 87;
-            // 
-            // panel19
-            // 
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel19.Controls.Add(this.label87);
-            this.panel19.Controls.Add(this.yazdirilacakOgretmeniFiltrele_listbox);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel19.Location = new System.Drawing.Point(473, 5);
-            this.panel19.Name = "panel19";
-            this.panel19.Padding = new System.Windows.Forms.Padding(10);
-            this.panel19.Size = new System.Drawing.Size(216, 154);
-            this.panel19.TabIndex = 83;
-            // 
-            // label87
-            // 
-            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label87.Location = new System.Drawing.Point(34, 5);
-            this.label87.Name = "label87";
-            this.label87.Padding = new System.Windows.Forms.Padding(5);
-            this.label87.Size = new System.Drawing.Size(147, 31);
-            this.label87.TabIndex = 5;
-            this.label87.Text = "Hafta(Filtreleme)";
-            // 
-            // yazdirilacakOgretmeniFiltrele_listbox
-            // 
-            this.yazdirilacakOgretmeniFiltrele_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.yazdirilacakOgretmeniFiltrele_listbox.FormattingEnabled = true;
-            this.yazdirilacakOgretmeniFiltrele_listbox.ItemHeight = 19;
-            this.yazdirilacakOgretmeniFiltrele_listbox.Items.AddRange(new object[] {
-            "A Grup Haftası",
-            "B Grup Haftası",
-            "C Grup Haftası",
-            "D Grup Haftası"});
-            this.yazdirilacakOgretmeniFiltrele_listbox.Location = new System.Drawing.Point(10, 60);
-            this.yazdirilacakOgretmeniFiltrele_listbox.Name = "yazdirilacakOgretmeniFiltrele_listbox";
-            this.yazdirilacakOgretmeniFiltrele_listbox.Size = new System.Drawing.Size(192, 80);
-            this.yazdirilacakOgretmeniFiltrele_listbox.TabIndex = 4;
-            this.yazdirilacakOgretmeniFiltrele_listbox.SelectedIndexChanged += new System.EventHandler(this.yazdirilacakOgretmeniFiltrele_listbox_SelectedIndexChanged);
-            // 
-            // panel32
-            // 
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel32.Controls.Add(this.label78);
-            this.panel32.Controls.Add(this.label110);
-            this.panel32.Controls.Add(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel32.Location = new System.Drawing.Point(5, 5);
-            this.panel32.Name = "panel32";
-            this.panel32.Padding = new System.Windows.Forms.Padding(10);
-            this.panel32.Size = new System.Drawing.Size(465, 154);
-            this.panel32.TabIndex = 0;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label78.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label78.Location = new System.Drawing.Point(10, 10);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(184, 21);
-            this.label78.TabIndex = 82;
-            this.label78.Text = "Koordinatör Öğretmen";
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label110.Location = new System.Drawing.Point(13, 59);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(187, 21);
-            this.label110.TabIndex = 72;
-            this.label110.Text = "Öğretmen Adı Soyadı : ";
-            // 
-            // yazdirBelgesiCikartilacakKoordinatorOgretmen_combo
-            // 
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.FormattingEnabled = true;
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Location = new System.Drawing.Point(205, 58);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Name = "yazdirBelgesiCikartilacakKoordinatorOgretmen_combo";
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Size = new System.Drawing.Size(244, 27);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TabIndex = 80;
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedIndexChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_SelectedIndexChanged);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TextChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_TextChanged);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_KeyDown);
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage14.Controls.Add(this.panel97);
-            this.tabPage14.Location = new System.Drawing.Point(4, 28);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(20);
-            this.tabPage14.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage14.TabIndex = 1;
-            this.tabPage14.Text = "QR İLE BELGE OKUT";
-            // 
-            // panel97
-            // 
-            this.panel97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel97.Controls.Add(this.QrTextBox);
-            this.panel97.Controls.Add(this.label108);
-            this.panel97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel97.Location = new System.Drawing.Point(20, 20);
-            this.panel97.Name = "panel97";
-            this.panel97.Size = new System.Drawing.Size(1103, 578);
-            this.panel97.TabIndex = 0;
-            this.panel97.Click += new System.EventHandler(this.panel97_Click);
-            // 
-            // QrTextBox
-            // 
-            this.QrTextBox.Location = new System.Drawing.Point(227, 95);
-            this.QrTextBox.Name = "QrTextBox";
-            this.QrTextBox.Size = new System.Drawing.Size(0, 24);
-            this.QrTextBox.TabIndex = 1;
-            this.QrTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.QrTextBox_KeyDown);
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label108.Location = new System.Drawing.Point(446, 239);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(252, 21);
-            this.label108.TabIndex = 0;
-            this.label108.Text = "Lütfen QR kodu cihazla okutun.";
             // 
             // SETTINGStabControl1
             // 
@@ -3915,6 +2395,11 @@ namespace WindowsFormsApp1
             // panel52
             // 
             this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeIbanNo_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeSicilNo_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUODT_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOSoyadi_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOAdi_checkbox);
             this.panel52.Controls.Add(this.settingsColonNameIsletmeDal_checkbox);
             this.panel52.Controls.Add(this.settingsColonNameIsletmeBolum_checkbox);
             this.panel52.Controls.Add(this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox);
@@ -3931,12 +2416,77 @@ namespace WindowsFormsApp1
             this.panel52.Size = new System.Drawing.Size(365, 452);
             this.panel52.TabIndex = 8;
             // 
+            // settingsColonNameIsletmeIbanNo_checkbox
+            // 
+            this.settingsColonNameIsletmeIbanNo_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeIbanNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeIbanNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeIbanNo_checkbox.Location = new System.Drawing.Point(11, 402);
+            this.settingsColonNameIsletmeIbanNo_checkbox.Name = "settingsColonNameIsletmeIbanNo_checkbox";
+            this.settingsColonNameIsletmeIbanNo_checkbox.Size = new System.Drawing.Size(151, 25);
+            this.settingsColonNameIsletmeIbanNo_checkbox.TabIndex = 68;
+            this.settingsColonNameIsletmeIbanNo_checkbox.Tag = "IsletmeIbanNo";
+            this.settingsColonNameIsletmeIbanNo_checkbox.Text = "İşletme İban No";
+            this.settingsColonNameIsletmeIbanNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeSicilNo_checkbox
+            // 
+            this.settingsColonNameIsletmeSicilNo_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeSicilNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeSicilNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeSicilNo_checkbox.Location = new System.Drawing.Point(11, 372);
+            this.settingsColonNameIsletmeSicilNo_checkbox.Name = "settingsColonNameIsletmeSicilNo_checkbox";
+            this.settingsColonNameIsletmeSicilNo_checkbox.Size = new System.Drawing.Size(146, 25);
+            this.settingsColonNameIsletmeSicilNo_checkbox.TabIndex = 67;
+            this.settingsColonNameIsletmeSicilNo_checkbox.Tag = "IsletmeSicilNo";
+            this.settingsColonNameIsletmeSicilNo_checkbox.Text = "İşletme Sicil No";
+            this.settingsColonNameIsletmeSicilNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUODT_checkbox
+            // 
+            this.settingsColonNameIsletmeUODT_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUODT_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUODT_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUODT_checkbox.Location = new System.Drawing.Point(11, 342);
+            this.settingsColonNameIsletmeUODT_checkbox.Name = "settingsColonNameIsletmeUODT_checkbox";
+            this.settingsColonNameIsletmeUODT_checkbox.Size = new System.Drawing.Size(261, 25);
+            this.settingsColonNameIsletmeUODT_checkbox.TabIndex = 66;
+            this.settingsColonNameIsletmeUODT_checkbox.Tag = "IsletmeUstaOgreticiDogumTarihi";
+            this.settingsColonNameIsletmeUODT_checkbox.Text = "Usta Öğreticinin Doğum Tarihi";
+            this.settingsColonNameIsletmeUODT_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUOSoyadi_checkbox
+            // 
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Location = new System.Drawing.Point(11, 312);
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Name = "settingsColonNameIsletmeUOSoyadi_checkbox";
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Size = new System.Drawing.Size(183, 25);
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.TabIndex = 65;
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Tag = "IsletmeUstaOgreticiSoyadi";
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Text = "Usta Öğretici Soyadı";
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUOAdi_checkbox
+            // 
+            this.settingsColonNameIsletmeUOAdi_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUOAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUOAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUOAdi_checkbox.Location = new System.Drawing.Point(11, 282);
+            this.settingsColonNameIsletmeUOAdi_checkbox.Name = "settingsColonNameIsletmeUOAdi_checkbox";
+            this.settingsColonNameIsletmeUOAdi_checkbox.Size = new System.Drawing.Size(158, 25);
+            this.settingsColonNameIsletmeUOAdi_checkbox.TabIndex = 64;
+            this.settingsColonNameIsletmeUOAdi_checkbox.Tag = "IsletmeUstaOgreticiAdi";
+            this.settingsColonNameIsletmeUOAdi_checkbox.Text = "Usta Öğretici Adı";
+            this.settingsColonNameIsletmeUOAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
             // settingsColonNameIsletmeDal_checkbox
             // 
             this.settingsColonNameIsletmeDal_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeDal_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeDal_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeDal_checkbox.Location = new System.Drawing.Point(11, 257);
+            this.settingsColonNameIsletmeDal_checkbox.Location = new System.Drawing.Point(11, 252);
             this.settingsColonNameIsletmeDal_checkbox.Name = "settingsColonNameIsletmeDal_checkbox";
             this.settingsColonNameIsletmeDal_checkbox.Size = new System.Drawing.Size(118, 25);
             this.settingsColonNameIsletmeDal_checkbox.TabIndex = 63;
@@ -3949,7 +2499,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeBolum_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeBolum_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeBolum_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeBolum_checkbox.Location = new System.Drawing.Point(11, 226);
+            this.settingsColonNameIsletmeBolum_checkbox.Location = new System.Drawing.Point(11, 222);
             this.settingsColonNameIsletmeBolum_checkbox.Name = "settingsColonNameIsletmeBolum_checkbox";
             this.settingsColonNameIsletmeBolum_checkbox.Size = new System.Drawing.Size(127, 25);
             this.settingsColonNameIsletmeBolum_checkbox.TabIndex = 62;
@@ -3962,7 +2512,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Location = new System.Drawing.Point(11, 195);
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Location = new System.Drawing.Point(11, 192);
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Name = "settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox";
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Size = new System.Drawing.Size(145, 25);
             this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.TabIndex = 61;
@@ -3975,7 +2525,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeTelNo_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeTelNo_checkbox.Location = new System.Drawing.Point(11, 164);
+            this.settingsColonNameIsletmeTelNo_checkbox.Location = new System.Drawing.Point(11, 162);
             this.settingsColonNameIsletmeTelNo_checkbox.Name = "settingsColonNameIsletmeTelNo_checkbox";
             this.settingsColonNameIsletmeTelNo_checkbox.Size = new System.Drawing.Size(86, 25);
             this.settingsColonNameIsletmeTelNo_checkbox.TabIndex = 60;
@@ -3988,7 +2538,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeYetkilisi_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeYetkilisi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeYetkilisi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Location = new System.Drawing.Point(11, 133);
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Location = new System.Drawing.Point(11, 132);
             this.settingsColonNameIsletmeYetkilisi_checkbox.Name = "settingsColonNameIsletmeYetkilisi_checkbox";
             this.settingsColonNameIsletmeYetkilisi_checkbox.Size = new System.Drawing.Size(146, 25);
             this.settingsColonNameIsletmeYetkilisi_checkbox.TabIndex = 59;
@@ -4001,7 +2551,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeTamAdres_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeTamAdres_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeTamAdres_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeTamAdres_checkbox.Location = new System.Drawing.Point(11, 105);
+            this.settingsColonNameIsletmeTamAdres_checkbox.Location = new System.Drawing.Point(11, 102);
             this.settingsColonNameIsletmeTamAdres_checkbox.Name = "settingsColonNameIsletmeTamAdres_checkbox";
             this.settingsColonNameIsletmeTamAdres_checkbox.Size = new System.Drawing.Size(110, 25);
             this.settingsColonNameIsletmeTamAdres_checkbox.TabIndex = 58;
@@ -4014,7 +2564,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeAdresIlce_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeAdresIlce_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeAdresIlce_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Location = new System.Drawing.Point(11, 74);
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Location = new System.Drawing.Point(11, 72);
             this.settingsColonNameIsletmeAdresIlce_checkbox.Name = "settingsColonNameIsletmeAdresIlce_checkbox";
             this.settingsColonNameIsletmeAdresIlce_checkbox.Size = new System.Drawing.Size(55, 25);
             this.settingsColonNameIsletmeAdresIlce_checkbox.TabIndex = 57;
@@ -4027,7 +2577,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameIsletmeAdresIl_checkbox.AutoSize = true;
             this.settingsColonNameIsletmeAdresIl_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameIsletmeAdresIl_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeAdresIl_checkbox.Location = new System.Drawing.Point(11, 43);
+            this.settingsColonNameIsletmeAdresIl_checkbox.Location = new System.Drawing.Point(11, 42);
             this.settingsColonNameIsletmeAdresIl_checkbox.Name = "settingsColonNameIsletmeAdresIl_checkbox";
             this.settingsColonNameIsletmeAdresIl_checkbox.Size = new System.Drawing.Size(38, 25);
             this.settingsColonNameIsletmeAdresIl_checkbox.TabIndex = 56;
@@ -4237,6 +2787,11 @@ namespace WindowsFormsApp1
             // panel56
             // 
             this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciHowToUSE_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciBabaTelefonu_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciBabaAdi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciAnneTelefonu_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciAnneAdi_checkbox);
             this.panel56.Controls.Add(this.settingsColonNameOgrenciDalAdi_checkbox);
             this.panel56.Controls.Add(this.settingsColonNameOgrenciStajDonemi_checkbox);
             this.panel56.Controls.Add(this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox);
@@ -4258,12 +2813,77 @@ namespace WindowsFormsApp1
             this.panel56.Size = new System.Drawing.Size(364, 452);
             this.panel56.TabIndex = 10;
             // 
+            // settingsColonNameOgrenciHowToUSE_checkbox
+            // 
+            this.settingsColonNameOgrenciHowToUSE_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Location = new System.Drawing.Point(195, 132);
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Name = "settingsColonNameOgrenciHowToUSE_checkbox";
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Size = new System.Drawing.Size(103, 25);
+            this.settingsColonNameOgrenciHowToUSE_checkbox.TabIndex = 57;
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Tag = "HowUsePhone";
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Text = "Kullanılan";
+            this.settingsColonNameOgrenciHowToUSE_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciBabaTelefonu_checkbox
+            // 
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Location = new System.Drawing.Point(195, 103);
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Name = "settingsColonNameOgrenciBabaTelefonu_checkbox";
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Size = new System.Drawing.Size(139, 25);
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.TabIndex = 56;
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Tag = "OgrenciBabaTelNo";
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Text = "Baba Telefonu";
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciBabaAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciBabaAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Location = new System.Drawing.Point(195, 72);
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Name = "settingsColonNameOgrenciBabaAdi_checkbox";
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Size = new System.Drawing.Size(97, 25);
+            this.settingsColonNameOgrenciBabaAdi_checkbox.TabIndex = 55;
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Tag = "OgrenciBabaAdi";
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Text = "Baba Adı";
+            this.settingsColonNameOgrenciBabaAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciAnneTelefonu_checkbox
+            // 
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Location = new System.Drawing.Point(195, 41);
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Name = "settingsColonNameOgrenciAnneTelefonu_checkbox";
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Size = new System.Drawing.Size(141, 25);
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.TabIndex = 54;
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Tag = "OgrenciAnneTelNo";
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Text = "Anne Telefonu";
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciAnneAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciAnneAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Location = new System.Drawing.Point(195, 10);
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Name = "settingsColonNameOgrenciAnneAdi_checkbox";
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Size = new System.Drawing.Size(99, 25);
+            this.settingsColonNameOgrenciAnneAdi_checkbox.TabIndex = 53;
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Tag = "OgrenciAnneAdi";
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Text = "Anne Adı";
+            this.settingsColonNameOgrenciAnneAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
             // settingsColonNameOgrenciDalAdi_checkbox
             // 
             this.settingsColonNameOgrenciDalAdi_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciDalAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciDalAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciDalAdi_checkbox.Location = new System.Drawing.Point(10, 257);
+            this.settingsColonNameOgrenciDalAdi_checkbox.Location = new System.Drawing.Point(10, 258);
             this.settingsColonNameOgrenciDalAdi_checkbox.Name = "settingsColonNameOgrenciDalAdi_checkbox";
             this.settingsColonNameOgrenciDalAdi_checkbox.Size = new System.Drawing.Size(84, 25);
             this.settingsColonNameOgrenciDalAdi_checkbox.TabIndex = 52;
@@ -4276,7 +2896,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciStajDonemi_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciStajDonemi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciStajDonemi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Location = new System.Drawing.Point(10, 412);
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Location = new System.Drawing.Point(10, 413);
             this.settingsColonNameOgrenciStajDonemi_checkbox.Name = "settingsColonNameOgrenciStajDonemi_checkbox";
             this.settingsColonNameOgrenciStajDonemi_checkbox.Size = new System.Drawing.Size(122, 25);
             this.settingsColonNameOgrenciStajDonemi_checkbox.TabIndex = 51;
@@ -4289,7 +2909,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Location = new System.Drawing.Point(10, 381);
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Location = new System.Drawing.Point(10, 382);
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Name = "settingsColonNameOgrenciKoordinatorOgretmen_checkbox";
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Size = new System.Drawing.Size(158, 25);
             this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.TabIndex = 50;
@@ -4302,7 +2922,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciStajBitisTarihi_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Location = new System.Drawing.Point(10, 350);
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Location = new System.Drawing.Point(10, 351);
             this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Name = "settingsColonNameOgrenciStajBitisTarihi_checkbox";
             this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Size = new System.Drawing.Size(140, 25);
             this.settingsColonNameOgrenciStajBitisTarihi_checkbox.TabIndex = 49;
@@ -4315,7 +2935,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Location = new System.Drawing.Point(10, 319);
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Location = new System.Drawing.Point(10, 320);
             this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Name = "settingsColonNameOgrenciStajaBaslangicTarihi_checkbox";
             this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Size = new System.Drawing.Size(180, 25);
             this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.TabIndex = 48;
@@ -4328,7 +2948,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciGrup_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciGrup_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciGrup_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciGrup_checkbox.Location = new System.Drawing.Point(10, 288);
+            this.settingsColonNameOgrenciGrup_checkbox.Location = new System.Drawing.Point(10, 289);
             this.settingsColonNameOgrenciGrup_checkbox.Name = "settingsColonNameOgrenciGrup_checkbox";
             this.settingsColonNameOgrenciGrup_checkbox.Size = new System.Drawing.Size(133, 25);
             this.settingsColonNameOgrenciGrup_checkbox.TabIndex = 47;
@@ -4341,7 +2961,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciAlanAdi_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciAlanAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciAlanAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Location = new System.Drawing.Point(12, 226);
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Location = new System.Drawing.Point(12, 227);
             this.settingsColonNameOgrenciAlanAdi_checkbox.Name = "settingsColonNameOgrenciAlanAdi_checkbox";
             this.settingsColonNameOgrenciAlanAdi_checkbox.Size = new System.Drawing.Size(93, 25);
             this.settingsColonNameOgrenciAlanAdi_checkbox.TabIndex = 46;
@@ -4354,7 +2974,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciTcKimlikNo_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciTcKimlikNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciTcKimlikNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Location = new System.Drawing.Point(12, 195);
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Location = new System.Drawing.Point(12, 196);
             this.settingsColonNameOgrenciTcKimlikNo_checkbox.Name = "settingsColonNameOgrenciTcKimlikNo_checkbox";
             this.settingsColonNameOgrenciTcKimlikNo_checkbox.Size = new System.Drawing.Size(125, 25);
             this.settingsColonNameOgrenciTcKimlikNo_checkbox.TabIndex = 45;
@@ -4367,7 +2987,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciTelNo_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciTelNo_checkbox.Location = new System.Drawing.Point(12, 164);
+            this.settingsColonNameOgrenciTelNo_checkbox.Location = new System.Drawing.Point(12, 165);
             this.settingsColonNameOgrenciTelNo_checkbox.Name = "settingsColonNameOgrenciTelNo_checkbox";
             this.settingsColonNameOgrenciTelNo_checkbox.Size = new System.Drawing.Size(79, 25);
             this.settingsColonNameOgrenciTelNo_checkbox.TabIndex = 44;
@@ -4380,7 +3000,7 @@ namespace WindowsFormsApp1
             this.settingsColonNameOgrenciFirmaAdi_checkbox.AutoSize = true;
             this.settingsColonNameOgrenciFirmaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsColonNameOgrenciFirmaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Location = new System.Drawing.Point(12, 133);
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Location = new System.Drawing.Point(12, 134);
             this.settingsColonNameOgrenciFirmaAdi_checkbox.Name = "settingsColonNameOgrenciFirmaAdi_checkbox";
             this.settingsColonNameOgrenciFirmaAdi_checkbox.Size = new System.Drawing.Size(102, 25);
             this.settingsColonNameOgrenciFirmaAdi_checkbox.TabIndex = 43;
@@ -8276,6 +6896,11 @@ namespace WindowsFormsApp1
             // panel33
             // 
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciHowToUSE_checkbox);
+            this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciBabaTel_checkbox);
+            this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciBabaAdi_checkbox);
+            this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciAnneTel_checkbox);
+            this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciAnneAdi_checkbox);
             this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciDalAdi_checkbox);
             this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciStajDonemi_checkbox);
             this.panel33.Controls.Add(this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox);
@@ -8301,7 +6926,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciDalAdi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciDalAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciDalAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciDalAdi_checkbox.Location = new System.Drawing.Point(14, 259);
+            this.ogrenciFiltreleOgrenciDalAdi_checkbox.Location = new System.Drawing.Point(14, 206);
             this.ogrenciFiltreleOgrenciDalAdi_checkbox.Name = "ogrenciFiltreleOgrenciDalAdi_checkbox";
             this.ogrenciFiltreleOgrenciDalAdi_checkbox.Size = new System.Drawing.Size(84, 25);
             this.ogrenciFiltreleOgrenciDalAdi_checkbox.TabIndex = 26;
@@ -8315,7 +6940,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciStajDonemi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciStajDonemi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciStajDonemi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciStajDonemi_checkbox.Location = new System.Drawing.Point(13, 412);
+            this.ogrenciFiltreleOgrenciStajDonemi_checkbox.Location = new System.Drawing.Point(13, 329);
             this.ogrenciFiltreleOgrenciStajDonemi_checkbox.Name = "ogrenciFiltreleOgrenciStajDonemi_checkbox";
             this.ogrenciFiltreleOgrenciStajDonemi_checkbox.Size = new System.Drawing.Size(122, 25);
             this.ogrenciFiltreleOgrenciStajDonemi_checkbox.TabIndex = 25;
@@ -8329,7 +6954,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.Location = new System.Drawing.Point(13, 381);
+            this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.Location = new System.Drawing.Point(13, 304);
             this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.Name = "ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox";
             this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.Size = new System.Drawing.Size(158, 25);
             this.ogrenciFiltreleOgrenciKoordinatorOgretmen_checkbox.TabIndex = 24;
@@ -8343,7 +6968,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.Location = new System.Drawing.Point(13, 350);
+            this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.Location = new System.Drawing.Point(13, 279);
             this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.Name = "ogrenciFiltreleOgrenciStajBitisTarihi_checkbox";
             this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.Size = new System.Drawing.Size(140, 25);
             this.ogrenciFiltreleOgrenciStajBitisTarihi_checkbox.TabIndex = 23;
@@ -8357,7 +6982,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.Location = new System.Drawing.Point(13, 319);
+            this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.Location = new System.Drawing.Point(13, 254);
             this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.Name = "ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox";
             this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.Size = new System.Drawing.Size(180, 25);
             this.ogrenciFiltreleOgrenciStajaBaslangicTarihi_checkbox.TabIndex = 22;
@@ -8371,7 +6996,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciGrup_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciGrup_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciGrup_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciGrup_checkbox.Location = new System.Drawing.Point(13, 288);
+            this.ogrenciFiltreleOgrenciGrup_checkbox.Location = new System.Drawing.Point(13, 229);
             this.ogrenciFiltreleOgrenciGrup_checkbox.Name = "ogrenciFiltreleOgrenciGrup_checkbox";
             this.ogrenciFiltreleOgrenciGrup_checkbox.Size = new System.Drawing.Size(133, 25);
             this.ogrenciFiltreleOgrenciGrup_checkbox.TabIndex = 21;
@@ -8385,7 +7010,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciAlanAdi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciAlanAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciAlanAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciAlanAdi_checkbox.Location = new System.Drawing.Point(14, 228);
+            this.ogrenciFiltreleOgrenciAlanAdi_checkbox.Location = new System.Drawing.Point(14, 181);
             this.ogrenciFiltreleOgrenciAlanAdi_checkbox.Name = "ogrenciFiltreleOgrenciAlanAdi_checkbox";
             this.ogrenciFiltreleOgrenciAlanAdi_checkbox.Size = new System.Drawing.Size(93, 25);
             this.ogrenciFiltreleOgrenciAlanAdi_checkbox.TabIndex = 20;
@@ -8399,7 +7024,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.Location = new System.Drawing.Point(14, 197);
+            this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.Location = new System.Drawing.Point(14, 158);
             this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.Name = "ogrenciFiltreleOgrenciTcKimlikNo_checkbox";
             this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.Size = new System.Drawing.Size(125, 25);
             this.ogrenciFiltreleOgrenciTcKimlikNo_checkbox.TabIndex = 19;
@@ -8413,7 +7038,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciTelNo_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciTelNo_checkbox.Location = new System.Drawing.Point(14, 166);
+            this.ogrenciFiltreleOgrenciTelNo_checkbox.Location = new System.Drawing.Point(14, 133);
             this.ogrenciFiltreleOgrenciTelNo_checkbox.Name = "ogrenciFiltreleOgrenciTelNo_checkbox";
             this.ogrenciFiltreleOgrenciTelNo_checkbox.Size = new System.Drawing.Size(79, 25);
             this.ogrenciFiltreleOgrenciTelNo_checkbox.TabIndex = 18;
@@ -8427,7 +7052,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.Location = new System.Drawing.Point(14, 135);
+            this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.Location = new System.Drawing.Point(14, 108);
             this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.Name = "ogrenciFiltreleOgrenciFirmaAdi_checkbox";
             this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.Size = new System.Drawing.Size(102, 25);
             this.ogrenciFiltreleOgrenciFirmaAdi_checkbox.TabIndex = 17;
@@ -8441,7 +7066,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciSinifi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciSinifi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciSinifi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciSinifi_checkbox.Location = new System.Drawing.Point(14, 107);
+            this.ogrenciFiltreleOgrenciSinifi_checkbox.Location = new System.Drawing.Point(14, 85);
             this.ogrenciFiltreleOgrenciSinifi_checkbox.Name = "ogrenciFiltreleOgrenciSinifi_checkbox";
             this.ogrenciFiltreleOgrenciSinifi_checkbox.Size = new System.Drawing.Size(66, 25);
             this.ogrenciFiltreleOgrenciSinifi_checkbox.TabIndex = 16;
@@ -8455,7 +7080,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciOkulNo_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciOkulNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciOkulNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciOkulNo_checkbox.Location = new System.Drawing.Point(14, 76);
+            this.ogrenciFiltreleOgrenciOkulNo_checkbox.Location = new System.Drawing.Point(14, 60);
             this.ogrenciFiltreleOgrenciOkulNo_checkbox.Name = "ogrenciFiltreleOgrenciOkulNo_checkbox";
             this.ogrenciFiltreleOgrenciOkulNo_checkbox.Size = new System.Drawing.Size(143, 25);
             this.ogrenciFiltreleOgrenciOkulNo_checkbox.TabIndex = 15;
@@ -8469,7 +7094,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciSoyad_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciSoyad_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciSoyad_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciSoyad_checkbox.Location = new System.Drawing.Point(14, 45);
+            this.ogrenciFiltreleOgrenciSoyad_checkbox.Location = new System.Drawing.Point(14, 35);
             this.ogrenciFiltreleOgrenciSoyad_checkbox.Name = "ogrenciFiltreleOgrenciSoyad_checkbox";
             this.ogrenciFiltreleOgrenciSoyad_checkbox.Size = new System.Drawing.Size(144, 25);
             this.ogrenciFiltreleOgrenciSoyad_checkbox.TabIndex = 14;
@@ -8483,7 +7108,7 @@ namespace WindowsFormsApp1
             this.ogrenciFiltreleOgrenciAdi_checkbox.AutoSize = true;
             this.ogrenciFiltreleOgrenciAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ogrenciFiltreleOgrenciAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.ogrenciFiltreleOgrenciAdi_checkbox.Location = new System.Drawing.Point(14, 14);
+            this.ogrenciFiltreleOgrenciAdi_checkbox.Location = new System.Drawing.Point(14, 10);
             this.ogrenciFiltreleOgrenciAdi_checkbox.Name = "ogrenciFiltreleOgrenciAdi_checkbox";
             this.ogrenciFiltreleOgrenciAdi_checkbox.Size = new System.Drawing.Size(119, 25);
             this.ogrenciFiltreleOgrenciAdi_checkbox.TabIndex = 13;
@@ -8615,6 +7240,7 @@ namespace WindowsFormsApp1
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.groupBox14);
             this.panel4.Controls.Add(this.panel81);
             this.panel4.Controls.Add(this.label38);
             this.panel4.Controls.Add(this.addOgrenciDalAdi_combo);
@@ -8650,15 +7276,132 @@ namespace WindowsFormsApp1
             this.panel4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(690, 612);
+            this.panel4.Size = new System.Drawing.Size(805, 608);
             this.panel4.TabIndex = 79;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.addOgrenciUsePhoneBaba_radio);
+            this.groupBox14.Controls.Add(this.addOgrenciUsePhoneAnne_radio);
+            this.groupBox14.Controls.Add(this.label251);
+            this.groupBox14.Controls.Add(this.label249);
+            this.groupBox14.Controls.Add(this.addOgrenciBabaAdi_txt);
+            this.groupBox14.Controls.Add(this.addOgrenciBabaTelNo_txt);
+            this.groupBox14.Controls.Add(this.label250);
+            this.groupBox14.Controls.Add(this.label247);
+            this.groupBox14.Controls.Add(this.addOgrenciAnneAdi_txt);
+            this.groupBox14.Controls.Add(this.addOgrenciAnneTelNo_txt);
+            this.groupBox14.Controls.Add(this.label248);
+            this.groupBox14.Location = new System.Drawing.Point(443, 10);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(340, 182);
+            this.groupBox14.TabIndex = 84;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Veli Bilgileri";
+            // 
+            // addOgrenciUsePhoneBaba_radio
+            // 
+            this.addOgrenciUsePhoneBaba_radio.AutoSize = true;
+            this.addOgrenciUsePhoneBaba_radio.Location = new System.Drawing.Point(211, 151);
+            this.addOgrenciUsePhoneBaba_radio.Name = "addOgrenciUsePhoneBaba_radio";
+            this.addOgrenciUsePhoneBaba_radio.Size = new System.Drawing.Size(57, 23);
+            this.addOgrenciUsePhoneBaba_radio.TabIndex = 99;
+            this.addOgrenciUsePhoneBaba_radio.TabStop = true;
+            this.addOgrenciUsePhoneBaba_radio.Text = "Baba";
+            this.addOgrenciUsePhoneBaba_radio.UseVisualStyleBackColor = true;
+            // 
+            // addOgrenciUsePhoneAnne_radio
+            // 
+            this.addOgrenciUsePhoneAnne_radio.AutoSize = true;
+            this.addOgrenciUsePhoneAnne_radio.Location = new System.Drawing.Point(141, 151);
+            this.addOgrenciUsePhoneAnne_radio.Name = "addOgrenciUsePhoneAnne_radio";
+            this.addOgrenciUsePhoneAnne_radio.Size = new System.Drawing.Size(59, 23);
+            this.addOgrenciUsePhoneAnne_radio.TabIndex = 98;
+            this.addOgrenciUsePhoneAnne_radio.TabStop = true;
+            this.addOgrenciUsePhoneAnne_radio.Text = "Anne";
+            this.addOgrenciUsePhoneAnne_radio.UseVisualStyleBackColor = true;
+            // 
+            // label251
+            // 
+            this.label251.AutoSize = true;
+            this.label251.Location = new System.Drawing.Point(5, 152);
+            this.label251.Name = "label251";
+            this.label251.Size = new System.Drawing.Size(129, 19);
+            this.label251.TabIndex = 97;
+            this.label251.Text = "Hangisi Kullanılsın : ";
+            // 
+            // label249
+            // 
+            this.label249.AutoSize = true;
+            this.label249.Location = new System.Drawing.Point(60, 85);
+            this.label249.Name = "label249";
+            this.label249.Size = new System.Drawing.Size(74, 19);
+            this.label249.TabIndex = 95;
+            this.label249.Text = "Baba Adı : ";
+            // 
+            // addOgrenciBabaAdi_txt
+            // 
+            this.addOgrenciBabaAdi_txt.Location = new System.Drawing.Point(141, 83);
+            this.addOgrenciBabaAdi_txt.Name = "addOgrenciBabaAdi_txt";
+            this.addOgrenciBabaAdi_txt.Size = new System.Drawing.Size(193, 24);
+            this.addOgrenciBabaAdi_txt.TabIndex = 96;
+            // 
+            // addOgrenciBabaTelNo_txt
+            // 
+            this.addOgrenciBabaTelNo_txt.Location = new System.Drawing.Point(141, 113);
+            this.addOgrenciBabaTelNo_txt.Name = "addOgrenciBabaTelNo_txt";
+            this.addOgrenciBabaTelNo_txt.Size = new System.Drawing.Size(193, 24);
+            this.addOgrenciBabaTelNo_txt.TabIndex = 94;
+            this.addOgrenciBabaTelNo_txt.TextChanged += new System.EventHandler(this.addOgrenciBabaTelNo_txt_TextChanged);
+            // 
+            // label250
+            // 
+            this.label250.AutoSize = true;
+            this.label250.Location = new System.Drawing.Point(12, 115);
+            this.label250.Name = "label250";
+            this.label250.Size = new System.Drawing.Size(122, 19);
+            this.label250.TabIndex = 93;
+            this.label250.Text = "Baba Telefon No : ";
+            // 
+            // label247
+            // 
+            this.label247.AutoSize = true;
+            this.label247.Location = new System.Drawing.Point(58, 24);
+            this.label247.Name = "label247";
+            this.label247.Size = new System.Drawing.Size(76, 19);
+            this.label247.TabIndex = 91;
+            this.label247.Text = "Anne Adı : ";
+            // 
+            // addOgrenciAnneAdi_txt
+            // 
+            this.addOgrenciAnneAdi_txt.Location = new System.Drawing.Point(141, 21);
+            this.addOgrenciAnneAdi_txt.Name = "addOgrenciAnneAdi_txt";
+            this.addOgrenciAnneAdi_txt.Size = new System.Drawing.Size(193, 24);
+            this.addOgrenciAnneAdi_txt.TabIndex = 92;
+            // 
+            // addOgrenciAnneTelNo_txt
+            // 
+            this.addOgrenciAnneTelNo_txt.Location = new System.Drawing.Point(141, 51);
+            this.addOgrenciAnneTelNo_txt.Name = "addOgrenciAnneTelNo_txt";
+            this.addOgrenciAnneTelNo_txt.Size = new System.Drawing.Size(193, 24);
+            this.addOgrenciAnneTelNo_txt.TabIndex = 90;
+            this.addOgrenciAnneTelNo_txt.TextChanged += new System.EventHandler(this.addOgrenciAnneTelNo_txt_TextChanged);
+            // 
+            // label248
+            // 
+            this.label248.AutoSize = true;
+            this.label248.Location = new System.Drawing.Point(10, 53);
+            this.label248.Name = "label248";
+            this.label248.Size = new System.Drawing.Size(124, 19);
+            this.label248.TabIndex = 89;
+            this.label248.Text = "Anne Telefon No : ";
             // 
             // panel81
             // 
             this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel81.Controls.Add(this.panel83);
             this.panel81.Controls.Add(this.panel82);
-            this.panel81.Location = new System.Drawing.Point(446, 8);
+            this.panel81.Location = new System.Drawing.Point(443, 204);
             this.panel81.Name = "panel81";
             this.panel81.Padding = new System.Windows.Forms.Padding(12);
             this.panel81.Size = new System.Drawing.Size(221, 288);
@@ -8708,7 +7451,7 @@ namespace WindowsFormsApp1
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(130, 273);
+            this.label38.Location = new System.Drawing.Point(130, 268);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(64, 19);
             this.label38.TabIndex = 79;
@@ -8717,7 +7460,7 @@ namespace WindowsFormsApp1
             // addOgrenciDalAdi_combo
             // 
             this.addOgrenciDalAdi_combo.FormattingEnabled = true;
-            this.addOgrenciDalAdi_combo.Location = new System.Drawing.Point(200, 270);
+            this.addOgrenciDalAdi_combo.Location = new System.Drawing.Point(200, 265);
             this.addOgrenciDalAdi_combo.Name = "addOgrenciDalAdi_combo";
             this.addOgrenciDalAdi_combo.Size = new System.Drawing.Size(225, 27);
             this.addOgrenciDalAdi_combo.TabIndex = 80;
@@ -8737,7 +7480,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrenciTemizle_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addOgrenciTemizle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.addOgrenciTemizle_button.Location = new System.Drawing.Point(16, 485);
+            this.addOgrenciTemizle_button.Location = new System.Drawing.Point(16, 473);
             this.addOgrenciTemizle_button.Name = "addOgrenciTemizle_button";
             this.addOgrenciTemizle_button.Size = new System.Drawing.Size(409, 44);
             this.addOgrenciTemizle_button.TabIndex = 78;
@@ -8758,7 +7501,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrenciEkle_button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addOgrenciEkle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.addOgrenciEkle_button.Location = new System.Drawing.Point(16, 532);
+            this.addOgrenciEkle_button.Location = new System.Drawing.Point(16, 520);
             this.addOgrenciEkle_button.Name = "addOgrenciEkle_button";
             this.addOgrenciEkle_button.Size = new System.Drawing.Size(409, 76);
             this.addOgrenciEkle_button.TabIndex = 77;
@@ -8779,7 +7522,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrGrupD_radio.AutoSize = true;
             this.addOgrGrupD_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addOgrGrupD_radio.Location = new System.Drawing.Point(389, 304);
+            this.addOgrGrupD_radio.Location = new System.Drawing.Point(383, 299);
             this.addOgrGrupD_radio.Name = "addOgrGrupD_radio";
             this.addOgrGrupD_radio.Size = new System.Drawing.Size(37, 23);
             this.addOgrGrupD_radio.TabIndex = 76;
@@ -8800,7 +7543,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrGrupC_radio.AutoSize = true;
             this.addOgrGrupC_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addOgrGrupC_radio.Location = new System.Drawing.Point(328, 304);
+            this.addOgrGrupC_radio.Location = new System.Drawing.Point(325, 299);
             this.addOgrGrupC_radio.Name = "addOgrGrupC_radio";
             this.addOgrGrupC_radio.Size = new System.Drawing.Size(36, 23);
             this.addOgrGrupC_radio.TabIndex = 75;
@@ -8820,7 +7563,7 @@ namespace WindowsFormsApp1
             // addOgrenciFirmaAdi_combo
             // 
             this.addOgrenciFirmaAdi_combo.FormattingEnabled = true;
-            this.addOgrenciFirmaAdi_combo.Location = new System.Drawing.Point(200, 448);
+            this.addOgrenciFirmaAdi_combo.Location = new System.Drawing.Point(200, 438);
             this.addOgrenciFirmaAdi_combo.Name = "addOgrenciFirmaAdi_combo";
             this.addOgrenciFirmaAdi_combo.Size = new System.Drawing.Size(225, 27);
             this.addOgrenciFirmaAdi_combo.TabIndex = 74;
@@ -8839,7 +7582,7 @@ namespace WindowsFormsApp1
             // addOgrenciKordinatorOgretmen_combo
             // 
             this.addOgrenciKordinatorOgretmen_combo.FormattingEnabled = true;
-            this.addOgrenciKordinatorOgretmen_combo.Location = new System.Drawing.Point(200, 410);
+            this.addOgrenciKordinatorOgretmen_combo.Location = new System.Drawing.Point(200, 400);
             this.addOgrenciKordinatorOgretmen_combo.Name = "addOgrenciKordinatorOgretmen_combo";
             this.addOgrenciKordinatorOgretmen_combo.Size = new System.Drawing.Size(225, 27);
             this.addOgrenciKordinatorOgretmen_combo.TabIndex = 73;
@@ -8849,7 +7592,7 @@ namespace WindowsFormsApp1
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(122, 235);
+            this.label12.Location = new System.Drawing.Point(122, 230);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(71, 19);
             this.label12.TabIndex = 56;
@@ -8857,7 +7600,7 @@ namespace WindowsFormsApp1
             // 
             // addOgrenciStajBitis_datetime
             // 
-            this.addOgrenciStajBitis_datetime.Location = new System.Drawing.Point(200, 375);
+            this.addOgrenciStajBitis_datetime.Location = new System.Drawing.Point(200, 365);
             this.addOgrenciStajBitis_datetime.Name = "addOgrenciStajBitis_datetime";
             this.addOgrenciStajBitis_datetime.Size = new System.Drawing.Size(225, 24);
             this.addOgrenciStajBitis_datetime.TabIndex = 72;
@@ -8865,7 +7608,7 @@ namespace WindowsFormsApp1
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(128, 306);
+            this.label11.Location = new System.Drawing.Point(128, 301);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(66, 19);
             this.label11.TabIndex = 57;
@@ -8873,7 +7616,7 @@ namespace WindowsFormsApp1
             // 
             // addOgrenciStajBaslangic_datetime
             // 
-            this.addOgrenciStajBaslangic_datetime.Location = new System.Drawing.Point(201, 337);
+            this.addOgrenciStajBaslangic_datetime.Location = new System.Drawing.Point(201, 329);
             this.addOgrenciStajBaslangic_datetime.Name = "addOgrenciStajBaslangic_datetime";
             this.addOgrenciStajBaslangic_datetime.Size = new System.Drawing.Size(225, 24);
             this.addOgrenciStajBaslangic_datetime.TabIndex = 71;
@@ -8881,7 +7624,7 @@ namespace WindowsFormsApp1
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(46, 337);
+            this.label14.Location = new System.Drawing.Point(46, 329);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(148, 19);
             this.label14.TabIndex = 58;
@@ -8891,7 +7634,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrGrupB_radio.AutoSize = true;
             this.addOgrGrupB_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addOgrGrupB_radio.Location = new System.Drawing.Point(263, 304);
+            this.addOgrGrupB_radio.Location = new System.Drawing.Point(263, 299);
             this.addOgrGrupB_radio.Name = "addOgrGrupB_radio";
             this.addOgrGrupB_radio.Size = new System.Drawing.Size(35, 23);
             this.addOgrGrupB_radio.TabIndex = 70;
@@ -8902,7 +7645,7 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(54, 375);
+            this.label13.Location = new System.Drawing.Point(54, 365);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(140, 19);
             this.label13.TabIndex = 59;
@@ -8912,7 +7655,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrGrupA_radio.AutoSize = true;
             this.addOgrGrupA_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addOgrGrupA_radio.Location = new System.Drawing.Point(201, 304);
+            this.addOgrGrupA_radio.Location = new System.Drawing.Point(201, 299);
             this.addOgrGrupA_radio.Name = "addOgrGrupA_radio";
             this.addOgrGrupA_radio.Size = new System.Drawing.Size(36, 23);
             this.addOgrGrupA_radio.TabIndex = 69;
@@ -8923,7 +7666,7 @@ namespace WindowsFormsApp1
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(29, 413);
+            this.label16.Location = new System.Drawing.Point(29, 403);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(165, 19);
             this.label16.TabIndex = 60;
@@ -8933,7 +7676,7 @@ namespace WindowsFormsApp1
             // 
             this.addOgrenciAlanAdi_txt.FormattingEnabled = true;
             this.addOgrenciAlanAdi_txt.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.addOgrenciAlanAdi_txt.Location = new System.Drawing.Point(200, 232);
+            this.addOgrenciAlanAdi_txt.Location = new System.Drawing.Point(200, 227);
             this.addOgrenciAlanAdi_txt.Name = "addOgrenciAlanAdi_txt";
             this.addOgrenciAlanAdi_txt.Size = new System.Drawing.Size(225, 27);
             this.addOgrenciAlanAdi_txt.TabIndex = 68;
@@ -8944,7 +7687,7 @@ namespace WindowsFormsApp1
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(116, 451);
+            this.label15.Location = new System.Drawing.Point(116, 441);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(78, 19);
             this.label15.TabIndex = 61;
@@ -9074,20 +7817,32 @@ namespace WindowsFormsApp1
             // updateOgrenciPanelSol_panel
             // 
             this.updateOgrenciPanelSol_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciUsePhoneBaba_radio);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciTelNo_txt);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciUsePhoneAnne_radio);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.label22);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.label234);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.panel90);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.label235);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.panel78);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciBabaAdi_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label119);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciBabaTelNo_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label46);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.label246);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciDalAdi_combo);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.label252);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label17);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciAnneAdi_txt);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciAnneTelNo_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label18);
+            this.updateOgrenciPanelSol_panel.Controls.Add(this.label253);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label19);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrGrupD_radio);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label20);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrGrupC_radio);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label21);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciFirmaAdi_combo);
-            this.updateOgrenciPanelSol_panel.Controls.Add(this.label22);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciKordinatorOgretmen_combo);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label23);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciStajBitis_datetime);
@@ -9100,7 +7855,6 @@ namespace WindowsFormsApp1
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label27);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciAlanAdi_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.label28);
-            this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciTelNo_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciAdi_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciTc_txt);
             this.updateOgrenciPanelSol_panel.Controls.Add(this.upOgrenciSoyadi_txt);
@@ -9109,8 +7863,56 @@ namespace WindowsFormsApp1
             this.updateOgrenciPanelSol_panel.Cursor = System.Windows.Forms.Cursors.Default;
             this.updateOgrenciPanelSol_panel.Location = new System.Drawing.Point(0, 0);
             this.updateOgrenciPanelSol_panel.Name = "updateOgrenciPanelSol_panel";
-            this.updateOgrenciPanelSol_panel.Size = new System.Drawing.Size(690, 532);
+            this.updateOgrenciPanelSol_panel.Size = new System.Drawing.Size(690, 612);
             this.updateOgrenciPanelSol_panel.TabIndex = 80;
+            // 
+            // upOgrenciUsePhoneBaba_radio
+            // 
+            this.upOgrenciUsePhoneBaba_radio.AutoSize = true;
+            this.upOgrenciUsePhoneBaba_radio.Location = new System.Drawing.Point(270, 578);
+            this.upOgrenciUsePhoneBaba_radio.Name = "upOgrenciUsePhoneBaba_radio";
+            this.upOgrenciUsePhoneBaba_radio.Size = new System.Drawing.Size(57, 23);
+            this.upOgrenciUsePhoneBaba_radio.TabIndex = 99;
+            this.upOgrenciUsePhoneBaba_radio.TabStop = true;
+            this.upOgrenciUsePhoneBaba_radio.Text = "Baba";
+            this.upOgrenciUsePhoneBaba_radio.UseVisualStyleBackColor = true;
+            // 
+            // upOgrenciTelNo_txt
+            // 
+            this.upOgrenciTelNo_txt.Location = new System.Drawing.Point(200, 173);
+            this.upOgrenciTelNo_txt.Name = "upOgrenciTelNo_txt";
+            this.upOgrenciTelNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.upOgrenciTelNo_txt.TabIndex = 67;
+            this.upOgrenciTelNo_txt.TextChanged += new System.EventHandler(this.upOgrenciTelNo_txt_TextChanged);
+            // 
+            // upOgrenciUsePhoneAnne_radio
+            // 
+            this.upOgrenciUsePhoneAnne_radio.AutoSize = true;
+            this.upOgrenciUsePhoneAnne_radio.Location = new System.Drawing.Point(200, 578);
+            this.upOgrenciUsePhoneAnne_radio.Name = "upOgrenciUsePhoneAnne_radio";
+            this.upOgrenciUsePhoneAnne_radio.Size = new System.Drawing.Size(59, 23);
+            this.upOgrenciUsePhoneAnne_radio.TabIndex = 98;
+            this.upOgrenciUsePhoneAnne_radio.TabStop = true;
+            this.upOgrenciUsePhoneAnne_radio.Text = "Anne";
+            this.upOgrenciUsePhoneAnne_radio.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(14, 174);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(181, 19);
+            this.label22.TabIndex = 55;
+            this.label22.Text = "Öğrenci Telefon Numarası : ";
+            // 
+            // label234
+            // 
+            this.label234.AutoSize = true;
+            this.label234.Location = new System.Drawing.Point(64, 579);
+            this.label234.Name = "label234";
+            this.label234.Size = new System.Drawing.Size(129, 19);
+            this.label234.TabIndex = 97;
+            this.label234.Text = "Hangisi Kullanılsın : ";
             // 
             // panel90
             // 
@@ -9164,12 +7966,21 @@ namespace WindowsFormsApp1
             this.upOgrenciFotografi_picturebox.TabIndex = 0;
             this.upOgrenciFotografi_picturebox.TabStop = false;
             // 
+            // label235
+            // 
+            this.label235.AutoSize = true;
+            this.label235.Location = new System.Drawing.Point(119, 521);
+            this.label235.Name = "label235";
+            this.label235.Size = new System.Drawing.Size(74, 19);
+            this.label235.TabIndex = 95;
+            this.label235.Text = "Baba Adı : ";
+            // 
             // panel78
             // 
             this.panel78.Controls.Add(this.upOgrenciStajDonemiMesem_radio);
             this.panel78.Controls.Add(this.upOgrenciStajDonemiYaz_radio);
             this.panel78.Controls.Add(this.upOgrenciStajDonemiKis_radio);
-            this.panel78.Location = new System.Drawing.Point(200, 491);
+            this.panel78.Location = new System.Drawing.Point(200, 422);
             this.panel78.Name = "panel78";
             this.panel78.Size = new System.Drawing.Size(224, 29);
             this.panel78.TabIndex = 82;
@@ -9210,33 +8021,65 @@ namespace WindowsFormsApp1
             this.upOgrenciStajDonemiKis_radio.Text = "Kış";
             this.upOgrenciStajDonemiKis_radio.UseVisualStyleBackColor = true;
             // 
+            // upOgrenciBabaAdi_txt
+            // 
+            this.upOgrenciBabaAdi_txt.Location = new System.Drawing.Point(200, 519);
+            this.upOgrenciBabaAdi_txt.Name = "upOgrenciBabaAdi_txt";
+            this.upOgrenciBabaAdi_txt.Size = new System.Drawing.Size(224, 24);
+            this.upOgrenciBabaAdi_txt.TabIndex = 96;
+            // 
             // label119
             // 
             this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(98, 495);
+            this.label119.Location = new System.Drawing.Point(98, 426);
             this.label119.Name = "label119";
             this.label119.Size = new System.Drawing.Size(95, 19);
             this.label119.TabIndex = 83;
             this.label119.Text = "Staj Dönemi : ";
             // 
+            // upOgrenciBabaTelNo_txt
+            // 
+            this.upOgrenciBabaTelNo_txt.Location = new System.Drawing.Point(200, 549);
+            this.upOgrenciBabaTelNo_txt.Name = "upOgrenciBabaTelNo_txt";
+            this.upOgrenciBabaTelNo_txt.Size = new System.Drawing.Size(224, 24);
+            this.upOgrenciBabaTelNo_txt.TabIndex = 94;
+            // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(129, 279);
+            this.label46.Location = new System.Drawing.Point(129, 237);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(64, 19);
             this.label46.TabIndex = 81;
             this.label46.Text = "Dal Adı : ";
             // 
+            // label246
+            // 
+            this.label246.AutoSize = true;
+            this.label246.Location = new System.Drawing.Point(71, 551);
+            this.label246.Name = "label246";
+            this.label246.Size = new System.Drawing.Size(122, 19);
+            this.label246.TabIndex = 93;
+            this.label246.Text = "Baba Telefon No : ";
+            // 
             // upOgrenciDalAdi_combo
             // 
             this.upOgrenciDalAdi_combo.FormattingEnabled = true;
-            this.upOgrenciDalAdi_combo.Location = new System.Drawing.Point(199, 276);
+            this.upOgrenciDalAdi_combo.Location = new System.Drawing.Point(199, 234);
             this.upOgrenciDalAdi_combo.Name = "upOgrenciDalAdi_combo";
             this.upOgrenciDalAdi_combo.Size = new System.Drawing.Size(225, 27);
             this.upOgrenciDalAdi_combo.TabIndex = 82;
             this.upOgrenciDalAdi_combo.TextChanged += new System.EventHandler(this.upOgrenciDalAdi_combo_TextChanged);
             this.upOgrenciDalAdi_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upOgrenciDalAdi_combo_KeyDown);
+            // 
+            // label252
+            // 
+            this.label252.AutoSize = true;
+            this.label252.Location = new System.Drawing.Point(117, 460);
+            this.label252.Name = "label252";
+            this.label252.Size = new System.Drawing.Size(76, 19);
+            this.label252.TabIndex = 91;
+            this.label252.Text = "Anne Adı : ";
             // 
             // label17
             // 
@@ -9247,19 +8090,42 @@ namespace WindowsFormsApp1
             this.label17.TabIndex = 50;
             this.label17.Text = "Öğrenci Adı : ";
             // 
+            // upOgrenciAnneAdi_txt
+            // 
+            this.upOgrenciAnneAdi_txt.Location = new System.Drawing.Point(200, 457);
+            this.upOgrenciAnneAdi_txt.Name = "upOgrenciAnneAdi_txt";
+            this.upOgrenciAnneAdi_txt.Size = new System.Drawing.Size(224, 24);
+            this.upOgrenciAnneAdi_txt.TabIndex = 92;
+            // 
+            // upOgrenciAnneTelNo_txt
+            // 
+            this.upOgrenciAnneTelNo_txt.Location = new System.Drawing.Point(200, 487);
+            this.upOgrenciAnneTelNo_txt.Name = "upOgrenciAnneTelNo_txt";
+            this.upOgrenciAnneTelNo_txt.Size = new System.Drawing.Size(224, 24);
+            this.upOgrenciAnneTelNo_txt.TabIndex = 90;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(79, 56);
+            this.label18.Location = new System.Drawing.Point(79, 51);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(114, 19);
             this.label18.TabIndex = 51;
             this.label18.Text = "Öğrenci Soyadı : ";
             // 
+            // label253
+            // 
+            this.label253.AutoSize = true;
+            this.label253.Location = new System.Drawing.Point(69, 489);
+            this.label253.Name = "label253";
+            this.label253.Size = new System.Drawing.Size(124, 19);
+            this.label253.TabIndex = 89;
+            this.label253.Text = "Anne Telefon No : ";
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(101, 93);
+            this.label19.Location = new System.Drawing.Point(101, 83);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(92, 19);
             this.label19.TabIndex = 52;
@@ -9269,7 +8135,7 @@ namespace WindowsFormsApp1
             // 
             this.upOgrGrupD_radio.AutoSize = true;
             this.upOgrGrupD_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upOgrGrupD_radio.Location = new System.Drawing.Point(388, 314);
+            this.upOgrGrupD_radio.Location = new System.Drawing.Point(386, 267);
             this.upOgrGrupD_radio.Name = "upOgrGrupD_radio";
             this.upOgrGrupD_radio.Size = new System.Drawing.Size(37, 23);
             this.upOgrGrupD_radio.TabIndex = 76;
@@ -9280,7 +8146,7 @@ namespace WindowsFormsApp1
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(90, 130);
+            this.label20.Location = new System.Drawing.Point(90, 115);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(103, 19);
             this.label20.TabIndex = 53;
@@ -9290,7 +8156,7 @@ namespace WindowsFormsApp1
             // 
             this.upOgrGrupC_radio.AutoSize = true;
             this.upOgrGrupC_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upOgrGrupC_radio.Location = new System.Drawing.Point(327, 314);
+            this.upOgrGrupC_radio.Location = new System.Drawing.Point(327, 267);
             this.upOgrGrupC_radio.Name = "upOgrGrupC_radio";
             this.upOgrGrupC_radio.Size = new System.Drawing.Size(36, 23);
             this.upOgrGrupC_radio.TabIndex = 75;
@@ -9301,7 +8167,7 @@ namespace WindowsFormsApp1
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(104, 167);
+            this.label21.Location = new System.Drawing.Point(104, 147);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(89, 19);
             this.label21.TabIndex = 54;
@@ -9310,26 +8176,17 @@ namespace WindowsFormsApp1
             // upOgrenciFirmaAdi_combo
             // 
             this.upOgrenciFirmaAdi_combo.FormattingEnabled = true;
-            this.upOgrenciFirmaAdi_combo.Location = new System.Drawing.Point(199, 459);
+            this.upOgrenciFirmaAdi_combo.Location = new System.Drawing.Point(199, 392);
             this.upOgrenciFirmaAdi_combo.Name = "upOgrenciFirmaAdi_combo";
             this.upOgrenciFirmaAdi_combo.Size = new System.Drawing.Size(225, 27);
             this.upOgrenciFirmaAdi_combo.TabIndex = 74;
             this.upOgrenciFirmaAdi_combo.TextChanged += new System.EventHandler(this.upOgrenciFirmaAdi_combo_TextChanged);
             this.upOgrenciFirmaAdi_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upOgrenciFirmaAdi_combo_KeyDown);
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(12, 204);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(181, 19);
-            this.label22.TabIndex = 55;
-            this.label22.Text = "Öğrenci Telefon Numarası : ";
-            // 
             // upOgrenciKordinatorOgretmen_combo
             // 
             this.upOgrenciKordinatorOgretmen_combo.FormattingEnabled = true;
-            this.upOgrenciKordinatorOgretmen_combo.Location = new System.Drawing.Point(199, 421);
+            this.upOgrenciKordinatorOgretmen_combo.Location = new System.Drawing.Point(199, 359);
             this.upOgrenciKordinatorOgretmen_combo.Name = "upOgrenciKordinatorOgretmen_combo";
             this.upOgrenciKordinatorOgretmen_combo.Size = new System.Drawing.Size(225, 27);
             this.upOgrenciKordinatorOgretmen_combo.TabIndex = 73;
@@ -9339,7 +8196,7 @@ namespace WindowsFormsApp1
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(122, 241);
+            this.label23.Location = new System.Drawing.Point(122, 204);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(71, 19);
             this.label23.TabIndex = 56;
@@ -9347,7 +8204,7 @@ namespace WindowsFormsApp1
             // 
             // upOgrenciStajBitis_datetime
             // 
-            this.upOgrenciStajBitis_datetime.Location = new System.Drawing.Point(199, 386);
+            this.upOgrenciStajBitis_datetime.Location = new System.Drawing.Point(199, 329);
             this.upOgrenciStajBitis_datetime.Name = "upOgrenciStajBitis_datetime";
             this.upOgrenciStajBitis_datetime.Size = new System.Drawing.Size(225, 24);
             this.upOgrenciStajBitis_datetime.TabIndex = 72;
@@ -9355,7 +8212,7 @@ namespace WindowsFormsApp1
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(127, 316);
+            this.label24.Location = new System.Drawing.Point(127, 269);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(66, 19);
             this.label24.TabIndex = 57;
@@ -9363,7 +8220,7 @@ namespace WindowsFormsApp1
             // 
             // upOgrenciStajBaslangic_datetime
             // 
-            this.upOgrenciStajBaslangic_datetime.Location = new System.Drawing.Point(200, 348);
+            this.upOgrenciStajBaslangic_datetime.Location = new System.Drawing.Point(200, 296);
             this.upOgrenciStajBaslangic_datetime.Name = "upOgrenciStajBaslangic_datetime";
             this.upOgrenciStajBaslangic_datetime.Size = new System.Drawing.Size(225, 24);
             this.upOgrenciStajBaslangic_datetime.TabIndex = 71;
@@ -9371,7 +8228,7 @@ namespace WindowsFormsApp1
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(45, 348);
+            this.label25.Location = new System.Drawing.Point(45, 296);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(148, 19);
             this.label25.TabIndex = 58;
@@ -9381,7 +8238,7 @@ namespace WindowsFormsApp1
             // 
             this.upOgrGrupB_radio.AutoSize = true;
             this.upOgrGrupB_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upOgrGrupB_radio.Location = new System.Drawing.Point(262, 314);
+            this.upOgrGrupB_radio.Location = new System.Drawing.Point(262, 267);
             this.upOgrGrupB_radio.Name = "upOgrGrupB_radio";
             this.upOgrGrupB_radio.Size = new System.Drawing.Size(35, 23);
             this.upOgrGrupB_radio.TabIndex = 70;
@@ -9392,7 +8249,7 @@ namespace WindowsFormsApp1
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(53, 386);
+            this.label26.Location = new System.Drawing.Point(53, 329);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(140, 19);
             this.label26.TabIndex = 59;
@@ -9402,7 +8259,7 @@ namespace WindowsFormsApp1
             // 
             this.upOgrGrupA_radio.AutoSize = true;
             this.upOgrGrupA_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.upOgrGrupA_radio.Location = new System.Drawing.Point(200, 314);
+            this.upOgrGrupA_radio.Location = new System.Drawing.Point(200, 267);
             this.upOgrGrupA_radio.Name = "upOgrGrupA_radio";
             this.upOgrGrupA_radio.Size = new System.Drawing.Size(36, 23);
             this.upOgrGrupA_radio.TabIndex = 69;
@@ -9413,7 +8270,7 @@ namespace WindowsFormsApp1
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(28, 424);
+            this.label27.Location = new System.Drawing.Point(28, 362);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(165, 19);
             this.label27.TabIndex = 60;
@@ -9422,7 +8279,7 @@ namespace WindowsFormsApp1
             // upOgrenciAlanAdi_txt
             // 
             this.upOgrenciAlanAdi_txt.FormattingEnabled = true;
-            this.upOgrenciAlanAdi_txt.Location = new System.Drawing.Point(200, 238);
+            this.upOgrenciAlanAdi_txt.Location = new System.Drawing.Point(200, 201);
             this.upOgrenciAlanAdi_txt.Name = "upOgrenciAlanAdi_txt";
             this.upOgrenciAlanAdi_txt.Size = new System.Drawing.Size(225, 27);
             this.upOgrenciAlanAdi_txt.TabIndex = 68;
@@ -9433,19 +8290,11 @@ namespace WindowsFormsApp1
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(115, 462);
+            this.label28.Location = new System.Drawing.Point(115, 395);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(78, 19);
             this.label28.TabIndex = 61;
             this.label28.Text = "Firma Adı : ";
-            // 
-            // upOgrenciTelNo_txt
-            // 
-            this.upOgrenciTelNo_txt.Location = new System.Drawing.Point(200, 201);
-            this.upOgrenciTelNo_txt.Name = "upOgrenciTelNo_txt";
-            this.upOgrenciTelNo_txt.Size = new System.Drawing.Size(225, 24);
-            this.upOgrenciTelNo_txt.TabIndex = 67;
-            this.upOgrenciTelNo_txt.TextChanged += new System.EventHandler(this.upOgrenciTelNo_txt_TextChanged);
             // 
             // upOgrenciAdi_txt
             // 
@@ -9456,14 +8305,14 @@ namespace WindowsFormsApp1
             // 
             // upOgrenciTc_txt
             // 
-            this.upOgrenciTc_txt.Location = new System.Drawing.Point(200, 164);
+            this.upOgrenciTc_txt.Location = new System.Drawing.Point(200, 144);
             this.upOgrenciTc_txt.Name = "upOgrenciTc_txt";
             this.upOgrenciTc_txt.Size = new System.Drawing.Size(225, 24);
             this.upOgrenciTc_txt.TabIndex = 66;
             // 
             // upOgrenciSoyadi_txt
             // 
-            this.upOgrenciSoyadi_txt.Location = new System.Drawing.Point(200, 53);
+            this.upOgrenciSoyadi_txt.Location = new System.Drawing.Point(200, 48);
             this.upOgrenciSoyadi_txt.Name = "upOgrenciSoyadi_txt";
             this.upOgrenciSoyadi_txt.Size = new System.Drawing.Size(225, 24);
             this.upOgrenciSoyadi_txt.TabIndex = 63;
@@ -9471,7 +8320,7 @@ namespace WindowsFormsApp1
             // upOgrenciSinifi_combo
             // 
             this.upOgrenciSinifi_combo.FormattingEnabled = true;
-            this.upOgrenciSinifi_combo.Location = new System.Drawing.Point(200, 127);
+            this.upOgrenciSinifi_combo.Location = new System.Drawing.Point(200, 112);
             this.upOgrenciSinifi_combo.Name = "upOgrenciSinifi_combo";
             this.upOgrenciSinifi_combo.Size = new System.Drawing.Size(225, 27);
             this.upOgrenciSinifi_combo.TabIndex = 65;
@@ -9480,7 +8329,7 @@ namespace WindowsFormsApp1
             // 
             // upOgrenciNo_txt
             // 
-            this.upOgrenciNo_txt.Location = new System.Drawing.Point(200, 90);
+            this.upOgrenciNo_txt.Location = new System.Drawing.Point(200, 80);
             this.upOgrenciNo_txt.Name = "upOgrenciNo_txt";
             this.upOgrenciNo_txt.Size = new System.Drawing.Size(225, 24);
             this.upOgrenciNo_txt.TabIndex = 64;
@@ -10456,6 +9305,1819 @@ namespace WindowsFormsApp1
             this.label48.TabIndex = 63;
             this.label48.Text = "Silme Bilgileri";
             // 
+            // ISLETMEtabControl1
+            // 
+            this.ISLETMEtabControl1.Controls.Add(this.tabPage15);
+            this.ISLETMEtabControl1.Controls.Add(this.tabPage16);
+            this.ISLETMEtabControl1.Controls.Add(this.tabPage17);
+            this.ISLETMEtabControl1.Controls.Add(this.tabPage18);
+            this.ISLETMEtabControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ISLETMEtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ISLETMEtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ISLETMEtabControl1.Location = new System.Drawing.Point(0, 0);
+            this.ISLETMEtabControl1.Name = "ISLETMEtabControl1";
+            this.ISLETMEtabControl1.Padding = new System.Drawing.Point(50, 3);
+            this.ISLETMEtabControl1.SelectedIndex = 0;
+            this.ISLETMEtabControl1.Size = new System.Drawing.Size(1151, 650);
+            this.ISLETMEtabControl1.TabIndex = 4;
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.Controls.Add(this.panel40);
+            this.tabPage15.Location = new System.Drawing.Point(4, 28);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage15.TabIndex = 0;
+            this.tabPage15.Text = "LISTELE";
+            this.tabPage15.UseVisualStyleBackColor = true;
+            // 
+            // panel40
+            // 
+            this.panel40.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel40.Controls.Add(this.splitContainer6);
+            this.panel40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel40.Location = new System.Drawing.Point(3, 3);
+            this.panel40.Name = "panel40";
+            this.panel40.Padding = new System.Windows.Forms.Padding(10);
+            this.panel40.Size = new System.Drawing.Size(1137, 612);
+            this.panel40.TabIndex = 4;
+            // 
+            // splitContainer6
+            // 
+            this.splitContainer6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer6.Location = new System.Drawing.Point(10, 10);
+            this.splitContainer6.Name = "splitContainer6";
+            this.splitContainer6.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer6.Panel1
+            // 
+            this.splitContainer6.Panel1.Controls.Add(this.splitContainer7);
+            // 
+            // splitContainer6.Panel2
+            // 
+            this.splitContainer6.Panel2.Controls.Add(this.panel42);
+            this.splitContainer6.Panel2.Controls.Add(this.panel43);
+            this.splitContainer6.Size = new System.Drawing.Size(1117, 592);
+            this.splitContainer6.SplitterDistance = 491;
+            this.splitContainer6.TabIndex = 0;
+            // 
+            // splitContainer7
+            // 
+            this.splitContainer7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer7.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer7.Name = "splitContainer7";
+            // 
+            // splitContainer7.Panel1
+            // 
+            this.splitContainer7.Panel1.Controls.Add(this.IsletmeListDatagridView);
+            // 
+            // splitContainer7.Panel2
+            // 
+            this.splitContainer7.Panel2.Controls.Add(this.panel41);
+            this.splitContainer7.Size = new System.Drawing.Size(1117, 491);
+            this.splitContainer7.SplitterDistance = 906;
+            this.splitContainer7.TabIndex = 1;
+            // 
+            // IsletmeListDatagridView
+            // 
+            this.IsletmeListDatagridView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.IsletmeListDatagridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.IsletmeListDatagridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IsletmeListDatagridView.Location = new System.Drawing.Point(0, 0);
+            this.IsletmeListDatagridView.Name = "IsletmeListDatagridView";
+            this.IsletmeListDatagridView.Size = new System.Drawing.Size(906, 491);
+            this.IsletmeListDatagridView.TabIndex = 0;
+            this.IsletmeListDatagridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.IsletmeListDatagridView_CellDoubleClick);
+            // 
+            // panel41
+            // 
+            this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel41.Controls.Add(this.IsletmeIbanNo_checkbox);
+            this.panel41.Controls.Add(this.IsletmeSicilNo_checkbox);
+            this.panel41.Controls.Add(this.IsletmeUODT_checkbox);
+            this.panel41.Controls.Add(this.IsletmeUOSoyadi_checkbox);
+            this.panel41.Controls.Add(this.IsletmeUOAdi_checkbox);
+            this.panel41.Controls.Add(this.checkBox6);
+            this.panel41.Controls.Add(this.IsletmeDal_checkbox);
+            this.panel41.Controls.Add(this.IsletmeBolum_checkbox);
+            this.panel41.Controls.Add(this.IsletmeUstaOgreticilikVarmiYokmu_checkbox);
+            this.panel41.Controls.Add(this.IsletmeTelNo_checkbox);
+            this.panel41.Controls.Add(this.IsletmeYetkilisi_checkbox);
+            this.panel41.Controls.Add(this.IsletmeTamAdres_checkbox);
+            this.panel41.Controls.Add(this.IsletmeAdresIlce_checkbox);
+            this.panel41.Controls.Add(this.IsletmeAdresIl_checkbox);
+            this.panel41.Controls.Add(this.IsletmeAd_checkbox);
+            this.panel41.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel41.Location = new System.Drawing.Point(0, 0);
+            this.panel41.Name = "panel41";
+            this.panel41.Size = new System.Drawing.Size(207, 491);
+            this.panel41.TabIndex = 0;
+            // 
+            // IsletmeDal_checkbox
+            // 
+            this.IsletmeDal_checkbox.AutoSize = true;
+            this.IsletmeDal_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDal_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeDal_checkbox.Location = new System.Drawing.Point(14, 254);
+            this.IsletmeDal_checkbox.Name = "IsletmeDal_checkbox";
+            this.IsletmeDal_checkbox.Size = new System.Drawing.Size(118, 25);
+            this.IsletmeDal_checkbox.TabIndex = 21;
+            this.IsletmeDal_checkbox.Tag = "IsletmeDal";
+            this.IsletmeDal_checkbox.Text = "İşletme Dalı";
+            this.IsletmeDal_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeDal_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeDal_checkbox_CheckedChanged);
+            // 
+            // IsletmeBolum_checkbox
+            // 
+            this.IsletmeBolum_checkbox.AutoSize = true;
+            this.IsletmeBolum_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeBolum_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeBolum_checkbox.Location = new System.Drawing.Point(14, 224);
+            this.IsletmeBolum_checkbox.Name = "IsletmeBolum_checkbox";
+            this.IsletmeBolum_checkbox.Size = new System.Drawing.Size(127, 25);
+            this.IsletmeBolum_checkbox.TabIndex = 20;
+            this.IsletmeBolum_checkbox.Tag = "IsletmeBolum";
+            this.IsletmeBolum_checkbox.Text = "İşletme Alanı";
+            this.IsletmeBolum_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeBolum_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeBolum_checkbox_CheckedChanged);
+            // 
+            // IsletmeUstaOgreticilikVarmiYokmu_checkbox
+            // 
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.AutoSize = true;
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Location = new System.Drawing.Point(14, 194);
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Name = "IsletmeUstaOgreticilikVarmiYokmu_checkbox";
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Size = new System.Drawing.Size(145, 25);
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.TabIndex = 19;
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Tag = "IsletmeUstaOgreticilikVarmiYokmu";
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.Text = "Usta Öğreticilik";
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeUstaOgreticilikVarmiYokmu_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeUstaOgreticilikVarmiYokmu_checkbox_CheckedChanged);
+            // 
+            // IsletmeTelNo_checkbox
+            // 
+            this.IsletmeTelNo_checkbox.AutoSize = true;
+            this.IsletmeTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeTelNo_checkbox.Location = new System.Drawing.Point(14, 164);
+            this.IsletmeTelNo_checkbox.Name = "IsletmeTelNo_checkbox";
+            this.IsletmeTelNo_checkbox.Size = new System.Drawing.Size(86, 25);
+            this.IsletmeTelNo_checkbox.TabIndex = 18;
+            this.IsletmeTelNo_checkbox.Tag = "IsletmeTelNo";
+            this.IsletmeTelNo_checkbox.Text = "Telefon";
+            this.IsletmeTelNo_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeTelNo_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeTelNo_checkbox_CheckedChanged);
+            // 
+            // IsletmeYetkilisi_checkbox
+            // 
+            this.IsletmeYetkilisi_checkbox.AutoSize = true;
+            this.IsletmeYetkilisi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeYetkilisi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeYetkilisi_checkbox.Location = new System.Drawing.Point(14, 134);
+            this.IsletmeYetkilisi_checkbox.Name = "IsletmeYetkilisi_checkbox";
+            this.IsletmeYetkilisi_checkbox.Size = new System.Drawing.Size(146, 25);
+            this.IsletmeYetkilisi_checkbox.TabIndex = 17;
+            this.IsletmeYetkilisi_checkbox.Tag = "IsletmeYetkilisi";
+            this.IsletmeYetkilisi_checkbox.Text = "İşletme Yetkilisi";
+            this.IsletmeYetkilisi_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeYetkilisi_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeYetkilisi_checkbox_CheckedChanged);
+            // 
+            // IsletmeTamAdres_checkbox
+            // 
+            this.IsletmeTamAdres_checkbox.AutoSize = true;
+            this.IsletmeTamAdres_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeTamAdres_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeTamAdres_checkbox.Location = new System.Drawing.Point(14, 104);
+            this.IsletmeTamAdres_checkbox.Name = "IsletmeTamAdres_checkbox";
+            this.IsletmeTamAdres_checkbox.Size = new System.Drawing.Size(110, 25);
+            this.IsletmeTamAdres_checkbox.TabIndex = 16;
+            this.IsletmeTamAdres_checkbox.Tag = "IsletmeTamAdres";
+            this.IsletmeTamAdres_checkbox.Text = "Tam Adres";
+            this.IsletmeTamAdres_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeTamAdres_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeTamAdres_checkbox_CheckedChanged);
+            // 
+            // IsletmeAdresIlce_checkbox
+            // 
+            this.IsletmeAdresIlce_checkbox.AutoSize = true;
+            this.IsletmeAdresIlce_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeAdresIlce_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeAdresIlce_checkbox.Location = new System.Drawing.Point(14, 74);
+            this.IsletmeAdresIlce_checkbox.Name = "IsletmeAdresIlce_checkbox";
+            this.IsletmeAdresIlce_checkbox.Size = new System.Drawing.Size(55, 25);
+            this.IsletmeAdresIlce_checkbox.TabIndex = 15;
+            this.IsletmeAdresIlce_checkbox.Tag = "IsletmeAdresIlce";
+            this.IsletmeAdresIlce_checkbox.Text = "İlçe";
+            this.IsletmeAdresIlce_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeAdresIlce_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeAdresIlce_checkbox_CheckedChanged);
+            // 
+            // IsletmeAdresIl_checkbox
+            // 
+            this.IsletmeAdresIl_checkbox.AutoSize = true;
+            this.IsletmeAdresIl_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeAdresIl_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeAdresIl_checkbox.Location = new System.Drawing.Point(14, 44);
+            this.IsletmeAdresIl_checkbox.Name = "IsletmeAdresIl_checkbox";
+            this.IsletmeAdresIl_checkbox.Size = new System.Drawing.Size(38, 25);
+            this.IsletmeAdresIl_checkbox.TabIndex = 14;
+            this.IsletmeAdresIl_checkbox.Tag = "IsletmeAdresIl";
+            this.IsletmeAdresIl_checkbox.Text = "İl";
+            this.IsletmeAdresIl_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeAdresIl_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeAdresIl_checkbox_CheckedChanged);
+            // 
+            // IsletmeAd_checkbox
+            // 
+            this.IsletmeAd_checkbox.AutoSize = true;
+            this.IsletmeAd_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeAd_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeAd_checkbox.Location = new System.Drawing.Point(14, 14);
+            this.IsletmeAd_checkbox.Name = "IsletmeAd_checkbox";
+            this.IsletmeAd_checkbox.Size = new System.Drawing.Size(114, 25);
+            this.IsletmeAd_checkbox.TabIndex = 13;
+            this.IsletmeAd_checkbox.Tag = "IsletmeAd";
+            this.IsletmeAd_checkbox.Text = "İşletme Adı";
+            this.IsletmeAd_checkbox.UseVisualStyleBackColor = true;
+            this.IsletmeAd_checkbox.CheckedChanged += new System.EventHandler(this.IsletmeAd_checkbox_CheckedChanged);
+            // 
+            // panel42
+            // 
+            this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel42.Controls.Add(this.IsletmeListSiralama_combobox);
+            this.panel42.Controls.Add(this.IsletmeListAlanAdlari_combobox);
+            this.panel42.Controls.Add(this.IsletmeListText_textbox);
+            this.panel42.Controls.Add(this.IsletmeListFiltreleme_combobox);
+            this.panel42.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel42.Location = new System.Drawing.Point(0, 0);
+            this.panel42.Name = "panel42";
+            this.panel42.Size = new System.Drawing.Size(906, 97);
+            this.panel42.TabIndex = 4;
+            // 
+            // IsletmeListSiralama_combobox
+            // 
+            this.IsletmeListSiralama_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeListSiralama_combobox.FormattingEnabled = true;
+            this.IsletmeListSiralama_combobox.Items.AddRange(new object[] {
+            "Ada göre A-Z",
+            "Ada göre Z-A",
+            "Usta Ö. Belgesi olanlar",
+            "Usta Ö. Belgesi olmayanlar",
+            "En çok öğrencinin gittiği",
+            "En az öğrencinin gittiği"});
+            this.IsletmeListSiralama_combobox.Location = new System.Drawing.Point(683, 27);
+            this.IsletmeListSiralama_combobox.Name = "IsletmeListSiralama_combobox";
+            this.IsletmeListSiralama_combobox.Size = new System.Drawing.Size(218, 36);
+            this.IsletmeListSiralama_combobox.TabIndex = 3;
+            this.IsletmeListSiralama_combobox.TextChanged += new System.EventHandler(this.IsletmeListSiralama_combobox_TextChanged);
+            this.IsletmeListSiralama_combobox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IsletmeListSiralama_combobox_KeyDown);
+            // 
+            // IsletmeListAlanAdlari_combobox
+            // 
+            this.IsletmeListAlanAdlari_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeListAlanAdlari_combobox.FormattingEnabled = true;
+            this.IsletmeListAlanAdlari_combobox.Location = new System.Drawing.Point(427, 27);
+            this.IsletmeListAlanAdlari_combobox.Name = "IsletmeListAlanAdlari_combobox";
+            this.IsletmeListAlanAdlari_combobox.Size = new System.Drawing.Size(251, 36);
+            this.IsletmeListAlanAdlari_combobox.TabIndex = 11;
+            this.IsletmeListAlanAdlari_combobox.TextChanged += new System.EventHandler(this.IsletmeListAlanAdlari_combobox_TextChanged);
+            this.IsletmeListAlanAdlari_combobox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IsletmeListAlanAdlari_combobox_KeyDown);
+            // 
+            // IsletmeListText_textbox
+            // 
+            this.IsletmeListText_textbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeListText_textbox.Location = new System.Drawing.Point(427, 28);
+            this.IsletmeListText_textbox.Name = "IsletmeListText_textbox";
+            this.IsletmeListText_textbox.Size = new System.Drawing.Size(251, 34);
+            this.IsletmeListText_textbox.TabIndex = 5;
+            // 
+            // IsletmeListFiltreleme_combobox
+            // 
+            this.IsletmeListFiltreleme_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeListFiltreleme_combobox.FormattingEnabled = true;
+            this.IsletmeListFiltreleme_combobox.Items.AddRange(new object[] {
+            "Filtrelemeden listele",
+            "İşletme adı ... olan işletmeleri sırala",
+            "İşletme yetkilisi adı ... olan işletmeleri sırala",
+            "... ilçesindeki işletmeleri sırala",
+            "Alanı ... olan işletmeleri sırala"});
+            this.IsletmeListFiltreleme_combobox.Location = new System.Drawing.Point(3, 27);
+            this.IsletmeListFiltreleme_combobox.Name = "IsletmeListFiltreleme_combobox";
+            this.IsletmeListFiltreleme_combobox.Size = new System.Drawing.Size(419, 36);
+            this.IsletmeListFiltreleme_combobox.TabIndex = 3;
+            this.IsletmeListFiltreleme_combobox.SelectedIndexChanged += new System.EventHandler(this.IsletmeListFiltreleme_combobox_SelectedIndexChanged);
+            this.IsletmeListFiltreleme_combobox.TextChanged += new System.EventHandler(this.IsletmeListFiltreleme_combobox_TextChanged);
+            this.IsletmeListFiltreleme_combobox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IsletmeListFiltreleme_combobox_KeyDown);
+            // 
+            // panel43
+            // 
+            this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel43.Controls.Add(this.IsletmeListSORGULAbuton_Button);
+            this.panel43.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel43.Location = new System.Drawing.Point(910, 0);
+            this.panel43.Name = "panel43";
+            this.panel43.Padding = new System.Windows.Forms.Padding(4);
+            this.panel43.Size = new System.Drawing.Size(207, 97);
+            this.panel43.TabIndex = 3;
+            // 
+            // IsletmeListSORGULAbuton_Button
+            // 
+            this.IsletmeListSORGULAbuton_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeListSORGULAbuton_Button.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IsletmeListSORGULAbuton_Button.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeListSORGULAbuton_Button.Location = new System.Drawing.Point(4, 4);
+            this.IsletmeListSORGULAbuton_Button.Name = "IsletmeListSORGULAbuton_Button";
+            this.IsletmeListSORGULAbuton_Button.Size = new System.Drawing.Size(197, 87);
+            this.IsletmeListSORGULAbuton_Button.TabIndex = 6;
+            this.IsletmeListSORGULAbuton_Button.Text = "SORGULA";
+            this.IsletmeListSORGULAbuton_Button.UseVisualStyleBackColor = true;
+            this.IsletmeListSORGULAbuton_Button.Click += new System.EventHandler(this.IsletmeListSORGULAbuton_Button_Click);
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage16.Controls.Add(this.ustaogreticiGroupBox);
+            this.tabPage16.Controls.Add(this.panel12);
+            this.tabPage16.Location = new System.Drawing.Point(4, 28);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage16.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage16.TabIndex = 1;
+            this.tabPage16.Text = "EKLE";
+            // 
+            // ustaogreticiGroupBox
+            // 
+            this.ustaogreticiGroupBox.Controls.Add(this.addUODogumTarihi_datetime);
+            this.ustaogreticiGroupBox.Controls.Add(this.label238);
+            this.ustaogreticiGroupBox.Controls.Add(this.label237);
+            this.ustaogreticiGroupBox.Controls.Add(this.addUOSoyadi_txt);
+            this.ustaogreticiGroupBox.Controls.Add(this.label236);
+            this.ustaogreticiGroupBox.Controls.Add(this.addUOAdi_txt);
+            this.ustaogreticiGroupBox.Location = new System.Drawing.Point(458, 2);
+            this.ustaogreticiGroupBox.Name = "ustaogreticiGroupBox";
+            this.ustaogreticiGroupBox.Size = new System.Drawing.Size(328, 131);
+            this.ustaogreticiGroupBox.TabIndex = 80;
+            this.ustaogreticiGroupBox.TabStop = false;
+            this.ustaogreticiGroupBox.Text = "Usta Öğretici Bilgileri";
+            // 
+            // addUODogumTarihi_datetime
+            // 
+            this.addUODogumTarihi_datetime.Location = new System.Drawing.Point(94, 97);
+            this.addUODogumTarihi_datetime.Name = "addUODogumTarihi_datetime";
+            this.addUODogumTarihi_datetime.Size = new System.Drawing.Size(224, 24);
+            this.addUODogumTarihi_datetime.TabIndex = 68;
+            // 
+            // label238
+            // 
+            this.label238.AutoSize = true;
+            this.label238.Location = new System.Drawing.Point(10, 99);
+            this.label238.Name = "label238";
+            this.label238.Size = new System.Drawing.Size(77, 19);
+            this.label238.TabIndex = 67;
+            this.label238.Text = "Doğum T : ";
+            // 
+            // label237
+            // 
+            this.label237.AutoSize = true;
+            this.label237.Location = new System.Drawing.Point(26, 65);
+            this.label237.Name = "label237";
+            this.label237.Size = new System.Drawing.Size(61, 19);
+            this.label237.TabIndex = 65;
+            this.label237.Text = "Soyadı : ";
+            // 
+            // addUOSoyadi_txt
+            // 
+            this.addUOSoyadi_txt.Location = new System.Drawing.Point(93, 65);
+            this.addUOSoyadi_txt.Name = "addUOSoyadi_txt";
+            this.addUOSoyadi_txt.Size = new System.Drawing.Size(225, 24);
+            this.addUOSoyadi_txt.TabIndex = 66;
+            // 
+            // label236
+            // 
+            this.label236.AutoSize = true;
+            this.label236.Location = new System.Drawing.Point(47, 32);
+            this.label236.Name = "label236";
+            this.label236.Size = new System.Drawing.Size(40, 19);
+            this.label236.TabIndex = 63;
+            this.label236.Text = "Adı : ";
+            // 
+            // addUOAdi_txt
+            // 
+            this.addUOAdi_txt.Location = new System.Drawing.Point(93, 32);
+            this.addUOAdi_txt.Name = "addUOAdi_txt";
+            this.addUOAdi_txt.Size = new System.Drawing.Size(225, 24);
+            this.addUOAdi_txt.TabIndex = 64;
+            // 
+            // panel12
+            // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel12.Controls.Add(this.label240);
+            this.panel12.Controls.Add(this.addIsletmeIbanNo_txt);
+            this.panel12.Controls.Add(this.label239);
+            this.panel12.Controls.Add(this.addIsletmeSicilNo_txt);
+            this.panel12.Controls.Add(this.addIsletmeTelNo_txt);
+            this.panel12.Controls.Add(this.label84);
+            this.panel12.Controls.Add(this.addDal_combo);
+            this.panel12.Controls.Add(this.label49);
+            this.panel12.Controls.Add(this.addIsletmeYetkilisi_txt);
+            this.panel12.Controls.Add(this.addUstaOgreticilikVarmiYok_radio);
+            this.panel12.Controls.Add(this.addUstaOgreticilikVarmiVVar_radio);
+            this.panel12.Controls.Add(this.addTamAdres_richtext);
+            this.panel12.Controls.Add(this.addIlce_combo);
+            this.panel12.Controls.Add(this.addIl_combo);
+            this.panel12.Controls.Add(this.label50);
+            this.panel12.Controls.Add(this.addısletmeTemizle_button);
+            this.panel12.Controls.Add(this.label51);
+            this.panel12.Controls.Add(this.addIsletmeEkle_button);
+            this.panel12.Controls.Add(this.label52);
+            this.panel12.Controls.Add(this.label53);
+            this.panel12.Controls.Add(this.addBolum_combo);
+            this.panel12.Controls.Add(this.label54);
+            this.panel12.Controls.Add(this.label55);
+            this.panel12.Controls.Add(this.label56);
+            this.panel12.Controls.Add(this.addIsletmeAdi_txt);
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(452, 584);
+            this.panel12.TabIndex = 79;
+            // 
+            // label240
+            // 
+            this.label240.AutoSize = true;
+            this.label240.Location = new System.Drawing.Point(118, 312);
+            this.label240.Name = "label240";
+            this.label240.Size = new System.Drawing.Size(70, 19);
+            this.label240.TabIndex = 94;
+            this.label240.Text = "İban No : ";
+            // 
+            // addIsletmeIbanNo_txt
+            // 
+            this.addIsletmeIbanNo_txt.Location = new System.Drawing.Point(200, 310);
+            this.addIsletmeIbanNo_txt.Name = "addIsletmeIbanNo_txt";
+            this.addIsletmeIbanNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.addIsletmeIbanNo_txt.TabIndex = 95;
+            // 
+            // label239
+            // 
+            this.label239.AutoSize = true;
+            this.label239.Location = new System.Drawing.Point(121, 279);
+            this.label239.Name = "label239";
+            this.label239.Size = new System.Drawing.Size(67, 19);
+            this.label239.TabIndex = 92;
+            this.label239.Text = "Sicil No : ";
+            // 
+            // addIsletmeSicilNo_txt
+            // 
+            this.addIsletmeSicilNo_txt.Location = new System.Drawing.Point(200, 276);
+            this.addIsletmeSicilNo_txt.Name = "addIsletmeSicilNo_txt";
+            this.addIsletmeSicilNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.addIsletmeSicilNo_txt.TabIndex = 93;
+            // 
+            // addIsletmeTelNo_txt
+            // 
+            this.addIsletmeTelNo_txt.Location = new System.Drawing.Point(200, 242);
+            this.addIsletmeTelNo_txt.Name = "addIsletmeTelNo_txt";
+            this.addIsletmeTelNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.addIsletmeTelNo_txt.TabIndex = 91;
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(80, 243);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(108, 19);
+            this.label84.TabIndex = 90;
+            this.label84.Text = "İşletme Tel No : ";
+            // 
+            // addDal_combo
+            // 
+            this.addDal_combo.FormattingEnabled = true;
+            this.addDal_combo.Location = new System.Drawing.Point(199, 413);
+            this.addDal_combo.Name = "addDal_combo";
+            this.addDal_combo.Size = new System.Drawing.Size(225, 27);
+            this.addDal_combo.TabIndex = 89;
+            this.addDal_combo.TextChanged += new System.EventHandler(this.addDal_combo_TextChanged);
+            this.addDal_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addDal_combo_KeyDown);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(148, 416);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(40, 19);
+            this.label49.TabIndex = 88;
+            this.label49.Text = "Dal : ";
+            // 
+            // addIsletmeYetkilisi_txt
+            // 
+            this.addIsletmeYetkilisi_txt.Location = new System.Drawing.Point(200, 207);
+            this.addIsletmeYetkilisi_txt.Name = "addIsletmeYetkilisi_txt";
+            this.addIsletmeYetkilisi_txt.Size = new System.Drawing.Size(225, 24);
+            this.addIsletmeYetkilisi_txt.TabIndex = 84;
+            // 
+            // addUstaOgreticilikVarmiYok_radio
+            // 
+            this.addUstaOgreticilikVarmiYok_radio.AutoSize = true;
+            this.addUstaOgreticilikVarmiYok_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addUstaOgreticilikVarmiYok_radio.Location = new System.Drawing.Point(272, 340);
+            this.addUstaOgreticilikVarmiYok_radio.Name = "addUstaOgreticilikVarmiYok_radio";
+            this.addUstaOgreticilikVarmiYok_radio.Size = new System.Drawing.Size(50, 23);
+            this.addUstaOgreticilikVarmiYok_radio.TabIndex = 83;
+            this.addUstaOgreticilikVarmiYok_radio.TabStop = true;
+            this.addUstaOgreticilikVarmiYok_radio.Text = "Yok";
+            this.addUstaOgreticilikVarmiYok_radio.UseVisualStyleBackColor = true;
+            this.addUstaOgreticilikVarmiYok_radio.CheckedChanged += new System.EventHandler(this.addUstaOgreticilikVarmiYok_radio_CheckedChanged);
+            // 
+            // addUstaOgreticilikVarmiVVar_radio
+            // 
+            this.addUstaOgreticilikVarmiVVar_radio.AutoSize = true;
+            this.addUstaOgreticilikVarmiVVar_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addUstaOgreticilikVarmiVVar_radio.Location = new System.Drawing.Point(199, 340);
+            this.addUstaOgreticilikVarmiVVar_radio.Name = "addUstaOgreticilikVarmiVVar_radio";
+            this.addUstaOgreticilikVarmiVVar_radio.Size = new System.Drawing.Size(48, 23);
+            this.addUstaOgreticilikVarmiVVar_radio.TabIndex = 82;
+            this.addUstaOgreticilikVarmiVVar_radio.TabStop = true;
+            this.addUstaOgreticilikVarmiVVar_radio.Text = "Var";
+            this.addUstaOgreticilikVarmiVVar_radio.UseVisualStyleBackColor = true;
+            this.addUstaOgreticilikVarmiVVar_radio.CheckedChanged += new System.EventHandler(this.addUstaOgreticilikVarmiVVar_radio_CheckedChanged);
+            // 
+            // addTamAdres_richtext
+            // 
+            this.addTamAdres_richtext.Location = new System.Drawing.Point(200, 131);
+            this.addTamAdres_richtext.Name = "addTamAdres_richtext";
+            this.addTamAdres_richtext.Size = new System.Drawing.Size(225, 62);
+            this.addTamAdres_richtext.TabIndex = 81;
+            this.addTamAdres_richtext.Text = "";
+            // 
+            // addIlce_combo
+            // 
+            this.addIlce_combo.FormattingEnabled = true;
+            this.addIlce_combo.Location = new System.Drawing.Point(200, 92);
+            this.addIlce_combo.Name = "addIlce_combo";
+            this.addIlce_combo.Size = new System.Drawing.Size(225, 27);
+            this.addIlce_combo.TabIndex = 80;
+            this.addIlce_combo.TextChanged += new System.EventHandler(this.addIlce_combo_TextChanged);
+            this.addIlce_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addIlce_combo_KeyDown);
+            // 
+            // addIl_combo
+            // 
+            this.addIl_combo.FormattingEnabled = true;
+            this.addIl_combo.Location = new System.Drawing.Point(200, 54);
+            this.addIl_combo.Name = "addIl_combo";
+            this.addIl_combo.Size = new System.Drawing.Size(225, 27);
+            this.addIl_combo.TabIndex = 79;
+            this.addIl_combo.TextChanged += new System.EventHandler(this.addIl_combo_TextChanged);
+            this.addIl_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addIl_combo_KeyDown);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(100, 19);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(88, 19);
+            this.label50.TabIndex = 50;
+            this.label50.Text = "İşletme Adı : ";
+            // 
+            // addısletmeTemizle_button
+            // 
+            this.addısletmeTemizle_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addısletmeTemizle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.addısletmeTemizle_button.Location = new System.Drawing.Point(19, 455);
+            this.addısletmeTemizle_button.Name = "addısletmeTemizle_button";
+            this.addısletmeTemizle_button.Size = new System.Drawing.Size(409, 44);
+            this.addısletmeTemizle_button.TabIndex = 78;
+            this.addısletmeTemizle_button.Text = "TEMİZLE";
+            this.addısletmeTemizle_button.UseVisualStyleBackColor = true;
+            this.addısletmeTemizle_button.Click += new System.EventHandler(this.addısletmeTemizle_button_Click);
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(161, 57);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(27, 19);
+            this.label51.TabIndex = 51;
+            this.label51.Text = "İl : ";
+            // 
+            // addIsletmeEkle_button
+            // 
+            this.addIsletmeEkle_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addIsletmeEkle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.addIsletmeEkle_button.Location = new System.Drawing.Point(19, 502);
+            this.addIsletmeEkle_button.Name = "addIsletmeEkle_button";
+            this.addIsletmeEkle_button.Size = new System.Drawing.Size(409, 76);
+            this.addIsletmeEkle_button.TabIndex = 77;
+            this.addIsletmeEkle_button.Text = "EKLE";
+            this.addIsletmeEkle_button.UseVisualStyleBackColor = true;
+            this.addIsletmeEkle_button.Click += new System.EventHandler(this.addIsletmeEkle_button_Click);
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(147, 95);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(41, 19);
+            this.label52.TabIndex = 52;
+            this.label52.Text = "İlçe : ";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(103, 131);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(85, 19);
+            this.label53.TabIndex = 53;
+            this.label53.Text = "Tam Adres : ";
+            // 
+            // addBolum_combo
+            // 
+            this.addBolum_combo.FormattingEnabled = true;
+            this.addBolum_combo.Location = new System.Drawing.Point(200, 373);
+            this.addBolum_combo.Name = "addBolum_combo";
+            this.addBolum_combo.Size = new System.Drawing.Size(225, 27);
+            this.addBolum_combo.TabIndex = 73;
+            this.addBolum_combo.SelectedIndexChanged += new System.EventHandler(this.addBolum_combo_SelectedIndexChanged);
+            this.addBolum_combo.TextChanged += new System.EventHandler(this.addBolum_combo_TextChanged);
+            this.addBolum_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addBolum_combo_KeyDown);
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(35, 343);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(153, 19);
+            this.label54.TabIndex = 58;
+            this.label54.Text = "Usta Öğreticilik Var mı?";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(75, 210);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(113, 19);
+            this.label55.TabIndex = 60;
+            this.label55.Text = "İşletme Yetkilisi : ";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(141, 376);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(47, 19);
+            this.label56.TabIndex = 61;
+            this.label56.Text = "Alan : ";
+            // 
+            // addIsletmeAdi_txt
+            // 
+            this.addIsletmeAdi_txt.Location = new System.Drawing.Point(200, 17);
+            this.addIsletmeAdi_txt.Name = "addIsletmeAdi_txt";
+            this.addIsletmeAdi_txt.Size = new System.Drawing.Size(225, 24);
+            this.addIsletmeAdi_txt.TabIndex = 62;
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage17.Controls.Add(this.upUstaOgretici_groupBox);
+            this.tabPage17.Controls.Add(this.updateIsletmePanelSol_panel);
+            this.tabPage17.Controls.Add(this.updateIsletmePanelSag_panel);
+            this.tabPage17.Location = new System.Drawing.Point(4, 28);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage17.TabIndex = 2;
+            this.tabPage17.Text = "GÜNCELLE";
+            // 
+            // upUstaOgretici_groupBox
+            // 
+            this.upUstaOgretici_groupBox.Controls.Add(this.upUODogumTarihi_datetime);
+            this.upUstaOgretici_groupBox.Controls.Add(this.label243);
+            this.upUstaOgretici_groupBox.Controls.Add(this.label244);
+            this.upUstaOgretici_groupBox.Controls.Add(this.upUOSoyadi_txt);
+            this.upUstaOgretici_groupBox.Controls.Add(this.label245);
+            this.upUstaOgretici_groupBox.Controls.Add(this.upUOAdi_txt);
+            this.upUstaOgretici_groupBox.Location = new System.Drawing.Point(0, 458);
+            this.upUstaOgretici_groupBox.Name = "upUstaOgretici_groupBox";
+            this.upUstaOgretici_groupBox.Size = new System.Drawing.Size(452, 131);
+            this.upUstaOgretici_groupBox.TabIndex = 83;
+            this.upUstaOgretici_groupBox.TabStop = false;
+            this.upUstaOgretici_groupBox.Text = "Usta Öğretici Bilgileri";
+            // 
+            // upUODogumTarihi_datetime
+            // 
+            this.upUODogumTarihi_datetime.Location = new System.Drawing.Point(202, 97);
+            this.upUODogumTarihi_datetime.Name = "upUODogumTarihi_datetime";
+            this.upUODogumTarihi_datetime.Size = new System.Drawing.Size(224, 24);
+            this.upUODogumTarihi_datetime.TabIndex = 68;
+            // 
+            // label243
+            // 
+            this.label243.AutoSize = true;
+            this.label243.Location = new System.Drawing.Point(118, 99);
+            this.label243.Name = "label243";
+            this.label243.Size = new System.Drawing.Size(77, 19);
+            this.label243.TabIndex = 67;
+            this.label243.Text = "Doğum T : ";
+            // 
+            // label244
+            // 
+            this.label244.AutoSize = true;
+            this.label244.Location = new System.Drawing.Point(134, 65);
+            this.label244.Name = "label244";
+            this.label244.Size = new System.Drawing.Size(61, 19);
+            this.label244.TabIndex = 65;
+            this.label244.Text = "Soyadı : ";
+            // 
+            // upUOSoyadi_txt
+            // 
+            this.upUOSoyadi_txt.Location = new System.Drawing.Point(201, 65);
+            this.upUOSoyadi_txt.Name = "upUOSoyadi_txt";
+            this.upUOSoyadi_txt.Size = new System.Drawing.Size(225, 24);
+            this.upUOSoyadi_txt.TabIndex = 66;
+            // 
+            // label245
+            // 
+            this.label245.AutoSize = true;
+            this.label245.Location = new System.Drawing.Point(155, 32);
+            this.label245.Name = "label245";
+            this.label245.Size = new System.Drawing.Size(40, 19);
+            this.label245.TabIndex = 63;
+            this.label245.Text = "Adı : ";
+            // 
+            // upUOAdi_txt
+            // 
+            this.upUOAdi_txt.Location = new System.Drawing.Point(201, 32);
+            this.upUOAdi_txt.Name = "upUOAdi_txt";
+            this.upUOAdi_txt.Size = new System.Drawing.Size(225, 24);
+            this.upUOAdi_txt.TabIndex = 64;
+            // 
+            // updateIsletmePanelSol_panel
+            // 
+            this.updateIsletmePanelSol_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label241);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeIbanNo_txt);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label242);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeSicilNo_txt);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeTelNo_txt);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label85);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upDal_combo);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label57);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeYetkilisi_txt);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upUstaOgreticilikVarmiYok_radio);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upUstaOgreticilikVarmiVar_radio);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upTamAdres_richtext);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIlce_combo);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIl_combo);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label58);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label59);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label60);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label61);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upBolum_combo);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label62);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label63);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.label64);
+            this.updateIsletmePanelSol_panel.Controls.Add(this.upIsletmeAdi_txt);
+            this.updateIsletmePanelSol_panel.Location = new System.Drawing.Point(0, 0);
+            this.updateIsletmePanelSol_panel.Name = "updateIsletmePanelSol_panel";
+            this.updateIsletmePanelSol_panel.Size = new System.Drawing.Size(452, 452);
+            this.updateIsletmePanelSol_panel.TabIndex = 82;
+            // 
+            // label241
+            // 
+            this.label241.AutoSize = true;
+            this.label241.Location = new System.Drawing.Point(118, 308);
+            this.label241.Name = "label241";
+            this.label241.Size = new System.Drawing.Size(70, 19);
+            this.label241.TabIndex = 98;
+            this.label241.Text = "İban No : ";
+            // 
+            // upIsletmeIbanNo_txt
+            // 
+            this.upIsletmeIbanNo_txt.Location = new System.Drawing.Point(200, 306);
+            this.upIsletmeIbanNo_txt.Name = "upIsletmeIbanNo_txt";
+            this.upIsletmeIbanNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.upIsletmeIbanNo_txt.TabIndex = 99;
+            // 
+            // label242
+            // 
+            this.label242.AutoSize = true;
+            this.label242.Location = new System.Drawing.Point(121, 276);
+            this.label242.Name = "label242";
+            this.label242.Size = new System.Drawing.Size(67, 19);
+            this.label242.TabIndex = 96;
+            this.label242.Text = "Sicil No : ";
+            // 
+            // upIsletmeSicilNo_txt
+            // 
+            this.upIsletmeSicilNo_txt.Location = new System.Drawing.Point(200, 273);
+            this.upIsletmeSicilNo_txt.Name = "upIsletmeSicilNo_txt";
+            this.upIsletmeSicilNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.upIsletmeSicilNo_txt.TabIndex = 97;
+            // 
+            // upIsletmeTelNo_txt
+            // 
+            this.upIsletmeTelNo_txt.Location = new System.Drawing.Point(200, 242);
+            this.upIsletmeTelNo_txt.Name = "upIsletmeTelNo_txt";
+            this.upIsletmeTelNo_txt.Size = new System.Drawing.Size(225, 24);
+            this.upIsletmeTelNo_txt.TabIndex = 93;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(80, 243);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(108, 19);
+            this.label85.TabIndex = 92;
+            this.label85.Text = "İşletme Tel No : ";
+            // 
+            // upDal_combo
+            // 
+            this.upDal_combo.FormattingEnabled = true;
+            this.upDal_combo.Location = new System.Drawing.Point(199, 404);
+            this.upDal_combo.Name = "upDal_combo";
+            this.upDal_combo.Size = new System.Drawing.Size(225, 27);
+            this.upDal_combo.TabIndex = 87;
+            this.upDal_combo.TextChanged += new System.EventHandler(this.upDal_combo_TextChanged);
+            this.upDal_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upDal_combo_KeyDown);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(148, 407);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(40, 19);
+            this.label57.TabIndex = 86;
+            this.label57.Text = "Dal : ";
+            // 
+            // upIsletmeYetkilisi_txt
+            // 
+            this.upIsletmeYetkilisi_txt.Location = new System.Drawing.Point(200, 207);
+            this.upIsletmeYetkilisi_txt.Name = "upIsletmeYetkilisi_txt";
+            this.upIsletmeYetkilisi_txt.Size = new System.Drawing.Size(225, 24);
+            this.upIsletmeYetkilisi_txt.TabIndex = 84;
+            // 
+            // upUstaOgreticilikVarmiYok_radio
+            // 
+            this.upUstaOgreticilikVarmiYok_radio.AutoSize = true;
+            this.upUstaOgreticilikVarmiYok_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.upUstaOgreticilikVarmiYok_radio.Location = new System.Drawing.Point(272, 332);
+            this.upUstaOgreticilikVarmiYok_radio.Name = "upUstaOgreticilikVarmiYok_radio";
+            this.upUstaOgreticilikVarmiYok_radio.Size = new System.Drawing.Size(50, 23);
+            this.upUstaOgreticilikVarmiYok_radio.TabIndex = 83;
+            this.upUstaOgreticilikVarmiYok_radio.TabStop = true;
+            this.upUstaOgreticilikVarmiYok_radio.Text = "Yok";
+            this.upUstaOgreticilikVarmiYok_radio.UseVisualStyleBackColor = true;
+            this.upUstaOgreticilikVarmiYok_radio.CheckedChanged += new System.EventHandler(this.upUstaOgreticilikVarmiYok_radio_CheckedChanged);
+            // 
+            // upUstaOgreticilikVarmiVar_radio
+            // 
+            this.upUstaOgreticilikVarmiVar_radio.AutoSize = true;
+            this.upUstaOgreticilikVarmiVar_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.upUstaOgreticilikVarmiVar_radio.Location = new System.Drawing.Point(199, 332);
+            this.upUstaOgreticilikVarmiVar_radio.Name = "upUstaOgreticilikVarmiVar_radio";
+            this.upUstaOgreticilikVarmiVar_radio.Size = new System.Drawing.Size(48, 23);
+            this.upUstaOgreticilikVarmiVar_radio.TabIndex = 82;
+            this.upUstaOgreticilikVarmiVar_radio.TabStop = true;
+            this.upUstaOgreticilikVarmiVar_radio.Text = "Var";
+            this.upUstaOgreticilikVarmiVar_radio.UseVisualStyleBackColor = true;
+            this.upUstaOgreticilikVarmiVar_radio.CheckedChanged += new System.EventHandler(this.upUstaOgreticilikVarmiVar_radio_CheckedChanged);
+            // 
+            // upTamAdres_richtext
+            // 
+            this.upTamAdres_richtext.Location = new System.Drawing.Point(200, 131);
+            this.upTamAdres_richtext.Name = "upTamAdres_richtext";
+            this.upTamAdres_richtext.Size = new System.Drawing.Size(225, 62);
+            this.upTamAdres_richtext.TabIndex = 81;
+            this.upTamAdres_richtext.Text = "";
+            // 
+            // upIlce_combo
+            // 
+            this.upIlce_combo.FormattingEnabled = true;
+            this.upIlce_combo.Location = new System.Drawing.Point(200, 92);
+            this.upIlce_combo.Name = "upIlce_combo";
+            this.upIlce_combo.Size = new System.Drawing.Size(225, 27);
+            this.upIlce_combo.TabIndex = 80;
+            this.upIlce_combo.TextChanged += new System.EventHandler(this.upIlce_combo_TextChanged);
+            this.upIlce_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upIlce_combo_KeyDown);
+            // 
+            // upIl_combo
+            // 
+            this.upIl_combo.FormattingEnabled = true;
+            this.upIl_combo.Location = new System.Drawing.Point(200, 54);
+            this.upIl_combo.Name = "upIl_combo";
+            this.upIl_combo.Size = new System.Drawing.Size(225, 27);
+            this.upIl_combo.TabIndex = 79;
+            this.upIl_combo.TextChanged += new System.EventHandler(this.upIl_combo_TextChanged);
+            this.upIl_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upIl_combo_KeyDown);
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(100, 19);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(88, 19);
+            this.label58.TabIndex = 50;
+            this.label58.Text = "İşletme Adı : ";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(161, 57);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(27, 19);
+            this.label59.TabIndex = 51;
+            this.label59.Text = "İl : ";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(147, 95);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(41, 19);
+            this.label60.TabIndex = 52;
+            this.label60.Text = "İlçe : ";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(103, 131);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(85, 19);
+            this.label61.TabIndex = 53;
+            this.label61.Text = "Tam Adres : ";
+            // 
+            // upBolum_combo
+            // 
+            this.upBolum_combo.FormattingEnabled = true;
+            this.upBolum_combo.Location = new System.Drawing.Point(200, 365);
+            this.upBolum_combo.Name = "upBolum_combo";
+            this.upBolum_combo.Size = new System.Drawing.Size(225, 27);
+            this.upBolum_combo.TabIndex = 73;
+            this.upBolum_combo.SelectedIndexChanged += new System.EventHandler(this.upBolum_combo_SelectedIndexChanged);
+            this.upBolum_combo.TextChanged += new System.EventHandler(this.upBolum_combo_TextChanged);
+            this.upBolum_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.upBolum_combo_KeyDown);
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(35, 335);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(153, 19);
+            this.label62.TabIndex = 58;
+            this.label62.Text = "Usta Öğreticilik Var mı?";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(75, 207);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(113, 19);
+            this.label63.TabIndex = 60;
+            this.label63.Text = "İşletme Yetkilisi : ";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(141, 367);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(47, 19);
+            this.label64.TabIndex = 61;
+            this.label64.Text = "Alan : ";
+            // 
+            // upIsletmeAdi_txt
+            // 
+            this.upIsletmeAdi_txt.Location = new System.Drawing.Point(200, 17);
+            this.upIsletmeAdi_txt.Name = "upIsletmeAdi_txt";
+            this.upIsletmeAdi_txt.Size = new System.Drawing.Size(225, 24);
+            this.upIsletmeAdi_txt.TabIndex = 62;
+            // 
+            // updateIsletmePanelSag_panel
+            // 
+            this.updateIsletmePanelSag_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.updateIsletmePanelSag_panel.Controls.Add(this.updateIsletmeAdi_combo);
+            this.updateIsletmePanelSag_panel.Controls.Add(this.label65);
+            this.updateIsletmePanelSag_panel.Controls.Add(this.upısletmeAktar_button);
+            this.updateIsletmePanelSag_panel.Controls.Add(this.upIsletmeGuncelle_button);
+            this.updateIsletmePanelSag_panel.Controls.Add(this.label66);
+            this.updateIsletmePanelSag_panel.Location = new System.Drawing.Point(458, 0);
+            this.updateIsletmePanelSag_panel.Name = "updateIsletmePanelSag_panel";
+            this.updateIsletmePanelSag_panel.Size = new System.Drawing.Size(427, 203);
+            this.updateIsletmePanelSag_panel.TabIndex = 81;
+            // 
+            // updateIsletmeAdi_combo
+            // 
+            this.updateIsletmeAdi_combo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.updateIsletmeAdi_combo.FormattingEnabled = true;
+            this.updateIsletmeAdi_combo.Location = new System.Drawing.Point(111, 51);
+            this.updateIsletmeAdi_combo.Name = "updateIsletmeAdi_combo";
+            this.updateIsletmeAdi_combo.Size = new System.Drawing.Size(225, 27);
+            this.updateIsletmeAdi_combo.TabIndex = 83;
+            this.updateIsletmeAdi_combo.TextChanged += new System.EventHandler(this.updateIsletmeAdi_combo_TextChanged);
+            this.updateIsletmeAdi_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.updateIsletmeAdi_combo_KeyDown);
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(17, 54);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(88, 19);
+            this.label65.TabIndex = 82;
+            this.label65.Text = "İşletme Adı : ";
+            // 
+            // upısletmeAktar_button
+            // 
+            this.upısletmeAktar_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.upısletmeAktar_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.upısletmeAktar_button.Location = new System.Drawing.Point(9, 88);
+            this.upısletmeAktar_button.Name = "upısletmeAktar_button";
+            this.upısletmeAktar_button.Size = new System.Drawing.Size(409, 44);
+            this.upısletmeAktar_button.TabIndex = 80;
+            this.upısletmeAktar_button.Text = "AKTAR";
+            this.upısletmeAktar_button.UseVisualStyleBackColor = true;
+            this.upısletmeAktar_button.Click += new System.EventHandler(this.upısletmeAktar_button_Click);
+            // 
+            // upIsletmeGuncelle_button
+            // 
+            this.upIsletmeGuncelle_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.upIsletmeGuncelle_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.upIsletmeGuncelle_button.Location = new System.Drawing.Point(9, 133);
+            this.upIsletmeGuncelle_button.Name = "upIsletmeGuncelle_button";
+            this.upIsletmeGuncelle_button.Size = new System.Drawing.Size(409, 64);
+            this.upIsletmeGuncelle_button.TabIndex = 79;
+            this.upIsletmeGuncelle_button.Text = "GÜNCELLE";
+            this.upIsletmeGuncelle_button.UseVisualStyleBackColor = true;
+            this.upIsletmeGuncelle_button.Click += new System.EventHandler(this.upIsletmeGuncelle_button_Click);
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label66.Location = new System.Drawing.Point(133, 17);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(160, 21);
+            this.label66.TabIndex = 63;
+            this.label66.Text = "Güncelleme Bilgileri";
+            // 
+            // tabPage18
+            // 
+            this.tabPage18.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage18.Controls.Add(this.panel15);
+            this.tabPage18.Location = new System.Drawing.Point(4, 28);
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage18.TabIndex = 3;
+            this.tabPage18.Text = "SİL";
+            // 
+            // panel15
+            // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel15.Controls.Add(this.deleteIsletmeAdi_combo);
+            this.panel15.Controls.Add(this.label67);
+            this.panel15.Controls.Add(this.deleteısletme_button);
+            this.panel15.Controls.Add(this.label68);
+            this.panel15.Location = new System.Drawing.Point(0, 0);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(427, 203);
+            this.panel15.TabIndex = 82;
+            // 
+            // deleteIsletmeAdi_combo
+            // 
+            this.deleteIsletmeAdi_combo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteIsletmeAdi_combo.FormattingEnabled = true;
+            this.deleteIsletmeAdi_combo.Location = new System.Drawing.Point(103, 50);
+            this.deleteIsletmeAdi_combo.Name = "deleteIsletmeAdi_combo";
+            this.deleteIsletmeAdi_combo.Size = new System.Drawing.Size(225, 27);
+            this.deleteIsletmeAdi_combo.TabIndex = 84;
+            this.deleteIsletmeAdi_combo.TextChanged += new System.EventHandler(this.deleteIsletmeAdi_combo_TextChanged);
+            this.deleteIsletmeAdi_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.deleteIsletmeAdi_combo_KeyDown);
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(9, 54);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(88, 19);
+            this.label67.TabIndex = 81;
+            this.label67.Text = "İşletme Adı : ";
+            // 
+            // deleteısletme_button
+            // 
+            this.deleteısletme_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.deleteısletme_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.deleteısletme_button.Location = new System.Drawing.Point(9, 133);
+            this.deleteısletme_button.Name = "deleteısletme_button";
+            this.deleteısletme_button.Size = new System.Drawing.Size(409, 64);
+            this.deleteısletme_button.TabIndex = 79;
+            this.deleteısletme_button.Text = "SİL";
+            this.deleteısletme_button.UseVisualStyleBackColor = true;
+            this.deleteısletme_button.Click += new System.EventHandler(this.deleteısletme_button_Click);
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label68.Location = new System.Drawing.Point(166, 15);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(111, 21);
+            this.label68.TabIndex = 63;
+            this.label68.Text = "Silme Bilgileri";
+            // 
+            // YAZDIRtabControl1
+            // 
+            this.YAZDIRtabControl1.Controls.Add(this.tabPage21);
+            this.YAZDIRtabControl1.Controls.Add(this.tabPage14);
+            this.YAZDIRtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.YAZDIRtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.YAZDIRtabControl1.Location = new System.Drawing.Point(0, 0);
+            this.YAZDIRtabControl1.Name = "YAZDIRtabControl1";
+            this.YAZDIRtabControl1.Padding = new System.Drawing.Point(50, 3);
+            this.YAZDIRtabControl1.SelectedIndex = 0;
+            this.YAZDIRtabControl1.Size = new System.Drawing.Size(1151, 650);
+            this.YAZDIRtabControl1.TabIndex = 85;
+            // 
+            // tabPage21
+            // 
+            this.tabPage21.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage21.Controls.Add(this.yazdirYanPanel_panel);
+            this.tabPage21.Controls.Add(this.panel17);
+            this.tabPage21.Location = new System.Drawing.Point(4, 28);
+            this.tabPage21.Name = "tabPage21";
+            this.tabPage21.Padding = new System.Windows.Forms.Padding(10);
+            this.tabPage21.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage21.TabIndex = 0;
+            this.tabPage21.Text = "YAZDIR";
+            // 
+            // yazdirYanPanel_panel
+            // 
+            this.yazdirYanPanel_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.yazdirYanPanel_panel.Controls.Add(this.yazdirNotFisi_panel);
+            this.yazdirYanPanel_panel.Controls.Add(this.yazdirDevamsizlikRaporu_panel);
+            this.yazdirYanPanel_panel.Controls.Add(this.yazdirAyliikGunlukRapor_panel);
+            this.yazdirYanPanel_panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.yazdirYanPanel_panel.Location = new System.Drawing.Point(722, 10);
+            this.yazdirYanPanel_panel.Name = "yazdirYanPanel_panel";
+            this.yazdirYanPanel_panel.Padding = new System.Windows.Forms.Padding(10);
+            this.yazdirYanPanel_panel.Size = new System.Drawing.Size(411, 598);
+            this.yazdirYanPanel_panel.TabIndex = 85;
+            // 
+            // yazdirNotFisi_panel
+            // 
+            this.yazdirNotFisi_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.yazdirNotFisi_panel.Controls.Add(this.label90);
+            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem2_radio);
+            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem1_radio);
+            this.yazdirNotFisi_panel.Controls.Add(this.label96);
+            this.yazdirNotFisi_panel.Location = new System.Drawing.Point(6, 399);
+            this.yazdirNotFisi_panel.Name = "yazdirNotFisi_panel";
+            this.yazdirNotFisi_panel.Padding = new System.Windows.Forms.Padding(10);
+            this.yazdirNotFisi_panel.Size = new System.Drawing.Size(400, 187);
+            this.yazdirNotFisi_panel.TabIndex = 86;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label90.Location = new System.Drawing.Point(19, 63);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(137, 21);
+            this.label90.TabIndex = 88;
+            this.label90.Text = "Dönem Seçiniz : ";
+            // 
+            // yazdirilacakNotFisiDonem2_radio
+            // 
+            this.yazdirilacakNotFisiDonem2_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirilacakNotFisiDonem2_radio.Location = new System.Drawing.Point(291, 63);
+            this.yazdirilacakNotFisiDonem2_radio.Name = "yazdirilacakNotFisiDonem2_radio";
+            this.yazdirilacakNotFisiDonem2_radio.Size = new System.Drawing.Size(108, 23);
+            this.yazdirilacakNotFisiDonem2_radio.TabIndex = 87;
+            this.yazdirilacakNotFisiDonem2_radio.TabStop = true;
+            this.yazdirilacakNotFisiDonem2_radio.Text = "2. Dönem";
+            this.yazdirilacakNotFisiDonem2_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakNotFisiDonem2_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem2_radio_CheckedChanged);
+            // 
+            // yazdirilacakNotFisiDonem1_radio
+            // 
+            this.yazdirilacakNotFisiDonem1_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirilacakNotFisiDonem1_radio.Location = new System.Drawing.Point(168, 63);
+            this.yazdirilacakNotFisiDonem1_radio.Name = "yazdirilacakNotFisiDonem1_radio";
+            this.yazdirilacakNotFisiDonem1_radio.Size = new System.Drawing.Size(108, 23);
+            this.yazdirilacakNotFisiDonem1_radio.TabIndex = 86;
+            this.yazdirilacakNotFisiDonem1_radio.TabStop = true;
+            this.yazdirilacakNotFisiDonem1_radio.Text = "1. Dönem";
+            this.yazdirilacakNotFisiDonem1_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakNotFisiDonem1_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem1_radio_CheckedChanged);
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label96.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label96.Location = new System.Drawing.Point(10, 10);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(68, 21);
+            this.label96.TabIndex = 82;
+            this.label96.Text = "Not Fişi";
+            // 
+            // yazdirDevamsizlikRaporu_panel
+            // 
+            this.yazdirDevamsizlikRaporu_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label89);
+            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.yazdirilacakDevamsizlikAYI_combobox);
+            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label94);
+            this.yazdirDevamsizlikRaporu_panel.Location = new System.Drawing.Point(6, 206);
+            this.yazdirDevamsizlikRaporu_panel.Name = "yazdirDevamsizlikRaporu_panel";
+            this.yazdirDevamsizlikRaporu_panel.Padding = new System.Windows.Forms.Padding(10);
+            this.yazdirDevamsizlikRaporu_panel.Size = new System.Drawing.Size(400, 187);
+            this.yazdirDevamsizlikRaporu_panel.TabIndex = 85;
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label89.Location = new System.Drawing.Point(10, 66);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(141, 21);
+            this.label89.TabIndex = 86;
+            this.label89.Text = "Devamsızlık Ayı : ";
+            // 
+            // yazdirilacakDevamsizlikAYI_combobox
+            // 
+            this.yazdirilacakDevamsizlikAYI_combobox.FormattingEnabled = true;
+            this.yazdirilacakDevamsizlikAYI_combobox.Items.AddRange(new object[] {
+            "Ocak",
+            "Şubat",
+            "Mart",
+            "Nisan",
+            "Mayıs",
+            "Haziran",
+            "Temmuz",
+            "Ağustos",
+            "Eylül",
+            "Ekim",
+            "Kasım",
+            "Aralık"});
+            this.yazdirilacakDevamsizlikAYI_combobox.Location = new System.Drawing.Point(157, 65);
+            this.yazdirilacakDevamsizlikAYI_combobox.Name = "yazdirilacakDevamsizlikAYI_combobox";
+            this.yazdirilacakDevamsizlikAYI_combobox.Size = new System.Drawing.Size(210, 27);
+            this.yazdirilacakDevamsizlikAYI_combobox.TabIndex = 85;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label94.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label94.Location = new System.Drawing.Point(10, 10);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(159, 21);
+            this.label94.TabIndex = 82;
+            this.label94.Text = "Devamsızlık Raporu";
+            // 
+            // yazdirAyliikGunlukRapor_panel
+            // 
+            this.yazdirAyliikGunlukRapor_panel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.yazdirAyliikGunlukRapor_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.panel79);
+            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.GorevTarihleri_panel);
+            this.yazdirAyliikGunlukRapor_panel.Location = new System.Drawing.Point(6, 13);
+            this.yazdirAyliikGunlukRapor_panel.Name = "yazdirAyliikGunlukRapor_panel";
+            this.yazdirAyliikGunlukRapor_panel.Size = new System.Drawing.Size(400, 187);
+            this.yazdirAyliikGunlukRapor_panel.TabIndex = 84;
+            // 
+            // panel79
+            // 
+            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporHAFTALIK_radio);
+            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporAYLIK_radio);
+            this.panel79.Controls.Add(this.label93);
+            this.panel79.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel79.Location = new System.Drawing.Point(0, 0);
+            this.panel79.Name = "panel79";
+            this.panel79.Padding = new System.Windows.Forms.Padding(10);
+            this.panel79.Size = new System.Drawing.Size(262, 183);
+            this.panel79.TabIndex = 90;
+            // 
+            // yazdirilacakAyGunlukRaporHAFTALIK_radio
+            // 
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Location = new System.Drawing.Point(108, 58);
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Name = "yazdirilacakAyGunlukRaporHAFTALIK_radio";
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Size = new System.Drawing.Size(103, 23);
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabIndex = 84;
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabStop = true;
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Text = "HAFTALIK";
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporHAFTALIK_radio_CheckedChanged);
+            // 
+            // yazdirilacakAyGunlukRaporAYLIK_radio
+            // 
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Location = new System.Drawing.Point(31, 58);
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Name = "yazdirilacakAyGunlukRaporAYLIK_radio";
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Size = new System.Drawing.Size(70, 23);
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabIndex = 83;
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabStop = true;
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Text = "AYLIK";
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporAYLIK_radio_CheckedChanged);
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label93.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label93.Location = new System.Drawing.Point(10, 10);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(168, 21);
+            this.label93.TabIndex = 85;
+            this.label93.Text = "Aylık / Günlük Rapor";
+            // 
+            // GorevTarihleri_panel
+            // 
+            this.GorevTarihleri_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.GorevTarihleri_panel.Controls.Add(this.label120);
+            this.GorevTarihleri_panel.Controls.Add(this.GorevTarihiGunleri_richTextBox);
+            this.GorevTarihleri_panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.GorevTarihleri_panel.Location = new System.Drawing.Point(261, 0);
+            this.GorevTarihleri_panel.Name = "GorevTarihleri_panel";
+            this.GorevTarihleri_panel.Padding = new System.Windows.Forms.Padding(8, 8, 10, 10);
+            this.GorevTarihleri_panel.Size = new System.Drawing.Size(135, 183);
+            this.GorevTarihleri_panel.TabIndex = 89;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label120.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label120.Location = new System.Drawing.Point(8, 8);
+            this.label120.Margin = new System.Windows.Forms.Padding(0);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(116, 20);
+            this.label120.TabIndex = 82;
+            this.label120.Text = "Görev Tarihleri";
+            // 
+            // GorevTarihiGunleri_richTextBox
+            // 
+            this.GorevTarihiGunleri_richTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.GorevTarihiGunleri_richTextBox.Location = new System.Drawing.Point(8, 31);
+            this.GorevTarihiGunleri_richTextBox.Name = "GorevTarihiGunleri_richTextBox";
+            this.GorevTarihiGunleri_richTextBox.Size = new System.Drawing.Size(113, 138);
+            this.GorevTarihiGunleri_richTextBox.TabIndex = 87;
+            this.GorevTarihiGunleri_richTextBox.Text = "";
+            // 
+            // panel17
+            // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.panel28);
+            this.panel17.Controls.Add(this.panel20);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel17.Location = new System.Drawing.Point(10, 10);
+            this.panel17.Name = "panel17";
+            this.panel17.Padding = new System.Windows.Forms.Padding(10);
+            this.panel17.Size = new System.Drawing.Size(716, 598);
+            this.panel17.TabIndex = 86;
+            // 
+            // panel28
+            // 
+            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.panel27);
+            this.panel28.Controls.Add(this.panel30);
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel28.Location = new System.Drawing.Point(10, 350);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(694, 236);
+            this.panel28.TabIndex = 89;
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.panel24);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel27.Location = new System.Drawing.Point(436, 0);
+            this.panel27.Name = "panel27";
+            this.panel27.Padding = new System.Windows.Forms.Padding(4);
+            this.panel27.Size = new System.Drawing.Size(256, 234);
+            this.panel27.TabIndex = 87;
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel24.Controls.Add(this.panel80);
+            this.panel24.Controls.Add(this.panel76);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel24.Location = new System.Drawing.Point(4, 4);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(248, 226);
+            this.panel24.TabIndex = 83;
+            // 
+            // panel80
+            // 
+            this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel80.Controls.Add(this.settingsExcel_radio);
+            this.panel80.Controls.Add(this.settingsPDFeDonustur_radio);
+            this.panel80.Controls.Add(this.settingsYazdir_radio);
+            this.panel80.Controls.Add(this.label92);
+            this.panel80.Controls.Add(this.numericUpDown1);
+            this.panel80.Controls.Add(this.label91);
+            this.panel80.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel80.Location = new System.Drawing.Point(0, 0);
+            this.panel80.Name = "panel80";
+            this.panel80.Size = new System.Drawing.Size(244, 168);
+            this.panel80.TabIndex = 90;
+            // 
+            // settingsExcel_radio
+            // 
+            this.settingsExcel_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsExcel_radio.Location = new System.Drawing.Point(18, 114);
+            this.settingsExcel_radio.Name = "settingsExcel_radio";
+            this.settingsExcel_radio.Size = new System.Drawing.Size(215, 23);
+            this.settingsExcel_radio.TabIndex = 96;
+            this.settingsExcel_radio.TabStop = true;
+            this.settingsExcel_radio.Text = "Excel olarak kaydet";
+            this.settingsExcel_radio.UseVisualStyleBackColor = true;
+            this.settingsExcel_radio.CheckedChanged += new System.EventHandler(this.settingsExcel_radio_CheckedChanged);
+            // 
+            // settingsPDFeDonustur_radio
+            // 
+            this.settingsPDFeDonustur_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsPDFeDonustur_radio.Location = new System.Drawing.Point(18, 138);
+            this.settingsPDFeDonustur_radio.Name = "settingsPDFeDonustur_radio";
+            this.settingsPDFeDonustur_radio.Size = new System.Drawing.Size(215, 23);
+            this.settingsPDFeDonustur_radio.TabIndex = 95;
+            this.settingsPDFeDonustur_radio.TabStop = true;
+            this.settingsPDFeDonustur_radio.Text = "PDF\'e dönüştür";
+            this.settingsPDFeDonustur_radio.UseVisualStyleBackColor = true;
+            this.settingsPDFeDonustur_radio.CheckedChanged += new System.EventHandler(this.settingsPDFeDonustur_radio_CheckedChanged);
+            // 
+            // settingsYazdir_radio
+            // 
+            this.settingsYazdir_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsYazdir_radio.Location = new System.Drawing.Point(18, 90);
+            this.settingsYazdir_radio.Name = "settingsYazdir_radio";
+            this.settingsYazdir_radio.Size = new System.Drawing.Size(215, 23);
+            this.settingsYazdir_radio.TabIndex = 94;
+            this.settingsYazdir_radio.TabStop = true;
+            this.settingsYazdir_radio.Text = "Yazdır(Varsayılan Yazıcı)";
+            this.settingsYazdir_radio.UseVisualStyleBackColor = true;
+            this.settingsYazdir_radio.CheckedChanged += new System.EventHandler(this.settingsYazdir_radio_CheckedChanged);
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label92.Location = new System.Drawing.Point(2, 64);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(181, 21);
+            this.label92.TabIndex = 93;
+            this.label92.Text = "İşlem Türünü Seçiniz : ";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(24, 34);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(209, 24);
+            this.numericUpDown1.TabIndex = 92;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label91.Location = new System.Drawing.Point(2, 7);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(200, 21);
+            this.label91.TabIndex = 91;
+            this.label91.Text = "Kaç Adet Çıktı Alınacak : ";
+            // 
+            // panel76
+            // 
+            this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel76.Controls.Add(this.label122);
+            this.panel76.Controls.Add(this.label121);
+            this.panel76.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel76.Location = new System.Drawing.Point(0, 168);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(244, 54);
+            this.panel76.TabIndex = 89;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label122.Location = new System.Drawing.Point(16, 29);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(57, 17);
+            this.label122.TabIndex = 94;
+            this.label122.Text = "label122";
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label121.Location = new System.Drawing.Point(3, 3);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(124, 20);
+            this.label121.TabIndex = 93;
+            this.label121.Text = "Varsayılan yazıcı";
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.panel26);
+            this.panel30.Controls.Add(this.panel25);
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel30.Location = new System.Drawing.Point(0, 0);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(433, 234);
+            this.panel30.TabIndex = 86;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.button6);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel26.Location = new System.Drawing.Point(0, 138);
+            this.panel26.Name = "panel26";
+            this.panel26.Padding = new System.Windows.Forms.Padding(2);
+            this.panel26.Size = new System.Drawing.Size(433, 96);
+            this.panel26.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.Location = new System.Drawing.Point(2, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(429, 92);
+            this.button6.TabIndex = 85;
+            this.button6.Text = "YAZDIR";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.Transparent;
+            this.panel25.Controls.Add(this.button10);
+            this.panel25.Controls.Add(this.button5);
+            this.panel25.Controls.Add(this.button8);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel25.Location = new System.Drawing.Point(0, 0);
+            this.panel25.Name = "panel25";
+            this.panel25.Padding = new System.Windows.Forms.Padding(4);
+            this.panel25.Size = new System.Drawing.Size(433, 138);
+            this.panel25.TabIndex = 86;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button10.Location = new System.Drawing.Point(292, 4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(138, 130);
+            this.button10.TabIndex = 84;
+            this.button10.Text = "Not Fişi";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button5.Location = new System.Drawing.Point(148, 4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(144, 130);
+            this.button5.TabIndex = 84;
+            this.button5.Text = "Aylık / Günlük Rapor";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button8.Location = new System.Drawing.Point(4, 4);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(144, 130);
+            this.button8.TabIndex = 84;
+            this.button8.Text = "Devamsızlık Raporu";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.panel21);
+            this.panel20.Controls.Add(this.panel22);
+            this.panel20.Location = new System.Drawing.Point(10, 180);
+            this.panel20.Name = "panel20";
+            this.panel20.Padding = new System.Windows.Forms.Padding(5);
+            this.panel20.Size = new System.Drawing.Size(694, 164);
+            this.panel20.TabIndex = 88;
+            // 
+            // panel21
+            // 
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel21.Controls.Add(this.label86);
+            this.panel21.Controls.Add(this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel21.Location = new System.Drawing.Point(384, 5);
+            this.panel21.Name = "panel21";
+            this.panel21.Padding = new System.Windows.Forms.Padding(10);
+            this.panel21.Size = new System.Drawing.Size(305, 154);
+            this.panel21.TabIndex = 83;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label86.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label86.Location = new System.Drawing.Point(10, 10);
+            this.label86.Name = "label86";
+            this.label86.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
+            this.label86.Size = new System.Drawing.Size(200, 31);
+            this.label86.TabIndex = 5;
+            this.label86.Text = "İşletmeye Ait Alan Bilgisi";
+            // 
+            // yazdirilacakIsletmeyeAitAlanBilgisi_listbox
+            // 
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.FormattingEnabled = true;
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.ItemHeight = 19;
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Location = new System.Drawing.Point(10, 41);
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Name = "yazdirilacakIsletmeyeAitAlanBilgisi_listbox";
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Size = new System.Drawing.Size(281, 99);
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.TabIndex = 4;
+            // 
+            // panel22
+            // 
+            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel22.Controls.Add(this.yazdirilacakIsletme_listbox);
+            this.panel22.Controls.Add(this.label88);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel22.Location = new System.Drawing.Point(5, 5);
+            this.panel22.Name = "panel22";
+            this.panel22.Padding = new System.Windows.Forms.Padding(10);
+            this.panel22.Size = new System.Drawing.Size(374, 154);
+            this.panel22.TabIndex = 0;
+            // 
+            // yazdirilacakIsletme_listbox
+            // 
+            this.yazdirilacakIsletme_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yazdirilacakIsletme_listbox.FormattingEnabled = true;
+            this.yazdirilacakIsletme_listbox.ItemHeight = 19;
+            this.yazdirilacakIsletme_listbox.Location = new System.Drawing.Point(10, 41);
+            this.yazdirilacakIsletme_listbox.Name = "yazdirilacakIsletme_listbox";
+            this.yazdirilacakIsletme_listbox.Size = new System.Drawing.Size(350, 99);
+            this.yazdirilacakIsletme_listbox.TabIndex = 83;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label88.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label88.Location = new System.Drawing.Point(10, 10);
+            this.label88.Name = "label88";
+            this.label88.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
+            this.label88.Size = new System.Drawing.Size(70, 31);
+            this.label88.TabIndex = 82;
+            this.label88.Text = "İşletme";
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.panel19);
+            this.panel18.Controls.Add(this.panel32);
+            this.panel18.Location = new System.Drawing.Point(10, 9);
+            this.panel18.Name = "panel18";
+            this.panel18.Padding = new System.Windows.Forms.Padding(5);
+            this.panel18.Size = new System.Drawing.Size(694, 164);
+            this.panel18.TabIndex = 87;
+            // 
+            // panel19
+            // 
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel19.Controls.Add(this.label87);
+            this.panel19.Controls.Add(this.yazdirilacakOgretmeniFiltrele_listbox);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel19.Location = new System.Drawing.Point(473, 5);
+            this.panel19.Name = "panel19";
+            this.panel19.Padding = new System.Windows.Forms.Padding(10);
+            this.panel19.Size = new System.Drawing.Size(216, 154);
+            this.panel19.TabIndex = 83;
+            // 
+            // label87
+            // 
+            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label87.Location = new System.Drawing.Point(34, 5);
+            this.label87.Name = "label87";
+            this.label87.Padding = new System.Windows.Forms.Padding(5);
+            this.label87.Size = new System.Drawing.Size(147, 31);
+            this.label87.TabIndex = 5;
+            this.label87.Text = "Hafta(Filtreleme)";
+            // 
+            // yazdirilacakOgretmeniFiltrele_listbox
+            // 
+            this.yazdirilacakOgretmeniFiltrele_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.yazdirilacakOgretmeniFiltrele_listbox.FormattingEnabled = true;
+            this.yazdirilacakOgretmeniFiltrele_listbox.ItemHeight = 19;
+            this.yazdirilacakOgretmeniFiltrele_listbox.Items.AddRange(new object[] {
+            "A Grup Haftası",
+            "B Grup Haftası",
+            "C Grup Haftası",
+            "D Grup Haftası"});
+            this.yazdirilacakOgretmeniFiltrele_listbox.Location = new System.Drawing.Point(10, 60);
+            this.yazdirilacakOgretmeniFiltrele_listbox.Name = "yazdirilacakOgretmeniFiltrele_listbox";
+            this.yazdirilacakOgretmeniFiltrele_listbox.Size = new System.Drawing.Size(192, 80);
+            this.yazdirilacakOgretmeniFiltrele_listbox.TabIndex = 4;
+            this.yazdirilacakOgretmeniFiltrele_listbox.SelectedIndexChanged += new System.EventHandler(this.yazdirilacakOgretmeniFiltrele_listbox_SelectedIndexChanged);
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel32.Controls.Add(this.label78);
+            this.panel32.Controls.Add(this.label110);
+            this.panel32.Controls.Add(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel32.Location = new System.Drawing.Point(5, 5);
+            this.panel32.Name = "panel32";
+            this.panel32.Padding = new System.Windows.Forms.Padding(10);
+            this.panel32.Size = new System.Drawing.Size(465, 154);
+            this.panel32.TabIndex = 0;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label78.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label78.Location = new System.Drawing.Point(10, 10);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(184, 21);
+            this.label78.TabIndex = 82;
+            this.label78.Text = "Koordinatör Öğretmen";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label110.Location = new System.Drawing.Point(13, 59);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(187, 21);
+            this.label110.TabIndex = 72;
+            this.label110.Text = "Öğretmen Adı Soyadı : ";
+            // 
+            // yazdirBelgesiCikartilacakKoordinatorOgretmen_combo
+            // 
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.FormattingEnabled = true;
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Location = new System.Drawing.Point(205, 58);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Name = "yazdirBelgesiCikartilacakKoordinatorOgretmen_combo";
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Size = new System.Drawing.Size(244, 27);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TabIndex = 80;
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedIndexChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_SelectedIndexChanged);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TextChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_TextChanged);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_KeyDown);
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage14.Controls.Add(this.panel97);
+            this.tabPage14.Location = new System.Drawing.Point(4, 28);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(20);
+            this.tabPage14.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage14.TabIndex = 1;
+            this.tabPage14.Text = "QR İLE BELGE OKUT";
+            // 
+            // panel97
+            // 
+            this.panel97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel97.Controls.Add(this.QrTextBox);
+            this.panel97.Controls.Add(this.label108);
+            this.panel97.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel97.Location = new System.Drawing.Point(20, 20);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(1103, 578);
+            this.panel97.TabIndex = 0;
+            this.panel97.Click += new System.EventHandler(this.panel97_Click);
+            // 
+            // QrTextBox
+            // 
+            this.QrTextBox.Location = new System.Drawing.Point(227, 95);
+            this.QrTextBox.Name = "QrTextBox";
+            this.QrTextBox.Size = new System.Drawing.Size(0, 24);
+            this.QrTextBox.TabIndex = 1;
+            this.QrTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.QrTextBox_KeyDown);
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label108.Location = new System.Drawing.Point(446, 239);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(252, 21);
+            this.label108.TabIndex = 0;
+            this.label108.Text = "Lütfen QR kodu cihazla okutun.";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.SettingsButton_button);
@@ -10579,6 +11241,149 @@ namespace WindowsFormsApp1
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "SIL";
             // 
+            // ogrenciFiltreleOgrenciHowToUSE_checkbox
+            // 
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.AutoSize = true;
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Location = new System.Drawing.Point(12, 454);
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Name = "ogrenciFiltreleOgrenciHowToUSE_checkbox";
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Size = new System.Drawing.Size(115, 25);
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.TabIndex = 31;
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Tag = "HowUsePhone";
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.Text = "Seçilen Veli";
+            this.ogrenciFiltreleOgrenciHowToUSE_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // ogrenciFiltreleOgrenciBabaTel_checkbox
+            // 
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.AutoSize = true;
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Location = new System.Drawing.Point(12, 429);
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Name = "ogrenciFiltreleOgrenciBabaTel_checkbox";
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Size = new System.Drawing.Size(139, 25);
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.TabIndex = 30;
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Tag = "OgrenciBabaTelNo";
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.Text = "Baba Telefonu";
+            this.ogrenciFiltreleOgrenciBabaTel_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // ogrenciFiltreleOgrenciBabaAdi_checkbox
+            // 
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.AutoSize = true;
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Location = new System.Drawing.Point(12, 404);
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Name = "ogrenciFiltreleOgrenciBabaAdi_checkbox";
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Size = new System.Drawing.Size(97, 25);
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.TabIndex = 29;
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Tag = "OgrenciBabaAdi";
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.Text = "Baba Adı";
+            this.ogrenciFiltreleOgrenciBabaAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // ogrenciFiltreleOgrenciAnneTel_checkbox
+            // 
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.AutoSize = true;
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Location = new System.Drawing.Point(12, 379);
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Name = "ogrenciFiltreleOgrenciAnneTel_checkbox";
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Size = new System.Drawing.Size(141, 25);
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.TabIndex = 28;
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Tag = "OgrenciAnneTelNo";
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.Text = "Anne Telefonu";
+            this.ogrenciFiltreleOgrenciAnneTel_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // ogrenciFiltreleOgrenciAnneAdi_checkbox
+            // 
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.AutoSize = true;
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Location = new System.Drawing.Point(12, 354);
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Name = "ogrenciFiltreleOgrenciAnneAdi_checkbox";
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Size = new System.Drawing.Size(99, 25);
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.TabIndex = 27;
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Tag = "OgrenciAnneAdi";
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.Text = "Anne Adı";
+            this.ogrenciFiltreleOgrenciAnneAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // IsletmeIbanNo_checkbox
+            // 
+            this.IsletmeIbanNo_checkbox.AutoSize = true;
+            this.IsletmeIbanNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeIbanNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeIbanNo_checkbox.Location = new System.Drawing.Point(14, 434);
+            this.IsletmeIbanNo_checkbox.Name = "IsletmeIbanNo_checkbox";
+            this.IsletmeIbanNo_checkbox.Size = new System.Drawing.Size(151, 25);
+            this.IsletmeIbanNo_checkbox.TabIndex = 27;
+            this.IsletmeIbanNo_checkbox.Tag = "IsletmeIbanNo";
+            this.IsletmeIbanNo_checkbox.Text = "İşletme İban No";
+            this.IsletmeIbanNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // IsletmeSicilNo_checkbox
+            // 
+            this.IsletmeSicilNo_checkbox.AutoSize = true;
+            this.IsletmeSicilNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeSicilNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeSicilNo_checkbox.Location = new System.Drawing.Point(14, 404);
+            this.IsletmeSicilNo_checkbox.Name = "IsletmeSicilNo_checkbox";
+            this.IsletmeSicilNo_checkbox.Size = new System.Drawing.Size(146, 25);
+            this.IsletmeSicilNo_checkbox.TabIndex = 26;
+            this.IsletmeSicilNo_checkbox.Tag = "IsletmeSicilNo";
+            this.IsletmeSicilNo_checkbox.Text = "İşletme Sicil No";
+            this.IsletmeSicilNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // IsletmeUODT_checkbox
+            // 
+            this.IsletmeUODT_checkbox.AutoSize = true;
+            this.IsletmeUODT_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeUODT_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeUODT_checkbox.Location = new System.Drawing.Point(14, 374);
+            this.IsletmeUODT_checkbox.Name = "IsletmeUODT_checkbox";
+            this.IsletmeUODT_checkbox.Size = new System.Drawing.Size(154, 25);
+            this.IsletmeUODT_checkbox.TabIndex = 25;
+            this.IsletmeUODT_checkbox.Tag = "IsletmeUstaOgreticiDogumTarihi";
+            this.IsletmeUODT_checkbox.Text = "Usta Öğretici DT";
+            this.IsletmeUODT_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // IsletmeUOSoyadi_checkbox
+            // 
+            this.IsletmeUOSoyadi_checkbox.AutoSize = true;
+            this.IsletmeUOSoyadi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeUOSoyadi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeUOSoyadi_checkbox.Location = new System.Drawing.Point(14, 344);
+            this.IsletmeUOSoyadi_checkbox.Name = "IsletmeUOSoyadi_checkbox";
+            this.IsletmeUOSoyadi_checkbox.Size = new System.Drawing.Size(183, 25);
+            this.IsletmeUOSoyadi_checkbox.TabIndex = 24;
+            this.IsletmeUOSoyadi_checkbox.Tag = "IsletmeUstaOgreticiSoyadi";
+            this.IsletmeUOSoyadi_checkbox.Text = "Usta Öğretici Soyadı";
+            this.IsletmeUOSoyadi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // IsletmeUOAdi_checkbox
+            // 
+            this.IsletmeUOAdi_checkbox.AutoSize = true;
+            this.IsletmeUOAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeUOAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeUOAdi_checkbox.Location = new System.Drawing.Point(14, 314);
+            this.IsletmeUOAdi_checkbox.Name = "IsletmeUOAdi_checkbox";
+            this.IsletmeUOAdi_checkbox.Size = new System.Drawing.Size(158, 25);
+            this.IsletmeUOAdi_checkbox.TabIndex = 23;
+            this.IsletmeUOAdi_checkbox.Tag = "IsletmeUstaOgreticiAdi";
+            this.IsletmeUOAdi_checkbox.Text = "Usta Öğretici Adı";
+            this.IsletmeUOAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox6.Location = new System.Drawing.Point(14, 284);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(110, 25);
+            this.checkBox6.TabIndex = 22;
+            this.checkBox6.Tag = "IsletmeTamAdres";
+            this.checkBox6.Text = "Tam Adres";
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -10602,71 +11407,6 @@ namespace WindowsFormsApp1
             this.panel61.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel35.ResumeLayout(false);
-            this.ISLETMEtabControl1.ResumeLayout(false);
-            this.tabPage15.ResumeLayout(false);
-            this.panel40.ResumeLayout(false);
-            this.splitContainer6.Panel1.ResumeLayout(false);
-            this.splitContainer6.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).EndInit();
-            this.splitContainer6.ResumeLayout(false);
-            this.splitContainer7.Panel1.ResumeLayout(false);
-            this.splitContainer7.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
-            this.splitContainer7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.IsletmeListDatagridView)).EndInit();
-            this.panel41.ResumeLayout(false);
-            this.panel41.PerformLayout();
-            this.panel42.ResumeLayout(false);
-            this.panel42.PerformLayout();
-            this.panel43.ResumeLayout(false);
-            this.tabPage16.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.tabPage17.ResumeLayout(false);
-            this.updateIsletmePanelSol_panel.ResumeLayout(false);
-            this.updateIsletmePanelSol_panel.PerformLayout();
-            this.updateIsletmePanelSag_panel.ResumeLayout(false);
-            this.updateIsletmePanelSag_panel.PerformLayout();
-            this.tabPage18.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            this.YAZDIRtabControl1.ResumeLayout(false);
-            this.tabPage21.ResumeLayout(false);
-            this.yazdirYanPanel_panel.ResumeLayout(false);
-            this.yazdirNotFisi_panel.ResumeLayout(false);
-            this.yazdirNotFisi_panel.PerformLayout();
-            this.yazdirDevamsizlikRaporu_panel.ResumeLayout(false);
-            this.yazdirDevamsizlikRaporu_panel.PerformLayout();
-            this.yazdirAyliikGunlukRapor_panel.ResumeLayout(false);
-            this.panel79.ResumeLayout(false);
-            this.panel79.PerformLayout();
-            this.GorevTarihleri_panel.ResumeLayout(false);
-            this.GorevTarihleri_panel.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel80.ResumeLayout(false);
-            this.panel80.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.panel76.ResumeLayout(false);
-            this.panel76.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.panel32.PerformLayout();
-            this.tabPage14.ResumeLayout(false);
-            this.panel97.ResumeLayout(false);
-            this.panel97.PerformLayout();
             this.SETTINGStabControl1.ResumeLayout(false);
             this.tabPage20.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
@@ -10864,6 +11604,8 @@ namespace WindowsFormsApp1
             this.tabPage2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
             this.panel81.ResumeLayout(false);
             this.panel83.ResumeLayout(false);
             this.panel82.ResumeLayout(false);
@@ -10918,6 +11660,75 @@ namespace WindowsFormsApp1
             this.tabPage13.ResumeLayout(false);
             this.deleteOgretmenPanel_panel.ResumeLayout(false);
             this.deleteOgretmenPanel_panel.PerformLayout();
+            this.ISLETMEtabControl1.ResumeLayout(false);
+            this.tabPage15.ResumeLayout(false);
+            this.panel40.ResumeLayout(false);
+            this.splitContainer6.Panel1.ResumeLayout(false);
+            this.splitContainer6.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).EndInit();
+            this.splitContainer6.ResumeLayout(false);
+            this.splitContainer7.Panel1.ResumeLayout(false);
+            this.splitContainer7.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
+            this.splitContainer7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.IsletmeListDatagridView)).EndInit();
+            this.panel41.ResumeLayout(false);
+            this.panel41.PerformLayout();
+            this.panel42.ResumeLayout(false);
+            this.panel42.PerformLayout();
+            this.panel43.ResumeLayout(false);
+            this.tabPage16.ResumeLayout(false);
+            this.ustaogreticiGroupBox.ResumeLayout(false);
+            this.ustaogreticiGroupBox.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            this.tabPage17.ResumeLayout(false);
+            this.upUstaOgretici_groupBox.ResumeLayout(false);
+            this.upUstaOgretici_groupBox.PerformLayout();
+            this.updateIsletmePanelSol_panel.ResumeLayout(false);
+            this.updateIsletmePanelSol_panel.PerformLayout();
+            this.updateIsletmePanelSag_panel.ResumeLayout(false);
+            this.updateIsletmePanelSag_panel.PerformLayout();
+            this.tabPage18.ResumeLayout(false);
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.YAZDIRtabControl1.ResumeLayout(false);
+            this.tabPage21.ResumeLayout(false);
+            this.yazdirYanPanel_panel.ResumeLayout(false);
+            this.yazdirNotFisi_panel.ResumeLayout(false);
+            this.yazdirNotFisi_panel.PerformLayout();
+            this.yazdirDevamsizlikRaporu_panel.ResumeLayout(false);
+            this.yazdirDevamsizlikRaporu_panel.PerformLayout();
+            this.yazdirAyliikGunlukRapor_panel.ResumeLayout(false);
+            this.panel79.ResumeLayout(false);
+            this.panel79.PerformLayout();
+            this.GorevTarihleri_panel.ResumeLayout(false);
+            this.GorevTarihleri_panel.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel80.ResumeLayout(false);
+            this.panel80.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel76.ResumeLayout(false);
+            this.panel76.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.tabPage14.ResumeLayout(false);
+            this.panel97.ResumeLayout(false);
+            this.panel97.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -11767,5 +12578,72 @@ namespace WindowsFormsApp1
         private Label label108;
         private Label label233;
         private TextBox QrTextBox;
+        private GroupBox ustaogreticiGroupBox;
+        private Label label238;
+        private Label label237;
+        private TextBox addUOSoyadi_txt;
+        private Label label236;
+        private TextBox addUOAdi_txt;
+        private DateTimePicker addUODogumTarihi_datetime;
+        private Label label240;
+        private TextBox addIsletmeIbanNo_txt;
+        private Label label239;
+        private TextBox addIsletmeSicilNo_txt;
+        private Label label241;
+        private TextBox upIsletmeIbanNo_txt;
+        private Label label242;
+        private TextBox upIsletmeSicilNo_txt;
+        private GroupBox upUstaOgretici_groupBox;
+        private DateTimePicker upUODogumTarihi_datetime;
+        private Label label243;
+        private Label label244;
+        private TextBox upUOSoyadi_txt;
+        private Label label245;
+        private TextBox upUOAdi_txt;
+        private RadioButton settingsExcel_radio;
+        private GroupBox groupBox14;
+        private Label label247;
+        private TextBox addOgrenciAnneAdi_txt;
+        private TextBox addOgrenciAnneTelNo_txt;
+        private Label label248;
+        private Label label249;
+        private TextBox addOgrenciBabaAdi_txt;
+        private TextBox addOgrenciBabaTelNo_txt;
+        private Label label250;
+        private Label label251;
+        private RadioButton addOgrenciUsePhoneBaba_radio;
+        private RadioButton addOgrenciUsePhoneAnne_radio;
+        private RadioButton upOgrenciUsePhoneBaba_radio;
+        private RadioButton upOgrenciUsePhoneAnne_radio;
+        private Label label234;
+        private Label label235;
+        private TextBox upOgrenciBabaAdi_txt;
+        private TextBox upOgrenciBabaTelNo_txt;
+        private Label label246;
+        private Label label252;
+        private TextBox upOgrenciAnneAdi_txt;
+        private TextBox upOgrenciAnneTelNo_txt;
+        private Label label253;
+        private CheckBox settingsColonNameOgrenciHowToUSE_checkbox;
+        private CheckBox settingsColonNameOgrenciBabaTelefonu_checkbox;
+        private CheckBox settingsColonNameOgrenciBabaAdi_checkbox;
+        private CheckBox settingsColonNameOgrenciAnneTelefonu_checkbox;
+        private CheckBox settingsColonNameOgrenciAnneAdi_checkbox;
+        private CheckBox settingsColonNameIsletmeSicilNo_checkbox;
+        private CheckBox settingsColonNameIsletmeUODT_checkbox;
+        private CheckBox settingsColonNameIsletmeUOSoyadi_checkbox;
+        private CheckBox settingsColonNameIsletmeUOAdi_checkbox;
+        private CheckBox settingsColonNameIsletmeIbanNo_checkbox;
+        private CheckBox ogrenciFiltreleOgrenciHowToUSE_checkbox;
+        private CheckBox ogrenciFiltreleOgrenciBabaTel_checkbox;
+        private CheckBox ogrenciFiltreleOgrenciBabaAdi_checkbox;
+        private CheckBox ogrenciFiltreleOgrenciAnneTel_checkbox;
+        private CheckBox ogrenciFiltreleOgrenciAnneAdi_checkbox;
+        private CheckBox IsletmeIbanNo_checkbox;
+        private CheckBox IsletmeSicilNo_checkbox;
+        private CheckBox IsletmeUODT_checkbox;
+        private CheckBox IsletmeUOSoyadi_checkbox;
+        private CheckBox IsletmeUOAdi_checkbox;
+        private CheckBox checkBox6;
     }
 }
