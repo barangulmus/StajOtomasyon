@@ -5889,7 +5889,53 @@ namespace WindowsFormsApp1
             }
             return null;
         }
+        /// <summary>
+        /// Yaz stajı için mevcut tarihe göre görev haftasının tarih aralığını hesaplar.
+        /// - Staj başlamadıysa: İlk haftanın tarih aralığını döndürür.
+        /// - Staj bittiyse: Son haftanın tarih aralığını döndürür.
+        /// - Staj içindeyse (hafta içi/sonu): İçinde bulunulan haftanın aralığını döndürür.
+        /// </summary>
+        /// <returns>Örn: "01.07.2024 - 05.07.2024" formatında bir metin.</returns>
+        private string GetGorevHaftasiTarihAraligi()
+        {
+            DateTime bugun = DateTime.Today;
+            int yil = bugun.Year;
 
+            // 1. ADIM: Temmuz ayının ilk Pazartesi'sini bul (Staj başlangıcı).
+            DateTime temmuzIlkGun = new DateTime(yil, 7, 1);
+            if (temmuzIlkGun.DayOfWeek == DayOfWeek.Sunday)
+                temmuzIlkGun = temmuzIlkGun.AddDays(1);
+            else if (temmuzIlkGun.DayOfWeek == DayOfWeek.Saturday)
+                temmuzIlkGun = temmuzIlkGun.AddDays(2);
+            else
+                temmuzIlkGun = temmuzIlkGun.AddDays(-(int)temmuzIlkGun.DayOfWeek + (int)DayOfWeek.Monday);
+
+            DateTime stajBaslangici = temmuzIlkGun;
+
+            // 2. ADIM: Staj dönemi henüz başlamadıysa, ilk haftanın tarih aralığını döndür.
+            if (bugun < stajBaslangici)
+            {
+                DateTime ilkHaftaSonu = stajBaslangici.AddDays(4); // Pazartesi + 4 gün = Cuma
+                return $"{stajBaslangici:dd.MM.yyyy} - {ilkHaftaSonu:dd.MM.yyyy}";
+            }
+
+            // 3. ADIM: Staj dönemi içindeyse veya bittiyse doğru haftayı bul.
+            int gecenGunSayisi = (bugun - stajBaslangici).Days;
+            int haftaIndeksi = gecenGunSayisi / 7;
+
+            // Staj süresine göre maksimum hafta sayısını belirle (örneğin 9 veya 10 hafta).
+            const int MAKSIMUM_HAFTA_INDEKSI = 9; // 10 haftalık bir staj için indeks 0-9 arası olur.
+            if (haftaIndeksi > MAKSIMUM_HAFTA_INDEKSI)
+            {
+                haftaIndeksi = MAKSIMUM_HAFTA_INDEKSI;
+            }
+
+            // Bulunan haftanın başlangıç ve bitiş tarihlerini hesapla.
+            DateTime bulunanHaftaninBaslangici = stajBaslangici.AddDays(haftaIndeksi * 7);
+            DateTime bulunanHaftaninBitisi = bulunanHaftaninBaslangici.AddDays(4);
+
+            return $"{bulunanHaftaninBaslangici:dd.MM.yyyy} - {bulunanHaftaninBitisi:dd.MM.yyyy}";
+        }
         private async void button6_Click(object sender, EventArgs e)
         {
             // *** 1. İlk Durum Ayarlamaları ve Girdi Doğrulamaları ***
@@ -6198,7 +6244,7 @@ namespace WindowsFormsApp1
                         }
                         ws.Cell("F5").Value = ilgiliIsletme.IsletmeTelNo;
                         ws.Cell("F6").Value = ilgiliIsletme.IsletmeAdresIlce;
-                        ws.Cell("B8").Value = "……/……/…………";
+                        ws.Cell("B8").Value = DateTime.Today.ToString("dd/MM/yyyy");
                         ws.Cell("E8").Value = "";
 
                         //Staj başlangıç ve bitiş tarihleri
@@ -6210,8 +6256,29 @@ namespace WindowsFormsApp1
                         ws.Cell("F10").Value = ilgiliOgrenci.OgreciTelNo;
                         ws.Cell("B11").Value = ilgiliOgrenci.OgrenciAlanAdi;
                         ws.Cell("D11").Value = ilgiliOgrenci.OgrenciDalAdi;
-                        ws.Cell("F11").Value = " ";
+                        if (ilgiliOgrenci.HowUsePhone == "Anne")
+                        {
+                            ws.Cell("F11").Value = ilgiliOgrenci.OgrenciAnneTelNo;
+                        }
+                        else if (ilgiliOgrenci.HowUsePhone == "Baba")
+                        {
+                            ws.Cell("F11").Value = ilgiliOgrenci.OgrenciBabaTelNo;
+                        }
+                        else
+                        {
+                            ws.Cell("F11").Value = " ";
+                        }
+                        // 1. Görev Haftası) 01.7.2025 - 04.07.2025
+                        // 2. Görev Haftası) 07.7.2025 - 11.07.2025
+                        // 3. Görev Haftası) 14.7.2025 - 18.07.2025
+                        // 4. Görev Haftası) 21.7.2025 - 25.07.2025
+                        // 5. Görev Haftası) 28.7.2025 - 01.08.2025
+                        // 6. Görev Haftası) 04.8.2025 - 08.08.2025
+                        // 7. Görev Haftası) 11.8.2025 - 15.08.2025
+                        // 8. Görev Haftası) 18.8.2025 - 22.08.2025
+                        // 9. Görev Haftası) 25.8.2025 - 29.08.2025
 
+                        ws.Cell("E8").Value = GetGorevHaftasiTarihAraligi();
                         ws.Cell("A20").Value = ilgiliIsletme.IsletmeYetkilisi;
                         ws.Cell("C20").Value = ilgiliOgretmen.OgretmenAd + " " + ilgiliOgretmen.OgretmenSoyad;
                         ws.Cell("E20").Value = Xayarlar.KoordinatorMuduryardimcisiIsmi;
@@ -6393,30 +6460,88 @@ namespace WindowsFormsApp1
                             System.Diagnostics.Process.Start("explorer.exe", folderPath);
                         }
                     }
-                    // YENİ: Excel olarak kaydetme seçeneği
+
                     else if (selectedPrinter == "EXCEL")
                     {
-                        // Doldurulmuş Excel dosyasının kaydedileceği son konumu ve adını belirle
-                        string excelDosyaYolu = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", $"{pdfFileName}.xlsx");
+                        // COM nesnelerinin bu blok dışında tanımlandığını varsayıyoruz.
+                        // Excel.Application excelApp = null;
+                        // Excel.Workbook workbookInterop = null;
+                        // ...
+                        string excelDosyaYolu = "";
 
-                        // Interop üzerinden açılan geçici çalışma kitabını son hedef yoluna kaydet.
-                        // Bu, sayfa yapısı gibi Interop ile yapılan ayarları da korur.
-                        // Not: Close metodunda `SaveChanges` false olmalı, çünkü burada zaten kaydediyoruz.
-                        workbookInterop.SaveAs(excelDosyaYolu, Excel.XlFileFormat.xlOpenXMLWorkbook);
-
-                        DialogResult result = MessageBox.Show($"Excel dosyası başarıyla kaydedildi:\n{excelDosyaYolu}\n\nDosyayı açmak ister misiniz?",
-                                                              "Başarılı",
-                                                              MessageBoxButtons.YesNoCancel,
-                                                              MessageBoxIcon.Information);
-
-                        if (result == DialogResult.Yes)
+                        try
                         {
-                            System.Diagnostics.Process.Start(new ProcessStartInfo(excelDosyaYolu) { UseShellExecute = true });
+                            // ... (Excel'i başlattığınız ve verileri doldurduğunuz kodlar burada)
+                            // excelApp = new Excel.Application();
+                            // workbookInterop = excelApp.Workbooks.Add();
+                            // ...
+
+                            // Doldurulmuş Excel dosyasının kaydedileceği son konumu ve adını belirle
+                            excelDosyaYolu = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", $"{pdfFileName}.xlsx");
+
+                            // Dizinin var olup olmadığını kontrol et, yoksa oluştur.
+                            string dizinYolu = Path.GetDirectoryName(excelDosyaYolu);
+                            if (!Directory.Exists(dizinYolu))
+                            {
+                                Directory.CreateDirectory(dizinYolu);
+                            }
+
+                            // Interop üzerinden açılan çalışma kitabını son hedef yoluna kaydet.
+                            workbookInterop.SaveAs(excelDosyaYolu, Excel.XlFileFormat.xlOpenXMLWorkbook);
                         }
-                        else if (result == DialogResult.No)
+                        catch (Exception ex)
                         {
-                            string folderPath = System.IO.Path.GetDirectoryName(excelDosyaYolu);
-                            System.Diagnostics.Process.Start("explorer.exe", folderPath);
+                            MessageBox.Show("Excel dosyası oluşturulurken bir hata oluştu: " + ex.Message, "Kayıt Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return; // İşlemi sonlandır
+                        }
+                        finally
+                        {
+                            // --- HER KOŞULDA ÇALIŞACAK TEMİZLİK KODU ---
+                            // Arka planda Excel.exe kalmasını engellemek için kritik.
+                            if (workbookInterop != null)
+                            {
+                                workbookInterop.Close(false);
+                                System.Runtime.InteropServices.Marshal.ReleaseComObject(workbookInterop);
+                            }
+                            if (excelApp != null)
+                            {
+                                excelApp.Quit();
+                                System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
+                            }
+                            workbookInterop = null;
+                            excelApp = null;
+                            GC.Collect();
+                            GC.WaitForPendingFinalizers();
+                        }
+
+                        // --- YENİDEN TASARLANAN KULLANICI ETKİLEŞİMİ ---
+
+                        // Dosya yolu boş değilse (yani kayıt başarılıysa) kullanıcıya soruyu sor.
+                        if (!string.IsNullOrEmpty(excelDosyaYolu) && File.Exists(excelDosyaYolu))
+                        {
+                            // Soruyu ve butonları isteğinize göre değiştirelim.
+                            DialogResult result = MessageBox.Show($"Excel dosyası başarıyla kaydedildi.\n\nDosyayı konumunda açmak ister misiniz?",
+                                                                  "Başarılı",
+                                                                  MessageBoxButtons.YesNo, // Sadece Evet/Hayır yeterli.
+                                                                  MessageBoxIcon.Information);
+
+                            // Kullanıcı "Evet" derse, dosyanın bulunduğu klasörü aç ve dosyayı seçili göster.
+                            if (result == DialogResult.Yes)
+                            {
+                                try
+                                {
+                                    // Tırnak işaretleri, dosya yolunda boşluk olsa bile çalışmasını sağlar.
+                                    string arguments = $"/select,\"{excelDosyaYolu}\"";
+                                    System.Diagnostics.Process.Start("explorer.exe", arguments);
+                                }
+                                catch (Exception ex)
+                                {
+                                    // Bu işlemin bile başarısız olma ihtimaline karşı bir güvenlik önlemi.
+                                    MessageBox.Show("Dosya konumu açılamadı: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+                            }
+                            // Kullanıcı "Hayır" derse veya pencereyi kapatırsa hiçbir şey yapma.
+                            // else if (result == DialogResult.No) { ... } bloğuna gerek yok.
                         }
                     }
                     // DEĞİŞTİ: Bu `else` bloğu artık sadece fiziksel yazıcı durumunu ele alıyor.
