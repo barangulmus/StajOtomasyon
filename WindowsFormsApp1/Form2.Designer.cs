@@ -86,9 +86,13 @@ namespace WindowsFormsApp1
             this.panel26 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.yazdir_KisButonlari = new System.Windows.Forms.Panel();
             this.button10 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.yazdir_YazButonlari = new System.Windows.Forms.Panel();
+            this.yazdir_DegerlendirmeFormu_button = new System.Windows.Forms.Button();
+            this.yazdir_HaftalikRapor_button = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label86 = new System.Windows.Forms.Label();
@@ -1054,6 +1058,8 @@ namespace WindowsFormsApp1
             this.panel30.SuspendLayout();
             this.panel26.SuspendLayout();
             this.panel25.SuspendLayout();
+            this.yazdir_KisButonlari.SuspendLayout();
+            this.yazdir_YazButonlari.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
@@ -1484,14 +1490,14 @@ namespace WindowsFormsApp1
             // 
             // panel35
             // 
-            this.panel35.Controls.Add(this.YAZDIRtabControl1);
-            this.panel35.Controls.Add(this.SETTINGStabControl1);
-            this.panel35.Controls.Add(this.IsletmeDETAYtabControl1);
             this.panel35.Controls.Add(this.OgretmenDETAYtabControl1);
             this.panel35.Controls.Add(this.OgrenciDETAYtabControl1);
             this.panel35.Controls.Add(this.OGRtabControl1);
             this.panel35.Controls.Add(this.OGRTtabControl1);
             this.panel35.Controls.Add(this.ISLETMEtabControl1);
+            this.panel35.Controls.Add(this.YAZDIRtabControl1);
+            this.panel35.Controls.Add(this.SETTINGStabControl1);
+            this.panel35.Controls.Add(this.IsletmeDETAYtabControl1);
             this.panel35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel35.Location = new System.Drawing.Point(0, 84);
             this.panel35.Name = "panel35";
@@ -1931,9 +1937,8 @@ namespace WindowsFormsApp1
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.Transparent;
-            this.panel25.Controls.Add(this.button10);
-            this.panel25.Controls.Add(this.button5);
-            this.panel25.Controls.Add(this.button8);
+            this.panel25.Controls.Add(this.yazdir_KisButonlari);
+            this.panel25.Controls.Add(this.yazdir_YazButonlari);
             this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel25.Location = new System.Drawing.Point(0, 0);
             this.panel25.Name = "panel25";
@@ -1941,44 +1946,87 @@ namespace WindowsFormsApp1
             this.panel25.Size = new System.Drawing.Size(433, 138);
             this.panel25.TabIndex = 86;
             // 
+            // yazdir_KisButonlari
+            // 
+            this.yazdir_KisButonlari.Controls.Add(this.button10);
+            this.yazdir_KisButonlari.Controls.Add(this.button8);
+            this.yazdir_KisButonlari.Controls.Add(this.button5);
+            this.yazdir_KisButonlari.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yazdir_KisButonlari.Location = new System.Drawing.Point(4, 4);
+            this.yazdir_KisButonlari.Name = "yazdir_KisButonlari";
+            this.yazdir_KisButonlari.Size = new System.Drawing.Size(425, 130);
+            this.yazdir_KisButonlari.TabIndex = 0;
+            // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button10.Location = new System.Drawing.Point(292, 4);
+            this.button10.Location = new System.Drawing.Point(288, 0);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(138, 130);
-            this.button10.TabIndex = 84;
+            this.button10.Size = new System.Drawing.Size(137, 130);
+            this.button10.TabIndex = 85;
             this.button10.Text = "Not Fişi";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.Location = new System.Drawing.Point(148, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 130);
-            this.button5.TabIndex = 84;
-            this.button5.Text = "Aylık / Günlük Rapor";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button8.Location = new System.Drawing.Point(4, 4);
+            this.button8.Location = new System.Drawing.Point(144, 0);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(144, 130);
-            this.button8.TabIndex = 84;
+            this.button8.TabIndex = 87;
             this.button8.Text = "Devamsızlık Raporu";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button5.Location = new System.Drawing.Point(0, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(144, 130);
+            this.button5.TabIndex = 86;
+            this.button5.Text = "Aylık / Günlük Rapor";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // yazdir_YazButonlari
+            // 
+            this.yazdir_YazButonlari.Controls.Add(this.yazdir_DegerlendirmeFormu_button);
+            this.yazdir_YazButonlari.Controls.Add(this.yazdir_HaftalikRapor_button);
+            this.yazdir_YazButonlari.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yazdir_YazButonlari.Location = new System.Drawing.Point(4, 4);
+            this.yazdir_YazButonlari.Name = "yazdir_YazButonlari";
+            this.yazdir_YazButonlari.Size = new System.Drawing.Size(425, 130);
+            this.yazdir_YazButonlari.TabIndex = 1;
+            // 
+            // yazdir_DegerlendirmeFormu_button
+            // 
+            this.yazdir_DegerlendirmeFormu_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.yazdir_DegerlendirmeFormu_button.Location = new System.Drawing.Point(213, 0);
+            this.yazdir_DegerlendirmeFormu_button.Name = "yazdir_DegerlendirmeFormu_button";
+            this.yazdir_DegerlendirmeFormu_button.Size = new System.Drawing.Size(212, 130);
+            this.yazdir_DegerlendirmeFormu_button.TabIndex = 1;
+            this.yazdir_DegerlendirmeFormu_button.Text = "Değerlendirme Formu";
+            this.yazdir_DegerlendirmeFormu_button.UseVisualStyleBackColor = true;
+            this.yazdir_DegerlendirmeFormu_button.Click += new System.EventHandler(this.yazdir_kisraporu_button_Click);
+            // 
+            // yazdir_HaftalikRapor_button
+            // 
+            this.yazdir_HaftalikRapor_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.yazdir_HaftalikRapor_button.Location = new System.Drawing.Point(0, 0);
+            this.yazdir_HaftalikRapor_button.Name = "yazdir_HaftalikRapor_button";
+            this.yazdir_HaftalikRapor_button.Size = new System.Drawing.Size(212, 130);
+            this.yazdir_HaftalikRapor_button.TabIndex = 0;
+            this.yazdir_HaftalikRapor_button.Text = "Haftalık Rapor";
+            this.yazdir_HaftalikRapor_button.UseVisualStyleBackColor = true;
+            this.yazdir_HaftalikRapor_button.Click += new System.EventHandler(this.yazdir_yazraporu_button_Click);
             // 
             // panel20
             // 
@@ -12425,6 +12473,8 @@ namespace WindowsFormsApp1
             this.panel30.ResumeLayout(false);
             this.panel26.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
+            this.yazdir_KisButonlari.ResumeLayout(false);
+            this.yazdir_YazButonlari.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
@@ -12963,11 +13013,8 @@ namespace WindowsFormsApp1
         private Panel yazdirAyliikGunlukRapor_panel;
         private Panel panel17;
         private Panel panel28;
-        private Button button10;
         private Panel panel30;
-        private Button button8;
         private Button button6;
-        private Button button5;
         private Panel panel24;
         private Panel panel20;
         private Panel panel21;
@@ -13742,5 +13789,12 @@ namespace WindowsFormsApp1
         private Label label283;
         private Label label284;
         private Label label285;
+        private Panel yazdir_KisButonlari;
+        private Panel yazdir_YazButonlari;
+        private Button button10;
+        private Button button5;
+        private Button button8;
+        private Button yazdir_HaftalikRapor_button;
+        private Button yazdir_DegerlendirmeFormu_button;
     }
 }
