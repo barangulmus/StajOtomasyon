@@ -6335,7 +6335,7 @@ namespace WindowsFormsApp1
                             }
                             ws.Cell("F5").Value = ilgiliIsletme.IsletmeTelNo;
                             ws.Cell("F6").Value = ilgiliIsletme.IsletmeAdresIlce;
-                            ws.Cell("B8").Value = DateTime.Today.ToString("dd/MM/yyyy"); // Ziyaret Tarihi (Today)
+                            ws.Cell("B8").Value = "……/……/…………";
 
                             ws.Cell("E8").Value = GetGorevHaftasiTarihAraligi(); // Görev Haftası Tarih Aralığı
 

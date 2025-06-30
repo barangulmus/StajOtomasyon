@@ -117,116 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label174.Text" xml:space="preserve">
-    <value>Veritabanına aktarmak istediğiniz excel dosyasını seçtikten sonra sayfayı
-seçiniz.
-
-Ardından Excel'deki kolon adını(A, B.. AC) ilgili alanlara giriniz.
-
-Başlangıç değerini sol tarafta yazılı olan satır numarasından bulabilirsiniz.
-
-
-
-Not : Eğer sizde olmayan bir kolon varsa, metin kutucuklarını boş
-bırakabilirsiniz.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="IsletmeDetayIsletmeTCNoCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeDalAdiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayUOAdSoyadCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeDTCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeAdresIlCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeAlanAdiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeAdiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeTelNoCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeTamAdresCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="IsletmeDetayIsletmeAdresIlceCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
-        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
-        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
-        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="ogretmenDetayOgretmenTelNoCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
@@ -420,6 +311,115 @@ bırakabilirsiniz.</value>
 </value>
   </data>
   <data name="ogrenciDetayOgrenciOkulNoCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label174.Text" xml:space="preserve">
+    <value>Veritabanına aktarmak istediğiniz excel dosyasını seçtikten sonra sayfayı
+seçiniz.
+
+Ardından Excel'deki kolon adını(A, B.. AC) ilgili alanlara giriniz.
+
+Başlangıç değerini sol tarafta yazılı olan satır numarasından bulabilirsiniz.
+
+
+
+Not : Eğer sizde olmayan bir kolon varsa, metin kutucuklarını boş
+bırakabilirsiniz.</value>
+  </data>
+  <data name="IsletmeDetayIsletmeTCNoCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeDalAdiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayUOAdSoyadCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeDTCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeAdresIlCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeAlanAdiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeAdiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeTelNoCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeTamAdresCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
+        j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
+        UTPMero5WtjBWjcr4NHGsYCZHja6OXhwbORzr79QwA1m+W2Hobecbv6Cv4B8LhhhZOMjYjjYaKSQJWx9
+        Io8TEZEVpx04Ku1xrlgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="IsletmeDetayIsletmeAdresIlceCopy_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIVJREFUOE/t
         j8ENQFAQRPfGmXa4U4ciNIDoRZyoiCY4MbP7CRIJcfWSl+zK7OSTGyo4w8XJuYS3+DCDuW52ENiohHCy
