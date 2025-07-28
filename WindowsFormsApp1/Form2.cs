@@ -13,22 +13,22 @@
 //                                                                      //
 //////////////////////////////////////////////////////////////////////////
 
-using System.IO; // Path için
-using System.Runtime.InteropServices; // Marshal için
+using ClosedXML.Excel;
+using QRCoder;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity.Infrastructure; // DbUpdateException için zaten vardı
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
+using System.IO; // Path için
 using System.Linq;
+using System.Runtime.InteropServices; // Marshal için
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ClosedXML.Excel;
 using Excel = Microsoft.Office.Interop.Excel;
-using System.Diagnostics;
-using System.Data.Entity.Infrastructure; // DbUpdateException için zaten vardı
-using QRCoder;
-using System.Globalization;
 
 namespace WindowsFormsApp1
 {
@@ -97,6 +97,7 @@ namespace WindowsFormsApp1
                     csSettinsClass.MudurYardimcisiAdi = "";
                     csSettinsClass.KoordinatorMuduryardimcisiIsmi = "";
                     csSettinsClass.okulMuduruIsmi = "";
+
                     DateTime bugun = DateTime.Today;
                     int yil = bugun.Year;
                     int ay = bugun.Month;
@@ -113,6 +114,8 @@ namespace WindowsFormsApp1
 
                     csSettinsClass.EgitimOgretimYili = egitimOgretimYili;
 
+                    csSettinsClass.GorevHaftalari = GetGorevHaftalariJson();
+
                     ConnectToDatabase.SettingsTablo.Add(csSettinsClass);
                     ConnectToDatabase.SaveChanges();
                 }
@@ -123,6 +126,38 @@ namespace WindowsFormsApp1
                 }
             }
         }
+        private string GetGorevHaftalariJson()
+        {
+            DateTime bugun = DateTime.Today;
+            int yil = bugun.Year;
+
+            // Temmuz ayının ilk Pazartesi'si
+            DateTime temmuzIlkGun = new DateTime(yil, 7, 1);
+            if (temmuzIlkGun.DayOfWeek == DayOfWeek.Sunday)
+                temmuzIlkGun = temmuzIlkGun.AddDays(1);
+            else if (temmuzIlkGun.DayOfWeek == DayOfWeek.Saturday)
+                temmuzIlkGun = temmuzIlkGun.AddDays(2);
+            else
+                temmuzIlkGun = temmuzIlkGun.AddDays(-(int)temmuzIlkGun.DayOfWeek + (int)DayOfWeek.Monday);
+
+            DateTime stajBaslangici = temmuzIlkGun;
+
+            const int HAFTA_SAYISI = 10;
+            List<string> gorevHaftalari = new List<string>();
+
+            for (int i = 0; i < HAFTA_SAYISI; i++)
+            {
+                DateTime haftaBaslangici = stajBaslangici.AddDays(i * 7);
+                DateTime haftaBitisi = haftaBaslangici.AddDays(4);
+                string aralik = $"{haftaBaslangici:dd.MM.yyyy} - {haftaBitisi:dd.MM.yyyy}";
+                gorevHaftalari.Add($"\"{aralik}\"");
+            }
+
+            string ayarlarqayaz = "{" + string.Join(",", gorevHaftalari) + "}";
+            return ayarlarqayaz;
+        }
+
+
         #region İller ve İlçeler        
         Dictionary<string, List<string>> illerVeIlceler = new Dictionary<string, List<string>>()
         {
@@ -1783,6 +1818,28 @@ namespace WindowsFormsApp1
             else
             {
                 SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Checked = false;
+            }
+            if (!string.IsNullOrEmpty(hedef.GorevHaftalari))
+            {
+                // Remove the starting { and ending } and split by commas
+                string cleanedData = hedef.GorevHaftalari.Trim('{', '}');
+                string[] haftaliklar = cleanedData.Split(',');
+
+                // Clear existing text
+                GorevHaftasi_richtextbox.Clear();
+
+                // Process each entry
+                foreach (string hafta in haftaliklar)
+                {
+                    // Remove quotes and any whitespace
+                    string cleanHafta = hafta.Trim().Trim('"');
+                    if (!string.IsNullOrEmpty(cleanHafta))
+                    {
+                        // Add each entry on a new line
+                        GorevHaftasi_richtextbox.AppendText(cleanHafta);
+                        GorevHaftasi_richtextbox.AppendText(Environment.NewLine);
+                    }
+                }
             }
         }
         public void SettingsSorguOzellestirmeleri()
@@ -3920,6 +3977,37 @@ namespace WindowsFormsApp1
         {
             IsletmeListLINQSorgulari();
         }
+        private string GetGorevHaftalariFormatted()
+        {
+            DateTime bugun = DateTime.Today;
+            int yil = bugun.Year;
+
+            // Temmuz ayının ilk Pazartesi'si
+            DateTime temmuzIlkGun = new DateTime(yil, 7, 1);
+            if (temmuzIlkGun.DayOfWeek == DayOfWeek.Sunday)
+                temmuzIlkGun = temmuzIlkGun.AddDays(1);
+            else if (temmuzIlkGun.DayOfWeek == DayOfWeek.Saturday)
+                temmuzIlkGun = temmuzIlkGun.AddDays(2);
+            else
+                temmuzIlkGun = temmuzIlkGun.AddDays(-(int)temmuzIlkGun.DayOfWeek + (int)DayOfWeek.Monday);
+
+            DateTime stajBaslangici = temmuzIlkGun;
+
+            const int HAFTA_SAYISI = 10;
+            List<string> gorevHaftalari = new List<string>();
+
+            for (int i = 0; i < HAFTA_SAYISI; i++)
+            {
+                DateTime haftaBaslangici = stajBaslangici.AddDays(i * 7);
+                DateTime haftaBitisi = haftaBaslangici.AddDays(4);
+                string aralik = $"\"{haftaBaslangici:dd.MM.yyyy} - {haftaBitisi:dd.MM.yyyy}\"";
+                gorevHaftalari.Add(aralik);
+            }
+
+            // Düz virgüllü string (çift tırnaklı)
+            string duzgunFormat = string.Join(", ", gorevHaftalari);
+            return duzgunFormat;
+        }
 
         private void settingsTemelAyarlar_KAYDET_button_Click(object sender, EventArgs e)
         {
@@ -3975,6 +4063,20 @@ namespace WindowsFormsApp1
             {
                 hedef.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi = false;
             }
+            List<string> GorevHaftalari = new List<string>();
+            string[] lines = GorevHaftasi_richtextbox.Lines;
+
+            foreach (string line in lines)
+            {
+                string temiz = line.Trim();
+                if (!string.IsNullOrWhiteSpace(temiz))
+                {
+                    GorevHaftalari.Add($"\"{temiz}\"");
+                }
+            }
+
+            string ayarlarqayaz = "{" + string.Join(",", GorevHaftalari) + "}";
+            hedef.GorevHaftalari = ayarlarqayaz;
             try
             {
                 ConnectToDatabase.SaveChanges();
@@ -4913,7 +5015,6 @@ namespace WindowsFormsApp1
 
             var ogretmen = (from i in ConnectToDatabase.OgretmenTablo where i.id == id select i).FirstOrDefault();
 
-            // Öğretmen bulunamazsa hata veya çıkış yap
             if (ogretmen == null)
             {
                 MessageBox.Show("Öğretmen bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -4922,7 +5023,6 @@ namespace WindowsFormsApp1
 
             OgretmenDetaylariniKopyala(ogretmen.OgretmenAd, ogretmen.OgretmenSoyad, ogretmen.OgretmenTelNo, ogretmen.OgretmenAlanAdi, ogretmen.OgretmenDalAdi, ogretmen.OgretmenIsletmeGunu1, ogretmen.OgretmenIsletmeGunu2);
 
-            // Label'lara kısaltılmış metin atama
             infoOgretmenAd_label.Text = KisaMetin(ogretmen.OgretmenAd, 35);
             infoOgretmenSoyad_label.Text = KisaMetin(ogretmen.OgretmenSoyad, 35);
             infoOgretmenTelNo_label.Text = KisaMetin(ogretmen.OgretmenTelNo, 35);
@@ -4932,7 +5032,6 @@ namespace WindowsFormsApp1
             infoOgretmenIsletmeGunu2_label.Text = KisaMetin(ogretmen.OgretmenIsletmeGunu2, 35);
             XogretmenHakkindaBaziBilgiler_label.Text = $"{ogretmen.OgretmenAd.Split(' ')[0]} öğretmen hakkında bazı bilgiler";
 
-            // Aynı sınıftaki öğrencilerin ad ve soyadlarını listeleme
             var KoordinatorlugunuYaptigiOgrencileriSirala = (from i in ConnectToDatabase.OgrenciTablo
                                                              where i.OgrenciKoordinatorOgretmeni == ogretmen.OgretmenAd + " " + ogretmen.OgretmenSoyad
                                                              select new
@@ -4944,29 +5043,67 @@ namespace WindowsFormsApp1
 
             OgretmenDetaydataGridView1.Columns.Clear();
             OgretmenDetaydataGridView1.DataSource = KoordinatorlugunuYaptigiOgrencileriSirala;
-            //ID sütununu gizleme
             OgretmenDetaydataGridView1.Columns["Id"].Visible = false;
-            // Sütun başlıklarını özelleştirme
             OgretmenDetaydataGridView1.Columns[0].HeaderText = "Ad";
             OgretmenDetaydataGridView1.Columns[1].HeaderText = "Soyad";
 
-            // Tek bir LINQ sorgusu ile öğretmene ait QR kod kaydı olup olmadığını kontrol etme
-            // QRTablo'daki her bir kaydın QRCode string'inden öğretmen ID'sini ayrıştırıyoruz
-            // ve bu ID'nin mevcut öğretmenin ID'si ile eşleşip eşleşmediğine bakıyoruz.
-            var hasPrintedDocuments = ConnectToDatabase.QRTablo
-                                                      .AsEnumerable() // LINQ to Objects'te ParseInstructorIdFromQrCode kullanabilmek için
-                                                      .Any(qr => ParseInstructorIdFromQrCode(qr.QRCode) == ogretmen.id);
+            OgretmenBelgeRaporDataGridView.Visible = true;
+            OgretmenBelgeRaporDataGridView.DataSource = null;
 
-            // label233'ü varsayılan olarak gizli tut, sadece rapor varsa göster
-            label233.Visible = false; // Her seferinde gizle
+            var teacherQrRecords = ConnectToDatabase.QRTablo
+                                                    .AsEnumerable()
+                                                    .Where(qr => ParseInstructorIdFromQrCode(qr.QRCode) == ogretmen.id)
+                                                    .OrderBy(qr => ParseDateFromQrCode(qr.QRCode))
+                                                    .ToList();
 
-            if (hasPrintedDocuments)
+            if (teacherQrRecords.Any())
             {
-                label233.Text = "UYARI!\r\n\r\nÖğretmenin basılmış belgeleri var.";
-                label233.Visible = true; // Belgeler varsa göster
-                                         // Not: Burada "teslim etmediği" yerine "basılmış" ifadesini kullandık çünkü QRClass bu bilgiyi tutmuyor.
-                                         // Eğer "teslim etmediği" bilgisini gerçekten istiyorsanız, QRClass modelinizi genişletmeniz veya
-                                         // başka bir takip mekanizması kurmanız gerekecektir.
+                var reportDetailsList = teacherQrRecords.Select(qrRecord =>
+                {
+                    var belgeKodu = ParseBelgeKoduFromQrCode(qrRecord.QRCode);
+                    var documentDate = ParseDateFromQrCode(qrRecord.QRCode);
+                    var entityId = ParseEntityIdFromQrCode(qrRecord.QRCode);
+                    string documentType = belgeKodu.HasValue ? GetDocumentTypeNameFromChar(belgeKodu.Value) : "Bilinmeyen Belge";
+                    string dateString = documentDate.HasValue ? documentDate.Value.ToString("dd.MM.yyyy") : "Tarih Yok";
+                    string firmaAdi = "N/A";
+                    string ogrencilerListesiStr = "N/A";
+
+                    if (entityId.HasValue)
+                    {
+                        if (belgeKodu.HasValue && belgeKodu.Value == 'Y')
+                        {
+                            var student = ConnectToDatabase.OgrenciTablo.FirstOrDefault(s => s.id == entityId.Value);
+                            if (student != null)
+                            {
+                                ogrencilerListesiStr = $"{student.OgrenciAd} {student.OgrenciSoyad}";
+                                firmaAdi = student.OgrencininFirmaAdi;
+                            }
+                        }
+                        else
+                        {
+                            var business = ConnectToDatabase.IsletmeTablo.FirstOrDefault(b => b.id == entityId.Value);
+                            if (business != null)
+                            {
+                                firmaAdi = business.IsletmeAd;
+                                var studentsInBusiness = ConnectToDatabase.OgrenciTablo
+                                    .Where(s => s.OgrencininFirmaAdi == business.IsletmeAd && s.OgrenciKoordinatorOgretmeni == (ogretmen.OgretmenAd + " " + ogretmen.OgretmenSoyad))
+                                    .Select(s => s.OgrenciAd + " " + s.OgrenciSoyad)
+                                    .ToList();
+                                ogrencilerListesiStr = string.Join(", ", studentsInBusiness);
+                            }
+                        }
+                    }
+                    return new
+                    {
+                        BelgeTuru = documentType,
+                        BasimTarihi = dateString,
+                        IlgiliFirma = firmaAdi,
+                        KapsamindakiOgrenciler = ogrencilerListesiStr,
+                        TeslimDurumu = qrRecord.TeslimEdildiMi
+                    };
+                }).ToList();
+
+                OgretmenBelgeRaporDataGridView.DataSource = reportDetailsList;
             }
 
             var SorumluOlduguIsletmeler = (
@@ -4975,30 +5112,14 @@ namespace WindowsFormsApp1
                                                 on ogrenciX.OgrencininFirmaAdi equals isletme.IsletmeAd
                                             where ogrenciX.OgrenciKoordinatorOgretmeni == ogretmen.OgretmenAd + " " + ogretmen.OgretmenSoyad
                                             select isletme.IsletmeAd
-                                        ).Distinct().ToList(); // Distinct() ekledik, böylece aynı işletme sadece bir kez listelenir
+                                        ).Distinct().ToList();
 
-            // Sonuçları DataGridView'e bağlama
-            OgretmenDetaydataGridView2.DataSource = SorumluOlduguIsletmeler
-                .Select(x => new { IsletmeAd = x }) // DataGridView'e uygun format
-                .ToList();
+            OgretmenDetaydataGridView2.DataSource = SorumluOlduguIsletmeler.Select(x => new { IsletmeAd = x }).ToList();
 
-            // Tek sütunu tüm genişliğe yayma
-            if (OgretmenDetaydataGridView2.Columns.Contains("IsletmeAd")) // Sütun varlığını kontrol et
+            if (OgretmenDetaydataGridView2.Columns.Contains("IsletmeAd"))
             {
                 OgretmenDetaydataGridView2.Columns["IsletmeAd"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
-
-
-            //XIsletmeVeXOgrencidenSorumlu_label.Text = $"{SorumluOlduguIsletmeler.Count()} İşletme ve {KoordinatorlugunuYaptigiOgrencileriSirala.Count()} öğrenciden sorumlu";
-
-            //string imagePath = System.IO.Path.Combine(Application.StartupPath, "Fotograflar", "OgretmenFotograflari", id.ToString() + ".jpg");
-            //if (!File.Exists(imagePath))
-            //{
-            //    imagePath = System.IO.Path.Combine(Application.StartupPath, "Fotograflar", "OgretmenFotograflari", "default.jpg");
-            //}
-            //infoOgretmenFotografi_picturebox.BackgroundImage = Image.FromFile(imagePath);
-            //infoOgretmenFotografi_picturebox.BackgroundImageLayout = ImageLayout.Zoom;
-
 
             XIsletmeVeXOgrencidenSorumlu_label.Text = $"{SorumluOlduguIsletmeler.Count()} İşletme ve {KoordinatorlugunuYaptigiOgrencileriSirala.Count()} öğrenciden sorumlu";
 
@@ -5010,10 +5131,76 @@ namespace WindowsFormsApp1
             }
             else
             {
-                infoOgretmenFotografi_picturebox.BackgroundImage = null; // Veya default resim atayabilirsin
+                infoOgretmenFotografi_picturebox.BackgroundImage = null;
+            }
+        }
+
+        // --- YENİ EKLENECEK METOT ---
+        private void OgretmenBelgeRaporDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            var dgv = sender as DataGridView;
+            if (dgv == null || dgv.Rows.Count == 0)
+            {
+                dgv.Visible = false; // Veri yoksa grid'i gizle
+                return;
             }
 
+            dgv.Visible = true; // Veri varsa grid'i göster
 
+            // --- Genel Stil Ayarları ---
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(33, 37, 41);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            dgv.ColumnHeadersHeight = 35; // Başlık yüksekliği
+            dgv.RowTemplate.Height = 28; // Satır yüksekliği
+            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9.5F);
+            dgv.ReadOnly = true;
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+
+            // --- Sütun Ayarları ---
+            if (dgv.Columns["TeslimDurumu"] != null) dgv.Columns["TeslimDurumu"].Visible = false;
+
+            if (dgv.Columns["BelgeTuru"] != null)
+            {
+                dgv.Columns["BelgeTuru"].HeaderText = "Belge Türü";
+                dgv.Columns["BelgeTuru"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            }
+            if (dgv.Columns["BasimTarihi"] != null)
+            {
+                dgv.Columns["BasimTarihi"].HeaderText = "Tarih";
+                dgv.Columns["BasimTarihi"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            }
+            if (dgv.Columns["IlgiliFirma"] != null)
+            {
+                dgv.Columns["IlgiliFirma"].HeaderText = "İlgili Firma";
+                dgv.Columns["IlgiliFirma"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            }
+            if (dgv.Columns["KapsamindakiOgrenciler"] != null)
+            {
+                dgv.Columns["KapsamindakiOgrenciler"].HeaderText = "Kapsamındaki Öğrenciler";
+                dgv.Columns["KapsamindakiOgrenciler"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
+            // --- Satır Renklendirme ---
+            foreach (DataGridViewRow row in dgv.Rows)
+            {
+                var teslimEdildi = row.Cells["TeslimDurumu"].Value as bool?;
+                if (teslimEdildi.HasValue)
+                {
+                    if (teslimEdildi.Value) // Teslim edilmişse
+                    {
+                        row.DefaultCellStyle.ForeColor = Color.DarkGreen;
+                        row.DefaultCellStyle.SelectionForeColor = Color.DarkGreen; // Seçildiğinde de rengi koru
+                    }
+                    else // Teslim edilmemişse
+                    {
+                        row.DefaultCellStyle.ForeColor = Color.Firebrick; // Kırmızı
+                        row.DefaultCellStyle.SelectionForeColor = Color.Firebrick;
+                    }
+                }
+            }
         }
         private void ogretmenListDatagridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -5502,120 +5689,134 @@ namespace WindowsFormsApp1
                 panel24.Enabled = false;
                 panel26.Enabled = false;
 
-                //// Bilgisayara bağlı yazıcıları al
-                //foreach (string printer in System.Drawing.Printing.PrinterSettings.InstalledPrinters)
-                //{
-                //    printerComboBox.Items.Add(printer);
-                //}
-
-                // Varsayılan yazıcıyı seçili hale getir
-                // Yöntem 1: Default printer'ı alma
                 GorevTarihleri_panel.Enabled = false;
 
                 System.Drawing.Printing.PrinterSettings settings = new System.Drawing.Printing.PrinterSettings();
                 label122.Text = settings.PrinterName;
                 GorevTarihiGunleri_richTextBox.Clear();
 
-                // Şu anki tarih
                 DateTime today = DateTime.Today;
-                // Ayın ilk günü
                 DateTime firstDayOfMonth = new DateTime(today.Year, today.Month, 1);
-                // İlk Çarşamba gününü bul
                 DateTime firstWednesday = firstDayOfMonth;
                 while (firstWednesday.DayOfWeek != DayOfWeek.Wednesday)
                 {
                     firstWednesday = firstWednesday.AddDays(1);
                 }
-                // Ayın son gününü hesapla
                 DateTime lastDayOfMonth = new DateTime(today.Year, today.Month, DateTime.DaysInMonth(today.Year, today.Month));
-                // Çarşamba günlerini ekle
                 DateTime currentWednesday = firstWednesday;
                 while (currentWednesday <= lastDayOfMonth)
                 {
-                    // RichTextBox'a ekle
                     GorevTarihiGunleri_richTextBox.AppendText(currentWednesday.ToString("dd.MM.yyyy") + Environment.NewLine);
                     currentWednesday = currentWednesday.AddDays(7);
                 }
+
+                var settingsTable = ConnectToDatabase.SettingsTablo.FirstOrDefault();
+
+                yazdirGorevHaftasiCheck_combo.Items.Clear();
+                if (settingsTable != null && !String.IsNullOrEmpty(settingsTable.GorevHaftalari))
+                {
+                    string json = settingsTable.GorevHaftalari.Trim('{', '}');
+                    string[] haftalar = json.Split(',');
+                    int haftaNumarasi = 1;
+
+                    foreach (var item in haftalar)
+                    {
+                        string tarihAraligi = item.Trim().Trim('"');
+                        if (!string.IsNullOrWhiteSpace(tarihAraligi))
+                        {
+                            yazdirGorevHaftasiCheck_combo.Items.Add($"{haftaNumarasi}. Hafta : {tarihAraligi}");
+                            haftaNumarasi++;
+                        }
+                    }
+                }
+
+                // --- GÜNCELLENMİŞ OTOMATİK SEÇİM MANTIĞI ---
+                int bestIndex = -1;
+                TimeSpan minPositiveDifference = TimeSpan.MaxValue;
+                DateTime todayDate = DateTime.Today;
+
+                for (int i = 0; i < yazdirGorevHaftasiCheck_combo.Items.Count; i++)
+                {
+                    string itemText = yazdirGorevHaftasiCheck_combo.Items[i].ToString();
+                    string dateRangeString = itemText.Substring(itemText.IndexOf(": ") + 2); // ": " sonrasını al
+                    string[] dateParts = dateRangeString.Split(new[] { " - " }, StringSplitOptions.None);
+
+                    if (dateParts.Length == 2 &&
+                        DateTime.TryParseExact(dateParts[0], "dd.MM.yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime startDate) &&
+                        DateTime.TryParseExact(dateParts[1], "dd.MM.yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime endDate))
+                    {
+                        // 1. Öncelik: Bugün aralığın içindeyse direkt onu seç.
+                        if (todayDate >= startDate && todayDate <= endDate)
+                        {
+                            bestIndex = i;
+                            break;
+                        }
+
+                        // 2. Öncelik: En yakın gelecek tarihi bul.
+                        if (startDate > todayDate)
+                        {
+                            TimeSpan difference = startDate - todayDate;
+                            if (difference < minPositiveDifference)
+                            {
+                                minPositiveDifference = difference;
+                                bestIndex = i;
+                            }
+                        }
+                    }
+                }
+
+                if (bestIndex != -1)
+                {
+                    yazdirGorevHaftasiCheck_combo.SelectedIndex = bestIndex;
+                }
+                else if (yazdirGorevHaftasiCheck_combo.Items.Count > 0)
+                {
+                    yazdirGorevHaftasiCheck_combo.SelectedIndex = 0; // Güvenli varsayılan
+                }
+                // --- GÜNCELLENMİŞ OTOMATİK SEÇİM SONU ---
+
                 yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 0;
             }
         }
         private void yazdirilacakOgretmeniFiltrele_listbox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string SeciliOlan = yazdirilacakOgretmeniFiltrele_listbox.SelectedItem?.ToString();
-            if (SeciliOlan == null) return; // Seçim yapılmadıysa çıkış yap
-
-            yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Items.Clear();
-
-            yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Text = null;
-
-            yazdirilacakIsletme_listbox.Items.Clear();
-
-            yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Items.Clear();
-
-            // HashSet kullanarak öğretmenlerin tekrarını engelle
-            HashSet<string> ogretmenSeti = new HashSet<string>();
-            string ogrenciningrubu = "";
-            if (SeciliOlan == "A Grup Haftası")
-            {
-                ogrenciningrubu = "A";
-            }
-            else if (SeciliOlan == "B Grup Haftası")
-            {
-                ogrenciningrubu = "B";
-            }
-            else if (SeciliOlan == "C Grup Haftası")
-            {
-                ogrenciningrubu = "C";
-            }
-            else if (SeciliOlan == "D Grup Haftası")
-            {
-                ogrenciningrubu = "D";
-            }
-
-            if (StajDonemi == "KIŞ")
-            {
-                var OgretmenIsimleriA = (from i in ConnectToDatabase.OgrenciTablo
-                                         where i.OgrenciGrup == ogrenciningrubu && i.OgrenciStajDonemi == "KIŞ"
-                                         select i.OgrenciKoordinatorOgretmeni).ToList();
-                foreach (var ogretmen in OgretmenIsimleriA)
-                {
-                    if (!ogretmenSeti.Contains(ogretmen))
-                    {
-                        yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Items.Add(ogretmen);
-                        ogretmenSeti.Add(ogretmen);
-                    }
-                }
-            }
-            if (StajDonemi == "YAZ")
-            {
-                var OgretmenIsimleriA = (from i in ConnectToDatabase.OgrenciTablo
-                                         where i.OgrenciGrup == ogrenciningrubu && i.OgrenciStajDonemi == "YAZ"
-                                         select i.OgrenciKoordinatorOgretmeni).ToList();
-                foreach (var ogretmen in OgretmenIsimleriA)
-                {
-                    if (!ogretmenSeti.Contains(ogretmen))
-                    {
-                        yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Items.Add(ogretmen);
-                        ogretmenSeti.Add(ogretmen);
-                    }
-                }
-            }
-            if (StajDonemi == "MESEM")
-            {
-                var OgretmenIsimleriA = (from i in ConnectToDatabase.OgrenciTablo
-                                         where i.OgrenciGrup == ogrenciningrubu && i.OgrenciStajDonemi == "MESEM"
-                                         select i.OgrenciKoordinatorOgretmeni).ToList();
-                foreach (var ogretmen in OgretmenIsimleriA)
-                {
-                    if (!ogretmenSeti.Contains(ogretmen))
-                    {
-                        yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Items.Add(ogretmen);
-                        ogretmenSeti.Add(ogretmen);
-                    }
-                }
-            }
+            PopulateOgretmenlerForYazdirma();
         }
+        private void UpdatePrintButtonState()
+        {
+            bool isReadyToPrint = false;
 
+            // Koşul: Seçilen belge türüne göre alt koşulları kontrol et.
+            // Bu fonksiyonun tek görevi, belge seçiminin tamamlanıp tamamlanmadığını belirlemektir.
+            switch (YazdirilacakBelge)
+            {
+                // Bu belge türü, bir alt seçim (Aylık/Haftalık) gerektirir.
+                case "Aylik_Gunluk":
+                    isReadyToPrint = yazdirilacakAyGunlukRaporAYLIK_radio.Checked || yazdirilacakAyGunlukRaporHAFTALIK_radio.Checked;
+                    break;
+
+                // Bu belge türü, bir alt seçim (1. Dönem/2. Dönem) gerektirir.
+                case "NotFisi":
+                    isReadyToPrint = yazdirilacakNotFisiDonem1_radio.Checked || yazdirilacakNotFisiDonem2_radio.Checked;
+                    break;
+
+                // Bu belge türleri alt seçim gerektirmez, ana butona tıklanmış olması yeterlidir.
+                case "Devamsizlik":
+                case "HaftalikRapor":
+                case "DegerlendirmeFormu":
+                case "YazDevamsizlik":
+                    isReadyToPrint = true;
+                    break;
+
+                // Hiçbir belge türü seçilmemişse veya geçersizse.
+                default:
+                    isReadyToPrint = false;
+                    break;
+            }
+
+            // Sonuç: Belge seçimiyle ilgili tüm koşullar sağlandıysa, son adımlar panelini etkinleştir.
+            panel26.Enabled = isReadyToPrint;
+        }
         public void YazdirBelgesiCikartilacakKoordinatorOgretmen()
         {
             panel22.Enabled = true;
@@ -5684,7 +5885,7 @@ namespace WindowsFormsApp1
         }
         private void yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            YazdirBelgesiCikartilacakKoordinatorOgretmen();
+            PopulateIsletmeVeyaOgrencilerForYazdirma();
         }
 
         //Devamsızlık Raporu Button
@@ -5703,16 +5904,14 @@ namespace WindowsFormsApp1
             yazdirAyliikGunlukRapor_panel.Enabled = false;
             yazdirDevamsizlikRaporu_panel.Enabled = true;
             yazdirNotFisi_panel.Enabled = false;
-
-            yazdirilacakAyGunlukRaporAYLIK_radio.Checked = false;
-            yazdirilacakAyGunlukRaporHAFTALIK_radio.Checked = false;
-
+            GorevHaftasi_panel.Visible = false;
             string currentMonth = DateTime.Now.ToString("MMMM", new CultureInfo("tr-TR"));
             yazdirilacakDevamsizlikAYI_combobox.SelectedItem = currentMonth;
 
             panel24.Enabled = true;
-            panel26.Enabled = true;
+            UpdatePrintButtonState();
         }
+
         //Aylık Günlük Rapor Button
         private void button5_Click(object sender, EventArgs e)
         {
@@ -5729,22 +5928,15 @@ namespace WindowsFormsApp1
             yazdirAyliikGunlukRapor_panel.Enabled = true;
             yazdirDevamsizlikRaporu_panel.Enabled = false;
             yazdirNotFisi_panel.Enabled = false;
-            if (yazdirilacakAyGunlukRaporAYLIK_radio.Checked || yazdirilacakAyGunlukRaporHAFTALIK_radio.Checked)
+            GorevHaftasi_panel.Visible = false;
+            if (!yazdirilacakAyGunlukRaporAYLIK_radio.Checked && !yazdirilacakAyGunlukRaporHAFTALIK_radio.Checked)
             {
-                if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked || settingsExcel_radio.Checked)
-                {
-                    panel26.Enabled = true;
-                }
-                else
-                {
-                    panel26.Enabled = false;
-                }
+                yazdirilacakAyGunlukRaporHAFTALIK_radio.Checked = true;
             }
-            else
-            {
-                panel26.Enabled = false;
-            }
+
+            UpdatePrintButtonState();
         }
+
         //Not Fişi Button
         private void button10_Click(object sender, EventArgs e)
         {
@@ -5761,17 +5953,13 @@ namespace WindowsFormsApp1
             yazdirAyliikGunlukRapor_panel.Enabled = false;
             yazdirDevamsizlikRaporu_panel.Enabled = false;
             yazdirNotFisi_panel.Enabled = true;
+            GorevHaftasi_panel.Visible = false;
+            if (!yazdirilacakNotFisiDonem1_radio.Checked && !yazdirilacakNotFisiDonem2_radio.Checked)
+            {
+                yazdirilacakNotFisiDonem1_radio.Checked = true;
+            }
 
-            yazdirilacakAyGunlukRaporAYLIK_radio.Checked = false;
-            yazdirilacakAyGunlukRaporHAFTALIK_radio.Checked = false;
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked || settingsExcel_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
-            else
-            {
-                panel26.Enabled = false;
-            }
+            UpdatePrintButtonState();
         }
         private void yazdir_yazraporu_button_Click(object sender, EventArgs e)
         {
@@ -5779,15 +5967,10 @@ namespace WindowsFormsApp1
 
             yazdir_HaftalikRapor_button.BackColor = SystemColors.ActiveBorder;
             yazdir_DegerlendirmeFormu_button.BackColor = SystemColors.ButtonHighlight;
+            yazdir_DevamsizlikRaporu_button.BackColor = SystemColors.ButtonHighlight;
+            GorevHaftasi_panel.Visible = true;
 
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked || settingsExcel_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
-            else
-            {
-                panel26.Enabled = false;
-            }
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
         }
 
         private void yazdir_kisraporu_button_Click(object sender, EventArgs e)
@@ -5796,15 +5979,23 @@ namespace WindowsFormsApp1
 
             yazdir_HaftalikRapor_button.BackColor = SystemColors.ButtonHighlight;
             yazdir_DegerlendirmeFormu_button.BackColor = SystemColors.ActiveBorder;
+            yazdir_DevamsizlikRaporu_button.BackColor = SystemColors.ButtonHighlight;
+            GorevHaftasi_panel.Visible = false;
 
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked || settingsExcel_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
-            else
-            {
-                panel26.Enabled = false;
-            }
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
+        }
+
+
+        private void yazdir_DevamsizlikRaporu_button_Click(object sender, EventArgs e)
+        {
+            YazdirilacakBelge = "YazDevamsizlik";
+
+            yazdir_HaftalikRapor_button.BackColor = SystemColors.ButtonHighlight;
+            yazdir_DegerlendirmeFormu_button.BackColor = SystemColors.ButtonHighlight;
+            yazdir_DevamsizlikRaporu_button.BackColor = SystemColors.ActiveBorder;
+            GorevHaftasi_panel.Visible = false;
+
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
         }
 
         private void FormatPhoneNumber(object sender, EventArgs e)
@@ -5927,58 +6118,10 @@ namespace WindowsFormsApp1
             }
             return null;
         }
-        /// <summary>
-        /// Yaz stajı için mevcut tarihe göre görev haftasının tarih aralığını hesaplar.
-        /// - Staj başlamadıysa: İlk haftanın tarih aralığını döndürür.
-        /// - Staj bittiyse: Son haftanın tarih aralığını döndürür.
-        /// - Staj içindeyse (hafta içi/sonu): İçinde bulunulan haftanın aralığını döndürür.
-        /// </summary>
-        /// <returns>Örn: "01.07.2024 - 05.07.2024" formatında bir metin.</returns>
-        private string GetGorevHaftasiTarihAraligi()
-        {
-            DateTime bugun = DateTime.Today;
-            int yil = bugun.Year;
-
-            // 1. ADIM: Temmuz ayının ilk Pazartesi'sini bul (Staj başlangıcı).
-            DateTime temmuzIlkGun = new DateTime(yil, 7, 1);
-            if (temmuzIlkGun.DayOfWeek == DayOfWeek.Sunday)
-                temmuzIlkGun = temmuzIlkGun.AddDays(1);
-            else if (temmuzIlkGun.DayOfWeek == DayOfWeek.Saturday)
-                temmuzIlkGun = temmuzIlkGun.AddDays(2);
-            else
-                temmuzIlkGun = temmuzIlkGun.AddDays(-(int)temmuzIlkGun.DayOfWeek + (int)DayOfWeek.Monday);
-
-            DateTime stajBaslangici = temmuzIlkGun;
-
-            // 2. ADIM: Staj dönemi henüz başlamadıysa, ilk haftanın tarih aralığını döndür.
-            if (bugun < stajBaslangici)
-            {
-                DateTime ilkHaftaSonu = stajBaslangici.AddDays(4); // Pazartesi + 4 gün = Cuma
-                return $"{stajBaslangici:dd.MM.yyyy} - {ilkHaftaSonu:dd.MM.yyyy}";
-            }
-
-            // 3. ADIM: Staj dönemi içindeyse veya bittiyse doğru haftayı bul.
-            int gecenGunSayisi = (bugun - stajBaslangici).Days;
-            int haftaIndeksi = gecenGunSayisi / 7;
-
-            // Staj süresine göre maksimum hafta sayısını belirle (örneğin 9 veya 10 hafta).
-            const int MAKSIMUM_HAFTA_INDEKSI = 9; // 10 haftalık bir staj için indeks 0-9 arası olur.
-            if (haftaIndeksi > MAKSIMUM_HAFTA_INDEKSI)
-            {
-                haftaIndeksi = MAKSIMUM_HAFTA_INDEKSI;
-            }
-
-            // Bulunan haftanın başlangıç ve bitiş tarihlerini hesapla.
-            DateTime bulunanHaftaninBaslangici = stajBaslangici.AddDays(haftaIndeksi * 7);
-            DateTime bulunanHaftaninBitisi = bulunanHaftaninBaslangici.AddDays(4);
-
-            return $"{bulunanHaftaninBaslangici:dd.MM.yyyy} - {bulunanHaftaninBitisi:dd.MM.yyyy}";
-        }
         private async void button6_Click(object sender, EventArgs e)
         {
             // *** 1. İlk Durum Ayarlamaları ve Girdi Doğrulamaları ***
             this.Cursor = Cursors.WaitCursor;
-            // exceldenDByeAktarim_button yerine, yazdir butonunu devre dışı bırakalım
             button6.Enabled = false; // Kendisini devre dışı bırak
 
             var secilenIsletmeVeyaOgrenciAdi = yazdirilacakIsletme_listbox.SelectedItem?.ToString();
@@ -5991,8 +6134,8 @@ namespace WindowsFormsApp1
 
             int ilgiliEntityId = 0;
             IsletmeClass ilgiliIsletme = null;
-            OgrenciClass ilgiliOgrenci = null;
-            string belgeTipiInternal = YazdirilacakBelge; // Kullanıcının YazdirilacakBelge değişkenine atadığı değer
+            OgrenciClass ilgiliOgrenci = null; // Sadece Yaz stajı için doğrudan kullanılacak
+            string belgeTipiInternal = YazdirilacakBelge;
 
             string ogretmenTamAd = yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem?.ToString();
             if (string.IsNullOrEmpty(ogretmenTamAd))
@@ -6025,13 +6168,21 @@ namespace WindowsFormsApp1
                     return;
                 }
 
+                // *** Staj Bitiş Tarihi Kontrolü (YAZ STAJI) ***
+                if (ilgiliOgrenci.OgrenciStajBitistarihi < DateTime.Now)
+                {
+                    MessageBox.Show($"Bu öğrencinin staj bitiş tarihi ({ilgiliOgrenci.OgrenciStajBitistarihi.ToString("dd/MM/yyyy")}) geçmiş. Bu kişiyi yazdıramıyoruz.", "Staj Süresi Dolmuş", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    ResetCursorAndButton();
+                    return;
+                }
+                // *** Kontrol Sonu ***
+
                 if (string.IsNullOrEmpty(ilgiliOgrenci.OgrencininFirmaAdi) || ilgiliOgrenci.OgrencininFirmaAdi == "Yok")
                 {
                     MessageBox.Show($"{ilgiliOgrenci.OgrenciAd} adlı öğrencinin firması tanımlı değil. İşlem yapılamaz!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     ResetCursorAndButton();
                     return;
                 }
-                // Öğrencinin firmasını da bul
                 ilgiliIsletme = (from i in ConnectToDatabase.IsletmeTablo where i.IsletmeAd == ilgiliOgrenci.OgrencininFirmaAdi select i).FirstOrDefault();
                 if (ilgiliIsletme == null)
                 {
@@ -6042,9 +6193,9 @@ namespace WindowsFormsApp1
 
                 ilgiliEntityId = ilgiliOgrenci.id; // Yaz stajında QR için öğrenci ID'si kullanılır
 
-                if (YazdirilacakBelge != "HaftalikRapor" && YazdirilacakBelge != "DegerlendirmeFormu")
+                if (YazdirilacakBelge != "HaftalikRapor" && YazdirilacakBelge != "DegerlendirmeFormu" && YazdirilacakBelge != "YazDevamsizlik")
                 {
-                    MessageBox.Show("Lütfen Yaz stajı için Haftalık Rapor veya Değerlendirme Formu seçin.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Lütfen Yaz stajı için Haftalık Rapor, Değerlendirme Formu veya Devamsızlık Raporu seçin.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     ResetCursorAndButton();
                     return;
                 }
@@ -6087,6 +6238,11 @@ namespace WindowsFormsApp1
                     sheetNameToUseInClosedXML = "DegerlendirmeFormu";
                     belgeKoduChar = 'Z'; // Değerlendirme Formu için 'Z' (veya belirlediğiniz herhangi bir karakter)
                 }
+                else if (YazdirilacakBelge == "YazDevamsizlik")
+                {
+                    sheetNameToUseInClosedXML = "Devamsizlik";
+                    belgeKoduChar = 'D'; // Kış ile aynı devamsızlık kodu kullanılabilir, staj dönemi ayırıcı olacaktır.
+                }
             }
             else // KIŞ veya MESEM
             {
@@ -6114,116 +6270,66 @@ namespace WindowsFormsApp1
                     belgeKoduChar = 'N'; // Not Fişi için 'N'
                 }
             }
-            // NotFisi ve DeğerlendirmeFormu için QR kodu basılmayacak, bu yüzden shouldAddQrToExcel değişkenini kontrol edeceğiz.
             bool shouldAddQrToExcel = (belgeTipiInternal != "NotFisi" && belgeTipiInternal != "DegerlendirmeFormu");
 
-            // *** 3. QR Kod Oluşturma ve Veritabanı Etkileşiminin Koşullu Yönetimi ***
+            // *** 3. GÜN BAZLI HASSAS KONTROL (PARSING ile) ve QR Kod Oluşturma ***
             string prospectiveQrContent = null;
-            QRClass qrRecordToUse = null;
             Bitmap qrCodeImage = null;
+            string qrDatabaseAction = "DoNothing";
+            QRClass existingQrRecordForRecreation = null;
 
-
-            if (shouldAddQrToExcel) // Not Fişi veya Değerlendirme Formu değilse QR kodu oluştur
+            if (shouldAddQrToExcel)
             {
+                // Yeni QR kodunu, basıldığı anın tarihiyle her zaman oluştur.
                 prospectiveQrContent = GenerateFullQrCodeContent(ilgiliOgretmen.id, belgeKoduChar, DateTime.Now, ilgiliEntityId);
-                var existingQrRecord = ConnectToDatabase.QRTablo.FirstOrDefault(q => q.QRCode == prospectiveQrContent);
+
+                // Akıllı arama için bugünün tarihini al (saat bilgisi olmadan)
+                DateTime today = DateTime.Today;
+
+                // Kontrol: Aynı öğretmen, aynı belge tipi, aynı işletme/öğrenci için BUGÜN tarihli bir kayıt var mı?
+                // Bu sorgu, veritabanındaki tüm ilgili kayıtları çekip bellekte ayrıştırır.
+                var existingQrRecord = ConnectToDatabase.QRTablo.AsEnumerable()
+                    .FirstOrDefault(q =>
+                        ParseInstructorIdFromQrCode(q.QRCode) == ilgiliOgretmen.id &&
+                        ParseBelgeKoduFromQrCode(q.QRCode) == belgeKoduChar &&
+                        ParseEntityIdFromQrCode(q.QRCode) == ilgiliEntityId &&
+                        ParseDateFromQrCode(q.QRCode).HasValue &&
+                        ParseDateFromQrCode(q.QRCode).Value.Date == today);
 
                 if (existingQrRecord != null)
                 {
                     DateTime? creationDate = ParseDateFromQrCode(existingQrRecord.QRCode);
-                    string dateInfo = creationDate.HasValue ? $"Şu tarihte oluşturulmuş: {creationDate.Value:dd.MM.yyyy HH:mm:ss}\n\n" : "";
+                    string dateInfo = creationDate.HasValue ? $"Bu belge bugün ({creationDate.Value:dd.MM.yyyy HH:mm:ss}) zaten basılmış.\n\n" : "";
 
                     string confirmationMessage =
-                        $"Bu belgeye ait QR kodu veritabanında zaten mevcut.\n" +
+                        $"Bu belge bu işletme/öğrenci için bugün zaten oluşturulmuş.\n" +
                         $"{dateInfo}" +
-                        "Buna rağmen yeni bir tane oluşturmak istiyor musunuz? " +
-                        "(Evet: Eski QR kodu silinip aynı içerikte yeni bir kayıt oluşturulacak ve belge basılacaktır. " +
-                        "Hayır: Mevcut QR kodu kullanılacak ve belge basılacaktır (veritabanında değişiklik yapılmayacaktır). " +
-                        "İptal: Tüm işlem durdurulacaktır.)";
+                        "Yine de eskisini silip yerine yenisini oluşturmak istiyor musunuz? " +
+                        "(Evet: Eski kayıt silinip yerine bu yeni kayıt eklenecektir. " +
+                        "Hayır: İşlem iptal edilecektir.)";
 
-                    DialogResult dialogResult = MessageBox.Show(
-                        confirmationMessage,
-                        "QR Kodu Zaten Var",
-                        MessageBoxButtons.YesNoCancel,
-                        MessageBoxIcon.Question
-                    );
+                    DialogResult dialogResult = MessageBox.Show(confirmationMessage, "Mükerrer Belge Uyarısı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                     if (dialogResult == DialogResult.Yes)
                     {
-                        try
-                        {
-                            ConnectToDatabase.QRTablo.Remove(existingQrRecord);
-                            // SaveChanges async olmadığı için await Task.Run içinde yapıyoruz
-                            await Task.Run(() => ConnectToDatabase.SaveChanges());
-
-                            qrRecordToUse = new QRClass { QRCode = prospectiveQrContent };
-                            ConnectToDatabase.QRTablo.Add(qrRecordToUse);
-                            await Task.Run(() => ConnectToDatabase.SaveChanges());
-                        }
-                        catch (DbUpdateException dbEx)
-                        {
-                            MessageBox.Show($"Veritabanı hatası (QR Silme/Oluşturma): {dbEx.InnerException?.Message ?? dbEx.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            ResetCursorAndButton();
-                            return;
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show($"QR kodu güncellenirken beklenmeyen hata: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            ResetCursorAndButton();
-                            return;
-                        }
+                        qrDatabaseAction = "Recreate";
+                        existingQrRecordForRecreation = existingQrRecord;
                     }
-                    else if (dialogResult == DialogResult.No)
+                    else // Hayır (veya pencereyi kapatma)
                     {
-                        qrRecordToUse = existingQrRecord; // Mevcut kaydı kullan
-                    }
-                    else // İptal
-                    {
-                        MessageBox.Show("Belge oluşturma/yazdırma işlemi iptal edildi.", "İşlem İptal Edildi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Belge oluşturma işlemi iptal edildi.", "İşlem İptal Edildi", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         ResetCursorAndButton();
                         return;
                     }
                 }
-                else // QR kodu veritabanında yok, yeni oluştur
+                else
                 {
-                    qrRecordToUse = new QRClass { QRCode = prospectiveQrContent };
-                    ConnectToDatabase.QRTablo.Add(qrRecordToUse);
-                    try
-                    {
-                        // SaveChanges async olmadığı için await Task.Run içinde yapıyoruz
-                        await Task.Run(() => ConnectToDatabase.SaveChanges());
-                    }
-                    catch (System.Data.Entity.Validation.DbEntityValidationException dbValEx)
-                    {
-                        string validationErrors = "";
-                        foreach (var validationError in dbValEx.EntityValidationErrors)
-                        {
-                            foreach (var error in validationError.ValidationErrors)
-                            {
-                                validationErrors += $"Property: {error.PropertyName}, Error: {error.ErrorMessage}\n";
-                            }
-                        }
-                        MessageBox.Show($"Veritabanı doğrulama hatası:\n{validationErrors}", "Veritabanı Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        ResetCursorAndButton();
-                        return;
-                    }
-                    catch (DbUpdateException dbEx)
-                    {
-                        MessageBox.Show($"Veritabanına QR kaydı eklenirken hata: {dbEx.InnerException?.Message ?? dbEx.Message}", "Veritabanı Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        ResetCursorAndButton();
-                        return;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"QR kaydı eklenirken beklenmeyen hata: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        ResetCursorAndButton();
-                        return;
-                    }
+                    qrDatabaseAction = "AddNew";
                 }
 
                 // QR kod görselini oluştur
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
-                QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrRecordToUse.QRCode, QRCodeGenerator.ECCLevel.Q);
+                QRCodeData qrCodeData = qrGenerator.CreateQrCode(prospectiveQrContent, QRCodeGenerator.ECCLevel.Q);
                 QRCoder.QRCode qrCode = new QRCoder.QRCode(qrCodeData);
                 qrCodeImage = qrCode.GetGraphic(20);
             }
@@ -6235,13 +6341,13 @@ namespace WindowsFormsApp1
 
             if (StajDonemi == "YAZ")
             {
-                excelTemplatePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", "Books", "Yaz.xlsx"); // Değiştirildi
-                                                                                                                                                                    // Yaz stajında çıktı adı öğrenciye göre olsun
+                excelTemplatePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", "Books", "Yaz.xlsx");
+                // Yaz stajında çıktı adı öğrenciye göre olsun
                 pdfExcelFileNameRoot = $"{ilgiliOgrenci.OgrenciOkulNo}_{ilgiliOgrenci.OgrenciAd.Replace(" ", "")}_{ilgiliOgrenci.OgrenciSoyad.Replace(" ", "")}_{belgeTipiInternal}_{DateTime.Now:yyyyMMdd_HHmmss}";
             }
             else // KIŞ veya MESEM
             {
-                excelTemplatePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", "Books", "Kis.xlsx"); // Değiştirildi
+                excelTemplatePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "StajOtomasyon", "Books", "Kis.xlsx");
                 // Kış/Mesem stajında çıktı adı işletmeye göre olsun
                 pdfExcelFileNameRoot = $"{belgeTipiInternal}_{ilgiliIsletme.IsletmeAd.Replace(" ", "_")}_{DateTime.Now:yyyyMMdd_HHmmss}";
             }
@@ -6310,10 +6416,29 @@ namespace WindowsFormsApp1
                                        && i.OgrenciStajDonemi == StajDonemi) // Seçilen staj dönemine göre filtrele
                            .OrderBy(o => o.OgrenciAd)
                            .ToList();
+
+                        // *** Staj Bitiş Tarihi Kontrolü (KIŞ/MESEM STAJI) ***
+                        List<string> gecmisTarihliOgrencilerMesaj = new List<string>();
+                        foreach (var ogrenci in XogrencilerOrtak)
+                        {
+                            if (ogrenci.OgrenciStajBitistarihi < DateTime.Now)
+                            {
+                                gecmisTarihliOgrencilerMesaj.Add($"{ogrenci.OgrenciAd} {ogrenci.OgrenciSoyad} (Bitiş: {ogrenci.OgrenciStajBitistarihi.ToString("dd/MM/yyyy")})");
+                            }
+                        }
+
+                        if (gecmisTarihliOgrencilerMesaj.Count > 0)
+                        {
+                            string uyariMesaji = "Aşağıdaki öğrencilerin staj bitiş tarihleri geçmiş:\n" + string.Join("\n", gecmisTarihliOgrencilerMesaj) + "\nBu kişilere ait belgeler oluşturulamaz.";
+                            MessageBox.Show(uyariMesaji, "Staj Süresi Dolmuş", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            ResetCursorAndButton();
+                            return; // İşlemi durdur
+                        }
+                        // *** Kontrol Sonu ***
                     }
 
 
-                    var Xayarlar = (from i in ConnectToDatabase.SettingsTablo select i).FirstOrDefault();
+                    var Xayarlar = ConnectToDatabase.SettingsTablo.FirstOrDefault();
                     if (Xayarlar == null) { MessageBox.Show("Ayarlar veritabanında bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error); ResetCursorAndButton(); return; }
 
                     // *** Hücre Doldurma Mantığı ***
@@ -6337,7 +6462,13 @@ namespace WindowsFormsApp1
                             ws.Cell("F6").Value = ilgiliIsletme.IsletmeAdresIlce;
                             ws.Cell("B8").Value = "……/……/…………";
 
-                            ws.Cell("E8").Value = GetGorevHaftasiTarihAraligi(); // Görev Haftası Tarih Aralığı
+                            // ---YENİ KOD-- -
+                            // ComboBox'tan gelen "X. Hafta : dd.MM.yyyy - dd.MM.yyyy" formatındaki metni al
+                            string selectedGorevHaftasi = yazdirGorevHaftasiCheck_combo.SelectedItem.ToString();
+                            // Sadece ": " karakterlerinden sonraki tarih kısmını ayıkla
+                            string datePartOnly = selectedGorevHaftasi.Substring(selectedGorevHaftasi.IndexOf(": ") + 2);
+                            // Ayıklanan temiz tarih aralığını Excel hücresine yaz
+                            ws.Cell("E8").Value = datePartOnly;
 
 
                             ws.Cell("B10").Value = ilgiliOgrenci.OgrenciAd + " " + ilgiliOgrenci.OgrenciSoyad;
@@ -6345,18 +6476,27 @@ namespace WindowsFormsApp1
                             ws.Cell("F10").Value = ilgiliOgrenci.OgreciTelNo;
                             ws.Cell("B11").Value = ilgiliOgrenci.OgrenciAlanAdi;
                             ws.Cell("D11").Value = ilgiliOgrenci.OgrenciDalAdi;
-                            if (ilgiliOgrenci.HowUsePhone == "Anne")
+                            string veliTelefonu = "";
+                            // 1. Öncelik: "Kimin Telefonunu Kullanıyor" seçimine bak.
+                            if (ilgiliOgrenci.HowUsePhone == "Anne" && !string.IsNullOrWhiteSpace(ilgiliOgrenci.OgrenciAnneTelNo))
                             {
-                                ws.Cell("F11").Value = ilgiliOgrenci.OgrenciAnneTelNo;
+                                veliTelefonu = ilgiliOgrenci.OgrenciAnneTelNo;
                             }
-                            else if (ilgiliOgrenci.HowUsePhone == "Baba")
+                            else if (ilgiliOgrenci.HowUsePhone == "Baba" && !string.IsNullOrWhiteSpace(ilgiliOgrenci.OgrenciBabaTelNo))
                             {
-                                ws.Cell("F11").Value = ilgiliOgrenci.OgrenciBabaTelNo;
+                                veliTelefonu = ilgiliOgrenci.OgrenciBabaTelNo;
                             }
-                            else
+                            // 2. Öncelik: Eğer seçim yapılmamışsa, dolu olan ilk veli numarasını bul ve kullan.
+                            else if (!string.IsNullOrWhiteSpace(ilgiliOgrenci.OgrenciAnneTelNo))
                             {
-                                ws.Cell("F11").Value = " "; // Telefon bilgisi yoksa boş bırak
+                                veliTelefonu = ilgiliOgrenci.OgrenciAnneTelNo;
                             }
+                            else if (!string.IsNullOrWhiteSpace(ilgiliOgrenci.OgrenciBabaTelNo))
+                            {
+                                veliTelefonu = ilgiliOgrenci.OgrenciBabaTelNo;
+                            }
+
+                            ws.Cell("F11").Value = veliTelefonu; // Bulunan veli telefonunu veya boş string'i yaz.
                             // Staj başlangıç ve bitiş tarihleri
                             ws.Cell("C13").Value = ilgiliOgrenci.OgrenciStajaBaslangicTarihi.ToString("dd/MM/yyyy");
                             ws.Cell("F13").Value = ilgiliOgrenci.OgrenciStajBitistarihi.ToString("dd/MM/yyyy");
@@ -6423,6 +6563,37 @@ namespace WindowsFormsApp1
                             ws.Cell("B18").Value = Xayarlar.OkulAdi + " MÜDÜRLÜĞÜNE";
                             ws.Cell("G21").Value = $"…… / …… / {DateTime.Now.Year}";
                             ws.Cell("G25").Value = Xayarlar.okulMuduruIsmi;
+                        }
+                        else if (belgeTipiInternal == "YazDevamsizlik") // Devamsizlik sheet'i (YAZ STAJI İÇİN)
+                        {
+                            ws.Cell("A5").Value = Xayarlar.OkulAdi;
+                            ws.Cell("D5").Value = ilgiliIsletme.IsletmeAd;
+                            ws.Cell("O5").Value = ilgiliIsletme.IsletmeTelNo;
+
+                            // Yaz stajında belirli bir ay olmadığı için bu alanı boş bırakabilir veya staj dönemini yazabiliriz.
+                            // Kış stajı mantığına sadık kalmak adına, eğer bir combobox seçimi yoksa boş bırakılacaktır.
+                            string selectedMonth = yazdirilacakDevamsizlikAYI_combobox.SelectedItem?.ToString() ?? "Yaz Stajı Dönemi";
+                            if (!string.IsNullOrEmpty(selectedMonth) && selectedMonth != "Yaz Stajı Dönemi")
+                            {
+                                selectedMonth = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(selectedMonth.ToLower(new CultureInfo("tr-TR")));
+                            }
+                            ws.Cell("AB5").Value = selectedMonth;
+                            ws.Cells("AI5").Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month)).ToString("d MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")); // Rapor Tarihi
+
+                            // Öğrenci bilgilerini doldur (Yaz stajında sadece 1 öğrenci olacak)
+                            for (int i = 0; i < XogrencilerOrtak.Count && i < 8; i++)
+                            {
+                                int rowOffset = 8 + (i * 2);
+                                ws.Cell($"A{rowOffset}").Value = $"{XogrencilerOrtak[i].OgrenciAd.ToUpper(new CultureInfo("tr-TR"))} {XogrencilerOrtak[i].OgrenciSoyad.ToUpper(new CultureInfo("tr-TR"))}";
+                                ws.Cell($"B{rowOffset}").Value = XogrencilerOrtak[i].OgrenciOkulNo;
+                                ws.Cell($"C{rowOffset}").Value = $"{XogrencilerOrtak[i].OgrenciAlanAdi.ToUpper(new CultureInfo("tr-TR"))} / {XogrencilerOrtak[i].OgrenciDalAdi}";
+                                ws.Cell($"D{rowOffset}").Value = XogrencilerOrtak[i].OgrenciSinif;
+                            }
+
+                            // Alt kısımdaki imzalar ve isimler
+                            ws.Cell("A24").Value = $"{Environment.NewLine}{Environment.NewLine}…/…/20…{Environment.NewLine}Kaşe-İmza{Environment.NewLine}{ilgiliIsletme.IsletmeYetkilisi}{Environment.NewLine}İşletme Yetkilisi{Environment.NewLine}";
+                            ws.Cell("C24").Value = $"{Environment.NewLine}{Environment.NewLine}…/…/20…{Environment.NewLine}İmza{Environment.NewLine}{ilgiliOgretmen.OgretmenAd} {ilgiliOgretmen.OgretmenSoyad}{Environment.NewLine}Koordinatör Öğretmen";
+                            ws.Cell("E24").Value = $"İncelendi{Environment.NewLine}…/…/20…{Environment.NewLine}İmza{Environment.NewLine}{Xayarlar.KoordinatorMuduryardimcisiIsmi}{Environment.NewLine}Koordinatör Müdür Yardımcısı";
                         }
                     }
                     else // KIŞ veya MESEM stajı (Aylik_Gunluk, Devamsizlik, NotFisi sheet'leri)
@@ -6511,6 +6682,7 @@ namespace WindowsFormsApp1
                             }
                             ws.Cell("AB5").Value = selectedMonth; // Devamsızlık Ayı
                             ws.Cells("AI5").Value = DateTime.Today.ToString("d MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")); // Rapor Tarihi
+                            ws.Cells("AI5").Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.DaysInMonth(DateTime.Today.Year, DateTime.Today.Month)).ToString("d MMMM yyyy", new System.Globalization.CultureInfo("tr-TR")); // Rapor Tarihi
 
                             // Öğrenci bilgilerini doldur (maksimum 8 öğrenci)
                             for (int i = 0; i < XogrencilerOrtak.Count && i < 8; i++)
@@ -6586,7 +6758,10 @@ namespace WindowsFormsApp1
                                     {
                                         pic.MoveTo(ws.Cell("F17"), 5, 5);
                                     }
-                                    // Değerlendirme Formu için QR kodu eklenmiyor (shouldAddQrToExcel kontrolü yapıldı)
+                                    else if (belgeTipiInternal == "YazDevamsizlik")
+                                    {
+                                        pic.MoveTo(ws.Cell("O24"), 50, 17); // Kış ile aynı pozisyon
+                                    }
                                 }
                                 else // KIŞ veya MESEM
                                 {
@@ -6658,12 +6833,12 @@ namespace WindowsFormsApp1
                     // Mevcut sayfa ayarlarını koru veya özel ayarlar yap (örneğin sığdırma)
                     worksheetInterop.PageSetup.Zoom = false;
                     worksheetInterop.PageSetup.FitToPagesWide = 1; // Genişliğe sığdır
-                    // worksheetInterop.PageSetup.FitToPagesTall = false; // Bu satır kaldırıldı
-                    // worksheetInterop.PageSetup.ScaleWithDocument = true; // Bu satır da bazen sorun yaratabilir, eğer hata devam ederse bunu da deneyebilirsiniz. Şimdilik kalsın.
+                                                                   // worksheetInterop.PageSetup.FitToPagesTall = false; // Bu satır kaldırıldı
+                                                                   // worksheetInterop.PageSetup.ScaleWithDocument = true; // Bu satır da bazen sorun yaratabilir, eğer hata devam ederse bunu da deneyebilirsiniz. Şimdilik kalsın.
 
 
                     // Yönlendirme ayarı (Devamsızlık ve NotFisi için yatay)
-                    if (belgeTipiInternal == "Devamsizlik" || belgeTipiInternal == "NotFisi")
+                    if (belgeTipiInternal == "Devamsizlik" || belgeTipiInternal == "NotFisi" || belgeTipiInternal == "YazDevamsizlik")
                     {
                         worksheetInterop.PageSetup.Orientation = Excel.XlPageOrientation.xlLandscape; // Yatay
                     }
@@ -6688,13 +6863,17 @@ namespace WindowsFormsApp1
                         workbookInterop.ExportAsFixedFormat(
                             Excel.XlFixedFormatType.xlTypePDF,
                             pdfDosyaYolu,
-                            Excel.XlFixedFormatQuality.xlQualityStandard, // Standart kalite
+                            Excel.XlFixedFormatQuality.xlQualityStandard,
                             IncludeDocProperties: true,
                             IgnorePrintAreas: false,
-                            From: 1, // İlk sayfadan başla
-                            To: worksheetInterop.PageSetup.Pages, // Tüm sayfaları yazdır (sayfa sayısı otomatik belirlenir)
-                            OpenAfterPublish: false // PDF'i otomatik açma
+                            OpenAfterPublish: false
                         );
+
+                        // Dosya oluşturma başarılıysa, QR kodunu DB'ye kaydet
+                        if (shouldAddQrToExcel)
+                        {
+                            // QR DB işlemini burada yap
+                        }
 
                         DialogResult result = MessageBox.Show($"PDF dosyası başarıyla oluşturuldu:\n{pdfDosyaYolu}\n\nDosyayı açmak ister misiniz?",
                                                               "Başarılı",
@@ -6722,6 +6901,12 @@ namespace WindowsFormsApp1
 
                         // Interop üzerinden açılan çalışma kitabını farklı kaydet
                         workbookInterop.SaveAs(excelDosyaYolu, Excel.XlFileFormat.xlOpenXMLWorkbook, AccessMode: Excel.XlSaveAsAccessMode.xlNoChange); // .xlsx formatı
+
+                        // Dosya oluşturma başarılıysa, QR kodunu DB'ye kaydet
+                        if (shouldAddQrToExcel)
+                        {
+                            // QR DB işlemini burada yap
+                        }
 
                         DialogResult result = MessageBox.Show($"Excel dosyası başarıyla kaydedildi.\n\nDosyayı konumunda açmak ister misiniz?",
                                                               "Başarılı",
@@ -6756,6 +6941,13 @@ namespace WindowsFormsApp1
                                     IgnorePrintAreas: false
                                 );
                             }
+
+                            // Yazdırma başarılıysa, QR kodunu DB'ye kaydet
+                            if (shouldAddQrToExcel)
+                            {
+                                // QR DB işlemini burada yap
+                            }
+
                             MessageBox.Show($"{numericUpDown1.Value} adet belge '{selectedPrinter}' yazıcısına gönderildi.", "Yazdırma Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         catch (Exception printEx)
@@ -6775,6 +6967,13 @@ namespace WindowsFormsApp1
                                    IgnorePrintAreas: false
                                );
                             }
+
+                            // Yazdırma başarılıysa, QR kodunu DB'ye kaydet
+                            if (shouldAddQrToExcel)
+                            {
+                                // QR DB işlemini burada yap
+                            }
+
                             MessageBox.Show($"{numericUpDown1.Value} adet belge varsayılan yazıcıya gönderildi.", "Yazdırma Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         catch (Exception printEx)
@@ -6782,6 +6981,32 @@ namespace WindowsFormsApp1
                             MessageBox.Show($"Yazdırma sırasında bir hata oluştu:\n{printEx.Message}", "Yazdırma Hatası", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
+
+                    // --- YENİ QR KOD VERİTABANI İŞLEM BLOKU ---
+                    if (shouldAddQrToExcel)
+                    {
+                        try
+                        {
+                            if (qrDatabaseAction == "AddNew")
+                            {
+                                var qrRecordToUse = new QRClass { QRCode = prospectiveQrContent };
+                                ConnectToDatabase.QRTablo.Add(qrRecordToUse);
+                                ConnectToDatabase.SaveChanges();
+                            }
+                            else if (qrDatabaseAction == "Recreate" && existingQrRecordForRecreation != null)
+                            {
+                                ConnectToDatabase.QRTablo.Remove(existingQrRecordForRecreation);
+                                var newQrRecord = new QRClass { QRCode = prospectiveQrContent };
+                                ConnectToDatabase.QRTablo.Add(newQrRecord);
+                                ConnectToDatabase.SaveChanges();
+                            }
+                        }
+                        catch (Exception dbEx)
+                        {
+                            MessageBox.Show($"Belge başarıyla oluşturuldu/yazdırıldı ancak QR kodu veritabanına kaydedilirken bir hata oluştu: {dbEx.Message}", "QR Kayıt Hatası", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -6852,7 +7077,8 @@ namespace WindowsFormsApp1
                 this.Invoke((MethodInvoker)delegate
                 {
                     this.Cursor = Cursors.Default;
-                    button6.Enabled = true; // Yazdırma butonunu aktif et
+                    Enabled = true; // Yazdırma butonunu aktif et
+
                 });
             }
             else
@@ -6866,46 +7092,26 @@ namespace WindowsFormsApp1
         {
             panel24.Enabled = true;
             GorevTarihleri_panel.Enabled = true;
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
-            else
-            {
-                panel26.Enabled = false;
-            }
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
         }
 
         private void yazdirilacakAyGunlukRaporHAFTALIK_radio_CheckedChanged(object sender, EventArgs e)
         {
             panel24.Enabled = true;
             GorevTarihleri_panel.Enabled = false;
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
-            else
-            {
-                panel26.Enabled = false;
-            }
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
         }
 
         private void yazdirilacakNotFisiDonem1_radio_CheckedChanged(object sender, EventArgs e)
         {
             panel24.Enabled = true;
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
         }
 
         private void yazdirilacakNotFisiDonem2_radio_CheckedChanged(object sender, EventArgs e)
         {
             panel24.Enabled = true;
-            if (settingsYazdir_radio.Checked || settingsPDFeDonustur_radio.Checked)
-            {
-                panel26.Enabled = true;
-            }
+            UpdatePrintButtonState(); // Merkezi kontrolü çağır
         }
 
         private void settingsEgitimOgretimYili_button_Click(object sender, EventArgs e)
@@ -8376,112 +8582,98 @@ namespace WindowsFormsApp1
 
             if (targetQrRecord != null)
             {
-                // QR kod içeriğini ayrıştırarak belge bilgilerini al
-                char? belgeKoduChar = ParseBelgeKoduFromQrCode(targetQrRecord.QRCode);
-                int? relatedEntityId = ParseEntityIdFromQrCode(targetQrRecord.QRCode);
-                string documentType = belgeKoduChar.HasValue ? GetDocumentTypeNameFromChar(belgeKoduChar.Value) : "Bilinmeyen Belge";
-                string relatedEntityName = "Bilinmiyor";
-                string stajDonemi = "";
-
-                // İlgili varlık (Öğrenci/İşletme) adını bul
-                if (belgeKoduChar == 'Y' && relatedEntityId.HasValue) // Yaz Stajı ise ilgili ID öğrenci ID'sidir
+                // Belgenin daha önce teslim edilip edilmediğini kontrol et
+                if (targetQrRecord.TeslimEdildiMi)
                 {
-                    var student = ConnectToDatabase.OgrenciTablo.FirstOrDefault(s => s.id == relatedEntityId.Value);
-                    if (student != null)
-                    {
-                        relatedEntityName = $"{student.OgrenciAd} {student.OgrenciSoyad} (Okul No: {student.OgrenciOkulNo})";
-                        stajDonemi = student.OgrenciStajDonemi;
-                    }
+                    label98.Text = "BİLGİ: Bu belge daha önce teslim alınmış.";
+                    label98.ForeColor = Color.Blue;
+                    System.Media.SystemSounds.Asterisk.Play();
                 }
-                else if (relatedEntityId.HasValue) // Diğer belge tipleri için ilgili ID işletme ID'sidir
+                else
                 {
-                    var business = ConnectToDatabase.IsletmeTablo.FirstOrDefault(b => b.id == relatedEntityId.Value);
-                    if (business != null)
+                    // QR kod içeriğini ayrıştırarak belge bilgilerini al
+                    char? belgeKoduChar = ParseBelgeKoduFromQrCode(targetQrRecord.QRCode);
+                    int? relatedEntityId = ParseEntityIdFromQrCode(targetQrRecord.QRCode);
+                    string documentType = belgeKoduChar.HasValue ? GetDocumentTypeNameFromChar(belgeKoduChar.Value) : "Bilinmeyen Belge";
+                    string relatedEntityName = "Bilinmiyor";
+                    string stajDonemi = "";
+
+                    // İlgili varlık (Öğrenci/İşletme) adını bul
+                    if (belgeKoduChar == 'Y' && relatedEntityId.HasValue) // Yaz Stajı ise ilgili ID öğrenci ID'sidir
                     {
-                        relatedEntityName = business.IsletmeAd;
-                        // Bu staj dönemini kesin olarak belirlemek için QR kodunda daha fazla bilgiye ihtiyaç var.
-                        // Şimdilik belge koduna göre tahmin edebiliriz veya daha genel bir ifade kullanırız.
-                        if (belgeKoduChar == 'A' || belgeKoduChar == 'D' || belgeKoduChar == 'H' || belgeKoduChar == 'N')
+                        var student = ConnectToDatabase.OgrenciTablo.FirstOrDefault(s => s.id == relatedEntityId.Value);
+                        if (student != null)
                         {
-                            // Buradaki staj döneminin belirlenmesi, QR kod içeriğine bağlı. 
-                            // Eğer QR kodu Kış/Mesem ayrımını içermiyorsa, "Kış/Mesem" gibi genel bir ifade kullanmak daha doğru olur.
-                            // Örneğin, Öğretmen ID'si ile ilişkili öğrencilerden staj dönemi kontrol edilebilir.
-                            stajDonemi = "Kış/Mesem"; // Varsayım olarak tutulmuş.
+                            relatedEntityName = $"{student.OgrenciAd} {student.OgrenciSoyad} (Okul No: {student.OgrenciOkulNo})";
+                            stajDonemi = student.OgrenciStajDonemi;
                         }
                     }
-                }
-
-                string confirmMessage = $"BU QR KODU VERİTABANIMIZDA MEVCUT.\n\n" +
-                                        $"'{documentType}' belgesi, {relatedEntityName} ile ilgili olarak teslim alınıyor.\n" +
-                                        (string.IsNullOrEmpty(stajDonemi) ? "" : $"Staj Dönemi: {stajDonemi}\n") +
-                                        $"İşlemi onaylıyor musunuz? (Belge veritabanından silinecektir)";
-
-                // Onay kutusu göster
-                DialogResult confirmResult = MessageBox.Show(
-                    confirmMessage,
-                    "Belge Teslim Alma Onayı",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question // Soru işareti ikonunu kullan
-                );
-
-                if (confirmResult == DialogResult.Yes)
-                {
-                    try
+                    else if (relatedEntityId.HasValue) // Diğer belge tipleri için ilgili ID işletme ID'sidir
                     {
-                        ConnectToDatabase.QRTablo.Remove(targetQrRecord);
-                        await Task.Run(() => ConnectToDatabase.SaveChanges());
+                        var business = ConnectToDatabase.IsletmeTablo.FirstOrDefault(b => b.id == relatedEntityId.Value);
+                        if (business != null)
+                        {
+                            relatedEntityName = business.IsletmeAd;
+                            stajDonemi = "Kış/Mesem";
+                        }
+                    }
 
-                        // Başarılı geri bildirim
-                        label98.Text = "BAŞARILI: Belge teslim alındı! " + scannedQrCode;
-                        label98.ForeColor = Color.Green;
-                        System.Media.SystemSounds.Asterisk.Play(); // Başarı sesini çal
-                    }
-                    catch (DbUpdateException dbEx)
+                    string confirmMessage = $"Aşağıdaki belge teslim alınıyor:\n\n" +
+                                            $"'{documentType}' belgesi, {relatedEntityName} ile ilgili.\n" +
+                                            (string.IsNullOrEmpty(stajDonemi) ? "" : $"Staj Dönemi: {stajDonemi}\n") +
+                                            $"\nİşlemi onaylıyor musunuz? (Belge 'Teslim Edildi' olarak işaretlenecektir)";
+
+                    DialogResult confirmResult = MessageBox.Show(confirmMessage, "Belge Teslim Alma Onayı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (confirmResult == DialogResult.Yes)
                     {
-                        // Veritabanı hatası
-                        string errorMessage = dbEx.InnerException?.Message ?? dbEx.Message;
-                        label98.Text = "HATA: Veritabanı sorunu! " + errorMessage;
-                        label98.ForeColor = Color.Red;
-                        System.Media.SystemSounds.Exclamation.Play(); // Hata sesini çal
-                        MessageBox.Show($"Veritabanı hatası: Belge silinemedi.\n{errorMessage}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        try
+                        {
+                            targetQrRecord.TeslimEdildiMi = true; // Durumu güncelle
+                            await Task.Run(() => ConnectToDatabase.SaveChanges());
+
+                            label98.Text = "BAŞARILI: Belge teslim alındı! " + scannedQrCode;
+                            label98.ForeColor = Color.Green;
+                            System.Media.SystemSounds.Asterisk.Play();
+                        }
+                        catch (DbUpdateException dbEx)
+                        {
+                            string errorMessage = dbEx.InnerException?.Message ?? dbEx.Message;
+                            label98.Text = "HATA: Veritabanı sorunu! " + errorMessage;
+                            label98.ForeColor = Color.Red;
+                            System.Media.SystemSounds.Exclamation.Play();
+                            MessageBox.Show($"Veritabanı hatası: Belge durumu güncellenemedi.\n{errorMessage}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        catch (Exception ex)
+                        {
+                            label98.Text = "HATA: Beklenmedik sorun! " + ex.Message;
+                            label98.ForeColor = Color.Red;
+                            System.Media.SystemSounds.Exclamation.Play();
+                            MessageBox.Show($"Bir hata oluştu: Belge durumu güncellenemedi.\n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        // Genel hata
-                        label98.Text = "HATA: Beklenmedik sorun! " + ex.Message;
-                        label98.ForeColor = Color.Red;
-                        System.Media.SystemSounds.Exclamation.Play(); // Hata sesini çal
-                        MessageBox.Show($"Bir hata oluştu: Belge silinemedi.\n{ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        label98.Text = "İPTAL EDİLDİ: Teslim alma işlemi iptal edildi.";
+                        label98.ForeColor = Color.Orange;
+                        System.Media.SystemSounds.Hand.Play();
                     }
-                }
-                else // Kullanıcı işlemi iptal etti
-                {
-                    label98.Text = "İPTAL EDİLDİ: Teslim alma işlemi iptal edildi.";
-                    label98.ForeColor = Color.Orange;
-                    System.Media.SystemSounds.Hand.Play(); // İptal sesini çal
                 }
             }
             else // Belge veritabanında bulunamadı
             {
-                string message = "BU QR KODU VERİTABANIMIZDA YOK.";
-                if (scannedQrCode.Length == 17)
-                {
-                    message += "\nBu QR kod daha önce silinmiş olabilir. Ancak şu an veritabanımızda yok.";
-                }
-                label98.Text = message;
+                label98.Text = "BU QR KODU VERİTABANIMIZDA YOK.";
                 label98.ForeColor = Color.Red;
-                System.Media.SystemSounds.Exclamation.Play(); // Hata/bulunamama sesini çal
+                System.Media.SystemSounds.Exclamation.Play();
             }
 
-            // Kısa bir süre sonra label'ı başlangıç mesajına döndür
-            await Task.Delay(3000); // 3 saniye bekle
+            await Task.Delay(3000);
             this.Invoke((MethodInvoker)delegate
             {
                 label98.Text = "QR Kodu Cihazını Okutun...";
-                label98.ForeColor = SystemColors.ControlText; // Rengi varsayılana sıfırla
+                label98.ForeColor = SystemColors.ControlText;
             });
 
-            // İşlem bittikten sonra tekrar QrTextBox'a odaklan ki yeni bir QR okumaya hazır olsun
             QrTextBox.Focus();
         }
         private void panel97_Click(object sender, EventArgs e)
@@ -8537,6 +8729,11 @@ namespace WindowsFormsApp1
         private void yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_KeyDown(object sender, KeyEventArgs e)
         {
             HandleComboBoxKeyDown(sender, e);
+        }
+
+        private void yazdirilacakIsletme_listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            panel26.Enabled = true;
         }
 
         private void settingsOzelIller_combo_TextChanged(object sender, EventArgs e)
@@ -8649,174 +8846,231 @@ namespace WindowsFormsApp1
             HandleComboBoxKeyDown(sender, e);
         }
         #endregion
-
-        public void YazdirClick(string islemturu, int id)
+        public void PopulateOgretmenlerForYazdirma()
         {
-            if (islemturu == "isletme")
+            string SeciliOlan = yazdirilacakOgretmeniFiltrele_listbox.SelectedItem?.ToString();
+            if (SeciliOlan == null) return;
+
+            yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Items.Clear();
+            yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Text = null;
+            yazdirilacakIsletme_listbox.Items.Clear();
+            yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Items.Clear();
+
+            HashSet<string> ogretmenSeti = new HashSet<string>();
+            string ogrenciningrubu = "";
+            if (SeciliOlan == "A Grup Haftası")
+            {
+                ogrenciningrubu = "A";
+            }
+            else if (SeciliOlan == "B Grup Haftası")
+            {
+                ogrenciningrubu = "B";
+            }
+            else if (SeciliOlan == "C Grup Haftası")
+            {
+                ogrenciningrubu = "C";
+            }
+            else if (SeciliOlan == "D Grup Haftası")
+            {
+                ogrenciningrubu = "D";
+            }
+
+            var OgretmenIsimleri = (from i in ConnectToDatabase.OgrenciTablo
+                                    where i.OgrenciGrup == ogrenciningrubu && i.OgrenciStajDonemi == StajDonemi
+                                    select i.OgrenciKoordinatorOgretmeni).Distinct().ToList();
+
+            foreach (var ogretmen in OgretmenIsimleri)
+            {
+                if (!string.IsNullOrEmpty(ogretmen))
+                {
+                    yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Items.Add(ogretmen);
+                }
+            }
+        }
+        public void PopulateIsletmeVeyaOgrencilerForYazdirma()
+        {
+            panel21.Enabled = true;
+            panel22.Enabled = true;
+            panel28.Enabled = true;
+
+            if (StajDonemi == "YAZ")
+            {
+                panel24.Enabled = true;
+                panel26.Enabled = true;
+            }
+
+            string IlgiliKoordinatorOgretmen = yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem?.ToString();
+            if (string.IsNullOrEmpty(IlgiliKoordinatorOgretmen)) return;
+
+            var ogretmeninOgrencileri = (from i in ConnectToDatabase.OgrenciTablo
+                                         where i.OgrenciKoordinatorOgretmeni == IlgiliKoordinatorOgretmen && i.OgrenciStajDonemi == StajDonemi
+                                         orderby i.OgrenciAd
+                                         select i).ToList();
+
+            yazdirilacakIsletme_listbox.Items.Clear();
+
+            if (StajDonemi != "YAZ")
+            {
+                yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Items.Clear();
+                HashSet<string> eklenenIsletmeler = new HashSet<string>();
+
+                foreach (var item in ogretmeninOgrencileri)
+                {
+                    if (!string.IsNullOrEmpty(item.OgrencininFirmaAdi) && !eklenenIsletmeler.Contains(item.OgrencininFirmaAdi))
+                    {
+                        yazdirilacakIsletme_listbox.Items.Add(item.OgrencininFirmaAdi);
+                        eklenenIsletmeler.Add(item.OgrencininFirmaAdi);
+                    }
+                }
+            }
+            else
+            {
+                foreach (var item in ogretmeninOgrencileri)
+                {
+                    yazdirilacakIsletme_listbox.Items.Add($"{item.OgrenciAd} {item.OgrenciSoyad}");
+                }
+            }
+
+            if (yazdirilacakIsletme_listbox.Items.Count > 0)
+            {
+                yazdirilacakIsletme_listbox.SelectedIndex = 0;
+            }
+        }
+        public void YazdirClick(string islemturu, int id, string aktifStajDonemi)
+        {
+            try
             {
                 HomeYazdirmaIslemleri_button.PerformClick();
-                var isletme = (from i in ConnectToDatabase.IsletmeTablo where i.id == id select i).FirstOrDefault();
-
-                if (isletme == null)
-                {
-                    MessageBox.Show("Isletme not found.");
-                    return;
-                }
-
-                var hedef = (from i in ConnectToDatabase.OgrenciTablo where isletme.IsletmeAd == i.OgrencininFirmaAdi select i).FirstOrDefault();
-
-                if (hedef == null)
-                {
-                    MessageBox.Show("Hedef student not found.");
-                    return;
-                }
-
-                if (hedef.OgrenciStajDonemi == "KIŞ")
-                {
-                    button1.PerformClick();
-                }
-                else if (hedef.OgrenciStajDonemi == "YAZ")
-                {
-                    button2.PerformClick();
-                }
-                else if (hedef.OgrenciStajDonemi == "MESEM")
-                {
-                    button3.PerformClick();
-                }
-
                 YAZDIRtabControl1.SelectedTab = YAZDIRtabControl1.TabPages["tabPage21"];
 
-                if (hedef.OgrenciGrup == "A")
+                if (islemturu == "ogrenci")
                 {
-                    yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 0;
-                }
-                else if (hedef.OgrenciGrup == "B")
-                {
-                    yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 1;
-                }
-                else if (hedef.OgrenciGrup == "C")
-                {
-                    yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 2;
-                }
-                else if (hedef.OgrenciGrup == "D")
-                {
-                    yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 3;
-                }
+                    var hedefOgrenci = ConnectToDatabase.OgrenciTablo.FirstOrDefault(i => i.id == id);
+                    if (hedefOgrenci == null) { /*...*/ return; }
+                    if (string.IsNullOrEmpty(hedefOgrenci.OgrenciKoordinatorOgretmeni)) { /*...*/ return; }
 
-                yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem = hedef.OgrenciKoordinatorOgretmeni;
-                YazdirBelgesiCikartilacakKoordinatorOgretmen();
-                yazdirilacakIsletme_listbox.SelectedItem = hedef.OgrencininFirmaAdi;
+                    // 1. Staj Dönemini Ayarla
+                    if (hedefOgrenci.OgrenciStajDonemi == "KIŞ") button1.PerformClick();
+                    else if (hedefOgrenci.OgrenciStajDonemi == "YAZ") button2.PerformClick();
+                    else if (hedefOgrenci.OgrenciStajDonemi == "MESEM") button3.PerformClick();
+
+                    // 2. Grubu Ayarla
+                    if (hedefOgrenci.OgrenciGrup == "A") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 0;
+                    else if (hedefOgrenci.OgrenciGrup == "B") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 1;
+                    else if (hedefOgrenci.OgrenciGrup == "C") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 2;
+                    else if (hedefOgrenci.OgrenciGrup == "D") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 3;
+
+                    // 3. Öğretmenleri Doldur (Doğrudan Çağrı)
+                    PopulateOgretmenlerForYazdirma();
+
+                    // 4. Öğretmeni Seç
+                    yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem = hedefOgrenci.OgrenciKoordinatorOgretmeni;
+
+                    // 5. İşletme/Öğrenci Listesini Doldur (Doğrudan Çağrı)
+                    PopulateIsletmeVeyaOgrencilerForYazdirma();
+
+                    // 6. Son olarak doğru İşletmeyi/Öğrenciyi seç
+                    if (hedefOgrenci.OgrenciStajDonemi == "YAZ")
+                    {
+                        yazdirilacakIsletme_listbox.SelectedItem = $"{hedefOgrenci.OgrenciAd} {hedefOgrenci.OgrenciSoyad}";
+                    }
+                    else
+                    {
+                        yazdirilacakIsletme_listbox.SelectedItem = hedefOgrenci.OgrencininFirmaAdi;
+                    }
+                }
+                else if (islemturu == "ogretmen")
+                {
+                    var hedefOgretmen = ConnectToDatabase.OgretmenTablo.FirstOrDefault(i => i.id == id);
+                    if (hedefOgretmen == null) { /*...*/ return; }
+                    var ilkOgrenci = ConnectToDatabase.OgrenciTablo.FirstOrDefault(o => o.OgrenciKoordinatorOgretmeni == (hedefOgretmen.OgretmenAd + " " + hedefOgretmen.OgretmenSoyad) && o.OgrenciStajDonemi == aktifStajDonemi);
+                    if (ilkOgrenci == null) { /*...*/ return; }
+
+                    if (aktifStajDonemi == "KIŞ") button1.PerformClick();
+                    else if (aktifStajDonemi == "YAZ") button2.PerformClick();
+                    else if (aktifStajDonemi == "MESEM") button3.PerformClick();
+
+                    if (ilkOgrenci.OgrenciGrup == "A") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 0;
+                    else if (ilkOgrenci.OgrenciGrup == "B") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 1;
+                    else if (ilkOgrenci.OgrenciGrup == "C") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 2;
+                    else if (ilkOgrenci.OgrenciGrup == "D") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 3;
+
+                    PopulateOgretmenlerForYazdirma();
+
+                    yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem = hedefOgretmen.OgretmenAd + " " + hedefOgretmen.OgretmenSoyad;
+
+                    PopulateIsletmeVeyaOgrencilerForYazdirma();
+
+                    if (yazdirilacakIsletme_listbox.Items.Count > 0)
+                    {
+                        yazdirilacakIsletme_listbox.SelectedIndex = 0;
+                    }
+                }
+                else if (islemturu == "isletme")
+                {
+                    var hedefIsletme = ConnectToDatabase.IsletmeTablo.FirstOrDefault(i => i.id == id);
+                    if (hedefIsletme == null) { /*...*/ return; }
+                    var ilkOgrenci = ConnectToDatabase.OgrenciTablo.FirstOrDefault(o => o.OgrencininFirmaAdi == hedefIsletme.IsletmeAd && o.OgrenciStajDonemi == aktifStajDonemi);
+                    if (ilkOgrenci == null) { /*...*/ return; }
+                    if (string.IsNullOrEmpty(ilkOgrenci.OgrenciKoordinatorOgretmeni)) { /*...*/ return; }
+
+                    if (aktifStajDonemi == "KIŞ") button1.PerformClick();
+                    else if (aktifStajDonemi == "YAZ") button2.PerformClick();
+                    else if (aktifStajDonemi == "MESEM") button3.PerformClick();
+
+                    if (ilkOgrenci.OgrenciGrup == "A") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 0;
+                    else if (ilkOgrenci.OgrenciGrup == "B") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 1;
+                    else if (ilkOgrenci.OgrenciGrup == "C") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 2;
+                    else if (ilkOgrenci.OgrenciGrup == "D") yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 3;
+
+                    PopulateOgretmenlerForYazdirma();
+
+                    yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem = ilkOgrenci.OgrenciKoordinatorOgretmeni;
+
+                    PopulateIsletmeVeyaOgrencilerForYazdirma();
+
+                    yazdirilacakIsletme_listbox.SelectedItem = hedefIsletme.IsletmeAd;
+                }
             }
-
-            if (islemturu == "ogretmen")
+            catch (Exception ex)
             {
-                HomeYazdirmaIslemleri_button.PerformClick();
-                var hedef = (from i in ConnectToDatabase.OgretmenTablo where i.id == id select i).FirstOrDefault();
-
-                if (hedef != null) // Null control added
-                {
-                    var ogretmeninOgrencileri = (from i in ConnectToDatabase.OgrenciTablo where i.OgrenciKoordinatorOgretmeni == (hedef.OgretmenAd + " " + hedef.OgretmenSoyad) select i).ToList();
-
-                    if (ogretmeninOgrencileri.Count > 0) // Check if there are students
-                    {
-                        if (ogretmeninOgrencileri[0].OgrenciStajDonemi == "KIŞ")
-                        {
-                            button1.PerformClick();
-                        }
-                        else if (ogretmeninOgrencileri[0].OgrenciStajDonemi == "YAZ")
-                        {
-                            button2.PerformClick();
-                        }
-                        else if (ogretmeninOgrencileri[0].OgrenciStajDonemi == "MESEM")
-                        {
-                            button3.PerformClick();
-                        }
-                        yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem = hedef.OgretmenAd + " " + hedef.OgretmenSoyad;
-                        YazdirBelgesiCikartilacakKoordinatorOgretmen();
-                        YAZDIRtabControl1.SelectedTab = YAZDIRtabControl1.TabPages["tabPage21"];
-                    }
-                }
-            }
-
-            if (islemturu == "ogrenci")
-            {
-                var hedef = (from i in ConnectToDatabase.OgrenciTablo where i.id == id select i).FirstOrDefault();
-                var OgretmenNullMuControlu = (from i in ConnectToDatabase.OgretmenTablo where (i.OgretmenAd + " " + i.OgretmenSoyad) == hedef.OgrenciKoordinatorOgretmeni select i).FirstOrDefault();
-                if (OgretmenNullMuControlu == null)
-                {
-                    MessageBox.Show("Bu Öğrenciye ait Koordinatör Öğretmen bulunamadı. Lütfen Öğrenci Bilgilerini kontrol ediniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                else
-                {
-                    HomeYazdirmaIslemleri_button.PerformClick();
-                    if (hedef.OgrenciStajDonemi == "KIŞ")
-                    {
-                        button1.PerformClick();
-                    }
-                    if (hedef.OgrenciStajDonemi == "YAZ")
-                    {
-                        button2.PerformClick();
-                    }
-                    if (hedef.OgrenciStajDonemi == "MESEM")
-                    {
-                        button3.PerformClick();
-                    }
-                    if (hedef.OgrenciGrup == "A")
-                    {
-                        yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 0;
-                    }
-                    if (hedef.OgrenciGrup == "B")
-                    {
-                        yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 1;
-                    }
-                    if (hedef.OgrenciGrup == "C")
-                    {
-                        yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 2;
-                    }
-                    if (hedef.OgrenciGrup == "D")
-                    {
-                        yazdirilacakOgretmeniFiltrele_listbox.SelectedIndex = 3;
-                    }
-
-                    yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedItem = hedef.OgrenciKoordinatorOgretmeni;
-                    // Olayı manuel olarak tetikle
-                    yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_SelectedIndexChanged(this, EventArgs.Empty);
-                }
+                MessageBox.Show($"Yazdırma ekranı hazırlanırken bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void IsletmeDetayIsletmeYazdir_button_Click(object sender, EventArgs e)
         {
-            YazdirClick("isletme", IsletmeDetayIsletmeID);
+            YazdirClick("isletme", IsletmeDetayIsletmeID, StajDonemi);
         }
+
         private void ogretmenDetayYazdir_button_Click(object sender, EventArgs e)
         {
-            YazdirClick("ogretmen", OgretmenDetayOgretmenID);
+            YazdirClick("ogretmen", OgretmenDetayOgretmenID, StajDonemi);
         }
+
         private void ogrenciDetayYazdir_button_Click(object sender, EventArgs e)
         {
-            YazdirClick("ogrenci", OgrenciDetayOgrenciID);
+            YazdirClick("ogrenci", OgrenciDetayOgrenciID, StajDonemi); // Öğrenci için StajDonemi zaten kendi verisinden gelecek
         }
 
         private void settingsYazdir_radio_CheckedChanged(object sender, EventArgs e)
         {
-            panel26.Enabled = true;
+            // Artık paneli etkinleştirmeye çalışmıyor, sadece kendi görevini yapıyor.
             selectedPrinter = "Yazdır";
-
             numericUpDown1.Enabled = true;
         }
 
         private void settingsPDFeDonustur_radio_CheckedChanged(object sender, EventArgs e)
         {
-            panel26.Enabled = true;
+            // Artık paneli etkinleştirmeye çalışmıyor, sadece kendi görevini yapıyor.
             selectedPrinter = "PDF";
             numericUpDown1.Enabled = false;
         }
         private void settingsExcel_radio_CheckedChanged(object sender, EventArgs e)
         {
-            panel26.Enabled = true;
+            // Artık paneli etkinleştirmeye çalışmıyor, sadece kendi görevini yapıyor.
             selectedPrinter = "EXCEL";
             numericUpDown1.Enabled = false;
         }
     }
-}
+} 

@@ -10,5 +10,6 @@ namespace WindowsFormsApp1
     {
         public int id { get; set; }
         public string QRCode { get; set; } = string.Empty;
+        public bool TeslimEdildiMi { get; set; }
     }
 }

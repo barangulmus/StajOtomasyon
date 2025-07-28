@@ -48,25 +48,560 @@ namespace WindowsFormsApp1
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel35 = new System.Windows.Forms.Panel();
+            this.YAZDIRtabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage21 = new System.Windows.Forms.TabPage();
+            this.yazdirYanPanel_panel = new System.Windows.Forms.Panel();
+            this.yazdirNotFisi_panel = new System.Windows.Forms.Panel();
+            this.label90 = new System.Windows.Forms.Label();
+            this.yazdirilacakNotFisiDonem2_radio = new System.Windows.Forms.RadioButton();
+            this.yazdirilacakNotFisiDonem1_radio = new System.Windows.Forms.RadioButton();
+            this.label96 = new System.Windows.Forms.Label();
+            this.yazdirDevamsizlikRaporu_panel = new System.Windows.Forms.Panel();
+            this.label89 = new System.Windows.Forms.Label();
+            this.yazdirilacakDevamsizlikAYI_combobox = new System.Windows.Forms.ComboBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.yazdirAyliikGunlukRapor_panel = new System.Windows.Forms.Panel();
+            this.panel79 = new System.Windows.Forms.Panel();
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio = new System.Windows.Forms.RadioButton();
+            this.yazdirilacakAyGunlukRaporAYLIK_radio = new System.Windows.Forms.RadioButton();
+            this.label93 = new System.Windows.Forms.Label();
+            this.GorevTarihleri_panel = new System.Windows.Forms.Panel();
+            this.label120 = new System.Windows.Forms.Label();
+            this.GorevTarihiGunleri_richTextBox = new System.Windows.Forms.RichTextBox();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel80 = new System.Windows.Forms.Panel();
+            this.settingsExcel_radio = new System.Windows.Forms.RadioButton();
+            this.settingsPDFeDonustur_radio = new System.Windows.Forms.RadioButton();
+            this.settingsYazdir_radio = new System.Windows.Forms.RadioButton();
+            this.label92 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label91 = new System.Windows.Forms.Label();
+            this.panel76 = new System.Windows.Forms.Panel();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.yazdir_KisButonlari = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.yazdir_YazButonlari = new System.Windows.Forms.Panel();
+            this.yazdir_DevamsizlikRaporu_button = new System.Windows.Forms.Button();
+            this.yazdir_DegerlendirmeFormu_button = new System.Windows.Forms.Button();
+            this.yazdir_HaftalikRapor_button = new System.Windows.Forms.Button();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label86 = new System.Windows.Forms.Label();
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox = new System.Windows.Forms.ListBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.yazdirilacakIsletme_listbox = new System.Windows.Forms.ListBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.label87 = new System.Windows.Forms.Label();
+            this.yazdirilacakOgretmeniFiltrele_listbox = new System.Windows.Forms.ListBox();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.GorevHaftasi_panel = new System.Windows.Forms.Panel();
+            this.label287 = new System.Windows.Forms.Label();
+            this.yazdirGorevHaftasiCheck_combo = new System.Windows.Forms.ComboBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo = new System.Windows.Forms.ComboBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.panel97 = new System.Windows.Forms.Panel();
+            this.QrTextBox = new System.Windows.Forms.TextBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.SETTINGStabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.label105 = new System.Windows.Forms.Label();
+            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
+            this.settingsSiniflarList_listbox = new System.Windows.Forms.ListBox();
+            this.settingsIllerList_listbox = new System.Windows.Forms.ListBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.panel77 = new System.Windows.Forms.Panel();
+            this.label75 = new System.Windows.Forms.Label();
+            this.settingsAlanlarVeDallariList_listbox = new System.Windows.Forms.ListBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.settingsOkulMuduruAdiButon_button = new System.Windows.Forms.Button();
+            this.okulMuduruIsmi_text = new System.Windows.Forms.TextBox();
+            this.label117 = new System.Windows.Forms.Label();
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button = new System.Windows.Forms.Button();
+            this.KoordinatorMuduryardimcisiIsmi_text = new System.Windows.Forms.TextBox();
+            this.label116 = new System.Windows.Forms.Label();
+            this.settingsMudurYardimcisiAdiButon_button = new System.Windows.Forms.Button();
+            this.settingsMudurYardimcisiAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label109 = new System.Windows.Forms.Label();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.settingsVarsayilanStajBitisTarihi_datetimepicker = new System.Windows.Forms.DateTimePicker();
+            this.label83 = new System.Windows.Forms.Label();
+            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker = new System.Windows.Forms.DateTimePicker();
+            this.label82 = new System.Windows.Forms.Label();
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button = new System.Windows.Forms.Button();
+            this.settingsTumunuSıfırlaButon_button = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.settingsEgitimOgretimYili_button = new System.Windows.Forms.Button();
+            this.label118 = new System.Windows.Forms.Label();
+            this.EgitimOgretimYili2_textbox = new System.Windows.Forms.TextBox();
+            this.EgitimOgretimYili1_textbox = new System.Windows.Forms.TextBox();
+            this.label114 = new System.Windows.Forms.Label();
+            this.settingsOzelIllerPanel_panel = new System.Windows.Forms.Panel();
+            this.settingsOzelIller_combo = new System.Windows.Forms.ComboBox();
+            this.settingsOzelIller_radio = new System.Windows.Forms.RadioButton();
+            this.settingsTumIller_radio = new System.Windows.Forms.RadioButton();
+            this.settingsTumIllerOzelIllerDuzenleButon_button = new System.Windows.Forms.Button();
+            this.label81 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.settingsSinifEkleButon_button = new System.Windows.Forms.Button();
+            this.settingsSinifAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.settingsAlanAdlariTumunuSil_button = new System.Windows.Forms.Button();
+            this.label76 = new System.Windows.Forms.Label();
+            this.settingsAlanAdiEkleButon_button = new System.Windows.Forms.Button();
+            this.settingsAlanDaliEkleButon_button = new System.Windows.Forms.Button();
+            this.settingsAlanaAitDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.settingsAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.settingsOkulAdiDuzenleButon_button = new System.Windows.Forms.Button();
+            this.settingsOkulAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label73 = new System.Windows.Forms.Label();
+            this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.panel100 = new System.Windows.Forms.Panel();
+            this.GorevHaftasi_richtextbox = new System.Windows.Forms.RichTextBox();
+            this.label286 = new System.Windows.Forms.Label();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.label104 = new System.Windows.Forms.Label();
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton = new System.Windows.Forms.RadioButton();
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton = new System.Windows.Forms.RadioButton();
+            this.panel58 = new System.Windows.Forms.Panel();
+            this.label102 = new System.Windows.Forms.Label();
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton = new System.Windows.Forms.RadioButton();
+            this.panel57 = new System.Windows.Forms.Panel();
+            this.label103 = new System.Windows.Forms.Label();
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton = new System.Windows.Forms.RadioButton();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.label101 = new System.Windows.Forms.Label();
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton = new System.Windows.Forms.RadioButton();
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton = new System.Windows.Forms.RadioButton();
+            this.settingsTemelAyarlar_KAYDET_button = new System.Windows.Forms.Button();
+            this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.settingsColonNameIsletmeUOTC_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeIbanNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeSicilNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUODT_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUOSoyadi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUOAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeDal_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeBolum_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeTelNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeYetkilisi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeTamAdres_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeAdresIlce_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeAdresIl_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameIsletmeAd_checkbox = new System.Windows.Forms.CheckBox();
+            this.panel55 = new System.Windows.Forms.Panel();
+            this.label99 = new System.Windows.Forms.Label();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button = new System.Windows.Forms.Button();
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgretmenDalAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgretmenAlanAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgretmenSoyadi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgretmenAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.label98 = new System.Windows.Forms.Label();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.panel56 = new System.Windows.Forms.Panel();
+            this.settingsColonNameOgrenciHowToUSE_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciBabaAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciAnneAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciDalAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciStajDonemi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciGrup_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciAlanAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciTelNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciFirmaAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciSinifi_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciOkulNo_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciSoyad_checkbox = new System.Windows.Forms.CheckBox();
+            this.settingsColonNameOgrenciAdi_checkbox = new System.Windows.Forms.CheckBox();
+            this.panel53 = new System.Windows.Forms.Panel();
+            this.label100 = new System.Windows.Forms.Label();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.label95 = new System.Windows.Forms.Label();
+            this.tabPage25 = new System.Windows.Forms.TabPage();
+            this.ogrAktarimPaneli_panel = new System.Windows.Forms.Panel();
+            this.label126 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.label129 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
+            this.ogrColumnOgrBabaTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrBabaAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrAnneTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrAnneAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrEndOgrBabaTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrBabaTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.ogrEndOgrBabaAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrBabaAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label132 = new System.Windows.Forms.Label();
+            this.ogrEndOgrAnneTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrAnneTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.ogrEndOgrAnneAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrAnneAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label134 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.label136 = new System.Windows.Forms.Label();
+            this.label137 = new System.Windows.Forms.Label();
+            this.label138 = new System.Windows.Forms.Label();
+            this.label173 = new System.Windows.Forms.Label();
+            this.label172 = new System.Windows.Forms.Label();
+            this.label144 = new System.Windows.Forms.Label();
+            this.label159 = new System.Windows.Forms.Label();
+            this.label160 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label167 = new System.Windows.Forms.Label();
+            this.label168 = new System.Windows.Forms.Label();
+            this.label169 = new System.Windows.Forms.Label();
+            this.label170 = new System.Windows.Forms.Label();
+            this.label171 = new System.Windows.Forms.Label();
+            this.ogrColumnOgrStajDonemi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrKoordinatorOgretmeni_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrStajBitisTarihi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrStajBaslangicTarihi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrGrup_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrTc_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrFirmaAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrSinif_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrOkulNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.ogrColumnOgrAd_textbox = new System.Windows.Forms.TextBox();
+            this.ogrEndOgrStajDonemi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrStajDonemi_textbox = new System.Windows.Forms.TextBox();
+            this.label158 = new System.Windows.Forms.Label();
+            this.ogrEndOgrKoordinatorOgretmeni_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrKoordinatorOgretmeni_textbox = new System.Windows.Forms.TextBox();
+            this.label157 = new System.Windows.Forms.Label();
+            this.ogrEndOgrStajBitisTarihi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrStajBitisTarihi_textbox = new System.Windows.Forms.TextBox();
+            this.label156 = new System.Windows.Forms.Label();
+            this.ogrEndOgrStajBaslangicTarihi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrStajBaslangicTarihi_textbox = new System.Windows.Forms.TextBox();
+            this.label155 = new System.Windows.Forms.Label();
+            this.ogrEndOgrGrup_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrGrup_textbox = new System.Windows.Forms.TextBox();
+            this.label154 = new System.Windows.Forms.Label();
+            this.ogrEndOgrDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label153 = new System.Windows.Forms.Label();
+            this.ogrEndOgrAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label152 = new System.Windows.Forms.Label();
+            this.ogrEndOgrTc_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrTc_textbox = new System.Windows.Forms.TextBox();
+            this.label151 = new System.Windows.Forms.Label();
+            this.ogrEndOgrTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.label150 = new System.Windows.Forms.Label();
+            this.ogrEndOgrFirmaAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrFirmaAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label149 = new System.Windows.Forms.Label();
+            this.ogrEndOgrSinif_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrSinif_textbox = new System.Windows.Forms.TextBox();
+            this.label148 = new System.Windows.Forms.Label();
+            this.ogrEndOgrOkulNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrOkulNo_textbox = new System.Windows.Forms.TextBox();
+            this.label147 = new System.Windows.Forms.Label();
+            this.ogrEndOgrSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.label146 = new System.Windows.Forms.Label();
+            this.ogrEndOgrAd_textbox = new System.Windows.Forms.TextBox();
+            this.ogrStartOgrAd_textbox = new System.Windows.Forms.TextBox();
+            this.label145 = new System.Windows.Forms.Label();
+            this.label143 = new System.Windows.Forms.Label();
+            this.label142 = new System.Windows.Forms.Label();
+            this.label141 = new System.Windows.Forms.Label();
+            this.label139 = new System.Windows.Forms.Label();
+            this.label140 = new System.Windows.Forms.Label();
+            this.label175 = new System.Windows.Forms.Label();
+            this.label176 = new System.Windows.Forms.Label();
+            this.label177 = new System.Windows.Forms.Label();
+            this.label178 = new System.Windows.Forms.Label();
+            this.label179 = new System.Windows.Forms.Label();
+            this.label180 = new System.Windows.Forms.Label();
+            this.label181 = new System.Windows.Forms.Label();
+            this.label182 = new System.Windows.Forms.Label();
+            this.label183 = new System.Windows.Forms.Label();
+            this.label184 = new System.Windows.Forms.Label();
+            this.label185 = new System.Windows.Forms.Label();
+            this.label186 = new System.Windows.Forms.Label();
+            this.panel98 = new System.Windows.Forms.Panel();
+            this.label174 = new System.Windows.Forms.Label();
+            this.exceldenDByeAktarim_button = new System.Windows.Forms.Button();
+            this.panel62 = new System.Windows.Forms.Panel();
+            this.selectedTableName_combobox = new System.Windows.Forms.ComboBox();
+            this.label125 = new System.Windows.Forms.Label();
+            this.selectedExcelPage_combobox = new System.Windows.Forms.ComboBox();
+            this.label124 = new System.Windows.Forms.Label();
+            this.selectExcelFile_button = new System.Windows.Forms.Button();
+            this.label123 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.ogrtAktarimPaneli_panel = new System.Windows.Forms.Panel();
+            this.label187 = new System.Windows.Forms.Label();
+            this.label188 = new System.Windows.Forms.Label();
+            this.label189 = new System.Windows.Forms.Label();
+            this.label190 = new System.Windows.Forms.Label();
+            this.label191 = new System.Windows.Forms.Label();
+            this.label192 = new System.Windows.Forms.Label();
+            this.label193 = new System.Windows.Forms.Label();
+            this.label194 = new System.Windows.Forms.Label();
+            this.label195 = new System.Windows.Forms.Label();
+            this.ogrtColumnOgrtTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtColumnOgrtDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtColumnOgrtAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtColumnOgrtIsletmeGunu2_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtColumnOgrtIsletmeGunu1_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtColumnOgrtSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtColumnOgrtAd_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtEndOgrtTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.label196 = new System.Windows.Forms.Label();
+            this.ogrtEndOgrtDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label197 = new System.Windows.Forms.Label();
+            this.ogrtEndOgrtAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label198 = new System.Windows.Forms.Label();
+            this.ogrtEndOgrtIsletmeGunu2_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtIsletmeGunu2_textbox = new System.Windows.Forms.TextBox();
+            this.label199 = new System.Windows.Forms.Label();
+            this.ogrtEndOgrtIsletmeGunu1_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtIsletmeGunu1_textbox = new System.Windows.Forms.TextBox();
+            this.label200 = new System.Windows.Forms.Label();
+            this.ogrtEndOgrtSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.label201 = new System.Windows.Forms.Label();
+            this.ogrtEndOgrtAd_textbox = new System.Windows.Forms.TextBox();
+            this.ogrtStartOgrtAd_textbox = new System.Windows.Forms.TextBox();
+            this.label202 = new System.Windows.Forms.Label();
+            this.label203 = new System.Windows.Forms.Label();
+            this.label204 = new System.Windows.Forms.Label();
+            this.label205 = new System.Windows.Forms.Label();
+            this.label206 = new System.Windows.Forms.Label();
+            this.label207 = new System.Windows.Forms.Label();
+            this.label208 = new System.Windows.Forms.Label();
+            this.label209 = new System.Windows.Forms.Label();
+            this.label210 = new System.Windows.Forms.Label();
+            this.label211 = new System.Windows.Forms.Label();
+            this.label212 = new System.Windows.Forms.Label();
+            this.isletmeAktarimPaneli_panel = new System.Windows.Forms.Panel();
+            this.label213 = new System.Windows.Forms.Label();
+            this.label214 = new System.Windows.Forms.Label();
+            this.label215 = new System.Windows.Forms.Label();
+            this.label216 = new System.Windows.Forms.Label();
+            this.label217 = new System.Windows.Forms.Label();
+            this.label218 = new System.Windows.Forms.Label();
+            this.isletmeColumnOgrIsletmeSicilNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeIbanNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeUODT_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeUOTCNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeUOAd_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeEndOgrIsletmeSicilNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeSicilNo_textbox = new System.Windows.Forms.TextBox();
+            this.label219 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeIbanNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeIbanNo_textbox = new System.Windows.Forms.TextBox();
+            this.label220 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeUODT_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeUODT_textbox = new System.Windows.Forms.TextBox();
+            this.label221 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeUOTCNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeUOTCNo_textbox = new System.Windows.Forms.TextBox();
+            this.label222 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeSoyad_textbox = new System.Windows.Forms.TextBox();
+            this.label223 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeUOAd_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeUOAd_textbox = new System.Windows.Forms.TextBox();
+            this.label224 = new System.Windows.Forms.Label();
+            this.label225 = new System.Windows.Forms.Label();
+            this.label226 = new System.Windows.Forms.Label();
+            this.label227 = new System.Windows.Forms.Label();
+            this.label228 = new System.Windows.Forms.Label();
+            this.label229 = new System.Windows.Forms.Label();
+            this.label230 = new System.Windows.Forms.Label();
+            this.label231 = new System.Windows.Forms.Label();
+            this.label232 = new System.Windows.Forms.Label();
+            this.label256 = new System.Windows.Forms.Label();
+            this.label257 = new System.Windows.Forms.Label();
+            this.label258 = new System.Windows.Forms.Label();
+            this.label259 = new System.Windows.Forms.Label();
+            this.label260 = new System.Windows.Forms.Label();
+            this.label261 = new System.Windows.Forms.Label();
+            this.label262 = new System.Windows.Forms.Label();
+            this.label263 = new System.Windows.Forms.Label();
+            this.label264 = new System.Windows.Forms.Label();
+            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeYetkilisi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeTamAdres_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeAdresIlce_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeAdresIl_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeColumnOgrIsletmeAd_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox = new System.Windows.Forms.TextBox();
+            this.label265 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeDalAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label266 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeAlanAdi_textbox = new System.Windows.Forms.TextBox();
+            this.label267 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeTelNo_textbox = new System.Windows.Forms.TextBox();
+            this.label268 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeYetkilisi_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeYetkilisi_textbox = new System.Windows.Forms.TextBox();
+            this.label269 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeTamAdres_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeTamAdres_textbox = new System.Windows.Forms.TextBox();
+            this.label270 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeAdresIlce_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeAdresIlce_textbox = new System.Windows.Forms.TextBox();
+            this.label271 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeAdresIl_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeAdresIl_textbox = new System.Windows.Forms.TextBox();
+            this.label272 = new System.Windows.Forms.Label();
+            this.isletmeEndOgrIsletmeAd_textbox = new System.Windows.Forms.TextBox();
+            this.isletmeStartOgrIsletmeAd_textbox = new System.Windows.Forms.TextBox();
+            this.label273 = new System.Windows.Forms.Label();
+            this.label274 = new System.Windows.Forms.Label();
+            this.label275 = new System.Windows.Forms.Label();
+            this.label276 = new System.Windows.Forms.Label();
+            this.label277 = new System.Windows.Forms.Label();
+            this.label278 = new System.Windows.Forms.Label();
+            this.label279 = new System.Windows.Forms.Label();
+            this.label280 = new System.Windows.Forms.Label();
+            this.label281 = new System.Windows.Forms.Label();
+            this.label282 = new System.Windows.Forms.Label();
+            this.label283 = new System.Windows.Forms.Label();
+            this.label284 = new System.Windows.Forms.Label();
+            this.label285 = new System.Windows.Forms.Label();
+            this.IsletmeDETAYtabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage26 = new System.Windows.Forms.TabPage();
+            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
+            this.panel72 = new System.Windows.Forms.Panel();
+            this.IsletmeHakkindaBaziBilgiler_label = new System.Windows.Forms.Label();
+            this.panel73 = new System.Windows.Forms.Panel();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeTCNoCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayUstaOgreticiTCNO_label = new System.Windows.Forms.Label();
+            this.panel74 = new System.Windows.Forms.Panel();
+            this.IsletmeDetayDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label115 = new System.Windows.Forms.Label();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeDalAdiCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeDal_label = new System.Windows.Forms.Label();
+            this.groupBox27 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayUOAdSoyadCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label = new System.Windows.Forms.Label();
+            this.groupBox32 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeDTCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayUstaOgreticiDT_label = new System.Windows.Forms.Label();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.infoIsletmeDetayIsletmeAdresIl_label = new System.Windows.Forms.Label();
+            this.IsletmeDetayIsletmeAdresIlCopy_button = new System.Windows.Forms.Button();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeAlanAdiCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeAlan_label = new System.Windows.Forms.Label();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.infoIsletmeDetayIsletmeAdi_label = new System.Windows.Forms.Label();
+            this.IsletmeDetayIsletmeAdiCopy_button = new System.Windows.Forms.Button();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label = new System.Windows.Forms.Label();
+            this.groupBox28 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeTelNoCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeTelNo_label = new System.Windows.Forms.Label();
+            this.groupBox29 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeYetkilisi_label = new System.Windows.Forms.Label();
+            this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeTamAdresCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeTamAdres_label = new System.Windows.Forms.Label();
+            this.groupBox31 = new System.Windows.Forms.GroupBox();
+            this.IsletmeDetayIsletmeAdresIlceCopy_button = new System.Windows.Forms.Button();
+            this.infoIsletmeDetayIsletmeAdresIlce_label = new System.Windows.Forms.Label();
+            this.panel75 = new System.Windows.Forms.Panel();
+            this.label128 = new System.Windows.Forms.Label();
+            this.IsletmeDetayIsletmeYazdir_button = new System.Windows.Forms.Button();
+            this.IsletmeDetayIsletmeGuncelle_button = new System.Windows.Forms.Button();
+            this.IsletmeDetayIsletmeSil_button = new System.Windows.Forms.Button();
             this.OgretmenDETAYtabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.splitContainer10 = new System.Windows.Forms.SplitContainer();
             this.panel67 = new System.Windows.Forms.Panel();
             this.XogretmenHakkindaBaziBilgiler_label = new System.Windows.Forms.Label();
             this.panel68 = new System.Windows.Forms.Panel();
+            this.panel101 = new System.Windows.Forms.Panel();
             this.label233 = new System.Windows.Forms.Label();
+            this.OgretmenBelgeRaporDataGridView = new System.Windows.Forms.DataGridView();
             this.panel93 = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
             this.infoOgretmenFotografi_picturebox = new System.Windows.Forms.PictureBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.ogretmenDetayOgretmenTelNoCopy_button = new System.Windows.Forms.Button();
+            this.infoOgretmenTelNo_label = new System.Windows.Forms.Label();
             this.panel71 = new System.Windows.Forms.Panel();
             this.OgretmenDetaydataGridView2 = new System.Windows.Forms.DataGridView();
             this.label112 = new System.Windows.Forms.Label();
             this.panel69 = new System.Windows.Forms.Panel();
             this.OgretmenDetaydataGridView1 = new System.Windows.Forms.DataGridView();
             this.label113 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.ogretmenDetayOgretmenTelNoCopy_button = new System.Windows.Forms.Button();
-            this.infoOgretmenTelNo_label = new System.Windows.Forms.Label();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.infoOgretmenSoyad_label = new System.Windows.Forms.Label();
             this.ogretmenDetayOgretmenSoyadCopy_button = new System.Windows.Forms.Button();
@@ -495,532 +1030,6 @@ namespace WindowsFormsApp1
             this.label67 = new System.Windows.Forms.Label();
             this.deleteısletme_button = new System.Windows.Forms.Button();
             this.label68 = new System.Windows.Forms.Label();
-            this.YAZDIRtabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage21 = new System.Windows.Forms.TabPage();
-            this.yazdirYanPanel_panel = new System.Windows.Forms.Panel();
-            this.yazdirNotFisi_panel = new System.Windows.Forms.Panel();
-            this.label90 = new System.Windows.Forms.Label();
-            this.yazdirilacakNotFisiDonem2_radio = new System.Windows.Forms.RadioButton();
-            this.yazdirilacakNotFisiDonem1_radio = new System.Windows.Forms.RadioButton();
-            this.label96 = new System.Windows.Forms.Label();
-            this.yazdirDevamsizlikRaporu_panel = new System.Windows.Forms.Panel();
-            this.label89 = new System.Windows.Forms.Label();
-            this.yazdirilacakDevamsizlikAYI_combobox = new System.Windows.Forms.ComboBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.yazdirAyliikGunlukRapor_panel = new System.Windows.Forms.Panel();
-            this.panel79 = new System.Windows.Forms.Panel();
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio = new System.Windows.Forms.RadioButton();
-            this.yazdirilacakAyGunlukRaporAYLIK_radio = new System.Windows.Forms.RadioButton();
-            this.label93 = new System.Windows.Forms.Label();
-            this.GorevTarihleri_panel = new System.Windows.Forms.Panel();
-            this.label120 = new System.Windows.Forms.Label();
-            this.GorevTarihiGunleri_richTextBox = new System.Windows.Forms.RichTextBox();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel80 = new System.Windows.Forms.Panel();
-            this.settingsExcel_radio = new System.Windows.Forms.RadioButton();
-            this.settingsPDFeDonustur_radio = new System.Windows.Forms.RadioButton();
-            this.settingsYazdir_radio = new System.Windows.Forms.RadioButton();
-            this.label92 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label91 = new System.Windows.Forms.Label();
-            this.panel76 = new System.Windows.Forms.Panel();
-            this.label122 = new System.Windows.Forms.Label();
-            this.label121 = new System.Windows.Forms.Label();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.yazdir_KisButonlari = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.yazdir_YazButonlari = new System.Windows.Forms.Panel();
-            this.yazdir_DegerlendirmeFormu_button = new System.Windows.Forms.Button();
-            this.yazdir_HaftalikRapor_button = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label86 = new System.Windows.Forms.Label();
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox = new System.Windows.Forms.ListBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.yazdirilacakIsletme_listbox = new System.Windows.Forms.ListBox();
-            this.label88 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.label87 = new System.Windows.Forms.Label();
-            this.yazdirilacakOgretmeniFiltrele_listbox = new System.Windows.Forms.ListBox();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo = new System.Windows.Forms.ComboBox();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.panel97 = new System.Windows.Forms.Panel();
-            this.QrTextBox = new System.Windows.Forms.TextBox();
-            this.label108 = new System.Windows.Forms.Label();
-            this.SETTINGStabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage20 = new System.Windows.Forms.TabPage();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label105 = new System.Windows.Forms.Label();
-            this.splitContainer8 = new System.Windows.Forms.SplitContainer();
-            this.settingsSiniflarList_listbox = new System.Windows.Forms.ListBox();
-            this.settingsIllerList_listbox = new System.Windows.Forms.ListBox();
-            this.label79 = new System.Windows.Forms.Label();
-            this.panel77 = new System.Windows.Forms.Panel();
-            this.label75 = new System.Windows.Forms.Label();
-            this.settingsAlanlarVeDallariList_listbox = new System.Windows.Forms.ListBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel60 = new System.Windows.Forms.Panel();
-            this.settingsOkulMuduruAdiButon_button = new System.Windows.Forms.Button();
-            this.okulMuduruIsmi_text = new System.Windows.Forms.TextBox();
-            this.label117 = new System.Windows.Forms.Label();
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button = new System.Windows.Forms.Button();
-            this.KoordinatorMuduryardimcisiIsmi_text = new System.Windows.Forms.TextBox();
-            this.label116 = new System.Windows.Forms.Label();
-            this.settingsMudurYardimcisiAdiButon_button = new System.Windows.Forms.Button();
-            this.settingsMudurYardimcisiAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label109 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.settingsVarsayilanStajBitisTarihi_datetimepicker = new System.Windows.Forms.DateTimePicker();
-            this.label83 = new System.Windows.Forms.Label();
-            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker = new System.Windows.Forms.DateTimePicker();
-            this.label82 = new System.Windows.Forms.Label();
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button = new System.Windows.Forms.Button();
-            this.settingsTumunuSıfırlaButon_button = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.settingsEgitimOgretimYili_button = new System.Windows.Forms.Button();
-            this.label118 = new System.Windows.Forms.Label();
-            this.EgitimOgretimYili2_textbox = new System.Windows.Forms.TextBox();
-            this.EgitimOgretimYili1_textbox = new System.Windows.Forms.TextBox();
-            this.label114 = new System.Windows.Forms.Label();
-            this.settingsOzelIllerPanel_panel = new System.Windows.Forms.Panel();
-            this.settingsOzelIller_combo = new System.Windows.Forms.ComboBox();
-            this.settingsOzelIller_radio = new System.Windows.Forms.RadioButton();
-            this.settingsTumIller_radio = new System.Windows.Forms.RadioButton();
-            this.settingsTumIllerOzelIllerDuzenleButon_button = new System.Windows.Forms.Button();
-            this.label81 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.settingsSinifEkleButon_button = new System.Windows.Forms.Button();
-            this.settingsSinifAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.settingsAlanAdlariTumunuSil_button = new System.Windows.Forms.Button();
-            this.label76 = new System.Windows.Forms.Label();
-            this.settingsAlanAdiEkleButon_button = new System.Windows.Forms.Button();
-            this.settingsAlanDaliEkleButon_button = new System.Windows.Forms.Button();
-            this.settingsAlanaAitDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.settingsAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.settingsOkulAdiDuzenleButon_button = new System.Windows.Forms.Button();
-            this.settingsOkulAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.tabPage24 = new System.Windows.Forms.TabPage();
-            this.panel59 = new System.Windows.Forms.Panel();
-            this.label104 = new System.Windows.Forms.Label();
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton = new System.Windows.Forms.RadioButton();
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton = new System.Windows.Forms.RadioButton();
-            this.panel58 = new System.Windows.Forms.Panel();
-            this.label102 = new System.Windows.Forms.Label();
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton = new System.Windows.Forms.RadioButton();
-            this.panel57 = new System.Windows.Forms.Panel();
-            this.label103 = new System.Windows.Forms.Label();
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton = new System.Windows.Forms.RadioButton();
-            this.panel48 = new System.Windows.Forms.Panel();
-            this.label101 = new System.Windows.Forms.Label();
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton = new System.Windows.Forms.RadioButton();
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton = new System.Windows.Forms.RadioButton();
-            this.settingsTemelAyarlar_KAYDET_button = new System.Windows.Forms.Button();
-            this.tabPage23 = new System.Windows.Forms.TabPage();
-            this.panel44 = new System.Windows.Forms.Panel();
-            this.panel46 = new System.Windows.Forms.Panel();
-            this.panel51 = new System.Windows.Forms.Panel();
-            this.panel52 = new System.Windows.Forms.Panel();
-            this.settingsColonNameIsletmeUOTC_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeIbanNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeSicilNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeUODT_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeUOSoyadi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeUOAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeDal_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeBolum_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeTelNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeYetkilisi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeTamAdres_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeAdresIlce_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeAdresIl_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameIsletmeAd_checkbox = new System.Windows.Forms.CheckBox();
-            this.panel55 = new System.Windows.Forms.Panel();
-            this.label99 = new System.Windows.Forms.Label();
-            this.panel49 = new System.Windows.Forms.Panel();
-            this.panel50 = new System.Windows.Forms.Panel();
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button = new System.Windows.Forms.Button();
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgretmenDalAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgretmenAlanAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgretmenSoyadi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgretmenAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.panel54 = new System.Windows.Forms.Panel();
-            this.label98 = new System.Windows.Forms.Label();
-            this.panel47 = new System.Windows.Forms.Panel();
-            this.panel56 = new System.Windows.Forms.Panel();
-            this.settingsColonNameOgrenciHowToUSE_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciBabaAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciAnneAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciDalAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciStajDonemi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciGrup_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciAlanAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciTelNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciFirmaAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciSinifi_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciOkulNo_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciSoyad_checkbox = new System.Windows.Forms.CheckBox();
-            this.settingsColonNameOgrenciAdi_checkbox = new System.Windows.Forms.CheckBox();
-            this.panel53 = new System.Windows.Forms.Panel();
-            this.label100 = new System.Windows.Forms.Label();
-            this.panel45 = new System.Windows.Forms.Panel();
-            this.label95 = new System.Windows.Forms.Label();
-            this.tabPage25 = new System.Windows.Forms.TabPage();
-            this.ogrAktarimPaneli_panel = new System.Windows.Forms.Panel();
-            this.label126 = new System.Windows.Forms.Label();
-            this.label127 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
-            this.ogrColumnOgrBabaTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrBabaAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrAnneTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrAnneAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrEndOgrBabaTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrBabaTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.label131 = new System.Windows.Forms.Label();
-            this.ogrEndOgrBabaAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrBabaAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label132 = new System.Windows.Forms.Label();
-            this.ogrEndOgrAnneTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrAnneTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.label133 = new System.Windows.Forms.Label();
-            this.ogrEndOgrAnneAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrAnneAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
-            this.label136 = new System.Windows.Forms.Label();
-            this.label137 = new System.Windows.Forms.Label();
-            this.label138 = new System.Windows.Forms.Label();
-            this.label173 = new System.Windows.Forms.Label();
-            this.label172 = new System.Windows.Forms.Label();
-            this.label144 = new System.Windows.Forms.Label();
-            this.label159 = new System.Windows.Forms.Label();
-            this.label160 = new System.Windows.Forms.Label();
-            this.label161 = new System.Windows.Forms.Label();
-            this.label162 = new System.Windows.Forms.Label();
-            this.label163 = new System.Windows.Forms.Label();
-            this.label164 = new System.Windows.Forms.Label();
-            this.label165 = new System.Windows.Forms.Label();
-            this.label166 = new System.Windows.Forms.Label();
-            this.label167 = new System.Windows.Forms.Label();
-            this.label168 = new System.Windows.Forms.Label();
-            this.label169 = new System.Windows.Forms.Label();
-            this.label170 = new System.Windows.Forms.Label();
-            this.label171 = new System.Windows.Forms.Label();
-            this.ogrColumnOgrStajDonemi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrKoordinatorOgretmeni_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrStajBitisTarihi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrStajBaslangicTarihi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrGrup_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrTc_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrFirmaAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrSinif_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrOkulNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.ogrColumnOgrAd_textbox = new System.Windows.Forms.TextBox();
-            this.ogrEndOgrStajDonemi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrStajDonemi_textbox = new System.Windows.Forms.TextBox();
-            this.label158 = new System.Windows.Forms.Label();
-            this.ogrEndOgrKoordinatorOgretmeni_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrKoordinatorOgretmeni_textbox = new System.Windows.Forms.TextBox();
-            this.label157 = new System.Windows.Forms.Label();
-            this.ogrEndOgrStajBitisTarihi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrStajBitisTarihi_textbox = new System.Windows.Forms.TextBox();
-            this.label156 = new System.Windows.Forms.Label();
-            this.ogrEndOgrStajBaslangicTarihi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrStajBaslangicTarihi_textbox = new System.Windows.Forms.TextBox();
-            this.label155 = new System.Windows.Forms.Label();
-            this.ogrEndOgrGrup_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrGrup_textbox = new System.Windows.Forms.TextBox();
-            this.label154 = new System.Windows.Forms.Label();
-            this.ogrEndOgrDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label153 = new System.Windows.Forms.Label();
-            this.ogrEndOgrAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label152 = new System.Windows.Forms.Label();
-            this.ogrEndOgrTc_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrTc_textbox = new System.Windows.Forms.TextBox();
-            this.label151 = new System.Windows.Forms.Label();
-            this.ogrEndOgrTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.label150 = new System.Windows.Forms.Label();
-            this.ogrEndOgrFirmaAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrFirmaAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label149 = new System.Windows.Forms.Label();
-            this.ogrEndOgrSinif_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrSinif_textbox = new System.Windows.Forms.TextBox();
-            this.label148 = new System.Windows.Forms.Label();
-            this.ogrEndOgrOkulNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrOkulNo_textbox = new System.Windows.Forms.TextBox();
-            this.label147 = new System.Windows.Forms.Label();
-            this.ogrEndOgrSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.label146 = new System.Windows.Forms.Label();
-            this.ogrEndOgrAd_textbox = new System.Windows.Forms.TextBox();
-            this.ogrStartOgrAd_textbox = new System.Windows.Forms.TextBox();
-            this.label145 = new System.Windows.Forms.Label();
-            this.label143 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
-            this.label141 = new System.Windows.Forms.Label();
-            this.label139 = new System.Windows.Forms.Label();
-            this.label140 = new System.Windows.Forms.Label();
-            this.label175 = new System.Windows.Forms.Label();
-            this.label176 = new System.Windows.Forms.Label();
-            this.label177 = new System.Windows.Forms.Label();
-            this.label178 = new System.Windows.Forms.Label();
-            this.label179 = new System.Windows.Forms.Label();
-            this.label180 = new System.Windows.Forms.Label();
-            this.label181 = new System.Windows.Forms.Label();
-            this.label182 = new System.Windows.Forms.Label();
-            this.label183 = new System.Windows.Forms.Label();
-            this.label184 = new System.Windows.Forms.Label();
-            this.label185 = new System.Windows.Forms.Label();
-            this.label186 = new System.Windows.Forms.Label();
-            this.panel98 = new System.Windows.Forms.Panel();
-            this.label174 = new System.Windows.Forms.Label();
-            this.exceldenDByeAktarim_button = new System.Windows.Forms.Button();
-            this.panel62 = new System.Windows.Forms.Panel();
-            this.selectedTableName_combobox = new System.Windows.Forms.ComboBox();
-            this.label125 = new System.Windows.Forms.Label();
-            this.selectedExcelPage_combobox = new System.Windows.Forms.ComboBox();
-            this.label124 = new System.Windows.Forms.Label();
-            this.selectExcelFile_button = new System.Windows.Forms.Button();
-            this.label123 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.ogrtAktarimPaneli_panel = new System.Windows.Forms.Panel();
-            this.label187 = new System.Windows.Forms.Label();
-            this.label188 = new System.Windows.Forms.Label();
-            this.label189 = new System.Windows.Forms.Label();
-            this.label190 = new System.Windows.Forms.Label();
-            this.label191 = new System.Windows.Forms.Label();
-            this.label192 = new System.Windows.Forms.Label();
-            this.label193 = new System.Windows.Forms.Label();
-            this.label194 = new System.Windows.Forms.Label();
-            this.label195 = new System.Windows.Forms.Label();
-            this.ogrtColumnOgrtTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtColumnOgrtDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtColumnOgrtAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtColumnOgrtIsletmeGunu2_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtColumnOgrtIsletmeGunu1_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtColumnOgrtSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtColumnOgrtAd_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtEndOgrtTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.label196 = new System.Windows.Forms.Label();
-            this.ogrtEndOgrtDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label197 = new System.Windows.Forms.Label();
-            this.ogrtEndOgrtAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label198 = new System.Windows.Forms.Label();
-            this.ogrtEndOgrtIsletmeGunu2_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtIsletmeGunu2_textbox = new System.Windows.Forms.TextBox();
-            this.label199 = new System.Windows.Forms.Label();
-            this.ogrtEndOgrtIsletmeGunu1_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtIsletmeGunu1_textbox = new System.Windows.Forms.TextBox();
-            this.label200 = new System.Windows.Forms.Label();
-            this.ogrtEndOgrtSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.label201 = new System.Windows.Forms.Label();
-            this.ogrtEndOgrtAd_textbox = new System.Windows.Forms.TextBox();
-            this.ogrtStartOgrtAd_textbox = new System.Windows.Forms.TextBox();
-            this.label202 = new System.Windows.Forms.Label();
-            this.label203 = new System.Windows.Forms.Label();
-            this.label204 = new System.Windows.Forms.Label();
-            this.label205 = new System.Windows.Forms.Label();
-            this.label206 = new System.Windows.Forms.Label();
-            this.label207 = new System.Windows.Forms.Label();
-            this.label208 = new System.Windows.Forms.Label();
-            this.label209 = new System.Windows.Forms.Label();
-            this.label210 = new System.Windows.Forms.Label();
-            this.label211 = new System.Windows.Forms.Label();
-            this.label212 = new System.Windows.Forms.Label();
-            this.isletmeAktarimPaneli_panel = new System.Windows.Forms.Panel();
-            this.label213 = new System.Windows.Forms.Label();
-            this.label214 = new System.Windows.Forms.Label();
-            this.label215 = new System.Windows.Forms.Label();
-            this.label216 = new System.Windows.Forms.Label();
-            this.label217 = new System.Windows.Forms.Label();
-            this.label218 = new System.Windows.Forms.Label();
-            this.isletmeColumnOgrIsletmeSicilNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeIbanNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeUODT_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeUOTCNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeUOAd_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeEndOgrIsletmeSicilNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeSicilNo_textbox = new System.Windows.Forms.TextBox();
-            this.label219 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeIbanNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeIbanNo_textbox = new System.Windows.Forms.TextBox();
-            this.label220 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeUODT_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeUODT_textbox = new System.Windows.Forms.TextBox();
-            this.label221 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeUOTCNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeUOTCNo_textbox = new System.Windows.Forms.TextBox();
-            this.label222 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeSoyad_textbox = new System.Windows.Forms.TextBox();
-            this.label223 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeUOAd_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeUOAd_textbox = new System.Windows.Forms.TextBox();
-            this.label224 = new System.Windows.Forms.Label();
-            this.label225 = new System.Windows.Forms.Label();
-            this.label226 = new System.Windows.Forms.Label();
-            this.label227 = new System.Windows.Forms.Label();
-            this.label228 = new System.Windows.Forms.Label();
-            this.label229 = new System.Windows.Forms.Label();
-            this.label230 = new System.Windows.Forms.Label();
-            this.label231 = new System.Windows.Forms.Label();
-            this.label232 = new System.Windows.Forms.Label();
-            this.label256 = new System.Windows.Forms.Label();
-            this.label257 = new System.Windows.Forms.Label();
-            this.label258 = new System.Windows.Forms.Label();
-            this.label259 = new System.Windows.Forms.Label();
-            this.label260 = new System.Windows.Forms.Label();
-            this.label261 = new System.Windows.Forms.Label();
-            this.label262 = new System.Windows.Forms.Label();
-            this.label263 = new System.Windows.Forms.Label();
-            this.label264 = new System.Windows.Forms.Label();
-            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeYetkilisi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeTamAdres_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeAdresIlce_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeAdresIl_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeColumnOgrIsletmeAd_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox = new System.Windows.Forms.TextBox();
-            this.label265 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeDalAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label266 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeAlanAdi_textbox = new System.Windows.Forms.TextBox();
-            this.label267 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeTelNo_textbox = new System.Windows.Forms.TextBox();
-            this.label268 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeYetkilisi_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeYetkilisi_textbox = new System.Windows.Forms.TextBox();
-            this.label269 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeTamAdres_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeTamAdres_textbox = new System.Windows.Forms.TextBox();
-            this.label270 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeAdresIlce_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeAdresIlce_textbox = new System.Windows.Forms.TextBox();
-            this.label271 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeAdresIl_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeAdresIl_textbox = new System.Windows.Forms.TextBox();
-            this.label272 = new System.Windows.Forms.Label();
-            this.isletmeEndOgrIsletmeAd_textbox = new System.Windows.Forms.TextBox();
-            this.isletmeStartOgrIsletmeAd_textbox = new System.Windows.Forms.TextBox();
-            this.label273 = new System.Windows.Forms.Label();
-            this.label274 = new System.Windows.Forms.Label();
-            this.label275 = new System.Windows.Forms.Label();
-            this.label276 = new System.Windows.Forms.Label();
-            this.label277 = new System.Windows.Forms.Label();
-            this.label278 = new System.Windows.Forms.Label();
-            this.label279 = new System.Windows.Forms.Label();
-            this.label280 = new System.Windows.Forms.Label();
-            this.label281 = new System.Windows.Forms.Label();
-            this.label282 = new System.Windows.Forms.Label();
-            this.label283 = new System.Windows.Forms.Label();
-            this.label284 = new System.Windows.Forms.Label();
-            this.label285 = new System.Windows.Forms.Label();
-            this.IsletmeDETAYtabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage26 = new System.Windows.Forms.TabPage();
-            this.splitContainer11 = new System.Windows.Forms.SplitContainer();
-            this.panel72 = new System.Windows.Forms.Panel();
-            this.IsletmeHakkindaBaziBilgiler_label = new System.Windows.Forms.Label();
-            this.panel73 = new System.Windows.Forms.Panel();
-            this.groupBox26 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeTCNoCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayUstaOgreticiTCNO_label = new System.Windows.Forms.Label();
-            this.panel74 = new System.Windows.Forms.Panel();
-            this.IsletmeDetayDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label115 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeDalAdiCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeDal_label = new System.Windows.Forms.Label();
-            this.groupBox27 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayUOAdSoyadCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label = new System.Windows.Forms.Label();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeDTCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayUstaOgreticiDT_label = new System.Windows.Forms.Label();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.infoIsletmeDetayIsletmeAdresIl_label = new System.Windows.Forms.Label();
-            this.IsletmeDetayIsletmeAdresIlCopy_button = new System.Windows.Forms.Button();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeAlanAdiCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeAlan_label = new System.Windows.Forms.Label();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.infoIsletmeDetayIsletmeAdi_label = new System.Windows.Forms.Label();
-            this.IsletmeDetayIsletmeAdiCopy_button = new System.Windows.Forms.Button();
-            this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label = new System.Windows.Forms.Label();
-            this.groupBox28 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeTelNoCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeTelNo_label = new System.Windows.Forms.Label();
-            this.groupBox29 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeYetkilisi_label = new System.Windows.Forms.Label();
-            this.groupBox30 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeTamAdresCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeTamAdres_label = new System.Windows.Forms.Label();
-            this.groupBox31 = new System.Windows.Forms.GroupBox();
-            this.IsletmeDetayIsletmeAdresIlceCopy_button = new System.Windows.Forms.Button();
-            this.infoIsletmeDetayIsletmeAdresIlce_label = new System.Windows.Forms.Label();
-            this.panel75 = new System.Windows.Forms.Panel();
-            this.label128 = new System.Windows.Forms.Label();
-            this.IsletmeDetayIsletmeYazdir_button = new System.Windows.Forms.Button();
-            this.IsletmeDetayIsletmeGuncelle_button = new System.Windows.Forms.Button();
-            this.IsletmeDetayIsletmeSil_button = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SettingsButton_button = new System.Windows.Forms.Button();
             this.HomeYazdirmaIslemleri_button = new System.Windows.Forms.Button();
@@ -1040,6 +1049,102 @@ namespace WindowsFormsApp1
             this.panel61.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel35.SuspendLayout();
+            this.YAZDIRtabControl1.SuspendLayout();
+            this.tabPage21.SuspendLayout();
+            this.yazdirYanPanel_panel.SuspendLayout();
+            this.yazdirNotFisi_panel.SuspendLayout();
+            this.yazdirDevamsizlikRaporu_panel.SuspendLayout();
+            this.yazdirAyliikGunlukRapor_panel.SuspendLayout();
+            this.panel79.SuspendLayout();
+            this.GorevTarihleri_panel.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel24.SuspendLayout();
+            this.panel80.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel76.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel25.SuspendLayout();
+            this.yazdir_KisButonlari.SuspendLayout();
+            this.yazdir_YazButonlari.SuspendLayout();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.GorevHaftasi_panel.SuspendLayout();
+            this.tabPage14.SuspendLayout();
+            this.panel97.SuspendLayout();
+            this.SETTINGStabControl1.SuspendLayout();
+            this.tabPage20.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
+            this.splitContainer8.Panel1.SuspendLayout();
+            this.splitContainer8.Panel2.SuspendLayout();
+            this.splitContainer8.SuspendLayout();
+            this.panel77.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel60.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.panel23.SuspendLayout();
+            this.settingsOzelIllerPanel_panel.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.tabPage24.SuspendLayout();
+            this.panel100.SuspendLayout();
+            this.panel59.SuspendLayout();
+            this.panel58.SuspendLayout();
+            this.panel57.SuspendLayout();
+            this.panel48.SuspendLayout();
+            this.tabPage23.SuspendLayout();
+            this.panel44.SuspendLayout();
+            this.panel46.SuspendLayout();
+            this.panel51.SuspendLayout();
+            this.panel52.SuspendLayout();
+            this.panel55.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel50.SuspendLayout();
+            this.panel54.SuspendLayout();
+            this.panel47.SuspendLayout();
+            this.panel56.SuspendLayout();
+            this.panel53.SuspendLayout();
+            this.panel45.SuspendLayout();
+            this.tabPage25.SuspendLayout();
+            this.ogrAktarimPaneli_panel.SuspendLayout();
+            this.panel98.SuspendLayout();
+            this.panel62.SuspendLayout();
+            this.ogrtAktarimPaneli_panel.SuspendLayout();
+            this.isletmeAktarimPaneli_panel.SuspendLayout();
+            this.IsletmeDETAYtabControl1.SuspendLayout();
+            this.tabPage26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
+            this.splitContainer11.Panel1.SuspendLayout();
+            this.splitContainer11.Panel2.SuspendLayout();
+            this.splitContainer11.SuspendLayout();
+            this.panel72.SuspendLayout();
+            this.panel73.SuspendLayout();
+            this.groupBox26.SuspendLayout();
+            this.panel74.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IsletmeDetayDataGridView1)).BeginInit();
+            this.groupBox16.SuspendLayout();
+            this.groupBox27.SuspendLayout();
+            this.groupBox32.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox20.SuspendLayout();
+            this.groupBox25.SuspendLayout();
+            this.groupBox28.SuspendLayout();
+            this.groupBox29.SuspendLayout();
+            this.groupBox30.SuspendLayout();
+            this.groupBox31.SuspendLayout();
+            this.panel75.SuspendLayout();
             this.OgretmenDETAYtabControl1.SuspendLayout();
             this.tabPage19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
@@ -1048,14 +1153,16 @@ namespace WindowsFormsApp1
             this.splitContainer10.SuspendLayout();
             this.panel67.SuspendLayout();
             this.panel68.SuspendLayout();
+            this.panel101.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OgretmenBelgeRaporDataGridView)).BeginInit();
             this.panel93.SuspendLayout();
             this.panel95.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoOgretmenFotografi_picturebox)).BeginInit();
+            this.groupBox13.SuspendLayout();
             this.panel71.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OgretmenDetaydataGridView2)).BeginInit();
             this.panel69.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OgretmenDetaydataGridView1)).BeginInit();
-            this.groupBox13.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox17.SuspendLayout();
             this.groupBox21.SuspendLayout();
@@ -1180,100 +1287,6 @@ namespace WindowsFormsApp1
             this.updateIsletmePanelSag_panel.SuspendLayout();
             this.tabPage18.SuspendLayout();
             this.panel15.SuspendLayout();
-            this.YAZDIRtabControl1.SuspendLayout();
-            this.tabPage21.SuspendLayout();
-            this.yazdirYanPanel_panel.SuspendLayout();
-            this.yazdirNotFisi_panel.SuspendLayout();
-            this.yazdirDevamsizlikRaporu_panel.SuspendLayout();
-            this.yazdirAyliikGunlukRapor_panel.SuspendLayout();
-            this.panel79.SuspendLayout();
-            this.GorevTarihleri_panel.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel80.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.panel76.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel25.SuspendLayout();
-            this.yazdir_KisButonlari.SuspendLayout();
-            this.yazdir_YazButonlari.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.tabPage14.SuspendLayout();
-            this.panel97.SuspendLayout();
-            this.SETTINGStabControl1.SuspendLayout();
-            this.tabPage20.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).BeginInit();
-            this.splitContainer8.Panel1.SuspendLayout();
-            this.splitContainer8.Panel2.SuspendLayout();
-            this.splitContainer8.SuspendLayout();
-            this.panel77.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel60.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.settingsOzelIllerPanel_panel.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.tabPage24.SuspendLayout();
-            this.panel59.SuspendLayout();
-            this.panel58.SuspendLayout();
-            this.panel57.SuspendLayout();
-            this.panel48.SuspendLayout();
-            this.tabPage23.SuspendLayout();
-            this.panel44.SuspendLayout();
-            this.panel46.SuspendLayout();
-            this.panel51.SuspendLayout();
-            this.panel52.SuspendLayout();
-            this.panel55.SuspendLayout();
-            this.panel49.SuspendLayout();
-            this.panel50.SuspendLayout();
-            this.panel54.SuspendLayout();
-            this.panel47.SuspendLayout();
-            this.panel56.SuspendLayout();
-            this.panel53.SuspendLayout();
-            this.panel45.SuspendLayout();
-            this.tabPage25.SuspendLayout();
-            this.ogrAktarimPaneli_panel.SuspendLayout();
-            this.panel98.SuspendLayout();
-            this.panel62.SuspendLayout();
-            this.ogrtAktarimPaneli_panel.SuspendLayout();
-            this.isletmeAktarimPaneli_panel.SuspendLayout();
-            this.IsletmeDETAYtabControl1.SuspendLayout();
-            this.tabPage26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
-            this.splitContainer11.Panel1.SuspendLayout();
-            this.splitContainer11.Panel2.SuspendLayout();
-            this.splitContainer11.SuspendLayout();
-            this.panel72.SuspendLayout();
-            this.panel73.SuspendLayout();
-            this.groupBox26.SuspendLayout();
-            this.panel74.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IsletmeDetayDataGridView1)).BeginInit();
-            this.groupBox16.SuspendLayout();
-            this.groupBox27.SuspendLayout();
-            this.groupBox32.SuspendLayout();
-            this.groupBox18.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.groupBox20.SuspendLayout();
-            this.groupBox25.SuspendLayout();
-            this.groupBox28.SuspendLayout();
-            this.groupBox29.SuspendLayout();
-            this.groupBox30.SuspendLayout();
-            this.groupBox31.SuspendLayout();
-            this.panel75.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1504,6 +1517,5742 @@ namespace WindowsFormsApp1
             this.panel35.Size = new System.Drawing.Size(1151, 650);
             this.panel35.TabIndex = 1;
             // 
+            // YAZDIRtabControl1
+            // 
+            this.YAZDIRtabControl1.Controls.Add(this.tabPage21);
+            this.YAZDIRtabControl1.Controls.Add(this.tabPage14);
+            this.YAZDIRtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.YAZDIRtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.YAZDIRtabControl1.Location = new System.Drawing.Point(0, 0);
+            this.YAZDIRtabControl1.Name = "YAZDIRtabControl1";
+            this.YAZDIRtabControl1.Padding = new System.Drawing.Point(50, 3);
+            this.YAZDIRtabControl1.SelectedIndex = 0;
+            this.YAZDIRtabControl1.Size = new System.Drawing.Size(1151, 650);
+            this.YAZDIRtabControl1.TabIndex = 85;
+            // 
+            // tabPage21
+            // 
+            this.tabPage21.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage21.Controls.Add(this.yazdirYanPanel_panel);
+            this.tabPage21.Controls.Add(this.panel17);
+            this.tabPage21.Location = new System.Drawing.Point(4, 28);
+            this.tabPage21.Name = "tabPage21";
+            this.tabPage21.Padding = new System.Windows.Forms.Padding(10);
+            this.tabPage21.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage21.TabIndex = 0;
+            this.tabPage21.Text = "YAZDIR";
+            // 
+            // yazdirYanPanel_panel
+            // 
+            this.yazdirYanPanel_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.yazdirYanPanel_panel.Controls.Add(this.yazdirNotFisi_panel);
+            this.yazdirYanPanel_panel.Controls.Add(this.yazdirDevamsizlikRaporu_panel);
+            this.yazdirYanPanel_panel.Controls.Add(this.yazdirAyliikGunlukRapor_panel);
+            this.yazdirYanPanel_panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.yazdirYanPanel_panel.Location = new System.Drawing.Point(722, 10);
+            this.yazdirYanPanel_panel.Name = "yazdirYanPanel_panel";
+            this.yazdirYanPanel_panel.Padding = new System.Windows.Forms.Padding(10);
+            this.yazdirYanPanel_panel.Size = new System.Drawing.Size(411, 598);
+            this.yazdirYanPanel_panel.TabIndex = 85;
+            // 
+            // yazdirNotFisi_panel
+            // 
+            this.yazdirNotFisi_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.yazdirNotFisi_panel.Controls.Add(this.label90);
+            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem2_radio);
+            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem1_radio);
+            this.yazdirNotFisi_panel.Controls.Add(this.label96);
+            this.yazdirNotFisi_panel.Location = new System.Drawing.Point(6, 399);
+            this.yazdirNotFisi_panel.Name = "yazdirNotFisi_panel";
+            this.yazdirNotFisi_panel.Padding = new System.Windows.Forms.Padding(10);
+            this.yazdirNotFisi_panel.Size = new System.Drawing.Size(400, 187);
+            this.yazdirNotFisi_panel.TabIndex = 86;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label90.Location = new System.Drawing.Point(19, 63);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(137, 21);
+            this.label90.TabIndex = 88;
+            this.label90.Text = "Dönem Seçiniz : ";
+            // 
+            // yazdirilacakNotFisiDonem2_radio
+            // 
+            this.yazdirilacakNotFisiDonem2_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirilacakNotFisiDonem2_radio.Location = new System.Drawing.Point(291, 63);
+            this.yazdirilacakNotFisiDonem2_radio.Name = "yazdirilacakNotFisiDonem2_radio";
+            this.yazdirilacakNotFisiDonem2_radio.Size = new System.Drawing.Size(108, 23);
+            this.yazdirilacakNotFisiDonem2_radio.TabIndex = 87;
+            this.yazdirilacakNotFisiDonem2_radio.TabStop = true;
+            this.yazdirilacakNotFisiDonem2_radio.Text = "2. Dönem";
+            this.yazdirilacakNotFisiDonem2_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakNotFisiDonem2_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem2_radio_CheckedChanged);
+            // 
+            // yazdirilacakNotFisiDonem1_radio
+            // 
+            this.yazdirilacakNotFisiDonem1_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirilacakNotFisiDonem1_radio.Location = new System.Drawing.Point(168, 63);
+            this.yazdirilacakNotFisiDonem1_radio.Name = "yazdirilacakNotFisiDonem1_radio";
+            this.yazdirilacakNotFisiDonem1_radio.Size = new System.Drawing.Size(108, 23);
+            this.yazdirilacakNotFisiDonem1_radio.TabIndex = 86;
+            this.yazdirilacakNotFisiDonem1_radio.TabStop = true;
+            this.yazdirilacakNotFisiDonem1_radio.Text = "1. Dönem";
+            this.yazdirilacakNotFisiDonem1_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakNotFisiDonem1_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem1_radio_CheckedChanged);
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label96.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label96.Location = new System.Drawing.Point(10, 10);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(68, 21);
+            this.label96.TabIndex = 82;
+            this.label96.Text = "Not Fişi";
+            // 
+            // yazdirDevamsizlikRaporu_panel
+            // 
+            this.yazdirDevamsizlikRaporu_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label89);
+            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.yazdirilacakDevamsizlikAYI_combobox);
+            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label94);
+            this.yazdirDevamsizlikRaporu_panel.Location = new System.Drawing.Point(6, 206);
+            this.yazdirDevamsizlikRaporu_panel.Name = "yazdirDevamsizlikRaporu_panel";
+            this.yazdirDevamsizlikRaporu_panel.Padding = new System.Windows.Forms.Padding(10);
+            this.yazdirDevamsizlikRaporu_panel.Size = new System.Drawing.Size(400, 187);
+            this.yazdirDevamsizlikRaporu_panel.TabIndex = 85;
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label89.Location = new System.Drawing.Point(10, 66);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(141, 21);
+            this.label89.TabIndex = 86;
+            this.label89.Text = "Devamsızlık Ayı : ";
+            // 
+            // yazdirilacakDevamsizlikAYI_combobox
+            // 
+            this.yazdirilacakDevamsizlikAYI_combobox.FormattingEnabled = true;
+            this.yazdirilacakDevamsizlikAYI_combobox.Items.AddRange(new object[] {
+            "Ocak",
+            "Şubat",
+            "Mart",
+            "Nisan",
+            "Mayıs",
+            "Haziran",
+            "Temmuz",
+            "Ağustos",
+            "Eylül",
+            "Ekim",
+            "Kasım",
+            "Aralık"});
+            this.yazdirilacakDevamsizlikAYI_combobox.Location = new System.Drawing.Point(157, 65);
+            this.yazdirilacakDevamsizlikAYI_combobox.Name = "yazdirilacakDevamsizlikAYI_combobox";
+            this.yazdirilacakDevamsizlikAYI_combobox.Size = new System.Drawing.Size(210, 27);
+            this.yazdirilacakDevamsizlikAYI_combobox.TabIndex = 85;
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label94.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label94.Location = new System.Drawing.Point(10, 10);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(159, 21);
+            this.label94.TabIndex = 82;
+            this.label94.Text = "Devamsızlık Raporu";
+            // 
+            // yazdirAyliikGunlukRapor_panel
+            // 
+            this.yazdirAyliikGunlukRapor_panel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.yazdirAyliikGunlukRapor_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.panel79);
+            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.GorevTarihleri_panel);
+            this.yazdirAyliikGunlukRapor_panel.Location = new System.Drawing.Point(6, 13);
+            this.yazdirAyliikGunlukRapor_panel.Name = "yazdirAyliikGunlukRapor_panel";
+            this.yazdirAyliikGunlukRapor_panel.Size = new System.Drawing.Size(400, 187);
+            this.yazdirAyliikGunlukRapor_panel.TabIndex = 84;
+            // 
+            // panel79
+            // 
+            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporHAFTALIK_radio);
+            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporAYLIK_radio);
+            this.panel79.Controls.Add(this.label93);
+            this.panel79.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel79.Location = new System.Drawing.Point(0, 0);
+            this.panel79.Name = "panel79";
+            this.panel79.Padding = new System.Windows.Forms.Padding(10);
+            this.panel79.Size = new System.Drawing.Size(262, 183);
+            this.panel79.TabIndex = 90;
+            // 
+            // yazdirilacakAyGunlukRaporHAFTALIK_radio
+            // 
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Location = new System.Drawing.Point(108, 58);
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Name = "yazdirilacakAyGunlukRaporHAFTALIK_radio";
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Size = new System.Drawing.Size(103, 23);
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabIndex = 84;
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabStop = true;
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Text = "HAFTALIK";
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporHAFTALIK_radio_CheckedChanged);
+            // 
+            // yazdirilacakAyGunlukRaporAYLIK_radio
+            // 
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Location = new System.Drawing.Point(31, 58);
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Name = "yazdirilacakAyGunlukRaporAYLIK_radio";
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Size = new System.Drawing.Size(70, 23);
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabIndex = 83;
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabStop = true;
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.Text = "AYLIK";
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.UseVisualStyleBackColor = true;
+            this.yazdirilacakAyGunlukRaporAYLIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporAYLIK_radio_CheckedChanged);
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label93.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label93.Location = new System.Drawing.Point(10, 10);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(168, 21);
+            this.label93.TabIndex = 85;
+            this.label93.Text = "Aylık / Günlük Rapor";
+            // 
+            // GorevTarihleri_panel
+            // 
+            this.GorevTarihleri_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.GorevTarihleri_panel.Controls.Add(this.label120);
+            this.GorevTarihleri_panel.Controls.Add(this.GorevTarihiGunleri_richTextBox);
+            this.GorevTarihleri_panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.GorevTarihleri_panel.Location = new System.Drawing.Point(261, 0);
+            this.GorevTarihleri_panel.Name = "GorevTarihleri_panel";
+            this.GorevTarihleri_panel.Padding = new System.Windows.Forms.Padding(8, 8, 10, 10);
+            this.GorevTarihleri_panel.Size = new System.Drawing.Size(135, 183);
+            this.GorevTarihleri_panel.TabIndex = 89;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label120.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label120.Location = new System.Drawing.Point(8, 8);
+            this.label120.Margin = new System.Windows.Forms.Padding(0);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(116, 20);
+            this.label120.TabIndex = 82;
+            this.label120.Text = "Görev Tarihleri";
+            // 
+            // GorevTarihiGunleri_richTextBox
+            // 
+            this.GorevTarihiGunleri_richTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.GorevTarihiGunleri_richTextBox.Location = new System.Drawing.Point(8, 31);
+            this.GorevTarihiGunleri_richTextBox.Name = "GorevTarihiGunleri_richTextBox";
+            this.GorevTarihiGunleri_richTextBox.Size = new System.Drawing.Size(113, 138);
+            this.GorevTarihiGunleri_richTextBox.TabIndex = 87;
+            this.GorevTarihiGunleri_richTextBox.Text = "";
+            // 
+            // panel17
+            // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel17.Controls.Add(this.panel28);
+            this.panel17.Controls.Add(this.panel20);
+            this.panel17.Controls.Add(this.panel18);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel17.Location = new System.Drawing.Point(10, 10);
+            this.panel17.Name = "panel17";
+            this.panel17.Padding = new System.Windows.Forms.Padding(10);
+            this.panel17.Size = new System.Drawing.Size(716, 598);
+            this.panel17.TabIndex = 86;
+            // 
+            // panel28
+            // 
+            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel28.Controls.Add(this.panel27);
+            this.panel28.Controls.Add(this.panel30);
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel28.Location = new System.Drawing.Point(10, 350);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(694, 236);
+            this.panel28.TabIndex = 89;
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.panel24);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel27.Location = new System.Drawing.Point(436, 0);
+            this.panel27.Name = "panel27";
+            this.panel27.Padding = new System.Windows.Forms.Padding(4);
+            this.panel27.Size = new System.Drawing.Size(256, 234);
+            this.panel27.TabIndex = 87;
+            // 
+            // panel24
+            // 
+            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel24.Controls.Add(this.panel80);
+            this.panel24.Controls.Add(this.panel76);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel24.Location = new System.Drawing.Point(4, 4);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(248, 226);
+            this.panel24.TabIndex = 83;
+            // 
+            // panel80
+            // 
+            this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel80.Controls.Add(this.settingsExcel_radio);
+            this.panel80.Controls.Add(this.settingsPDFeDonustur_radio);
+            this.panel80.Controls.Add(this.settingsYazdir_radio);
+            this.panel80.Controls.Add(this.label92);
+            this.panel80.Controls.Add(this.numericUpDown1);
+            this.panel80.Controls.Add(this.label91);
+            this.panel80.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel80.Location = new System.Drawing.Point(0, 0);
+            this.panel80.Name = "panel80";
+            this.panel80.Size = new System.Drawing.Size(244, 168);
+            this.panel80.TabIndex = 90;
+            // 
+            // settingsExcel_radio
+            // 
+            this.settingsExcel_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsExcel_radio.Location = new System.Drawing.Point(18, 114);
+            this.settingsExcel_radio.Name = "settingsExcel_radio";
+            this.settingsExcel_radio.Size = new System.Drawing.Size(215, 23);
+            this.settingsExcel_radio.TabIndex = 96;
+            this.settingsExcel_radio.TabStop = true;
+            this.settingsExcel_radio.Text = "Excel olarak kaydet";
+            this.settingsExcel_radio.UseVisualStyleBackColor = true;
+            this.settingsExcel_radio.CheckedChanged += new System.EventHandler(this.settingsExcel_radio_CheckedChanged);
+            // 
+            // settingsPDFeDonustur_radio
+            // 
+            this.settingsPDFeDonustur_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsPDFeDonustur_radio.Location = new System.Drawing.Point(18, 138);
+            this.settingsPDFeDonustur_radio.Name = "settingsPDFeDonustur_radio";
+            this.settingsPDFeDonustur_radio.Size = new System.Drawing.Size(215, 23);
+            this.settingsPDFeDonustur_radio.TabIndex = 95;
+            this.settingsPDFeDonustur_radio.TabStop = true;
+            this.settingsPDFeDonustur_radio.Text = "PDF\'e dönüştür";
+            this.settingsPDFeDonustur_radio.UseVisualStyleBackColor = true;
+            this.settingsPDFeDonustur_radio.CheckedChanged += new System.EventHandler(this.settingsPDFeDonustur_radio_CheckedChanged);
+            // 
+            // settingsYazdir_radio
+            // 
+            this.settingsYazdir_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsYazdir_radio.Location = new System.Drawing.Point(18, 90);
+            this.settingsYazdir_radio.Name = "settingsYazdir_radio";
+            this.settingsYazdir_radio.Size = new System.Drawing.Size(215, 23);
+            this.settingsYazdir_radio.TabIndex = 94;
+            this.settingsYazdir_radio.TabStop = true;
+            this.settingsYazdir_radio.Text = "Yazdır(Varsayılan Yazıcı)";
+            this.settingsYazdir_radio.UseVisualStyleBackColor = true;
+            this.settingsYazdir_radio.CheckedChanged += new System.EventHandler(this.settingsYazdir_radio_CheckedChanged);
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label92.Location = new System.Drawing.Point(2, 64);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(181, 21);
+            this.label92.TabIndex = 93;
+            this.label92.Text = "İşlem Türünü Seçiniz : ";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(24, 34);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(209, 24);
+            this.numericUpDown1.TabIndex = 92;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label91.Location = new System.Drawing.Point(2, 7);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(200, 21);
+            this.label91.TabIndex = 91;
+            this.label91.Text = "Kaç Adet Çıktı Alınacak : ";
+            // 
+            // panel76
+            // 
+            this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel76.Controls.Add(this.label122);
+            this.panel76.Controls.Add(this.label121);
+            this.panel76.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel76.Location = new System.Drawing.Point(0, 168);
+            this.panel76.Name = "panel76";
+            this.panel76.Size = new System.Drawing.Size(244, 54);
+            this.panel76.TabIndex = 89;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label122.Location = new System.Drawing.Point(16, 29);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(57, 17);
+            this.label122.TabIndex = 94;
+            this.label122.Text = "label122";
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label121.Location = new System.Drawing.Point(3, 3);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(124, 20);
+            this.label121.TabIndex = 93;
+            this.label121.Text = "Varsayılan yazıcı";
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.panel26);
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel30.Location = new System.Drawing.Point(0, 0);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(433, 234);
+            this.panel30.TabIndex = 86;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.button6);
+            this.panel26.Controls.Add(this.panel25);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel26.Location = new System.Drawing.Point(0, 0);
+            this.panel26.Name = "panel26";
+            this.panel26.Padding = new System.Windows.Forms.Padding(2);
+            this.panel26.Size = new System.Drawing.Size(433, 234);
+            this.panel26.TabIndex = 0;
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button6.Location = new System.Drawing.Point(2, 145);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(429, 87);
+            this.button6.TabIndex = 85;
+            this.button6.Text = "YAZDIR";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.Color.Transparent;
+            this.panel25.Controls.Add(this.yazdir_KisButonlari);
+            this.panel25.Controls.Add(this.yazdir_YazButonlari);
+            this.panel25.Location = new System.Drawing.Point(2, 6);
+            this.panel25.Name = "panel25";
+            this.panel25.Padding = new System.Windows.Forms.Padding(4);
+            this.panel25.Size = new System.Drawing.Size(433, 138);
+            this.panel25.TabIndex = 86;
+            // 
+            // yazdir_KisButonlari
+            // 
+            this.yazdir_KisButonlari.Controls.Add(this.button10);
+            this.yazdir_KisButonlari.Controls.Add(this.button8);
+            this.yazdir_KisButonlari.Controls.Add(this.button5);
+            this.yazdir_KisButonlari.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yazdir_KisButonlari.Location = new System.Drawing.Point(4, 4);
+            this.yazdir_KisButonlari.Name = "yazdir_KisButonlari";
+            this.yazdir_KisButonlari.Size = new System.Drawing.Size(425, 130);
+            this.yazdir_KisButonlari.TabIndex = 0;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button10.Location = new System.Drawing.Point(288, 0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(134, 130);
+            this.button10.TabIndex = 85;
+            this.button10.Text = "Not Fişi";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button8.Location = new System.Drawing.Point(144, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(144, 130);
+            this.button8.TabIndex = 87;
+            this.button8.Text = "Devamsızlık Raporu";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.button5.Location = new System.Drawing.Point(0, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(144, 130);
+            this.button5.TabIndex = 86;
+            this.button5.Text = "Aylık / Günlük Rapor";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // yazdir_YazButonlari
+            // 
+            this.yazdir_YazButonlari.Controls.Add(this.yazdir_DevamsizlikRaporu_button);
+            this.yazdir_YazButonlari.Controls.Add(this.yazdir_DegerlendirmeFormu_button);
+            this.yazdir_YazButonlari.Controls.Add(this.yazdir_HaftalikRapor_button);
+            this.yazdir_YazButonlari.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yazdir_YazButonlari.Location = new System.Drawing.Point(4, 4);
+            this.yazdir_YazButonlari.Name = "yazdir_YazButonlari";
+            this.yazdir_YazButonlari.Size = new System.Drawing.Size(425, 130);
+            this.yazdir_YazButonlari.TabIndex = 1;
+            // 
+            // yazdir_DevamsizlikRaporu_button
+            // 
+            this.yazdir_DevamsizlikRaporu_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.yazdir_DevamsizlikRaporu_button.Location = new System.Drawing.Point(288, 0);
+            this.yazdir_DevamsizlikRaporu_button.Name = "yazdir_DevamsizlikRaporu_button";
+            this.yazdir_DevamsizlikRaporu_button.Size = new System.Drawing.Size(134, 130);
+            this.yazdir_DevamsizlikRaporu_button.TabIndex = 2;
+            this.yazdir_DevamsizlikRaporu_button.Text = "Devamsızlık Raporu";
+            this.yazdir_DevamsizlikRaporu_button.UseVisualStyleBackColor = true;
+            this.yazdir_DevamsizlikRaporu_button.Click += new System.EventHandler(this.yazdir_DevamsizlikRaporu_button_Click);
+            // 
+            // yazdir_DegerlendirmeFormu_button
+            // 
+            this.yazdir_DegerlendirmeFormu_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.yazdir_DegerlendirmeFormu_button.Location = new System.Drawing.Point(144, 0);
+            this.yazdir_DegerlendirmeFormu_button.Name = "yazdir_DegerlendirmeFormu_button";
+            this.yazdir_DegerlendirmeFormu_button.Size = new System.Drawing.Size(144, 130);
+            this.yazdir_DegerlendirmeFormu_button.TabIndex = 1;
+            this.yazdir_DegerlendirmeFormu_button.Text = "Değerlendirme Formu";
+            this.yazdir_DegerlendirmeFormu_button.UseVisualStyleBackColor = true;
+            this.yazdir_DegerlendirmeFormu_button.Click += new System.EventHandler(this.yazdir_kisraporu_button_Click);
+            // 
+            // yazdir_HaftalikRapor_button
+            // 
+            this.yazdir_HaftalikRapor_button.Dock = System.Windows.Forms.DockStyle.Left;
+            this.yazdir_HaftalikRapor_button.Location = new System.Drawing.Point(0, 0);
+            this.yazdir_HaftalikRapor_button.Name = "yazdir_HaftalikRapor_button";
+            this.yazdir_HaftalikRapor_button.Size = new System.Drawing.Size(144, 130);
+            this.yazdir_HaftalikRapor_button.TabIndex = 0;
+            this.yazdir_HaftalikRapor_button.Text = "Haftalık Rapor";
+            this.yazdir_HaftalikRapor_button.UseVisualStyleBackColor = true;
+            this.yazdir_HaftalikRapor_button.Click += new System.EventHandler(this.yazdir_yazraporu_button_Click);
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.panel21);
+            this.panel20.Controls.Add(this.panel22);
+            this.panel20.Location = new System.Drawing.Point(10, 180);
+            this.panel20.Name = "panel20";
+            this.panel20.Padding = new System.Windows.Forms.Padding(5);
+            this.panel20.Size = new System.Drawing.Size(694, 164);
+            this.panel20.TabIndex = 88;
+            // 
+            // panel21
+            // 
+            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel21.Controls.Add(this.label86);
+            this.panel21.Controls.Add(this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel21.Location = new System.Drawing.Point(384, 5);
+            this.panel21.Name = "panel21";
+            this.panel21.Padding = new System.Windows.Forms.Padding(10);
+            this.panel21.Size = new System.Drawing.Size(305, 154);
+            this.panel21.TabIndex = 83;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label86.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label86.Location = new System.Drawing.Point(10, 10);
+            this.label86.Name = "label86";
+            this.label86.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
+            this.label86.Size = new System.Drawing.Size(200, 31);
+            this.label86.TabIndex = 5;
+            this.label86.Text = "İşletmeye Ait Alan Bilgisi";
+            // 
+            // yazdirilacakIsletmeyeAitAlanBilgisi_listbox
+            // 
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.FormattingEnabled = true;
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.ItemHeight = 19;
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Location = new System.Drawing.Point(10, 41);
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Name = "yazdirilacakIsletmeyeAitAlanBilgisi_listbox";
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Size = new System.Drawing.Size(281, 99);
+            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.TabIndex = 4;
+            // 
+            // panel22
+            // 
+            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel22.Controls.Add(this.yazdirilacakIsletme_listbox);
+            this.panel22.Controls.Add(this.label88);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel22.Location = new System.Drawing.Point(5, 5);
+            this.panel22.Name = "panel22";
+            this.panel22.Padding = new System.Windows.Forms.Padding(10);
+            this.panel22.Size = new System.Drawing.Size(374, 154);
+            this.panel22.TabIndex = 0;
+            // 
+            // yazdirilacakIsletme_listbox
+            // 
+            this.yazdirilacakIsletme_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.yazdirilacakIsletme_listbox.FormattingEnabled = true;
+            this.yazdirilacakIsletme_listbox.ItemHeight = 19;
+            this.yazdirilacakIsletme_listbox.Location = new System.Drawing.Point(10, 41);
+            this.yazdirilacakIsletme_listbox.Name = "yazdirilacakIsletme_listbox";
+            this.yazdirilacakIsletme_listbox.Size = new System.Drawing.Size(350, 99);
+            this.yazdirilacakIsletme_listbox.TabIndex = 83;
+            this.yazdirilacakIsletme_listbox.SelectedIndexChanged += new System.EventHandler(this.yazdirilacakIsletme_listbox_SelectedIndexChanged);
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label88.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label88.Location = new System.Drawing.Point(10, 10);
+            this.label88.Name = "label88";
+            this.label88.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
+            this.label88.Size = new System.Drawing.Size(70, 31);
+            this.label88.TabIndex = 82;
+            this.label88.Text = "İşletme";
+            // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.panel19);
+            this.panel18.Controls.Add(this.panel32);
+            this.panel18.Location = new System.Drawing.Point(10, 9);
+            this.panel18.Name = "panel18";
+            this.panel18.Padding = new System.Windows.Forms.Padding(5);
+            this.panel18.Size = new System.Drawing.Size(694, 164);
+            this.panel18.TabIndex = 87;
+            // 
+            // panel19
+            // 
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel19.Controls.Add(this.label87);
+            this.panel19.Controls.Add(this.yazdirilacakOgretmeniFiltrele_listbox);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel19.Location = new System.Drawing.Point(473, 5);
+            this.panel19.Name = "panel19";
+            this.panel19.Padding = new System.Windows.Forms.Padding(10);
+            this.panel19.Size = new System.Drawing.Size(216, 154);
+            this.panel19.TabIndex = 83;
+            // 
+            // label87
+            // 
+            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label87.Location = new System.Drawing.Point(34, 5);
+            this.label87.Name = "label87";
+            this.label87.Padding = new System.Windows.Forms.Padding(5);
+            this.label87.Size = new System.Drawing.Size(147, 31);
+            this.label87.TabIndex = 5;
+            this.label87.Text = "Hafta(Filtreleme)";
+            // 
+            // yazdirilacakOgretmeniFiltrele_listbox
+            // 
+            this.yazdirilacakOgretmeniFiltrele_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.yazdirilacakOgretmeniFiltrele_listbox.FormattingEnabled = true;
+            this.yazdirilacakOgretmeniFiltrele_listbox.ItemHeight = 19;
+            this.yazdirilacakOgretmeniFiltrele_listbox.Items.AddRange(new object[] {
+            "A Grup Haftası",
+            "B Grup Haftası",
+            "C Grup Haftası",
+            "D Grup Haftası"});
+            this.yazdirilacakOgretmeniFiltrele_listbox.Location = new System.Drawing.Point(10, 60);
+            this.yazdirilacakOgretmeniFiltrele_listbox.Name = "yazdirilacakOgretmeniFiltrele_listbox";
+            this.yazdirilacakOgretmeniFiltrele_listbox.Size = new System.Drawing.Size(192, 80);
+            this.yazdirilacakOgretmeniFiltrele_listbox.TabIndex = 4;
+            this.yazdirilacakOgretmeniFiltrele_listbox.SelectedIndexChanged += new System.EventHandler(this.yazdirilacakOgretmeniFiltrele_listbox_SelectedIndexChanged);
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel32.Controls.Add(this.GorevHaftasi_panel);
+            this.panel32.Controls.Add(this.label78);
+            this.panel32.Controls.Add(this.label110);
+            this.panel32.Controls.Add(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel32.Location = new System.Drawing.Point(5, 5);
+            this.panel32.Name = "panel32";
+            this.panel32.Padding = new System.Windows.Forms.Padding(10);
+            this.panel32.Size = new System.Drawing.Size(465, 154);
+            this.panel32.TabIndex = 0;
+            // 
+            // GorevHaftasi_panel
+            // 
+            this.GorevHaftasi_panel.Controls.Add(this.label287);
+            this.GorevHaftasi_panel.Controls.Add(this.yazdirGorevHaftasiCheck_combo);
+            this.GorevHaftasi_panel.Location = new System.Drawing.Point(5, 92);
+            this.GorevHaftasi_panel.Name = "GorevHaftasi_panel";
+            this.GorevHaftasi_panel.Size = new System.Drawing.Size(455, 52);
+            this.GorevHaftasi_panel.TabIndex = 83;
+            // 
+            // label287
+            // 
+            this.label287.AutoSize = true;
+            this.label287.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label287.Location = new System.Drawing.Point(8, 14);
+            this.label287.Name = "label287";
+            this.label287.Size = new System.Drawing.Size(184, 21);
+            this.label287.TabIndex = 81;
+            this.label287.Text = "Görev Haftası Seçiniz : ";
+            // 
+            // yazdirGorevHaftasiCheck_combo
+            // 
+            this.yazdirGorevHaftasiCheck_combo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirGorevHaftasiCheck_combo.FormattingEnabled = true;
+            this.yazdirGorevHaftasiCheck_combo.Location = new System.Drawing.Point(200, 13);
+            this.yazdirGorevHaftasiCheck_combo.Name = "yazdirGorevHaftasiCheck_combo";
+            this.yazdirGorevHaftasiCheck_combo.Size = new System.Drawing.Size(244, 27);
+            this.yazdirGorevHaftasiCheck_combo.TabIndex = 82;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label78.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label78.Location = new System.Drawing.Point(10, 10);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(184, 21);
+            this.label78.TabIndex = 82;
+            this.label78.Text = "Koordinatör Öğretmen";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label110.Location = new System.Drawing.Point(13, 57);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(187, 21);
+            this.label110.TabIndex = 72;
+            this.label110.Text = "Öğretmen Adı Soyadı : ";
+            // 
+            // yazdirBelgesiCikartilacakKoordinatorOgretmen_combo
+            // 
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.FormattingEnabled = true;
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Location = new System.Drawing.Point(205, 56);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Name = "yazdirBelgesiCikartilacakKoordinatorOgretmen_combo";
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Size = new System.Drawing.Size(244, 27);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TabIndex = 80;
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedIndexChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_SelectedIndexChanged);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TextChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_TextChanged);
+            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_KeyDown);
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage14.Controls.Add(this.panel97);
+            this.tabPage14.Location = new System.Drawing.Point(4, 28);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(20);
+            this.tabPage14.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage14.TabIndex = 1;
+            this.tabPage14.Text = "QR İLE BELGE OKUT";
+            // 
+            // panel97
+            // 
+            this.panel97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel97.Controls.Add(this.QrTextBox);
+            this.panel97.Controls.Add(this.label108);
+            this.panel97.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel97.Location = new System.Drawing.Point(20, 20);
+            this.panel97.Name = "panel97";
+            this.panel97.Size = new System.Drawing.Size(1103, 578);
+            this.panel97.TabIndex = 0;
+            this.panel97.Click += new System.EventHandler(this.panel97_Click);
+            // 
+            // QrTextBox
+            // 
+            this.QrTextBox.Location = new System.Drawing.Point(227, 95);
+            this.QrTextBox.Name = "QrTextBox";
+            this.QrTextBox.Size = new System.Drawing.Size(0, 24);
+            this.QrTextBox.TabIndex = 1;
+            this.QrTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.QrTextBox_KeyDown);
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label108.Location = new System.Drawing.Point(446, 239);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(252, 21);
+            this.label108.TabIndex = 0;
+            this.label108.Text = "Lütfen QR kodu cihazla okutun.";
+            // 
+            // SETTINGStabControl1
+            // 
+            this.SETTINGStabControl1.Controls.Add(this.tabPage20);
+            this.SETTINGStabControl1.Controls.Add(this.tabPage24);
+            this.SETTINGStabControl1.Controls.Add(this.tabPage23);
+            this.SETTINGStabControl1.Controls.Add(this.tabPage25);
+            this.SETTINGStabControl1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.SETTINGStabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SETTINGStabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SETTINGStabControl1.Location = new System.Drawing.Point(0, 0);
+            this.SETTINGStabControl1.Multiline = true;
+            this.SETTINGStabControl1.Name = "SETTINGStabControl1";
+            this.SETTINGStabControl1.Padding = new System.Drawing.Point(50, 3);
+            this.SETTINGStabControl1.SelectedIndex = 0;
+            this.SETTINGStabControl1.Size = new System.Drawing.Size(1151, 650);
+            this.SETTINGStabControl1.TabIndex = 84;
+            // 
+            // tabPage20
+            // 
+            this.tabPage20.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage20.Controls.Add(this.panel6);
+            this.tabPage20.Controls.Add(this.panel5);
+            this.tabPage20.Location = new System.Drawing.Point(4, 28);
+            this.tabPage20.Name = "tabPage20";
+            this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage20.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage20.TabIndex = 0;
+            this.tabPage20.Text = "ZORUNLU AYARLAR";
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panel10);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(769, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(371, 612);
+            this.panel6.TabIndex = 87;
+            // 
+            // panel10
+            // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.panel14);
+            this.panel10.Controls.Add(this.panel77);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(371, 611);
+            this.panel10.TabIndex = 88;
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Controls.Add(this.label105);
+            this.panel14.Controls.Add(this.splitContainer8);
+            this.panel14.Controls.Add(this.label79);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel14.Location = new System.Drawing.Point(0, 292);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(369, 318);
+            this.panel14.TabIndex = 79;
+            // 
+            // label105
+            // 
+            this.label105.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label105.AutoSize = true;
+            this.label105.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label105.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label105.Location = new System.Drawing.Point(251, 10);
+            this.label105.Name = "label105";
+            this.label105.Padding = new System.Windows.Forms.Padding(2);
+            this.label105.Size = new System.Drawing.Size(44, 27);
+            this.label105.TabIndex = 70;
+            this.label105.Text = "İller";
+            // 
+            // splitContainer8
+            // 
+            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.splitContainer8.Location = new System.Drawing.Point(0, 44);
+            this.splitContainer8.Name = "splitContainer8";
+            // 
+            // splitContainer8.Panel1
+            // 
+            this.splitContainer8.Panel1.Controls.Add(this.settingsSiniflarList_listbox);
+            // 
+            // splitContainer8.Panel2
+            // 
+            this.splitContainer8.Panel2.Controls.Add(this.settingsIllerList_listbox);
+            this.splitContainer8.Size = new System.Drawing.Size(367, 272);
+            this.splitContainer8.SplitterDistance = 180;
+            this.splitContainer8.TabIndex = 69;
+            // 
+            // settingsSiniflarList_listbox
+            // 
+            this.settingsSiniflarList_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingsSiniflarList_listbox.FormattingEnabled = true;
+            this.settingsSiniflarList_listbox.ItemHeight = 19;
+            this.settingsSiniflarList_listbox.Location = new System.Drawing.Point(0, 0);
+            this.settingsSiniflarList_listbox.Name = "settingsSiniflarList_listbox";
+            this.settingsSiniflarList_listbox.Size = new System.Drawing.Size(180, 272);
+            this.settingsSiniflarList_listbox.TabIndex = 2;
+            this.settingsSiniflarList_listbox.SelectedIndexChanged += new System.EventHandler(this.settingsSiniflarList_listbox_SelectedIndexChanged);
+            // 
+            // settingsIllerList_listbox
+            // 
+            this.settingsIllerList_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingsIllerList_listbox.FormattingEnabled = true;
+            this.settingsIllerList_listbox.ItemHeight = 19;
+            this.settingsIllerList_listbox.Location = new System.Drawing.Point(0, 0);
+            this.settingsIllerList_listbox.Name = "settingsIllerList_listbox";
+            this.settingsIllerList_listbox.Size = new System.Drawing.Size(183, 272);
+            this.settingsIllerList_listbox.TabIndex = 2;
+            // 
+            // label79
+            // 
+            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label79.AutoSize = true;
+            this.label79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label79.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label79.Location = new System.Drawing.Point(55, 10);
+            this.label79.Name = "label79";
+            this.label79.Padding = new System.Windows.Forms.Padding(2);
+            this.label79.Size = new System.Drawing.Size(68, 27);
+            this.label79.TabIndex = 68;
+            this.label79.Text = "Sınıflar";
+            // 
+            // panel77
+            // 
+            this.panel77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel77.Controls.Add(this.label75);
+            this.panel77.Controls.Add(this.settingsAlanlarVeDallariList_listbox);
+            this.panel77.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel77.Location = new System.Drawing.Point(0, 0);
+            this.panel77.Name = "panel77";
+            this.panel77.Size = new System.Drawing.Size(369, 292);
+            this.panel77.TabIndex = 77;
+            // 
+            // label75
+            // 
+            this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label75.AutoSize = true;
+            this.label75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label75.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label75.Location = new System.Drawing.Point(115, 6);
+            this.label75.Name = "label75";
+            this.label75.Padding = new System.Windows.Forms.Padding(2);
+            this.label75.Size = new System.Drawing.Size(144, 27);
+            this.label75.TabIndex = 68;
+            this.label75.Text = "Alanlar ve Dalları";
+            // 
+            // settingsAlanlarVeDallariList_listbox
+            // 
+            this.settingsAlanlarVeDallariList_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.settingsAlanlarVeDallariList_listbox.FormattingEnabled = true;
+            this.settingsAlanlarVeDallariList_listbox.ItemHeight = 19;
+            this.settingsAlanlarVeDallariList_listbox.Location = new System.Drawing.Point(0, 39);
+            this.settingsAlanlarVeDallariList_listbox.Name = "settingsAlanlarVeDallariList_listbox";
+            this.settingsAlanlarVeDallariList_listbox.Size = new System.Drawing.Size(367, 251);
+            this.settingsAlanlarVeDallariList_listbox.TabIndex = 0;
+            this.settingsAlanlarVeDallariList_listbox.SelectedIndexChanged += new System.EventHandler(this.settingsAlanlarVeDallariList_listbox_SelectedIndexChanged);
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.panel60);
+            this.panel5.Controls.Add(this.panel16);
+            this.panel5.Controls.Add(this.settingsTumunuSıfırlaButon_button);
+            this.panel5.Controls.Add(this.panel13);
+            this.panel5.Controls.Add(this.panel11);
+            this.panel5.Controls.Add(this.panel9);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(3, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(765, 612);
+            this.panel5.TabIndex = 86;
+            // 
+            // panel60
+            // 
+            this.panel60.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel60.Controls.Add(this.settingsOkulMuduruAdiButon_button);
+            this.panel60.Controls.Add(this.okulMuduruIsmi_text);
+            this.panel60.Controls.Add(this.label117);
+            this.panel60.Controls.Add(this.settingsKoordinatorMudurYardimcisiAdiButon_button);
+            this.panel60.Controls.Add(this.KoordinatorMuduryardimcisiIsmi_text);
+            this.panel60.Controls.Add(this.label116);
+            this.panel60.Controls.Add(this.settingsMudurYardimcisiAdiButon_button);
+            this.panel60.Controls.Add(this.settingsMudurYardimcisiAdi_textbox);
+            this.panel60.Controls.Add(this.label109);
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel60.Location = new System.Drawing.Point(0, 416);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(763, 109);
+            this.panel60.TabIndex = 86;
+            // 
+            // settingsOkulMuduruAdiButon_button
+            // 
+            this.settingsOkulMuduruAdiButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsOkulMuduruAdiButon_button.Location = new System.Drawing.Point(555, 71);
+            this.settingsOkulMuduruAdiButon_button.Name = "settingsOkulMuduruAdiButon_button";
+            this.settingsOkulMuduruAdiButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsOkulMuduruAdiButon_button.TabIndex = 77;
+            this.settingsOkulMuduruAdiButon_button.Text = "DÜZENLE";
+            this.settingsOkulMuduruAdiButon_button.UseVisualStyleBackColor = true;
+            this.settingsOkulMuduruAdiButon_button.Click += new System.EventHandler(this.settingsOkulMuduruAdiButon_button_Click);
+            // 
+            // okulMuduruIsmi_text
+            // 
+            this.okulMuduruIsmi_text.Location = new System.Drawing.Point(226, 76);
+            this.okulMuduruIsmi_text.Name = "okulMuduruIsmi_text";
+            this.okulMuduruIsmi_text.Size = new System.Drawing.Size(306, 24);
+            this.okulMuduruIsmi_text.TabIndex = 76;
+            this.okulMuduruIsmi_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.okulMuduruIsmi_text_KeyDown);
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label117.Location = new System.Drawing.Point(56, 75);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(163, 21);
+            this.label117.TabIndex = 75;
+            this.label117.Text = "Okul Müdürü İsmi : ";
+            // 
+            // settingsKoordinatorMudurYardimcisiAdiButon_button
+            // 
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Location = new System.Drawing.Point(554, 38);
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Name = "settingsKoordinatorMudurYardimcisiAdiButon_button";
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.TabIndex = 74;
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Text = "DÜZENLE";
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.UseVisualStyleBackColor = true;
+            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Click += new System.EventHandler(this.settingsKoordinatorMudurYardimcisiAdiButon_button_Click);
+            // 
+            // KoordinatorMuduryardimcisiIsmi_text
+            // 
+            this.KoordinatorMuduryardimcisiIsmi_text.Location = new System.Drawing.Point(226, 43);
+            this.KoordinatorMuduryardimcisiIsmi_text.Name = "KoordinatorMuduryardimcisiIsmi_text";
+            this.KoordinatorMuduryardimcisiIsmi_text.Size = new System.Drawing.Size(306, 24);
+            this.KoordinatorMuduryardimcisiIsmi_text.TabIndex = 73;
+            this.KoordinatorMuduryardimcisiIsmi_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KoordinatorMuduryardimcisiIsmi_text_KeyDown);
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label116.Location = new System.Drawing.Point(6, 42);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(213, 21);
+            this.label116.TabIndex = 72;
+            this.label116.Text = "K. Müdür Yardımcısı İsmi : ";
+            // 
+            // settingsMudurYardimcisiAdiButon_button
+            // 
+            this.settingsMudurYardimcisiAdiButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsMudurYardimcisiAdiButon_button.Location = new System.Drawing.Point(555, 5);
+            this.settingsMudurYardimcisiAdiButon_button.Name = "settingsMudurYardimcisiAdiButon_button";
+            this.settingsMudurYardimcisiAdiButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsMudurYardimcisiAdiButon_button.TabIndex = 71;
+            this.settingsMudurYardimcisiAdiButon_button.Text = "DÜZENLE";
+            this.settingsMudurYardimcisiAdiButon_button.UseVisualStyleBackColor = true;
+            this.settingsMudurYardimcisiAdiButon_button.Click += new System.EventHandler(this.settingsMudurYardimcisiAdiButon_button_Click);
+            // 
+            // settingsMudurYardimcisiAdi_textbox
+            // 
+            this.settingsMudurYardimcisiAdi_textbox.Location = new System.Drawing.Point(226, 10);
+            this.settingsMudurYardimcisiAdi_textbox.Name = "settingsMudurYardimcisiAdi_textbox";
+            this.settingsMudurYardimcisiAdi_textbox.Size = new System.Drawing.Size(306, 24);
+            this.settingsMudurYardimcisiAdi_textbox.TabIndex = 64;
+            this.settingsMudurYardimcisiAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsMudurYardimcisiAdi_textbox_KeyDown);
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label109.Location = new System.Drawing.Point(25, 9);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(194, 21);
+            this.label109.TabIndex = 63;
+            this.label109.Text = "Müdür Yardımcısı İsmi : ";
+            // 
+            // panel16
+            // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel16.Controls.Add(this.settingsVarsayilanStajBitisTarihi_datetimepicker);
+            this.panel16.Controls.Add(this.label83);
+            this.panel16.Controls.Add(this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker);
+            this.panel16.Controls.Add(this.label82);
+            this.panel16.Controls.Add(this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel16.Location = new System.Drawing.Point(0, 341);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(763, 75);
+            this.panel16.TabIndex = 85;
+            // 
+            // settingsVarsayilanStajBitisTarihi_datetimepicker
+            // 
+            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Location = new System.Drawing.Point(332, 42);
+            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Name = "settingsVarsayilanStajBitisTarihi_datetimepicker";
+            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Size = new System.Drawing.Size(200, 24);
+            this.settingsVarsayilanStajBitisTarihi_datetimepicker.TabIndex = 75;
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label83.Location = new System.Drawing.Point(47, 43);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(279, 19);
+            this.label83.TabIndex = 74;
+            this.label83.Text = "Staj Bitiş Tarihi Varsayılan Olarak Bu Olsun : ";
+            // 
+            // settingsVarsayilanStajaBaslamaTarihi_datetimepicker
+            // 
+            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Location = new System.Drawing.Point(332, 8);
+            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Name = "settingsVarsayilanStajaBaslamaTarihi_datetimepicker";
+            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Size = new System.Drawing.Size(200, 24);
+            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.TabIndex = 73;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label82.Location = new System.Drawing.Point(15, 9);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(311, 19);
+            this.label82.TabIndex = 72;
+            this.label82.Text = "Staj Başlangıç Tarihi Varsayılan Olarak Bu Olsun : ";
+            // 
+            // settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button
+            // 
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Location = new System.Drawing.Point(554, 21);
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Name = "settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button";
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.TabIndex = 71;
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Text = "DÜZENLE";
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.UseVisualStyleBackColor = true;
+            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Click += new System.EventHandler(this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button_Click);
+            // 
+            // settingsTumunuSıfırlaButon_button
+            // 
+            this.settingsTumunuSıfırlaButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsTumunuSıfırlaButon_button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.settingsTumunuSıfırlaButon_button.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsTumunuSıfırlaButon_button.Location = new System.Drawing.Point(0, 531);
+            this.settingsTumunuSıfırlaButon_button.Name = "settingsTumunuSıfırlaButon_button";
+            this.settingsTumunuSıfırlaButon_button.Size = new System.Drawing.Size(763, 79);
+            this.settingsTumunuSıfırlaButon_button.TabIndex = 84;
+            this.settingsTumunuSıfırlaButon_button.Text = "TÜMÜNÜ SIFIRLA";
+            this.settingsTumunuSıfırlaButon_button.UseVisualStyleBackColor = true;
+            this.settingsTumunuSıfırlaButon_button.Click += new System.EventHandler(this.settingsTumunuSıfırlaButon_button_Click);
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Controls.Add(this.panel23);
+            this.panel13.Controls.Add(this.settingsOzelIllerPanel_panel);
+            this.panel13.Controls.Add(this.settingsOzelIller_radio);
+            this.panel13.Controls.Add(this.settingsTumIller_radio);
+            this.panel13.Controls.Add(this.settingsTumIllerOzelIllerDuzenleButon_button);
+            this.panel13.Controls.Add(this.label81);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 229);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(763, 112);
+            this.panel13.TabIndex = 84;
+            // 
+            // panel23
+            // 
+            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel23.Controls.Add(this.settingsEgitimOgretimYili_button);
+            this.panel23.Controls.Add(this.label118);
+            this.panel23.Controls.Add(this.EgitimOgretimYili2_textbox);
+            this.panel23.Controls.Add(this.EgitimOgretimYili1_textbox);
+            this.panel23.Controls.Add(this.label114);
+            this.panel23.Location = new System.Drawing.Point(16, 43);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(445, 63);
+            this.panel23.TabIndex = 75;
+            // 
+            // settingsEgitimOgretimYili_button
+            // 
+            this.settingsEgitimOgretimYili_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsEgitimOgretimYili_button.Location = new System.Drawing.Point(353, 15);
+            this.settingsEgitimOgretimYili_button.Name = "settingsEgitimOgretimYili_button";
+            this.settingsEgitimOgretimYili_button.Size = new System.Drawing.Size(80, 30);
+            this.settingsEgitimOgretimYili_button.TabIndex = 72;
+            this.settingsEgitimOgretimYili_button.Text = "DÜZENLE";
+            this.settingsEgitimOgretimYili_button.UseVisualStyleBackColor = true;
+            this.settingsEgitimOgretimYili_button.Click += new System.EventHandler(this.settingsEgitimOgretimYili_button_Click);
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label118.Location = new System.Drawing.Point(233, 20);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(23, 19);
+            this.label118.TabIndex = 67;
+            this.label118.Text = " / ";
+            // 
+            // EgitimOgretimYili2_textbox
+            // 
+            this.EgitimOgretimYili2_textbox.Location = new System.Drawing.Point(260, 15);
+            this.EgitimOgretimYili2_textbox.Multiline = true;
+            this.EgitimOgretimYili2_textbox.Name = "EgitimOgretimYili2_textbox";
+            this.EgitimOgretimYili2_textbox.Size = new System.Drawing.Size(85, 30);
+            this.EgitimOgretimYili2_textbox.TabIndex = 66;
+            this.EgitimOgretimYili2_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EgitimOgretimYili2_textbox_KeyDown);
+            // 
+            // EgitimOgretimYili1_textbox
+            // 
+            this.EgitimOgretimYili1_textbox.Location = new System.Drawing.Point(145, 15);
+            this.EgitimOgretimYili1_textbox.Multiline = true;
+            this.EgitimOgretimYili1_textbox.Name = "EgitimOgretimYili1_textbox";
+            this.EgitimOgretimYili1_textbox.Size = new System.Drawing.Size(85, 30);
+            this.EgitimOgretimYili1_textbox.TabIndex = 65;
+            this.EgitimOgretimYili1_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EgitimOgretimYili1_textbox_KeyDown);
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label114.Location = new System.Drawing.Point(5, 20);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(134, 19);
+            this.label114.TabIndex = 64;
+            this.label114.Text = "Eğitim Öğretim Yılı : ";
+            // 
+            // settingsOzelIllerPanel_panel
+            // 
+            this.settingsOzelIllerPanel_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.settingsOzelIllerPanel_panel.Controls.Add(this.settingsOzelIller_combo);
+            this.settingsOzelIllerPanel_panel.Location = new System.Drawing.Point(466, 43);
+            this.settingsOzelIllerPanel_panel.Name = "settingsOzelIllerPanel_panel";
+            this.settingsOzelIllerPanel_panel.Size = new System.Drawing.Size(254, 63);
+            this.settingsOzelIllerPanel_panel.TabIndex = 74;
+            // 
+            // settingsOzelIller_combo
+            // 
+            this.settingsOzelIller_combo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsOzelIller_combo.FormattingEnabled = true;
+            this.settingsOzelIller_combo.Location = new System.Drawing.Point(21, 16);
+            this.settingsOzelIller_combo.Name = "settingsOzelIller_combo";
+            this.settingsOzelIller_combo.Size = new System.Drawing.Size(210, 27);
+            this.settingsOzelIller_combo.TabIndex = 0;
+            this.settingsOzelIller_combo.TextChanged += new System.EventHandler(this.settingsOzelIller_combo_TextChanged);
+            this.settingsOzelIller_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsOzelIller_combo_KeyDown);
+            // 
+            // settingsOzelIller_radio
+            // 
+            this.settingsOzelIller_radio.AutoSize = true;
+            this.settingsOzelIller_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsOzelIller_radio.Location = new System.Drawing.Point(408, 8);
+            this.settingsOzelIller_radio.Name = "settingsOzelIller_radio";
+            this.settingsOzelIller_radio.Size = new System.Drawing.Size(54, 23);
+            this.settingsOzelIller_radio.TabIndex = 73;
+            this.settingsOzelIller_radio.Text = "Özel";
+            this.settingsOzelIller_radio.UseVisualStyleBackColor = true;
+            this.settingsOzelIller_radio.CheckedChanged += new System.EventHandler(this.settingsOzelIller_radio_CheckedChanged);
+            // 
+            // settingsTumIller_radio
+            // 
+            this.settingsTumIller_radio.AutoSize = true;
+            this.settingsTumIller_radio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsTumIller_radio.Location = new System.Drawing.Point(312, 8);
+            this.settingsTumIller_radio.Name = "settingsTumIller_radio";
+            this.settingsTumIller_radio.Size = new System.Drawing.Size(80, 23);
+            this.settingsTumIller_radio.TabIndex = 72;
+            this.settingsTumIller_radio.Text = "Tüm İller";
+            this.settingsTumIller_radio.UseVisualStyleBackColor = true;
+            // 
+            // settingsTumIllerOzelIllerDuzenleButon_button
+            // 
+            this.settingsTumIllerOzelIllerDuzenleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsTumIllerOzelIllerDuzenleButon_button.Location = new System.Drawing.Point(554, 7);
+            this.settingsTumIllerOzelIllerDuzenleButon_button.Name = "settingsTumIllerOzelIllerDuzenleButon_button";
+            this.settingsTumIllerOzelIllerDuzenleButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsTumIllerOzelIllerDuzenleButon_button.TabIndex = 71;
+            this.settingsTumIllerOzelIllerDuzenleButon_button.Text = "DÜZENLE";
+            this.settingsTumIllerOzelIllerDuzenleButon_button.UseVisualStyleBackColor = true;
+            this.settingsTumIllerOzelIllerDuzenleButon_button.Click += new System.EventHandler(this.settingsTumIllerOzelIllerDuzenleButon_button_Click);
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label81.Location = new System.Drawing.Point(14, 10);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(282, 19);
+            this.label81.TabIndex = 63;
+            this.label81.Text = "Firma İşlemleri Sayfasında Listelenecek İller : ";
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.settingsSinifEkleButon_button);
+            this.panel11.Controls.Add(this.settingsSinifAdi_textbox);
+            this.panel11.Controls.Add(this.label80);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 167);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(763, 62);
+            this.panel11.TabIndex = 83;
+            // 
+            // settingsSinifEkleButon_button
+            // 
+            this.settingsSinifEkleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsSinifEkleButon_button.Location = new System.Drawing.Point(554, 17);
+            this.settingsSinifEkleButon_button.Name = "settingsSinifEkleButon_button";
+            this.settingsSinifEkleButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsSinifEkleButon_button.TabIndex = 71;
+            this.settingsSinifEkleButon_button.Text = "EKLE";
+            this.settingsSinifEkleButon_button.UseVisualStyleBackColor = true;
+            this.settingsSinifEkleButon_button.Click += new System.EventHandler(this.settingsSinifEkleButon_button_Click);
+            // 
+            // settingsSinifAdi_textbox
+            // 
+            this.settingsSinifAdi_textbox.Location = new System.Drawing.Point(226, 20);
+            this.settingsSinifAdi_textbox.Name = "settingsSinifAdi_textbox";
+            this.settingsSinifAdi_textbox.Size = new System.Drawing.Size(306, 24);
+            this.settingsSinifAdi_textbox.TabIndex = 64;
+            this.settingsSinifAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsSinifAdi_textbox_KeyDown);
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label80.Location = new System.Drawing.Point(132, 21);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(87, 21);
+            this.label80.TabIndex = 63;
+            this.label80.Text = "Sınıf Adı : ";
+            // 
+            // panel9
+            // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel9.Controls.Add(this.settingsAlanAdlariTumunuSil_button);
+            this.panel9.Controls.Add(this.label76);
+            this.panel9.Controls.Add(this.settingsAlanAdiEkleButon_button);
+            this.panel9.Controls.Add(this.settingsAlanDaliEkleButon_button);
+            this.panel9.Controls.Add(this.settingsAlanaAitDalAdi_textbox);
+            this.panel9.Controls.Add(this.label77);
+            this.panel9.Controls.Add(this.settingsAlanAdi_textbox);
+            this.panel9.Controls.Add(this.label74);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 68);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(763, 99);
+            this.panel9.TabIndex = 81;
+            // 
+            // settingsAlanAdlariTumunuSil_button
+            // 
+            this.settingsAlanAdlariTumunuSil_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsAlanAdlariTumunuSil_button.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsAlanAdlariTumunuSil_button.Location = new System.Drawing.Point(669, 8);
+            this.settingsAlanAdlariTumunuSil_button.Name = "settingsAlanAdlariTumunuSil_button";
+            this.settingsAlanAdlariTumunuSil_button.Size = new System.Drawing.Size(80, 65);
+            this.settingsAlanAdlariTumunuSil_button.TabIndex = 72;
+            this.settingsAlanAdlariTumunuSil_button.Text = "TÜMÜNÜ\r\nSİL";
+            this.settingsAlanAdlariTumunuSil_button.UseVisualStyleBackColor = true;
+            this.settingsAlanAdlariTumunuSil_button.Click += new System.EventHandler(this.settingsAlanAdlariTumunuSil_button_Click);
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label76.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label76.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label76.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label76.Location = new System.Drawing.Point(0, 79);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(721, 18);
+            this.label76.TabIndex = 71;
+            this.label76.Text = "Not : Lütfen alan dalı ismi eklerken alan adını boş bırakmayınız. Eğer birden faz" +
+    "la alan dalı ekleyecekseniz her seferinde ayrı ayrı ekleyiniz.\r\n";
+            // 
+            // settingsAlanAdiEkleButon_button
+            // 
+            this.settingsAlanAdiEkleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsAlanAdiEkleButon_button.Location = new System.Drawing.Point(554, 8);
+            this.settingsAlanAdiEkleButon_button.Name = "settingsAlanAdiEkleButon_button";
+            this.settingsAlanAdiEkleButon_button.Size = new System.Drawing.Size(110, 30);
+            this.settingsAlanAdiEkleButon_button.TabIndex = 70;
+            this.settingsAlanAdiEkleButon_button.Text = "EKLE";
+            this.settingsAlanAdiEkleButon_button.UseVisualStyleBackColor = true;
+            this.settingsAlanAdiEkleButon_button.Click += new System.EventHandler(this.settingsAlanAdiEkleButon_button_Click);
+            // 
+            // settingsAlanDaliEkleButon_button
+            // 
+            this.settingsAlanDaliEkleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsAlanDaliEkleButon_button.Location = new System.Drawing.Point(554, 43);
+            this.settingsAlanDaliEkleButon_button.Name = "settingsAlanDaliEkleButon_button";
+            this.settingsAlanDaliEkleButon_button.Size = new System.Drawing.Size(110, 30);
+            this.settingsAlanDaliEkleButon_button.TabIndex = 69;
+            this.settingsAlanDaliEkleButon_button.Text = "EKLE";
+            this.settingsAlanDaliEkleButon_button.UseVisualStyleBackColor = true;
+            this.settingsAlanDaliEkleButon_button.Click += new System.EventHandler(this.settingsAlanDaliEkleButon_button_Click);
+            // 
+            // settingsAlanaAitDalAdi_textbox
+            // 
+            this.settingsAlanaAitDalAdi_textbox.Location = new System.Drawing.Point(226, 47);
+            this.settingsAlanaAitDalAdi_textbox.Name = "settingsAlanaAitDalAdi_textbox";
+            this.settingsAlanaAitDalAdi_textbox.Size = new System.Drawing.Size(306, 24);
+            this.settingsAlanaAitDalAdi_textbox.TabIndex = 68;
+            this.settingsAlanaAitDalAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsAlanaAitDalAdi_textbox_KeyDown);
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label77.Location = new System.Drawing.Point(66, 47);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(153, 21);
+            this.label77.TabIndex = 67;
+            this.label77.Text = "Alana Ait Dal Adı : ";
+            // 
+            // settingsAlanAdi_textbox
+            // 
+            this.settingsAlanAdi_textbox.Location = new System.Drawing.Point(226, 11);
+            this.settingsAlanAdi_textbox.Name = "settingsAlanAdi_textbox";
+            this.settingsAlanAdi_textbox.Size = new System.Drawing.Size(306, 24);
+            this.settingsAlanAdi_textbox.TabIndex = 66;
+            this.settingsAlanAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsAlanAdi_textbox_KeyDown);
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label74.Location = new System.Drawing.Point(131, 12);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(88, 21);
+            this.label74.TabIndex = 65;
+            this.label74.Text = "Alan Adı : ";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.settingsOkulAdiDuzenleButon_button);
+            this.panel7.Controls.Add(this.settingsOkulAdi_textbox);
+            this.panel7.Controls.Add(this.label73);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(763, 68);
+            this.panel7.TabIndex = 80;
+            // 
+            // settingsOkulAdiDuzenleButon_button
+            // 
+            this.settingsOkulAdiDuzenleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsOkulAdiDuzenleButon_button.Location = new System.Drawing.Point(554, 14);
+            this.settingsOkulAdiDuzenleButon_button.Name = "settingsOkulAdiDuzenleButon_button";
+            this.settingsOkulAdiDuzenleButon_button.Size = new System.Drawing.Size(141, 30);
+            this.settingsOkulAdiDuzenleButon_button.TabIndex = 71;
+            this.settingsOkulAdiDuzenleButon_button.Text = "DÜZENLE";
+            this.settingsOkulAdiDuzenleButon_button.UseVisualStyleBackColor = true;
+            this.settingsOkulAdiDuzenleButon_button.Click += new System.EventHandler(this.settingsOkulAdiDuzenleButon_button_Click);
+            // 
+            // settingsOkulAdi_textbox
+            // 
+            this.settingsOkulAdi_textbox.Location = new System.Drawing.Point(226, 17);
+            this.settingsOkulAdi_textbox.Name = "settingsOkulAdi_textbox";
+            this.settingsOkulAdi_textbox.Size = new System.Drawing.Size(306, 24);
+            this.settingsOkulAdi_textbox.TabIndex = 64;
+            this.settingsOkulAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsOkulAdi_textbox_KeyDown);
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label73.Location = new System.Drawing.Point(129, 18);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(90, 21);
+            this.label73.TabIndex = 63;
+            this.label73.Text = "Okul Adı : ";
+            // 
+            // tabPage24
+            // 
+            this.tabPage24.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage24.Controls.Add(this.panel100);
+            this.tabPage24.Controls.Add(this.panel59);
+            this.tabPage24.Controls.Add(this.panel58);
+            this.tabPage24.Controls.Add(this.panel57);
+            this.tabPage24.Controls.Add(this.panel48);
+            this.tabPage24.Controls.Add(this.settingsTemelAyarlar_KAYDET_button);
+            this.tabPage24.Location = new System.Drawing.Point(4, 28);
+            this.tabPage24.Name = "tabPage24";
+            this.tabPage24.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage24.TabIndex = 2;
+            this.tabPage24.Text = "TEMEL AYARLAR";
+            // 
+            // panel100
+            // 
+            this.panel100.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel100.Controls.Add(this.GorevHaftasi_richtextbox);
+            this.panel100.Controls.Add(this.label286);
+            this.panel100.Location = new System.Drawing.Point(894, 21);
+            this.panel100.Name = "panel100";
+            this.panel100.Padding = new System.Windows.Forms.Padding(10);
+            this.panel100.Size = new System.Drawing.Size(236, 279);
+            this.panel100.TabIndex = 30;
+            // 
+            // GorevHaftasi_richtextbox
+            // 
+            this.GorevHaftasi_richtextbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.GorevHaftasi_richtextbox.Location = new System.Drawing.Point(10, 32);
+            this.GorevHaftasi_richtextbox.Name = "GorevHaftasi_richtextbox";
+            this.GorevHaftasi_richtextbox.Size = new System.Drawing.Size(212, 233);
+            this.GorevHaftasi_richtextbox.TabIndex = 1;
+            this.GorevHaftasi_richtextbox.Text = "";
+            // 
+            // label286
+            // 
+            this.label286.AutoSize = true;
+            this.label286.Location = new System.Drawing.Point(49, 7);
+            this.label286.Name = "label286";
+            this.label286.Size = new System.Drawing.Size(139, 19);
+            this.label286.TabIndex = 0;
+            this.label286.Text = "Görev Tarihi Haftaları";
+            // 
+            // panel59
+            // 
+            this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel59.Controls.Add(this.label104);
+            this.panel59.Controls.Add(this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton);
+            this.panel59.Controls.Add(this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton);
+            this.panel59.Location = new System.Drawing.Point(26, 310);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(861, 85);
+            this.panel59.TabIndex = 29;
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label104.Location = new System.Drawing.Point(12, 12);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(433, 21);
+            this.label104.TabIndex = 4;
+            this.label104.Text = "Sol menüde İşletme sayısı ve diğer veriler listelensin mi?";
+            // 
+            // SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton
+            // 
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.AutoSize = true;
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Location = new System.Drawing.Point(45, 48);
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Name = "SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton";
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Size = new System.Drawing.Size(57, 23);
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.TabIndex = 17;
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Text = "EVET";
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton
+            // 
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.AutoSize = true;
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Location = new System.Drawing.Point(121, 48);
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Name = "SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton";
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Size = new System.Drawing.Size(66, 23);
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.TabIndex = 18;
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Text = "HAYIR";
+            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // panel58
+            // 
+            this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel58.Controls.Add(this.label102);
+            this.panel58.Controls.Add(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton);
+            this.panel58.Controls.Add(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton);
+            this.panel58.Location = new System.Drawing.Point(26, 215);
+            this.panel58.Name = "panel58";
+            this.panel58.Size = new System.Drawing.Size(861, 85);
+            this.panel58.TabIndex = 28;
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label102.Location = new System.Drawing.Point(12, 12);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(849, 21);
+            this.label102.TabIndex = 3;
+            this.label102.Text = "Program başlatıldığında sol menüden herhangi birşey seçilmesin, ben seçene kadar " +
+    "da sağ menü aktif olmasın";
+            // 
+            // ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton
+            // 
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Location = new System.Drawing.Point(47, 48);
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAkti" +
+    "fOlmasın_EVET_radiobutton";
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Size = new System.Drawing.Size(152, 23);
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.TabIndex = 7;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Text = "EVET(Tercih Edilmez)";
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.UseVisualStyleBackColor = true;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.CheckedChanged += new System.EventHandler(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton_CheckedChanged);
+            // 
+            // ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton
+            // 
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Location = new System.Drawing.Point(206, 48);
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAkti" +
+    "fOlmasın_HAYIR_radiobutton";
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Size = new System.Drawing.Size(66, 23);
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.TabIndex = 8;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Text = "HAYIR";
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.UseVisualStyleBackColor = true;
+            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.CheckedChanged += new System.EventHandler(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton_CheckedChanged);
+            // 
+            // panel57
+            // 
+            this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel57.Controls.Add(this.label103);
+            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton);
+            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton);
+            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton);
+            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton);
+            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton);
+            this.panel57.Location = new System.Drawing.Point(26, 120);
+            this.panel57.Name = "panel57";
+            this.panel57.Size = new System.Drawing.Size(861, 85);
+            this.panel57.TabIndex = 27;
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.BackColor = System.Drawing.Color.Transparent;
+            this.label103.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label103.Location = new System.Drawing.Point(12, 12);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(588, 21);
+            this.label103.TabIndex = 2;
+            this.label103.Text = "Program başlatıldığında üst menüden hangi buton otomatik olarak seçilsin?";
+            // 
+            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton
+            // 
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Location = new System.Drawing.Point(47, 45);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri" +
+    "_radiobutton";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Size = new System.Drawing.Size(156, 23);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.TabIndex = 12;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Text = "ÖĞRENCİ İŞLEMLERİ";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton
+            // 
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Location = new System.Drawing.Point(205, 45);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgret" +
+    "men_radiobutton";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Size = new System.Drawing.Size(203, 23);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.TabIndex = 13;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Text = "KOORDİNATÖR ÖĞRETMEN";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton
+            // 
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Location = new System.Drawing.Point(418, 45);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_r" +
+    "adiobutton";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Size = new System.Drawing.Size(137, 23);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.TabIndex = 14;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Text = "FİRMA İŞLEMLERİ";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton
+            // 
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Location = new System.Drawing.Point(561, 45);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutt" +
+    "on";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Size = new System.Drawing.Size(74, 23);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.TabIndex = 15;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Text = "YAZDIR";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton
+            // 
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Location = new System.Drawing.Point(641, 45);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobut" +
+    "ton";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Size = new System.Drawing.Size(85, 23);
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.TabIndex = 16;
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Text = "AYARLAR";
+            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // panel48
+            // 
+            this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel48.Controls.Add(this.label101);
+            this.panel48.Controls.Add(this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton);
+            this.panel48.Controls.Add(this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton);
+            this.panel48.Controls.Add(this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton);
+            this.panel48.Location = new System.Drawing.Point(26, 21);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(861, 85);
+            this.panel48.TabIndex = 26;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label101.Location = new System.Drawing.Point(12, 12);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(586, 21);
+            this.label101.TabIndex = 1;
+            this.label101.Text = "Program başlatıldığında sol menüden hangi buton otomatik olarak seçilsin?";
+            // 
+            // ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton
+            // 
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Location = new System.Drawing.Point(47, 45);
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton";
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Size = new System.Drawing.Size(47, 23);
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.TabIndex = 9;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Text = "KIŞ";
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton
+            // 
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Location = new System.Drawing.Point(105, 45);
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton";
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Size = new System.Drawing.Size(52, 23);
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.TabIndex = 10;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Text = "YAZ";
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton
+            // 
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.AutoSize = true;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Location = new System.Drawing.Point(169, 45);
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutto" +
+    "n";
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Size = new System.Drawing.Size(75, 23);
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.TabIndex = 11;
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Text = "MESEM";
+            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.UseVisualStyleBackColor = true;
+            // 
+            // settingsTemelAyarlar_KAYDET_button
+            // 
+            this.settingsTemelAyarlar_KAYDET_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsTemelAyarlar_KAYDET_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsTemelAyarlar_KAYDET_button.Location = new System.Drawing.Point(27, 411);
+            this.settingsTemelAyarlar_KAYDET_button.Name = "settingsTemelAyarlar_KAYDET_button";
+            this.settingsTemelAyarlar_KAYDET_button.Size = new System.Drawing.Size(860, 61);
+            this.settingsTemelAyarlar_KAYDET_button.TabIndex = 24;
+            this.settingsTemelAyarlar_KAYDET_button.Text = "KAYDET";
+            this.settingsTemelAyarlar_KAYDET_button.UseVisualStyleBackColor = true;
+            this.settingsTemelAyarlar_KAYDET_button.Click += new System.EventHandler(this.settingsTemelAyarlar_KAYDET_button_Click);
+            // 
+            // tabPage23
+            // 
+            this.tabPage23.Controls.Add(this.panel44);
+            this.tabPage23.Controls.Add(this.panel45);
+            this.tabPage23.Location = new System.Drawing.Point(4, 28);
+            this.tabPage23.Name = "tabPage23";
+            this.tabPage23.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage23.TabIndex = 1;
+            this.tabPage23.Text = "SORGU ÖZELLEŞTİRMELERİ";
+            this.tabPage23.UseVisualStyleBackColor = true;
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel44.Controls.Add(this.panel46);
+            this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel44.Location = new System.Drawing.Point(0, 52);
+            this.panel44.Name = "panel44";
+            this.panel44.Padding = new System.Windows.Forms.Padding(30);
+            this.panel44.Size = new System.Drawing.Size(1143, 566);
+            this.panel44.TabIndex = 9;
+            // 
+            // panel46
+            // 
+            this.panel46.Controls.Add(this.panel51);
+            this.panel46.Controls.Add(this.panel49);
+            this.panel46.Controls.Add(this.panel47);
+            this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel46.Location = new System.Drawing.Point(30, 30);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(1083, 506);
+            this.panel46.TabIndex = 0;
+            // 
+            // panel51
+            // 
+            this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel51.Controls.Add(this.panel52);
+            this.panel51.Controls.Add(this.panel55);
+            this.panel51.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel51.Location = new System.Drawing.Point(716, 0);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(367, 506);
+            this.panel51.TabIndex = 2;
+            // 
+            // panel52
+            // 
+            this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOTC_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeIbanNo_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeSicilNo_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUODT_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOSoyadi_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOAdi_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeDal_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeBolum_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeTelNo_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeYetkilisi_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeTamAdres_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeAdresIlce_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeAdresIl_checkbox);
+            this.panel52.Controls.Add(this.settingsColonNameIsletmeAd_checkbox);
+            this.panel52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel52.Location = new System.Drawing.Point(0, 52);
+            this.panel52.Name = "panel52";
+            this.panel52.Padding = new System.Windows.Forms.Padding(5);
+            this.panel52.Size = new System.Drawing.Size(365, 452);
+            this.panel52.TabIndex = 8;
+            // 
+            // settingsColonNameIsletmeUOTC_checkbox
+            // 
+            this.settingsColonNameIsletmeUOTC_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUOTC_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUOTC_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUOTC_checkbox.Location = new System.Drawing.Point(11, 360);
+            this.settingsColonNameIsletmeUOTC_checkbox.Name = "settingsColonNameIsletmeUOTC_checkbox";
+            this.settingsColonNameIsletmeUOTC_checkbox.Size = new System.Drawing.Size(277, 25);
+            this.settingsColonNameIsletmeUOTC_checkbox.TabIndex = 69;
+            this.settingsColonNameIsletmeUOTC_checkbox.Tag = "IsletmeUstaOgreticiTcNo";
+            this.settingsColonNameIsletmeUOTC_checkbox.Text = "Usta Öğreticinin TC Kimlik No\'su";
+            this.settingsColonNameIsletmeUOTC_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeIbanNo_checkbox
+            // 
+            this.settingsColonNameIsletmeIbanNo_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeIbanNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeIbanNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeIbanNo_checkbox.Location = new System.Drawing.Point(11, 418);
+            this.settingsColonNameIsletmeIbanNo_checkbox.Name = "settingsColonNameIsletmeIbanNo_checkbox";
+            this.settingsColonNameIsletmeIbanNo_checkbox.Size = new System.Drawing.Size(151, 25);
+            this.settingsColonNameIsletmeIbanNo_checkbox.TabIndex = 68;
+            this.settingsColonNameIsletmeIbanNo_checkbox.Tag = "IsletmeIbanNo";
+            this.settingsColonNameIsletmeIbanNo_checkbox.Text = "İşletme İban No";
+            this.settingsColonNameIsletmeIbanNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeSicilNo_checkbox
+            // 
+            this.settingsColonNameIsletmeSicilNo_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeSicilNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeSicilNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeSicilNo_checkbox.Location = new System.Drawing.Point(11, 389);
+            this.settingsColonNameIsletmeSicilNo_checkbox.Name = "settingsColonNameIsletmeSicilNo_checkbox";
+            this.settingsColonNameIsletmeSicilNo_checkbox.Size = new System.Drawing.Size(146, 25);
+            this.settingsColonNameIsletmeSicilNo_checkbox.TabIndex = 67;
+            this.settingsColonNameIsletmeSicilNo_checkbox.Tag = "IsletmeSicilNo";
+            this.settingsColonNameIsletmeSicilNo_checkbox.Text = "İşletme Sicil No";
+            this.settingsColonNameIsletmeSicilNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUODT_checkbox
+            // 
+            this.settingsColonNameIsletmeUODT_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUODT_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUODT_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUODT_checkbox.Location = new System.Drawing.Point(11, 331);
+            this.settingsColonNameIsletmeUODT_checkbox.Name = "settingsColonNameIsletmeUODT_checkbox";
+            this.settingsColonNameIsletmeUODT_checkbox.Size = new System.Drawing.Size(261, 25);
+            this.settingsColonNameIsletmeUODT_checkbox.TabIndex = 66;
+            this.settingsColonNameIsletmeUODT_checkbox.Tag = "IsletmeUstaOgreticiDogumTarihi";
+            this.settingsColonNameIsletmeUODT_checkbox.Text = "Usta Öğreticinin Doğum Tarihi";
+            this.settingsColonNameIsletmeUODT_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUOSoyadi_checkbox
+            // 
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Location = new System.Drawing.Point(11, 302);
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Name = "settingsColonNameIsletmeUOSoyadi_checkbox";
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Size = new System.Drawing.Size(183, 25);
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.TabIndex = 65;
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Tag = "IsletmeUstaOgreticiSoyadi";
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.Text = "Usta Öğretici Soyadı";
+            this.settingsColonNameIsletmeUOSoyadi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUOAdi_checkbox
+            // 
+            this.settingsColonNameIsletmeUOAdi_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUOAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUOAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUOAdi_checkbox.Location = new System.Drawing.Point(11, 273);
+            this.settingsColonNameIsletmeUOAdi_checkbox.Name = "settingsColonNameIsletmeUOAdi_checkbox";
+            this.settingsColonNameIsletmeUOAdi_checkbox.Size = new System.Drawing.Size(158, 25);
+            this.settingsColonNameIsletmeUOAdi_checkbox.TabIndex = 64;
+            this.settingsColonNameIsletmeUOAdi_checkbox.Tag = "IsletmeUstaOgreticiAdi";
+            this.settingsColonNameIsletmeUOAdi_checkbox.Text = "Usta Öğretici Adı";
+            this.settingsColonNameIsletmeUOAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeDal_checkbox
+            // 
+            this.settingsColonNameIsletmeDal_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeDal_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeDal_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeDal_checkbox.Location = new System.Drawing.Point(11, 244);
+            this.settingsColonNameIsletmeDal_checkbox.Name = "settingsColonNameIsletmeDal_checkbox";
+            this.settingsColonNameIsletmeDal_checkbox.Size = new System.Drawing.Size(118, 25);
+            this.settingsColonNameIsletmeDal_checkbox.TabIndex = 63;
+            this.settingsColonNameIsletmeDal_checkbox.Tag = "IsletmeDal";
+            this.settingsColonNameIsletmeDal_checkbox.Text = "İşletme Dalı";
+            this.settingsColonNameIsletmeDal_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeBolum_checkbox
+            // 
+            this.settingsColonNameIsletmeBolum_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeBolum_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeBolum_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeBolum_checkbox.Location = new System.Drawing.Point(11, 215);
+            this.settingsColonNameIsletmeBolum_checkbox.Name = "settingsColonNameIsletmeBolum_checkbox";
+            this.settingsColonNameIsletmeBolum_checkbox.Size = new System.Drawing.Size(127, 25);
+            this.settingsColonNameIsletmeBolum_checkbox.TabIndex = 62;
+            this.settingsColonNameIsletmeBolum_checkbox.Tag = "IsletmeBolum";
+            this.settingsColonNameIsletmeBolum_checkbox.Text = "İşletme Alanı";
+            this.settingsColonNameIsletmeBolum_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox
+            // 
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Location = new System.Drawing.Point(11, 186);
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Name = "settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox";
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Size = new System.Drawing.Size(145, 25);
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.TabIndex = 61;
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Tag = "IsletmeUstaOgreticilikVarmiYokmu";
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Text = "Usta Öğreticilik";
+            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeTelNo_checkbox
+            // 
+            this.settingsColonNameIsletmeTelNo_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeTelNo_checkbox.Location = new System.Drawing.Point(11, 157);
+            this.settingsColonNameIsletmeTelNo_checkbox.Name = "settingsColonNameIsletmeTelNo_checkbox";
+            this.settingsColonNameIsletmeTelNo_checkbox.Size = new System.Drawing.Size(86, 25);
+            this.settingsColonNameIsletmeTelNo_checkbox.TabIndex = 60;
+            this.settingsColonNameIsletmeTelNo_checkbox.Tag = "IsletmeTelNo";
+            this.settingsColonNameIsletmeTelNo_checkbox.Text = "Telefon";
+            this.settingsColonNameIsletmeTelNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeYetkilisi_checkbox
+            // 
+            this.settingsColonNameIsletmeYetkilisi_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Location = new System.Drawing.Point(11, 128);
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Name = "settingsColonNameIsletmeYetkilisi_checkbox";
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Size = new System.Drawing.Size(146, 25);
+            this.settingsColonNameIsletmeYetkilisi_checkbox.TabIndex = 59;
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Tag = "IsletmeYetkilisi";
+            this.settingsColonNameIsletmeYetkilisi_checkbox.Text = "İşletme Yetkilisi";
+            this.settingsColonNameIsletmeYetkilisi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeTamAdres_checkbox
+            // 
+            this.settingsColonNameIsletmeTamAdres_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeTamAdres_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeTamAdres_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeTamAdres_checkbox.Location = new System.Drawing.Point(11, 99);
+            this.settingsColonNameIsletmeTamAdres_checkbox.Name = "settingsColonNameIsletmeTamAdres_checkbox";
+            this.settingsColonNameIsletmeTamAdres_checkbox.Size = new System.Drawing.Size(110, 25);
+            this.settingsColonNameIsletmeTamAdres_checkbox.TabIndex = 58;
+            this.settingsColonNameIsletmeTamAdres_checkbox.Tag = "IsletmeTamAdres";
+            this.settingsColonNameIsletmeTamAdres_checkbox.Text = "Tam Adres";
+            this.settingsColonNameIsletmeTamAdres_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeAdresIlce_checkbox
+            // 
+            this.settingsColonNameIsletmeAdresIlce_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Location = new System.Drawing.Point(11, 70);
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Name = "settingsColonNameIsletmeAdresIlce_checkbox";
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Size = new System.Drawing.Size(55, 25);
+            this.settingsColonNameIsletmeAdresIlce_checkbox.TabIndex = 57;
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Tag = "IsletmeAdresIlce";
+            this.settingsColonNameIsletmeAdresIlce_checkbox.Text = "İlçe";
+            this.settingsColonNameIsletmeAdresIlce_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeAdresIl_checkbox
+            // 
+            this.settingsColonNameIsletmeAdresIl_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeAdresIl_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeAdresIl_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeAdresIl_checkbox.Location = new System.Drawing.Point(11, 41);
+            this.settingsColonNameIsletmeAdresIl_checkbox.Name = "settingsColonNameIsletmeAdresIl_checkbox";
+            this.settingsColonNameIsletmeAdresIl_checkbox.Size = new System.Drawing.Size(38, 25);
+            this.settingsColonNameIsletmeAdresIl_checkbox.TabIndex = 56;
+            this.settingsColonNameIsletmeAdresIl_checkbox.Tag = "IsletmeAdresIl";
+            this.settingsColonNameIsletmeAdresIl_checkbox.Text = "İl";
+            this.settingsColonNameIsletmeAdresIl_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameIsletmeAd_checkbox
+            // 
+            this.settingsColonNameIsletmeAd_checkbox.AutoSize = true;
+            this.settingsColonNameIsletmeAd_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameIsletmeAd_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameIsletmeAd_checkbox.Location = new System.Drawing.Point(11, 12);
+            this.settingsColonNameIsletmeAd_checkbox.Name = "settingsColonNameIsletmeAd_checkbox";
+            this.settingsColonNameIsletmeAd_checkbox.Size = new System.Drawing.Size(114, 25);
+            this.settingsColonNameIsletmeAd_checkbox.TabIndex = 55;
+            this.settingsColonNameIsletmeAd_checkbox.Tag = "IsletmeAd";
+            this.settingsColonNameIsletmeAd_checkbox.Text = "İşletme Adı";
+            this.settingsColonNameIsletmeAd_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // panel55
+            // 
+            this.panel55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel55.Controls.Add(this.label99);
+            this.panel55.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel55.Location = new System.Drawing.Point(0, 0);
+            this.panel55.Name = "panel55";
+            this.panel55.Size = new System.Drawing.Size(365, 52);
+            this.panel55.TabIndex = 9;
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label99.Location = new System.Drawing.Point(82, 14);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(196, 25);
+            this.label99.TabIndex = 6;
+            this.label99.Text = "İşletme tablosu için;";
+            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel49
+            // 
+            this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel49.Controls.Add(this.panel50);
+            this.panel49.Controls.Add(this.panel54);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel49.Location = new System.Drawing.Point(366, 0);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(352, 506);
+            this.panel49.TabIndex = 1;
+            // 
+            // panel50
+            // 
+            this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel50.Controls.Add(this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenTelefonNumarasi_checkbox);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenDalAdi_checkbox);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenAlanAdi_checkbox);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenIsletmeGunu2_checkbox);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenIsletmeGunu1_checkbox);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenSoyadi_checkbox);
+            this.panel50.Controls.Add(this.settingsColonNameOgretmenAdi_checkbox);
+            this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel50.Location = new System.Drawing.Point(0, 52);
+            this.panel50.Name = "panel50";
+            this.panel50.Padding = new System.Windows.Forms.Padding(5);
+            this.panel50.Size = new System.Drawing.Size(350, 452);
+            this.panel50.TabIndex = 8;
+            // 
+            // settingsSorguOzellestirmeleriAyarlariKaydetButon_button
+            // 
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Location = new System.Drawing.Point(5, 370);
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Name = "settingsSorguOzellestirmeleriAyarlariKaydetButon_button";
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Size = new System.Drawing.Size(338, 75);
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.TabIndex = 1;
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Text = "TÜM AYARLARI KAYDET";
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.UseVisualStyleBackColor = true;
+            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Click += new System.EventHandler(this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button_Click);
+            // 
+            // settingsColonNameOgretmenTelefonNumarasi_checkbox
+            // 
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Location = new System.Drawing.Point(12, 196);
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Name = "settingsColonNameOgretmenTelefonNumarasi_checkbox";
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Size = new System.Drawing.Size(164, 25);
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.TabIndex = 52;
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Tag = "OgretmenTelNo";
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Text = "Telefon Numarası";
+            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgretmenDalAdi_checkbox
+            // 
+            this.settingsColonNameOgretmenDalAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenDalAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenDalAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenDalAdi_checkbox.Location = new System.Drawing.Point(12, 165);
+            this.settingsColonNameOgretmenDalAdi_checkbox.Name = "settingsColonNameOgretmenDalAdi_checkbox";
+            this.settingsColonNameOgretmenDalAdi_checkbox.Size = new System.Drawing.Size(84, 25);
+            this.settingsColonNameOgretmenDalAdi_checkbox.TabIndex = 51;
+            this.settingsColonNameOgretmenDalAdi_checkbox.Tag = "OgretmenDalAdi";
+            this.settingsColonNameOgretmenDalAdi_checkbox.Text = "Dal Adı";
+            this.settingsColonNameOgretmenDalAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgretmenAlanAdi_checkbox
+            // 
+            this.settingsColonNameOgretmenAlanAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Location = new System.Drawing.Point(12, 134);
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Name = "settingsColonNameOgretmenAlanAdi_checkbox";
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Size = new System.Drawing.Size(93, 25);
+            this.settingsColonNameOgretmenAlanAdi_checkbox.TabIndex = 50;
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Tag = "OgretmenAlanAdi";
+            this.settingsColonNameOgretmenAlanAdi_checkbox.Text = "Alan Adı";
+            this.settingsColonNameOgretmenAlanAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgretmenIsletmeGunu2_checkbox
+            // 
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Location = new System.Drawing.Point(12, 105);
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Name = "settingsColonNameOgretmenIsletmeGunu2_checkbox";
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Size = new System.Drawing.Size(145, 25);
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.TabIndex = 49;
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Tag = "OgretmenIsletmeGunu2";
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Text = "İşletme Günü 2";
+            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgretmenIsletmeGunu1_checkbox
+            // 
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Location = new System.Drawing.Point(12, 74);
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Name = "settingsColonNameOgretmenIsletmeGunu1_checkbox";
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Size = new System.Drawing.Size(145, 25);
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.TabIndex = 48;
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Tag = "OgretmenIsletmeGunu1";
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Text = "İşletme Günü 1";
+            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgretmenSoyadi_checkbox
+            // 
+            this.settingsColonNameOgretmenSoyadi_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenSoyadi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenSoyadi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenSoyadi_checkbox.Location = new System.Drawing.Point(12, 43);
+            this.settingsColonNameOgretmenSoyadi_checkbox.Name = "settingsColonNameOgretmenSoyadi_checkbox";
+            this.settingsColonNameOgretmenSoyadi_checkbox.Size = new System.Drawing.Size(162, 25);
+            this.settingsColonNameOgretmenSoyadi_checkbox.TabIndex = 47;
+            this.settingsColonNameOgretmenSoyadi_checkbox.Tag = "OgretmenSoyad";
+            this.settingsColonNameOgretmenSoyadi_checkbox.Text = "Öğretmen Soyadı";
+            this.settingsColonNameOgretmenSoyadi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgretmenAdi_checkbox
+            // 
+            this.settingsColonNameOgretmenAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgretmenAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgretmenAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgretmenAdi_checkbox.Location = new System.Drawing.Point(12, 12);
+            this.settingsColonNameOgretmenAdi_checkbox.Name = "settingsColonNameOgretmenAdi_checkbox";
+            this.settingsColonNameOgretmenAdi_checkbox.Size = new System.Drawing.Size(137, 25);
+            this.settingsColonNameOgretmenAdi_checkbox.TabIndex = 46;
+            this.settingsColonNameOgretmenAdi_checkbox.Tag = "OgretmenAd";
+            this.settingsColonNameOgretmenAdi_checkbox.Text = "Öğretmen Adı";
+            this.settingsColonNameOgretmenAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // panel54
+            // 
+            this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel54.Controls.Add(this.label98);
+            this.panel54.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel54.Location = new System.Drawing.Point(0, 0);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(350, 52);
+            this.panel54.TabIndex = 9;
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label98.Location = new System.Drawing.Point(73, 13);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(222, 25);
+            this.label98.TabIndex = 6;
+            this.label98.Text = "Öğretmen tablosu için;";
+            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel47
+            // 
+            this.panel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel47.Controls.Add(this.panel56);
+            this.panel47.Controls.Add(this.panel53);
+            this.panel47.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel47.Location = new System.Drawing.Point(0, 0);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(366, 506);
+            this.panel47.TabIndex = 0;
+            // 
+            // panel56
+            // 
+            this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciHowToUSE_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciBabaTelefonu_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciBabaAdi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciAnneTelefonu_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciAnneAdi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciDalAdi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciStajDonemi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciStajBitisTarihi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciGrup_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciAlanAdi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciTcKimlikNo_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciTelNo_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciFirmaAdi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciSinifi_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciOkulNo_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciSoyad_checkbox);
+            this.panel56.Controls.Add(this.settingsColonNameOgrenciAdi_checkbox);
+            this.panel56.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel56.Location = new System.Drawing.Point(0, 52);
+            this.panel56.Name = "panel56";
+            this.panel56.Padding = new System.Windows.Forms.Padding(5);
+            this.panel56.Size = new System.Drawing.Size(364, 452);
+            this.panel56.TabIndex = 10;
+            // 
+            // settingsColonNameOgrenciHowToUSE_checkbox
+            // 
+            this.settingsColonNameOgrenciHowToUSE_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Location = new System.Drawing.Point(195, 132);
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Name = "settingsColonNameOgrenciHowToUSE_checkbox";
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Size = new System.Drawing.Size(103, 25);
+            this.settingsColonNameOgrenciHowToUSE_checkbox.TabIndex = 57;
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Tag = "HowUsePhone";
+            this.settingsColonNameOgrenciHowToUSE_checkbox.Text = "Kullanılan";
+            this.settingsColonNameOgrenciHowToUSE_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciBabaTelefonu_checkbox
+            // 
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Location = new System.Drawing.Point(195, 103);
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Name = "settingsColonNameOgrenciBabaTelefonu_checkbox";
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Size = new System.Drawing.Size(139, 25);
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.TabIndex = 56;
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Tag = "OgrenciBabaTelNo";
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Text = "Baba Telefonu";
+            this.settingsColonNameOgrenciBabaTelefonu_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciBabaAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciBabaAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Location = new System.Drawing.Point(195, 72);
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Name = "settingsColonNameOgrenciBabaAdi_checkbox";
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Size = new System.Drawing.Size(97, 25);
+            this.settingsColonNameOgrenciBabaAdi_checkbox.TabIndex = 55;
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Tag = "OgrenciBabaAdi";
+            this.settingsColonNameOgrenciBabaAdi_checkbox.Text = "Baba Adı";
+            this.settingsColonNameOgrenciBabaAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciAnneTelefonu_checkbox
+            // 
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Location = new System.Drawing.Point(195, 41);
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Name = "settingsColonNameOgrenciAnneTelefonu_checkbox";
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Size = new System.Drawing.Size(141, 25);
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.TabIndex = 54;
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Tag = "OgrenciAnneTelNo";
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Text = "Anne Telefonu";
+            this.settingsColonNameOgrenciAnneTelefonu_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciAnneAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciAnneAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Location = new System.Drawing.Point(195, 10);
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Name = "settingsColonNameOgrenciAnneAdi_checkbox";
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Size = new System.Drawing.Size(99, 25);
+            this.settingsColonNameOgrenciAnneAdi_checkbox.TabIndex = 53;
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Tag = "OgrenciAnneAdi";
+            this.settingsColonNameOgrenciAnneAdi_checkbox.Text = "Anne Adı";
+            this.settingsColonNameOgrenciAnneAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciDalAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciDalAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciDalAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciDalAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciDalAdi_checkbox.Location = new System.Drawing.Point(10, 258);
+            this.settingsColonNameOgrenciDalAdi_checkbox.Name = "settingsColonNameOgrenciDalAdi_checkbox";
+            this.settingsColonNameOgrenciDalAdi_checkbox.Size = new System.Drawing.Size(84, 25);
+            this.settingsColonNameOgrenciDalAdi_checkbox.TabIndex = 52;
+            this.settingsColonNameOgrenciDalAdi_checkbox.Tag = "OgrenciDalAdi";
+            this.settingsColonNameOgrenciDalAdi_checkbox.Text = "Dal Adı";
+            this.settingsColonNameOgrenciDalAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciStajDonemi_checkbox
+            // 
+            this.settingsColonNameOgrenciStajDonemi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Location = new System.Drawing.Point(10, 413);
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Name = "settingsColonNameOgrenciStajDonemi_checkbox";
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Size = new System.Drawing.Size(122, 25);
+            this.settingsColonNameOgrenciStajDonemi_checkbox.TabIndex = 51;
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Tag = "OgrenciStajDonemi";
+            this.settingsColonNameOgrenciStajDonemi_checkbox.Text = "Staj Dönemi";
+            this.settingsColonNameOgrenciStajDonemi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciKoordinatorOgretmen_checkbox
+            // 
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Location = new System.Drawing.Point(10, 382);
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Name = "settingsColonNameOgrenciKoordinatorOgretmen_checkbox";
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Size = new System.Drawing.Size(158, 25);
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.TabIndex = 50;
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Tag = "OgrenciKoordinatorOgretmeni";
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Text = "Koordinatör Öğr.";
+            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciStajBitisTarihi_checkbox
+            // 
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Location = new System.Drawing.Point(10, 351);
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Name = "settingsColonNameOgrenciStajBitisTarihi_checkbox";
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Size = new System.Drawing.Size(140, 25);
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.TabIndex = 49;
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Tag = "OgrenciStajBitistarihi";
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Text = "Staj Bitiş Tarihi";
+            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciStajaBaslangicTarihi_checkbox
+            // 
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Location = new System.Drawing.Point(10, 320);
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Name = "settingsColonNameOgrenciStajaBaslangicTarihi_checkbox";
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Size = new System.Drawing.Size(180, 25);
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.TabIndex = 48;
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Tag = "OgrenciStajaBaslangicTarihi";
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Text = "Staj Baslangıç Tarihi";
+            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciGrup_checkbox
+            // 
+            this.settingsColonNameOgrenciGrup_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciGrup_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciGrup_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciGrup_checkbox.Location = new System.Drawing.Point(10, 289);
+            this.settingsColonNameOgrenciGrup_checkbox.Name = "settingsColonNameOgrenciGrup_checkbox";
+            this.settingsColonNameOgrenciGrup_checkbox.Size = new System.Drawing.Size(133, 25);
+            this.settingsColonNameOgrenciGrup_checkbox.TabIndex = 47;
+            this.settingsColonNameOgrenciGrup_checkbox.Tag = "OgrenciGrup";
+            this.settingsColonNameOgrenciGrup_checkbox.Text = "Grup(A,B,C,D)";
+            this.settingsColonNameOgrenciGrup_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciAlanAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciAlanAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Location = new System.Drawing.Point(12, 227);
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Name = "settingsColonNameOgrenciAlanAdi_checkbox";
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Size = new System.Drawing.Size(93, 25);
+            this.settingsColonNameOgrenciAlanAdi_checkbox.TabIndex = 46;
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Tag = "OgrenciAlanAdi";
+            this.settingsColonNameOgrenciAlanAdi_checkbox.Text = "Alan Adı";
+            this.settingsColonNameOgrenciAlanAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciTcKimlikNo_checkbox
+            // 
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Location = new System.Drawing.Point(12, 196);
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Name = "settingsColonNameOgrenciTcKimlikNo_checkbox";
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Size = new System.Drawing.Size(125, 25);
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.TabIndex = 45;
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Tag = "OgrenciTCKimlikNo";
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Text = "Tc Kimlik No";
+            this.settingsColonNameOgrenciTcKimlikNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciTelNo_checkbox
+            // 
+            this.settingsColonNameOgrenciTelNo_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciTelNo_checkbox.Location = new System.Drawing.Point(12, 165);
+            this.settingsColonNameOgrenciTelNo_checkbox.Name = "settingsColonNameOgrenciTelNo_checkbox";
+            this.settingsColonNameOgrenciTelNo_checkbox.Size = new System.Drawing.Size(79, 25);
+            this.settingsColonNameOgrenciTelNo_checkbox.TabIndex = 44;
+            this.settingsColonNameOgrenciTelNo_checkbox.Tag = "OgreciTelNo";
+            this.settingsColonNameOgrenciTelNo_checkbox.Text = "Tel No";
+            this.settingsColonNameOgrenciTelNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciFirmaAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Location = new System.Drawing.Point(12, 134);
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Name = "settingsColonNameOgrenciFirmaAdi_checkbox";
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Size = new System.Drawing.Size(102, 25);
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.TabIndex = 43;
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Tag = "OgrencininFirmaAdi";
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.Text = "Firma Adı";
+            this.settingsColonNameOgrenciFirmaAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciSinifi_checkbox
+            // 
+            this.settingsColonNameOgrenciSinifi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciSinifi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciSinifi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciSinifi_checkbox.Location = new System.Drawing.Point(12, 105);
+            this.settingsColonNameOgrenciSinifi_checkbox.Name = "settingsColonNameOgrenciSinifi_checkbox";
+            this.settingsColonNameOgrenciSinifi_checkbox.Size = new System.Drawing.Size(66, 25);
+            this.settingsColonNameOgrenciSinifi_checkbox.TabIndex = 42;
+            this.settingsColonNameOgrenciSinifi_checkbox.Tag = "OgrenciSinif";
+            this.settingsColonNameOgrenciSinifi_checkbox.Text = "Sınıfı";
+            this.settingsColonNameOgrenciSinifi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciOkulNo_checkbox
+            // 
+            this.settingsColonNameOgrenciOkulNo_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciOkulNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciOkulNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciOkulNo_checkbox.Location = new System.Drawing.Point(12, 74);
+            this.settingsColonNameOgrenciOkulNo_checkbox.Name = "settingsColonNameOgrenciOkulNo_checkbox";
+            this.settingsColonNameOgrenciOkulNo_checkbox.Size = new System.Drawing.Size(143, 25);
+            this.settingsColonNameOgrenciOkulNo_checkbox.TabIndex = 41;
+            this.settingsColonNameOgrenciOkulNo_checkbox.Tag = "OgrenciOkulNo";
+            this.settingsColonNameOgrenciOkulNo_checkbox.Text = "Okul Numarası";
+            this.settingsColonNameOgrenciOkulNo_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciSoyad_checkbox
+            // 
+            this.settingsColonNameOgrenciSoyad_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciSoyad_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciSoyad_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciSoyad_checkbox.Location = new System.Drawing.Point(12, 43);
+            this.settingsColonNameOgrenciSoyad_checkbox.Name = "settingsColonNameOgrenciSoyad_checkbox";
+            this.settingsColonNameOgrenciSoyad_checkbox.Size = new System.Drawing.Size(144, 25);
+            this.settingsColonNameOgrenciSoyad_checkbox.TabIndex = 40;
+            this.settingsColonNameOgrenciSoyad_checkbox.Tag = "OgrenciSoyad";
+            this.settingsColonNameOgrenciSoyad_checkbox.Text = "Öğrenci Soyadı";
+            this.settingsColonNameOgrenciSoyad_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // settingsColonNameOgrenciAdi_checkbox
+            // 
+            this.settingsColonNameOgrenciAdi_checkbox.AutoSize = true;
+            this.settingsColonNameOgrenciAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingsColonNameOgrenciAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.settingsColonNameOgrenciAdi_checkbox.Location = new System.Drawing.Point(12, 12);
+            this.settingsColonNameOgrenciAdi_checkbox.Name = "settingsColonNameOgrenciAdi_checkbox";
+            this.settingsColonNameOgrenciAdi_checkbox.Size = new System.Drawing.Size(119, 25);
+            this.settingsColonNameOgrenciAdi_checkbox.TabIndex = 39;
+            this.settingsColonNameOgrenciAdi_checkbox.Tag = "OgrenciAd";
+            this.settingsColonNameOgrenciAdi_checkbox.Text = "Öğrenci Adı";
+            this.settingsColonNameOgrenciAdi_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // panel53
+            // 
+            this.panel53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel53.Controls.Add(this.label100);
+            this.panel53.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel53.Location = new System.Drawing.Point(0, 0);
+            this.panel53.Name = "panel53";
+            this.panel53.Size = new System.Drawing.Size(364, 52);
+            this.panel53.TabIndex = 9;
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label100.Location = new System.Drawing.Point(82, 14);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(201, 25);
+            this.label100.TabIndex = 5;
+            this.label100.Text = "Öğrenci tablosu için;";
+            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel45
+            // 
+            this.panel45.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel45.Controls.Add(this.label95);
+            this.panel45.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel45.Location = new System.Drawing.Point(0, 0);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(1143, 52);
+            this.panel45.TabIndex = 8;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label95.Location = new System.Drawing.Point(56, 14);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(996, 25);
+            this.label95.TabIndex = 5;
+            this.label95.Text = "Lütfen Sorgulama/Listeleme ekranları açıldığında ekranda listelemek istediğiniz k" +
+    "olon isimlerini işaretleyiniz";
+            // 
+            // tabPage25
+            // 
+            this.tabPage25.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage25.Controls.Add(this.ogrAktarimPaneli_panel);
+            this.tabPage25.Controls.Add(this.panel98);
+            this.tabPage25.Controls.Add(this.exceldenDByeAktarim_button);
+            this.tabPage25.Controls.Add(this.panel62);
+            this.tabPage25.Controls.Add(this.selectExcelFile_button);
+            this.tabPage25.Controls.Add(this.label123);
+            this.tabPage25.Controls.Add(this.label97);
+            this.tabPage25.Controls.Add(this.ogrtAktarimPaneli_panel);
+            this.tabPage25.Controls.Add(this.isletmeAktarimPaneli_panel);
+            this.tabPage25.Location = new System.Drawing.Point(4, 28);
+            this.tabPage25.Name = "tabPage25";
+            this.tabPage25.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage25.TabIndex = 3;
+            this.tabPage25.Text = "VERİTABANI İŞLEMLERİ";
+            // 
+            // ogrAktarimPaneli_panel
+            // 
+            this.ogrAktarimPaneli_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label126);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label127);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label129);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label130);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrBabaTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrBabaAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAnneTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAnneAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrBabaTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrBabaTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label131);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrBabaAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrBabaAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label132);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAnneTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAnneTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label133);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAnneAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAnneAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label134);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label135);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label136);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label137);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label138);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label173);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label172);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label144);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label159);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label160);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label161);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label162);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label163);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label164);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label165);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label166);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label167);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label168);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label169);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label170);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label171);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrStajDonemi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrKoordinatorOgretmeni_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrStajBitisTarihi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrStajBaslangicTarihi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrGrup_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrDalAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAlanAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrTc_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrFirmaAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrSinif_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrOkulNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrSoyad_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAd_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrStajDonemi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrStajDonemi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label158);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrKoordinatorOgretmeni_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrKoordinatorOgretmeni_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label157);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrStajBitisTarihi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrStajBitisTarihi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label156);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrStajBaslangicTarihi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrStajBaslangicTarihi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label155);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrGrup_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrGrup_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label154);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrDalAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrDalAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label153);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAlanAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAlanAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label152);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrTc_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrTc_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label151);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrTelNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label150);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrFirmaAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrFirmaAdi_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label149);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrSinif_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrSinif_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label148);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrOkulNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrOkulNo_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label147);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrSoyad_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrSoyad_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label146);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAd_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAd_textbox);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label145);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label143);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label142);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label141);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label139);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label140);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label175);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label176);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label177);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label178);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label179);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label180);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label181);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label182);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label183);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label184);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label185);
+            this.ogrAktarimPaneli_panel.Controls.Add(this.label186);
+            this.ogrAktarimPaneli_panel.Location = new System.Drawing.Point(497, 21);
+            this.ogrAktarimPaneli_panel.Name = "ogrAktarimPaneli_panel";
+            this.ogrAktarimPaneli_panel.Size = new System.Drawing.Size(630, 576);
+            this.ogrAktarimPaneli_panel.TabIndex = 77;
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label126.Location = new System.Drawing.Point(375, 539);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(23, 19);
+            this.label126.TabIndex = 184;
+            this.label126.Text = " / ";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label127.Location = new System.Drawing.Point(375, 516);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(23, 19);
+            this.label127.TabIndex = 183;
+            this.label127.Text = " / ";
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label129.Location = new System.Drawing.Point(375, 489);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(23, 19);
+            this.label129.TabIndex = 182;
+            this.label129.Text = " / ";
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label130.Location = new System.Drawing.Point(375, 462);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(23, 19);
+            this.label130.TabIndex = 181;
+            this.label130.Text = " / ";
+            // 
+            // ogrColumnOgrBabaTelNo_textbox
+            // 
+            this.ogrColumnOgrBabaTelNo_textbox.Location = new System.Drawing.Point(300, 540);
+            this.ogrColumnOgrBabaTelNo_textbox.Name = "ogrColumnOgrBabaTelNo_textbox";
+            this.ogrColumnOgrBabaTelNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrBabaTelNo_textbox.TabIndex = 180;
+            // 
+            // ogrColumnOgrBabaAdi_textbox
+            // 
+            this.ogrColumnOgrBabaAdi_textbox.Location = new System.Drawing.Point(300, 513);
+            this.ogrColumnOgrBabaAdi_textbox.Name = "ogrColumnOgrBabaAdi_textbox";
+            this.ogrColumnOgrBabaAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrBabaAdi_textbox.TabIndex = 179;
+            // 
+            // ogrColumnOgrAnneTelNo_textbox
+            // 
+            this.ogrColumnOgrAnneTelNo_textbox.Location = new System.Drawing.Point(300, 486);
+            this.ogrColumnOgrAnneTelNo_textbox.Name = "ogrColumnOgrAnneTelNo_textbox";
+            this.ogrColumnOgrAnneTelNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrAnneTelNo_textbox.TabIndex = 178;
+            // 
+            // ogrColumnOgrAnneAdi_textbox
+            // 
+            this.ogrColumnOgrAnneAdi_textbox.Location = new System.Drawing.Point(300, 459);
+            this.ogrColumnOgrAnneAdi_textbox.Name = "ogrColumnOgrAnneAdi_textbox";
+            this.ogrColumnOgrAnneAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrAnneAdi_textbox.TabIndex = 177;
+            // 
+            // ogrEndOgrBabaTelNo_textbox
+            // 
+            this.ogrEndOgrBabaTelNo_textbox.Location = new System.Drawing.Point(531, 540);
+            this.ogrEndOgrBabaTelNo_textbox.Name = "ogrEndOgrBabaTelNo_textbox";
+            this.ogrEndOgrBabaTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrBabaTelNo_textbox.TabIndex = 176;
+            // 
+            // ogrStartOgrBabaTelNo_textbox
+            // 
+            this.ogrStartOgrBabaTelNo_textbox.Location = new System.Drawing.Point(406, 540);
+            this.ogrStartOgrBabaTelNo_textbox.Name = "ogrStartOgrBabaTelNo_textbox";
+            this.ogrStartOgrBabaTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrBabaTelNo_textbox.TabIndex = 175;
+            // 
+            // label131
+            // 
+            this.label131.AutoSize = true;
+            this.label131.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label131.Location = new System.Drawing.Point(499, 540);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(23, 19);
+            this.label131.TabIndex = 174;
+            this.label131.Text = " - ";
+            // 
+            // ogrEndOgrBabaAdi_textbox
+            // 
+            this.ogrEndOgrBabaAdi_textbox.Location = new System.Drawing.Point(531, 513);
+            this.ogrEndOgrBabaAdi_textbox.Name = "ogrEndOgrBabaAdi_textbox";
+            this.ogrEndOgrBabaAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrBabaAdi_textbox.TabIndex = 173;
+            // 
+            // ogrStartOgrBabaAdi_textbox
+            // 
+            this.ogrStartOgrBabaAdi_textbox.Location = new System.Drawing.Point(406, 513);
+            this.ogrStartOgrBabaAdi_textbox.Name = "ogrStartOgrBabaAdi_textbox";
+            this.ogrStartOgrBabaAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrBabaAdi_textbox.TabIndex = 172;
+            // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label132.Location = new System.Drawing.Point(499, 513);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(23, 19);
+            this.label132.TabIndex = 171;
+            this.label132.Text = " - ";
+            // 
+            // ogrEndOgrAnneTelNo_textbox
+            // 
+            this.ogrEndOgrAnneTelNo_textbox.Location = new System.Drawing.Point(531, 486);
+            this.ogrEndOgrAnneTelNo_textbox.Name = "ogrEndOgrAnneTelNo_textbox";
+            this.ogrEndOgrAnneTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrAnneTelNo_textbox.TabIndex = 170;
+            // 
+            // ogrStartOgrAnneTelNo_textbox
+            // 
+            this.ogrStartOgrAnneTelNo_textbox.Location = new System.Drawing.Point(406, 486);
+            this.ogrStartOgrAnneTelNo_textbox.Name = "ogrStartOgrAnneTelNo_textbox";
+            this.ogrStartOgrAnneTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrAnneTelNo_textbox.TabIndex = 169;
+            // 
+            // label133
+            // 
+            this.label133.AutoSize = true;
+            this.label133.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label133.Location = new System.Drawing.Point(499, 486);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(23, 19);
+            this.label133.TabIndex = 168;
+            this.label133.Text = " - ";
+            // 
+            // ogrEndOgrAnneAdi_textbox
+            // 
+            this.ogrEndOgrAnneAdi_textbox.Location = new System.Drawing.Point(531, 459);
+            this.ogrEndOgrAnneAdi_textbox.Name = "ogrEndOgrAnneAdi_textbox";
+            this.ogrEndOgrAnneAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrAnneAdi_textbox.TabIndex = 167;
+            // 
+            // ogrStartOgrAnneAdi_textbox
+            // 
+            this.ogrStartOgrAnneAdi_textbox.Location = new System.Drawing.Point(406, 459);
+            this.ogrStartOgrAnneAdi_textbox.Name = "ogrStartOgrAnneAdi_textbox";
+            this.ogrStartOgrAnneAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrAnneAdi_textbox.TabIndex = 166;
+            // 
+            // label134
+            // 
+            this.label134.AutoSize = true;
+            this.label134.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label134.Location = new System.Drawing.Point(499, 459);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(23, 19);
+            this.label134.TabIndex = 165;
+            this.label134.Text = " - ";
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label135.Location = new System.Drawing.Point(27, 537);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(266, 21);
+            this.label135.TabIndex = 164;
+            this.label135.Text = "Öğrenci\'nin Babasının Tel No\'su  :";
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label136.Location = new System.Drawing.Point(73, 511);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(220, 21);
+            this.label136.TabIndex = 163;
+            this.label136.Text = "Öğrenci\'nin Babasının Adı  :";
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label137.Location = new System.Drawing.Point(25, 484);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(268, 21);
+            this.label137.TabIndex = 162;
+            this.label137.Text = "Öğrenci\'nin Annesinin Tel No\'su  :";
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label138.Location = new System.Drawing.Point(71, 456);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(222, 21);
+            this.label138.TabIndex = 161;
+            this.label138.Text = "Öğrenci\'nin Annesinin Adı  :";
+            // 
+            // label173
+            // 
+            this.label173.AutoSize = true;
+            this.label173.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label173.Location = new System.Drawing.Point(300, 49);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(65, 25);
+            this.label173.TabIndex = 160;
+            this.label173.Text = "Kolon";
+            // 
+            // label172
+            // 
+            this.label172.AutoSize = true;
+            this.label172.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label172.Location = new System.Drawing.Point(542, 51);
+            this.label172.Name = "label172";
+            this.label172.Size = new System.Drawing.Size(50, 25);
+            this.label172.TabIndex = 159;
+            this.label172.Text = "Bitiş";
+            // 
+            // label144
+            // 
+            this.label144.AutoSize = true;
+            this.label144.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label144.Location = new System.Drawing.Point(375, 435);
+            this.label144.Name = "label144";
+            this.label144.Size = new System.Drawing.Size(23, 19);
+            this.label144.TabIndex = 158;
+            this.label144.Text = " / ";
+            // 
+            // label159
+            // 
+            this.label159.AutoSize = true;
+            this.label159.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label159.Location = new System.Drawing.Point(375, 410);
+            this.label159.Name = "label159";
+            this.label159.Size = new System.Drawing.Size(23, 19);
+            this.label159.TabIndex = 157;
+            this.label159.Text = " / ";
+            // 
+            // label160
+            // 
+            this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label160.Location = new System.Drawing.Point(375, 382);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(23, 19);
+            this.label160.TabIndex = 156;
+            this.label160.Text = " / ";
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label161.Location = new System.Drawing.Point(375, 355);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(23, 19);
+            this.label161.TabIndex = 155;
+            this.label161.Text = " / ";
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label162.Location = new System.Drawing.Point(375, 328);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(23, 19);
+            this.label162.TabIndex = 154;
+            this.label162.Text = " / ";
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label163.Location = new System.Drawing.Point(375, 301);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(23, 19);
+            this.label163.TabIndex = 153;
+            this.label163.Text = " / ";
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label164.Location = new System.Drawing.Point(375, 273);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(23, 19);
+            this.label164.TabIndex = 152;
+            this.label164.Text = " / ";
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label165.Location = new System.Drawing.Point(375, 246);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(23, 19);
+            this.label165.TabIndex = 151;
+            this.label165.Text = " / ";
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label166.Location = new System.Drawing.Point(375, 219);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(23, 19);
+            this.label166.TabIndex = 150;
+            this.label166.Text = " / ";
+            // 
+            // label167
+            // 
+            this.label167.AutoSize = true;
+            this.label167.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label167.Location = new System.Drawing.Point(375, 192);
+            this.label167.Name = "label167";
+            this.label167.Size = new System.Drawing.Size(23, 19);
+            this.label167.TabIndex = 149;
+            this.label167.Text = " / ";
+            // 
+            // label168
+            // 
+            this.label168.AutoSize = true;
+            this.label168.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label168.Location = new System.Drawing.Point(375, 166);
+            this.label168.Name = "label168";
+            this.label168.Size = new System.Drawing.Size(23, 19);
+            this.label168.TabIndex = 148;
+            this.label168.Text = " / ";
+            // 
+            // label169
+            // 
+            this.label169.AutoSize = true;
+            this.label169.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label169.Location = new System.Drawing.Point(375, 140);
+            this.label169.Name = "label169";
+            this.label169.Size = new System.Drawing.Size(23, 19);
+            this.label169.TabIndex = 147;
+            this.label169.Text = " / ";
+            // 
+            // label170
+            // 
+            this.label170.AutoSize = true;
+            this.label170.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label170.Location = new System.Drawing.Point(375, 113);
+            this.label170.Name = "label170";
+            this.label170.Size = new System.Drawing.Size(23, 19);
+            this.label170.TabIndex = 146;
+            this.label170.Text = " / ";
+            // 
+            // label171
+            // 
+            this.label171.AutoSize = true;
+            this.label171.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label171.Location = new System.Drawing.Point(375, 86);
+            this.label171.Name = "label171";
+            this.label171.Size = new System.Drawing.Size(23, 19);
+            this.label171.TabIndex = 145;
+            this.label171.Text = " / ";
+            // 
+            // ogrColumnOgrStajDonemi_textbox
+            // 
+            this.ogrColumnOgrStajDonemi_textbox.Location = new System.Drawing.Point(300, 432);
+            this.ogrColumnOgrStajDonemi_textbox.Name = "ogrColumnOgrStajDonemi_textbox";
+            this.ogrColumnOgrStajDonemi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrStajDonemi_textbox.TabIndex = 144;
+            // 
+            // ogrColumnOgrKoordinatorOgretmeni_textbox
+            // 
+            this.ogrColumnOgrKoordinatorOgretmeni_textbox.Location = new System.Drawing.Point(300, 405);
+            this.ogrColumnOgrKoordinatorOgretmeni_textbox.Name = "ogrColumnOgrKoordinatorOgretmeni_textbox";
+            this.ogrColumnOgrKoordinatorOgretmeni_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrKoordinatorOgretmeni_textbox.TabIndex = 143;
+            // 
+            // ogrColumnOgrStajBitisTarihi_textbox
+            // 
+            this.ogrColumnOgrStajBitisTarihi_textbox.Location = new System.Drawing.Point(300, 379);
+            this.ogrColumnOgrStajBitisTarihi_textbox.Name = "ogrColumnOgrStajBitisTarihi_textbox";
+            this.ogrColumnOgrStajBitisTarihi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrStajBitisTarihi_textbox.TabIndex = 142;
+            // 
+            // ogrColumnOgrStajBaslangicTarihi_textbox
+            // 
+            this.ogrColumnOgrStajBaslangicTarihi_textbox.Location = new System.Drawing.Point(300, 352);
+            this.ogrColumnOgrStajBaslangicTarihi_textbox.Name = "ogrColumnOgrStajBaslangicTarihi_textbox";
+            this.ogrColumnOgrStajBaslangicTarihi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrStajBaslangicTarihi_textbox.TabIndex = 141;
+            // 
+            // ogrColumnOgrGrup_textbox
+            // 
+            this.ogrColumnOgrGrup_textbox.Location = new System.Drawing.Point(300, 325);
+            this.ogrColumnOgrGrup_textbox.Name = "ogrColumnOgrGrup_textbox";
+            this.ogrColumnOgrGrup_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrGrup_textbox.TabIndex = 140;
+            // 
+            // ogrColumnOgrDalAdi_textbox
+            // 
+            this.ogrColumnOgrDalAdi_textbox.Location = new System.Drawing.Point(300, 298);
+            this.ogrColumnOgrDalAdi_textbox.Name = "ogrColumnOgrDalAdi_textbox";
+            this.ogrColumnOgrDalAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrDalAdi_textbox.TabIndex = 139;
+            // 
+            // ogrColumnOgrAlanAdi_textbox
+            // 
+            this.ogrColumnOgrAlanAdi_textbox.Location = new System.Drawing.Point(300, 270);
+            this.ogrColumnOgrAlanAdi_textbox.Name = "ogrColumnOgrAlanAdi_textbox";
+            this.ogrColumnOgrAlanAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrAlanAdi_textbox.TabIndex = 138;
+            // 
+            // ogrColumnOgrTc_textbox
+            // 
+            this.ogrColumnOgrTc_textbox.Location = new System.Drawing.Point(300, 243);
+            this.ogrColumnOgrTc_textbox.Name = "ogrColumnOgrTc_textbox";
+            this.ogrColumnOgrTc_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrTc_textbox.TabIndex = 137;
+            // 
+            // ogrColumnOgrTelNo_textbox
+            // 
+            this.ogrColumnOgrTelNo_textbox.Location = new System.Drawing.Point(300, 216);
+            this.ogrColumnOgrTelNo_textbox.Name = "ogrColumnOgrTelNo_textbox";
+            this.ogrColumnOgrTelNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrTelNo_textbox.TabIndex = 136;
+            // 
+            // ogrColumnOgrFirmaAdi_textbox
+            // 
+            this.ogrColumnOgrFirmaAdi_textbox.Location = new System.Drawing.Point(300, 189);
+            this.ogrColumnOgrFirmaAdi_textbox.Name = "ogrColumnOgrFirmaAdi_textbox";
+            this.ogrColumnOgrFirmaAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrFirmaAdi_textbox.TabIndex = 135;
+            // 
+            // ogrColumnOgrSinif_textbox
+            // 
+            this.ogrColumnOgrSinif_textbox.Location = new System.Drawing.Point(300, 163);
+            this.ogrColumnOgrSinif_textbox.Name = "ogrColumnOgrSinif_textbox";
+            this.ogrColumnOgrSinif_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrSinif_textbox.TabIndex = 134;
+            // 
+            // ogrColumnOgrOkulNo_textbox
+            // 
+            this.ogrColumnOgrOkulNo_textbox.Location = new System.Drawing.Point(300, 137);
+            this.ogrColumnOgrOkulNo_textbox.Name = "ogrColumnOgrOkulNo_textbox";
+            this.ogrColumnOgrOkulNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrOkulNo_textbox.TabIndex = 133;
+            // 
+            // ogrColumnOgrSoyad_textbox
+            // 
+            this.ogrColumnOgrSoyad_textbox.Location = new System.Drawing.Point(300, 110);
+            this.ogrColumnOgrSoyad_textbox.Name = "ogrColumnOgrSoyad_textbox";
+            this.ogrColumnOgrSoyad_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrSoyad_textbox.TabIndex = 132;
+            // 
+            // ogrColumnOgrAd_textbox
+            // 
+            this.ogrColumnOgrAd_textbox.Location = new System.Drawing.Point(300, 83);
+            this.ogrColumnOgrAd_textbox.Name = "ogrColumnOgrAd_textbox";
+            this.ogrColumnOgrAd_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrColumnOgrAd_textbox.TabIndex = 131;
+            // 
+            // ogrEndOgrStajDonemi_textbox
+            // 
+            this.ogrEndOgrStajDonemi_textbox.Location = new System.Drawing.Point(531, 432);
+            this.ogrEndOgrStajDonemi_textbox.Name = "ogrEndOgrStajDonemi_textbox";
+            this.ogrEndOgrStajDonemi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrStajDonemi_textbox.TabIndex = 130;
+            // 
+            // ogrStartOgrStajDonemi_textbox
+            // 
+            this.ogrStartOgrStajDonemi_textbox.Location = new System.Drawing.Point(406, 432);
+            this.ogrStartOgrStajDonemi_textbox.Name = "ogrStartOgrStajDonemi_textbox";
+            this.ogrStartOgrStajDonemi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrStajDonemi_textbox.TabIndex = 129;
+            // 
+            // label158
+            // 
+            this.label158.AutoSize = true;
+            this.label158.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label158.Location = new System.Drawing.Point(499, 432);
+            this.label158.Name = "label158";
+            this.label158.Size = new System.Drawing.Size(23, 19);
+            this.label158.TabIndex = 128;
+            this.label158.Text = " - ";
+            // 
+            // ogrEndOgrKoordinatorOgretmeni_textbox
+            // 
+            this.ogrEndOgrKoordinatorOgretmeni_textbox.Location = new System.Drawing.Point(531, 405);
+            this.ogrEndOgrKoordinatorOgretmeni_textbox.Name = "ogrEndOgrKoordinatorOgretmeni_textbox";
+            this.ogrEndOgrKoordinatorOgretmeni_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrKoordinatorOgretmeni_textbox.TabIndex = 127;
+            // 
+            // ogrStartOgrKoordinatorOgretmeni_textbox
+            // 
+            this.ogrStartOgrKoordinatorOgretmeni_textbox.Location = new System.Drawing.Point(406, 405);
+            this.ogrStartOgrKoordinatorOgretmeni_textbox.Name = "ogrStartOgrKoordinatorOgretmeni_textbox";
+            this.ogrStartOgrKoordinatorOgretmeni_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrKoordinatorOgretmeni_textbox.TabIndex = 126;
+            // 
+            // label157
+            // 
+            this.label157.AutoSize = true;
+            this.label157.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label157.Location = new System.Drawing.Point(499, 405);
+            this.label157.Name = "label157";
+            this.label157.Size = new System.Drawing.Size(23, 19);
+            this.label157.TabIndex = 125;
+            this.label157.Text = " - ";
+            // 
+            // ogrEndOgrStajBitisTarihi_textbox
+            // 
+            this.ogrEndOgrStajBitisTarihi_textbox.Location = new System.Drawing.Point(531, 379);
+            this.ogrEndOgrStajBitisTarihi_textbox.Name = "ogrEndOgrStajBitisTarihi_textbox";
+            this.ogrEndOgrStajBitisTarihi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrStajBitisTarihi_textbox.TabIndex = 124;
+            // 
+            // ogrStartOgrStajBitisTarihi_textbox
+            // 
+            this.ogrStartOgrStajBitisTarihi_textbox.Location = new System.Drawing.Point(406, 379);
+            this.ogrStartOgrStajBitisTarihi_textbox.Name = "ogrStartOgrStajBitisTarihi_textbox";
+            this.ogrStartOgrStajBitisTarihi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrStajBitisTarihi_textbox.TabIndex = 123;
+            // 
+            // label156
+            // 
+            this.label156.AutoSize = true;
+            this.label156.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label156.Location = new System.Drawing.Point(499, 379);
+            this.label156.Name = "label156";
+            this.label156.Size = new System.Drawing.Size(23, 19);
+            this.label156.TabIndex = 122;
+            this.label156.Text = " - ";
+            // 
+            // ogrEndOgrStajBaslangicTarihi_textbox
+            // 
+            this.ogrEndOgrStajBaslangicTarihi_textbox.Location = new System.Drawing.Point(531, 352);
+            this.ogrEndOgrStajBaslangicTarihi_textbox.Name = "ogrEndOgrStajBaslangicTarihi_textbox";
+            this.ogrEndOgrStajBaslangicTarihi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrStajBaslangicTarihi_textbox.TabIndex = 121;
+            // 
+            // ogrStartOgrStajBaslangicTarihi_textbox
+            // 
+            this.ogrStartOgrStajBaslangicTarihi_textbox.Location = new System.Drawing.Point(406, 352);
+            this.ogrStartOgrStajBaslangicTarihi_textbox.Name = "ogrStartOgrStajBaslangicTarihi_textbox";
+            this.ogrStartOgrStajBaslangicTarihi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrStajBaslangicTarihi_textbox.TabIndex = 120;
+            // 
+            // label155
+            // 
+            this.label155.AutoSize = true;
+            this.label155.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label155.Location = new System.Drawing.Point(499, 352);
+            this.label155.Name = "label155";
+            this.label155.Size = new System.Drawing.Size(23, 19);
+            this.label155.TabIndex = 119;
+            this.label155.Text = " - ";
+            // 
+            // ogrEndOgrGrup_textbox
+            // 
+            this.ogrEndOgrGrup_textbox.Location = new System.Drawing.Point(531, 325);
+            this.ogrEndOgrGrup_textbox.Name = "ogrEndOgrGrup_textbox";
+            this.ogrEndOgrGrup_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrGrup_textbox.TabIndex = 118;
+            // 
+            // ogrStartOgrGrup_textbox
+            // 
+            this.ogrStartOgrGrup_textbox.Location = new System.Drawing.Point(406, 325);
+            this.ogrStartOgrGrup_textbox.Name = "ogrStartOgrGrup_textbox";
+            this.ogrStartOgrGrup_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrGrup_textbox.TabIndex = 117;
+            // 
+            // label154
+            // 
+            this.label154.AutoSize = true;
+            this.label154.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label154.Location = new System.Drawing.Point(499, 325);
+            this.label154.Name = "label154";
+            this.label154.Size = new System.Drawing.Size(23, 19);
+            this.label154.TabIndex = 116;
+            this.label154.Text = " - ";
+            // 
+            // ogrEndOgrDalAdi_textbox
+            // 
+            this.ogrEndOgrDalAdi_textbox.Location = new System.Drawing.Point(531, 298);
+            this.ogrEndOgrDalAdi_textbox.Name = "ogrEndOgrDalAdi_textbox";
+            this.ogrEndOgrDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrDalAdi_textbox.TabIndex = 115;
+            // 
+            // ogrStartOgrDalAdi_textbox
+            // 
+            this.ogrStartOgrDalAdi_textbox.Location = new System.Drawing.Point(406, 298);
+            this.ogrStartOgrDalAdi_textbox.Name = "ogrStartOgrDalAdi_textbox";
+            this.ogrStartOgrDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrDalAdi_textbox.TabIndex = 114;
+            // 
+            // label153
+            // 
+            this.label153.AutoSize = true;
+            this.label153.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label153.Location = new System.Drawing.Point(499, 298);
+            this.label153.Name = "label153";
+            this.label153.Size = new System.Drawing.Size(23, 19);
+            this.label153.TabIndex = 113;
+            this.label153.Text = " - ";
+            // 
+            // ogrEndOgrAlanAdi_textbox
+            // 
+            this.ogrEndOgrAlanAdi_textbox.Location = new System.Drawing.Point(531, 270);
+            this.ogrEndOgrAlanAdi_textbox.Name = "ogrEndOgrAlanAdi_textbox";
+            this.ogrEndOgrAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrAlanAdi_textbox.TabIndex = 112;
+            // 
+            // ogrStartOgrAlanAdi_textbox
+            // 
+            this.ogrStartOgrAlanAdi_textbox.Location = new System.Drawing.Point(406, 270);
+            this.ogrStartOgrAlanAdi_textbox.Name = "ogrStartOgrAlanAdi_textbox";
+            this.ogrStartOgrAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrAlanAdi_textbox.TabIndex = 111;
+            // 
+            // label152
+            // 
+            this.label152.AutoSize = true;
+            this.label152.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label152.Location = new System.Drawing.Point(499, 270);
+            this.label152.Name = "label152";
+            this.label152.Size = new System.Drawing.Size(23, 19);
+            this.label152.TabIndex = 110;
+            this.label152.Text = " - ";
+            // 
+            // ogrEndOgrTc_textbox
+            // 
+            this.ogrEndOgrTc_textbox.Location = new System.Drawing.Point(531, 243);
+            this.ogrEndOgrTc_textbox.Name = "ogrEndOgrTc_textbox";
+            this.ogrEndOgrTc_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrTc_textbox.TabIndex = 109;
+            // 
+            // ogrStartOgrTc_textbox
+            // 
+            this.ogrStartOgrTc_textbox.Location = new System.Drawing.Point(406, 243);
+            this.ogrStartOgrTc_textbox.Name = "ogrStartOgrTc_textbox";
+            this.ogrStartOgrTc_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrTc_textbox.TabIndex = 108;
+            // 
+            // label151
+            // 
+            this.label151.AutoSize = true;
+            this.label151.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label151.Location = new System.Drawing.Point(499, 243);
+            this.label151.Name = "label151";
+            this.label151.Size = new System.Drawing.Size(23, 19);
+            this.label151.TabIndex = 107;
+            this.label151.Text = " - ";
+            // 
+            // ogrEndOgrTelNo_textbox
+            // 
+            this.ogrEndOgrTelNo_textbox.Location = new System.Drawing.Point(531, 216);
+            this.ogrEndOgrTelNo_textbox.Name = "ogrEndOgrTelNo_textbox";
+            this.ogrEndOgrTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrTelNo_textbox.TabIndex = 106;
+            // 
+            // ogrStartOgrTelNo_textbox
+            // 
+            this.ogrStartOgrTelNo_textbox.Location = new System.Drawing.Point(406, 216);
+            this.ogrStartOgrTelNo_textbox.Name = "ogrStartOgrTelNo_textbox";
+            this.ogrStartOgrTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrTelNo_textbox.TabIndex = 105;
+            // 
+            // label150
+            // 
+            this.label150.AutoSize = true;
+            this.label150.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label150.Location = new System.Drawing.Point(499, 216);
+            this.label150.Name = "label150";
+            this.label150.Size = new System.Drawing.Size(23, 19);
+            this.label150.TabIndex = 104;
+            this.label150.Text = " - ";
+            // 
+            // ogrEndOgrFirmaAdi_textbox
+            // 
+            this.ogrEndOgrFirmaAdi_textbox.Location = new System.Drawing.Point(531, 189);
+            this.ogrEndOgrFirmaAdi_textbox.Name = "ogrEndOgrFirmaAdi_textbox";
+            this.ogrEndOgrFirmaAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrFirmaAdi_textbox.TabIndex = 103;
+            // 
+            // ogrStartOgrFirmaAdi_textbox
+            // 
+            this.ogrStartOgrFirmaAdi_textbox.Location = new System.Drawing.Point(406, 189);
+            this.ogrStartOgrFirmaAdi_textbox.Name = "ogrStartOgrFirmaAdi_textbox";
+            this.ogrStartOgrFirmaAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrFirmaAdi_textbox.TabIndex = 102;
+            // 
+            // label149
+            // 
+            this.label149.AutoSize = true;
+            this.label149.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label149.Location = new System.Drawing.Point(499, 189);
+            this.label149.Name = "label149";
+            this.label149.Size = new System.Drawing.Size(23, 19);
+            this.label149.TabIndex = 101;
+            this.label149.Text = " - ";
+            // 
+            // ogrEndOgrSinif_textbox
+            // 
+            this.ogrEndOgrSinif_textbox.Location = new System.Drawing.Point(531, 163);
+            this.ogrEndOgrSinif_textbox.Name = "ogrEndOgrSinif_textbox";
+            this.ogrEndOgrSinif_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrSinif_textbox.TabIndex = 100;
+            // 
+            // ogrStartOgrSinif_textbox
+            // 
+            this.ogrStartOgrSinif_textbox.Location = new System.Drawing.Point(406, 163);
+            this.ogrStartOgrSinif_textbox.Name = "ogrStartOgrSinif_textbox";
+            this.ogrStartOgrSinif_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrSinif_textbox.TabIndex = 99;
+            // 
+            // label148
+            // 
+            this.label148.AutoSize = true;
+            this.label148.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label148.Location = new System.Drawing.Point(499, 163);
+            this.label148.Name = "label148";
+            this.label148.Size = new System.Drawing.Size(23, 19);
+            this.label148.TabIndex = 98;
+            this.label148.Text = " - ";
+            // 
+            // ogrEndOgrOkulNo_textbox
+            // 
+            this.ogrEndOgrOkulNo_textbox.Location = new System.Drawing.Point(531, 137);
+            this.ogrEndOgrOkulNo_textbox.Name = "ogrEndOgrOkulNo_textbox";
+            this.ogrEndOgrOkulNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrOkulNo_textbox.TabIndex = 97;
+            // 
+            // ogrStartOgrOkulNo_textbox
+            // 
+            this.ogrStartOgrOkulNo_textbox.Location = new System.Drawing.Point(406, 137);
+            this.ogrStartOgrOkulNo_textbox.Name = "ogrStartOgrOkulNo_textbox";
+            this.ogrStartOgrOkulNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrOkulNo_textbox.TabIndex = 96;
+            // 
+            // label147
+            // 
+            this.label147.AutoSize = true;
+            this.label147.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label147.Location = new System.Drawing.Point(499, 137);
+            this.label147.Name = "label147";
+            this.label147.Size = new System.Drawing.Size(23, 19);
+            this.label147.TabIndex = 95;
+            this.label147.Text = " - ";
+            // 
+            // ogrEndOgrSoyad_textbox
+            // 
+            this.ogrEndOgrSoyad_textbox.Location = new System.Drawing.Point(531, 110);
+            this.ogrEndOgrSoyad_textbox.Name = "ogrEndOgrSoyad_textbox";
+            this.ogrEndOgrSoyad_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrSoyad_textbox.TabIndex = 94;
+            // 
+            // ogrStartOgrSoyad_textbox
+            // 
+            this.ogrStartOgrSoyad_textbox.Location = new System.Drawing.Point(406, 110);
+            this.ogrStartOgrSoyad_textbox.Name = "ogrStartOgrSoyad_textbox";
+            this.ogrStartOgrSoyad_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrSoyad_textbox.TabIndex = 93;
+            // 
+            // label146
+            // 
+            this.label146.AutoSize = true;
+            this.label146.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label146.Location = new System.Drawing.Point(499, 110);
+            this.label146.Name = "label146";
+            this.label146.Size = new System.Drawing.Size(23, 19);
+            this.label146.TabIndex = 92;
+            this.label146.Text = " - ";
+            // 
+            // ogrEndOgrAd_textbox
+            // 
+            this.ogrEndOgrAd_textbox.Location = new System.Drawing.Point(531, 83);
+            this.ogrEndOgrAd_textbox.Name = "ogrEndOgrAd_textbox";
+            this.ogrEndOgrAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrEndOgrAd_textbox.TabIndex = 91;
+            // 
+            // ogrStartOgrAd_textbox
+            // 
+            this.ogrStartOgrAd_textbox.Location = new System.Drawing.Point(406, 83);
+            this.ogrStartOgrAd_textbox.Name = "ogrStartOgrAd_textbox";
+            this.ogrStartOgrAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrStartOgrAd_textbox.TabIndex = 90;
+            // 
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label145.Location = new System.Drawing.Point(499, 83);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(23, 19);
+            this.label145.TabIndex = 89;
+            this.label145.Text = " - ";
+            // 
+            // label143
+            // 
+            this.label143.AutoSize = true;
+            this.label143.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label143.Location = new System.Drawing.Point(401, 51);
+            this.label143.Name = "label143";
+            this.label143.Size = new System.Drawing.Size(99, 25);
+            this.label143.TabIndex = 83;
+            this.label143.Text = "Başlangıç";
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label142.Location = new System.Drawing.Point(84, 49);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(209, 25);
+            this.label142.TabIndex = 82;
+            this.label142.Text = "SQL\'deki Kolon Adları";
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label141.Location = new System.Drawing.Point(169, 8);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(312, 35);
+            this.label141.TabIndex = 81;
+            this.label141.Text = "Öğrenci Aktarım Paneli";
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label139.Location = new System.Drawing.Point(93, 429);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(206, 21);
+            this.label139.TabIndex = 80;
+            this.label139.Text = "Öğrencinin Staj Dönemi : ";
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label140.Location = new System.Drawing.Point(8, 402);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(291, 21);
+            this.label140.TabIndex = 79;
+            this.label140.Text = "Öğrencinin Koordinatör Öğretmeni : ";
+            // 
+            // label175
+            // 
+            this.label175.AutoSize = true;
+            this.label175.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label175.Location = new System.Drawing.Point(47, 376);
+            this.label175.Name = "label175";
+            this.label175.Size = new System.Drawing.Size(252, 21);
+            this.label175.TabIndex = 78;
+            this.label175.Text = "Öğrencinin Stajının Bitiş Tarihi : ";
+            // 
+            // label176
+            // 
+            this.label176.AutoSize = true;
+            this.label176.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label176.Location = new System.Drawing.Point(26, 350);
+            this.label176.Name = "label176";
+            this.label176.Size = new System.Drawing.Size(273, 21);
+            this.label176.TabIndex = 77;
+            this.label176.Text = "Öğrencinin Staja Başlangıç Tarihi : ";
+            // 
+            // label177
+            // 
+            this.label177.AutoSize = true;
+            this.label177.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label177.Location = new System.Drawing.Point(172, 324);
+            this.label177.Name = "label177";
+            this.label177.Size = new System.Drawing.Size(127, 21);
+            this.label177.TabIndex = 76;
+            this.label177.Text = "Öğrenci Grup : ";
+            // 
+            // label178
+            // 
+            this.label178.AutoSize = true;
+            this.label178.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label178.Location = new System.Drawing.Point(155, 298);
+            this.label178.Name = "label178";
+            this.label178.Size = new System.Drawing.Size(144, 21);
+            this.label178.TabIndex = 75;
+            this.label178.Text = "Öğrenci Dal Adı : ";
+            // 
+            // label179
+            // 
+            this.label179.AutoSize = true;
+            this.label179.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label179.Location = new System.Drawing.Point(146, 267);
+            this.label179.Name = "label179";
+            this.label179.Size = new System.Drawing.Size(153, 21);
+            this.label179.TabIndex = 74;
+            this.label179.Text = "Öğrenci Alan Adı : ";
+            // 
+            // label180
+            // 
+            this.label180.AutoSize = true;
+            this.label180.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label180.Location = new System.Drawing.Point(190, 241);
+            this.label180.Name = "label180";
+            this.label180.Size = new System.Drawing.Size(109, 21);
+            this.label180.TabIndex = 73;
+            this.label180.Text = "Öğrenci TC : ";
+            // 
+            // label181
+            // 
+            this.label181.AutoSize = true;
+            this.label181.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label181.Location = new System.Drawing.Point(75, 214);
+            this.label181.Name = "label181";
+            this.label181.Size = new System.Drawing.Size(224, 21);
+            this.label181.TabIndex = 72;
+            this.label181.Text = "Öğrenci Telefon Numarası : ";
+            // 
+            // label182
+            // 
+            this.label182.AutoSize = true;
+            this.label182.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label182.Location = new System.Drawing.Point(113, 188);
+            this.label182.Name = "label182";
+            this.label182.Size = new System.Drawing.Size(186, 21);
+            this.label182.TabIndex = 71;
+            this.label182.Text = "Öğrencinin Firma Adı : ";
+            // 
+            // label183
+            // 
+            this.label183.AutoSize = true;
+            this.label183.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label183.Location = new System.Drawing.Point(177, 162);
+            this.label183.Name = "label183";
+            this.label183.Size = new System.Drawing.Size(122, 21);
+            this.label183.TabIndex = 70;
+            this.label183.Text = "Öğrenci Sınıf : ";
+            // 
+            // label184
+            // 
+            this.label184.AutoSize = true;
+            this.label184.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label184.Location = new System.Drawing.Point(146, 135);
+            this.label184.Name = "label184";
+            this.label184.Size = new System.Drawing.Size(153, 21);
+            this.label184.TabIndex = 69;
+            this.label184.Text = "Öğrenci Okul No : ";
+            // 
+            // label185
+            // 
+            this.label185.AutoSize = true;
+            this.label185.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label185.Location = new System.Drawing.Point(160, 109);
+            this.label185.Name = "label185";
+            this.label185.Size = new System.Drawing.Size(139, 21);
+            this.label185.TabIndex = 68;
+            this.label185.Text = "Öğrenci Soyadı : ";
+            // 
+            // label186
+            // 
+            this.label186.AutoSize = true;
+            this.label186.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label186.Location = new System.Drawing.Point(185, 82);
+            this.label186.Name = "label186";
+            this.label186.Size = new System.Drawing.Size(114, 21);
+            this.label186.TabIndex = 67;
+            this.label186.Text = "Öğrenci Adı : ";
+            // 
+            // panel98
+            // 
+            this.panel98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel98.Controls.Add(this.label174);
+            this.panel98.Location = new System.Drawing.Point(10, 302);
+            this.panel98.Name = "panel98";
+            this.panel98.Padding = new System.Windows.Forms.Padding(10);
+            this.panel98.Size = new System.Drawing.Size(478, 295);
+            this.panel98.TabIndex = 76;
+            // 
+            // label174
+            // 
+            this.label174.AutoSize = true;
+            this.label174.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label174.Location = new System.Drawing.Point(10, 10);
+            this.label174.Name = "label174";
+            this.label174.Size = new System.Drawing.Size(450, 209);
+            this.label174.TabIndex = 0;
+            this.label174.Text = resources.GetString("label174.Text");
+            // 
+            // exceldenDByeAktarim_button
+            // 
+            this.exceldenDByeAktarim_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exceldenDByeAktarim_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.exceldenDByeAktarim_button.Location = new System.Drawing.Point(10, 224);
+            this.exceldenDByeAktarim_button.Name = "exceldenDByeAktarim_button";
+            this.exceldenDByeAktarim_button.Size = new System.Drawing.Size(478, 61);
+            this.exceldenDByeAktarim_button.TabIndex = 75;
+            this.exceldenDByeAktarim_button.Text = "AKTARMA İŞLEMİNİ BAŞLAT";
+            this.exceldenDByeAktarim_button.UseVisualStyleBackColor = true;
+            this.exceldenDByeAktarim_button.Click += new System.EventHandler(this.exceldenDByeAktarim_button_Click);
+            // 
+            // panel62
+            // 
+            this.panel62.Controls.Add(this.selectedTableName_combobox);
+            this.panel62.Controls.Add(this.label125);
+            this.panel62.Controls.Add(this.selectedExcelPage_combobox);
+            this.panel62.Controls.Add(this.label124);
+            this.panel62.Location = new System.Drawing.Point(11, 123);
+            this.panel62.Name = "panel62";
+            this.panel62.Size = new System.Drawing.Size(477, 90);
+            this.panel62.TabIndex = 73;
+            // 
+            // selectedTableName_combobox
+            // 
+            this.selectedTableName_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.selectedTableName_combobox.FormattingEnabled = true;
+            this.selectedTableName_combobox.ItemHeight = 21;
+            this.selectedTableName_combobox.Items.AddRange(new object[] {
+            "Öğrenci",
+            "Öğretmen",
+            "İşletme"});
+            this.selectedTableName_combobox.Location = new System.Drawing.Point(291, 46);
+            this.selectedTableName_combobox.Name = "selectedTableName_combobox";
+            this.selectedTableName_combobox.Size = new System.Drawing.Size(178, 29);
+            this.selectedTableName_combobox.TabIndex = 75;
+            this.selectedTableName_combobox.SelectedIndexChanged += new System.EventHandler(this.selectedTableName_combobox_SelectedIndexChanged);
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label125.Location = new System.Drawing.Point(5, 49);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(280, 21);
+            this.label125.TabIndex = 75;
+            this.label125.Text = "Verilerin Aktarılacağı SQL Tablosu : ";
+            // 
+            // selectedExcelPage_combobox
+            // 
+            this.selectedExcelPage_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.selectedExcelPage_combobox.FormattingEnabled = true;
+            this.selectedExcelPage_combobox.ItemHeight = 21;
+            this.selectedExcelPage_combobox.Location = new System.Drawing.Point(291, 9);
+            this.selectedExcelPage_combobox.Name = "selectedExcelPage_combobox";
+            this.selectedExcelPage_combobox.Size = new System.Drawing.Size(178, 29);
+            this.selectedExcelPage_combobox.TabIndex = 74;
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label124.Location = new System.Drawing.Point(162, 12);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(123, 21);
+            this.label124.TabIndex = 66;
+            this.label124.Text = "Seçilen Sayfa : ";
+            // 
+            // selectExcelFile_button
+            // 
+            this.selectExcelFile_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.selectExcelFile_button.Location = new System.Drawing.Point(114, 81);
+            this.selectExcelFile_button.Name = "selectExcelFile_button";
+            this.selectExcelFile_button.Size = new System.Drawing.Size(274, 30);
+            this.selectExcelFile_button.TabIndex = 72;
+            this.selectExcelFile_button.Text = "Excel Dosyası Seç                                  ···";
+            this.selectExcelFile_button.UseVisualStyleBackColor = true;
+            this.selectExcelFile_button.Click += new System.EventHandler(this.selectExcelFile_button_Click);
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label123.Location = new System.Drawing.Point(38, 84);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(69, 21);
+            this.label123.TabIndex = 65;
+            this.label123.Text = "Gözat : ";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label97.Location = new System.Drawing.Point(29, 21);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(260, 35);
+            this.label97.TabIndex = 64;
+            this.label97.Text = "Veri Aktarım Paneli";
+            // 
+            // ogrtAktarimPaneli_panel
+            // 
+            this.ogrtAktarimPaneli_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label187);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label188);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label189);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label190);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label191);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label192);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label193);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label194);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label195);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtTelNo_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtDalAdi_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtAlanAdi_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtIsletmeGunu2_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtIsletmeGunu1_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtSoyad_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtAd_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtTelNo_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtTelNo_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label196);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtDalAdi_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtDalAdi_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label197);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtAlanAdi_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtAlanAdi_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label198);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtIsletmeGunu2_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtIsletmeGunu2_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label199);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtIsletmeGunu1_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtIsletmeGunu1_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label200);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtSoyad_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtSoyad_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label201);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtAd_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtAd_textbox);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label202);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label203);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label204);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label205);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label206);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label207);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label208);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label209);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label210);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label211);
+            this.ogrtAktarimPaneli_panel.Controls.Add(this.label212);
+            this.ogrtAktarimPaneli_panel.Location = new System.Drawing.Point(497, 21);
+            this.ogrtAktarimPaneli_panel.Name = "ogrtAktarimPaneli_panel";
+            this.ogrtAktarimPaneli_panel.Size = new System.Drawing.Size(630, 576);
+            this.ogrtAktarimPaneli_panel.TabIndex = 79;
+            // 
+            // label187
+            // 
+            this.label187.AutoSize = true;
+            this.label187.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label187.Location = new System.Drawing.Point(272, 56);
+            this.label187.Name = "label187";
+            this.label187.Size = new System.Drawing.Size(65, 25);
+            this.label187.TabIndex = 160;
+            this.label187.Text = "Kolon";
+            // 
+            // label188
+            // 
+            this.label188.AutoSize = true;
+            this.label188.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label188.Location = new System.Drawing.Point(514, 58);
+            this.label188.Name = "label188";
+            this.label188.Size = new System.Drawing.Size(50, 25);
+            this.label188.TabIndex = 159;
+            this.label188.Text = "Bitiş";
+            // 
+            // label189
+            // 
+            this.label189.AutoSize = true;
+            this.label189.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label189.Location = new System.Drawing.Point(347, 297);
+            this.label189.Name = "label189";
+            this.label189.Size = new System.Drawing.Size(23, 19);
+            this.label189.TabIndex = 151;
+            this.label189.Text = " / ";
+            // 
+            // label190
+            // 
+            this.label190.AutoSize = true;
+            this.label190.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label190.Location = new System.Drawing.Point(347, 263);
+            this.label190.Name = "label190";
+            this.label190.Size = new System.Drawing.Size(23, 19);
+            this.label190.TabIndex = 150;
+            this.label190.Text = " / ";
+            // 
+            // label191
+            // 
+            this.label191.AutoSize = true;
+            this.label191.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label191.Location = new System.Drawing.Point(347, 227);
+            this.label191.Name = "label191";
+            this.label191.Size = new System.Drawing.Size(23, 19);
+            this.label191.TabIndex = 149;
+            this.label191.Text = " / ";
+            // 
+            // label192
+            // 
+            this.label192.AutoSize = true;
+            this.label192.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label192.Location = new System.Drawing.Point(347, 196);
+            this.label192.Name = "label192";
+            this.label192.Size = new System.Drawing.Size(23, 19);
+            this.label192.TabIndex = 148;
+            this.label192.Text = " / ";
+            // 
+            // label193
+            // 
+            this.label193.AutoSize = true;
+            this.label193.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label193.Location = new System.Drawing.Point(347, 161);
+            this.label193.Name = "label193";
+            this.label193.Size = new System.Drawing.Size(23, 19);
+            this.label193.TabIndex = 147;
+            this.label193.Text = " / ";
+            // 
+            // label194
+            // 
+            this.label194.AutoSize = true;
+            this.label194.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label194.Location = new System.Drawing.Point(347, 126);
+            this.label194.Name = "label194";
+            this.label194.Size = new System.Drawing.Size(23, 19);
+            this.label194.TabIndex = 146;
+            this.label194.Text = " / ";
+            // 
+            // label195
+            // 
+            this.label195.AutoSize = true;
+            this.label195.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label195.Location = new System.Drawing.Point(347, 91);
+            this.label195.Name = "label195";
+            this.label195.Size = new System.Drawing.Size(23, 19);
+            this.label195.TabIndex = 145;
+            this.label195.Text = " / ";
+            // 
+            // ogrtColumnOgrtTelNo_textbox
+            // 
+            this.ogrtColumnOgrtTelNo_textbox.Location = new System.Drawing.Point(272, 294);
+            this.ogrtColumnOgrtTelNo_textbox.Name = "ogrtColumnOgrtTelNo_textbox";
+            this.ogrtColumnOgrtTelNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtTelNo_textbox.TabIndex = 137;
+            // 
+            // ogrtColumnOgrtDalAdi_textbox
+            // 
+            this.ogrtColumnOgrtDalAdi_textbox.Location = new System.Drawing.Point(272, 260);
+            this.ogrtColumnOgrtDalAdi_textbox.Name = "ogrtColumnOgrtDalAdi_textbox";
+            this.ogrtColumnOgrtDalAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtDalAdi_textbox.TabIndex = 136;
+            // 
+            // ogrtColumnOgrtAlanAdi_textbox
+            // 
+            this.ogrtColumnOgrtAlanAdi_textbox.Location = new System.Drawing.Point(272, 224);
+            this.ogrtColumnOgrtAlanAdi_textbox.Name = "ogrtColumnOgrtAlanAdi_textbox";
+            this.ogrtColumnOgrtAlanAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtAlanAdi_textbox.TabIndex = 135;
+            // 
+            // ogrtColumnOgrtIsletmeGunu2_textbox
+            // 
+            this.ogrtColumnOgrtIsletmeGunu2_textbox.Location = new System.Drawing.Point(272, 193);
+            this.ogrtColumnOgrtIsletmeGunu2_textbox.Name = "ogrtColumnOgrtIsletmeGunu2_textbox";
+            this.ogrtColumnOgrtIsletmeGunu2_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtIsletmeGunu2_textbox.TabIndex = 134;
+            // 
+            // ogrtColumnOgrtIsletmeGunu1_textbox
+            // 
+            this.ogrtColumnOgrtIsletmeGunu1_textbox.Location = new System.Drawing.Point(272, 158);
+            this.ogrtColumnOgrtIsletmeGunu1_textbox.Name = "ogrtColumnOgrtIsletmeGunu1_textbox";
+            this.ogrtColumnOgrtIsletmeGunu1_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtIsletmeGunu1_textbox.TabIndex = 133;
+            // 
+            // ogrtColumnOgrtSoyad_textbox
+            // 
+            this.ogrtColumnOgrtSoyad_textbox.Location = new System.Drawing.Point(272, 123);
+            this.ogrtColumnOgrtSoyad_textbox.Name = "ogrtColumnOgrtSoyad_textbox";
+            this.ogrtColumnOgrtSoyad_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtSoyad_textbox.TabIndex = 132;
+            // 
+            // ogrtColumnOgrtAd_textbox
+            // 
+            this.ogrtColumnOgrtAd_textbox.Location = new System.Drawing.Point(272, 88);
+            this.ogrtColumnOgrtAd_textbox.Name = "ogrtColumnOgrtAd_textbox";
+            this.ogrtColumnOgrtAd_textbox.Size = new System.Drawing.Size(65, 24);
+            this.ogrtColumnOgrtAd_textbox.TabIndex = 131;
+            // 
+            // ogrtEndOgrtTelNo_textbox
+            // 
+            this.ogrtEndOgrtTelNo_textbox.Location = new System.Drawing.Point(503, 294);
+            this.ogrtEndOgrtTelNo_textbox.Name = "ogrtEndOgrtTelNo_textbox";
+            this.ogrtEndOgrtTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtTelNo_textbox.TabIndex = 109;
+            // 
+            // ogrtStartOgrtTelNo_textbox
+            // 
+            this.ogrtStartOgrtTelNo_textbox.Location = new System.Drawing.Point(378, 294);
+            this.ogrtStartOgrtTelNo_textbox.Name = "ogrtStartOgrtTelNo_textbox";
+            this.ogrtStartOgrtTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtTelNo_textbox.TabIndex = 108;
+            // 
+            // label196
+            // 
+            this.label196.AutoSize = true;
+            this.label196.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label196.Location = new System.Drawing.Point(471, 294);
+            this.label196.Name = "label196";
+            this.label196.Size = new System.Drawing.Size(23, 19);
+            this.label196.TabIndex = 107;
+            this.label196.Text = " - ";
+            // 
+            // ogrtEndOgrtDalAdi_textbox
+            // 
+            this.ogrtEndOgrtDalAdi_textbox.Location = new System.Drawing.Point(503, 260);
+            this.ogrtEndOgrtDalAdi_textbox.Name = "ogrtEndOgrtDalAdi_textbox";
+            this.ogrtEndOgrtDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtDalAdi_textbox.TabIndex = 106;
+            // 
+            // ogrtStartOgrtDalAdi_textbox
+            // 
+            this.ogrtStartOgrtDalAdi_textbox.Location = new System.Drawing.Point(378, 260);
+            this.ogrtStartOgrtDalAdi_textbox.Name = "ogrtStartOgrtDalAdi_textbox";
+            this.ogrtStartOgrtDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtDalAdi_textbox.TabIndex = 105;
+            // 
+            // label197
+            // 
+            this.label197.AutoSize = true;
+            this.label197.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label197.Location = new System.Drawing.Point(471, 260);
+            this.label197.Name = "label197";
+            this.label197.Size = new System.Drawing.Size(23, 19);
+            this.label197.TabIndex = 104;
+            this.label197.Text = " - ";
+            // 
+            // ogrtEndOgrtAlanAdi_textbox
+            // 
+            this.ogrtEndOgrtAlanAdi_textbox.Location = new System.Drawing.Point(503, 224);
+            this.ogrtEndOgrtAlanAdi_textbox.Name = "ogrtEndOgrtAlanAdi_textbox";
+            this.ogrtEndOgrtAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtAlanAdi_textbox.TabIndex = 103;
+            // 
+            // ogrtStartOgrtAlanAdi_textbox
+            // 
+            this.ogrtStartOgrtAlanAdi_textbox.Location = new System.Drawing.Point(378, 224);
+            this.ogrtStartOgrtAlanAdi_textbox.Name = "ogrtStartOgrtAlanAdi_textbox";
+            this.ogrtStartOgrtAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtAlanAdi_textbox.TabIndex = 102;
+            // 
+            // label198
+            // 
+            this.label198.AutoSize = true;
+            this.label198.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label198.Location = new System.Drawing.Point(471, 224);
+            this.label198.Name = "label198";
+            this.label198.Size = new System.Drawing.Size(23, 19);
+            this.label198.TabIndex = 101;
+            this.label198.Text = " - ";
+            // 
+            // ogrtEndOgrtIsletmeGunu2_textbox
+            // 
+            this.ogrtEndOgrtIsletmeGunu2_textbox.Location = new System.Drawing.Point(503, 193);
+            this.ogrtEndOgrtIsletmeGunu2_textbox.Name = "ogrtEndOgrtIsletmeGunu2_textbox";
+            this.ogrtEndOgrtIsletmeGunu2_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtIsletmeGunu2_textbox.TabIndex = 100;
+            // 
+            // ogrtStartOgrtIsletmeGunu2_textbox
+            // 
+            this.ogrtStartOgrtIsletmeGunu2_textbox.Location = new System.Drawing.Point(378, 193);
+            this.ogrtStartOgrtIsletmeGunu2_textbox.Name = "ogrtStartOgrtIsletmeGunu2_textbox";
+            this.ogrtStartOgrtIsletmeGunu2_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtIsletmeGunu2_textbox.TabIndex = 99;
+            // 
+            // label199
+            // 
+            this.label199.AutoSize = true;
+            this.label199.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label199.Location = new System.Drawing.Point(471, 193);
+            this.label199.Name = "label199";
+            this.label199.Size = new System.Drawing.Size(23, 19);
+            this.label199.TabIndex = 98;
+            this.label199.Text = " - ";
+            // 
+            // ogrtEndOgrtIsletmeGunu1_textbox
+            // 
+            this.ogrtEndOgrtIsletmeGunu1_textbox.Location = new System.Drawing.Point(503, 158);
+            this.ogrtEndOgrtIsletmeGunu1_textbox.Name = "ogrtEndOgrtIsletmeGunu1_textbox";
+            this.ogrtEndOgrtIsletmeGunu1_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtIsletmeGunu1_textbox.TabIndex = 97;
+            // 
+            // ogrtStartOgrtIsletmeGunu1_textbox
+            // 
+            this.ogrtStartOgrtIsletmeGunu1_textbox.Location = new System.Drawing.Point(378, 158);
+            this.ogrtStartOgrtIsletmeGunu1_textbox.Name = "ogrtStartOgrtIsletmeGunu1_textbox";
+            this.ogrtStartOgrtIsletmeGunu1_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtIsletmeGunu1_textbox.TabIndex = 96;
+            // 
+            // label200
+            // 
+            this.label200.AutoSize = true;
+            this.label200.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label200.Location = new System.Drawing.Point(471, 158);
+            this.label200.Name = "label200";
+            this.label200.Size = new System.Drawing.Size(23, 19);
+            this.label200.TabIndex = 95;
+            this.label200.Text = " - ";
+            // 
+            // ogrtEndOgrtSoyad_textbox
+            // 
+            this.ogrtEndOgrtSoyad_textbox.Location = new System.Drawing.Point(503, 123);
+            this.ogrtEndOgrtSoyad_textbox.Name = "ogrtEndOgrtSoyad_textbox";
+            this.ogrtEndOgrtSoyad_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtSoyad_textbox.TabIndex = 94;
+            // 
+            // ogrtStartOgrtSoyad_textbox
+            // 
+            this.ogrtStartOgrtSoyad_textbox.Location = new System.Drawing.Point(378, 123);
+            this.ogrtStartOgrtSoyad_textbox.Name = "ogrtStartOgrtSoyad_textbox";
+            this.ogrtStartOgrtSoyad_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtSoyad_textbox.TabIndex = 93;
+            // 
+            // label201
+            // 
+            this.label201.AutoSize = true;
+            this.label201.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label201.Location = new System.Drawing.Point(471, 123);
+            this.label201.Name = "label201";
+            this.label201.Size = new System.Drawing.Size(23, 19);
+            this.label201.TabIndex = 92;
+            this.label201.Text = " - ";
+            // 
+            // ogrtEndOgrtAd_textbox
+            // 
+            this.ogrtEndOgrtAd_textbox.Location = new System.Drawing.Point(503, 88);
+            this.ogrtEndOgrtAd_textbox.Name = "ogrtEndOgrtAd_textbox";
+            this.ogrtEndOgrtAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtEndOgrtAd_textbox.TabIndex = 91;
+            // 
+            // ogrtStartOgrtAd_textbox
+            // 
+            this.ogrtStartOgrtAd_textbox.Location = new System.Drawing.Point(378, 88);
+            this.ogrtStartOgrtAd_textbox.Name = "ogrtStartOgrtAd_textbox";
+            this.ogrtStartOgrtAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.ogrtStartOgrtAd_textbox.TabIndex = 90;
+            // 
+            // label202
+            // 
+            this.label202.AutoSize = true;
+            this.label202.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label202.Location = new System.Drawing.Point(471, 88);
+            this.label202.Name = "label202";
+            this.label202.Size = new System.Drawing.Size(23, 19);
+            this.label202.TabIndex = 89;
+            this.label202.Text = " - ";
+            // 
+            // label203
+            // 
+            this.label203.AutoSize = true;
+            this.label203.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label203.Location = new System.Drawing.Point(373, 58);
+            this.label203.Name = "label203";
+            this.label203.Size = new System.Drawing.Size(99, 25);
+            this.label203.TabIndex = 83;
+            this.label203.Text = "Başlangıç";
+            // 
+            // label204
+            // 
+            this.label204.AutoSize = true;
+            this.label204.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label204.Location = new System.Drawing.Point(56, 56);
+            this.label204.Name = "label204";
+            this.label204.Size = new System.Drawing.Size(209, 25);
+            this.label204.TabIndex = 82;
+            this.label204.Text = "SQL\'deki Kolon Adları";
+            // 
+            // label205
+            // 
+            this.label205.AutoSize = true;
+            this.label205.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label205.Location = new System.Drawing.Point(169, 8);
+            this.label205.Name = "label205";
+            this.label205.Size = new System.Drawing.Size(341, 35);
+            this.label205.TabIndex = 81;
+            this.label205.Text = "Öğretmen Aktarım Paneli";
+            // 
+            // label206
+            // 
+            this.label206.AutoSize = true;
+            this.label206.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label206.Location = new System.Drawing.Point(106, 293);
+            this.label206.Name = "label206";
+            this.label206.Size = new System.Drawing.Size(159, 21);
+            this.label206.TabIndex = 73;
+            this.label206.Text = "Telefon Numarası : ";
+            // 
+            // label207
+            // 
+            this.label207.AutoSize = true;
+            this.label207.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label207.Location = new System.Drawing.Point(89, 263);
+            this.label207.Name = "label207";
+            this.label207.Size = new System.Drawing.Size(176, 21);
+            this.label207.TabIndex = 72;
+            this.label207.Text = "Öğretmenin Dal Adı : ";
+            // 
+            // label208
+            // 
+            this.label208.AutoSize = true;
+            this.label208.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label208.Location = new System.Drawing.Point(80, 225);
+            this.label208.Name = "label208";
+            this.label208.Size = new System.Drawing.Size(185, 21);
+            this.label208.TabIndex = 71;
+            this.label208.Text = "Öğretmenin Alan Adı : ";
+            // 
+            // label209
+            // 
+            this.label209.AutoSize = true;
+            this.label209.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label209.Location = new System.Drawing.Point(125, 193);
+            this.label209.Name = "label209";
+            this.label209.Size = new System.Drawing.Size(140, 21);
+            this.label209.TabIndex = 70;
+            this.label209.Text = "İşletme Günü 2 : ";
+            // 
+            // label210
+            // 
+            this.label210.AutoSize = true;
+            this.label210.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label210.Location = new System.Drawing.Point(127, 157);
+            this.label210.Name = "label210";
+            this.label210.Size = new System.Drawing.Size(140, 21);
+            this.label210.TabIndex = 69;
+            this.label210.Text = "İşletme Günü 1 : ";
+            // 
+            // label211
+            // 
+            this.label211.AutoSize = true;
+            this.label211.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label211.Location = new System.Drawing.Point(110, 124);
+            this.label211.Name = "label211";
+            this.label211.Size = new System.Drawing.Size(157, 21);
+            this.label211.TabIndex = 68;
+            this.label211.Text = "Öğretmen Soyadı : ";
+            // 
+            // label212
+            // 
+            this.label212.AutoSize = true;
+            this.label212.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label212.Location = new System.Drawing.Point(135, 89);
+            this.label212.Name = "label212";
+            this.label212.Size = new System.Drawing.Size(132, 21);
+            this.label212.TabIndex = 67;
+            this.label212.Text = "Öğretmen Adı : ";
+            // 
+            // isletmeAktarimPaneli_panel
+            // 
+            this.isletmeAktarimPaneli_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label213);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label214);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label215);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label216);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label217);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label218);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeSicilNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeIbanNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUODT_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUOTCNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeSoyad_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUOAd_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeSicilNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeSicilNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label219);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeIbanNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeIbanNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label220);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUODT_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUODT_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label221);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUOTCNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUOTCNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label222);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeSoyad_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeSoyad_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label223);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUOAd_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUOAd_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label224);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label225);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label226);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label227);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label228);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label229);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label230);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label231);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label232);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label256);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label257);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label258);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label259);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label260);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label261);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label262);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label263);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label264);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeDalAdi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAlanAdi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeTelNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeYetkilisi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeTamAdres_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAdresIlce_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAdresIl_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAd_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label265);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeDalAdi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeDalAdi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label266);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAlanAdi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAlanAdi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label267);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeTelNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeTelNo_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label268);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeYetkilisi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeYetkilisi_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label269);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeTamAdres_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeTamAdres_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label270);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAdresIlce_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAdresIlce_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label271);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAdresIl_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAdresIl_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label272);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAd_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAd_textbox);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label273);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label274);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label275);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label276);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label277);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label278);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label279);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label280);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label281);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label282);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label283);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label284);
+            this.isletmeAktarimPaneli_panel.Controls.Add(this.label285);
+            this.isletmeAktarimPaneli_panel.Location = new System.Drawing.Point(497, 21);
+            this.isletmeAktarimPaneli_panel.Name = "isletmeAktarimPaneli_panel";
+            this.isletmeAktarimPaneli_panel.Size = new System.Drawing.Size(630, 576);
+            this.isletmeAktarimPaneli_panel.TabIndex = 80;
+            // 
+            // label213
+            // 
+            this.label213.AutoSize = true;
+            this.label213.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label213.Location = new System.Drawing.Point(375, 544);
+            this.label213.Name = "label213";
+            this.label213.Size = new System.Drawing.Size(23, 19);
+            this.label213.TabIndex = 196;
+            this.label213.Text = " / ";
+            // 
+            // label214
+            // 
+            this.label214.AutoSize = true;
+            this.label214.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label214.Location = new System.Drawing.Point(375, 510);
+            this.label214.Name = "label214";
+            this.label214.Size = new System.Drawing.Size(23, 19);
+            this.label214.TabIndex = 195;
+            this.label214.Text = " / ";
+            // 
+            // label215
+            // 
+            this.label215.AutoSize = true;
+            this.label215.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label215.Location = new System.Drawing.Point(375, 477);
+            this.label215.Name = "label215";
+            this.label215.Size = new System.Drawing.Size(23, 19);
+            this.label215.TabIndex = 194;
+            this.label215.Text = " / ";
+            // 
+            // label216
+            // 
+            this.label216.AutoSize = true;
+            this.label216.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label216.Location = new System.Drawing.Point(375, 446);
+            this.label216.Name = "label216";
+            this.label216.Size = new System.Drawing.Size(23, 19);
+            this.label216.TabIndex = 193;
+            this.label216.Text = " / ";
+            // 
+            // label217
+            // 
+            this.label217.AutoSize = true;
+            this.label217.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label217.Location = new System.Drawing.Point(375, 414);
+            this.label217.Name = "label217";
+            this.label217.Size = new System.Drawing.Size(23, 19);
+            this.label217.TabIndex = 192;
+            this.label217.Text = " / ";
+            // 
+            // label218
+            // 
+            this.label218.AutoSize = true;
+            this.label218.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label218.Location = new System.Drawing.Point(375, 384);
+            this.label218.Name = "label218";
+            this.label218.Size = new System.Drawing.Size(23, 19);
+            this.label218.TabIndex = 191;
+            this.label218.Text = " / ";
+            // 
+            // isletmeColumnOgrIsletmeSicilNo_textbox
+            // 
+            this.isletmeColumnOgrIsletmeSicilNo_textbox.Location = new System.Drawing.Point(300, 541);
+            this.isletmeColumnOgrIsletmeSicilNo_textbox.Name = "isletmeColumnOgrIsletmeSicilNo_textbox";
+            this.isletmeColumnOgrIsletmeSicilNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeSicilNo_textbox.TabIndex = 190;
+            // 
+            // isletmeColumnOgrIsletmeIbanNo_textbox
+            // 
+            this.isletmeColumnOgrIsletmeIbanNo_textbox.Location = new System.Drawing.Point(300, 507);
+            this.isletmeColumnOgrIsletmeIbanNo_textbox.Name = "isletmeColumnOgrIsletmeIbanNo_textbox";
+            this.isletmeColumnOgrIsletmeIbanNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeIbanNo_textbox.TabIndex = 189;
+            // 
+            // isletmeColumnOgrIsletmeUODT_textbox
+            // 
+            this.isletmeColumnOgrIsletmeUODT_textbox.Location = new System.Drawing.Point(300, 474);
+            this.isletmeColumnOgrIsletmeUODT_textbox.Name = "isletmeColumnOgrIsletmeUODT_textbox";
+            this.isletmeColumnOgrIsletmeUODT_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeUODT_textbox.TabIndex = 188;
+            // 
+            // isletmeColumnOgrIsletmeUOTCNo_textbox
+            // 
+            this.isletmeColumnOgrIsletmeUOTCNo_textbox.Location = new System.Drawing.Point(300, 443);
+            this.isletmeColumnOgrIsletmeUOTCNo_textbox.Name = "isletmeColumnOgrIsletmeUOTCNo_textbox";
+            this.isletmeColumnOgrIsletmeUOTCNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeUOTCNo_textbox.TabIndex = 187;
+            // 
+            // isletmeColumnOgrIsletmeSoyad_textbox
+            // 
+            this.isletmeColumnOgrIsletmeSoyad_textbox.Location = new System.Drawing.Point(299, 411);
+            this.isletmeColumnOgrIsletmeSoyad_textbox.Name = "isletmeColumnOgrIsletmeSoyad_textbox";
+            this.isletmeColumnOgrIsletmeSoyad_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeSoyad_textbox.TabIndex = 186;
+            // 
+            // isletmeColumnOgrIsletmeUOAd_textbox
+            // 
+            this.isletmeColumnOgrIsletmeUOAd_textbox.Location = new System.Drawing.Point(300, 381);
+            this.isletmeColumnOgrIsletmeUOAd_textbox.Name = "isletmeColumnOgrIsletmeUOAd_textbox";
+            this.isletmeColumnOgrIsletmeUOAd_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeUOAd_textbox.TabIndex = 185;
+            // 
+            // isletmeEndOgrIsletmeSicilNo_textbox
+            // 
+            this.isletmeEndOgrIsletmeSicilNo_textbox.Location = new System.Drawing.Point(531, 541);
+            this.isletmeEndOgrIsletmeSicilNo_textbox.Name = "isletmeEndOgrIsletmeSicilNo_textbox";
+            this.isletmeEndOgrIsletmeSicilNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeSicilNo_textbox.TabIndex = 184;
+            // 
+            // isletmeStartOgrIsletmeSicilNo_textbox
+            // 
+            this.isletmeStartOgrIsletmeSicilNo_textbox.Location = new System.Drawing.Point(406, 541);
+            this.isletmeStartOgrIsletmeSicilNo_textbox.Name = "isletmeStartOgrIsletmeSicilNo_textbox";
+            this.isletmeStartOgrIsletmeSicilNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeSicilNo_textbox.TabIndex = 183;
+            // 
+            // label219
+            // 
+            this.label219.AutoSize = true;
+            this.label219.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label219.Location = new System.Drawing.Point(499, 541);
+            this.label219.Name = "label219";
+            this.label219.Size = new System.Drawing.Size(23, 19);
+            this.label219.TabIndex = 182;
+            this.label219.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeIbanNo_textbox
+            // 
+            this.isletmeEndOgrIsletmeIbanNo_textbox.Location = new System.Drawing.Point(531, 507);
+            this.isletmeEndOgrIsletmeIbanNo_textbox.Name = "isletmeEndOgrIsletmeIbanNo_textbox";
+            this.isletmeEndOgrIsletmeIbanNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeIbanNo_textbox.TabIndex = 181;
+            // 
+            // isletmeStartOgrIsletmeIbanNo_textbox
+            // 
+            this.isletmeStartOgrIsletmeIbanNo_textbox.Location = new System.Drawing.Point(406, 507);
+            this.isletmeStartOgrIsletmeIbanNo_textbox.Name = "isletmeStartOgrIsletmeIbanNo_textbox";
+            this.isletmeStartOgrIsletmeIbanNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeIbanNo_textbox.TabIndex = 180;
+            // 
+            // label220
+            // 
+            this.label220.AutoSize = true;
+            this.label220.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label220.Location = new System.Drawing.Point(499, 507);
+            this.label220.Name = "label220";
+            this.label220.Size = new System.Drawing.Size(23, 19);
+            this.label220.TabIndex = 179;
+            this.label220.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeUODT_textbox
+            // 
+            this.isletmeEndOgrIsletmeUODT_textbox.Location = new System.Drawing.Point(531, 474);
+            this.isletmeEndOgrIsletmeUODT_textbox.Name = "isletmeEndOgrIsletmeUODT_textbox";
+            this.isletmeEndOgrIsletmeUODT_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeUODT_textbox.TabIndex = 178;
+            // 
+            // isletmeStartOgrIsletmeUODT_textbox
+            // 
+            this.isletmeStartOgrIsletmeUODT_textbox.Location = new System.Drawing.Point(406, 474);
+            this.isletmeStartOgrIsletmeUODT_textbox.Name = "isletmeStartOgrIsletmeUODT_textbox";
+            this.isletmeStartOgrIsletmeUODT_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeUODT_textbox.TabIndex = 177;
+            // 
+            // label221
+            // 
+            this.label221.AutoSize = true;
+            this.label221.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label221.Location = new System.Drawing.Point(499, 474);
+            this.label221.Name = "label221";
+            this.label221.Size = new System.Drawing.Size(23, 19);
+            this.label221.TabIndex = 176;
+            this.label221.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeUOTCNo_textbox
+            // 
+            this.isletmeEndOgrIsletmeUOTCNo_textbox.Location = new System.Drawing.Point(531, 443);
+            this.isletmeEndOgrIsletmeUOTCNo_textbox.Name = "isletmeEndOgrIsletmeUOTCNo_textbox";
+            this.isletmeEndOgrIsletmeUOTCNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeUOTCNo_textbox.TabIndex = 175;
+            // 
+            // isletmeStartOgrIsletmeUOTCNo_textbox
+            // 
+            this.isletmeStartOgrIsletmeUOTCNo_textbox.Location = new System.Drawing.Point(406, 443);
+            this.isletmeStartOgrIsletmeUOTCNo_textbox.Name = "isletmeStartOgrIsletmeUOTCNo_textbox";
+            this.isletmeStartOgrIsletmeUOTCNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeUOTCNo_textbox.TabIndex = 174;
+            // 
+            // label222
+            // 
+            this.label222.AutoSize = true;
+            this.label222.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label222.Location = new System.Drawing.Point(499, 443);
+            this.label222.Name = "label222";
+            this.label222.Size = new System.Drawing.Size(23, 19);
+            this.label222.TabIndex = 173;
+            this.label222.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeSoyad_textbox
+            // 
+            this.isletmeEndOgrIsletmeSoyad_textbox.Location = new System.Drawing.Point(531, 411);
+            this.isletmeEndOgrIsletmeSoyad_textbox.Name = "isletmeEndOgrIsletmeSoyad_textbox";
+            this.isletmeEndOgrIsletmeSoyad_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeSoyad_textbox.TabIndex = 172;
+            // 
+            // isletmeStartOgrIsletmeSoyad_textbox
+            // 
+            this.isletmeStartOgrIsletmeSoyad_textbox.Location = new System.Drawing.Point(406, 411);
+            this.isletmeStartOgrIsletmeSoyad_textbox.Name = "isletmeStartOgrIsletmeSoyad_textbox";
+            this.isletmeStartOgrIsletmeSoyad_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeSoyad_textbox.TabIndex = 171;
+            // 
+            // label223
+            // 
+            this.label223.AutoSize = true;
+            this.label223.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label223.Location = new System.Drawing.Point(499, 411);
+            this.label223.Name = "label223";
+            this.label223.Size = new System.Drawing.Size(23, 19);
+            this.label223.TabIndex = 170;
+            this.label223.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeUOAd_textbox
+            // 
+            this.isletmeEndOgrIsletmeUOAd_textbox.Location = new System.Drawing.Point(531, 381);
+            this.isletmeEndOgrIsletmeUOAd_textbox.Name = "isletmeEndOgrIsletmeUOAd_textbox";
+            this.isletmeEndOgrIsletmeUOAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeUOAd_textbox.TabIndex = 169;
+            // 
+            // isletmeStartOgrIsletmeUOAd_textbox
+            // 
+            this.isletmeStartOgrIsletmeUOAd_textbox.Location = new System.Drawing.Point(406, 381);
+            this.isletmeStartOgrIsletmeUOAd_textbox.Name = "isletmeStartOgrIsletmeUOAd_textbox";
+            this.isletmeStartOgrIsletmeUOAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeUOAd_textbox.TabIndex = 168;
+            // 
+            // label224
+            // 
+            this.label224.AutoSize = true;
+            this.label224.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label224.Location = new System.Drawing.Point(499, 381);
+            this.label224.Name = "label224";
+            this.label224.Size = new System.Drawing.Size(23, 19);
+            this.label224.TabIndex = 167;
+            this.label224.Text = " - ";
+            // 
+            // label225
+            // 
+            this.label225.AutoSize = true;
+            this.label225.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label225.Location = new System.Drawing.Point(153, 540);
+            this.label225.Name = "label225";
+            this.label225.Size = new System.Drawing.Size(141, 21);
+            this.label225.TabIndex = 166;
+            this.label225.Text = "İşletme Sicil No : ";
+            // 
+            // label226
+            // 
+            this.label226.AutoSize = true;
+            this.label226.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label226.Location = new System.Drawing.Point(148, 506);
+            this.label226.Name = "label226";
+            this.label226.Size = new System.Drawing.Size(146, 21);
+            this.label226.TabIndex = 165;
+            this.label226.Text = "İşletme İban No : ";
+            // 
+            // label227
+            // 
+            this.label227.AutoSize = true;
+            this.label227.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label227.Location = new System.Drawing.Point(56, 474);
+            this.label227.Name = "label227";
+            this.label227.Size = new System.Drawing.Size(238, 21);
+            this.label227.TabIndex = 164;
+            this.label227.Text = "Usta Öğretici Doğrum Tarihi : ";
+            // 
+            // label228
+            // 
+            this.label228.AutoSize = true;
+            this.label228.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label228.Location = new System.Drawing.Point(118, 441);
+            this.label228.Name = "label228";
+            this.label228.Size = new System.Drawing.Size(176, 21);
+            this.label228.TabIndex = 163;
+            this.label228.Text = "Usta Öğretici TC No : ";
+            // 
+            // label229
+            // 
+            this.label229.AutoSize = true;
+            this.label229.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label229.Location = new System.Drawing.Point(116, 410);
+            this.label229.Name = "label229";
+            this.label229.Size = new System.Drawing.Size(178, 21);
+            this.label229.TabIndex = 162;
+            this.label229.Text = "Usta Öğretici Soyadı : ";
+            // 
+            // label230
+            // 
+            this.label230.AutoSize = true;
+            this.label230.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label230.Location = new System.Drawing.Point(141, 381);
+            this.label230.Name = "label230";
+            this.label230.Size = new System.Drawing.Size(153, 21);
+            this.label230.TabIndex = 161;
+            this.label230.Text = "Usta Öğretici Adı : ";
+            // 
+            // label231
+            // 
+            this.label231.AutoSize = true;
+            this.label231.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label231.Location = new System.Drawing.Point(300, 56);
+            this.label231.Name = "label231";
+            this.label231.Size = new System.Drawing.Size(65, 25);
+            this.label231.TabIndex = 160;
+            this.label231.Text = "Kolon";
+            // 
+            // label232
+            // 
+            this.label232.AutoSize = true;
+            this.label232.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label232.Location = new System.Drawing.Point(542, 58);
+            this.label232.Name = "label232";
+            this.label232.Size = new System.Drawing.Size(50, 25);
+            this.label232.TabIndex = 159;
+            this.label232.Text = "Bitiş";
+            // 
+            // label256
+            // 
+            this.label256.AutoSize = true;
+            this.label256.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label256.Location = new System.Drawing.Point(375, 354);
+            this.label256.Name = "label256";
+            this.label256.Size = new System.Drawing.Size(23, 19);
+            this.label256.TabIndex = 153;
+            this.label256.Text = " / ";
+            // 
+            // label257
+            // 
+            this.label257.AutoSize = true;
+            this.label257.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label257.Location = new System.Drawing.Point(375, 320);
+            this.label257.Name = "label257";
+            this.label257.Size = new System.Drawing.Size(23, 19);
+            this.label257.TabIndex = 152;
+            this.label257.Text = " / ";
+            // 
+            // label258
+            // 
+            this.label258.AutoSize = true;
+            this.label258.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label258.Location = new System.Drawing.Point(375, 287);
+            this.label258.Name = "label258";
+            this.label258.Size = new System.Drawing.Size(23, 19);
+            this.label258.TabIndex = 151;
+            this.label258.Text = " / ";
+            // 
+            // label259
+            // 
+            this.label259.AutoSize = true;
+            this.label259.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label259.Location = new System.Drawing.Point(375, 256);
+            this.label259.Name = "label259";
+            this.label259.Size = new System.Drawing.Size(23, 19);
+            this.label259.TabIndex = 150;
+            this.label259.Text = " / ";
+            // 
+            // label260
+            // 
+            this.label260.AutoSize = true;
+            this.label260.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label260.Location = new System.Drawing.Point(375, 224);
+            this.label260.Name = "label260";
+            this.label260.Size = new System.Drawing.Size(23, 19);
+            this.label260.TabIndex = 149;
+            this.label260.Text = " / ";
+            // 
+            // label261
+            // 
+            this.label261.AutoSize = true;
+            this.label261.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label261.Location = new System.Drawing.Point(375, 194);
+            this.label261.Name = "label261";
+            this.label261.Size = new System.Drawing.Size(23, 19);
+            this.label261.TabIndex = 148;
+            this.label261.Text = " / ";
+            // 
+            // label262
+            // 
+            this.label262.AutoSize = true;
+            this.label262.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label262.Location = new System.Drawing.Point(375, 161);
+            this.label262.Name = "label262";
+            this.label262.Size = new System.Drawing.Size(23, 19);
+            this.label262.TabIndex = 147;
+            this.label262.Text = " / ";
+            // 
+            // label263
+            // 
+            this.label263.AutoSize = true;
+            this.label263.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label263.Location = new System.Drawing.Point(375, 127);
+            this.label263.Name = "label263";
+            this.label263.Size = new System.Drawing.Size(23, 19);
+            this.label263.TabIndex = 146;
+            this.label263.Text = " / ";
+            // 
+            // label264
+            // 
+            this.label264.AutoSize = true;
+            this.label264.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label264.Location = new System.Drawing.Point(375, 94);
+            this.label264.Name = "label264";
+            this.label264.Size = new System.Drawing.Size(23, 19);
+            this.label264.TabIndex = 145;
+            this.label264.Text = " / ";
+            // 
+            // isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox
+            // 
+            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Location = new System.Drawing.Point(300, 351);
+            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Name = "isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox";
+            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.TabIndex = 139;
+            // 
+            // isletmeColumnOgrIsletmeDalAdi_textbox
+            // 
+            this.isletmeColumnOgrIsletmeDalAdi_textbox.Location = new System.Drawing.Point(300, 317);
+            this.isletmeColumnOgrIsletmeDalAdi_textbox.Name = "isletmeColumnOgrIsletmeDalAdi_textbox";
+            this.isletmeColumnOgrIsletmeDalAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeDalAdi_textbox.TabIndex = 138;
+            // 
+            // isletmeColumnOgrIsletmeAlanAdi_textbox
+            // 
+            this.isletmeColumnOgrIsletmeAlanAdi_textbox.Location = new System.Drawing.Point(300, 284);
+            this.isletmeColumnOgrIsletmeAlanAdi_textbox.Name = "isletmeColumnOgrIsletmeAlanAdi_textbox";
+            this.isletmeColumnOgrIsletmeAlanAdi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeAlanAdi_textbox.TabIndex = 137;
+            // 
+            // isletmeColumnOgrIsletmeTelNo_textbox
+            // 
+            this.isletmeColumnOgrIsletmeTelNo_textbox.Location = new System.Drawing.Point(300, 253);
+            this.isletmeColumnOgrIsletmeTelNo_textbox.Name = "isletmeColumnOgrIsletmeTelNo_textbox";
+            this.isletmeColumnOgrIsletmeTelNo_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeTelNo_textbox.TabIndex = 136;
+            // 
+            // isletmeColumnOgrIsletmeYetkilisi_textbox
+            // 
+            this.isletmeColumnOgrIsletmeYetkilisi_textbox.Location = new System.Drawing.Point(300, 221);
+            this.isletmeColumnOgrIsletmeYetkilisi_textbox.Name = "isletmeColumnOgrIsletmeYetkilisi_textbox";
+            this.isletmeColumnOgrIsletmeYetkilisi_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeYetkilisi_textbox.TabIndex = 135;
+            // 
+            // isletmeColumnOgrIsletmeTamAdres_textbox
+            // 
+            this.isletmeColumnOgrIsletmeTamAdres_textbox.Location = new System.Drawing.Point(300, 191);
+            this.isletmeColumnOgrIsletmeTamAdres_textbox.Name = "isletmeColumnOgrIsletmeTamAdres_textbox";
+            this.isletmeColumnOgrIsletmeTamAdres_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeTamAdres_textbox.TabIndex = 134;
+            // 
+            // isletmeColumnOgrIsletmeAdresIlce_textbox
+            // 
+            this.isletmeColumnOgrIsletmeAdresIlce_textbox.Location = new System.Drawing.Point(300, 158);
+            this.isletmeColumnOgrIsletmeAdresIlce_textbox.Name = "isletmeColumnOgrIsletmeAdresIlce_textbox";
+            this.isletmeColumnOgrIsletmeAdresIlce_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeAdresIlce_textbox.TabIndex = 133;
+            // 
+            // isletmeColumnOgrIsletmeAdresIl_textbox
+            // 
+            this.isletmeColumnOgrIsletmeAdresIl_textbox.Location = new System.Drawing.Point(300, 124);
+            this.isletmeColumnOgrIsletmeAdresIl_textbox.Name = "isletmeColumnOgrIsletmeAdresIl_textbox";
+            this.isletmeColumnOgrIsletmeAdresIl_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeAdresIl_textbox.TabIndex = 132;
+            // 
+            // isletmeColumnOgrIsletmeAd_textbox
+            // 
+            this.isletmeColumnOgrIsletmeAd_textbox.Location = new System.Drawing.Point(300, 91);
+            this.isletmeColumnOgrIsletmeAd_textbox.Name = "isletmeColumnOgrIsletmeAd_textbox";
+            this.isletmeColumnOgrIsletmeAd_textbox.Size = new System.Drawing.Size(65, 24);
+            this.isletmeColumnOgrIsletmeAd_textbox.TabIndex = 131;
+            // 
+            // isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox
+            // 
+            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Location = new System.Drawing.Point(531, 351);
+            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Name = "isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox";
+            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.TabIndex = 115;
+            // 
+            // isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox
+            // 
+            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Location = new System.Drawing.Point(406, 351);
+            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Name = "isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox";
+            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.TabIndex = 114;
+            // 
+            // label265
+            // 
+            this.label265.AutoSize = true;
+            this.label265.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label265.Location = new System.Drawing.Point(499, 351);
+            this.label265.Name = "label265";
+            this.label265.Size = new System.Drawing.Size(23, 19);
+            this.label265.TabIndex = 113;
+            this.label265.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeDalAdi_textbox
+            // 
+            this.isletmeEndOgrIsletmeDalAdi_textbox.Location = new System.Drawing.Point(531, 317);
+            this.isletmeEndOgrIsletmeDalAdi_textbox.Name = "isletmeEndOgrIsletmeDalAdi_textbox";
+            this.isletmeEndOgrIsletmeDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeDalAdi_textbox.TabIndex = 112;
+            // 
+            // isletmeStartOgrIsletmeDalAdi_textbox
+            // 
+            this.isletmeStartOgrIsletmeDalAdi_textbox.Location = new System.Drawing.Point(406, 317);
+            this.isletmeStartOgrIsletmeDalAdi_textbox.Name = "isletmeStartOgrIsletmeDalAdi_textbox";
+            this.isletmeStartOgrIsletmeDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeDalAdi_textbox.TabIndex = 111;
+            // 
+            // label266
+            // 
+            this.label266.AutoSize = true;
+            this.label266.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label266.Location = new System.Drawing.Point(499, 317);
+            this.label266.Name = "label266";
+            this.label266.Size = new System.Drawing.Size(23, 19);
+            this.label266.TabIndex = 110;
+            this.label266.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeAlanAdi_textbox
+            // 
+            this.isletmeEndOgrIsletmeAlanAdi_textbox.Location = new System.Drawing.Point(531, 284);
+            this.isletmeEndOgrIsletmeAlanAdi_textbox.Name = "isletmeEndOgrIsletmeAlanAdi_textbox";
+            this.isletmeEndOgrIsletmeAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeAlanAdi_textbox.TabIndex = 109;
+            // 
+            // isletmeStartOgrIsletmeAlanAdi_textbox
+            // 
+            this.isletmeStartOgrIsletmeAlanAdi_textbox.Location = new System.Drawing.Point(406, 284);
+            this.isletmeStartOgrIsletmeAlanAdi_textbox.Name = "isletmeStartOgrIsletmeAlanAdi_textbox";
+            this.isletmeStartOgrIsletmeAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeAlanAdi_textbox.TabIndex = 108;
+            // 
+            // label267
+            // 
+            this.label267.AutoSize = true;
+            this.label267.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label267.Location = new System.Drawing.Point(499, 284);
+            this.label267.Name = "label267";
+            this.label267.Size = new System.Drawing.Size(23, 19);
+            this.label267.TabIndex = 107;
+            this.label267.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeTelNo_textbox
+            // 
+            this.isletmeEndOgrIsletmeTelNo_textbox.Location = new System.Drawing.Point(531, 253);
+            this.isletmeEndOgrIsletmeTelNo_textbox.Name = "isletmeEndOgrIsletmeTelNo_textbox";
+            this.isletmeEndOgrIsletmeTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeTelNo_textbox.TabIndex = 106;
+            // 
+            // isletmeStartOgrIsletmeTelNo_textbox
+            // 
+            this.isletmeStartOgrIsletmeTelNo_textbox.Location = new System.Drawing.Point(406, 253);
+            this.isletmeStartOgrIsletmeTelNo_textbox.Name = "isletmeStartOgrIsletmeTelNo_textbox";
+            this.isletmeStartOgrIsletmeTelNo_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeTelNo_textbox.TabIndex = 105;
+            // 
+            // label268
+            // 
+            this.label268.AutoSize = true;
+            this.label268.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label268.Location = new System.Drawing.Point(499, 253);
+            this.label268.Name = "label268";
+            this.label268.Size = new System.Drawing.Size(23, 19);
+            this.label268.TabIndex = 104;
+            this.label268.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeYetkilisi_textbox
+            // 
+            this.isletmeEndOgrIsletmeYetkilisi_textbox.Location = new System.Drawing.Point(531, 221);
+            this.isletmeEndOgrIsletmeYetkilisi_textbox.Name = "isletmeEndOgrIsletmeYetkilisi_textbox";
+            this.isletmeEndOgrIsletmeYetkilisi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeYetkilisi_textbox.TabIndex = 103;
+            // 
+            // isletmeStartOgrIsletmeYetkilisi_textbox
+            // 
+            this.isletmeStartOgrIsletmeYetkilisi_textbox.Location = new System.Drawing.Point(406, 221);
+            this.isletmeStartOgrIsletmeYetkilisi_textbox.Name = "isletmeStartOgrIsletmeYetkilisi_textbox";
+            this.isletmeStartOgrIsletmeYetkilisi_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeYetkilisi_textbox.TabIndex = 102;
+            // 
+            // label269
+            // 
+            this.label269.AutoSize = true;
+            this.label269.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label269.Location = new System.Drawing.Point(499, 221);
+            this.label269.Name = "label269";
+            this.label269.Size = new System.Drawing.Size(23, 19);
+            this.label269.TabIndex = 101;
+            this.label269.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeTamAdres_textbox
+            // 
+            this.isletmeEndOgrIsletmeTamAdres_textbox.Location = new System.Drawing.Point(531, 191);
+            this.isletmeEndOgrIsletmeTamAdres_textbox.Name = "isletmeEndOgrIsletmeTamAdres_textbox";
+            this.isletmeEndOgrIsletmeTamAdres_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeTamAdres_textbox.TabIndex = 100;
+            // 
+            // isletmeStartOgrIsletmeTamAdres_textbox
+            // 
+            this.isletmeStartOgrIsletmeTamAdres_textbox.Location = new System.Drawing.Point(406, 191);
+            this.isletmeStartOgrIsletmeTamAdres_textbox.Name = "isletmeStartOgrIsletmeTamAdres_textbox";
+            this.isletmeStartOgrIsletmeTamAdres_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeTamAdres_textbox.TabIndex = 99;
+            // 
+            // label270
+            // 
+            this.label270.AutoSize = true;
+            this.label270.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label270.Location = new System.Drawing.Point(499, 191);
+            this.label270.Name = "label270";
+            this.label270.Size = new System.Drawing.Size(23, 19);
+            this.label270.TabIndex = 98;
+            this.label270.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeAdresIlce_textbox
+            // 
+            this.isletmeEndOgrIsletmeAdresIlce_textbox.Location = new System.Drawing.Point(531, 158);
+            this.isletmeEndOgrIsletmeAdresIlce_textbox.Name = "isletmeEndOgrIsletmeAdresIlce_textbox";
+            this.isletmeEndOgrIsletmeAdresIlce_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeAdresIlce_textbox.TabIndex = 97;
+            // 
+            // isletmeStartOgrIsletmeAdresIlce_textbox
+            // 
+            this.isletmeStartOgrIsletmeAdresIlce_textbox.Location = new System.Drawing.Point(406, 158);
+            this.isletmeStartOgrIsletmeAdresIlce_textbox.Name = "isletmeStartOgrIsletmeAdresIlce_textbox";
+            this.isletmeStartOgrIsletmeAdresIlce_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeAdresIlce_textbox.TabIndex = 96;
+            // 
+            // label271
+            // 
+            this.label271.AutoSize = true;
+            this.label271.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label271.Location = new System.Drawing.Point(499, 158);
+            this.label271.Name = "label271";
+            this.label271.Size = new System.Drawing.Size(23, 19);
+            this.label271.TabIndex = 95;
+            this.label271.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeAdresIl_textbox
+            // 
+            this.isletmeEndOgrIsletmeAdresIl_textbox.Location = new System.Drawing.Point(531, 124);
+            this.isletmeEndOgrIsletmeAdresIl_textbox.Name = "isletmeEndOgrIsletmeAdresIl_textbox";
+            this.isletmeEndOgrIsletmeAdresIl_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeAdresIl_textbox.TabIndex = 94;
+            // 
+            // isletmeStartOgrIsletmeAdresIl_textbox
+            // 
+            this.isletmeStartOgrIsletmeAdresIl_textbox.Location = new System.Drawing.Point(406, 124);
+            this.isletmeStartOgrIsletmeAdresIl_textbox.Name = "isletmeStartOgrIsletmeAdresIl_textbox";
+            this.isletmeStartOgrIsletmeAdresIl_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeAdresIl_textbox.TabIndex = 93;
+            // 
+            // label272
+            // 
+            this.label272.AutoSize = true;
+            this.label272.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label272.Location = new System.Drawing.Point(499, 124);
+            this.label272.Name = "label272";
+            this.label272.Size = new System.Drawing.Size(23, 19);
+            this.label272.TabIndex = 92;
+            this.label272.Text = " - ";
+            // 
+            // isletmeEndOgrIsletmeAd_textbox
+            // 
+            this.isletmeEndOgrIsletmeAd_textbox.Location = new System.Drawing.Point(531, 91);
+            this.isletmeEndOgrIsletmeAd_textbox.Name = "isletmeEndOgrIsletmeAd_textbox";
+            this.isletmeEndOgrIsletmeAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeEndOgrIsletmeAd_textbox.TabIndex = 91;
+            // 
+            // isletmeStartOgrIsletmeAd_textbox
+            // 
+            this.isletmeStartOgrIsletmeAd_textbox.Location = new System.Drawing.Point(406, 91);
+            this.isletmeStartOgrIsletmeAd_textbox.Name = "isletmeStartOgrIsletmeAd_textbox";
+            this.isletmeStartOgrIsletmeAd_textbox.Size = new System.Drawing.Size(85, 24);
+            this.isletmeStartOgrIsletmeAd_textbox.TabIndex = 90;
+            // 
+            // label273
+            // 
+            this.label273.AutoSize = true;
+            this.label273.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label273.Location = new System.Drawing.Point(499, 91);
+            this.label273.Name = "label273";
+            this.label273.Size = new System.Drawing.Size(23, 19);
+            this.label273.TabIndex = 89;
+            this.label273.Text = " - ";
+            // 
+            // label274
+            // 
+            this.label274.AutoSize = true;
+            this.label274.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label274.Location = new System.Drawing.Point(401, 58);
+            this.label274.Name = "label274";
+            this.label274.Size = new System.Drawing.Size(99, 25);
+            this.label274.TabIndex = 83;
+            this.label274.Text = "Başlangıç";
+            // 
+            // label275
+            // 
+            this.label275.AutoSize = true;
+            this.label275.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label275.Location = new System.Drawing.Point(84, 56);
+            this.label275.Name = "label275";
+            this.label275.Size = new System.Drawing.Size(209, 25);
+            this.label275.TabIndex = 82;
+            this.label275.Text = "SQL\'deki Kolon Adları";
+            // 
+            // label276
+            // 
+            this.label276.AutoSize = true;
+            this.label276.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label276.Location = new System.Drawing.Point(169, 8);
+            this.label276.Name = "label276";
+            this.label276.Size = new System.Drawing.Size(302, 35);
+            this.label276.TabIndex = 81;
+            this.label276.Text = "İşletme Aktarım Paneli";
+            // 
+            // label277
+            // 
+            this.label277.AutoSize = true;
+            this.label277.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label277.Location = new System.Drawing.Point(46, 350);
+            this.label277.Name = "label277";
+            this.label277.Size = new System.Drawing.Size(248, 21);
+            this.label277.TabIndex = 75;
+            this.label277.Text = "Usta Öğreticilik Belgesi Varmı : \r\n";
+            // 
+            // label278
+            // 
+            this.label278.AutoSize = true;
+            this.label278.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label278.Location = new System.Drawing.Point(156, 316);
+            this.label278.Name = "label278";
+            this.label278.Size = new System.Drawing.Size(137, 21);
+            this.label278.TabIndex = 74;
+            this.label278.Text = "İşletmenin Dalı : ";
+            // 
+            // label279
+            // 
+            this.label279.AutoSize = true;
+            this.label279.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label279.Location = new System.Drawing.Point(148, 285);
+            this.label279.Name = "label279";
+            this.label279.Size = new System.Drawing.Size(146, 21);
+            this.label279.TabIndex = 73;
+            this.label279.Text = "İşletmenin Alanı : ";
+            // 
+            // label280
+            // 
+            this.label280.AutoSize = true;
+            this.label280.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label280.Location = new System.Drawing.Point(50, 253);
+            this.label280.Name = "label280";
+            this.label280.Size = new System.Drawing.Size(243, 21);
+            this.label280.TabIndex = 72;
+            this.label280.Text = "İşletmenin Telefon Numarası : ";
+            // 
+            // label281
+            // 
+            this.label281.AutoSize = true;
+            this.label281.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label281.Location = new System.Drawing.Point(152, 221);
+            this.label281.Name = "label281";
+            this.label281.Size = new System.Drawing.Size(141, 21);
+            this.label281.TabIndex = 71;
+            this.label281.Text = "İşletme Yetkilisi : ";
+            // 
+            // label282
+            // 
+            this.label282.AutoSize = true;
+            this.label282.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label282.Location = new System.Drawing.Point(101, 191);
+            this.label282.Name = "label282";
+            this.label282.Size = new System.Drawing.Size(193, 21);
+            this.label282.TabIndex = 70;
+            this.label282.Text = "İşletmenin Tam Adresi : ";
+            // 
+            // label283
+            // 
+            this.label283.AutoSize = true;
+            this.label283.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label283.Location = new System.Drawing.Point(136, 158);
+            this.label283.Name = "label283";
+            this.label283.Size = new System.Drawing.Size(158, 21);
+            this.label283.TabIndex = 69;
+            this.label283.Text = "İşletme Adres İlçe : ";
+            // 
+            // label284
+            // 
+            this.label284.AutoSize = true;
+            this.label284.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label284.Location = new System.Drawing.Point(152, 125);
+            this.label284.Name = "label284";
+            this.label284.Size = new System.Drawing.Size(141, 21);
+            this.label284.TabIndex = 68;
+            this.label284.Text = "İşletme Adres İl : ";
+            // 
+            // label285
+            // 
+            this.label285.AutoSize = true;
+            this.label285.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label285.Location = new System.Drawing.Point(185, 92);
+            this.label285.Name = "label285";
+            this.label285.Size = new System.Drawing.Size(109, 21);
+            this.label285.TabIndex = 67;
+            this.label285.Text = "İşletme Adı : ";
+            // 
+            // IsletmeDETAYtabControl1
+            // 
+            this.IsletmeDETAYtabControl1.Controls.Add(this.tabPage26);
+            this.IsletmeDETAYtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IsletmeDETAYtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeDETAYtabControl1.Location = new System.Drawing.Point(0, 0);
+            this.IsletmeDETAYtabControl1.Name = "IsletmeDETAYtabControl1";
+            this.IsletmeDETAYtabControl1.Padding = new System.Drawing.Point(50, 3);
+            this.IsletmeDETAYtabControl1.SelectedIndex = 0;
+            this.IsletmeDETAYtabControl1.Size = new System.Drawing.Size(1151, 650);
+            this.IsletmeDETAYtabControl1.TabIndex = 2;
+            // 
+            // tabPage26
+            // 
+            this.tabPage26.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage26.Controls.Add(this.splitContainer11);
+            this.tabPage26.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabPage26.Location = new System.Drawing.Point(4, 28);
+            this.tabPage26.Name = "tabPage26";
+            this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage26.Size = new System.Drawing.Size(1143, 618);
+            this.tabPage26.TabIndex = 0;
+            this.tabPage26.Text = "İŞLETME BİLGİLERİ";
+            // 
+            // splitContainer11
+            // 
+            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer11.Location = new System.Drawing.Point(3, 3);
+            this.splitContainer11.Name = "splitContainer11";
+            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer11.Panel1
+            // 
+            this.splitContainer11.Panel1.Controls.Add(this.panel72);
+            this.splitContainer11.Panel1.Controls.Add(this.panel73);
+            this.splitContainer11.Panel1.Padding = new System.Windows.Forms.Padding(10);
+            // 
+            // splitContainer11.Panel2
+            // 
+            this.splitContainer11.Panel2.Controls.Add(this.panel75);
+            this.splitContainer11.Size = new System.Drawing.Size(1137, 612);
+            this.splitContainer11.SplitterDistance = 510;
+            this.splitContainer11.TabIndex = 2;
+            // 
+            // panel72
+            // 
+            this.panel72.Controls.Add(this.IsletmeHakkindaBaziBilgiler_label);
+            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel72.Location = new System.Drawing.Point(10, 10);
+            this.panel72.Name = "panel72";
+            this.panel72.Size = new System.Drawing.Size(1117, 53);
+            this.panel72.TabIndex = 2;
+            // 
+            // IsletmeHakkindaBaziBilgiler_label
+            // 
+            this.IsletmeHakkindaBaziBilgiler_label.AutoSize = true;
+            this.IsletmeHakkindaBaziBilgiler_label.Dock = System.Windows.Forms.DockStyle.Left;
+            this.IsletmeHakkindaBaziBilgiler_label.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeHakkindaBaziBilgiler_label.Location = new System.Drawing.Point(0, 0);
+            this.IsletmeHakkindaBaziBilgiler_label.Name = "IsletmeHakkindaBaziBilgiler_label";
+            this.IsletmeHakkindaBaziBilgiler_label.Size = new System.Drawing.Size(496, 46);
+            this.IsletmeHakkindaBaziBilgiler_label.TabIndex = 1;
+            this.IsletmeHakkindaBaziBilgiler_label.Text = "Echopos hakkında bazı bilgiler";
+            // 
+            // panel73
+            // 
+            this.panel73.Controls.Add(this.groupBox26);
+            this.panel73.Controls.Add(this.panel74);
+            this.panel73.Controls.Add(this.groupBox16);
+            this.panel73.Controls.Add(this.groupBox27);
+            this.panel73.Controls.Add(this.groupBox32);
+            this.panel73.Controls.Add(this.groupBox18);
+            this.panel73.Controls.Add(this.groupBox19);
+            this.panel73.Controls.Add(this.groupBox20);
+            this.panel73.Controls.Add(this.groupBox25);
+            this.panel73.Controls.Add(this.groupBox28);
+            this.panel73.Controls.Add(this.groupBox29);
+            this.panel73.Controls.Add(this.groupBox30);
+            this.panel73.Controls.Add(this.groupBox31);
+            this.panel73.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel73.Location = new System.Drawing.Point(10, 63);
+            this.panel73.Name = "panel73";
+            this.panel73.Padding = new System.Windows.Forms.Padding(10);
+            this.panel73.Size = new System.Drawing.Size(1117, 437);
+            this.panel73.TabIndex = 1;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.IsletmeDetayIsletmeTCNoCopy_button);
+            this.groupBox26.Controls.Add(this.infoIsletmeDetayUstaOgreticiTCNO_label);
+            this.groupBox26.Location = new System.Drawing.Point(400, 290);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox26.Size = new System.Drawing.Size(373, 60);
+            this.groupBox26.TabIndex = 123;
+            this.groupBox26.TabStop = false;
+            this.groupBox26.Text = "Usta Öğretici TC Kimlik No";
+            // 
+            // IsletmeDetayIsletmeTCNoCopy_button
+            // 
+            this.IsletmeDetayIsletmeTCNoCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeTCNoCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeTCNoCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeTCNoCopy_button.Image")));
+            this.IsletmeDetayIsletmeTCNoCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeTCNoCopy_button.Name = "IsletmeDetayIsletmeTCNoCopy_button";
+            this.IsletmeDetayIsletmeTCNoCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeTCNoCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeTCNoCopy_button.UseVisualStyleBackColor = true;
+            // 
+            // infoIsletmeDetayUstaOgreticiTCNO_label
+            // 
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.AutoSize = true;
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.Name = "infoIsletmeDetayUstaOgreticiTCNO_label";
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.Size = new System.Drawing.Size(322, 24);
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.TabIndex = 99;
+            this.infoIsletmeDetayUstaOgreticiTCNO_label.Text = "infoIsletmeDetayUstaOgreticiTCNO_label";
+            // 
+            // panel74
+            // 
+            this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel74.Controls.Add(this.IsletmeDetayDataGridView1);
+            this.panel74.Controls.Add(this.label115);
+            this.panel74.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel74.Location = new System.Drawing.Point(791, 10);
+            this.panel74.Name = "panel74";
+            this.panel74.Padding = new System.Windows.Forms.Padding(5);
+            this.panel74.Size = new System.Drawing.Size(316, 417);
+            this.panel74.TabIndex = 122;
+            // 
+            // IsletmeDetayDataGridView1
+            // 
+            this.IsletmeDetayDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.IsletmeDetayDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IsletmeDetayDataGridView1.Location = new System.Drawing.Point(5, 32);
+            this.IsletmeDetayDataGridView1.Name = "IsletmeDetayDataGridView1";
+            this.IsletmeDetayDataGridView1.Size = new System.Drawing.Size(302, 376);
+            this.IsletmeDetayDataGridView1.TabIndex = 120;
+            this.IsletmeDetayDataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.IsletmeDetayDataGridView1_CellDoubleClick);
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label115.Location = new System.Drawing.Point(5, 5);
+            this.label115.Name = "label115";
+            this.label115.Padding = new System.Windows.Forms.Padding(3);
+            this.label115.Size = new System.Drawing.Size(264, 27);
+            this.label115.TabIndex = 0;
+            this.label115.Text = "Burada staj yapan öğrencilerimiz";
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.IsletmeDetayIsletmeDalAdiCopy_button);
+            this.groupBox16.Controls.Add(this.infoIsletmeDetayIsletmeDal_label);
+            this.groupBox16.Location = new System.Drawing.Point(400, 84);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox16.Size = new System.Drawing.Size(373, 60);
+            this.groupBox16.TabIndex = 120;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Dal";
+            // 
+            // IsletmeDetayIsletmeDalAdiCopy_button
+            // 
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeDalAdiCopy_button.Image")));
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Name = "IsletmeDetayIsletmeDalAdiCopy_button";
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeDalAdiCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeDalAdiCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeDalAdiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeDalAdiCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeDal_label
+            // 
+            this.infoIsletmeDetayIsletmeDal_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeDal_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeDal_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeDal_label.Name = "infoIsletmeDetayIsletmeDal_label";
+            this.infoIsletmeDetayIsletmeDal_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayIsletmeDal_label.Size = new System.Drawing.Size(262, 24);
+            this.infoIsletmeDetayIsletmeDal_label.TabIndex = 99;
+            this.infoIsletmeDetayIsletmeDal_label.Text = "infoIsletmeDetayIsletmeDal_label";
+            // 
+            // groupBox27
+            // 
+            this.groupBox27.Controls.Add(this.IsletmeDetayUOAdSoyadCopy_button);
+            this.groupBox27.Controls.Add(this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label);
+            this.groupBox27.Location = new System.Drawing.Point(400, 221);
+            this.groupBox27.Name = "groupBox27";
+            this.groupBox27.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox27.Size = new System.Drawing.Size(373, 60);
+            this.groupBox27.TabIndex = 122;
+            this.groupBox27.TabStop = false;
+            this.groupBox27.Text = "Usta Öğretici Ad Soyadı";
+            // 
+            // IsletmeDetayUOAdSoyadCopy_button
+            // 
+            this.IsletmeDetayUOAdSoyadCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayUOAdSoyadCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayUOAdSoyadCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayUOAdSoyadCopy_button.Image")));
+            this.IsletmeDetayUOAdSoyadCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayUOAdSoyadCopy_button.Name = "IsletmeDetayUOAdSoyadCopy_button";
+            this.IsletmeDetayUOAdSoyadCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayUOAdSoyadCopy_button.TabIndex = 118;
+            this.IsletmeDetayUOAdSoyadCopy_button.UseVisualStyleBackColor = true;
+            // 
+            // infoIsletmeDetayUstaOgreticiAdiSoyadi_label
+            // 
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.AutoSize = true;
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Name = "infoIsletmeDetayUstaOgreticiAdiSoyadi_label";
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Size = new System.Drawing.Size(351, 24);
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.TabIndex = 108;
+            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Text = "infoIsletmeDetayUstaOgreticiAdiSoyadi_label";
+            // 
+            // groupBox32
+            // 
+            this.groupBox32.Controls.Add(this.IsletmeDetayIsletmeDTCopy_button);
+            this.groupBox32.Controls.Add(this.infoIsletmeDetayUstaOgreticiDT_label);
+            this.groupBox32.Location = new System.Drawing.Point(400, 366);
+            this.groupBox32.Name = "groupBox32";
+            this.groupBox32.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox32.Size = new System.Drawing.Size(373, 60);
+            this.groupBox32.TabIndex = 121;
+            this.groupBox32.TabStop = false;
+            this.groupBox32.Text = "Usta Öğretici Doğum Tarihi";
+            // 
+            // IsletmeDetayIsletmeDTCopy_button
+            // 
+            this.IsletmeDetayIsletmeDTCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeDTCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeDTCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeDTCopy_button.Image")));
+            this.IsletmeDetayIsletmeDTCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeDTCopy_button.Name = "IsletmeDetayIsletmeDTCopy_button";
+            this.IsletmeDetayIsletmeDTCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeDTCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeDTCopy_button.UseVisualStyleBackColor = true;
+            // 
+            // infoIsletmeDetayUstaOgreticiDT_label
+            // 
+            this.infoIsletmeDetayUstaOgreticiDT_label.AutoSize = true;
+            this.infoIsletmeDetayUstaOgreticiDT_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayUstaOgreticiDT_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayUstaOgreticiDT_label.Name = "infoIsletmeDetayUstaOgreticiDT_label";
+            this.infoIsletmeDetayUstaOgreticiDT_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayUstaOgreticiDT_label.Size = new System.Drawing.Size(297, 24);
+            this.infoIsletmeDetayUstaOgreticiDT_label.TabIndex = 102;
+            this.infoIsletmeDetayUstaOgreticiDT_label.Text = "infoIsletmeDetayUstaOgreticiDT_label";
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.infoIsletmeDetayIsletmeAdresIl_label);
+            this.groupBox18.Controls.Add(this.IsletmeDetayIsletmeAdresIlCopy_button);
+            this.groupBox18.Location = new System.Drawing.Point(14, 84);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox18.Size = new System.Drawing.Size(371, 60);
+            this.groupBox18.TabIndex = 118;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Adres İl";
+            // 
+            // infoIsletmeDetayIsletmeAdresIl_label
+            // 
+            this.infoIsletmeDetayIsletmeAdresIl_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeAdresIl_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeAdresIl_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeAdresIl_label.Name = "infoIsletmeDetayIsletmeAdresIl_label";
+            this.infoIsletmeDetayIsletmeAdresIl_label.Size = new System.Drawing.Size(289, 21);
+            this.infoIsletmeDetayIsletmeAdresIl_label.TabIndex = 118;
+            this.infoIsletmeDetayIsletmeAdresIl_label.Text = "infoIsletmeDetayIsletmeAdresIl_label";
+            // 
+            // IsletmeDetayIsletmeAdresIlCopy_button
+            // 
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAdresIlCopy_button.Image")));
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Location = new System.Drawing.Point(336, 27);
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Name = "IsletmeDetayIsletmeAdresIlCopy_button";
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeAdresIlCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeAdresIlCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeAdresIlCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAdresIlCopy_button_Click);
+            // 
+            // groupBox19
+            // 
+            this.groupBox19.Controls.Add(this.IsletmeDetayIsletmeAlanAdiCopy_button);
+            this.groupBox19.Controls.Add(this.infoIsletmeDetayIsletmeAlan_label);
+            this.groupBox19.Location = new System.Drawing.Point(400, 15);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox19.Size = new System.Drawing.Size(373, 60);
+            this.groupBox19.TabIndex = 114;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Alan";
+            // 
+            // IsletmeDetayIsletmeAlanAdiCopy_button
+            // 
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAlanAdiCopy_button.Image")));
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Name = "IsletmeDetayIsletmeAlanAdiCopy_button";
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.TabIndex = 118;
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeAlanAdiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAlanAdiCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeAlan_label
+            // 
+            this.infoIsletmeDetayIsletmeAlan_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeAlan_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeAlan_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeAlan_label.Name = "infoIsletmeDetayIsletmeAlan_label";
+            this.infoIsletmeDetayIsletmeAlan_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayIsletmeAlan_label.Size = new System.Drawing.Size(271, 24);
+            this.infoIsletmeDetayIsletmeAlan_label.TabIndex = 108;
+            this.infoIsletmeDetayIsletmeAlan_label.Text = "infoIsletmeDetayIsletmeAlan_label";
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.infoIsletmeDetayIsletmeAdi_label);
+            this.groupBox20.Controls.Add(this.IsletmeDetayIsletmeAdiCopy_button);
+            this.groupBox20.Location = new System.Drawing.Point(14, 15);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox20.Size = new System.Drawing.Size(371, 60);
+            this.groupBox20.TabIndex = 117;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Adı";
+            // 
+            // infoIsletmeDetayIsletmeAdi_label
+            // 
+            this.infoIsletmeDetayIsletmeAdi_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeAdi_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeAdi_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeAdi_label.Name = "infoIsletmeDetayIsletmeAdi_label";
+            this.infoIsletmeDetayIsletmeAdi_label.Size = new System.Drawing.Size(262, 21);
+            this.infoIsletmeDetayIsletmeAdi_label.TabIndex = 117;
+            this.infoIsletmeDetayIsletmeAdi_label.Text = "infoIsletmeDetayIsletmeAdi_label";
+            // 
+            // IsletmeDetayIsletmeAdiCopy_button
+            // 
+            this.IsletmeDetayIsletmeAdiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeAdiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeAdiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAdiCopy_button.Image")));
+            this.IsletmeDetayIsletmeAdiCopy_button.Location = new System.Drawing.Point(336, 27);
+            this.IsletmeDetayIsletmeAdiCopy_button.Name = "IsletmeDetayIsletmeAdiCopy_button";
+            this.IsletmeDetayIsletmeAdiCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeAdiCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeAdiCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeAdiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAdiCopy_button_Click);
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button);
+            this.groupBox25.Controls.Add(this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label);
+            this.groupBox25.Location = new System.Drawing.Point(16, 372);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox25.Size = new System.Drawing.Size(373, 60);
+            this.groupBox25.TabIndex = 117;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "Usta Öğreticilik Belgesi Varmı?";
+            // 
+            // IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button
+            // 
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image")));
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Name = "IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button";
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label
+            // 
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Name = "infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label";
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Size = new System.Drawing.Size(393, 21);
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.TabIndex = 113;
+            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Text = "infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label";
+            // 
+            // groupBox28
+            // 
+            this.groupBox28.Controls.Add(this.IsletmeDetayIsletmeTelNoCopy_button);
+            this.groupBox28.Controls.Add(this.infoIsletmeDetayIsletmeTelNo_label);
+            this.groupBox28.Location = new System.Drawing.Point(400, 153);
+            this.groupBox28.Name = "groupBox28";
+            this.groupBox28.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox28.Size = new System.Drawing.Size(373, 60);
+            this.groupBox28.TabIndex = 109;
+            this.groupBox28.TabStop = false;
+            this.groupBox28.Text = "Telefon Numarası";
+            // 
+            // IsletmeDetayIsletmeTelNoCopy_button
+            // 
+            this.IsletmeDetayIsletmeTelNoCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeTelNoCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeTelNoCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeTelNoCopy_button.Image")));
+            this.IsletmeDetayIsletmeTelNoCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeTelNoCopy_button.Name = "IsletmeDetayIsletmeTelNoCopy_button";
+            this.IsletmeDetayIsletmeTelNoCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeTelNoCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeTelNoCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeTelNoCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeTelNoCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeTelNo_label
+            // 
+            this.infoIsletmeDetayIsletmeTelNo_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeTelNo_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeTelNo_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeTelNo_label.Name = "infoIsletmeDetayIsletmeTelNo_label";
+            this.infoIsletmeDetayIsletmeTelNo_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayIsletmeTelNo_label.Size = new System.Drawing.Size(282, 24);
+            this.infoIsletmeDetayIsletmeTelNo_label.TabIndex = 102;
+            this.infoIsletmeDetayIsletmeTelNo_label.Text = "infoIsletmeDetayIsletmeTelNo_label";
+            // 
+            // groupBox29
+            // 
+            this.groupBox29.Controls.Add(this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button);
+            this.groupBox29.Controls.Add(this.infoIsletmeDetayIsletmeYetkilisi_label);
+            this.groupBox29.Location = new System.Drawing.Point(13, 222);
+            this.groupBox29.Name = "groupBox29";
+            this.groupBox29.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox29.Size = new System.Drawing.Size(373, 60);
+            this.groupBox29.TabIndex = 107;
+            this.groupBox29.TabStop = false;
+            this.groupBox29.Text = "İşletme Yetkilisi";
+            // 
+            // IsletmeDetayIsletmeIsletmeYetkilisiCopy_button
+            // 
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image")));
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Name = "IsletmeDetayIsletmeIsletmeYetkilisiCopy_button";
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeYetkilisi_label
+            // 
+            this.infoIsletmeDetayIsletmeYetkilisi_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeYetkilisi_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeYetkilisi_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeYetkilisi_label.Name = "infoIsletmeDetayIsletmeYetkilisi_label";
+            this.infoIsletmeDetayIsletmeYetkilisi_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayIsletmeYetkilisi_label.Size = new System.Drawing.Size(294, 24);
+            this.infoIsletmeDetayIsletmeYetkilisi_label.TabIndex = 101;
+            this.infoIsletmeDetayIsletmeYetkilisi_label.Text = "infoIsletmeDetayIsletmeYetkilisi_label";
+            // 
+            // groupBox30
+            // 
+            this.groupBox30.Controls.Add(this.IsletmeDetayIsletmeTamAdresCopy_button);
+            this.groupBox30.Controls.Add(this.infoIsletmeDetayIsletmeTamAdres_label);
+            this.groupBox30.Location = new System.Drawing.Point(14, 291);
+            this.groupBox30.Name = "groupBox30";
+            this.groupBox30.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox30.Size = new System.Drawing.Size(373, 69);
+            this.groupBox30.TabIndex = 104;
+            this.groupBox30.TabStop = false;
+            this.groupBox30.Text = "Tam Adres";
+            // 
+            // IsletmeDetayIsletmeTamAdresCopy_button
+            // 
+            this.IsletmeDetayIsletmeTamAdresCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeTamAdresCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeTamAdresCopy_button.Image")));
+            this.IsletmeDetayIsletmeTamAdresCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeTamAdresCopy_button.Name = "IsletmeDetayIsletmeTamAdresCopy_button";
+            this.IsletmeDetayIsletmeTamAdresCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeTamAdresCopy_button.TabIndex = 116;
+            this.IsletmeDetayIsletmeTamAdresCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeTamAdresCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeTamAdresCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeTamAdres_label
+            // 
+            this.infoIsletmeDetayIsletmeTamAdres_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeTamAdres_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeTamAdres_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeTamAdres_label.Name = "infoIsletmeDetayIsletmeTamAdres_label";
+            this.infoIsletmeDetayIsletmeTamAdres_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayIsletmeTamAdres_label.Size = new System.Drawing.Size(313, 24);
+            this.infoIsletmeDetayIsletmeTamAdres_label.TabIndex = 98;
+            this.infoIsletmeDetayIsletmeTamAdres_label.Text = "infoIsletmeDetayIsletmeTamAdres_label";
+            // 
+            // groupBox31
+            // 
+            this.groupBox31.Controls.Add(this.IsletmeDetayIsletmeAdresIlceCopy_button);
+            this.groupBox31.Controls.Add(this.infoIsletmeDetayIsletmeAdresIlce_label);
+            this.groupBox31.Location = new System.Drawing.Point(14, 153);
+            this.groupBox31.Name = "groupBox31";
+            this.groupBox31.Padding = new System.Windows.Forms.Padding(6);
+            this.groupBox31.Size = new System.Drawing.Size(373, 60);
+            this.groupBox31.TabIndex = 102;
+            this.groupBox31.TabStop = false;
+            this.groupBox31.Text = "Adres İlçe";
+            // 
+            // IsletmeDetayIsletmeAdresIlceCopy_button
+            // 
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAdresIlceCopy_button.Image")));
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Location = new System.Drawing.Point(338, 27);
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Name = "IsletmeDetayIsletmeAdresIlceCopy_button";
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Size = new System.Drawing.Size(29, 27);
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.TabIndex = 115;
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeAdresIlceCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAdresIlceCopy_button_Click);
+            // 
+            // infoIsletmeDetayIsletmeAdresIlce_label
+            // 
+            this.infoIsletmeDetayIsletmeAdresIlce_label.AutoSize = true;
+            this.infoIsletmeDetayIsletmeAdresIlce_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.infoIsletmeDetayIsletmeAdresIlce_label.Location = new System.Drawing.Point(6, 27);
+            this.infoIsletmeDetayIsletmeAdresIlce_label.Name = "infoIsletmeDetayIsletmeAdresIlce_label";
+            this.infoIsletmeDetayIsletmeAdresIlce_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
+            this.infoIsletmeDetayIsletmeAdresIlce_label.Size = new System.Drawing.Size(306, 24);
+            this.infoIsletmeDetayIsletmeAdresIlce_label.TabIndex = 96;
+            this.infoIsletmeDetayIsletmeAdresIlce_label.Text = "infoIsletmeDetayIsletmeAdresIlce_label";
+            // 
+            // panel75
+            // 
+            this.panel75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel75.Controls.Add(this.label128);
+            this.panel75.Controls.Add(this.IsletmeDetayIsletmeYazdir_button);
+            this.panel75.Controls.Add(this.IsletmeDetayIsletmeGuncelle_button);
+            this.panel75.Controls.Add(this.IsletmeDetayIsletmeSil_button);
+            this.panel75.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel75.Location = new System.Drawing.Point(0, 0);
+            this.panel75.Name = "panel75";
+            this.panel75.Padding = new System.Windows.Forms.Padding(2);
+            this.panel75.Size = new System.Drawing.Size(1137, 98);
+            this.panel75.TabIndex = 0;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label128.Location = new System.Drawing.Point(16, 36);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(86, 25);
+            this.label128.TabIndex = 106;
+            this.label128.Text = "A Grubu";
+            // 
+            // IsletmeDetayIsletmeYazdir_button
+            // 
+            this.IsletmeDetayIsletmeYazdir_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeYazdir_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeYazdir_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeDetayIsletmeYazdir_button.Image = global::WindowsFormsApp1.Properties.Resources.pngwing_com_16_;
+            this.IsletmeDetayIsletmeYazdir_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IsletmeDetayIsletmeYazdir_button.Location = new System.Drawing.Point(353, 2);
+            this.IsletmeDetayIsletmeYazdir_button.Name = "IsletmeDetayIsletmeYazdir_button";
+            this.IsletmeDetayIsletmeYazdir_button.Size = new System.Drawing.Size(260, 92);
+            this.IsletmeDetayIsletmeYazdir_button.TabIndex = 105;
+            this.IsletmeDetayIsletmeYazdir_button.Text = "İşletmeyi Yazdır";
+            this.IsletmeDetayIsletmeYazdir_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.IsletmeDetayIsletmeYazdir_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeYazdir_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeYazdir_button_Click);
+            // 
+            // IsletmeDetayIsletmeGuncelle_button
+            // 
+            this.IsletmeDetayIsletmeGuncelle_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeGuncelle_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeGuncelle_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeDetayIsletmeGuncelle_button.Image = global::WindowsFormsApp1.Properties.Resources.pngegg_1_2;
+            this.IsletmeDetayIsletmeGuncelle_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IsletmeDetayIsletmeGuncelle_button.Location = new System.Drawing.Point(613, 2);
+            this.IsletmeDetayIsletmeGuncelle_button.Name = "IsletmeDetayIsletmeGuncelle_button";
+            this.IsletmeDetayIsletmeGuncelle_button.Size = new System.Drawing.Size(260, 92);
+            this.IsletmeDetayIsletmeGuncelle_button.TabIndex = 104;
+            this.IsletmeDetayIsletmeGuncelle_button.Text = "İşletmeyi Güncelle";
+            this.IsletmeDetayIsletmeGuncelle_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.IsletmeDetayIsletmeGuncelle_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeGuncelle_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeGuncelle_button_Click);
+            // 
+            // IsletmeDetayIsletmeSil_button
+            // 
+            this.IsletmeDetayIsletmeSil_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.IsletmeDetayIsletmeSil_button.Dock = System.Windows.Forms.DockStyle.Right;
+            this.IsletmeDetayIsletmeSil_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IsletmeDetayIsletmeSil_button.Image = global::WindowsFormsApp1.Properties.Resources.pngegg_3_;
+            this.IsletmeDetayIsletmeSil_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.IsletmeDetayIsletmeSil_button.Location = new System.Drawing.Point(873, 2);
+            this.IsletmeDetayIsletmeSil_button.Name = "IsletmeDetayIsletmeSil_button";
+            this.IsletmeDetayIsletmeSil_button.Size = new System.Drawing.Size(260, 92);
+            this.IsletmeDetayIsletmeSil_button.TabIndex = 103;
+            this.IsletmeDetayIsletmeSil_button.Text = "İşletmeyi Sil";
+            this.IsletmeDetayIsletmeSil_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.IsletmeDetayIsletmeSil_button.UseVisualStyleBackColor = true;
+            this.IsletmeDetayIsletmeSil_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeSil_button_Click);
+            // 
             // OgretmenDETAYtabControl1
             // 
             this.OgretmenDETAYtabControl1.Controls.Add(this.tabPage19);
@@ -1570,11 +7319,11 @@ namespace WindowsFormsApp1
             // 
             // panel68
             // 
-            this.panel68.Controls.Add(this.label233);
+            this.panel68.Controls.Add(this.panel101);
             this.panel68.Controls.Add(this.panel93);
+            this.panel68.Controls.Add(this.groupBox13);
             this.panel68.Controls.Add(this.panel71);
             this.panel68.Controls.Add(this.panel69);
-            this.panel68.Controls.Add(this.groupBox13);
             this.panel68.Controls.Add(this.groupBox15);
             this.panel68.Controls.Add(this.groupBox17);
             this.panel68.Controls.Add(this.groupBox21);
@@ -1588,25 +7337,45 @@ namespace WindowsFormsApp1
             this.panel68.Size = new System.Drawing.Size(1117, 444);
             this.panel68.TabIndex = 1;
             // 
+            // panel101
+            // 
+            this.panel101.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel101.Controls.Add(this.label233);
+            this.panel101.Controls.Add(this.OgretmenBelgeRaporDataGridView);
+            this.panel101.Location = new System.Drawing.Point(397, 242);
+            this.panel101.Name = "panel101";
+            this.panel101.Size = new System.Drawing.Size(412, 192);
+            this.panel101.TabIndex = 127;
+            // 
             // label233
             // 
             this.label233.AutoSize = true;
-            this.label233.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label233.ForeColor = System.Drawing.Color.Red;
-            this.label233.Location = new System.Drawing.Point(416, 326);
+            this.label233.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label233.Location = new System.Drawing.Point(0, 0);
             this.label233.Name = "label233";
-            this.label233.Size = new System.Drawing.Size(286, 51);
-            this.label233.TabIndex = 125;
-            this.label233.Text = "UYARI!\r\n\r\nÖğretmenin henüz teslim etmediği belgeler var!";
+            this.label233.Padding = new System.Windows.Forms.Padding(3);
+            this.label233.Size = new System.Drawing.Size(131, 27);
+            this.label233.TabIndex = 1;
+            this.label233.Text = "Belge Raporları";
+            // 
+            // OgretmenBelgeRaporDataGridView
+            // 
+            this.OgretmenBelgeRaporDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OgretmenBelgeRaporDataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.OgretmenBelgeRaporDataGridView.Location = new System.Drawing.Point(0, 30);
+            this.OgretmenBelgeRaporDataGridView.Name = "OgretmenBelgeRaporDataGridView";
+            this.OgretmenBelgeRaporDataGridView.Size = new System.Drawing.Size(408, 158);
+            this.OgretmenBelgeRaporDataGridView.TabIndex = 126;
+            this.OgretmenBelgeRaporDataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.OgretmenBelgeRaporDataGridView_DataBindingComplete);
             // 
             // panel93
             // 
             this.panel93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel93.Controls.Add(this.panel95);
-            this.panel93.Location = new System.Drawing.Point(419, 99);
+            this.panel93.Location = new System.Drawing.Point(397, 24);
             this.panel93.Name = "panel93";
             this.panel93.Padding = new System.Windows.Forms.Padding(12);
-            this.panel93.Size = new System.Drawing.Size(176, 213);
+            this.panel93.Size = new System.Drawing.Size(191, 213);
             this.panel93.TabIndex = 124;
             // 
             // panel95
@@ -1616,7 +7385,7 @@ namespace WindowsFormsApp1
             this.panel95.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel95.Location = new System.Drawing.Point(12, 12);
             this.panel95.Name = "panel95";
-            this.panel95.Size = new System.Drawing.Size(150, 187);
+            this.panel95.Size = new System.Drawing.Size(165, 187);
             this.panel95.TabIndex = 0;
             // 
             // infoOgretmenFotografi_picturebox
@@ -1625,79 +7394,15 @@ namespace WindowsFormsApp1
             this.infoOgretmenFotografi_picturebox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoOgretmenFotografi_picturebox.Location = new System.Drawing.Point(0, 0);
             this.infoOgretmenFotografi_picturebox.Name = "infoOgretmenFotografi_picturebox";
-            this.infoOgretmenFotografi_picturebox.Size = new System.Drawing.Size(148, 185);
+            this.infoOgretmenFotografi_picturebox.Size = new System.Drawing.Size(163, 185);
             this.infoOgretmenFotografi_picturebox.TabIndex = 0;
             this.infoOgretmenFotografi_picturebox.TabStop = false;
-            // 
-            // panel71
-            // 
-            this.panel71.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel71.Controls.Add(this.OgretmenDetaydataGridView2);
-            this.panel71.Controls.Add(this.label112);
-            this.panel71.Location = new System.Drawing.Point(791, 13);
-            this.panel71.Name = "panel71";
-            this.panel71.Padding = new System.Windows.Forms.Padding(5);
-            this.panel71.Size = new System.Drawing.Size(316, 151);
-            this.panel71.TabIndex = 123;
-            // 
-            // OgretmenDetaydataGridView2
-            // 
-            this.OgretmenDetaydataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OgretmenDetaydataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OgretmenDetaydataGridView2.Location = new System.Drawing.Point(5, 32);
-            this.OgretmenDetaydataGridView2.Name = "OgretmenDetaydataGridView2";
-            this.OgretmenDetaydataGridView2.Size = new System.Drawing.Size(302, 110);
-            this.OgretmenDetaydataGridView2.TabIndex = 120;
-            this.OgretmenDetaydataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OgretmenDetaydataGridView2_CellDoubleClick);
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label112.Location = new System.Drawing.Point(5, 5);
-            this.label112.Name = "label112";
-            this.label112.Padding = new System.Windows.Forms.Padding(3);
-            this.label112.Size = new System.Drawing.Size(217, 27);
-            this.label112.TabIndex = 0;
-            this.label112.Text = "Sorumlu olduğu işletmeler";
-            // 
-            // panel69
-            // 
-            this.panel69.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel69.Controls.Add(this.OgretmenDetaydataGridView1);
-            this.panel69.Controls.Add(this.label113);
-            this.panel69.Location = new System.Drawing.Point(791, 170);
-            this.panel69.Name = "panel69";
-            this.panel69.Padding = new System.Windows.Forms.Padding(5);
-            this.panel69.Size = new System.Drawing.Size(316, 264);
-            this.panel69.TabIndex = 122;
-            // 
-            // OgretmenDetaydataGridView1
-            // 
-            this.OgretmenDetaydataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OgretmenDetaydataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.OgretmenDetaydataGridView1.Location = new System.Drawing.Point(5, 32);
-            this.OgretmenDetaydataGridView1.Name = "OgretmenDetaydataGridView1";
-            this.OgretmenDetaydataGridView1.Size = new System.Drawing.Size(302, 223);
-            this.OgretmenDetaydataGridView1.TabIndex = 120;
-            this.OgretmenDetaydataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OgretmenDetaydataGridView1_CellDoubleClick);
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label113.Location = new System.Drawing.Point(5, 5);
-            this.label113.Name = "label113";
-            this.label113.Padding = new System.Windows.Forms.Padding(3);
-            this.label113.Size = new System.Drawing.Size(257, 27);
-            this.label113.TabIndex = 0;
-            this.label113.Text = "Koordinatörü olduğu öğrenciler";
             // 
             // groupBox13
             // 
             this.groupBox13.Controls.Add(this.ogretmenDetayOgretmenTelNoCopy_button);
             this.groupBox13.Controls.Add(this.infoOgretmenTelNo_label);
-            this.groupBox13.Location = new System.Drawing.Point(409, 19);
+            this.groupBox13.Location = new System.Drawing.Point(14, 366);
             this.groupBox13.Name = "groupBox13";
             this.groupBox13.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox13.Size = new System.Drawing.Size(373, 60);
@@ -1728,11 +7433,75 @@ namespace WindowsFormsApp1
             this.infoOgretmenTelNo_label.TabIndex = 100;
             this.infoOgretmenTelNo_label.Text = "infoOgretmenTelNo_label";
             // 
+            // panel71
+            // 
+            this.panel71.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel71.Controls.Add(this.OgretmenDetaydataGridView2);
+            this.panel71.Controls.Add(this.label112);
+            this.panel71.Location = new System.Drawing.Point(813, 13);
+            this.panel71.Name = "panel71";
+            this.panel71.Padding = new System.Windows.Forms.Padding(5);
+            this.panel71.Size = new System.Drawing.Size(294, 151);
+            this.panel71.TabIndex = 123;
+            // 
+            // OgretmenDetaydataGridView2
+            // 
+            this.OgretmenDetaydataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OgretmenDetaydataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OgretmenDetaydataGridView2.Location = new System.Drawing.Point(5, 32);
+            this.OgretmenDetaydataGridView2.Name = "OgretmenDetaydataGridView2";
+            this.OgretmenDetaydataGridView2.Size = new System.Drawing.Size(280, 110);
+            this.OgretmenDetaydataGridView2.TabIndex = 120;
+            this.OgretmenDetaydataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OgretmenDetaydataGridView2_CellDoubleClick);
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label112.Location = new System.Drawing.Point(5, 5);
+            this.label112.Name = "label112";
+            this.label112.Padding = new System.Windows.Forms.Padding(3);
+            this.label112.Size = new System.Drawing.Size(217, 27);
+            this.label112.TabIndex = 0;
+            this.label112.Text = "Sorumlu olduğu işletmeler";
+            // 
+            // panel69
+            // 
+            this.panel69.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel69.Controls.Add(this.OgretmenDetaydataGridView1);
+            this.panel69.Controls.Add(this.label113);
+            this.panel69.Location = new System.Drawing.Point(813, 170);
+            this.panel69.Name = "panel69";
+            this.panel69.Padding = new System.Windows.Forms.Padding(5);
+            this.panel69.Size = new System.Drawing.Size(294, 264);
+            this.panel69.TabIndex = 122;
+            // 
+            // OgretmenDetaydataGridView1
+            // 
+            this.OgretmenDetaydataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.OgretmenDetaydataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.OgretmenDetaydataGridView1.Location = new System.Drawing.Point(5, 32);
+            this.OgretmenDetaydataGridView1.Name = "OgretmenDetaydataGridView1";
+            this.OgretmenDetaydataGridView1.Size = new System.Drawing.Size(280, 223);
+            this.OgretmenDetaydataGridView1.TabIndex = 120;
+            this.OgretmenDetaydataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OgretmenDetaydataGridView1_CellDoubleClick);
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label113.Location = new System.Drawing.Point(5, 5);
+            this.label113.Name = "label113";
+            this.label113.Padding = new System.Windows.Forms.Padding(3);
+            this.label113.Size = new System.Drawing.Size(257, 27);
+            this.label113.TabIndex = 0;
+            this.label113.Text = "Koordinatörü olduğu öğrenciler";
+            // 
             // groupBox15
             // 
             this.groupBox15.Controls.Add(this.infoOgretmenSoyad_label);
             this.groupBox15.Controls.Add(this.ogretmenDetayOgretmenSoyadCopy_button);
-            this.groupBox15.Location = new System.Drawing.Point(16, 88);
+            this.groupBox15.Location = new System.Drawing.Point(14, 75);
             this.groupBox15.Name = "groupBox15";
             this.groupBox15.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox15.Size = new System.Drawing.Size(371, 60);
@@ -1766,7 +7535,7 @@ namespace WindowsFormsApp1
             // 
             this.groupBox17.Controls.Add(this.infoOgretmenAd_label);
             this.groupBox17.Controls.Add(this.ogretmenDetayOgretmenAdCopy_button);
-            this.groupBox17.Location = new System.Drawing.Point(16, 19);
+            this.groupBox17.Location = new System.Drawing.Point(14, 17);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox17.Size = new System.Drawing.Size(371, 60);
@@ -1800,7 +7569,7 @@ namespace WindowsFormsApp1
             // 
             this.groupBox21.Controls.Add(this.ogretmenDetayOgretmenDalAdiCopy_button);
             this.groupBox21.Controls.Add(this.infoOgretmenDalAdi_label);
-            this.groupBox21.Location = new System.Drawing.Point(16, 363);
+            this.groupBox21.Location = new System.Drawing.Point(14, 306);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox21.Size = new System.Drawing.Size(373, 60);
@@ -1835,7 +7604,7 @@ namespace WindowsFormsApp1
             // 
             this.groupBox22.Controls.Add(this.ogretmenDetayOgretmenAlanAdiCopy_button);
             this.groupBox22.Controls.Add(this.infoOgretmenAlanAdi_label);
-            this.groupBox22.Location = new System.Drawing.Point(16, 294);
+            this.groupBox22.Location = new System.Drawing.Point(14, 248);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox22.Size = new System.Drawing.Size(373, 60);
@@ -1870,7 +7639,7 @@ namespace WindowsFormsApp1
             // 
             this.groupBox23.Controls.Add(this.ogretmenDetayOgretmenIsletmeGunu2Copy_button);
             this.groupBox23.Controls.Add(this.infoOgretmenIsletmeGunu2_label);
-            this.groupBox23.Location = new System.Drawing.Point(16, 226);
+            this.groupBox23.Location = new System.Drawing.Point(14, 191);
             this.groupBox23.Name = "groupBox23";
             this.groupBox23.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox23.Size = new System.Drawing.Size(373, 60);
@@ -1905,7 +7674,7 @@ namespace WindowsFormsApp1
             // 
             this.groupBox24.Controls.Add(this.ogretmenDetayOgretmenIsletmeGunu1Copy_button);
             this.groupBox24.Controls.Add(this.infoOgretmenIsletmeGunu1_label);
-            this.groupBox24.Location = new System.Drawing.Point(16, 157);
+            this.groupBox24.Location = new System.Drawing.Point(14, 133);
             this.groupBox24.Name = "groupBox24";
             this.groupBox24.Padding = new System.Windows.Forms.Padding(6);
             this.groupBox24.Size = new System.Drawing.Size(373, 60);
@@ -6638,5671 +12407,6 @@ namespace WindowsFormsApp1
             this.label68.TabIndex = 63;
             this.label68.Text = "Silme Bilgileri";
             // 
-            // YAZDIRtabControl1
-            // 
-            this.YAZDIRtabControl1.Controls.Add(this.tabPage21);
-            this.YAZDIRtabControl1.Controls.Add(this.tabPage14);
-            this.YAZDIRtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.YAZDIRtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.YAZDIRtabControl1.Location = new System.Drawing.Point(0, 0);
-            this.YAZDIRtabControl1.Name = "YAZDIRtabControl1";
-            this.YAZDIRtabControl1.Padding = new System.Drawing.Point(50, 3);
-            this.YAZDIRtabControl1.SelectedIndex = 0;
-            this.YAZDIRtabControl1.Size = new System.Drawing.Size(1151, 650);
-            this.YAZDIRtabControl1.TabIndex = 85;
-            // 
-            // tabPage21
-            // 
-            this.tabPage21.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage21.Controls.Add(this.yazdirYanPanel_panel);
-            this.tabPage21.Controls.Add(this.panel17);
-            this.tabPage21.Location = new System.Drawing.Point(4, 28);
-            this.tabPage21.Name = "tabPage21";
-            this.tabPage21.Padding = new System.Windows.Forms.Padding(10);
-            this.tabPage21.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage21.TabIndex = 0;
-            this.tabPage21.Text = "YAZDIR";
-            // 
-            // yazdirYanPanel_panel
-            // 
-            this.yazdirYanPanel_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.yazdirYanPanel_panel.Controls.Add(this.yazdirNotFisi_panel);
-            this.yazdirYanPanel_panel.Controls.Add(this.yazdirDevamsizlikRaporu_panel);
-            this.yazdirYanPanel_panel.Controls.Add(this.yazdirAyliikGunlukRapor_panel);
-            this.yazdirYanPanel_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.yazdirYanPanel_panel.Location = new System.Drawing.Point(722, 10);
-            this.yazdirYanPanel_panel.Name = "yazdirYanPanel_panel";
-            this.yazdirYanPanel_panel.Padding = new System.Windows.Forms.Padding(10);
-            this.yazdirYanPanel_panel.Size = new System.Drawing.Size(411, 598);
-            this.yazdirYanPanel_panel.TabIndex = 85;
-            // 
-            // yazdirNotFisi_panel
-            // 
-            this.yazdirNotFisi_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.yazdirNotFisi_panel.Controls.Add(this.label90);
-            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem2_radio);
-            this.yazdirNotFisi_panel.Controls.Add(this.yazdirilacakNotFisiDonem1_radio);
-            this.yazdirNotFisi_panel.Controls.Add(this.label96);
-            this.yazdirNotFisi_panel.Location = new System.Drawing.Point(6, 399);
-            this.yazdirNotFisi_panel.Name = "yazdirNotFisi_panel";
-            this.yazdirNotFisi_panel.Padding = new System.Windows.Forms.Padding(10);
-            this.yazdirNotFisi_panel.Size = new System.Drawing.Size(400, 187);
-            this.yazdirNotFisi_panel.TabIndex = 86;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label90.Location = new System.Drawing.Point(19, 63);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(137, 21);
-            this.label90.TabIndex = 88;
-            this.label90.Text = "Dönem Seçiniz : ";
-            // 
-            // yazdirilacakNotFisiDonem2_radio
-            // 
-            this.yazdirilacakNotFisiDonem2_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yazdirilacakNotFisiDonem2_radio.Location = new System.Drawing.Point(291, 63);
-            this.yazdirilacakNotFisiDonem2_radio.Name = "yazdirilacakNotFisiDonem2_radio";
-            this.yazdirilacakNotFisiDonem2_radio.Size = new System.Drawing.Size(108, 23);
-            this.yazdirilacakNotFisiDonem2_radio.TabIndex = 87;
-            this.yazdirilacakNotFisiDonem2_radio.TabStop = true;
-            this.yazdirilacakNotFisiDonem2_radio.Text = "2. Dönem";
-            this.yazdirilacakNotFisiDonem2_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakNotFisiDonem2_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem2_radio_CheckedChanged);
-            // 
-            // yazdirilacakNotFisiDonem1_radio
-            // 
-            this.yazdirilacakNotFisiDonem1_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yazdirilacakNotFisiDonem1_radio.Location = new System.Drawing.Point(168, 63);
-            this.yazdirilacakNotFisiDonem1_radio.Name = "yazdirilacakNotFisiDonem1_radio";
-            this.yazdirilacakNotFisiDonem1_radio.Size = new System.Drawing.Size(108, 23);
-            this.yazdirilacakNotFisiDonem1_radio.TabIndex = 86;
-            this.yazdirilacakNotFisiDonem1_radio.TabStop = true;
-            this.yazdirilacakNotFisiDonem1_radio.Text = "1. Dönem";
-            this.yazdirilacakNotFisiDonem1_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakNotFisiDonem1_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakNotFisiDonem1_radio_CheckedChanged);
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label96.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label96.Location = new System.Drawing.Point(10, 10);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(68, 21);
-            this.label96.TabIndex = 82;
-            this.label96.Text = "Not Fişi";
-            // 
-            // yazdirDevamsizlikRaporu_panel
-            // 
-            this.yazdirDevamsizlikRaporu_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label89);
-            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.yazdirilacakDevamsizlikAYI_combobox);
-            this.yazdirDevamsizlikRaporu_panel.Controls.Add(this.label94);
-            this.yazdirDevamsizlikRaporu_panel.Location = new System.Drawing.Point(6, 206);
-            this.yazdirDevamsizlikRaporu_panel.Name = "yazdirDevamsizlikRaporu_panel";
-            this.yazdirDevamsizlikRaporu_panel.Padding = new System.Windows.Forms.Padding(10);
-            this.yazdirDevamsizlikRaporu_panel.Size = new System.Drawing.Size(400, 187);
-            this.yazdirDevamsizlikRaporu_panel.TabIndex = 85;
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label89.Location = new System.Drawing.Point(10, 66);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(141, 21);
-            this.label89.TabIndex = 86;
-            this.label89.Text = "Devamsızlık Ayı : ";
-            // 
-            // yazdirilacakDevamsizlikAYI_combobox
-            // 
-            this.yazdirilacakDevamsizlikAYI_combobox.FormattingEnabled = true;
-            this.yazdirilacakDevamsizlikAYI_combobox.Items.AddRange(new object[] {
-            "Ocak",
-            "Şubat",
-            "Mart",
-            "Nisan",
-            "Mayıs",
-            "Haziran",
-            "Temmuz",
-            "Ağustos",
-            "Eylül",
-            "Ekim",
-            "Kasım",
-            "Aralık"});
-            this.yazdirilacakDevamsizlikAYI_combobox.Location = new System.Drawing.Point(157, 65);
-            this.yazdirilacakDevamsizlikAYI_combobox.Name = "yazdirilacakDevamsizlikAYI_combobox";
-            this.yazdirilacakDevamsizlikAYI_combobox.Size = new System.Drawing.Size(210, 27);
-            this.yazdirilacakDevamsizlikAYI_combobox.TabIndex = 85;
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label94.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label94.Location = new System.Drawing.Point(10, 10);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(159, 21);
-            this.label94.TabIndex = 82;
-            this.label94.Text = "Devamsızlık Raporu";
-            // 
-            // yazdirAyliikGunlukRapor_panel
-            // 
-            this.yazdirAyliikGunlukRapor_panel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.yazdirAyliikGunlukRapor_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.panel79);
-            this.yazdirAyliikGunlukRapor_panel.Controls.Add(this.GorevTarihleri_panel);
-            this.yazdirAyliikGunlukRapor_panel.Location = new System.Drawing.Point(6, 13);
-            this.yazdirAyliikGunlukRapor_panel.Name = "yazdirAyliikGunlukRapor_panel";
-            this.yazdirAyliikGunlukRapor_panel.Size = new System.Drawing.Size(400, 187);
-            this.yazdirAyliikGunlukRapor_panel.TabIndex = 84;
-            // 
-            // panel79
-            // 
-            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporHAFTALIK_radio);
-            this.panel79.Controls.Add(this.yazdirilacakAyGunlukRaporAYLIK_radio);
-            this.panel79.Controls.Add(this.label93);
-            this.panel79.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel79.Location = new System.Drawing.Point(0, 0);
-            this.panel79.Name = "panel79";
-            this.panel79.Padding = new System.Windows.Forms.Padding(10);
-            this.panel79.Size = new System.Drawing.Size(262, 183);
-            this.panel79.TabIndex = 90;
-            // 
-            // yazdirilacakAyGunlukRaporHAFTALIK_radio
-            // 
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Location = new System.Drawing.Point(108, 58);
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Name = "yazdirilacakAyGunlukRaporHAFTALIK_radio";
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Size = new System.Drawing.Size(103, 23);
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabIndex = 84;
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.TabStop = true;
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.Text = "HAFTALIK";
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakAyGunlukRaporHAFTALIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporHAFTALIK_radio_CheckedChanged);
-            // 
-            // yazdirilacakAyGunlukRaporAYLIK_radio
-            // 
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Location = new System.Drawing.Point(31, 58);
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Name = "yazdirilacakAyGunlukRaporAYLIK_radio";
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Size = new System.Drawing.Size(70, 23);
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabIndex = 83;
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.TabStop = true;
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.Text = "AYLIK";
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.UseVisualStyleBackColor = true;
-            this.yazdirilacakAyGunlukRaporAYLIK_radio.CheckedChanged += new System.EventHandler(this.yazdirilacakAyGunlukRaporAYLIK_radio_CheckedChanged);
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label93.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label93.Location = new System.Drawing.Point(10, 10);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(168, 21);
-            this.label93.TabIndex = 85;
-            this.label93.Text = "Aylık / Günlük Rapor";
-            // 
-            // GorevTarihleri_panel
-            // 
-            this.GorevTarihleri_panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.GorevTarihleri_panel.Controls.Add(this.label120);
-            this.GorevTarihleri_panel.Controls.Add(this.GorevTarihiGunleri_richTextBox);
-            this.GorevTarihleri_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.GorevTarihleri_panel.Location = new System.Drawing.Point(261, 0);
-            this.GorevTarihleri_panel.Name = "GorevTarihleri_panel";
-            this.GorevTarihleri_panel.Padding = new System.Windows.Forms.Padding(8, 8, 10, 10);
-            this.GorevTarihleri_panel.Size = new System.Drawing.Size(135, 183);
-            this.GorevTarihleri_panel.TabIndex = 89;
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label120.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label120.Location = new System.Drawing.Point(8, 8);
-            this.label120.Margin = new System.Windows.Forms.Padding(0);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(116, 20);
-            this.label120.TabIndex = 82;
-            this.label120.Text = "Görev Tarihleri";
-            // 
-            // GorevTarihiGunleri_richTextBox
-            // 
-            this.GorevTarihiGunleri_richTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.GorevTarihiGunleri_richTextBox.Location = new System.Drawing.Point(8, 31);
-            this.GorevTarihiGunleri_richTextBox.Name = "GorevTarihiGunleri_richTextBox";
-            this.GorevTarihiGunleri_richTextBox.Size = new System.Drawing.Size(113, 138);
-            this.GorevTarihiGunleri_richTextBox.TabIndex = 87;
-            this.GorevTarihiGunleri_richTextBox.Text = "";
-            // 
-            // panel17
-            // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Controls.Add(this.panel28);
-            this.panel17.Controls.Add(this.panel20);
-            this.panel17.Controls.Add(this.panel18);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel17.Location = new System.Drawing.Point(10, 10);
-            this.panel17.Name = "panel17";
-            this.panel17.Padding = new System.Windows.Forms.Padding(10);
-            this.panel17.Size = new System.Drawing.Size(716, 598);
-            this.panel17.TabIndex = 86;
-            // 
-            // panel28
-            // 
-            this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel28.Controls.Add(this.panel27);
-            this.panel28.Controls.Add(this.panel30);
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel28.Location = new System.Drawing.Point(10, 350);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(694, 236);
-            this.panel28.TabIndex = 89;
-            // 
-            // panel27
-            // 
-            this.panel27.Controls.Add(this.panel24);
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel27.Location = new System.Drawing.Point(436, 0);
-            this.panel27.Name = "panel27";
-            this.panel27.Padding = new System.Windows.Forms.Padding(4);
-            this.panel27.Size = new System.Drawing.Size(256, 234);
-            this.panel27.TabIndex = 87;
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel24.Controls.Add(this.panel80);
-            this.panel24.Controls.Add(this.panel76);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel24.Location = new System.Drawing.Point(4, 4);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(248, 226);
-            this.panel24.TabIndex = 83;
-            // 
-            // panel80
-            // 
-            this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel80.Controls.Add(this.settingsExcel_radio);
-            this.panel80.Controls.Add(this.settingsPDFeDonustur_radio);
-            this.panel80.Controls.Add(this.settingsYazdir_radio);
-            this.panel80.Controls.Add(this.label92);
-            this.panel80.Controls.Add(this.numericUpDown1);
-            this.panel80.Controls.Add(this.label91);
-            this.panel80.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel80.Location = new System.Drawing.Point(0, 0);
-            this.panel80.Name = "panel80";
-            this.panel80.Size = new System.Drawing.Size(244, 168);
-            this.panel80.TabIndex = 90;
-            // 
-            // settingsExcel_radio
-            // 
-            this.settingsExcel_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsExcel_radio.Location = new System.Drawing.Point(18, 114);
-            this.settingsExcel_radio.Name = "settingsExcel_radio";
-            this.settingsExcel_radio.Size = new System.Drawing.Size(215, 23);
-            this.settingsExcel_radio.TabIndex = 96;
-            this.settingsExcel_radio.TabStop = true;
-            this.settingsExcel_radio.Text = "Excel olarak kaydet";
-            this.settingsExcel_radio.UseVisualStyleBackColor = true;
-            this.settingsExcel_radio.CheckedChanged += new System.EventHandler(this.settingsExcel_radio_CheckedChanged);
-            // 
-            // settingsPDFeDonustur_radio
-            // 
-            this.settingsPDFeDonustur_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsPDFeDonustur_radio.Location = new System.Drawing.Point(18, 138);
-            this.settingsPDFeDonustur_radio.Name = "settingsPDFeDonustur_radio";
-            this.settingsPDFeDonustur_radio.Size = new System.Drawing.Size(215, 23);
-            this.settingsPDFeDonustur_radio.TabIndex = 95;
-            this.settingsPDFeDonustur_radio.TabStop = true;
-            this.settingsPDFeDonustur_radio.Text = "PDF\'e dönüştür";
-            this.settingsPDFeDonustur_radio.UseVisualStyleBackColor = true;
-            this.settingsPDFeDonustur_radio.CheckedChanged += new System.EventHandler(this.settingsPDFeDonustur_radio_CheckedChanged);
-            // 
-            // settingsYazdir_radio
-            // 
-            this.settingsYazdir_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsYazdir_radio.Location = new System.Drawing.Point(18, 90);
-            this.settingsYazdir_radio.Name = "settingsYazdir_radio";
-            this.settingsYazdir_radio.Size = new System.Drawing.Size(215, 23);
-            this.settingsYazdir_radio.TabIndex = 94;
-            this.settingsYazdir_radio.TabStop = true;
-            this.settingsYazdir_radio.Text = "Yazdır(Varsayılan Yazıcı)";
-            this.settingsYazdir_radio.UseVisualStyleBackColor = true;
-            this.settingsYazdir_radio.CheckedChanged += new System.EventHandler(this.settingsYazdir_radio_CheckedChanged);
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label92.Location = new System.Drawing.Point(2, 64);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(181, 21);
-            this.label92.TabIndex = 93;
-            this.label92.Text = "İşlem Türünü Seçiniz : ";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(24, 34);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(209, 24);
-            this.numericUpDown1.TabIndex = 92;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label91.Location = new System.Drawing.Point(2, 7);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(200, 21);
-            this.label91.TabIndex = 91;
-            this.label91.Text = "Kaç Adet Çıktı Alınacak : ";
-            // 
-            // panel76
-            // 
-            this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel76.Controls.Add(this.label122);
-            this.panel76.Controls.Add(this.label121);
-            this.panel76.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel76.Location = new System.Drawing.Point(0, 168);
-            this.panel76.Name = "panel76";
-            this.panel76.Size = new System.Drawing.Size(244, 54);
-            this.panel76.TabIndex = 89;
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label122.Location = new System.Drawing.Point(16, 29);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(57, 17);
-            this.label122.TabIndex = 94;
-            this.label122.Text = "label122";
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label121.Location = new System.Drawing.Point(3, 3);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(124, 20);
-            this.label121.TabIndex = 93;
-            this.label121.Text = "Varsayılan yazıcı";
-            // 
-            // panel30
-            // 
-            this.panel30.Controls.Add(this.panel26);
-            this.panel30.Controls.Add(this.panel25);
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel30.Location = new System.Drawing.Point(0, 0);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(433, 234);
-            this.panel30.TabIndex = 86;
-            // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.button6);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel26.Location = new System.Drawing.Point(0, 138);
-            this.panel26.Name = "panel26";
-            this.panel26.Padding = new System.Windows.Forms.Padding(2);
-            this.panel26.Size = new System.Drawing.Size(433, 96);
-            this.panel26.TabIndex = 0;
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.Location = new System.Drawing.Point(2, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(429, 92);
-            this.button6.TabIndex = 85;
-            this.button6.Text = "YAZDIR";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // panel25
-            // 
-            this.panel25.BackColor = System.Drawing.Color.Transparent;
-            this.panel25.Controls.Add(this.yazdir_KisButonlari);
-            this.panel25.Controls.Add(this.yazdir_YazButonlari);
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel25.Location = new System.Drawing.Point(0, 0);
-            this.panel25.Name = "panel25";
-            this.panel25.Padding = new System.Windows.Forms.Padding(4);
-            this.panel25.Size = new System.Drawing.Size(433, 138);
-            this.panel25.TabIndex = 86;
-            // 
-            // yazdir_KisButonlari
-            // 
-            this.yazdir_KisButonlari.Controls.Add(this.button10);
-            this.yazdir_KisButonlari.Controls.Add(this.button8);
-            this.yazdir_KisButonlari.Controls.Add(this.button5);
-            this.yazdir_KisButonlari.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yazdir_KisButonlari.Location = new System.Drawing.Point(4, 4);
-            this.yazdir_KisButonlari.Name = "yazdir_KisButonlari";
-            this.yazdir_KisButonlari.Size = new System.Drawing.Size(425, 130);
-            this.yazdir_KisButonlari.TabIndex = 0;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button10.Location = new System.Drawing.Point(288, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(137, 130);
-            this.button10.TabIndex = 85;
-            this.button10.Text = "Not Fişi";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button8.Location = new System.Drawing.Point(144, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(144, 130);
-            this.button8.TabIndex = 87;
-            this.button8.Text = "Devamsızlık Raporu";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 130);
-            this.button5.TabIndex = 86;
-            this.button5.Text = "Aylık / Günlük Rapor";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // yazdir_YazButonlari
-            // 
-            this.yazdir_YazButonlari.Controls.Add(this.yazdir_DegerlendirmeFormu_button);
-            this.yazdir_YazButonlari.Controls.Add(this.yazdir_HaftalikRapor_button);
-            this.yazdir_YazButonlari.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yazdir_YazButonlari.Location = new System.Drawing.Point(4, 4);
-            this.yazdir_YazButonlari.Name = "yazdir_YazButonlari";
-            this.yazdir_YazButonlari.Size = new System.Drawing.Size(425, 130);
-            this.yazdir_YazButonlari.TabIndex = 1;
-            // 
-            // yazdir_DegerlendirmeFormu_button
-            // 
-            this.yazdir_DegerlendirmeFormu_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.yazdir_DegerlendirmeFormu_button.Location = new System.Drawing.Point(213, 0);
-            this.yazdir_DegerlendirmeFormu_button.Name = "yazdir_DegerlendirmeFormu_button";
-            this.yazdir_DegerlendirmeFormu_button.Size = new System.Drawing.Size(212, 130);
-            this.yazdir_DegerlendirmeFormu_button.TabIndex = 1;
-            this.yazdir_DegerlendirmeFormu_button.Text = "Değerlendirme Formu";
-            this.yazdir_DegerlendirmeFormu_button.UseVisualStyleBackColor = true;
-            this.yazdir_DegerlendirmeFormu_button.Click += new System.EventHandler(this.yazdir_kisraporu_button_Click);
-            // 
-            // yazdir_HaftalikRapor_button
-            // 
-            this.yazdir_HaftalikRapor_button.Dock = System.Windows.Forms.DockStyle.Left;
-            this.yazdir_HaftalikRapor_button.Location = new System.Drawing.Point(0, 0);
-            this.yazdir_HaftalikRapor_button.Name = "yazdir_HaftalikRapor_button";
-            this.yazdir_HaftalikRapor_button.Size = new System.Drawing.Size(212, 130);
-            this.yazdir_HaftalikRapor_button.TabIndex = 0;
-            this.yazdir_HaftalikRapor_button.Text = "Haftalık Rapor";
-            this.yazdir_HaftalikRapor_button.UseVisualStyleBackColor = true;
-            this.yazdir_HaftalikRapor_button.Click += new System.EventHandler(this.yazdir_yazraporu_button_Click);
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.panel21);
-            this.panel20.Controls.Add(this.panel22);
-            this.panel20.Location = new System.Drawing.Point(10, 180);
-            this.panel20.Name = "panel20";
-            this.panel20.Padding = new System.Windows.Forms.Padding(5);
-            this.panel20.Size = new System.Drawing.Size(694, 164);
-            this.panel20.TabIndex = 88;
-            // 
-            // panel21
-            // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel21.Controls.Add(this.label86);
-            this.panel21.Controls.Add(this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel21.Location = new System.Drawing.Point(384, 5);
-            this.panel21.Name = "panel21";
-            this.panel21.Padding = new System.Windows.Forms.Padding(10);
-            this.panel21.Size = new System.Drawing.Size(305, 154);
-            this.panel21.TabIndex = 83;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label86.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label86.Location = new System.Drawing.Point(10, 10);
-            this.label86.Name = "label86";
-            this.label86.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
-            this.label86.Size = new System.Drawing.Size(200, 31);
-            this.label86.TabIndex = 5;
-            this.label86.Text = "İşletmeye Ait Alan Bilgisi";
-            // 
-            // yazdirilacakIsletmeyeAitAlanBilgisi_listbox
-            // 
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.FormattingEnabled = true;
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.ItemHeight = 19;
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Location = new System.Drawing.Point(10, 41);
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Name = "yazdirilacakIsletmeyeAitAlanBilgisi_listbox";
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.Size = new System.Drawing.Size(281, 99);
-            this.yazdirilacakIsletmeyeAitAlanBilgisi_listbox.TabIndex = 4;
-            // 
-            // panel22
-            // 
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel22.Controls.Add(this.yazdirilacakIsletme_listbox);
-            this.panel22.Controls.Add(this.label88);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel22.Location = new System.Drawing.Point(5, 5);
-            this.panel22.Name = "panel22";
-            this.panel22.Padding = new System.Windows.Forms.Padding(10);
-            this.panel22.Size = new System.Drawing.Size(374, 154);
-            this.panel22.TabIndex = 0;
-            // 
-            // yazdirilacakIsletme_listbox
-            // 
-            this.yazdirilacakIsletme_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.yazdirilacakIsletme_listbox.FormattingEnabled = true;
-            this.yazdirilacakIsletme_listbox.ItemHeight = 19;
-            this.yazdirilacakIsletme_listbox.Location = new System.Drawing.Point(10, 41);
-            this.yazdirilacakIsletme_listbox.Name = "yazdirilacakIsletme_listbox";
-            this.yazdirilacakIsletme_listbox.Size = new System.Drawing.Size(350, 99);
-            this.yazdirilacakIsletme_listbox.TabIndex = 83;
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label88.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label88.Location = new System.Drawing.Point(10, 10);
-            this.label88.Name = "label88";
-            this.label88.Padding = new System.Windows.Forms.Padding(0, 5, 5, 5);
-            this.label88.Size = new System.Drawing.Size(70, 31);
-            this.label88.TabIndex = 82;
-            this.label88.Text = "İşletme";
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.panel19);
-            this.panel18.Controls.Add(this.panel32);
-            this.panel18.Location = new System.Drawing.Point(10, 9);
-            this.panel18.Name = "panel18";
-            this.panel18.Padding = new System.Windows.Forms.Padding(5);
-            this.panel18.Size = new System.Drawing.Size(694, 164);
-            this.panel18.TabIndex = 87;
-            // 
-            // panel19
-            // 
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel19.Controls.Add(this.label87);
-            this.panel19.Controls.Add(this.yazdirilacakOgretmeniFiltrele_listbox);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel19.Location = new System.Drawing.Point(473, 5);
-            this.panel19.Name = "panel19";
-            this.panel19.Padding = new System.Windows.Forms.Padding(10);
-            this.panel19.Size = new System.Drawing.Size(216, 154);
-            this.panel19.TabIndex = 83;
-            // 
-            // label87
-            // 
-            this.label87.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label87.Location = new System.Drawing.Point(34, 5);
-            this.label87.Name = "label87";
-            this.label87.Padding = new System.Windows.Forms.Padding(5);
-            this.label87.Size = new System.Drawing.Size(147, 31);
-            this.label87.TabIndex = 5;
-            this.label87.Text = "Hafta(Filtreleme)";
-            // 
-            // yazdirilacakOgretmeniFiltrele_listbox
-            // 
-            this.yazdirilacakOgretmeniFiltrele_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.yazdirilacakOgretmeniFiltrele_listbox.FormattingEnabled = true;
-            this.yazdirilacakOgretmeniFiltrele_listbox.ItemHeight = 19;
-            this.yazdirilacakOgretmeniFiltrele_listbox.Items.AddRange(new object[] {
-            "A Grup Haftası",
-            "B Grup Haftası",
-            "C Grup Haftası",
-            "D Grup Haftası"});
-            this.yazdirilacakOgretmeniFiltrele_listbox.Location = new System.Drawing.Point(10, 60);
-            this.yazdirilacakOgretmeniFiltrele_listbox.Name = "yazdirilacakOgretmeniFiltrele_listbox";
-            this.yazdirilacakOgretmeniFiltrele_listbox.Size = new System.Drawing.Size(192, 80);
-            this.yazdirilacakOgretmeniFiltrele_listbox.TabIndex = 4;
-            this.yazdirilacakOgretmeniFiltrele_listbox.SelectedIndexChanged += new System.EventHandler(this.yazdirilacakOgretmeniFiltrele_listbox_SelectedIndexChanged);
-            // 
-            // panel32
-            // 
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel32.Controls.Add(this.label78);
-            this.panel32.Controls.Add(this.label110);
-            this.panel32.Controls.Add(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel32.Location = new System.Drawing.Point(5, 5);
-            this.panel32.Name = "panel32";
-            this.panel32.Padding = new System.Windows.Forms.Padding(10);
-            this.panel32.Size = new System.Drawing.Size(465, 154);
-            this.panel32.TabIndex = 0;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label78.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label78.Location = new System.Drawing.Point(10, 10);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(184, 21);
-            this.label78.TabIndex = 82;
-            this.label78.Text = "Koordinatör Öğretmen";
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label110.Location = new System.Drawing.Point(13, 59);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(187, 21);
-            this.label110.TabIndex = 72;
-            this.label110.Text = "Öğretmen Adı Soyadı : ";
-            // 
-            // yazdirBelgesiCikartilacakKoordinatorOgretmen_combo
-            // 
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.FormattingEnabled = true;
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Location = new System.Drawing.Point(205, 58);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Name = "yazdirBelgesiCikartilacakKoordinatorOgretmen_combo";
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.Size = new System.Drawing.Size(244, 27);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TabIndex = 80;
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.SelectedIndexChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_SelectedIndexChanged);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.TextChanged += new System.EventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_TextChanged);
-            this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.yazdirBelgesiCikartilacakKoordinatorOgretmen_combo_KeyDown);
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage14.Controls.Add(this.panel97);
-            this.tabPage14.Location = new System.Drawing.Point(4, 28);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(20);
-            this.tabPage14.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage14.TabIndex = 1;
-            this.tabPage14.Text = "QR İLE BELGE OKUT";
-            // 
-            // panel97
-            // 
-            this.panel97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel97.Controls.Add(this.QrTextBox);
-            this.panel97.Controls.Add(this.label108);
-            this.panel97.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel97.Location = new System.Drawing.Point(20, 20);
-            this.panel97.Name = "panel97";
-            this.panel97.Size = new System.Drawing.Size(1103, 578);
-            this.panel97.TabIndex = 0;
-            this.panel97.Click += new System.EventHandler(this.panel97_Click);
-            // 
-            // QrTextBox
-            // 
-            this.QrTextBox.Location = new System.Drawing.Point(227, 95);
-            this.QrTextBox.Name = "QrTextBox";
-            this.QrTextBox.Size = new System.Drawing.Size(0, 24);
-            this.QrTextBox.TabIndex = 1;
-            this.QrTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.QrTextBox_KeyDown);
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label108.Location = new System.Drawing.Point(446, 239);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(252, 21);
-            this.label108.TabIndex = 0;
-            this.label108.Text = "Lütfen QR kodu cihazla okutun.";
-            // 
-            // SETTINGStabControl1
-            // 
-            this.SETTINGStabControl1.Controls.Add(this.tabPage20);
-            this.SETTINGStabControl1.Controls.Add(this.tabPage24);
-            this.SETTINGStabControl1.Controls.Add(this.tabPage23);
-            this.SETTINGStabControl1.Controls.Add(this.tabPage25);
-            this.SETTINGStabControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.SETTINGStabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SETTINGStabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SETTINGStabControl1.Location = new System.Drawing.Point(0, 0);
-            this.SETTINGStabControl1.Multiline = true;
-            this.SETTINGStabControl1.Name = "SETTINGStabControl1";
-            this.SETTINGStabControl1.Padding = new System.Drawing.Point(50, 3);
-            this.SETTINGStabControl1.SelectedIndex = 0;
-            this.SETTINGStabControl1.Size = new System.Drawing.Size(1151, 650);
-            this.SETTINGStabControl1.TabIndex = 84;
-            // 
-            // tabPage20
-            // 
-            this.tabPage20.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage20.Controls.Add(this.panel6);
-            this.tabPage20.Controls.Add(this.panel5);
-            this.tabPage20.Location = new System.Drawing.Point(4, 28);
-            this.tabPage20.Name = "tabPage20";
-            this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage20.TabIndex = 0;
-            this.tabPage20.Text = "ZORUNLU AYARLAR";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.panel10);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(769, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(371, 612);
-            this.panel6.TabIndex = 87;
-            // 
-            // panel10
-            // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.panel14);
-            this.panel10.Controls.Add(this.panel77);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(371, 611);
-            this.panel10.TabIndex = 88;
-            // 
-            // panel14
-            // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Controls.Add(this.label105);
-            this.panel14.Controls.Add(this.splitContainer8);
-            this.panel14.Controls.Add(this.label79);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel14.Location = new System.Drawing.Point(0, 292);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(369, 318);
-            this.panel14.TabIndex = 79;
-            // 
-            // label105
-            // 
-            this.label105.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label105.AutoSize = true;
-            this.label105.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label105.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label105.Location = new System.Drawing.Point(251, 10);
-            this.label105.Name = "label105";
-            this.label105.Padding = new System.Windows.Forms.Padding(2);
-            this.label105.Size = new System.Drawing.Size(44, 27);
-            this.label105.TabIndex = 70;
-            this.label105.Text = "İller";
-            // 
-            // splitContainer8
-            // 
-            this.splitContainer8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitContainer8.Location = new System.Drawing.Point(0, 44);
-            this.splitContainer8.Name = "splitContainer8";
-            // 
-            // splitContainer8.Panel1
-            // 
-            this.splitContainer8.Panel1.Controls.Add(this.settingsSiniflarList_listbox);
-            // 
-            // splitContainer8.Panel2
-            // 
-            this.splitContainer8.Panel2.Controls.Add(this.settingsIllerList_listbox);
-            this.splitContainer8.Size = new System.Drawing.Size(367, 272);
-            this.splitContainer8.SplitterDistance = 180;
-            this.splitContainer8.TabIndex = 69;
-            // 
-            // settingsSiniflarList_listbox
-            // 
-            this.settingsSiniflarList_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.settingsSiniflarList_listbox.FormattingEnabled = true;
-            this.settingsSiniflarList_listbox.ItemHeight = 19;
-            this.settingsSiniflarList_listbox.Location = new System.Drawing.Point(0, 0);
-            this.settingsSiniflarList_listbox.Name = "settingsSiniflarList_listbox";
-            this.settingsSiniflarList_listbox.Size = new System.Drawing.Size(180, 272);
-            this.settingsSiniflarList_listbox.TabIndex = 2;
-            this.settingsSiniflarList_listbox.SelectedIndexChanged += new System.EventHandler(this.settingsSiniflarList_listbox_SelectedIndexChanged);
-            // 
-            // settingsIllerList_listbox
-            // 
-            this.settingsIllerList_listbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.settingsIllerList_listbox.FormattingEnabled = true;
-            this.settingsIllerList_listbox.ItemHeight = 19;
-            this.settingsIllerList_listbox.Location = new System.Drawing.Point(0, 0);
-            this.settingsIllerList_listbox.Name = "settingsIllerList_listbox";
-            this.settingsIllerList_listbox.Size = new System.Drawing.Size(183, 272);
-            this.settingsIllerList_listbox.TabIndex = 2;
-            // 
-            // label79
-            // 
-            this.label79.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label79.AutoSize = true;
-            this.label79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label79.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label79.Location = new System.Drawing.Point(55, 10);
-            this.label79.Name = "label79";
-            this.label79.Padding = new System.Windows.Forms.Padding(2);
-            this.label79.Size = new System.Drawing.Size(68, 27);
-            this.label79.TabIndex = 68;
-            this.label79.Text = "Sınıflar";
-            // 
-            // panel77
-            // 
-            this.panel77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel77.Controls.Add(this.label75);
-            this.panel77.Controls.Add(this.settingsAlanlarVeDallariList_listbox);
-            this.panel77.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel77.Location = new System.Drawing.Point(0, 0);
-            this.panel77.Name = "panel77";
-            this.panel77.Size = new System.Drawing.Size(369, 292);
-            this.panel77.TabIndex = 77;
-            // 
-            // label75
-            // 
-            this.label75.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label75.AutoSize = true;
-            this.label75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label75.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label75.Location = new System.Drawing.Point(115, 6);
-            this.label75.Name = "label75";
-            this.label75.Padding = new System.Windows.Forms.Padding(2);
-            this.label75.Size = new System.Drawing.Size(144, 27);
-            this.label75.TabIndex = 68;
-            this.label75.Text = "Alanlar ve Dalları";
-            // 
-            // settingsAlanlarVeDallariList_listbox
-            // 
-            this.settingsAlanlarVeDallariList_listbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.settingsAlanlarVeDallariList_listbox.FormattingEnabled = true;
-            this.settingsAlanlarVeDallariList_listbox.ItemHeight = 19;
-            this.settingsAlanlarVeDallariList_listbox.Location = new System.Drawing.Point(0, 39);
-            this.settingsAlanlarVeDallariList_listbox.Name = "settingsAlanlarVeDallariList_listbox";
-            this.settingsAlanlarVeDallariList_listbox.Size = new System.Drawing.Size(367, 251);
-            this.settingsAlanlarVeDallariList_listbox.TabIndex = 0;
-            this.settingsAlanlarVeDallariList_listbox.SelectedIndexChanged += new System.EventHandler(this.settingsAlanlarVeDallariList_listbox_SelectedIndexChanged);
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.panel60);
-            this.panel5.Controls.Add(this.panel16);
-            this.panel5.Controls.Add(this.settingsTumunuSıfırlaButon_button);
-            this.panel5.Controls.Add(this.panel13);
-            this.panel5.Controls.Add(this.panel11);
-            this.panel5.Controls.Add(this.panel9);
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(3, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(765, 612);
-            this.panel5.TabIndex = 86;
-            // 
-            // panel60
-            // 
-            this.panel60.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel60.Controls.Add(this.settingsOkulMuduruAdiButon_button);
-            this.panel60.Controls.Add(this.okulMuduruIsmi_text);
-            this.panel60.Controls.Add(this.label117);
-            this.panel60.Controls.Add(this.settingsKoordinatorMudurYardimcisiAdiButon_button);
-            this.panel60.Controls.Add(this.KoordinatorMuduryardimcisiIsmi_text);
-            this.panel60.Controls.Add(this.label116);
-            this.panel60.Controls.Add(this.settingsMudurYardimcisiAdiButon_button);
-            this.panel60.Controls.Add(this.settingsMudurYardimcisiAdi_textbox);
-            this.panel60.Controls.Add(this.label109);
-            this.panel60.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel60.Location = new System.Drawing.Point(0, 416);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(763, 109);
-            this.panel60.TabIndex = 86;
-            // 
-            // settingsOkulMuduruAdiButon_button
-            // 
-            this.settingsOkulMuduruAdiButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsOkulMuduruAdiButon_button.Location = new System.Drawing.Point(555, 71);
-            this.settingsOkulMuduruAdiButon_button.Name = "settingsOkulMuduruAdiButon_button";
-            this.settingsOkulMuduruAdiButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsOkulMuduruAdiButon_button.TabIndex = 77;
-            this.settingsOkulMuduruAdiButon_button.Text = "DÜZENLE";
-            this.settingsOkulMuduruAdiButon_button.UseVisualStyleBackColor = true;
-            this.settingsOkulMuduruAdiButon_button.Click += new System.EventHandler(this.settingsOkulMuduruAdiButon_button_Click);
-            // 
-            // okulMuduruIsmi_text
-            // 
-            this.okulMuduruIsmi_text.Location = new System.Drawing.Point(226, 76);
-            this.okulMuduruIsmi_text.Name = "okulMuduruIsmi_text";
-            this.okulMuduruIsmi_text.Size = new System.Drawing.Size(306, 24);
-            this.okulMuduruIsmi_text.TabIndex = 76;
-            this.okulMuduruIsmi_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.okulMuduruIsmi_text_KeyDown);
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label117.Location = new System.Drawing.Point(56, 75);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(163, 21);
-            this.label117.TabIndex = 75;
-            this.label117.Text = "Okul Müdürü İsmi : ";
-            // 
-            // settingsKoordinatorMudurYardimcisiAdiButon_button
-            // 
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Location = new System.Drawing.Point(554, 38);
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Name = "settingsKoordinatorMudurYardimcisiAdiButon_button";
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.TabIndex = 74;
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Text = "DÜZENLE";
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.UseVisualStyleBackColor = true;
-            this.settingsKoordinatorMudurYardimcisiAdiButon_button.Click += new System.EventHandler(this.settingsKoordinatorMudurYardimcisiAdiButon_button_Click);
-            // 
-            // KoordinatorMuduryardimcisiIsmi_text
-            // 
-            this.KoordinatorMuduryardimcisiIsmi_text.Location = new System.Drawing.Point(226, 43);
-            this.KoordinatorMuduryardimcisiIsmi_text.Name = "KoordinatorMuduryardimcisiIsmi_text";
-            this.KoordinatorMuduryardimcisiIsmi_text.Size = new System.Drawing.Size(306, 24);
-            this.KoordinatorMuduryardimcisiIsmi_text.TabIndex = 73;
-            this.KoordinatorMuduryardimcisiIsmi_text.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KoordinatorMuduryardimcisiIsmi_text_KeyDown);
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label116.Location = new System.Drawing.Point(6, 42);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(213, 21);
-            this.label116.TabIndex = 72;
-            this.label116.Text = "K. Müdür Yardımcısı İsmi : ";
-            // 
-            // settingsMudurYardimcisiAdiButon_button
-            // 
-            this.settingsMudurYardimcisiAdiButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsMudurYardimcisiAdiButon_button.Location = new System.Drawing.Point(555, 5);
-            this.settingsMudurYardimcisiAdiButon_button.Name = "settingsMudurYardimcisiAdiButon_button";
-            this.settingsMudurYardimcisiAdiButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsMudurYardimcisiAdiButon_button.TabIndex = 71;
-            this.settingsMudurYardimcisiAdiButon_button.Text = "DÜZENLE";
-            this.settingsMudurYardimcisiAdiButon_button.UseVisualStyleBackColor = true;
-            this.settingsMudurYardimcisiAdiButon_button.Click += new System.EventHandler(this.settingsMudurYardimcisiAdiButon_button_Click);
-            // 
-            // settingsMudurYardimcisiAdi_textbox
-            // 
-            this.settingsMudurYardimcisiAdi_textbox.Location = new System.Drawing.Point(226, 10);
-            this.settingsMudurYardimcisiAdi_textbox.Name = "settingsMudurYardimcisiAdi_textbox";
-            this.settingsMudurYardimcisiAdi_textbox.Size = new System.Drawing.Size(306, 24);
-            this.settingsMudurYardimcisiAdi_textbox.TabIndex = 64;
-            this.settingsMudurYardimcisiAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsMudurYardimcisiAdi_textbox_KeyDown);
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label109.Location = new System.Drawing.Point(25, 9);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(194, 21);
-            this.label109.TabIndex = 63;
-            this.label109.Text = "Müdür Yardımcısı İsmi : ";
-            // 
-            // panel16
-            // 
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Controls.Add(this.settingsVarsayilanStajBitisTarihi_datetimepicker);
-            this.panel16.Controls.Add(this.label83);
-            this.panel16.Controls.Add(this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker);
-            this.panel16.Controls.Add(this.label82);
-            this.panel16.Controls.Add(this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 341);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(763, 75);
-            this.panel16.TabIndex = 85;
-            // 
-            // settingsVarsayilanStajBitisTarihi_datetimepicker
-            // 
-            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Location = new System.Drawing.Point(332, 42);
-            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Name = "settingsVarsayilanStajBitisTarihi_datetimepicker";
-            this.settingsVarsayilanStajBitisTarihi_datetimepicker.Size = new System.Drawing.Size(200, 24);
-            this.settingsVarsayilanStajBitisTarihi_datetimepicker.TabIndex = 75;
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label83.Location = new System.Drawing.Point(47, 43);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(279, 19);
-            this.label83.TabIndex = 74;
-            this.label83.Text = "Staj Bitiş Tarihi Varsayılan Olarak Bu Olsun : ";
-            // 
-            // settingsVarsayilanStajaBaslamaTarihi_datetimepicker
-            // 
-            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Location = new System.Drawing.Point(332, 8);
-            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Name = "settingsVarsayilanStajaBaslamaTarihi_datetimepicker";
-            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.Size = new System.Drawing.Size(200, 24);
-            this.settingsVarsayilanStajaBaslamaTarihi_datetimepicker.TabIndex = 73;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label82.Location = new System.Drawing.Point(15, 9);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(311, 19);
-            this.label82.TabIndex = 72;
-            this.label82.Text = "Staj Başlangıç Tarihi Varsayılan Olarak Bu Olsun : ";
-            // 
-            // settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button
-            // 
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Location = new System.Drawing.Point(554, 21);
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Name = "settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button";
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.TabIndex = 71;
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Text = "DÜZENLE";
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.UseVisualStyleBackColor = true;
-            this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button.Click += new System.EventHandler(this.settingsVarsayilanStajBaslangicVeBitisTarihleriButon_button_Click);
-            // 
-            // settingsTumunuSıfırlaButon_button
-            // 
-            this.settingsTumunuSıfırlaButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsTumunuSıfırlaButon_button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.settingsTumunuSıfırlaButon_button.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsTumunuSıfırlaButon_button.Location = new System.Drawing.Point(0, 531);
-            this.settingsTumunuSıfırlaButon_button.Name = "settingsTumunuSıfırlaButon_button";
-            this.settingsTumunuSıfırlaButon_button.Size = new System.Drawing.Size(763, 79);
-            this.settingsTumunuSıfırlaButon_button.TabIndex = 84;
-            this.settingsTumunuSıfırlaButon_button.Text = "TÜMÜNÜ SIFIRLA";
-            this.settingsTumunuSıfırlaButon_button.UseVisualStyleBackColor = true;
-            this.settingsTumunuSıfırlaButon_button.Click += new System.EventHandler(this.settingsTumunuSıfırlaButon_button_Click);
-            // 
-            // panel13
-            // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Controls.Add(this.panel23);
-            this.panel13.Controls.Add(this.settingsOzelIllerPanel_panel);
-            this.panel13.Controls.Add(this.settingsOzelIller_radio);
-            this.panel13.Controls.Add(this.settingsTumIller_radio);
-            this.panel13.Controls.Add(this.settingsTumIllerOzelIllerDuzenleButon_button);
-            this.panel13.Controls.Add(this.label81);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 229);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(763, 112);
-            this.panel13.TabIndex = 84;
-            // 
-            // panel23
-            // 
-            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Controls.Add(this.settingsEgitimOgretimYili_button);
-            this.panel23.Controls.Add(this.label118);
-            this.panel23.Controls.Add(this.EgitimOgretimYili2_textbox);
-            this.panel23.Controls.Add(this.EgitimOgretimYili1_textbox);
-            this.panel23.Controls.Add(this.label114);
-            this.panel23.Location = new System.Drawing.Point(16, 43);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(445, 63);
-            this.panel23.TabIndex = 75;
-            // 
-            // settingsEgitimOgretimYili_button
-            // 
-            this.settingsEgitimOgretimYili_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsEgitimOgretimYili_button.Location = new System.Drawing.Point(353, 15);
-            this.settingsEgitimOgretimYili_button.Name = "settingsEgitimOgretimYili_button";
-            this.settingsEgitimOgretimYili_button.Size = new System.Drawing.Size(80, 30);
-            this.settingsEgitimOgretimYili_button.TabIndex = 72;
-            this.settingsEgitimOgretimYili_button.Text = "DÜZENLE";
-            this.settingsEgitimOgretimYili_button.UseVisualStyleBackColor = true;
-            this.settingsEgitimOgretimYili_button.Click += new System.EventHandler(this.settingsEgitimOgretimYili_button_Click);
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label118.Location = new System.Drawing.Point(233, 20);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(23, 19);
-            this.label118.TabIndex = 67;
-            this.label118.Text = " / ";
-            // 
-            // EgitimOgretimYili2_textbox
-            // 
-            this.EgitimOgretimYili2_textbox.Location = new System.Drawing.Point(260, 15);
-            this.EgitimOgretimYili2_textbox.Multiline = true;
-            this.EgitimOgretimYili2_textbox.Name = "EgitimOgretimYili2_textbox";
-            this.EgitimOgretimYili2_textbox.Size = new System.Drawing.Size(85, 30);
-            this.EgitimOgretimYili2_textbox.TabIndex = 66;
-            this.EgitimOgretimYili2_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EgitimOgretimYili2_textbox_KeyDown);
-            // 
-            // EgitimOgretimYili1_textbox
-            // 
-            this.EgitimOgretimYili1_textbox.Location = new System.Drawing.Point(145, 15);
-            this.EgitimOgretimYili1_textbox.Multiline = true;
-            this.EgitimOgretimYili1_textbox.Name = "EgitimOgretimYili1_textbox";
-            this.EgitimOgretimYili1_textbox.Size = new System.Drawing.Size(85, 30);
-            this.EgitimOgretimYili1_textbox.TabIndex = 65;
-            this.EgitimOgretimYili1_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.EgitimOgretimYili1_textbox_KeyDown);
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label114.Location = new System.Drawing.Point(5, 20);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(134, 19);
-            this.label114.TabIndex = 64;
-            this.label114.Text = "Eğitim Öğretim Yılı : ";
-            // 
-            // settingsOzelIllerPanel_panel
-            // 
-            this.settingsOzelIllerPanel_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.settingsOzelIllerPanel_panel.Controls.Add(this.settingsOzelIller_combo);
-            this.settingsOzelIllerPanel_panel.Location = new System.Drawing.Point(466, 43);
-            this.settingsOzelIllerPanel_panel.Name = "settingsOzelIllerPanel_panel";
-            this.settingsOzelIllerPanel_panel.Size = new System.Drawing.Size(254, 63);
-            this.settingsOzelIllerPanel_panel.TabIndex = 74;
-            // 
-            // settingsOzelIller_combo
-            // 
-            this.settingsOzelIller_combo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsOzelIller_combo.FormattingEnabled = true;
-            this.settingsOzelIller_combo.Location = new System.Drawing.Point(21, 16);
-            this.settingsOzelIller_combo.Name = "settingsOzelIller_combo";
-            this.settingsOzelIller_combo.Size = new System.Drawing.Size(210, 27);
-            this.settingsOzelIller_combo.TabIndex = 0;
-            this.settingsOzelIller_combo.TextChanged += new System.EventHandler(this.settingsOzelIller_combo_TextChanged);
-            this.settingsOzelIller_combo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsOzelIller_combo_KeyDown);
-            // 
-            // settingsOzelIller_radio
-            // 
-            this.settingsOzelIller_radio.AutoSize = true;
-            this.settingsOzelIller_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsOzelIller_radio.Location = new System.Drawing.Point(408, 8);
-            this.settingsOzelIller_radio.Name = "settingsOzelIller_radio";
-            this.settingsOzelIller_radio.Size = new System.Drawing.Size(54, 23);
-            this.settingsOzelIller_radio.TabIndex = 73;
-            this.settingsOzelIller_radio.Text = "Özel";
-            this.settingsOzelIller_radio.UseVisualStyleBackColor = true;
-            this.settingsOzelIller_radio.CheckedChanged += new System.EventHandler(this.settingsOzelIller_radio_CheckedChanged);
-            // 
-            // settingsTumIller_radio
-            // 
-            this.settingsTumIller_radio.AutoSize = true;
-            this.settingsTumIller_radio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsTumIller_radio.Location = new System.Drawing.Point(312, 8);
-            this.settingsTumIller_radio.Name = "settingsTumIller_radio";
-            this.settingsTumIller_radio.Size = new System.Drawing.Size(80, 23);
-            this.settingsTumIller_radio.TabIndex = 72;
-            this.settingsTumIller_radio.Text = "Tüm İller";
-            this.settingsTumIller_radio.UseVisualStyleBackColor = true;
-            // 
-            // settingsTumIllerOzelIllerDuzenleButon_button
-            // 
-            this.settingsTumIllerOzelIllerDuzenleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsTumIllerOzelIllerDuzenleButon_button.Location = new System.Drawing.Point(554, 7);
-            this.settingsTumIllerOzelIllerDuzenleButon_button.Name = "settingsTumIllerOzelIllerDuzenleButon_button";
-            this.settingsTumIllerOzelIllerDuzenleButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsTumIllerOzelIllerDuzenleButon_button.TabIndex = 71;
-            this.settingsTumIllerOzelIllerDuzenleButon_button.Text = "DÜZENLE";
-            this.settingsTumIllerOzelIllerDuzenleButon_button.UseVisualStyleBackColor = true;
-            this.settingsTumIllerOzelIllerDuzenleButon_button.Click += new System.EventHandler(this.settingsTumIllerOzelIllerDuzenleButon_button_Click);
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label81.Location = new System.Drawing.Point(14, 10);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(282, 19);
-            this.label81.TabIndex = 63;
-            this.label81.Text = "Firma İşlemleri Sayfasında Listelenecek İller : ";
-            // 
-            // panel11
-            // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.settingsSinifEkleButon_button);
-            this.panel11.Controls.Add(this.settingsSinifAdi_textbox);
-            this.panel11.Controls.Add(this.label80);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 167);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(763, 62);
-            this.panel11.TabIndex = 83;
-            // 
-            // settingsSinifEkleButon_button
-            // 
-            this.settingsSinifEkleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsSinifEkleButon_button.Location = new System.Drawing.Point(554, 17);
-            this.settingsSinifEkleButon_button.Name = "settingsSinifEkleButon_button";
-            this.settingsSinifEkleButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsSinifEkleButon_button.TabIndex = 71;
-            this.settingsSinifEkleButon_button.Text = "EKLE";
-            this.settingsSinifEkleButon_button.UseVisualStyleBackColor = true;
-            this.settingsSinifEkleButon_button.Click += new System.EventHandler(this.settingsSinifEkleButon_button_Click);
-            // 
-            // settingsSinifAdi_textbox
-            // 
-            this.settingsSinifAdi_textbox.Location = new System.Drawing.Point(226, 20);
-            this.settingsSinifAdi_textbox.Name = "settingsSinifAdi_textbox";
-            this.settingsSinifAdi_textbox.Size = new System.Drawing.Size(306, 24);
-            this.settingsSinifAdi_textbox.TabIndex = 64;
-            this.settingsSinifAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsSinifAdi_textbox_KeyDown);
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label80.Location = new System.Drawing.Point(132, 21);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(87, 21);
-            this.label80.TabIndex = 63;
-            this.label80.Text = "Sınıf Adı : ";
-            // 
-            // panel9
-            // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.settingsAlanAdlariTumunuSil_button);
-            this.panel9.Controls.Add(this.label76);
-            this.panel9.Controls.Add(this.settingsAlanAdiEkleButon_button);
-            this.panel9.Controls.Add(this.settingsAlanDaliEkleButon_button);
-            this.panel9.Controls.Add(this.settingsAlanaAitDalAdi_textbox);
-            this.panel9.Controls.Add(this.label77);
-            this.panel9.Controls.Add(this.settingsAlanAdi_textbox);
-            this.panel9.Controls.Add(this.label74);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 68);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(763, 99);
-            this.panel9.TabIndex = 81;
-            // 
-            // settingsAlanAdlariTumunuSil_button
-            // 
-            this.settingsAlanAdlariTumunuSil_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsAlanAdlariTumunuSil_button.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsAlanAdlariTumunuSil_button.Location = new System.Drawing.Point(669, 8);
-            this.settingsAlanAdlariTumunuSil_button.Name = "settingsAlanAdlariTumunuSil_button";
-            this.settingsAlanAdlariTumunuSil_button.Size = new System.Drawing.Size(80, 65);
-            this.settingsAlanAdlariTumunuSil_button.TabIndex = 72;
-            this.settingsAlanAdlariTumunuSil_button.Text = "TÜMÜNÜ\r\nSİL";
-            this.settingsAlanAdlariTumunuSil_button.UseVisualStyleBackColor = true;
-            this.settingsAlanAdlariTumunuSil_button.Click += new System.EventHandler(this.settingsAlanAdlariTumunuSil_button_Click);
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label76.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label76.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label76.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label76.Location = new System.Drawing.Point(0, 79);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(721, 18);
-            this.label76.TabIndex = 71;
-            this.label76.Text = "Not : Lütfen alan dalı ismi eklerken alan adını boş bırakmayınız. Eğer birden faz" +
-    "la alan dalı ekleyecekseniz her seferinde ayrı ayrı ekleyiniz.\r\n";
-            // 
-            // settingsAlanAdiEkleButon_button
-            // 
-            this.settingsAlanAdiEkleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsAlanAdiEkleButon_button.Location = new System.Drawing.Point(554, 8);
-            this.settingsAlanAdiEkleButon_button.Name = "settingsAlanAdiEkleButon_button";
-            this.settingsAlanAdiEkleButon_button.Size = new System.Drawing.Size(110, 30);
-            this.settingsAlanAdiEkleButon_button.TabIndex = 70;
-            this.settingsAlanAdiEkleButon_button.Text = "EKLE";
-            this.settingsAlanAdiEkleButon_button.UseVisualStyleBackColor = true;
-            this.settingsAlanAdiEkleButon_button.Click += new System.EventHandler(this.settingsAlanAdiEkleButon_button_Click);
-            // 
-            // settingsAlanDaliEkleButon_button
-            // 
-            this.settingsAlanDaliEkleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsAlanDaliEkleButon_button.Location = new System.Drawing.Point(554, 43);
-            this.settingsAlanDaliEkleButon_button.Name = "settingsAlanDaliEkleButon_button";
-            this.settingsAlanDaliEkleButon_button.Size = new System.Drawing.Size(110, 30);
-            this.settingsAlanDaliEkleButon_button.TabIndex = 69;
-            this.settingsAlanDaliEkleButon_button.Text = "EKLE";
-            this.settingsAlanDaliEkleButon_button.UseVisualStyleBackColor = true;
-            this.settingsAlanDaliEkleButon_button.Click += new System.EventHandler(this.settingsAlanDaliEkleButon_button_Click);
-            // 
-            // settingsAlanaAitDalAdi_textbox
-            // 
-            this.settingsAlanaAitDalAdi_textbox.Location = new System.Drawing.Point(226, 47);
-            this.settingsAlanaAitDalAdi_textbox.Name = "settingsAlanaAitDalAdi_textbox";
-            this.settingsAlanaAitDalAdi_textbox.Size = new System.Drawing.Size(306, 24);
-            this.settingsAlanaAitDalAdi_textbox.TabIndex = 68;
-            this.settingsAlanaAitDalAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsAlanaAitDalAdi_textbox_KeyDown);
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label77.Location = new System.Drawing.Point(66, 47);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(153, 21);
-            this.label77.TabIndex = 67;
-            this.label77.Text = "Alana Ait Dal Adı : ";
-            // 
-            // settingsAlanAdi_textbox
-            // 
-            this.settingsAlanAdi_textbox.Location = new System.Drawing.Point(226, 11);
-            this.settingsAlanAdi_textbox.Name = "settingsAlanAdi_textbox";
-            this.settingsAlanAdi_textbox.Size = new System.Drawing.Size(306, 24);
-            this.settingsAlanAdi_textbox.TabIndex = 66;
-            this.settingsAlanAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsAlanAdi_textbox_KeyDown);
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label74.Location = new System.Drawing.Point(131, 12);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(88, 21);
-            this.label74.TabIndex = 65;
-            this.label74.Text = "Alan Adı : ";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.settingsOkulAdiDuzenleButon_button);
-            this.panel7.Controls.Add(this.settingsOkulAdi_textbox);
-            this.panel7.Controls.Add(this.label73);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(763, 68);
-            this.panel7.TabIndex = 80;
-            // 
-            // settingsOkulAdiDuzenleButon_button
-            // 
-            this.settingsOkulAdiDuzenleButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsOkulAdiDuzenleButon_button.Location = new System.Drawing.Point(554, 14);
-            this.settingsOkulAdiDuzenleButon_button.Name = "settingsOkulAdiDuzenleButon_button";
-            this.settingsOkulAdiDuzenleButon_button.Size = new System.Drawing.Size(141, 30);
-            this.settingsOkulAdiDuzenleButon_button.TabIndex = 71;
-            this.settingsOkulAdiDuzenleButon_button.Text = "DÜZENLE";
-            this.settingsOkulAdiDuzenleButon_button.UseVisualStyleBackColor = true;
-            this.settingsOkulAdiDuzenleButon_button.Click += new System.EventHandler(this.settingsOkulAdiDuzenleButon_button_Click);
-            // 
-            // settingsOkulAdi_textbox
-            // 
-            this.settingsOkulAdi_textbox.Location = new System.Drawing.Point(226, 17);
-            this.settingsOkulAdi_textbox.Name = "settingsOkulAdi_textbox";
-            this.settingsOkulAdi_textbox.Size = new System.Drawing.Size(306, 24);
-            this.settingsOkulAdi_textbox.TabIndex = 64;
-            this.settingsOkulAdi_textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.settingsOkulAdi_textbox_KeyDown);
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label73.Location = new System.Drawing.Point(129, 18);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(90, 21);
-            this.label73.TabIndex = 63;
-            this.label73.Text = "Okul Adı : ";
-            // 
-            // tabPage24
-            // 
-            this.tabPage24.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage24.Controls.Add(this.panel59);
-            this.tabPage24.Controls.Add(this.panel58);
-            this.tabPage24.Controls.Add(this.panel57);
-            this.tabPage24.Controls.Add(this.panel48);
-            this.tabPage24.Controls.Add(this.settingsTemelAyarlar_KAYDET_button);
-            this.tabPage24.Location = new System.Drawing.Point(4, 28);
-            this.tabPage24.Name = "tabPage24";
-            this.tabPage24.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage24.TabIndex = 2;
-            this.tabPage24.Text = "TEMEL AYARLAR";
-            // 
-            // panel59
-            // 
-            this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel59.Controls.Add(this.label104);
-            this.panel59.Controls.Add(this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton);
-            this.panel59.Controls.Add(this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton);
-            this.panel59.Location = new System.Drawing.Point(26, 310);
-            this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(878, 85);
-            this.panel59.TabIndex = 29;
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = true;
-            this.label104.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label104.Location = new System.Drawing.Point(12, 12);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(433, 21);
-            this.label104.TabIndex = 4;
-            this.label104.Text = "Sol menüde İşletme sayısı ve diğer veriler listelensin mi?";
-            // 
-            // SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton
-            // 
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.AutoSize = true;
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Location = new System.Drawing.Point(45, 48);
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Name = "SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton";
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Size = new System.Drawing.Size(57, 23);
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.TabIndex = 17;
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.Text = "EVET";
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_EVET_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton
-            // 
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.AutoSize = true;
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Location = new System.Drawing.Point(121, 48);
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Name = "SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton";
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Size = new System.Drawing.Size(66, 23);
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.TabIndex = 18;
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.Text = "HAYIR";
-            this.SolMenudeIsletmeSayisiVeDigerVerilerListelensinMi_HAYIR_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // panel58
-            // 
-            this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel58.Controls.Add(this.label102);
-            this.panel58.Controls.Add(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton);
-            this.panel58.Controls.Add(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton);
-            this.panel58.Location = new System.Drawing.Point(26, 215);
-            this.panel58.Name = "panel58";
-            this.panel58.Size = new System.Drawing.Size(878, 85);
-            this.panel58.TabIndex = 28;
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label102.Location = new System.Drawing.Point(12, 12);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(849, 21);
-            this.label102.TabIndex = 3;
-            this.label102.Text = "Program başlatıldığında sol menüden herhangi birşey seçilmesin, ben seçene kadar " +
-    "da sağ menü aktif olmasın";
-            // 
-            // ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton
-            // 
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Location = new System.Drawing.Point(47, 48);
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAkti" +
-    "fOlmasın_EVET_radiobutton";
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Size = new System.Drawing.Size(152, 23);
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.TabIndex = 7;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.Text = "EVET(Tercih Edilmez)";
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.UseVisualStyleBackColor = true;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton.CheckedChanged += new System.EventHandler(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_EVET_radiobutton_CheckedChanged);
-            // 
-            // ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton
-            // 
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Location = new System.Drawing.Point(206, 48);
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAkti" +
-    "fOlmasın_HAYIR_radiobutton";
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Size = new System.Drawing.Size(66, 23);
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.TabIndex = 8;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.Text = "HAYIR";
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.UseVisualStyleBackColor = true;
-            this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton.CheckedChanged += new System.EventHandler(this.ProgramBaslatildigindaSolMenudenHerhangiBirseySecilmesinBenSeceneKadarSagMenuAktifOlmasın_HAYIR_radiobutton_CheckedChanged);
-            // 
-            // panel57
-            // 
-            this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel57.Controls.Add(this.label103);
-            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton);
-            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton);
-            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton);
-            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton);
-            this.panel57.Controls.Add(this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton);
-            this.panel57.Location = new System.Drawing.Point(26, 120);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(878, 85);
-            this.panel57.TabIndex = 27;
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.BackColor = System.Drawing.Color.Transparent;
-            this.label103.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label103.Location = new System.Drawing.Point(12, 12);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(588, 21);
-            this.label103.TabIndex = 2;
-            this.label103.Text = "Program başlatıldığında üst menüden hangi buton otomatik olarak seçilsin?";
-            // 
-            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton
-            // 
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Location = new System.Drawing.Point(47, 45);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri" +
-    "_radiobutton";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Size = new System.Drawing.Size(156, 23);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.TabIndex = 12;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.Text = "ÖĞRENCİ İŞLEMLERİ";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_OgrenciIslemleri_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton
-            // 
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Location = new System.Drawing.Point(205, 45);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgret" +
-    "men_radiobutton";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Size = new System.Drawing.Size(203, 23);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.TabIndex = 13;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.Text = "KOORDİNATÖR ÖĞRETMEN";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_KoordinatorOgretmen_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton
-            // 
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Location = new System.Drawing.Point(418, 45);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_r" +
-    "adiobutton";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Size = new System.Drawing.Size(137, 23);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.TabIndex = 14;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.Text = "FİRMA İŞLEMLERİ";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_FirmaIslemleri_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton
-            // 
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Location = new System.Drawing.Point(561, 45);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutt" +
-    "on";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Size = new System.Drawing.Size(74, 23);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.TabIndex = 15;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.Text = "YAZDIR";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_YAZDIR_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton
-            // 
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Location = new System.Drawing.Point(641, 45);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Name = "ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobut" +
-    "ton";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Size = new System.Drawing.Size(85, 23);
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.TabIndex = 16;
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.Text = "AYARLAR";
-            this.ProgramBaslatildigindaUstMenudenHangiButonOtomatikOlarakSecilsin_AYARLAR_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // panel48
-            // 
-            this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel48.Controls.Add(this.label101);
-            this.panel48.Controls.Add(this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton);
-            this.panel48.Controls.Add(this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton);
-            this.panel48.Controls.Add(this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton);
-            this.panel48.Location = new System.Drawing.Point(26, 21);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(878, 85);
-            this.panel48.TabIndex = 26;
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label101.Location = new System.Drawing.Point(12, 12);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(586, 21);
-            this.label101.TabIndex = 1;
-            this.label101.Text = "Program başlatıldığında sol menüden hangi buton otomatik olarak seçilsin?";
-            // 
-            // ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton
-            // 
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Location = new System.Drawing.Point(47, 45);
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton";
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Size = new System.Drawing.Size(47, 23);
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.TabIndex = 9;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.Text = "KIŞ";
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_KIS_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton
-            // 
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Location = new System.Drawing.Point(105, 45);
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton";
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Size = new System.Drawing.Size(52, 23);
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.TabIndex = 10;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.Text = "YAZ";
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_YAZ_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton
-            // 
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.AutoSize = true;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Location = new System.Drawing.Point(169, 45);
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Name = "ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutto" +
-    "n";
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Size = new System.Drawing.Size(75, 23);
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.TabIndex = 11;
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.Text = "MESEM";
-            this.ProgramBaslatildigindaSolMenudenHangiButonOtomatikOlarakSecilsin_MESEM_radiobutton.UseVisualStyleBackColor = true;
-            // 
-            // settingsTemelAyarlar_KAYDET_button
-            // 
-            this.settingsTemelAyarlar_KAYDET_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsTemelAyarlar_KAYDET_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsTemelAyarlar_KAYDET_button.Location = new System.Drawing.Point(27, 411);
-            this.settingsTemelAyarlar_KAYDET_button.Name = "settingsTemelAyarlar_KAYDET_button";
-            this.settingsTemelAyarlar_KAYDET_button.Size = new System.Drawing.Size(877, 61);
-            this.settingsTemelAyarlar_KAYDET_button.TabIndex = 24;
-            this.settingsTemelAyarlar_KAYDET_button.Text = "KAYDET";
-            this.settingsTemelAyarlar_KAYDET_button.UseVisualStyleBackColor = true;
-            this.settingsTemelAyarlar_KAYDET_button.Click += new System.EventHandler(this.settingsTemelAyarlar_KAYDET_button_Click);
-            // 
-            // tabPage23
-            // 
-            this.tabPage23.Controls.Add(this.panel44);
-            this.tabPage23.Controls.Add(this.panel45);
-            this.tabPage23.Location = new System.Drawing.Point(4, 28);
-            this.tabPage23.Name = "tabPage23";
-            this.tabPage23.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage23.TabIndex = 1;
-            this.tabPage23.Text = "SORGU ÖZELLEŞTİRMELERİ";
-            this.tabPage23.UseVisualStyleBackColor = true;
-            // 
-            // panel44
-            // 
-            this.panel44.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel44.Controls.Add(this.panel46);
-            this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel44.Location = new System.Drawing.Point(0, 52);
-            this.panel44.Name = "panel44";
-            this.panel44.Padding = new System.Windows.Forms.Padding(30);
-            this.panel44.Size = new System.Drawing.Size(1143, 566);
-            this.panel44.TabIndex = 9;
-            // 
-            // panel46
-            // 
-            this.panel46.Controls.Add(this.panel51);
-            this.panel46.Controls.Add(this.panel49);
-            this.panel46.Controls.Add(this.panel47);
-            this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel46.Location = new System.Drawing.Point(30, 30);
-            this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(1083, 506);
-            this.panel46.TabIndex = 0;
-            // 
-            // panel51
-            // 
-            this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.Controls.Add(this.panel55);
-            this.panel51.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel51.Location = new System.Drawing.Point(716, 0);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(367, 506);
-            this.panel51.TabIndex = 2;
-            // 
-            // panel52
-            // 
-            this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOTC_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeIbanNo_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeSicilNo_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeUODT_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOSoyadi_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeUOAdi_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeDal_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeBolum_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeTelNo_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeYetkilisi_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeTamAdres_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeAdresIlce_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeAdresIl_checkbox);
-            this.panel52.Controls.Add(this.settingsColonNameIsletmeAd_checkbox);
-            this.panel52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel52.Location = new System.Drawing.Point(0, 52);
-            this.panel52.Name = "panel52";
-            this.panel52.Padding = new System.Windows.Forms.Padding(5);
-            this.panel52.Size = new System.Drawing.Size(365, 452);
-            this.panel52.TabIndex = 8;
-            // 
-            // settingsColonNameIsletmeUOTC_checkbox
-            // 
-            this.settingsColonNameIsletmeUOTC_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeUOTC_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeUOTC_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeUOTC_checkbox.Location = new System.Drawing.Point(11, 360);
-            this.settingsColonNameIsletmeUOTC_checkbox.Name = "settingsColonNameIsletmeUOTC_checkbox";
-            this.settingsColonNameIsletmeUOTC_checkbox.Size = new System.Drawing.Size(277, 25);
-            this.settingsColonNameIsletmeUOTC_checkbox.TabIndex = 69;
-            this.settingsColonNameIsletmeUOTC_checkbox.Tag = "IsletmeUstaOgreticiTcNo";
-            this.settingsColonNameIsletmeUOTC_checkbox.Text = "Usta Öğreticinin TC Kimlik No\'su";
-            this.settingsColonNameIsletmeUOTC_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeIbanNo_checkbox
-            // 
-            this.settingsColonNameIsletmeIbanNo_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeIbanNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeIbanNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeIbanNo_checkbox.Location = new System.Drawing.Point(11, 418);
-            this.settingsColonNameIsletmeIbanNo_checkbox.Name = "settingsColonNameIsletmeIbanNo_checkbox";
-            this.settingsColonNameIsletmeIbanNo_checkbox.Size = new System.Drawing.Size(151, 25);
-            this.settingsColonNameIsletmeIbanNo_checkbox.TabIndex = 68;
-            this.settingsColonNameIsletmeIbanNo_checkbox.Tag = "IsletmeIbanNo";
-            this.settingsColonNameIsletmeIbanNo_checkbox.Text = "İşletme İban No";
-            this.settingsColonNameIsletmeIbanNo_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeSicilNo_checkbox
-            // 
-            this.settingsColonNameIsletmeSicilNo_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeSicilNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeSicilNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeSicilNo_checkbox.Location = new System.Drawing.Point(11, 389);
-            this.settingsColonNameIsletmeSicilNo_checkbox.Name = "settingsColonNameIsletmeSicilNo_checkbox";
-            this.settingsColonNameIsletmeSicilNo_checkbox.Size = new System.Drawing.Size(146, 25);
-            this.settingsColonNameIsletmeSicilNo_checkbox.TabIndex = 67;
-            this.settingsColonNameIsletmeSicilNo_checkbox.Tag = "IsletmeSicilNo";
-            this.settingsColonNameIsletmeSicilNo_checkbox.Text = "İşletme Sicil No";
-            this.settingsColonNameIsletmeSicilNo_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeUODT_checkbox
-            // 
-            this.settingsColonNameIsletmeUODT_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeUODT_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeUODT_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeUODT_checkbox.Location = new System.Drawing.Point(11, 331);
-            this.settingsColonNameIsletmeUODT_checkbox.Name = "settingsColonNameIsletmeUODT_checkbox";
-            this.settingsColonNameIsletmeUODT_checkbox.Size = new System.Drawing.Size(261, 25);
-            this.settingsColonNameIsletmeUODT_checkbox.TabIndex = 66;
-            this.settingsColonNameIsletmeUODT_checkbox.Tag = "IsletmeUstaOgreticiDogumTarihi";
-            this.settingsColonNameIsletmeUODT_checkbox.Text = "Usta Öğreticinin Doğum Tarihi";
-            this.settingsColonNameIsletmeUODT_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeUOSoyadi_checkbox
-            // 
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Location = new System.Drawing.Point(11, 302);
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Name = "settingsColonNameIsletmeUOSoyadi_checkbox";
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Size = new System.Drawing.Size(183, 25);
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.TabIndex = 65;
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Tag = "IsletmeUstaOgreticiSoyadi";
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.Text = "Usta Öğretici Soyadı";
-            this.settingsColonNameIsletmeUOSoyadi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeUOAdi_checkbox
-            // 
-            this.settingsColonNameIsletmeUOAdi_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeUOAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeUOAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeUOAdi_checkbox.Location = new System.Drawing.Point(11, 273);
-            this.settingsColonNameIsletmeUOAdi_checkbox.Name = "settingsColonNameIsletmeUOAdi_checkbox";
-            this.settingsColonNameIsletmeUOAdi_checkbox.Size = new System.Drawing.Size(158, 25);
-            this.settingsColonNameIsletmeUOAdi_checkbox.TabIndex = 64;
-            this.settingsColonNameIsletmeUOAdi_checkbox.Tag = "IsletmeUstaOgreticiAdi";
-            this.settingsColonNameIsletmeUOAdi_checkbox.Text = "Usta Öğretici Adı";
-            this.settingsColonNameIsletmeUOAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeDal_checkbox
-            // 
-            this.settingsColonNameIsletmeDal_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeDal_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeDal_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeDal_checkbox.Location = new System.Drawing.Point(11, 244);
-            this.settingsColonNameIsletmeDal_checkbox.Name = "settingsColonNameIsletmeDal_checkbox";
-            this.settingsColonNameIsletmeDal_checkbox.Size = new System.Drawing.Size(118, 25);
-            this.settingsColonNameIsletmeDal_checkbox.TabIndex = 63;
-            this.settingsColonNameIsletmeDal_checkbox.Tag = "IsletmeDal";
-            this.settingsColonNameIsletmeDal_checkbox.Text = "İşletme Dalı";
-            this.settingsColonNameIsletmeDal_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeBolum_checkbox
-            // 
-            this.settingsColonNameIsletmeBolum_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeBolum_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeBolum_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeBolum_checkbox.Location = new System.Drawing.Point(11, 215);
-            this.settingsColonNameIsletmeBolum_checkbox.Name = "settingsColonNameIsletmeBolum_checkbox";
-            this.settingsColonNameIsletmeBolum_checkbox.Size = new System.Drawing.Size(127, 25);
-            this.settingsColonNameIsletmeBolum_checkbox.TabIndex = 62;
-            this.settingsColonNameIsletmeBolum_checkbox.Tag = "IsletmeBolum";
-            this.settingsColonNameIsletmeBolum_checkbox.Text = "İşletme Alanı";
-            this.settingsColonNameIsletmeBolum_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox
-            // 
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Location = new System.Drawing.Point(11, 186);
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Name = "settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox";
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Size = new System.Drawing.Size(145, 25);
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.TabIndex = 61;
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Tag = "IsletmeUstaOgreticilikVarmiYokmu";
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.Text = "Usta Öğreticilik";
-            this.settingsColonNameIsletmeUstaOgreticilikVarmiYokmu_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeTelNo_checkbox
-            // 
-            this.settingsColonNameIsletmeTelNo_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeTelNo_checkbox.Location = new System.Drawing.Point(11, 157);
-            this.settingsColonNameIsletmeTelNo_checkbox.Name = "settingsColonNameIsletmeTelNo_checkbox";
-            this.settingsColonNameIsletmeTelNo_checkbox.Size = new System.Drawing.Size(86, 25);
-            this.settingsColonNameIsletmeTelNo_checkbox.TabIndex = 60;
-            this.settingsColonNameIsletmeTelNo_checkbox.Tag = "IsletmeTelNo";
-            this.settingsColonNameIsletmeTelNo_checkbox.Text = "Telefon";
-            this.settingsColonNameIsletmeTelNo_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeYetkilisi_checkbox
-            // 
-            this.settingsColonNameIsletmeYetkilisi_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Location = new System.Drawing.Point(11, 128);
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Name = "settingsColonNameIsletmeYetkilisi_checkbox";
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Size = new System.Drawing.Size(146, 25);
-            this.settingsColonNameIsletmeYetkilisi_checkbox.TabIndex = 59;
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Tag = "IsletmeYetkilisi";
-            this.settingsColonNameIsletmeYetkilisi_checkbox.Text = "İşletme Yetkilisi";
-            this.settingsColonNameIsletmeYetkilisi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeTamAdres_checkbox
-            // 
-            this.settingsColonNameIsletmeTamAdres_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeTamAdres_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeTamAdres_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeTamAdres_checkbox.Location = new System.Drawing.Point(11, 99);
-            this.settingsColonNameIsletmeTamAdres_checkbox.Name = "settingsColonNameIsletmeTamAdres_checkbox";
-            this.settingsColonNameIsletmeTamAdres_checkbox.Size = new System.Drawing.Size(110, 25);
-            this.settingsColonNameIsletmeTamAdres_checkbox.TabIndex = 58;
-            this.settingsColonNameIsletmeTamAdres_checkbox.Tag = "IsletmeTamAdres";
-            this.settingsColonNameIsletmeTamAdres_checkbox.Text = "Tam Adres";
-            this.settingsColonNameIsletmeTamAdres_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeAdresIlce_checkbox
-            // 
-            this.settingsColonNameIsletmeAdresIlce_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Location = new System.Drawing.Point(11, 70);
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Name = "settingsColonNameIsletmeAdresIlce_checkbox";
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Size = new System.Drawing.Size(55, 25);
-            this.settingsColonNameIsletmeAdresIlce_checkbox.TabIndex = 57;
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Tag = "IsletmeAdresIlce";
-            this.settingsColonNameIsletmeAdresIlce_checkbox.Text = "İlçe";
-            this.settingsColonNameIsletmeAdresIlce_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeAdresIl_checkbox
-            // 
-            this.settingsColonNameIsletmeAdresIl_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeAdresIl_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeAdresIl_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeAdresIl_checkbox.Location = new System.Drawing.Point(11, 41);
-            this.settingsColonNameIsletmeAdresIl_checkbox.Name = "settingsColonNameIsletmeAdresIl_checkbox";
-            this.settingsColonNameIsletmeAdresIl_checkbox.Size = new System.Drawing.Size(38, 25);
-            this.settingsColonNameIsletmeAdresIl_checkbox.TabIndex = 56;
-            this.settingsColonNameIsletmeAdresIl_checkbox.Tag = "IsletmeAdresIl";
-            this.settingsColonNameIsletmeAdresIl_checkbox.Text = "İl";
-            this.settingsColonNameIsletmeAdresIl_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameIsletmeAd_checkbox
-            // 
-            this.settingsColonNameIsletmeAd_checkbox.AutoSize = true;
-            this.settingsColonNameIsletmeAd_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameIsletmeAd_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameIsletmeAd_checkbox.Location = new System.Drawing.Point(11, 12);
-            this.settingsColonNameIsletmeAd_checkbox.Name = "settingsColonNameIsletmeAd_checkbox";
-            this.settingsColonNameIsletmeAd_checkbox.Size = new System.Drawing.Size(114, 25);
-            this.settingsColonNameIsletmeAd_checkbox.TabIndex = 55;
-            this.settingsColonNameIsletmeAd_checkbox.Tag = "IsletmeAd";
-            this.settingsColonNameIsletmeAd_checkbox.Text = "İşletme Adı";
-            this.settingsColonNameIsletmeAd_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // panel55
-            // 
-            this.panel55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel55.Controls.Add(this.label99);
-            this.panel55.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel55.Location = new System.Drawing.Point(0, 0);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(365, 52);
-            this.panel55.TabIndex = 9;
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label99.Location = new System.Drawing.Point(82, 14);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(196, 25);
-            this.label99.TabIndex = 6;
-            this.label99.Text = "İşletme tablosu için;";
-            this.label99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel49
-            // 
-            this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel49.Controls.Add(this.panel50);
-            this.panel49.Controls.Add(this.panel54);
-            this.panel49.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel49.Location = new System.Drawing.Point(366, 0);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(352, 506);
-            this.panel49.TabIndex = 1;
-            // 
-            // panel50
-            // 
-            this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel50.Controls.Add(this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenTelefonNumarasi_checkbox);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenDalAdi_checkbox);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenAlanAdi_checkbox);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenIsletmeGunu2_checkbox);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenIsletmeGunu1_checkbox);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenSoyadi_checkbox);
-            this.panel50.Controls.Add(this.settingsColonNameOgretmenAdi_checkbox);
-            this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel50.Location = new System.Drawing.Point(0, 52);
-            this.panel50.Name = "panel50";
-            this.panel50.Padding = new System.Windows.Forms.Padding(5);
-            this.panel50.Size = new System.Drawing.Size(350, 452);
-            this.panel50.TabIndex = 8;
-            // 
-            // settingsSorguOzellestirmeleriAyarlariKaydetButon_button
-            // 
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Location = new System.Drawing.Point(5, 370);
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Name = "settingsSorguOzellestirmeleriAyarlariKaydetButon_button";
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Size = new System.Drawing.Size(338, 75);
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.TabIndex = 1;
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Text = "TÜM AYARLARI KAYDET";
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.UseVisualStyleBackColor = true;
-            this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button.Click += new System.EventHandler(this.settingsSorguOzellestirmeleriAyarlariKaydetButon_button_Click);
-            // 
-            // settingsColonNameOgretmenTelefonNumarasi_checkbox
-            // 
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Location = new System.Drawing.Point(12, 196);
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Name = "settingsColonNameOgretmenTelefonNumarasi_checkbox";
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Size = new System.Drawing.Size(164, 25);
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.TabIndex = 52;
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Tag = "OgretmenTelNo";
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.Text = "Telefon Numarası";
-            this.settingsColonNameOgretmenTelefonNumarasi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgretmenDalAdi_checkbox
-            // 
-            this.settingsColonNameOgretmenDalAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenDalAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenDalAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenDalAdi_checkbox.Location = new System.Drawing.Point(12, 165);
-            this.settingsColonNameOgretmenDalAdi_checkbox.Name = "settingsColonNameOgretmenDalAdi_checkbox";
-            this.settingsColonNameOgretmenDalAdi_checkbox.Size = new System.Drawing.Size(84, 25);
-            this.settingsColonNameOgretmenDalAdi_checkbox.TabIndex = 51;
-            this.settingsColonNameOgretmenDalAdi_checkbox.Tag = "OgretmenDalAdi";
-            this.settingsColonNameOgretmenDalAdi_checkbox.Text = "Dal Adı";
-            this.settingsColonNameOgretmenDalAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgretmenAlanAdi_checkbox
-            // 
-            this.settingsColonNameOgretmenAlanAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Location = new System.Drawing.Point(12, 134);
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Name = "settingsColonNameOgretmenAlanAdi_checkbox";
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Size = new System.Drawing.Size(93, 25);
-            this.settingsColonNameOgretmenAlanAdi_checkbox.TabIndex = 50;
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Tag = "OgretmenAlanAdi";
-            this.settingsColonNameOgretmenAlanAdi_checkbox.Text = "Alan Adı";
-            this.settingsColonNameOgretmenAlanAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgretmenIsletmeGunu2_checkbox
-            // 
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Location = new System.Drawing.Point(12, 105);
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Name = "settingsColonNameOgretmenIsletmeGunu2_checkbox";
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Size = new System.Drawing.Size(145, 25);
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.TabIndex = 49;
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Tag = "OgretmenIsletmeGunu2";
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.Text = "İşletme Günü 2";
-            this.settingsColonNameOgretmenIsletmeGunu2_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgretmenIsletmeGunu1_checkbox
-            // 
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Location = new System.Drawing.Point(12, 74);
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Name = "settingsColonNameOgretmenIsletmeGunu1_checkbox";
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Size = new System.Drawing.Size(145, 25);
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.TabIndex = 48;
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Tag = "OgretmenIsletmeGunu1";
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.Text = "İşletme Günü 1";
-            this.settingsColonNameOgretmenIsletmeGunu1_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgretmenSoyadi_checkbox
-            // 
-            this.settingsColonNameOgretmenSoyadi_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenSoyadi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenSoyadi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenSoyadi_checkbox.Location = new System.Drawing.Point(12, 43);
-            this.settingsColonNameOgretmenSoyadi_checkbox.Name = "settingsColonNameOgretmenSoyadi_checkbox";
-            this.settingsColonNameOgretmenSoyadi_checkbox.Size = new System.Drawing.Size(162, 25);
-            this.settingsColonNameOgretmenSoyadi_checkbox.TabIndex = 47;
-            this.settingsColonNameOgretmenSoyadi_checkbox.Tag = "OgretmenSoyad";
-            this.settingsColonNameOgretmenSoyadi_checkbox.Text = "Öğretmen Soyadı";
-            this.settingsColonNameOgretmenSoyadi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgretmenAdi_checkbox
-            // 
-            this.settingsColonNameOgretmenAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgretmenAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgretmenAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgretmenAdi_checkbox.Location = new System.Drawing.Point(12, 12);
-            this.settingsColonNameOgretmenAdi_checkbox.Name = "settingsColonNameOgretmenAdi_checkbox";
-            this.settingsColonNameOgretmenAdi_checkbox.Size = new System.Drawing.Size(137, 25);
-            this.settingsColonNameOgretmenAdi_checkbox.TabIndex = 46;
-            this.settingsColonNameOgretmenAdi_checkbox.Tag = "OgretmenAd";
-            this.settingsColonNameOgretmenAdi_checkbox.Text = "Öğretmen Adı";
-            this.settingsColonNameOgretmenAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // panel54
-            // 
-            this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel54.Controls.Add(this.label98);
-            this.panel54.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel54.Location = new System.Drawing.Point(0, 0);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(350, 52);
-            this.panel54.TabIndex = 9;
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label98.Location = new System.Drawing.Point(73, 13);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(222, 25);
-            this.label98.TabIndex = 6;
-            this.label98.Text = "Öğretmen tablosu için;";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel47
-            // 
-            this.panel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel47.Controls.Add(this.panel56);
-            this.panel47.Controls.Add(this.panel53);
-            this.panel47.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel47.Location = new System.Drawing.Point(0, 0);
-            this.panel47.Name = "panel47";
-            this.panel47.Size = new System.Drawing.Size(366, 506);
-            this.panel47.TabIndex = 0;
-            // 
-            // panel56
-            // 
-            this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciHowToUSE_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciBabaTelefonu_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciBabaAdi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciAnneTelefonu_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciAnneAdi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciDalAdi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciStajDonemi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciStajBitisTarihi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciGrup_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciAlanAdi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciTcKimlikNo_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciTelNo_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciFirmaAdi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciSinifi_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciOkulNo_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciSoyad_checkbox);
-            this.panel56.Controls.Add(this.settingsColonNameOgrenciAdi_checkbox);
-            this.panel56.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel56.Location = new System.Drawing.Point(0, 52);
-            this.panel56.Name = "panel56";
-            this.panel56.Padding = new System.Windows.Forms.Padding(5);
-            this.panel56.Size = new System.Drawing.Size(364, 452);
-            this.panel56.TabIndex = 10;
-            // 
-            // settingsColonNameOgrenciHowToUSE_checkbox
-            // 
-            this.settingsColonNameOgrenciHowToUSE_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Location = new System.Drawing.Point(195, 132);
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Name = "settingsColonNameOgrenciHowToUSE_checkbox";
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Size = new System.Drawing.Size(103, 25);
-            this.settingsColonNameOgrenciHowToUSE_checkbox.TabIndex = 57;
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Tag = "HowUsePhone";
-            this.settingsColonNameOgrenciHowToUSE_checkbox.Text = "Kullanılan";
-            this.settingsColonNameOgrenciHowToUSE_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciBabaTelefonu_checkbox
-            // 
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Location = new System.Drawing.Point(195, 103);
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Name = "settingsColonNameOgrenciBabaTelefonu_checkbox";
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Size = new System.Drawing.Size(139, 25);
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.TabIndex = 56;
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Tag = "OgrenciBabaTelNo";
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.Text = "Baba Telefonu";
-            this.settingsColonNameOgrenciBabaTelefonu_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciBabaAdi_checkbox
-            // 
-            this.settingsColonNameOgrenciBabaAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Location = new System.Drawing.Point(195, 72);
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Name = "settingsColonNameOgrenciBabaAdi_checkbox";
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Size = new System.Drawing.Size(97, 25);
-            this.settingsColonNameOgrenciBabaAdi_checkbox.TabIndex = 55;
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Tag = "OgrenciBabaAdi";
-            this.settingsColonNameOgrenciBabaAdi_checkbox.Text = "Baba Adı";
-            this.settingsColonNameOgrenciBabaAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciAnneTelefonu_checkbox
-            // 
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Location = new System.Drawing.Point(195, 41);
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Name = "settingsColonNameOgrenciAnneTelefonu_checkbox";
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Size = new System.Drawing.Size(141, 25);
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.TabIndex = 54;
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Tag = "OgrenciAnneTelNo";
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.Text = "Anne Telefonu";
-            this.settingsColonNameOgrenciAnneTelefonu_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciAnneAdi_checkbox
-            // 
-            this.settingsColonNameOgrenciAnneAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Location = new System.Drawing.Point(195, 10);
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Name = "settingsColonNameOgrenciAnneAdi_checkbox";
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Size = new System.Drawing.Size(99, 25);
-            this.settingsColonNameOgrenciAnneAdi_checkbox.TabIndex = 53;
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Tag = "OgrenciAnneAdi";
-            this.settingsColonNameOgrenciAnneAdi_checkbox.Text = "Anne Adı";
-            this.settingsColonNameOgrenciAnneAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciDalAdi_checkbox
-            // 
-            this.settingsColonNameOgrenciDalAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciDalAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciDalAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciDalAdi_checkbox.Location = new System.Drawing.Point(10, 258);
-            this.settingsColonNameOgrenciDalAdi_checkbox.Name = "settingsColonNameOgrenciDalAdi_checkbox";
-            this.settingsColonNameOgrenciDalAdi_checkbox.Size = new System.Drawing.Size(84, 25);
-            this.settingsColonNameOgrenciDalAdi_checkbox.TabIndex = 52;
-            this.settingsColonNameOgrenciDalAdi_checkbox.Tag = "OgrenciDalAdi";
-            this.settingsColonNameOgrenciDalAdi_checkbox.Text = "Dal Adı";
-            this.settingsColonNameOgrenciDalAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciStajDonemi_checkbox
-            // 
-            this.settingsColonNameOgrenciStajDonemi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Location = new System.Drawing.Point(10, 413);
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Name = "settingsColonNameOgrenciStajDonemi_checkbox";
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Size = new System.Drawing.Size(122, 25);
-            this.settingsColonNameOgrenciStajDonemi_checkbox.TabIndex = 51;
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Tag = "OgrenciStajDonemi";
-            this.settingsColonNameOgrenciStajDonemi_checkbox.Text = "Staj Dönemi";
-            this.settingsColonNameOgrenciStajDonemi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciKoordinatorOgretmen_checkbox
-            // 
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Location = new System.Drawing.Point(10, 382);
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Name = "settingsColonNameOgrenciKoordinatorOgretmen_checkbox";
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Size = new System.Drawing.Size(158, 25);
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.TabIndex = 50;
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Tag = "OgrenciKoordinatorOgretmeni";
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.Text = "Koordinatör Öğr.";
-            this.settingsColonNameOgrenciKoordinatorOgretmen_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciStajBitisTarihi_checkbox
-            // 
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Location = new System.Drawing.Point(10, 351);
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Name = "settingsColonNameOgrenciStajBitisTarihi_checkbox";
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Size = new System.Drawing.Size(140, 25);
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.TabIndex = 49;
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Tag = "OgrenciStajBitistarihi";
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.Text = "Staj Bitiş Tarihi";
-            this.settingsColonNameOgrenciStajBitisTarihi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciStajaBaslangicTarihi_checkbox
-            // 
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Location = new System.Drawing.Point(10, 320);
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Name = "settingsColonNameOgrenciStajaBaslangicTarihi_checkbox";
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Size = new System.Drawing.Size(180, 25);
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.TabIndex = 48;
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Tag = "OgrenciStajaBaslangicTarihi";
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.Text = "Staj Baslangıç Tarihi";
-            this.settingsColonNameOgrenciStajaBaslangicTarihi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciGrup_checkbox
-            // 
-            this.settingsColonNameOgrenciGrup_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciGrup_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciGrup_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciGrup_checkbox.Location = new System.Drawing.Point(10, 289);
-            this.settingsColonNameOgrenciGrup_checkbox.Name = "settingsColonNameOgrenciGrup_checkbox";
-            this.settingsColonNameOgrenciGrup_checkbox.Size = new System.Drawing.Size(133, 25);
-            this.settingsColonNameOgrenciGrup_checkbox.TabIndex = 47;
-            this.settingsColonNameOgrenciGrup_checkbox.Tag = "OgrenciGrup";
-            this.settingsColonNameOgrenciGrup_checkbox.Text = "Grup(A,B,C,D)";
-            this.settingsColonNameOgrenciGrup_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciAlanAdi_checkbox
-            // 
-            this.settingsColonNameOgrenciAlanAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Location = new System.Drawing.Point(12, 227);
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Name = "settingsColonNameOgrenciAlanAdi_checkbox";
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Size = new System.Drawing.Size(93, 25);
-            this.settingsColonNameOgrenciAlanAdi_checkbox.TabIndex = 46;
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Tag = "OgrenciAlanAdi";
-            this.settingsColonNameOgrenciAlanAdi_checkbox.Text = "Alan Adı";
-            this.settingsColonNameOgrenciAlanAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciTcKimlikNo_checkbox
-            // 
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Location = new System.Drawing.Point(12, 196);
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Name = "settingsColonNameOgrenciTcKimlikNo_checkbox";
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Size = new System.Drawing.Size(125, 25);
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.TabIndex = 45;
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Tag = "OgrenciTCKimlikNo";
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.Text = "Tc Kimlik No";
-            this.settingsColonNameOgrenciTcKimlikNo_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciTelNo_checkbox
-            // 
-            this.settingsColonNameOgrenciTelNo_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciTelNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciTelNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciTelNo_checkbox.Location = new System.Drawing.Point(12, 165);
-            this.settingsColonNameOgrenciTelNo_checkbox.Name = "settingsColonNameOgrenciTelNo_checkbox";
-            this.settingsColonNameOgrenciTelNo_checkbox.Size = new System.Drawing.Size(79, 25);
-            this.settingsColonNameOgrenciTelNo_checkbox.TabIndex = 44;
-            this.settingsColonNameOgrenciTelNo_checkbox.Tag = "OgreciTelNo";
-            this.settingsColonNameOgrenciTelNo_checkbox.Text = "Tel No";
-            this.settingsColonNameOgrenciTelNo_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciFirmaAdi_checkbox
-            // 
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Location = new System.Drawing.Point(12, 134);
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Name = "settingsColonNameOgrenciFirmaAdi_checkbox";
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Size = new System.Drawing.Size(102, 25);
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.TabIndex = 43;
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Tag = "OgrencininFirmaAdi";
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.Text = "Firma Adı";
-            this.settingsColonNameOgrenciFirmaAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciSinifi_checkbox
-            // 
-            this.settingsColonNameOgrenciSinifi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciSinifi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciSinifi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciSinifi_checkbox.Location = new System.Drawing.Point(12, 105);
-            this.settingsColonNameOgrenciSinifi_checkbox.Name = "settingsColonNameOgrenciSinifi_checkbox";
-            this.settingsColonNameOgrenciSinifi_checkbox.Size = new System.Drawing.Size(66, 25);
-            this.settingsColonNameOgrenciSinifi_checkbox.TabIndex = 42;
-            this.settingsColonNameOgrenciSinifi_checkbox.Tag = "OgrenciSinif";
-            this.settingsColonNameOgrenciSinifi_checkbox.Text = "Sınıfı";
-            this.settingsColonNameOgrenciSinifi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciOkulNo_checkbox
-            // 
-            this.settingsColonNameOgrenciOkulNo_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciOkulNo_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciOkulNo_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciOkulNo_checkbox.Location = new System.Drawing.Point(12, 74);
-            this.settingsColonNameOgrenciOkulNo_checkbox.Name = "settingsColonNameOgrenciOkulNo_checkbox";
-            this.settingsColonNameOgrenciOkulNo_checkbox.Size = new System.Drawing.Size(143, 25);
-            this.settingsColonNameOgrenciOkulNo_checkbox.TabIndex = 41;
-            this.settingsColonNameOgrenciOkulNo_checkbox.Tag = "OgrenciOkulNo";
-            this.settingsColonNameOgrenciOkulNo_checkbox.Text = "Okul Numarası";
-            this.settingsColonNameOgrenciOkulNo_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciSoyad_checkbox
-            // 
-            this.settingsColonNameOgrenciSoyad_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciSoyad_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciSoyad_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciSoyad_checkbox.Location = new System.Drawing.Point(12, 43);
-            this.settingsColonNameOgrenciSoyad_checkbox.Name = "settingsColonNameOgrenciSoyad_checkbox";
-            this.settingsColonNameOgrenciSoyad_checkbox.Size = new System.Drawing.Size(144, 25);
-            this.settingsColonNameOgrenciSoyad_checkbox.TabIndex = 40;
-            this.settingsColonNameOgrenciSoyad_checkbox.Tag = "OgrenciSoyad";
-            this.settingsColonNameOgrenciSoyad_checkbox.Text = "Öğrenci Soyadı";
-            this.settingsColonNameOgrenciSoyad_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // settingsColonNameOgrenciAdi_checkbox
-            // 
-            this.settingsColonNameOgrenciAdi_checkbox.AutoSize = true;
-            this.settingsColonNameOgrenciAdi_checkbox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingsColonNameOgrenciAdi_checkbox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.settingsColonNameOgrenciAdi_checkbox.Location = new System.Drawing.Point(12, 12);
-            this.settingsColonNameOgrenciAdi_checkbox.Name = "settingsColonNameOgrenciAdi_checkbox";
-            this.settingsColonNameOgrenciAdi_checkbox.Size = new System.Drawing.Size(119, 25);
-            this.settingsColonNameOgrenciAdi_checkbox.TabIndex = 39;
-            this.settingsColonNameOgrenciAdi_checkbox.Tag = "OgrenciAd";
-            this.settingsColonNameOgrenciAdi_checkbox.Text = "Öğrenci Adı";
-            this.settingsColonNameOgrenciAdi_checkbox.UseVisualStyleBackColor = true;
-            // 
-            // panel53
-            // 
-            this.panel53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel53.Controls.Add(this.label100);
-            this.panel53.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel53.Location = new System.Drawing.Point(0, 0);
-            this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(364, 52);
-            this.panel53.TabIndex = 9;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label100.Location = new System.Drawing.Point(82, 14);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(201, 25);
-            this.label100.TabIndex = 5;
-            this.label100.Text = "Öğrenci tablosu için;";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel45
-            // 
-            this.panel45.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel45.Controls.Add(this.label95);
-            this.panel45.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel45.Location = new System.Drawing.Point(0, 0);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(1143, 52);
-            this.panel45.TabIndex = 8;
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label95.Location = new System.Drawing.Point(56, 14);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(996, 25);
-            this.label95.TabIndex = 5;
-            this.label95.Text = "Lütfen Sorgulama/Listeleme ekranları açıldığında ekranda listelemek istediğiniz k" +
-    "olon isimlerini işaretleyiniz";
-            // 
-            // tabPage25
-            // 
-            this.tabPage25.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage25.Controls.Add(this.ogrAktarimPaneli_panel);
-            this.tabPage25.Controls.Add(this.panel98);
-            this.tabPage25.Controls.Add(this.exceldenDByeAktarim_button);
-            this.tabPage25.Controls.Add(this.panel62);
-            this.tabPage25.Controls.Add(this.selectExcelFile_button);
-            this.tabPage25.Controls.Add(this.label123);
-            this.tabPage25.Controls.Add(this.label97);
-            this.tabPage25.Controls.Add(this.ogrtAktarimPaneli_panel);
-            this.tabPage25.Controls.Add(this.isletmeAktarimPaneli_panel);
-            this.tabPage25.Location = new System.Drawing.Point(4, 28);
-            this.tabPage25.Name = "tabPage25";
-            this.tabPage25.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage25.TabIndex = 3;
-            this.tabPage25.Text = "VERİTABANI İŞLEMLERİ";
-            // 
-            // ogrAktarimPaneli_panel
-            // 
-            this.ogrAktarimPaneli_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label126);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label127);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label129);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label130);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrBabaTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrBabaAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAnneTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAnneAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrBabaTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrBabaTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label131);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrBabaAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrBabaAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label132);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAnneTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAnneTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label133);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAnneAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAnneAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label134);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label135);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label136);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label137);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label138);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label173);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label172);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label144);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label159);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label160);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label161);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label162);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label163);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label164);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label165);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label166);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label167);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label168);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label169);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label170);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label171);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrStajDonemi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrKoordinatorOgretmeni_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrStajBitisTarihi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrStajBaslangicTarihi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrGrup_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrDalAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAlanAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrTc_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrFirmaAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrSinif_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrOkulNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrSoyad_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrColumnOgrAd_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrStajDonemi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrStajDonemi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label158);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrKoordinatorOgretmeni_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrKoordinatorOgretmeni_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label157);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrStajBitisTarihi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrStajBitisTarihi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label156);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrStajBaslangicTarihi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrStajBaslangicTarihi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label155);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrGrup_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrGrup_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label154);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrDalAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrDalAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label153);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAlanAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAlanAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label152);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrTc_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrTc_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label151);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrTelNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label150);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrFirmaAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrFirmaAdi_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label149);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrSinif_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrSinif_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label148);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrOkulNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrOkulNo_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label147);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrSoyad_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrSoyad_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label146);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrEndOgrAd_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.ogrStartOgrAd_textbox);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label145);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label143);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label142);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label141);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label139);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label140);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label175);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label176);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label177);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label178);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label179);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label180);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label181);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label182);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label183);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label184);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label185);
-            this.ogrAktarimPaneli_panel.Controls.Add(this.label186);
-            this.ogrAktarimPaneli_panel.Location = new System.Drawing.Point(497, 21);
-            this.ogrAktarimPaneli_panel.Name = "ogrAktarimPaneli_panel";
-            this.ogrAktarimPaneli_panel.Size = new System.Drawing.Size(630, 576);
-            this.ogrAktarimPaneli_panel.TabIndex = 77;
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label126.Location = new System.Drawing.Point(375, 539);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(23, 19);
-            this.label126.TabIndex = 184;
-            this.label126.Text = " / ";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label127.Location = new System.Drawing.Point(375, 516);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(23, 19);
-            this.label127.TabIndex = 183;
-            this.label127.Text = " / ";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label129.Location = new System.Drawing.Point(375, 489);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(23, 19);
-            this.label129.TabIndex = 182;
-            this.label129.Text = " / ";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label130.Location = new System.Drawing.Point(375, 462);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(23, 19);
-            this.label130.TabIndex = 181;
-            this.label130.Text = " / ";
-            // 
-            // ogrColumnOgrBabaTelNo_textbox
-            // 
-            this.ogrColumnOgrBabaTelNo_textbox.Location = new System.Drawing.Point(300, 540);
-            this.ogrColumnOgrBabaTelNo_textbox.Name = "ogrColumnOgrBabaTelNo_textbox";
-            this.ogrColumnOgrBabaTelNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrBabaTelNo_textbox.TabIndex = 180;
-            // 
-            // ogrColumnOgrBabaAdi_textbox
-            // 
-            this.ogrColumnOgrBabaAdi_textbox.Location = new System.Drawing.Point(300, 513);
-            this.ogrColumnOgrBabaAdi_textbox.Name = "ogrColumnOgrBabaAdi_textbox";
-            this.ogrColumnOgrBabaAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrBabaAdi_textbox.TabIndex = 179;
-            // 
-            // ogrColumnOgrAnneTelNo_textbox
-            // 
-            this.ogrColumnOgrAnneTelNo_textbox.Location = new System.Drawing.Point(300, 486);
-            this.ogrColumnOgrAnneTelNo_textbox.Name = "ogrColumnOgrAnneTelNo_textbox";
-            this.ogrColumnOgrAnneTelNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrAnneTelNo_textbox.TabIndex = 178;
-            // 
-            // ogrColumnOgrAnneAdi_textbox
-            // 
-            this.ogrColumnOgrAnneAdi_textbox.Location = new System.Drawing.Point(300, 459);
-            this.ogrColumnOgrAnneAdi_textbox.Name = "ogrColumnOgrAnneAdi_textbox";
-            this.ogrColumnOgrAnneAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrAnneAdi_textbox.TabIndex = 177;
-            // 
-            // ogrEndOgrBabaTelNo_textbox
-            // 
-            this.ogrEndOgrBabaTelNo_textbox.Location = new System.Drawing.Point(531, 540);
-            this.ogrEndOgrBabaTelNo_textbox.Name = "ogrEndOgrBabaTelNo_textbox";
-            this.ogrEndOgrBabaTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrBabaTelNo_textbox.TabIndex = 176;
-            // 
-            // ogrStartOgrBabaTelNo_textbox
-            // 
-            this.ogrStartOgrBabaTelNo_textbox.Location = new System.Drawing.Point(406, 540);
-            this.ogrStartOgrBabaTelNo_textbox.Name = "ogrStartOgrBabaTelNo_textbox";
-            this.ogrStartOgrBabaTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrBabaTelNo_textbox.TabIndex = 175;
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label131.Location = new System.Drawing.Point(499, 540);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(23, 19);
-            this.label131.TabIndex = 174;
-            this.label131.Text = " - ";
-            // 
-            // ogrEndOgrBabaAdi_textbox
-            // 
-            this.ogrEndOgrBabaAdi_textbox.Location = new System.Drawing.Point(531, 513);
-            this.ogrEndOgrBabaAdi_textbox.Name = "ogrEndOgrBabaAdi_textbox";
-            this.ogrEndOgrBabaAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrBabaAdi_textbox.TabIndex = 173;
-            // 
-            // ogrStartOgrBabaAdi_textbox
-            // 
-            this.ogrStartOgrBabaAdi_textbox.Location = new System.Drawing.Point(406, 513);
-            this.ogrStartOgrBabaAdi_textbox.Name = "ogrStartOgrBabaAdi_textbox";
-            this.ogrStartOgrBabaAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrBabaAdi_textbox.TabIndex = 172;
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label132.Location = new System.Drawing.Point(499, 513);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(23, 19);
-            this.label132.TabIndex = 171;
-            this.label132.Text = " - ";
-            // 
-            // ogrEndOgrAnneTelNo_textbox
-            // 
-            this.ogrEndOgrAnneTelNo_textbox.Location = new System.Drawing.Point(531, 486);
-            this.ogrEndOgrAnneTelNo_textbox.Name = "ogrEndOgrAnneTelNo_textbox";
-            this.ogrEndOgrAnneTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrAnneTelNo_textbox.TabIndex = 170;
-            // 
-            // ogrStartOgrAnneTelNo_textbox
-            // 
-            this.ogrStartOgrAnneTelNo_textbox.Location = new System.Drawing.Point(406, 486);
-            this.ogrStartOgrAnneTelNo_textbox.Name = "ogrStartOgrAnneTelNo_textbox";
-            this.ogrStartOgrAnneTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrAnneTelNo_textbox.TabIndex = 169;
-            // 
-            // label133
-            // 
-            this.label133.AutoSize = true;
-            this.label133.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label133.Location = new System.Drawing.Point(499, 486);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(23, 19);
-            this.label133.TabIndex = 168;
-            this.label133.Text = " - ";
-            // 
-            // ogrEndOgrAnneAdi_textbox
-            // 
-            this.ogrEndOgrAnneAdi_textbox.Location = new System.Drawing.Point(531, 459);
-            this.ogrEndOgrAnneAdi_textbox.Name = "ogrEndOgrAnneAdi_textbox";
-            this.ogrEndOgrAnneAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrAnneAdi_textbox.TabIndex = 167;
-            // 
-            // ogrStartOgrAnneAdi_textbox
-            // 
-            this.ogrStartOgrAnneAdi_textbox.Location = new System.Drawing.Point(406, 459);
-            this.ogrStartOgrAnneAdi_textbox.Name = "ogrStartOgrAnneAdi_textbox";
-            this.ogrStartOgrAnneAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrAnneAdi_textbox.TabIndex = 166;
-            // 
-            // label134
-            // 
-            this.label134.AutoSize = true;
-            this.label134.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label134.Location = new System.Drawing.Point(499, 459);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(23, 19);
-            this.label134.TabIndex = 165;
-            this.label134.Text = " - ";
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label135.Location = new System.Drawing.Point(27, 537);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(266, 21);
-            this.label135.TabIndex = 164;
-            this.label135.Text = "Öğrenci\'nin Babasının Tel No\'su  :";
-            // 
-            // label136
-            // 
-            this.label136.AutoSize = true;
-            this.label136.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label136.Location = new System.Drawing.Point(73, 511);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(220, 21);
-            this.label136.TabIndex = 163;
-            this.label136.Text = "Öğrenci\'nin Babasının Adı  :";
-            // 
-            // label137
-            // 
-            this.label137.AutoSize = true;
-            this.label137.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label137.Location = new System.Drawing.Point(25, 484);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(268, 21);
-            this.label137.TabIndex = 162;
-            this.label137.Text = "Öğrenci\'nin Annesinin Tel No\'su  :";
-            // 
-            // label138
-            // 
-            this.label138.AutoSize = true;
-            this.label138.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label138.Location = new System.Drawing.Point(71, 456);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(222, 21);
-            this.label138.TabIndex = 161;
-            this.label138.Text = "Öğrenci\'nin Annesinin Adı  :";
-            // 
-            // label173
-            // 
-            this.label173.AutoSize = true;
-            this.label173.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label173.Location = new System.Drawing.Point(300, 49);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(65, 25);
-            this.label173.TabIndex = 160;
-            this.label173.Text = "Kolon";
-            // 
-            // label172
-            // 
-            this.label172.AutoSize = true;
-            this.label172.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label172.Location = new System.Drawing.Point(542, 51);
-            this.label172.Name = "label172";
-            this.label172.Size = new System.Drawing.Size(50, 25);
-            this.label172.TabIndex = 159;
-            this.label172.Text = "Bitiş";
-            // 
-            // label144
-            // 
-            this.label144.AutoSize = true;
-            this.label144.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label144.Location = new System.Drawing.Point(375, 435);
-            this.label144.Name = "label144";
-            this.label144.Size = new System.Drawing.Size(23, 19);
-            this.label144.TabIndex = 158;
-            this.label144.Text = " / ";
-            // 
-            // label159
-            // 
-            this.label159.AutoSize = true;
-            this.label159.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label159.Location = new System.Drawing.Point(375, 410);
-            this.label159.Name = "label159";
-            this.label159.Size = new System.Drawing.Size(23, 19);
-            this.label159.TabIndex = 157;
-            this.label159.Text = " / ";
-            // 
-            // label160
-            // 
-            this.label160.AutoSize = true;
-            this.label160.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label160.Location = new System.Drawing.Point(375, 382);
-            this.label160.Name = "label160";
-            this.label160.Size = new System.Drawing.Size(23, 19);
-            this.label160.TabIndex = 156;
-            this.label160.Text = " / ";
-            // 
-            // label161
-            // 
-            this.label161.AutoSize = true;
-            this.label161.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label161.Location = new System.Drawing.Point(375, 355);
-            this.label161.Name = "label161";
-            this.label161.Size = new System.Drawing.Size(23, 19);
-            this.label161.TabIndex = 155;
-            this.label161.Text = " / ";
-            // 
-            // label162
-            // 
-            this.label162.AutoSize = true;
-            this.label162.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label162.Location = new System.Drawing.Point(375, 328);
-            this.label162.Name = "label162";
-            this.label162.Size = new System.Drawing.Size(23, 19);
-            this.label162.TabIndex = 154;
-            this.label162.Text = " / ";
-            // 
-            // label163
-            // 
-            this.label163.AutoSize = true;
-            this.label163.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label163.Location = new System.Drawing.Point(375, 301);
-            this.label163.Name = "label163";
-            this.label163.Size = new System.Drawing.Size(23, 19);
-            this.label163.TabIndex = 153;
-            this.label163.Text = " / ";
-            // 
-            // label164
-            // 
-            this.label164.AutoSize = true;
-            this.label164.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label164.Location = new System.Drawing.Point(375, 273);
-            this.label164.Name = "label164";
-            this.label164.Size = new System.Drawing.Size(23, 19);
-            this.label164.TabIndex = 152;
-            this.label164.Text = " / ";
-            // 
-            // label165
-            // 
-            this.label165.AutoSize = true;
-            this.label165.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label165.Location = new System.Drawing.Point(375, 246);
-            this.label165.Name = "label165";
-            this.label165.Size = new System.Drawing.Size(23, 19);
-            this.label165.TabIndex = 151;
-            this.label165.Text = " / ";
-            // 
-            // label166
-            // 
-            this.label166.AutoSize = true;
-            this.label166.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label166.Location = new System.Drawing.Point(375, 219);
-            this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(23, 19);
-            this.label166.TabIndex = 150;
-            this.label166.Text = " / ";
-            // 
-            // label167
-            // 
-            this.label167.AutoSize = true;
-            this.label167.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label167.Location = new System.Drawing.Point(375, 192);
-            this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(23, 19);
-            this.label167.TabIndex = 149;
-            this.label167.Text = " / ";
-            // 
-            // label168
-            // 
-            this.label168.AutoSize = true;
-            this.label168.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label168.Location = new System.Drawing.Point(375, 166);
-            this.label168.Name = "label168";
-            this.label168.Size = new System.Drawing.Size(23, 19);
-            this.label168.TabIndex = 148;
-            this.label168.Text = " / ";
-            // 
-            // label169
-            // 
-            this.label169.AutoSize = true;
-            this.label169.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label169.Location = new System.Drawing.Point(375, 140);
-            this.label169.Name = "label169";
-            this.label169.Size = new System.Drawing.Size(23, 19);
-            this.label169.TabIndex = 147;
-            this.label169.Text = " / ";
-            // 
-            // label170
-            // 
-            this.label170.AutoSize = true;
-            this.label170.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label170.Location = new System.Drawing.Point(375, 113);
-            this.label170.Name = "label170";
-            this.label170.Size = new System.Drawing.Size(23, 19);
-            this.label170.TabIndex = 146;
-            this.label170.Text = " / ";
-            // 
-            // label171
-            // 
-            this.label171.AutoSize = true;
-            this.label171.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label171.Location = new System.Drawing.Point(375, 86);
-            this.label171.Name = "label171";
-            this.label171.Size = new System.Drawing.Size(23, 19);
-            this.label171.TabIndex = 145;
-            this.label171.Text = " / ";
-            // 
-            // ogrColumnOgrStajDonemi_textbox
-            // 
-            this.ogrColumnOgrStajDonemi_textbox.Location = new System.Drawing.Point(300, 432);
-            this.ogrColumnOgrStajDonemi_textbox.Name = "ogrColumnOgrStajDonemi_textbox";
-            this.ogrColumnOgrStajDonemi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrStajDonemi_textbox.TabIndex = 144;
-            // 
-            // ogrColumnOgrKoordinatorOgretmeni_textbox
-            // 
-            this.ogrColumnOgrKoordinatorOgretmeni_textbox.Location = new System.Drawing.Point(300, 405);
-            this.ogrColumnOgrKoordinatorOgretmeni_textbox.Name = "ogrColumnOgrKoordinatorOgretmeni_textbox";
-            this.ogrColumnOgrKoordinatorOgretmeni_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrKoordinatorOgretmeni_textbox.TabIndex = 143;
-            // 
-            // ogrColumnOgrStajBitisTarihi_textbox
-            // 
-            this.ogrColumnOgrStajBitisTarihi_textbox.Location = new System.Drawing.Point(300, 379);
-            this.ogrColumnOgrStajBitisTarihi_textbox.Name = "ogrColumnOgrStajBitisTarihi_textbox";
-            this.ogrColumnOgrStajBitisTarihi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrStajBitisTarihi_textbox.TabIndex = 142;
-            // 
-            // ogrColumnOgrStajBaslangicTarihi_textbox
-            // 
-            this.ogrColumnOgrStajBaslangicTarihi_textbox.Location = new System.Drawing.Point(300, 352);
-            this.ogrColumnOgrStajBaslangicTarihi_textbox.Name = "ogrColumnOgrStajBaslangicTarihi_textbox";
-            this.ogrColumnOgrStajBaslangicTarihi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrStajBaslangicTarihi_textbox.TabIndex = 141;
-            // 
-            // ogrColumnOgrGrup_textbox
-            // 
-            this.ogrColumnOgrGrup_textbox.Location = new System.Drawing.Point(300, 325);
-            this.ogrColumnOgrGrup_textbox.Name = "ogrColumnOgrGrup_textbox";
-            this.ogrColumnOgrGrup_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrGrup_textbox.TabIndex = 140;
-            // 
-            // ogrColumnOgrDalAdi_textbox
-            // 
-            this.ogrColumnOgrDalAdi_textbox.Location = new System.Drawing.Point(300, 298);
-            this.ogrColumnOgrDalAdi_textbox.Name = "ogrColumnOgrDalAdi_textbox";
-            this.ogrColumnOgrDalAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrDalAdi_textbox.TabIndex = 139;
-            // 
-            // ogrColumnOgrAlanAdi_textbox
-            // 
-            this.ogrColumnOgrAlanAdi_textbox.Location = new System.Drawing.Point(300, 270);
-            this.ogrColumnOgrAlanAdi_textbox.Name = "ogrColumnOgrAlanAdi_textbox";
-            this.ogrColumnOgrAlanAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrAlanAdi_textbox.TabIndex = 138;
-            // 
-            // ogrColumnOgrTc_textbox
-            // 
-            this.ogrColumnOgrTc_textbox.Location = new System.Drawing.Point(300, 243);
-            this.ogrColumnOgrTc_textbox.Name = "ogrColumnOgrTc_textbox";
-            this.ogrColumnOgrTc_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrTc_textbox.TabIndex = 137;
-            // 
-            // ogrColumnOgrTelNo_textbox
-            // 
-            this.ogrColumnOgrTelNo_textbox.Location = new System.Drawing.Point(300, 216);
-            this.ogrColumnOgrTelNo_textbox.Name = "ogrColumnOgrTelNo_textbox";
-            this.ogrColumnOgrTelNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrTelNo_textbox.TabIndex = 136;
-            // 
-            // ogrColumnOgrFirmaAdi_textbox
-            // 
-            this.ogrColumnOgrFirmaAdi_textbox.Location = new System.Drawing.Point(300, 189);
-            this.ogrColumnOgrFirmaAdi_textbox.Name = "ogrColumnOgrFirmaAdi_textbox";
-            this.ogrColumnOgrFirmaAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrFirmaAdi_textbox.TabIndex = 135;
-            // 
-            // ogrColumnOgrSinif_textbox
-            // 
-            this.ogrColumnOgrSinif_textbox.Location = new System.Drawing.Point(300, 163);
-            this.ogrColumnOgrSinif_textbox.Name = "ogrColumnOgrSinif_textbox";
-            this.ogrColumnOgrSinif_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrSinif_textbox.TabIndex = 134;
-            // 
-            // ogrColumnOgrOkulNo_textbox
-            // 
-            this.ogrColumnOgrOkulNo_textbox.Location = new System.Drawing.Point(300, 137);
-            this.ogrColumnOgrOkulNo_textbox.Name = "ogrColumnOgrOkulNo_textbox";
-            this.ogrColumnOgrOkulNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrOkulNo_textbox.TabIndex = 133;
-            // 
-            // ogrColumnOgrSoyad_textbox
-            // 
-            this.ogrColumnOgrSoyad_textbox.Location = new System.Drawing.Point(300, 110);
-            this.ogrColumnOgrSoyad_textbox.Name = "ogrColumnOgrSoyad_textbox";
-            this.ogrColumnOgrSoyad_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrSoyad_textbox.TabIndex = 132;
-            // 
-            // ogrColumnOgrAd_textbox
-            // 
-            this.ogrColumnOgrAd_textbox.Location = new System.Drawing.Point(300, 83);
-            this.ogrColumnOgrAd_textbox.Name = "ogrColumnOgrAd_textbox";
-            this.ogrColumnOgrAd_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrColumnOgrAd_textbox.TabIndex = 131;
-            // 
-            // ogrEndOgrStajDonemi_textbox
-            // 
-            this.ogrEndOgrStajDonemi_textbox.Location = new System.Drawing.Point(531, 432);
-            this.ogrEndOgrStajDonemi_textbox.Name = "ogrEndOgrStajDonemi_textbox";
-            this.ogrEndOgrStajDonemi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrStajDonemi_textbox.TabIndex = 130;
-            // 
-            // ogrStartOgrStajDonemi_textbox
-            // 
-            this.ogrStartOgrStajDonemi_textbox.Location = new System.Drawing.Point(406, 432);
-            this.ogrStartOgrStajDonemi_textbox.Name = "ogrStartOgrStajDonemi_textbox";
-            this.ogrStartOgrStajDonemi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrStajDonemi_textbox.TabIndex = 129;
-            // 
-            // label158
-            // 
-            this.label158.AutoSize = true;
-            this.label158.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label158.Location = new System.Drawing.Point(499, 432);
-            this.label158.Name = "label158";
-            this.label158.Size = new System.Drawing.Size(23, 19);
-            this.label158.TabIndex = 128;
-            this.label158.Text = " - ";
-            // 
-            // ogrEndOgrKoordinatorOgretmeni_textbox
-            // 
-            this.ogrEndOgrKoordinatorOgretmeni_textbox.Location = new System.Drawing.Point(531, 405);
-            this.ogrEndOgrKoordinatorOgretmeni_textbox.Name = "ogrEndOgrKoordinatorOgretmeni_textbox";
-            this.ogrEndOgrKoordinatorOgretmeni_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrKoordinatorOgretmeni_textbox.TabIndex = 127;
-            // 
-            // ogrStartOgrKoordinatorOgretmeni_textbox
-            // 
-            this.ogrStartOgrKoordinatorOgretmeni_textbox.Location = new System.Drawing.Point(406, 405);
-            this.ogrStartOgrKoordinatorOgretmeni_textbox.Name = "ogrStartOgrKoordinatorOgretmeni_textbox";
-            this.ogrStartOgrKoordinatorOgretmeni_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrKoordinatorOgretmeni_textbox.TabIndex = 126;
-            // 
-            // label157
-            // 
-            this.label157.AutoSize = true;
-            this.label157.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label157.Location = new System.Drawing.Point(499, 405);
-            this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(23, 19);
-            this.label157.TabIndex = 125;
-            this.label157.Text = " - ";
-            // 
-            // ogrEndOgrStajBitisTarihi_textbox
-            // 
-            this.ogrEndOgrStajBitisTarihi_textbox.Location = new System.Drawing.Point(531, 379);
-            this.ogrEndOgrStajBitisTarihi_textbox.Name = "ogrEndOgrStajBitisTarihi_textbox";
-            this.ogrEndOgrStajBitisTarihi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrStajBitisTarihi_textbox.TabIndex = 124;
-            // 
-            // ogrStartOgrStajBitisTarihi_textbox
-            // 
-            this.ogrStartOgrStajBitisTarihi_textbox.Location = new System.Drawing.Point(406, 379);
-            this.ogrStartOgrStajBitisTarihi_textbox.Name = "ogrStartOgrStajBitisTarihi_textbox";
-            this.ogrStartOgrStajBitisTarihi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrStajBitisTarihi_textbox.TabIndex = 123;
-            // 
-            // label156
-            // 
-            this.label156.AutoSize = true;
-            this.label156.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label156.Location = new System.Drawing.Point(499, 379);
-            this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(23, 19);
-            this.label156.TabIndex = 122;
-            this.label156.Text = " - ";
-            // 
-            // ogrEndOgrStajBaslangicTarihi_textbox
-            // 
-            this.ogrEndOgrStajBaslangicTarihi_textbox.Location = new System.Drawing.Point(531, 352);
-            this.ogrEndOgrStajBaslangicTarihi_textbox.Name = "ogrEndOgrStajBaslangicTarihi_textbox";
-            this.ogrEndOgrStajBaslangicTarihi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrStajBaslangicTarihi_textbox.TabIndex = 121;
-            // 
-            // ogrStartOgrStajBaslangicTarihi_textbox
-            // 
-            this.ogrStartOgrStajBaslangicTarihi_textbox.Location = new System.Drawing.Point(406, 352);
-            this.ogrStartOgrStajBaslangicTarihi_textbox.Name = "ogrStartOgrStajBaslangicTarihi_textbox";
-            this.ogrStartOgrStajBaslangicTarihi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrStajBaslangicTarihi_textbox.TabIndex = 120;
-            // 
-            // label155
-            // 
-            this.label155.AutoSize = true;
-            this.label155.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label155.Location = new System.Drawing.Point(499, 352);
-            this.label155.Name = "label155";
-            this.label155.Size = new System.Drawing.Size(23, 19);
-            this.label155.TabIndex = 119;
-            this.label155.Text = " - ";
-            // 
-            // ogrEndOgrGrup_textbox
-            // 
-            this.ogrEndOgrGrup_textbox.Location = new System.Drawing.Point(531, 325);
-            this.ogrEndOgrGrup_textbox.Name = "ogrEndOgrGrup_textbox";
-            this.ogrEndOgrGrup_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrGrup_textbox.TabIndex = 118;
-            // 
-            // ogrStartOgrGrup_textbox
-            // 
-            this.ogrStartOgrGrup_textbox.Location = new System.Drawing.Point(406, 325);
-            this.ogrStartOgrGrup_textbox.Name = "ogrStartOgrGrup_textbox";
-            this.ogrStartOgrGrup_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrGrup_textbox.TabIndex = 117;
-            // 
-            // label154
-            // 
-            this.label154.AutoSize = true;
-            this.label154.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label154.Location = new System.Drawing.Point(499, 325);
-            this.label154.Name = "label154";
-            this.label154.Size = new System.Drawing.Size(23, 19);
-            this.label154.TabIndex = 116;
-            this.label154.Text = " - ";
-            // 
-            // ogrEndOgrDalAdi_textbox
-            // 
-            this.ogrEndOgrDalAdi_textbox.Location = new System.Drawing.Point(531, 298);
-            this.ogrEndOgrDalAdi_textbox.Name = "ogrEndOgrDalAdi_textbox";
-            this.ogrEndOgrDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrDalAdi_textbox.TabIndex = 115;
-            // 
-            // ogrStartOgrDalAdi_textbox
-            // 
-            this.ogrStartOgrDalAdi_textbox.Location = new System.Drawing.Point(406, 298);
-            this.ogrStartOgrDalAdi_textbox.Name = "ogrStartOgrDalAdi_textbox";
-            this.ogrStartOgrDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrDalAdi_textbox.TabIndex = 114;
-            // 
-            // label153
-            // 
-            this.label153.AutoSize = true;
-            this.label153.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label153.Location = new System.Drawing.Point(499, 298);
-            this.label153.Name = "label153";
-            this.label153.Size = new System.Drawing.Size(23, 19);
-            this.label153.TabIndex = 113;
-            this.label153.Text = " - ";
-            // 
-            // ogrEndOgrAlanAdi_textbox
-            // 
-            this.ogrEndOgrAlanAdi_textbox.Location = new System.Drawing.Point(531, 270);
-            this.ogrEndOgrAlanAdi_textbox.Name = "ogrEndOgrAlanAdi_textbox";
-            this.ogrEndOgrAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrAlanAdi_textbox.TabIndex = 112;
-            // 
-            // ogrStartOgrAlanAdi_textbox
-            // 
-            this.ogrStartOgrAlanAdi_textbox.Location = new System.Drawing.Point(406, 270);
-            this.ogrStartOgrAlanAdi_textbox.Name = "ogrStartOgrAlanAdi_textbox";
-            this.ogrStartOgrAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrAlanAdi_textbox.TabIndex = 111;
-            // 
-            // label152
-            // 
-            this.label152.AutoSize = true;
-            this.label152.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label152.Location = new System.Drawing.Point(499, 270);
-            this.label152.Name = "label152";
-            this.label152.Size = new System.Drawing.Size(23, 19);
-            this.label152.TabIndex = 110;
-            this.label152.Text = " - ";
-            // 
-            // ogrEndOgrTc_textbox
-            // 
-            this.ogrEndOgrTc_textbox.Location = new System.Drawing.Point(531, 243);
-            this.ogrEndOgrTc_textbox.Name = "ogrEndOgrTc_textbox";
-            this.ogrEndOgrTc_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrTc_textbox.TabIndex = 109;
-            // 
-            // ogrStartOgrTc_textbox
-            // 
-            this.ogrStartOgrTc_textbox.Location = new System.Drawing.Point(406, 243);
-            this.ogrStartOgrTc_textbox.Name = "ogrStartOgrTc_textbox";
-            this.ogrStartOgrTc_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrTc_textbox.TabIndex = 108;
-            // 
-            // label151
-            // 
-            this.label151.AutoSize = true;
-            this.label151.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label151.Location = new System.Drawing.Point(499, 243);
-            this.label151.Name = "label151";
-            this.label151.Size = new System.Drawing.Size(23, 19);
-            this.label151.TabIndex = 107;
-            this.label151.Text = " - ";
-            // 
-            // ogrEndOgrTelNo_textbox
-            // 
-            this.ogrEndOgrTelNo_textbox.Location = new System.Drawing.Point(531, 216);
-            this.ogrEndOgrTelNo_textbox.Name = "ogrEndOgrTelNo_textbox";
-            this.ogrEndOgrTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrTelNo_textbox.TabIndex = 106;
-            // 
-            // ogrStartOgrTelNo_textbox
-            // 
-            this.ogrStartOgrTelNo_textbox.Location = new System.Drawing.Point(406, 216);
-            this.ogrStartOgrTelNo_textbox.Name = "ogrStartOgrTelNo_textbox";
-            this.ogrStartOgrTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrTelNo_textbox.TabIndex = 105;
-            // 
-            // label150
-            // 
-            this.label150.AutoSize = true;
-            this.label150.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label150.Location = new System.Drawing.Point(499, 216);
-            this.label150.Name = "label150";
-            this.label150.Size = new System.Drawing.Size(23, 19);
-            this.label150.TabIndex = 104;
-            this.label150.Text = " - ";
-            // 
-            // ogrEndOgrFirmaAdi_textbox
-            // 
-            this.ogrEndOgrFirmaAdi_textbox.Location = new System.Drawing.Point(531, 189);
-            this.ogrEndOgrFirmaAdi_textbox.Name = "ogrEndOgrFirmaAdi_textbox";
-            this.ogrEndOgrFirmaAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrFirmaAdi_textbox.TabIndex = 103;
-            // 
-            // ogrStartOgrFirmaAdi_textbox
-            // 
-            this.ogrStartOgrFirmaAdi_textbox.Location = new System.Drawing.Point(406, 189);
-            this.ogrStartOgrFirmaAdi_textbox.Name = "ogrStartOgrFirmaAdi_textbox";
-            this.ogrStartOgrFirmaAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrFirmaAdi_textbox.TabIndex = 102;
-            // 
-            // label149
-            // 
-            this.label149.AutoSize = true;
-            this.label149.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label149.Location = new System.Drawing.Point(499, 189);
-            this.label149.Name = "label149";
-            this.label149.Size = new System.Drawing.Size(23, 19);
-            this.label149.TabIndex = 101;
-            this.label149.Text = " - ";
-            // 
-            // ogrEndOgrSinif_textbox
-            // 
-            this.ogrEndOgrSinif_textbox.Location = new System.Drawing.Point(531, 163);
-            this.ogrEndOgrSinif_textbox.Name = "ogrEndOgrSinif_textbox";
-            this.ogrEndOgrSinif_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrSinif_textbox.TabIndex = 100;
-            // 
-            // ogrStartOgrSinif_textbox
-            // 
-            this.ogrStartOgrSinif_textbox.Location = new System.Drawing.Point(406, 163);
-            this.ogrStartOgrSinif_textbox.Name = "ogrStartOgrSinif_textbox";
-            this.ogrStartOgrSinif_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrSinif_textbox.TabIndex = 99;
-            // 
-            // label148
-            // 
-            this.label148.AutoSize = true;
-            this.label148.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label148.Location = new System.Drawing.Point(499, 163);
-            this.label148.Name = "label148";
-            this.label148.Size = new System.Drawing.Size(23, 19);
-            this.label148.TabIndex = 98;
-            this.label148.Text = " - ";
-            // 
-            // ogrEndOgrOkulNo_textbox
-            // 
-            this.ogrEndOgrOkulNo_textbox.Location = new System.Drawing.Point(531, 137);
-            this.ogrEndOgrOkulNo_textbox.Name = "ogrEndOgrOkulNo_textbox";
-            this.ogrEndOgrOkulNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrOkulNo_textbox.TabIndex = 97;
-            // 
-            // ogrStartOgrOkulNo_textbox
-            // 
-            this.ogrStartOgrOkulNo_textbox.Location = new System.Drawing.Point(406, 137);
-            this.ogrStartOgrOkulNo_textbox.Name = "ogrStartOgrOkulNo_textbox";
-            this.ogrStartOgrOkulNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrOkulNo_textbox.TabIndex = 96;
-            // 
-            // label147
-            // 
-            this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label147.Location = new System.Drawing.Point(499, 137);
-            this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(23, 19);
-            this.label147.TabIndex = 95;
-            this.label147.Text = " - ";
-            // 
-            // ogrEndOgrSoyad_textbox
-            // 
-            this.ogrEndOgrSoyad_textbox.Location = new System.Drawing.Point(531, 110);
-            this.ogrEndOgrSoyad_textbox.Name = "ogrEndOgrSoyad_textbox";
-            this.ogrEndOgrSoyad_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrSoyad_textbox.TabIndex = 94;
-            // 
-            // ogrStartOgrSoyad_textbox
-            // 
-            this.ogrStartOgrSoyad_textbox.Location = new System.Drawing.Point(406, 110);
-            this.ogrStartOgrSoyad_textbox.Name = "ogrStartOgrSoyad_textbox";
-            this.ogrStartOgrSoyad_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrSoyad_textbox.TabIndex = 93;
-            // 
-            // label146
-            // 
-            this.label146.AutoSize = true;
-            this.label146.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label146.Location = new System.Drawing.Point(499, 110);
-            this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(23, 19);
-            this.label146.TabIndex = 92;
-            this.label146.Text = " - ";
-            // 
-            // ogrEndOgrAd_textbox
-            // 
-            this.ogrEndOgrAd_textbox.Location = new System.Drawing.Point(531, 83);
-            this.ogrEndOgrAd_textbox.Name = "ogrEndOgrAd_textbox";
-            this.ogrEndOgrAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrEndOgrAd_textbox.TabIndex = 91;
-            // 
-            // ogrStartOgrAd_textbox
-            // 
-            this.ogrStartOgrAd_textbox.Location = new System.Drawing.Point(406, 83);
-            this.ogrStartOgrAd_textbox.Name = "ogrStartOgrAd_textbox";
-            this.ogrStartOgrAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrStartOgrAd_textbox.TabIndex = 90;
-            // 
-            // label145
-            // 
-            this.label145.AutoSize = true;
-            this.label145.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label145.Location = new System.Drawing.Point(499, 83);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(23, 19);
-            this.label145.TabIndex = 89;
-            this.label145.Text = " - ";
-            // 
-            // label143
-            // 
-            this.label143.AutoSize = true;
-            this.label143.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label143.Location = new System.Drawing.Point(401, 51);
-            this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(99, 25);
-            this.label143.TabIndex = 83;
-            this.label143.Text = "Başlangıç";
-            // 
-            // label142
-            // 
-            this.label142.AutoSize = true;
-            this.label142.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label142.Location = new System.Drawing.Point(84, 49);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(209, 25);
-            this.label142.TabIndex = 82;
-            this.label142.Text = "SQL\'deki Kolon Adları";
-            // 
-            // label141
-            // 
-            this.label141.AutoSize = true;
-            this.label141.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label141.Location = new System.Drawing.Point(169, 8);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(312, 35);
-            this.label141.TabIndex = 81;
-            this.label141.Text = "Öğrenci Aktarım Paneli";
-            // 
-            // label139
-            // 
-            this.label139.AutoSize = true;
-            this.label139.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label139.Location = new System.Drawing.Point(93, 429);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(206, 21);
-            this.label139.TabIndex = 80;
-            this.label139.Text = "Öğrencinin Staj Dönemi : ";
-            // 
-            // label140
-            // 
-            this.label140.AutoSize = true;
-            this.label140.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label140.Location = new System.Drawing.Point(8, 402);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(291, 21);
-            this.label140.TabIndex = 79;
-            this.label140.Text = "Öğrencinin Koordinatör Öğretmeni : ";
-            // 
-            // label175
-            // 
-            this.label175.AutoSize = true;
-            this.label175.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label175.Location = new System.Drawing.Point(47, 376);
-            this.label175.Name = "label175";
-            this.label175.Size = new System.Drawing.Size(252, 21);
-            this.label175.TabIndex = 78;
-            this.label175.Text = "Öğrencinin Stajının Bitiş Tarihi : ";
-            // 
-            // label176
-            // 
-            this.label176.AutoSize = true;
-            this.label176.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label176.Location = new System.Drawing.Point(26, 350);
-            this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(273, 21);
-            this.label176.TabIndex = 77;
-            this.label176.Text = "Öğrencinin Staja Başlangıç Tarihi : ";
-            // 
-            // label177
-            // 
-            this.label177.AutoSize = true;
-            this.label177.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label177.Location = new System.Drawing.Point(172, 324);
-            this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(127, 21);
-            this.label177.TabIndex = 76;
-            this.label177.Text = "Öğrenci Grup : ";
-            // 
-            // label178
-            // 
-            this.label178.AutoSize = true;
-            this.label178.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label178.Location = new System.Drawing.Point(155, 298);
-            this.label178.Name = "label178";
-            this.label178.Size = new System.Drawing.Size(144, 21);
-            this.label178.TabIndex = 75;
-            this.label178.Text = "Öğrenci Dal Adı : ";
-            // 
-            // label179
-            // 
-            this.label179.AutoSize = true;
-            this.label179.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label179.Location = new System.Drawing.Point(146, 267);
-            this.label179.Name = "label179";
-            this.label179.Size = new System.Drawing.Size(153, 21);
-            this.label179.TabIndex = 74;
-            this.label179.Text = "Öğrenci Alan Adı : ";
-            // 
-            // label180
-            // 
-            this.label180.AutoSize = true;
-            this.label180.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label180.Location = new System.Drawing.Point(190, 241);
-            this.label180.Name = "label180";
-            this.label180.Size = new System.Drawing.Size(109, 21);
-            this.label180.TabIndex = 73;
-            this.label180.Text = "Öğrenci TC : ";
-            // 
-            // label181
-            // 
-            this.label181.AutoSize = true;
-            this.label181.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label181.Location = new System.Drawing.Point(75, 214);
-            this.label181.Name = "label181";
-            this.label181.Size = new System.Drawing.Size(224, 21);
-            this.label181.TabIndex = 72;
-            this.label181.Text = "Öğrenci Telefon Numarası : ";
-            // 
-            // label182
-            // 
-            this.label182.AutoSize = true;
-            this.label182.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label182.Location = new System.Drawing.Point(113, 188);
-            this.label182.Name = "label182";
-            this.label182.Size = new System.Drawing.Size(186, 21);
-            this.label182.TabIndex = 71;
-            this.label182.Text = "Öğrencinin Firma Adı : ";
-            // 
-            // label183
-            // 
-            this.label183.AutoSize = true;
-            this.label183.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label183.Location = new System.Drawing.Point(177, 162);
-            this.label183.Name = "label183";
-            this.label183.Size = new System.Drawing.Size(122, 21);
-            this.label183.TabIndex = 70;
-            this.label183.Text = "Öğrenci Sınıf : ";
-            // 
-            // label184
-            // 
-            this.label184.AutoSize = true;
-            this.label184.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label184.Location = new System.Drawing.Point(146, 135);
-            this.label184.Name = "label184";
-            this.label184.Size = new System.Drawing.Size(153, 21);
-            this.label184.TabIndex = 69;
-            this.label184.Text = "Öğrenci Okul No : ";
-            // 
-            // label185
-            // 
-            this.label185.AutoSize = true;
-            this.label185.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label185.Location = new System.Drawing.Point(160, 109);
-            this.label185.Name = "label185";
-            this.label185.Size = new System.Drawing.Size(139, 21);
-            this.label185.TabIndex = 68;
-            this.label185.Text = "Öğrenci Soyadı : ";
-            // 
-            // label186
-            // 
-            this.label186.AutoSize = true;
-            this.label186.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label186.Location = new System.Drawing.Point(185, 82);
-            this.label186.Name = "label186";
-            this.label186.Size = new System.Drawing.Size(114, 21);
-            this.label186.TabIndex = 67;
-            this.label186.Text = "Öğrenci Adı : ";
-            // 
-            // panel98
-            // 
-            this.panel98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel98.Controls.Add(this.label174);
-            this.panel98.Location = new System.Drawing.Point(10, 302);
-            this.panel98.Name = "panel98";
-            this.panel98.Padding = new System.Windows.Forms.Padding(10);
-            this.panel98.Size = new System.Drawing.Size(478, 295);
-            this.panel98.TabIndex = 76;
-            // 
-            // label174
-            // 
-            this.label174.AutoSize = true;
-            this.label174.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label174.Location = new System.Drawing.Point(10, 10);
-            this.label174.Name = "label174";
-            this.label174.Size = new System.Drawing.Size(450, 209);
-            this.label174.TabIndex = 0;
-            this.label174.Text = resources.GetString("label174.Text");
-            // 
-            // exceldenDByeAktarim_button
-            // 
-            this.exceldenDByeAktarim_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exceldenDByeAktarim_button.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.exceldenDByeAktarim_button.Location = new System.Drawing.Point(10, 224);
-            this.exceldenDByeAktarim_button.Name = "exceldenDByeAktarim_button";
-            this.exceldenDByeAktarim_button.Size = new System.Drawing.Size(478, 61);
-            this.exceldenDByeAktarim_button.TabIndex = 75;
-            this.exceldenDByeAktarim_button.Text = "AKTARMA İŞLEMİNİ BAŞLAT";
-            this.exceldenDByeAktarim_button.UseVisualStyleBackColor = true;
-            this.exceldenDByeAktarim_button.Click += new System.EventHandler(this.exceldenDByeAktarim_button_Click);
-            // 
-            // panel62
-            // 
-            this.panel62.Controls.Add(this.selectedTableName_combobox);
-            this.panel62.Controls.Add(this.label125);
-            this.panel62.Controls.Add(this.selectedExcelPage_combobox);
-            this.panel62.Controls.Add(this.label124);
-            this.panel62.Location = new System.Drawing.Point(11, 123);
-            this.panel62.Name = "panel62";
-            this.panel62.Size = new System.Drawing.Size(477, 90);
-            this.panel62.TabIndex = 73;
-            // 
-            // selectedTableName_combobox
-            // 
-            this.selectedTableName_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.selectedTableName_combobox.FormattingEnabled = true;
-            this.selectedTableName_combobox.ItemHeight = 21;
-            this.selectedTableName_combobox.Items.AddRange(new object[] {
-            "Öğrenci",
-            "Öğretmen",
-            "İşletme"});
-            this.selectedTableName_combobox.Location = new System.Drawing.Point(291, 46);
-            this.selectedTableName_combobox.Name = "selectedTableName_combobox";
-            this.selectedTableName_combobox.Size = new System.Drawing.Size(178, 29);
-            this.selectedTableName_combobox.TabIndex = 75;
-            this.selectedTableName_combobox.SelectedIndexChanged += new System.EventHandler(this.selectedTableName_combobox_SelectedIndexChanged);
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label125.Location = new System.Drawing.Point(5, 49);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(280, 21);
-            this.label125.TabIndex = 75;
-            this.label125.Text = "Verilerin Aktarılacağı SQL Tablosu : ";
-            // 
-            // selectedExcelPage_combobox
-            // 
-            this.selectedExcelPage_combobox.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.selectedExcelPage_combobox.FormattingEnabled = true;
-            this.selectedExcelPage_combobox.ItemHeight = 21;
-            this.selectedExcelPage_combobox.Location = new System.Drawing.Point(291, 9);
-            this.selectedExcelPage_combobox.Name = "selectedExcelPage_combobox";
-            this.selectedExcelPage_combobox.Size = new System.Drawing.Size(178, 29);
-            this.selectedExcelPage_combobox.TabIndex = 74;
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label124.Location = new System.Drawing.Point(162, 12);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(123, 21);
-            this.label124.TabIndex = 66;
-            this.label124.Text = "Seçilen Sayfa : ";
-            // 
-            // selectExcelFile_button
-            // 
-            this.selectExcelFile_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.selectExcelFile_button.Location = new System.Drawing.Point(114, 81);
-            this.selectExcelFile_button.Name = "selectExcelFile_button";
-            this.selectExcelFile_button.Size = new System.Drawing.Size(274, 30);
-            this.selectExcelFile_button.TabIndex = 72;
-            this.selectExcelFile_button.Text = "Excel Dosyası Seç                                  ···";
-            this.selectExcelFile_button.UseVisualStyleBackColor = true;
-            this.selectExcelFile_button.Click += new System.EventHandler(this.selectExcelFile_button_Click);
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label123.Location = new System.Drawing.Point(38, 84);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(69, 21);
-            this.label123.TabIndex = 65;
-            this.label123.Text = "Gözat : ";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label97.Location = new System.Drawing.Point(29, 21);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(260, 35);
-            this.label97.TabIndex = 64;
-            this.label97.Text = "Veri Aktarım Paneli";
-            // 
-            // ogrtAktarimPaneli_panel
-            // 
-            this.ogrtAktarimPaneli_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label187);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label188);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label189);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label190);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label191);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label192);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label193);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label194);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label195);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtTelNo_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtDalAdi_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtAlanAdi_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtIsletmeGunu2_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtIsletmeGunu1_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtSoyad_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtColumnOgrtAd_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtTelNo_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtTelNo_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label196);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtDalAdi_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtDalAdi_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label197);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtAlanAdi_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtAlanAdi_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label198);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtIsletmeGunu2_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtIsletmeGunu2_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label199);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtIsletmeGunu1_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtIsletmeGunu1_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label200);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtSoyad_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtSoyad_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label201);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtEndOgrtAd_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.ogrtStartOgrtAd_textbox);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label202);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label203);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label204);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label205);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label206);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label207);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label208);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label209);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label210);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label211);
-            this.ogrtAktarimPaneli_panel.Controls.Add(this.label212);
-            this.ogrtAktarimPaneli_panel.Location = new System.Drawing.Point(497, 21);
-            this.ogrtAktarimPaneli_panel.Name = "ogrtAktarimPaneli_panel";
-            this.ogrtAktarimPaneli_panel.Size = new System.Drawing.Size(630, 576);
-            this.ogrtAktarimPaneli_panel.TabIndex = 79;
-            // 
-            // label187
-            // 
-            this.label187.AutoSize = true;
-            this.label187.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label187.Location = new System.Drawing.Point(272, 56);
-            this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(65, 25);
-            this.label187.TabIndex = 160;
-            this.label187.Text = "Kolon";
-            // 
-            // label188
-            // 
-            this.label188.AutoSize = true;
-            this.label188.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label188.Location = new System.Drawing.Point(514, 58);
-            this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(50, 25);
-            this.label188.TabIndex = 159;
-            this.label188.Text = "Bitiş";
-            // 
-            // label189
-            // 
-            this.label189.AutoSize = true;
-            this.label189.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label189.Location = new System.Drawing.Point(347, 297);
-            this.label189.Name = "label189";
-            this.label189.Size = new System.Drawing.Size(23, 19);
-            this.label189.TabIndex = 151;
-            this.label189.Text = " / ";
-            // 
-            // label190
-            // 
-            this.label190.AutoSize = true;
-            this.label190.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label190.Location = new System.Drawing.Point(347, 263);
-            this.label190.Name = "label190";
-            this.label190.Size = new System.Drawing.Size(23, 19);
-            this.label190.TabIndex = 150;
-            this.label190.Text = " / ";
-            // 
-            // label191
-            // 
-            this.label191.AutoSize = true;
-            this.label191.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label191.Location = new System.Drawing.Point(347, 227);
-            this.label191.Name = "label191";
-            this.label191.Size = new System.Drawing.Size(23, 19);
-            this.label191.TabIndex = 149;
-            this.label191.Text = " / ";
-            // 
-            // label192
-            // 
-            this.label192.AutoSize = true;
-            this.label192.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label192.Location = new System.Drawing.Point(347, 196);
-            this.label192.Name = "label192";
-            this.label192.Size = new System.Drawing.Size(23, 19);
-            this.label192.TabIndex = 148;
-            this.label192.Text = " / ";
-            // 
-            // label193
-            // 
-            this.label193.AutoSize = true;
-            this.label193.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label193.Location = new System.Drawing.Point(347, 161);
-            this.label193.Name = "label193";
-            this.label193.Size = new System.Drawing.Size(23, 19);
-            this.label193.TabIndex = 147;
-            this.label193.Text = " / ";
-            // 
-            // label194
-            // 
-            this.label194.AutoSize = true;
-            this.label194.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label194.Location = new System.Drawing.Point(347, 126);
-            this.label194.Name = "label194";
-            this.label194.Size = new System.Drawing.Size(23, 19);
-            this.label194.TabIndex = 146;
-            this.label194.Text = " / ";
-            // 
-            // label195
-            // 
-            this.label195.AutoSize = true;
-            this.label195.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label195.Location = new System.Drawing.Point(347, 91);
-            this.label195.Name = "label195";
-            this.label195.Size = new System.Drawing.Size(23, 19);
-            this.label195.TabIndex = 145;
-            this.label195.Text = " / ";
-            // 
-            // ogrtColumnOgrtTelNo_textbox
-            // 
-            this.ogrtColumnOgrtTelNo_textbox.Location = new System.Drawing.Point(272, 294);
-            this.ogrtColumnOgrtTelNo_textbox.Name = "ogrtColumnOgrtTelNo_textbox";
-            this.ogrtColumnOgrtTelNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtTelNo_textbox.TabIndex = 137;
-            // 
-            // ogrtColumnOgrtDalAdi_textbox
-            // 
-            this.ogrtColumnOgrtDalAdi_textbox.Location = new System.Drawing.Point(272, 260);
-            this.ogrtColumnOgrtDalAdi_textbox.Name = "ogrtColumnOgrtDalAdi_textbox";
-            this.ogrtColumnOgrtDalAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtDalAdi_textbox.TabIndex = 136;
-            // 
-            // ogrtColumnOgrtAlanAdi_textbox
-            // 
-            this.ogrtColumnOgrtAlanAdi_textbox.Location = new System.Drawing.Point(272, 224);
-            this.ogrtColumnOgrtAlanAdi_textbox.Name = "ogrtColumnOgrtAlanAdi_textbox";
-            this.ogrtColumnOgrtAlanAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtAlanAdi_textbox.TabIndex = 135;
-            // 
-            // ogrtColumnOgrtIsletmeGunu2_textbox
-            // 
-            this.ogrtColumnOgrtIsletmeGunu2_textbox.Location = new System.Drawing.Point(272, 193);
-            this.ogrtColumnOgrtIsletmeGunu2_textbox.Name = "ogrtColumnOgrtIsletmeGunu2_textbox";
-            this.ogrtColumnOgrtIsletmeGunu2_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtIsletmeGunu2_textbox.TabIndex = 134;
-            // 
-            // ogrtColumnOgrtIsletmeGunu1_textbox
-            // 
-            this.ogrtColumnOgrtIsletmeGunu1_textbox.Location = new System.Drawing.Point(272, 158);
-            this.ogrtColumnOgrtIsletmeGunu1_textbox.Name = "ogrtColumnOgrtIsletmeGunu1_textbox";
-            this.ogrtColumnOgrtIsletmeGunu1_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtIsletmeGunu1_textbox.TabIndex = 133;
-            // 
-            // ogrtColumnOgrtSoyad_textbox
-            // 
-            this.ogrtColumnOgrtSoyad_textbox.Location = new System.Drawing.Point(272, 123);
-            this.ogrtColumnOgrtSoyad_textbox.Name = "ogrtColumnOgrtSoyad_textbox";
-            this.ogrtColumnOgrtSoyad_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtSoyad_textbox.TabIndex = 132;
-            // 
-            // ogrtColumnOgrtAd_textbox
-            // 
-            this.ogrtColumnOgrtAd_textbox.Location = new System.Drawing.Point(272, 88);
-            this.ogrtColumnOgrtAd_textbox.Name = "ogrtColumnOgrtAd_textbox";
-            this.ogrtColumnOgrtAd_textbox.Size = new System.Drawing.Size(65, 24);
-            this.ogrtColumnOgrtAd_textbox.TabIndex = 131;
-            // 
-            // ogrtEndOgrtTelNo_textbox
-            // 
-            this.ogrtEndOgrtTelNo_textbox.Location = new System.Drawing.Point(503, 294);
-            this.ogrtEndOgrtTelNo_textbox.Name = "ogrtEndOgrtTelNo_textbox";
-            this.ogrtEndOgrtTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtTelNo_textbox.TabIndex = 109;
-            // 
-            // ogrtStartOgrtTelNo_textbox
-            // 
-            this.ogrtStartOgrtTelNo_textbox.Location = new System.Drawing.Point(378, 294);
-            this.ogrtStartOgrtTelNo_textbox.Name = "ogrtStartOgrtTelNo_textbox";
-            this.ogrtStartOgrtTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtTelNo_textbox.TabIndex = 108;
-            // 
-            // label196
-            // 
-            this.label196.AutoSize = true;
-            this.label196.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label196.Location = new System.Drawing.Point(471, 294);
-            this.label196.Name = "label196";
-            this.label196.Size = new System.Drawing.Size(23, 19);
-            this.label196.TabIndex = 107;
-            this.label196.Text = " - ";
-            // 
-            // ogrtEndOgrtDalAdi_textbox
-            // 
-            this.ogrtEndOgrtDalAdi_textbox.Location = new System.Drawing.Point(503, 260);
-            this.ogrtEndOgrtDalAdi_textbox.Name = "ogrtEndOgrtDalAdi_textbox";
-            this.ogrtEndOgrtDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtDalAdi_textbox.TabIndex = 106;
-            // 
-            // ogrtStartOgrtDalAdi_textbox
-            // 
-            this.ogrtStartOgrtDalAdi_textbox.Location = new System.Drawing.Point(378, 260);
-            this.ogrtStartOgrtDalAdi_textbox.Name = "ogrtStartOgrtDalAdi_textbox";
-            this.ogrtStartOgrtDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtDalAdi_textbox.TabIndex = 105;
-            // 
-            // label197
-            // 
-            this.label197.AutoSize = true;
-            this.label197.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label197.Location = new System.Drawing.Point(471, 260);
-            this.label197.Name = "label197";
-            this.label197.Size = new System.Drawing.Size(23, 19);
-            this.label197.TabIndex = 104;
-            this.label197.Text = " - ";
-            // 
-            // ogrtEndOgrtAlanAdi_textbox
-            // 
-            this.ogrtEndOgrtAlanAdi_textbox.Location = new System.Drawing.Point(503, 224);
-            this.ogrtEndOgrtAlanAdi_textbox.Name = "ogrtEndOgrtAlanAdi_textbox";
-            this.ogrtEndOgrtAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtAlanAdi_textbox.TabIndex = 103;
-            // 
-            // ogrtStartOgrtAlanAdi_textbox
-            // 
-            this.ogrtStartOgrtAlanAdi_textbox.Location = new System.Drawing.Point(378, 224);
-            this.ogrtStartOgrtAlanAdi_textbox.Name = "ogrtStartOgrtAlanAdi_textbox";
-            this.ogrtStartOgrtAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtAlanAdi_textbox.TabIndex = 102;
-            // 
-            // label198
-            // 
-            this.label198.AutoSize = true;
-            this.label198.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label198.Location = new System.Drawing.Point(471, 224);
-            this.label198.Name = "label198";
-            this.label198.Size = new System.Drawing.Size(23, 19);
-            this.label198.TabIndex = 101;
-            this.label198.Text = " - ";
-            // 
-            // ogrtEndOgrtIsletmeGunu2_textbox
-            // 
-            this.ogrtEndOgrtIsletmeGunu2_textbox.Location = new System.Drawing.Point(503, 193);
-            this.ogrtEndOgrtIsletmeGunu2_textbox.Name = "ogrtEndOgrtIsletmeGunu2_textbox";
-            this.ogrtEndOgrtIsletmeGunu2_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtIsletmeGunu2_textbox.TabIndex = 100;
-            // 
-            // ogrtStartOgrtIsletmeGunu2_textbox
-            // 
-            this.ogrtStartOgrtIsletmeGunu2_textbox.Location = new System.Drawing.Point(378, 193);
-            this.ogrtStartOgrtIsletmeGunu2_textbox.Name = "ogrtStartOgrtIsletmeGunu2_textbox";
-            this.ogrtStartOgrtIsletmeGunu2_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtIsletmeGunu2_textbox.TabIndex = 99;
-            // 
-            // label199
-            // 
-            this.label199.AutoSize = true;
-            this.label199.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label199.Location = new System.Drawing.Point(471, 193);
-            this.label199.Name = "label199";
-            this.label199.Size = new System.Drawing.Size(23, 19);
-            this.label199.TabIndex = 98;
-            this.label199.Text = " - ";
-            // 
-            // ogrtEndOgrtIsletmeGunu1_textbox
-            // 
-            this.ogrtEndOgrtIsletmeGunu1_textbox.Location = new System.Drawing.Point(503, 158);
-            this.ogrtEndOgrtIsletmeGunu1_textbox.Name = "ogrtEndOgrtIsletmeGunu1_textbox";
-            this.ogrtEndOgrtIsletmeGunu1_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtIsletmeGunu1_textbox.TabIndex = 97;
-            // 
-            // ogrtStartOgrtIsletmeGunu1_textbox
-            // 
-            this.ogrtStartOgrtIsletmeGunu1_textbox.Location = new System.Drawing.Point(378, 158);
-            this.ogrtStartOgrtIsletmeGunu1_textbox.Name = "ogrtStartOgrtIsletmeGunu1_textbox";
-            this.ogrtStartOgrtIsletmeGunu1_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtIsletmeGunu1_textbox.TabIndex = 96;
-            // 
-            // label200
-            // 
-            this.label200.AutoSize = true;
-            this.label200.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label200.Location = new System.Drawing.Point(471, 158);
-            this.label200.Name = "label200";
-            this.label200.Size = new System.Drawing.Size(23, 19);
-            this.label200.TabIndex = 95;
-            this.label200.Text = " - ";
-            // 
-            // ogrtEndOgrtSoyad_textbox
-            // 
-            this.ogrtEndOgrtSoyad_textbox.Location = new System.Drawing.Point(503, 123);
-            this.ogrtEndOgrtSoyad_textbox.Name = "ogrtEndOgrtSoyad_textbox";
-            this.ogrtEndOgrtSoyad_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtSoyad_textbox.TabIndex = 94;
-            // 
-            // ogrtStartOgrtSoyad_textbox
-            // 
-            this.ogrtStartOgrtSoyad_textbox.Location = new System.Drawing.Point(378, 123);
-            this.ogrtStartOgrtSoyad_textbox.Name = "ogrtStartOgrtSoyad_textbox";
-            this.ogrtStartOgrtSoyad_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtSoyad_textbox.TabIndex = 93;
-            // 
-            // label201
-            // 
-            this.label201.AutoSize = true;
-            this.label201.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label201.Location = new System.Drawing.Point(471, 123);
-            this.label201.Name = "label201";
-            this.label201.Size = new System.Drawing.Size(23, 19);
-            this.label201.TabIndex = 92;
-            this.label201.Text = " - ";
-            // 
-            // ogrtEndOgrtAd_textbox
-            // 
-            this.ogrtEndOgrtAd_textbox.Location = new System.Drawing.Point(503, 88);
-            this.ogrtEndOgrtAd_textbox.Name = "ogrtEndOgrtAd_textbox";
-            this.ogrtEndOgrtAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtEndOgrtAd_textbox.TabIndex = 91;
-            // 
-            // ogrtStartOgrtAd_textbox
-            // 
-            this.ogrtStartOgrtAd_textbox.Location = new System.Drawing.Point(378, 88);
-            this.ogrtStartOgrtAd_textbox.Name = "ogrtStartOgrtAd_textbox";
-            this.ogrtStartOgrtAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.ogrtStartOgrtAd_textbox.TabIndex = 90;
-            // 
-            // label202
-            // 
-            this.label202.AutoSize = true;
-            this.label202.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label202.Location = new System.Drawing.Point(471, 88);
-            this.label202.Name = "label202";
-            this.label202.Size = new System.Drawing.Size(23, 19);
-            this.label202.TabIndex = 89;
-            this.label202.Text = " - ";
-            // 
-            // label203
-            // 
-            this.label203.AutoSize = true;
-            this.label203.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label203.Location = new System.Drawing.Point(373, 58);
-            this.label203.Name = "label203";
-            this.label203.Size = new System.Drawing.Size(99, 25);
-            this.label203.TabIndex = 83;
-            this.label203.Text = "Başlangıç";
-            // 
-            // label204
-            // 
-            this.label204.AutoSize = true;
-            this.label204.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label204.Location = new System.Drawing.Point(56, 56);
-            this.label204.Name = "label204";
-            this.label204.Size = new System.Drawing.Size(209, 25);
-            this.label204.TabIndex = 82;
-            this.label204.Text = "SQL\'deki Kolon Adları";
-            // 
-            // label205
-            // 
-            this.label205.AutoSize = true;
-            this.label205.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label205.Location = new System.Drawing.Point(169, 8);
-            this.label205.Name = "label205";
-            this.label205.Size = new System.Drawing.Size(341, 35);
-            this.label205.TabIndex = 81;
-            this.label205.Text = "Öğretmen Aktarım Paneli";
-            // 
-            // label206
-            // 
-            this.label206.AutoSize = true;
-            this.label206.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label206.Location = new System.Drawing.Point(106, 293);
-            this.label206.Name = "label206";
-            this.label206.Size = new System.Drawing.Size(159, 21);
-            this.label206.TabIndex = 73;
-            this.label206.Text = "Telefon Numarası : ";
-            // 
-            // label207
-            // 
-            this.label207.AutoSize = true;
-            this.label207.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label207.Location = new System.Drawing.Point(89, 263);
-            this.label207.Name = "label207";
-            this.label207.Size = new System.Drawing.Size(176, 21);
-            this.label207.TabIndex = 72;
-            this.label207.Text = "Öğretmenin Dal Adı : ";
-            // 
-            // label208
-            // 
-            this.label208.AutoSize = true;
-            this.label208.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label208.Location = new System.Drawing.Point(80, 225);
-            this.label208.Name = "label208";
-            this.label208.Size = new System.Drawing.Size(185, 21);
-            this.label208.TabIndex = 71;
-            this.label208.Text = "Öğretmenin Alan Adı : ";
-            // 
-            // label209
-            // 
-            this.label209.AutoSize = true;
-            this.label209.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label209.Location = new System.Drawing.Point(125, 193);
-            this.label209.Name = "label209";
-            this.label209.Size = new System.Drawing.Size(140, 21);
-            this.label209.TabIndex = 70;
-            this.label209.Text = "İşletme Günü 2 : ";
-            // 
-            // label210
-            // 
-            this.label210.AutoSize = true;
-            this.label210.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label210.Location = new System.Drawing.Point(127, 157);
-            this.label210.Name = "label210";
-            this.label210.Size = new System.Drawing.Size(140, 21);
-            this.label210.TabIndex = 69;
-            this.label210.Text = "İşletme Günü 1 : ";
-            // 
-            // label211
-            // 
-            this.label211.AutoSize = true;
-            this.label211.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label211.Location = new System.Drawing.Point(110, 124);
-            this.label211.Name = "label211";
-            this.label211.Size = new System.Drawing.Size(157, 21);
-            this.label211.TabIndex = 68;
-            this.label211.Text = "Öğretmen Soyadı : ";
-            // 
-            // label212
-            // 
-            this.label212.AutoSize = true;
-            this.label212.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label212.Location = new System.Drawing.Point(135, 89);
-            this.label212.Name = "label212";
-            this.label212.Size = new System.Drawing.Size(132, 21);
-            this.label212.TabIndex = 67;
-            this.label212.Text = "Öğretmen Adı : ";
-            // 
-            // isletmeAktarimPaneli_panel
-            // 
-            this.isletmeAktarimPaneli_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label213);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label214);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label215);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label216);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label217);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label218);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeSicilNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeIbanNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUODT_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUOTCNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeSoyad_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUOAd_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeSicilNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeSicilNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label219);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeIbanNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeIbanNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label220);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUODT_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUODT_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label221);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUOTCNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUOTCNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label222);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeSoyad_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeSoyad_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label223);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUOAd_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUOAd_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label224);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label225);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label226);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label227);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label228);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label229);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label230);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label231);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label232);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label256);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label257);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label258);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label259);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label260);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label261);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label262);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label263);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label264);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeDalAdi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAlanAdi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeTelNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeYetkilisi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeTamAdres_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAdresIlce_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAdresIl_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeColumnOgrIsletmeAd_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label265);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeDalAdi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeDalAdi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label266);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAlanAdi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAlanAdi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label267);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeTelNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeTelNo_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label268);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeYetkilisi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeYetkilisi_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label269);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeTamAdres_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeTamAdres_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label270);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAdresIlce_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAdresIlce_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label271);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAdresIl_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAdresIl_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label272);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeEndOgrIsletmeAd_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.isletmeStartOgrIsletmeAd_textbox);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label273);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label274);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label275);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label276);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label277);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label278);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label279);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label280);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label281);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label282);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label283);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label284);
-            this.isletmeAktarimPaneli_panel.Controls.Add(this.label285);
-            this.isletmeAktarimPaneli_panel.Location = new System.Drawing.Point(497, 21);
-            this.isletmeAktarimPaneli_panel.Name = "isletmeAktarimPaneli_panel";
-            this.isletmeAktarimPaneli_panel.Size = new System.Drawing.Size(630, 576);
-            this.isletmeAktarimPaneli_panel.TabIndex = 80;
-            // 
-            // label213
-            // 
-            this.label213.AutoSize = true;
-            this.label213.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label213.Location = new System.Drawing.Point(375, 544);
-            this.label213.Name = "label213";
-            this.label213.Size = new System.Drawing.Size(23, 19);
-            this.label213.TabIndex = 196;
-            this.label213.Text = " / ";
-            // 
-            // label214
-            // 
-            this.label214.AutoSize = true;
-            this.label214.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label214.Location = new System.Drawing.Point(375, 510);
-            this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(23, 19);
-            this.label214.TabIndex = 195;
-            this.label214.Text = " / ";
-            // 
-            // label215
-            // 
-            this.label215.AutoSize = true;
-            this.label215.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label215.Location = new System.Drawing.Point(375, 477);
-            this.label215.Name = "label215";
-            this.label215.Size = new System.Drawing.Size(23, 19);
-            this.label215.TabIndex = 194;
-            this.label215.Text = " / ";
-            // 
-            // label216
-            // 
-            this.label216.AutoSize = true;
-            this.label216.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label216.Location = new System.Drawing.Point(375, 446);
-            this.label216.Name = "label216";
-            this.label216.Size = new System.Drawing.Size(23, 19);
-            this.label216.TabIndex = 193;
-            this.label216.Text = " / ";
-            // 
-            // label217
-            // 
-            this.label217.AutoSize = true;
-            this.label217.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label217.Location = new System.Drawing.Point(375, 414);
-            this.label217.Name = "label217";
-            this.label217.Size = new System.Drawing.Size(23, 19);
-            this.label217.TabIndex = 192;
-            this.label217.Text = " / ";
-            // 
-            // label218
-            // 
-            this.label218.AutoSize = true;
-            this.label218.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label218.Location = new System.Drawing.Point(375, 384);
-            this.label218.Name = "label218";
-            this.label218.Size = new System.Drawing.Size(23, 19);
-            this.label218.TabIndex = 191;
-            this.label218.Text = " / ";
-            // 
-            // isletmeColumnOgrIsletmeSicilNo_textbox
-            // 
-            this.isletmeColumnOgrIsletmeSicilNo_textbox.Location = new System.Drawing.Point(300, 541);
-            this.isletmeColumnOgrIsletmeSicilNo_textbox.Name = "isletmeColumnOgrIsletmeSicilNo_textbox";
-            this.isletmeColumnOgrIsletmeSicilNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeSicilNo_textbox.TabIndex = 190;
-            // 
-            // isletmeColumnOgrIsletmeIbanNo_textbox
-            // 
-            this.isletmeColumnOgrIsletmeIbanNo_textbox.Location = new System.Drawing.Point(300, 507);
-            this.isletmeColumnOgrIsletmeIbanNo_textbox.Name = "isletmeColumnOgrIsletmeIbanNo_textbox";
-            this.isletmeColumnOgrIsletmeIbanNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeIbanNo_textbox.TabIndex = 189;
-            // 
-            // isletmeColumnOgrIsletmeUODT_textbox
-            // 
-            this.isletmeColumnOgrIsletmeUODT_textbox.Location = new System.Drawing.Point(300, 474);
-            this.isletmeColumnOgrIsletmeUODT_textbox.Name = "isletmeColumnOgrIsletmeUODT_textbox";
-            this.isletmeColumnOgrIsletmeUODT_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeUODT_textbox.TabIndex = 188;
-            // 
-            // isletmeColumnOgrIsletmeUOTCNo_textbox
-            // 
-            this.isletmeColumnOgrIsletmeUOTCNo_textbox.Location = new System.Drawing.Point(300, 443);
-            this.isletmeColumnOgrIsletmeUOTCNo_textbox.Name = "isletmeColumnOgrIsletmeUOTCNo_textbox";
-            this.isletmeColumnOgrIsletmeUOTCNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeUOTCNo_textbox.TabIndex = 187;
-            // 
-            // isletmeColumnOgrIsletmeSoyad_textbox
-            // 
-            this.isletmeColumnOgrIsletmeSoyad_textbox.Location = new System.Drawing.Point(299, 411);
-            this.isletmeColumnOgrIsletmeSoyad_textbox.Name = "isletmeColumnOgrIsletmeSoyad_textbox";
-            this.isletmeColumnOgrIsletmeSoyad_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeSoyad_textbox.TabIndex = 186;
-            // 
-            // isletmeColumnOgrIsletmeUOAd_textbox
-            // 
-            this.isletmeColumnOgrIsletmeUOAd_textbox.Location = new System.Drawing.Point(300, 381);
-            this.isletmeColumnOgrIsletmeUOAd_textbox.Name = "isletmeColumnOgrIsletmeUOAd_textbox";
-            this.isletmeColumnOgrIsletmeUOAd_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeUOAd_textbox.TabIndex = 185;
-            // 
-            // isletmeEndOgrIsletmeSicilNo_textbox
-            // 
-            this.isletmeEndOgrIsletmeSicilNo_textbox.Location = new System.Drawing.Point(531, 541);
-            this.isletmeEndOgrIsletmeSicilNo_textbox.Name = "isletmeEndOgrIsletmeSicilNo_textbox";
-            this.isletmeEndOgrIsletmeSicilNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeSicilNo_textbox.TabIndex = 184;
-            // 
-            // isletmeStartOgrIsletmeSicilNo_textbox
-            // 
-            this.isletmeStartOgrIsletmeSicilNo_textbox.Location = new System.Drawing.Point(406, 541);
-            this.isletmeStartOgrIsletmeSicilNo_textbox.Name = "isletmeStartOgrIsletmeSicilNo_textbox";
-            this.isletmeStartOgrIsletmeSicilNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeSicilNo_textbox.TabIndex = 183;
-            // 
-            // label219
-            // 
-            this.label219.AutoSize = true;
-            this.label219.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label219.Location = new System.Drawing.Point(499, 541);
-            this.label219.Name = "label219";
-            this.label219.Size = new System.Drawing.Size(23, 19);
-            this.label219.TabIndex = 182;
-            this.label219.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeIbanNo_textbox
-            // 
-            this.isletmeEndOgrIsletmeIbanNo_textbox.Location = new System.Drawing.Point(531, 507);
-            this.isletmeEndOgrIsletmeIbanNo_textbox.Name = "isletmeEndOgrIsletmeIbanNo_textbox";
-            this.isletmeEndOgrIsletmeIbanNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeIbanNo_textbox.TabIndex = 181;
-            // 
-            // isletmeStartOgrIsletmeIbanNo_textbox
-            // 
-            this.isletmeStartOgrIsletmeIbanNo_textbox.Location = new System.Drawing.Point(406, 507);
-            this.isletmeStartOgrIsletmeIbanNo_textbox.Name = "isletmeStartOgrIsletmeIbanNo_textbox";
-            this.isletmeStartOgrIsletmeIbanNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeIbanNo_textbox.TabIndex = 180;
-            // 
-            // label220
-            // 
-            this.label220.AutoSize = true;
-            this.label220.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label220.Location = new System.Drawing.Point(499, 507);
-            this.label220.Name = "label220";
-            this.label220.Size = new System.Drawing.Size(23, 19);
-            this.label220.TabIndex = 179;
-            this.label220.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeUODT_textbox
-            // 
-            this.isletmeEndOgrIsletmeUODT_textbox.Location = new System.Drawing.Point(531, 474);
-            this.isletmeEndOgrIsletmeUODT_textbox.Name = "isletmeEndOgrIsletmeUODT_textbox";
-            this.isletmeEndOgrIsletmeUODT_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeUODT_textbox.TabIndex = 178;
-            // 
-            // isletmeStartOgrIsletmeUODT_textbox
-            // 
-            this.isletmeStartOgrIsletmeUODT_textbox.Location = new System.Drawing.Point(406, 474);
-            this.isletmeStartOgrIsletmeUODT_textbox.Name = "isletmeStartOgrIsletmeUODT_textbox";
-            this.isletmeStartOgrIsletmeUODT_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeUODT_textbox.TabIndex = 177;
-            // 
-            // label221
-            // 
-            this.label221.AutoSize = true;
-            this.label221.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label221.Location = new System.Drawing.Point(499, 474);
-            this.label221.Name = "label221";
-            this.label221.Size = new System.Drawing.Size(23, 19);
-            this.label221.TabIndex = 176;
-            this.label221.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeUOTCNo_textbox
-            // 
-            this.isletmeEndOgrIsletmeUOTCNo_textbox.Location = new System.Drawing.Point(531, 443);
-            this.isletmeEndOgrIsletmeUOTCNo_textbox.Name = "isletmeEndOgrIsletmeUOTCNo_textbox";
-            this.isletmeEndOgrIsletmeUOTCNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeUOTCNo_textbox.TabIndex = 175;
-            // 
-            // isletmeStartOgrIsletmeUOTCNo_textbox
-            // 
-            this.isletmeStartOgrIsletmeUOTCNo_textbox.Location = new System.Drawing.Point(406, 443);
-            this.isletmeStartOgrIsletmeUOTCNo_textbox.Name = "isletmeStartOgrIsletmeUOTCNo_textbox";
-            this.isletmeStartOgrIsletmeUOTCNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeUOTCNo_textbox.TabIndex = 174;
-            // 
-            // label222
-            // 
-            this.label222.AutoSize = true;
-            this.label222.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label222.Location = new System.Drawing.Point(499, 443);
-            this.label222.Name = "label222";
-            this.label222.Size = new System.Drawing.Size(23, 19);
-            this.label222.TabIndex = 173;
-            this.label222.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeSoyad_textbox
-            // 
-            this.isletmeEndOgrIsletmeSoyad_textbox.Location = new System.Drawing.Point(531, 411);
-            this.isletmeEndOgrIsletmeSoyad_textbox.Name = "isletmeEndOgrIsletmeSoyad_textbox";
-            this.isletmeEndOgrIsletmeSoyad_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeSoyad_textbox.TabIndex = 172;
-            // 
-            // isletmeStartOgrIsletmeSoyad_textbox
-            // 
-            this.isletmeStartOgrIsletmeSoyad_textbox.Location = new System.Drawing.Point(406, 411);
-            this.isletmeStartOgrIsletmeSoyad_textbox.Name = "isletmeStartOgrIsletmeSoyad_textbox";
-            this.isletmeStartOgrIsletmeSoyad_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeSoyad_textbox.TabIndex = 171;
-            // 
-            // label223
-            // 
-            this.label223.AutoSize = true;
-            this.label223.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label223.Location = new System.Drawing.Point(499, 411);
-            this.label223.Name = "label223";
-            this.label223.Size = new System.Drawing.Size(23, 19);
-            this.label223.TabIndex = 170;
-            this.label223.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeUOAd_textbox
-            // 
-            this.isletmeEndOgrIsletmeUOAd_textbox.Location = new System.Drawing.Point(531, 381);
-            this.isletmeEndOgrIsletmeUOAd_textbox.Name = "isletmeEndOgrIsletmeUOAd_textbox";
-            this.isletmeEndOgrIsletmeUOAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeUOAd_textbox.TabIndex = 169;
-            // 
-            // isletmeStartOgrIsletmeUOAd_textbox
-            // 
-            this.isletmeStartOgrIsletmeUOAd_textbox.Location = new System.Drawing.Point(406, 381);
-            this.isletmeStartOgrIsletmeUOAd_textbox.Name = "isletmeStartOgrIsletmeUOAd_textbox";
-            this.isletmeStartOgrIsletmeUOAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeUOAd_textbox.TabIndex = 168;
-            // 
-            // label224
-            // 
-            this.label224.AutoSize = true;
-            this.label224.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label224.Location = new System.Drawing.Point(499, 381);
-            this.label224.Name = "label224";
-            this.label224.Size = new System.Drawing.Size(23, 19);
-            this.label224.TabIndex = 167;
-            this.label224.Text = " - ";
-            // 
-            // label225
-            // 
-            this.label225.AutoSize = true;
-            this.label225.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label225.Location = new System.Drawing.Point(153, 540);
-            this.label225.Name = "label225";
-            this.label225.Size = new System.Drawing.Size(141, 21);
-            this.label225.TabIndex = 166;
-            this.label225.Text = "İşletme Sicil No : ";
-            // 
-            // label226
-            // 
-            this.label226.AutoSize = true;
-            this.label226.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label226.Location = new System.Drawing.Point(148, 506);
-            this.label226.Name = "label226";
-            this.label226.Size = new System.Drawing.Size(146, 21);
-            this.label226.TabIndex = 165;
-            this.label226.Text = "İşletme İban No : ";
-            // 
-            // label227
-            // 
-            this.label227.AutoSize = true;
-            this.label227.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label227.Location = new System.Drawing.Point(56, 474);
-            this.label227.Name = "label227";
-            this.label227.Size = new System.Drawing.Size(238, 21);
-            this.label227.TabIndex = 164;
-            this.label227.Text = "Usta Öğretici Doğrum Tarihi : ";
-            // 
-            // label228
-            // 
-            this.label228.AutoSize = true;
-            this.label228.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label228.Location = new System.Drawing.Point(118, 441);
-            this.label228.Name = "label228";
-            this.label228.Size = new System.Drawing.Size(176, 21);
-            this.label228.TabIndex = 163;
-            this.label228.Text = "Usta Öğretici TC No : ";
-            // 
-            // label229
-            // 
-            this.label229.AutoSize = true;
-            this.label229.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label229.Location = new System.Drawing.Point(116, 410);
-            this.label229.Name = "label229";
-            this.label229.Size = new System.Drawing.Size(178, 21);
-            this.label229.TabIndex = 162;
-            this.label229.Text = "Usta Öğretici Soyadı : ";
-            // 
-            // label230
-            // 
-            this.label230.AutoSize = true;
-            this.label230.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label230.Location = new System.Drawing.Point(141, 381);
-            this.label230.Name = "label230";
-            this.label230.Size = new System.Drawing.Size(153, 21);
-            this.label230.TabIndex = 161;
-            this.label230.Text = "Usta Öğretici Adı : ";
-            // 
-            // label231
-            // 
-            this.label231.AutoSize = true;
-            this.label231.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label231.Location = new System.Drawing.Point(300, 56);
-            this.label231.Name = "label231";
-            this.label231.Size = new System.Drawing.Size(65, 25);
-            this.label231.TabIndex = 160;
-            this.label231.Text = "Kolon";
-            // 
-            // label232
-            // 
-            this.label232.AutoSize = true;
-            this.label232.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label232.Location = new System.Drawing.Point(542, 58);
-            this.label232.Name = "label232";
-            this.label232.Size = new System.Drawing.Size(50, 25);
-            this.label232.TabIndex = 159;
-            this.label232.Text = "Bitiş";
-            // 
-            // label256
-            // 
-            this.label256.AutoSize = true;
-            this.label256.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label256.Location = new System.Drawing.Point(375, 354);
-            this.label256.Name = "label256";
-            this.label256.Size = new System.Drawing.Size(23, 19);
-            this.label256.TabIndex = 153;
-            this.label256.Text = " / ";
-            // 
-            // label257
-            // 
-            this.label257.AutoSize = true;
-            this.label257.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label257.Location = new System.Drawing.Point(375, 320);
-            this.label257.Name = "label257";
-            this.label257.Size = new System.Drawing.Size(23, 19);
-            this.label257.TabIndex = 152;
-            this.label257.Text = " / ";
-            // 
-            // label258
-            // 
-            this.label258.AutoSize = true;
-            this.label258.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label258.Location = new System.Drawing.Point(375, 287);
-            this.label258.Name = "label258";
-            this.label258.Size = new System.Drawing.Size(23, 19);
-            this.label258.TabIndex = 151;
-            this.label258.Text = " / ";
-            // 
-            // label259
-            // 
-            this.label259.AutoSize = true;
-            this.label259.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label259.Location = new System.Drawing.Point(375, 256);
-            this.label259.Name = "label259";
-            this.label259.Size = new System.Drawing.Size(23, 19);
-            this.label259.TabIndex = 150;
-            this.label259.Text = " / ";
-            // 
-            // label260
-            // 
-            this.label260.AutoSize = true;
-            this.label260.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label260.Location = new System.Drawing.Point(375, 224);
-            this.label260.Name = "label260";
-            this.label260.Size = new System.Drawing.Size(23, 19);
-            this.label260.TabIndex = 149;
-            this.label260.Text = " / ";
-            // 
-            // label261
-            // 
-            this.label261.AutoSize = true;
-            this.label261.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label261.Location = new System.Drawing.Point(375, 194);
-            this.label261.Name = "label261";
-            this.label261.Size = new System.Drawing.Size(23, 19);
-            this.label261.TabIndex = 148;
-            this.label261.Text = " / ";
-            // 
-            // label262
-            // 
-            this.label262.AutoSize = true;
-            this.label262.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label262.Location = new System.Drawing.Point(375, 161);
-            this.label262.Name = "label262";
-            this.label262.Size = new System.Drawing.Size(23, 19);
-            this.label262.TabIndex = 147;
-            this.label262.Text = " / ";
-            // 
-            // label263
-            // 
-            this.label263.AutoSize = true;
-            this.label263.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label263.Location = new System.Drawing.Point(375, 127);
-            this.label263.Name = "label263";
-            this.label263.Size = new System.Drawing.Size(23, 19);
-            this.label263.TabIndex = 146;
-            this.label263.Text = " / ";
-            // 
-            // label264
-            // 
-            this.label264.AutoSize = true;
-            this.label264.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label264.Location = new System.Drawing.Point(375, 94);
-            this.label264.Name = "label264";
-            this.label264.Size = new System.Drawing.Size(23, 19);
-            this.label264.TabIndex = 145;
-            this.label264.Text = " / ";
-            // 
-            // isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox
-            // 
-            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Location = new System.Drawing.Point(300, 351);
-            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Name = "isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox";
-            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.TabIndex = 139;
-            // 
-            // isletmeColumnOgrIsletmeDalAdi_textbox
-            // 
-            this.isletmeColumnOgrIsletmeDalAdi_textbox.Location = new System.Drawing.Point(300, 317);
-            this.isletmeColumnOgrIsletmeDalAdi_textbox.Name = "isletmeColumnOgrIsletmeDalAdi_textbox";
-            this.isletmeColumnOgrIsletmeDalAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeDalAdi_textbox.TabIndex = 138;
-            // 
-            // isletmeColumnOgrIsletmeAlanAdi_textbox
-            // 
-            this.isletmeColumnOgrIsletmeAlanAdi_textbox.Location = new System.Drawing.Point(300, 284);
-            this.isletmeColumnOgrIsletmeAlanAdi_textbox.Name = "isletmeColumnOgrIsletmeAlanAdi_textbox";
-            this.isletmeColumnOgrIsletmeAlanAdi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeAlanAdi_textbox.TabIndex = 137;
-            // 
-            // isletmeColumnOgrIsletmeTelNo_textbox
-            // 
-            this.isletmeColumnOgrIsletmeTelNo_textbox.Location = new System.Drawing.Point(300, 253);
-            this.isletmeColumnOgrIsletmeTelNo_textbox.Name = "isletmeColumnOgrIsletmeTelNo_textbox";
-            this.isletmeColumnOgrIsletmeTelNo_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeTelNo_textbox.TabIndex = 136;
-            // 
-            // isletmeColumnOgrIsletmeYetkilisi_textbox
-            // 
-            this.isletmeColumnOgrIsletmeYetkilisi_textbox.Location = new System.Drawing.Point(300, 221);
-            this.isletmeColumnOgrIsletmeYetkilisi_textbox.Name = "isletmeColumnOgrIsletmeYetkilisi_textbox";
-            this.isletmeColumnOgrIsletmeYetkilisi_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeYetkilisi_textbox.TabIndex = 135;
-            // 
-            // isletmeColumnOgrIsletmeTamAdres_textbox
-            // 
-            this.isletmeColumnOgrIsletmeTamAdres_textbox.Location = new System.Drawing.Point(300, 191);
-            this.isletmeColumnOgrIsletmeTamAdres_textbox.Name = "isletmeColumnOgrIsletmeTamAdres_textbox";
-            this.isletmeColumnOgrIsletmeTamAdres_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeTamAdres_textbox.TabIndex = 134;
-            // 
-            // isletmeColumnOgrIsletmeAdresIlce_textbox
-            // 
-            this.isletmeColumnOgrIsletmeAdresIlce_textbox.Location = new System.Drawing.Point(300, 158);
-            this.isletmeColumnOgrIsletmeAdresIlce_textbox.Name = "isletmeColumnOgrIsletmeAdresIlce_textbox";
-            this.isletmeColumnOgrIsletmeAdresIlce_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeAdresIlce_textbox.TabIndex = 133;
-            // 
-            // isletmeColumnOgrIsletmeAdresIl_textbox
-            // 
-            this.isletmeColumnOgrIsletmeAdresIl_textbox.Location = new System.Drawing.Point(300, 124);
-            this.isletmeColumnOgrIsletmeAdresIl_textbox.Name = "isletmeColumnOgrIsletmeAdresIl_textbox";
-            this.isletmeColumnOgrIsletmeAdresIl_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeAdresIl_textbox.TabIndex = 132;
-            // 
-            // isletmeColumnOgrIsletmeAd_textbox
-            // 
-            this.isletmeColumnOgrIsletmeAd_textbox.Location = new System.Drawing.Point(300, 91);
-            this.isletmeColumnOgrIsletmeAd_textbox.Name = "isletmeColumnOgrIsletmeAd_textbox";
-            this.isletmeColumnOgrIsletmeAd_textbox.Size = new System.Drawing.Size(65, 24);
-            this.isletmeColumnOgrIsletmeAd_textbox.TabIndex = 131;
-            // 
-            // isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox
-            // 
-            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Location = new System.Drawing.Point(531, 351);
-            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Name = "isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox";
-            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.TabIndex = 115;
-            // 
-            // isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox
-            // 
-            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Location = new System.Drawing.Point(406, 351);
-            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Name = "isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox";
-            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeUstaOgreticilikBelgesiVarmi_textbox.TabIndex = 114;
-            // 
-            // label265
-            // 
-            this.label265.AutoSize = true;
-            this.label265.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label265.Location = new System.Drawing.Point(499, 351);
-            this.label265.Name = "label265";
-            this.label265.Size = new System.Drawing.Size(23, 19);
-            this.label265.TabIndex = 113;
-            this.label265.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeDalAdi_textbox
-            // 
-            this.isletmeEndOgrIsletmeDalAdi_textbox.Location = new System.Drawing.Point(531, 317);
-            this.isletmeEndOgrIsletmeDalAdi_textbox.Name = "isletmeEndOgrIsletmeDalAdi_textbox";
-            this.isletmeEndOgrIsletmeDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeDalAdi_textbox.TabIndex = 112;
-            // 
-            // isletmeStartOgrIsletmeDalAdi_textbox
-            // 
-            this.isletmeStartOgrIsletmeDalAdi_textbox.Location = new System.Drawing.Point(406, 317);
-            this.isletmeStartOgrIsletmeDalAdi_textbox.Name = "isletmeStartOgrIsletmeDalAdi_textbox";
-            this.isletmeStartOgrIsletmeDalAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeDalAdi_textbox.TabIndex = 111;
-            // 
-            // label266
-            // 
-            this.label266.AutoSize = true;
-            this.label266.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label266.Location = new System.Drawing.Point(499, 317);
-            this.label266.Name = "label266";
-            this.label266.Size = new System.Drawing.Size(23, 19);
-            this.label266.TabIndex = 110;
-            this.label266.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeAlanAdi_textbox
-            // 
-            this.isletmeEndOgrIsletmeAlanAdi_textbox.Location = new System.Drawing.Point(531, 284);
-            this.isletmeEndOgrIsletmeAlanAdi_textbox.Name = "isletmeEndOgrIsletmeAlanAdi_textbox";
-            this.isletmeEndOgrIsletmeAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeAlanAdi_textbox.TabIndex = 109;
-            // 
-            // isletmeStartOgrIsletmeAlanAdi_textbox
-            // 
-            this.isletmeStartOgrIsletmeAlanAdi_textbox.Location = new System.Drawing.Point(406, 284);
-            this.isletmeStartOgrIsletmeAlanAdi_textbox.Name = "isletmeStartOgrIsletmeAlanAdi_textbox";
-            this.isletmeStartOgrIsletmeAlanAdi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeAlanAdi_textbox.TabIndex = 108;
-            // 
-            // label267
-            // 
-            this.label267.AutoSize = true;
-            this.label267.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label267.Location = new System.Drawing.Point(499, 284);
-            this.label267.Name = "label267";
-            this.label267.Size = new System.Drawing.Size(23, 19);
-            this.label267.TabIndex = 107;
-            this.label267.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeTelNo_textbox
-            // 
-            this.isletmeEndOgrIsletmeTelNo_textbox.Location = new System.Drawing.Point(531, 253);
-            this.isletmeEndOgrIsletmeTelNo_textbox.Name = "isletmeEndOgrIsletmeTelNo_textbox";
-            this.isletmeEndOgrIsletmeTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeTelNo_textbox.TabIndex = 106;
-            // 
-            // isletmeStartOgrIsletmeTelNo_textbox
-            // 
-            this.isletmeStartOgrIsletmeTelNo_textbox.Location = new System.Drawing.Point(406, 253);
-            this.isletmeStartOgrIsletmeTelNo_textbox.Name = "isletmeStartOgrIsletmeTelNo_textbox";
-            this.isletmeStartOgrIsletmeTelNo_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeTelNo_textbox.TabIndex = 105;
-            // 
-            // label268
-            // 
-            this.label268.AutoSize = true;
-            this.label268.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label268.Location = new System.Drawing.Point(499, 253);
-            this.label268.Name = "label268";
-            this.label268.Size = new System.Drawing.Size(23, 19);
-            this.label268.TabIndex = 104;
-            this.label268.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeYetkilisi_textbox
-            // 
-            this.isletmeEndOgrIsletmeYetkilisi_textbox.Location = new System.Drawing.Point(531, 221);
-            this.isletmeEndOgrIsletmeYetkilisi_textbox.Name = "isletmeEndOgrIsletmeYetkilisi_textbox";
-            this.isletmeEndOgrIsletmeYetkilisi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeYetkilisi_textbox.TabIndex = 103;
-            // 
-            // isletmeStartOgrIsletmeYetkilisi_textbox
-            // 
-            this.isletmeStartOgrIsletmeYetkilisi_textbox.Location = new System.Drawing.Point(406, 221);
-            this.isletmeStartOgrIsletmeYetkilisi_textbox.Name = "isletmeStartOgrIsletmeYetkilisi_textbox";
-            this.isletmeStartOgrIsletmeYetkilisi_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeYetkilisi_textbox.TabIndex = 102;
-            // 
-            // label269
-            // 
-            this.label269.AutoSize = true;
-            this.label269.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label269.Location = new System.Drawing.Point(499, 221);
-            this.label269.Name = "label269";
-            this.label269.Size = new System.Drawing.Size(23, 19);
-            this.label269.TabIndex = 101;
-            this.label269.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeTamAdres_textbox
-            // 
-            this.isletmeEndOgrIsletmeTamAdres_textbox.Location = new System.Drawing.Point(531, 191);
-            this.isletmeEndOgrIsletmeTamAdres_textbox.Name = "isletmeEndOgrIsletmeTamAdres_textbox";
-            this.isletmeEndOgrIsletmeTamAdres_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeTamAdres_textbox.TabIndex = 100;
-            // 
-            // isletmeStartOgrIsletmeTamAdres_textbox
-            // 
-            this.isletmeStartOgrIsletmeTamAdres_textbox.Location = new System.Drawing.Point(406, 191);
-            this.isletmeStartOgrIsletmeTamAdres_textbox.Name = "isletmeStartOgrIsletmeTamAdres_textbox";
-            this.isletmeStartOgrIsletmeTamAdres_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeTamAdres_textbox.TabIndex = 99;
-            // 
-            // label270
-            // 
-            this.label270.AutoSize = true;
-            this.label270.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label270.Location = new System.Drawing.Point(499, 191);
-            this.label270.Name = "label270";
-            this.label270.Size = new System.Drawing.Size(23, 19);
-            this.label270.TabIndex = 98;
-            this.label270.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeAdresIlce_textbox
-            // 
-            this.isletmeEndOgrIsletmeAdresIlce_textbox.Location = new System.Drawing.Point(531, 158);
-            this.isletmeEndOgrIsletmeAdresIlce_textbox.Name = "isletmeEndOgrIsletmeAdresIlce_textbox";
-            this.isletmeEndOgrIsletmeAdresIlce_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeAdresIlce_textbox.TabIndex = 97;
-            // 
-            // isletmeStartOgrIsletmeAdresIlce_textbox
-            // 
-            this.isletmeStartOgrIsletmeAdresIlce_textbox.Location = new System.Drawing.Point(406, 158);
-            this.isletmeStartOgrIsletmeAdresIlce_textbox.Name = "isletmeStartOgrIsletmeAdresIlce_textbox";
-            this.isletmeStartOgrIsletmeAdresIlce_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeAdresIlce_textbox.TabIndex = 96;
-            // 
-            // label271
-            // 
-            this.label271.AutoSize = true;
-            this.label271.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label271.Location = new System.Drawing.Point(499, 158);
-            this.label271.Name = "label271";
-            this.label271.Size = new System.Drawing.Size(23, 19);
-            this.label271.TabIndex = 95;
-            this.label271.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeAdresIl_textbox
-            // 
-            this.isletmeEndOgrIsletmeAdresIl_textbox.Location = new System.Drawing.Point(531, 124);
-            this.isletmeEndOgrIsletmeAdresIl_textbox.Name = "isletmeEndOgrIsletmeAdresIl_textbox";
-            this.isletmeEndOgrIsletmeAdresIl_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeAdresIl_textbox.TabIndex = 94;
-            // 
-            // isletmeStartOgrIsletmeAdresIl_textbox
-            // 
-            this.isletmeStartOgrIsletmeAdresIl_textbox.Location = new System.Drawing.Point(406, 124);
-            this.isletmeStartOgrIsletmeAdresIl_textbox.Name = "isletmeStartOgrIsletmeAdresIl_textbox";
-            this.isletmeStartOgrIsletmeAdresIl_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeAdresIl_textbox.TabIndex = 93;
-            // 
-            // label272
-            // 
-            this.label272.AutoSize = true;
-            this.label272.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label272.Location = new System.Drawing.Point(499, 124);
-            this.label272.Name = "label272";
-            this.label272.Size = new System.Drawing.Size(23, 19);
-            this.label272.TabIndex = 92;
-            this.label272.Text = " - ";
-            // 
-            // isletmeEndOgrIsletmeAd_textbox
-            // 
-            this.isletmeEndOgrIsletmeAd_textbox.Location = new System.Drawing.Point(531, 91);
-            this.isletmeEndOgrIsletmeAd_textbox.Name = "isletmeEndOgrIsletmeAd_textbox";
-            this.isletmeEndOgrIsletmeAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeEndOgrIsletmeAd_textbox.TabIndex = 91;
-            // 
-            // isletmeStartOgrIsletmeAd_textbox
-            // 
-            this.isletmeStartOgrIsletmeAd_textbox.Location = new System.Drawing.Point(406, 91);
-            this.isletmeStartOgrIsletmeAd_textbox.Name = "isletmeStartOgrIsletmeAd_textbox";
-            this.isletmeStartOgrIsletmeAd_textbox.Size = new System.Drawing.Size(85, 24);
-            this.isletmeStartOgrIsletmeAd_textbox.TabIndex = 90;
-            // 
-            // label273
-            // 
-            this.label273.AutoSize = true;
-            this.label273.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label273.Location = new System.Drawing.Point(499, 91);
-            this.label273.Name = "label273";
-            this.label273.Size = new System.Drawing.Size(23, 19);
-            this.label273.TabIndex = 89;
-            this.label273.Text = " - ";
-            // 
-            // label274
-            // 
-            this.label274.AutoSize = true;
-            this.label274.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label274.Location = new System.Drawing.Point(401, 58);
-            this.label274.Name = "label274";
-            this.label274.Size = new System.Drawing.Size(99, 25);
-            this.label274.TabIndex = 83;
-            this.label274.Text = "Başlangıç";
-            // 
-            // label275
-            // 
-            this.label275.AutoSize = true;
-            this.label275.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label275.Location = new System.Drawing.Point(84, 56);
-            this.label275.Name = "label275";
-            this.label275.Size = new System.Drawing.Size(209, 25);
-            this.label275.TabIndex = 82;
-            this.label275.Text = "SQL\'deki Kolon Adları";
-            // 
-            // label276
-            // 
-            this.label276.AutoSize = true;
-            this.label276.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label276.Location = new System.Drawing.Point(169, 8);
-            this.label276.Name = "label276";
-            this.label276.Size = new System.Drawing.Size(302, 35);
-            this.label276.TabIndex = 81;
-            this.label276.Text = "İşletme Aktarım Paneli";
-            // 
-            // label277
-            // 
-            this.label277.AutoSize = true;
-            this.label277.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label277.Location = new System.Drawing.Point(46, 350);
-            this.label277.Name = "label277";
-            this.label277.Size = new System.Drawing.Size(248, 21);
-            this.label277.TabIndex = 75;
-            this.label277.Text = "Usta Öğreticilik Belgesi Varmı : \r\n";
-            // 
-            // label278
-            // 
-            this.label278.AutoSize = true;
-            this.label278.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label278.Location = new System.Drawing.Point(156, 316);
-            this.label278.Name = "label278";
-            this.label278.Size = new System.Drawing.Size(137, 21);
-            this.label278.TabIndex = 74;
-            this.label278.Text = "İşletmenin Dalı : ";
-            // 
-            // label279
-            // 
-            this.label279.AutoSize = true;
-            this.label279.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label279.Location = new System.Drawing.Point(148, 285);
-            this.label279.Name = "label279";
-            this.label279.Size = new System.Drawing.Size(146, 21);
-            this.label279.TabIndex = 73;
-            this.label279.Text = "İşletmenin Alanı : ";
-            // 
-            // label280
-            // 
-            this.label280.AutoSize = true;
-            this.label280.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label280.Location = new System.Drawing.Point(50, 253);
-            this.label280.Name = "label280";
-            this.label280.Size = new System.Drawing.Size(243, 21);
-            this.label280.TabIndex = 72;
-            this.label280.Text = "İşletmenin Telefon Numarası : ";
-            // 
-            // label281
-            // 
-            this.label281.AutoSize = true;
-            this.label281.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label281.Location = new System.Drawing.Point(152, 221);
-            this.label281.Name = "label281";
-            this.label281.Size = new System.Drawing.Size(141, 21);
-            this.label281.TabIndex = 71;
-            this.label281.Text = "İşletme Yetkilisi : ";
-            // 
-            // label282
-            // 
-            this.label282.AutoSize = true;
-            this.label282.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label282.Location = new System.Drawing.Point(101, 191);
-            this.label282.Name = "label282";
-            this.label282.Size = new System.Drawing.Size(193, 21);
-            this.label282.TabIndex = 70;
-            this.label282.Text = "İşletmenin Tam Adresi : ";
-            // 
-            // label283
-            // 
-            this.label283.AutoSize = true;
-            this.label283.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label283.Location = new System.Drawing.Point(136, 158);
-            this.label283.Name = "label283";
-            this.label283.Size = new System.Drawing.Size(158, 21);
-            this.label283.TabIndex = 69;
-            this.label283.Text = "İşletme Adres İlçe : ";
-            // 
-            // label284
-            // 
-            this.label284.AutoSize = true;
-            this.label284.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label284.Location = new System.Drawing.Point(152, 125);
-            this.label284.Name = "label284";
-            this.label284.Size = new System.Drawing.Size(141, 21);
-            this.label284.TabIndex = 68;
-            this.label284.Text = "İşletme Adres İl : ";
-            // 
-            // label285
-            // 
-            this.label285.AutoSize = true;
-            this.label285.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label285.Location = new System.Drawing.Point(185, 92);
-            this.label285.Name = "label285";
-            this.label285.Size = new System.Drawing.Size(109, 21);
-            this.label285.TabIndex = 67;
-            this.label285.Text = "İşletme Adı : ";
-            // 
-            // IsletmeDETAYtabControl1
-            // 
-            this.IsletmeDETAYtabControl1.Controls.Add(this.tabPage26);
-            this.IsletmeDETAYtabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IsletmeDETAYtabControl1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeDETAYtabControl1.Location = new System.Drawing.Point(0, 0);
-            this.IsletmeDETAYtabControl1.Name = "IsletmeDETAYtabControl1";
-            this.IsletmeDETAYtabControl1.Padding = new System.Drawing.Point(50, 3);
-            this.IsletmeDETAYtabControl1.SelectedIndex = 0;
-            this.IsletmeDETAYtabControl1.Size = new System.Drawing.Size(1151, 650);
-            this.IsletmeDETAYtabControl1.TabIndex = 2;
-            // 
-            // tabPage26
-            // 
-            this.tabPage26.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage26.Controls.Add(this.splitContainer11);
-            this.tabPage26.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabPage26.Location = new System.Drawing.Point(4, 28);
-            this.tabPage26.Name = "tabPage26";
-            this.tabPage26.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage26.Size = new System.Drawing.Size(1143, 618);
-            this.tabPage26.TabIndex = 0;
-            this.tabPage26.Text = "İŞLETME BİLGİLERİ";
-            // 
-            // splitContainer11
-            // 
-            this.splitContainer11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer11.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer11.Name = "splitContainer11";
-            this.splitContainer11.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer11.Panel1
-            // 
-            this.splitContainer11.Panel1.Controls.Add(this.panel72);
-            this.splitContainer11.Panel1.Controls.Add(this.panel73);
-            this.splitContainer11.Panel1.Padding = new System.Windows.Forms.Padding(10);
-            // 
-            // splitContainer11.Panel2
-            // 
-            this.splitContainer11.Panel2.Controls.Add(this.panel75);
-            this.splitContainer11.Size = new System.Drawing.Size(1137, 612);
-            this.splitContainer11.SplitterDistance = 510;
-            this.splitContainer11.TabIndex = 2;
-            // 
-            // panel72
-            // 
-            this.panel72.Controls.Add(this.IsletmeHakkindaBaziBilgiler_label);
-            this.panel72.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel72.Location = new System.Drawing.Point(10, 10);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(1117, 53);
-            this.panel72.TabIndex = 2;
-            // 
-            // IsletmeHakkindaBaziBilgiler_label
-            // 
-            this.IsletmeHakkindaBaziBilgiler_label.AutoSize = true;
-            this.IsletmeHakkindaBaziBilgiler_label.Dock = System.Windows.Forms.DockStyle.Left;
-            this.IsletmeHakkindaBaziBilgiler_label.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeHakkindaBaziBilgiler_label.Location = new System.Drawing.Point(0, 0);
-            this.IsletmeHakkindaBaziBilgiler_label.Name = "IsletmeHakkindaBaziBilgiler_label";
-            this.IsletmeHakkindaBaziBilgiler_label.Size = new System.Drawing.Size(496, 46);
-            this.IsletmeHakkindaBaziBilgiler_label.TabIndex = 1;
-            this.IsletmeHakkindaBaziBilgiler_label.Text = "Echopos hakkında bazı bilgiler";
-            // 
-            // panel73
-            // 
-            this.panel73.Controls.Add(this.groupBox26);
-            this.panel73.Controls.Add(this.panel74);
-            this.panel73.Controls.Add(this.groupBox16);
-            this.panel73.Controls.Add(this.groupBox27);
-            this.panel73.Controls.Add(this.groupBox32);
-            this.panel73.Controls.Add(this.groupBox18);
-            this.panel73.Controls.Add(this.groupBox19);
-            this.panel73.Controls.Add(this.groupBox20);
-            this.panel73.Controls.Add(this.groupBox25);
-            this.panel73.Controls.Add(this.groupBox28);
-            this.panel73.Controls.Add(this.groupBox29);
-            this.panel73.Controls.Add(this.groupBox30);
-            this.panel73.Controls.Add(this.groupBox31);
-            this.panel73.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel73.Location = new System.Drawing.Point(10, 63);
-            this.panel73.Name = "panel73";
-            this.panel73.Padding = new System.Windows.Forms.Padding(10);
-            this.panel73.Size = new System.Drawing.Size(1117, 437);
-            this.panel73.TabIndex = 1;
-            // 
-            // groupBox26
-            // 
-            this.groupBox26.Controls.Add(this.IsletmeDetayIsletmeTCNoCopy_button);
-            this.groupBox26.Controls.Add(this.infoIsletmeDetayUstaOgreticiTCNO_label);
-            this.groupBox26.Location = new System.Drawing.Point(400, 290);
-            this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox26.Size = new System.Drawing.Size(373, 60);
-            this.groupBox26.TabIndex = 123;
-            this.groupBox26.TabStop = false;
-            this.groupBox26.Text = "Usta Öğretici TC Kimlik No";
-            // 
-            // IsletmeDetayIsletmeTCNoCopy_button
-            // 
-            this.IsletmeDetayIsletmeTCNoCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeTCNoCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeTCNoCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeTCNoCopy_button.Image")));
-            this.IsletmeDetayIsletmeTCNoCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeTCNoCopy_button.Name = "IsletmeDetayIsletmeTCNoCopy_button";
-            this.IsletmeDetayIsletmeTCNoCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeTCNoCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeTCNoCopy_button.UseVisualStyleBackColor = true;
-            // 
-            // infoIsletmeDetayUstaOgreticiTCNO_label
-            // 
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.AutoSize = true;
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.Name = "infoIsletmeDetayUstaOgreticiTCNO_label";
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.Size = new System.Drawing.Size(322, 24);
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.TabIndex = 99;
-            this.infoIsletmeDetayUstaOgreticiTCNO_label.Text = "infoIsletmeDetayUstaOgreticiTCNO_label";
-            // 
-            // panel74
-            // 
-            this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel74.Controls.Add(this.IsletmeDetayDataGridView1);
-            this.panel74.Controls.Add(this.label115);
-            this.panel74.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel74.Location = new System.Drawing.Point(791, 10);
-            this.panel74.Name = "panel74";
-            this.panel74.Padding = new System.Windows.Forms.Padding(5);
-            this.panel74.Size = new System.Drawing.Size(316, 417);
-            this.panel74.TabIndex = 122;
-            // 
-            // IsletmeDetayDataGridView1
-            // 
-            this.IsletmeDetayDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.IsletmeDetayDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IsletmeDetayDataGridView1.Location = new System.Drawing.Point(5, 32);
-            this.IsletmeDetayDataGridView1.Name = "IsletmeDetayDataGridView1";
-            this.IsletmeDetayDataGridView1.Size = new System.Drawing.Size(302, 376);
-            this.IsletmeDetayDataGridView1.TabIndex = 120;
-            this.IsletmeDetayDataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.IsletmeDetayDataGridView1_CellDoubleClick);
-            // 
-            // label115
-            // 
-            this.label115.AutoSize = true;
-            this.label115.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label115.Location = new System.Drawing.Point(5, 5);
-            this.label115.Name = "label115";
-            this.label115.Padding = new System.Windows.Forms.Padding(3);
-            this.label115.Size = new System.Drawing.Size(264, 27);
-            this.label115.TabIndex = 0;
-            this.label115.Text = "Burada staj yapan öğrencilerimiz";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.IsletmeDetayIsletmeDalAdiCopy_button);
-            this.groupBox16.Controls.Add(this.infoIsletmeDetayIsletmeDal_label);
-            this.groupBox16.Location = new System.Drawing.Point(400, 84);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox16.Size = new System.Drawing.Size(373, 60);
-            this.groupBox16.TabIndex = 120;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Dal";
-            // 
-            // IsletmeDetayIsletmeDalAdiCopy_button
-            // 
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeDalAdiCopy_button.Image")));
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Name = "IsletmeDetayIsletmeDalAdiCopy_button";
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeDalAdiCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeDalAdiCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeDalAdiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeDalAdiCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeDal_label
-            // 
-            this.infoIsletmeDetayIsletmeDal_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeDal_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeDal_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeDal_label.Name = "infoIsletmeDetayIsletmeDal_label";
-            this.infoIsletmeDetayIsletmeDal_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayIsletmeDal_label.Size = new System.Drawing.Size(262, 24);
-            this.infoIsletmeDetayIsletmeDal_label.TabIndex = 99;
-            this.infoIsletmeDetayIsletmeDal_label.Text = "infoIsletmeDetayIsletmeDal_label";
-            // 
-            // groupBox27
-            // 
-            this.groupBox27.Controls.Add(this.IsletmeDetayUOAdSoyadCopy_button);
-            this.groupBox27.Controls.Add(this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label);
-            this.groupBox27.Location = new System.Drawing.Point(400, 221);
-            this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox27.Size = new System.Drawing.Size(373, 60);
-            this.groupBox27.TabIndex = 122;
-            this.groupBox27.TabStop = false;
-            this.groupBox27.Text = "Usta Öğretici Ad Soyadı";
-            // 
-            // IsletmeDetayUOAdSoyadCopy_button
-            // 
-            this.IsletmeDetayUOAdSoyadCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayUOAdSoyadCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayUOAdSoyadCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayUOAdSoyadCopy_button.Image")));
-            this.IsletmeDetayUOAdSoyadCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayUOAdSoyadCopy_button.Name = "IsletmeDetayUOAdSoyadCopy_button";
-            this.IsletmeDetayUOAdSoyadCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayUOAdSoyadCopy_button.TabIndex = 118;
-            this.IsletmeDetayUOAdSoyadCopy_button.UseVisualStyleBackColor = true;
-            // 
-            // infoIsletmeDetayUstaOgreticiAdiSoyadi_label
-            // 
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.AutoSize = true;
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Name = "infoIsletmeDetayUstaOgreticiAdiSoyadi_label";
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Size = new System.Drawing.Size(351, 24);
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.TabIndex = 108;
-            this.infoIsletmeDetayUstaOgreticiAdiSoyadi_label.Text = "infoIsletmeDetayUstaOgreticiAdiSoyadi_label";
-            // 
-            // groupBox32
-            // 
-            this.groupBox32.Controls.Add(this.IsletmeDetayIsletmeDTCopy_button);
-            this.groupBox32.Controls.Add(this.infoIsletmeDetayUstaOgreticiDT_label);
-            this.groupBox32.Location = new System.Drawing.Point(400, 366);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox32.Size = new System.Drawing.Size(373, 60);
-            this.groupBox32.TabIndex = 121;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "Usta Öğretici Doğum Tarihi";
-            // 
-            // IsletmeDetayIsletmeDTCopy_button
-            // 
-            this.IsletmeDetayIsletmeDTCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeDTCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeDTCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeDTCopy_button.Image")));
-            this.IsletmeDetayIsletmeDTCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeDTCopy_button.Name = "IsletmeDetayIsletmeDTCopy_button";
-            this.IsletmeDetayIsletmeDTCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeDTCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeDTCopy_button.UseVisualStyleBackColor = true;
-            // 
-            // infoIsletmeDetayUstaOgreticiDT_label
-            // 
-            this.infoIsletmeDetayUstaOgreticiDT_label.AutoSize = true;
-            this.infoIsletmeDetayUstaOgreticiDT_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayUstaOgreticiDT_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayUstaOgreticiDT_label.Name = "infoIsletmeDetayUstaOgreticiDT_label";
-            this.infoIsletmeDetayUstaOgreticiDT_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayUstaOgreticiDT_label.Size = new System.Drawing.Size(297, 24);
-            this.infoIsletmeDetayUstaOgreticiDT_label.TabIndex = 102;
-            this.infoIsletmeDetayUstaOgreticiDT_label.Text = "infoIsletmeDetayUstaOgreticiDT_label";
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.infoIsletmeDetayIsletmeAdresIl_label);
-            this.groupBox18.Controls.Add(this.IsletmeDetayIsletmeAdresIlCopy_button);
-            this.groupBox18.Location = new System.Drawing.Point(14, 84);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox18.Size = new System.Drawing.Size(371, 60);
-            this.groupBox18.TabIndex = 118;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Adres İl";
-            // 
-            // infoIsletmeDetayIsletmeAdresIl_label
-            // 
-            this.infoIsletmeDetayIsletmeAdresIl_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeAdresIl_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeAdresIl_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeAdresIl_label.Name = "infoIsletmeDetayIsletmeAdresIl_label";
-            this.infoIsletmeDetayIsletmeAdresIl_label.Size = new System.Drawing.Size(289, 21);
-            this.infoIsletmeDetayIsletmeAdresIl_label.TabIndex = 118;
-            this.infoIsletmeDetayIsletmeAdresIl_label.Text = "infoIsletmeDetayIsletmeAdresIl_label";
-            // 
-            // IsletmeDetayIsletmeAdresIlCopy_button
-            // 
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAdresIlCopy_button.Image")));
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Location = new System.Drawing.Point(336, 27);
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Name = "IsletmeDetayIsletmeAdresIlCopy_button";
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeAdresIlCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeAdresIlCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeAdresIlCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAdresIlCopy_button_Click);
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.IsletmeDetayIsletmeAlanAdiCopy_button);
-            this.groupBox19.Controls.Add(this.infoIsletmeDetayIsletmeAlan_label);
-            this.groupBox19.Location = new System.Drawing.Point(400, 15);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox19.Size = new System.Drawing.Size(373, 60);
-            this.groupBox19.TabIndex = 114;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Alan";
-            // 
-            // IsletmeDetayIsletmeAlanAdiCopy_button
-            // 
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAlanAdiCopy_button.Image")));
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Name = "IsletmeDetayIsletmeAlanAdiCopy_button";
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.TabIndex = 118;
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeAlanAdiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAlanAdiCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeAlan_label
-            // 
-            this.infoIsletmeDetayIsletmeAlan_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeAlan_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeAlan_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeAlan_label.Name = "infoIsletmeDetayIsletmeAlan_label";
-            this.infoIsletmeDetayIsletmeAlan_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayIsletmeAlan_label.Size = new System.Drawing.Size(271, 24);
-            this.infoIsletmeDetayIsletmeAlan_label.TabIndex = 108;
-            this.infoIsletmeDetayIsletmeAlan_label.Text = "infoIsletmeDetayIsletmeAlan_label";
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.infoIsletmeDetayIsletmeAdi_label);
-            this.groupBox20.Controls.Add(this.IsletmeDetayIsletmeAdiCopy_button);
-            this.groupBox20.Location = new System.Drawing.Point(14, 15);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox20.Size = new System.Drawing.Size(371, 60);
-            this.groupBox20.TabIndex = 117;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Adı";
-            // 
-            // infoIsletmeDetayIsletmeAdi_label
-            // 
-            this.infoIsletmeDetayIsletmeAdi_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeAdi_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeAdi_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeAdi_label.Name = "infoIsletmeDetayIsletmeAdi_label";
-            this.infoIsletmeDetayIsletmeAdi_label.Size = new System.Drawing.Size(262, 21);
-            this.infoIsletmeDetayIsletmeAdi_label.TabIndex = 117;
-            this.infoIsletmeDetayIsletmeAdi_label.Text = "infoIsletmeDetayIsletmeAdi_label";
-            // 
-            // IsletmeDetayIsletmeAdiCopy_button
-            // 
-            this.IsletmeDetayIsletmeAdiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeAdiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeAdiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAdiCopy_button.Image")));
-            this.IsletmeDetayIsletmeAdiCopy_button.Location = new System.Drawing.Point(336, 27);
-            this.IsletmeDetayIsletmeAdiCopy_button.Name = "IsletmeDetayIsletmeAdiCopy_button";
-            this.IsletmeDetayIsletmeAdiCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeAdiCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeAdiCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeAdiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAdiCopy_button_Click);
-            // 
-            // groupBox25
-            // 
-            this.groupBox25.Controls.Add(this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button);
-            this.groupBox25.Controls.Add(this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label);
-            this.groupBox25.Location = new System.Drawing.Point(16, 372);
-            this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox25.Size = new System.Drawing.Size(373, 60);
-            this.groupBox25.TabIndex = 117;
-            this.groupBox25.TabStop = false;
-            this.groupBox25.Text = "Usta Öğreticilik Belgesi Varmı?";
-            // 
-            // IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button
-            // 
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Image")));
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Name = "IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button";
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeUstaOgreticilikVarmiYokmuCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label
-            // 
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Name = "infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label";
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Size = new System.Drawing.Size(393, 21);
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.TabIndex = 113;
-            this.infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label.Text = "infoIsletmeDetayIsletmeUstaOgreticilikVarmi_label";
-            // 
-            // groupBox28
-            // 
-            this.groupBox28.Controls.Add(this.IsletmeDetayIsletmeTelNoCopy_button);
-            this.groupBox28.Controls.Add(this.infoIsletmeDetayIsletmeTelNo_label);
-            this.groupBox28.Location = new System.Drawing.Point(400, 153);
-            this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox28.Size = new System.Drawing.Size(373, 60);
-            this.groupBox28.TabIndex = 109;
-            this.groupBox28.TabStop = false;
-            this.groupBox28.Text = "Telefon Numarası";
-            // 
-            // IsletmeDetayIsletmeTelNoCopy_button
-            // 
-            this.IsletmeDetayIsletmeTelNoCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeTelNoCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeTelNoCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeTelNoCopy_button.Image")));
-            this.IsletmeDetayIsletmeTelNoCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeTelNoCopy_button.Name = "IsletmeDetayIsletmeTelNoCopy_button";
-            this.IsletmeDetayIsletmeTelNoCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeTelNoCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeTelNoCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeTelNoCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeTelNoCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeTelNo_label
-            // 
-            this.infoIsletmeDetayIsletmeTelNo_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeTelNo_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeTelNo_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeTelNo_label.Name = "infoIsletmeDetayIsletmeTelNo_label";
-            this.infoIsletmeDetayIsletmeTelNo_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayIsletmeTelNo_label.Size = new System.Drawing.Size(282, 24);
-            this.infoIsletmeDetayIsletmeTelNo_label.TabIndex = 102;
-            this.infoIsletmeDetayIsletmeTelNo_label.Text = "infoIsletmeDetayIsletmeTelNo_label";
-            // 
-            // groupBox29
-            // 
-            this.groupBox29.Controls.Add(this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button);
-            this.groupBox29.Controls.Add(this.infoIsletmeDetayIsletmeYetkilisi_label);
-            this.groupBox29.Location = new System.Drawing.Point(13, 222);
-            this.groupBox29.Name = "groupBox29";
-            this.groupBox29.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox29.Size = new System.Drawing.Size(373, 60);
-            this.groupBox29.TabIndex = 107;
-            this.groupBox29.TabStop = false;
-            this.groupBox29.Text = "İşletme Yetkilisi";
-            // 
-            // IsletmeDetayIsletmeIsletmeYetkilisiCopy_button
-            // 
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Image")));
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Name = "IsletmeDetayIsletmeIsletmeYetkilisiCopy_button";
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeIsletmeYetkilisiCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeYetkilisi_label
-            // 
-            this.infoIsletmeDetayIsletmeYetkilisi_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeYetkilisi_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeYetkilisi_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeYetkilisi_label.Name = "infoIsletmeDetayIsletmeYetkilisi_label";
-            this.infoIsletmeDetayIsletmeYetkilisi_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayIsletmeYetkilisi_label.Size = new System.Drawing.Size(294, 24);
-            this.infoIsletmeDetayIsletmeYetkilisi_label.TabIndex = 101;
-            this.infoIsletmeDetayIsletmeYetkilisi_label.Text = "infoIsletmeDetayIsletmeYetkilisi_label";
-            // 
-            // groupBox30
-            // 
-            this.groupBox30.Controls.Add(this.IsletmeDetayIsletmeTamAdresCopy_button);
-            this.groupBox30.Controls.Add(this.infoIsletmeDetayIsletmeTamAdres_label);
-            this.groupBox30.Location = new System.Drawing.Point(14, 291);
-            this.groupBox30.Name = "groupBox30";
-            this.groupBox30.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox30.Size = new System.Drawing.Size(373, 69);
-            this.groupBox30.TabIndex = 104;
-            this.groupBox30.TabStop = false;
-            this.groupBox30.Text = "Tam Adres";
-            // 
-            // IsletmeDetayIsletmeTamAdresCopy_button
-            // 
-            this.IsletmeDetayIsletmeTamAdresCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeTamAdresCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeTamAdresCopy_button.Image")));
-            this.IsletmeDetayIsletmeTamAdresCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeTamAdresCopy_button.Name = "IsletmeDetayIsletmeTamAdresCopy_button";
-            this.IsletmeDetayIsletmeTamAdresCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeTamAdresCopy_button.TabIndex = 116;
-            this.IsletmeDetayIsletmeTamAdresCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeTamAdresCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeTamAdresCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeTamAdres_label
-            // 
-            this.infoIsletmeDetayIsletmeTamAdres_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeTamAdres_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeTamAdres_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeTamAdres_label.Name = "infoIsletmeDetayIsletmeTamAdres_label";
-            this.infoIsletmeDetayIsletmeTamAdres_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayIsletmeTamAdres_label.Size = new System.Drawing.Size(313, 24);
-            this.infoIsletmeDetayIsletmeTamAdres_label.TabIndex = 98;
-            this.infoIsletmeDetayIsletmeTamAdres_label.Text = "infoIsletmeDetayIsletmeTamAdres_label";
-            // 
-            // groupBox31
-            // 
-            this.groupBox31.Controls.Add(this.IsletmeDetayIsletmeAdresIlceCopy_button);
-            this.groupBox31.Controls.Add(this.infoIsletmeDetayIsletmeAdresIlce_label);
-            this.groupBox31.Location = new System.Drawing.Point(14, 153);
-            this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Padding = new System.Windows.Forms.Padding(6);
-            this.groupBox31.Size = new System.Drawing.Size(373, 60);
-            this.groupBox31.TabIndex = 102;
-            this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "Adres İlçe";
-            // 
-            // IsletmeDetayIsletmeAdresIlceCopy_button
-            // 
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Image = ((System.Drawing.Image)(resources.GetObject("IsletmeDetayIsletmeAdresIlceCopy_button.Image")));
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Location = new System.Drawing.Point(338, 27);
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Name = "IsletmeDetayIsletmeAdresIlceCopy_button";
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Size = new System.Drawing.Size(29, 27);
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.TabIndex = 115;
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeAdresIlceCopy_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeAdresIlceCopy_button_Click);
-            // 
-            // infoIsletmeDetayIsletmeAdresIlce_label
-            // 
-            this.infoIsletmeDetayIsletmeAdresIlce_label.AutoSize = true;
-            this.infoIsletmeDetayIsletmeAdresIlce_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoIsletmeDetayIsletmeAdresIlce_label.Location = new System.Drawing.Point(6, 27);
-            this.infoIsletmeDetayIsletmeAdresIlce_label.Name = "infoIsletmeDetayIsletmeAdresIlce_label";
-            this.infoIsletmeDetayIsletmeAdresIlce_label.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.infoIsletmeDetayIsletmeAdresIlce_label.Size = new System.Drawing.Size(306, 24);
-            this.infoIsletmeDetayIsletmeAdresIlce_label.TabIndex = 96;
-            this.infoIsletmeDetayIsletmeAdresIlce_label.Text = "infoIsletmeDetayIsletmeAdresIlce_label";
-            // 
-            // panel75
-            // 
-            this.panel75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel75.Controls.Add(this.label128);
-            this.panel75.Controls.Add(this.IsletmeDetayIsletmeYazdir_button);
-            this.panel75.Controls.Add(this.IsletmeDetayIsletmeGuncelle_button);
-            this.panel75.Controls.Add(this.IsletmeDetayIsletmeSil_button);
-            this.panel75.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel75.Location = new System.Drawing.Point(0, 0);
-            this.panel75.Name = "panel75";
-            this.panel75.Padding = new System.Windows.Forms.Padding(2);
-            this.panel75.Size = new System.Drawing.Size(1137, 98);
-            this.panel75.TabIndex = 0;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label128.Location = new System.Drawing.Point(16, 36);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(86, 25);
-            this.label128.TabIndex = 106;
-            this.label128.Text = "A Grubu";
-            // 
-            // IsletmeDetayIsletmeYazdir_button
-            // 
-            this.IsletmeDetayIsletmeYazdir_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeYazdir_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeYazdir_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeDetayIsletmeYazdir_button.Image = global::WindowsFormsApp1.Properties.Resources.pngwing_com_16_;
-            this.IsletmeDetayIsletmeYazdir_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IsletmeDetayIsletmeYazdir_button.Location = new System.Drawing.Point(353, 2);
-            this.IsletmeDetayIsletmeYazdir_button.Name = "IsletmeDetayIsletmeYazdir_button";
-            this.IsletmeDetayIsletmeYazdir_button.Size = new System.Drawing.Size(260, 92);
-            this.IsletmeDetayIsletmeYazdir_button.TabIndex = 105;
-            this.IsletmeDetayIsletmeYazdir_button.Text = "İşletmeyi Yazdır";
-            this.IsletmeDetayIsletmeYazdir_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.IsletmeDetayIsletmeYazdir_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeYazdir_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeYazdir_button_Click);
-            // 
-            // IsletmeDetayIsletmeGuncelle_button
-            // 
-            this.IsletmeDetayIsletmeGuncelle_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeGuncelle_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeGuncelle_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeDetayIsletmeGuncelle_button.Image = global::WindowsFormsApp1.Properties.Resources.pngegg_1_2;
-            this.IsletmeDetayIsletmeGuncelle_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IsletmeDetayIsletmeGuncelle_button.Location = new System.Drawing.Point(613, 2);
-            this.IsletmeDetayIsletmeGuncelle_button.Name = "IsletmeDetayIsletmeGuncelle_button";
-            this.IsletmeDetayIsletmeGuncelle_button.Size = new System.Drawing.Size(260, 92);
-            this.IsletmeDetayIsletmeGuncelle_button.TabIndex = 104;
-            this.IsletmeDetayIsletmeGuncelle_button.Text = "İşletmeyi Güncelle";
-            this.IsletmeDetayIsletmeGuncelle_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.IsletmeDetayIsletmeGuncelle_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeGuncelle_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeGuncelle_button_Click);
-            // 
-            // IsletmeDetayIsletmeSil_button
-            // 
-            this.IsletmeDetayIsletmeSil_button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.IsletmeDetayIsletmeSil_button.Dock = System.Windows.Forms.DockStyle.Right;
-            this.IsletmeDetayIsletmeSil_button.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IsletmeDetayIsletmeSil_button.Image = global::WindowsFormsApp1.Properties.Resources.pngegg_3_;
-            this.IsletmeDetayIsletmeSil_button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.IsletmeDetayIsletmeSil_button.Location = new System.Drawing.Point(873, 2);
-            this.IsletmeDetayIsletmeSil_button.Name = "IsletmeDetayIsletmeSil_button";
-            this.IsletmeDetayIsletmeSil_button.Size = new System.Drawing.Size(260, 92);
-            this.IsletmeDetayIsletmeSil_button.TabIndex = 103;
-            this.IsletmeDetayIsletmeSil_button.Text = "İşletmeyi Sil";
-            this.IsletmeDetayIsletmeSil_button.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.IsletmeDetayIsletmeSil_button.UseVisualStyleBackColor = true;
-            this.IsletmeDetayIsletmeSil_button.Click += new System.EventHandler(this.IsletmeDetayIsletmeSil_button_Click);
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.SettingsButton_button);
@@ -12449,6 +12553,156 @@ namespace WindowsFormsApp1
             this.panel61.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel35.ResumeLayout(false);
+            this.YAZDIRtabControl1.ResumeLayout(false);
+            this.tabPage21.ResumeLayout(false);
+            this.yazdirYanPanel_panel.ResumeLayout(false);
+            this.yazdirNotFisi_panel.ResumeLayout(false);
+            this.yazdirNotFisi_panel.PerformLayout();
+            this.yazdirDevamsizlikRaporu_panel.ResumeLayout(false);
+            this.yazdirDevamsizlikRaporu_panel.PerformLayout();
+            this.yazdirAyliikGunlukRapor_panel.ResumeLayout(false);
+            this.panel79.ResumeLayout(false);
+            this.panel79.PerformLayout();
+            this.GorevTarihleri_panel.ResumeLayout(false);
+            this.GorevTarihleri_panel.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            this.panel27.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            this.panel80.ResumeLayout(false);
+            this.panel80.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel76.ResumeLayout(false);
+            this.panel76.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            this.yazdir_KisButonlari.ResumeLayout(false);
+            this.yazdir_YazButonlari.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.GorevHaftasi_panel.ResumeLayout(false);
+            this.GorevHaftasi_panel.PerformLayout();
+            this.tabPage14.ResumeLayout(false);
+            this.panel97.ResumeLayout(false);
+            this.panel97.PerformLayout();
+            this.SETTINGStabControl1.ResumeLayout(false);
+            this.tabPage20.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel14.PerformLayout();
+            this.splitContainer8.Panel1.ResumeLayout(false);
+            this.splitContainer8.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
+            this.splitContainer8.ResumeLayout(false);
+            this.panel77.ResumeLayout(false);
+            this.panel77.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel60.ResumeLayout(false);
+            this.panel60.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.panel13.PerformLayout();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.settingsOzelIllerPanel_panel.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.tabPage24.ResumeLayout(false);
+            this.panel100.ResumeLayout(false);
+            this.panel100.PerformLayout();
+            this.panel59.ResumeLayout(false);
+            this.panel59.PerformLayout();
+            this.panel58.ResumeLayout(false);
+            this.panel58.PerformLayout();
+            this.panel57.ResumeLayout(false);
+            this.panel57.PerformLayout();
+            this.panel48.ResumeLayout(false);
+            this.panel48.PerformLayout();
+            this.tabPage23.ResumeLayout(false);
+            this.panel44.ResumeLayout(false);
+            this.panel46.ResumeLayout(false);
+            this.panel51.ResumeLayout(false);
+            this.panel52.ResumeLayout(false);
+            this.panel52.PerformLayout();
+            this.panel55.ResumeLayout(false);
+            this.panel55.PerformLayout();
+            this.panel49.ResumeLayout(false);
+            this.panel50.ResumeLayout(false);
+            this.panel50.PerformLayout();
+            this.panel54.ResumeLayout(false);
+            this.panel54.PerformLayout();
+            this.panel47.ResumeLayout(false);
+            this.panel56.ResumeLayout(false);
+            this.panel56.PerformLayout();
+            this.panel53.ResumeLayout(false);
+            this.panel53.PerformLayout();
+            this.panel45.ResumeLayout(false);
+            this.panel45.PerformLayout();
+            this.tabPage25.ResumeLayout(false);
+            this.tabPage25.PerformLayout();
+            this.ogrAktarimPaneli_panel.ResumeLayout(false);
+            this.ogrAktarimPaneli_panel.PerformLayout();
+            this.panel98.ResumeLayout(false);
+            this.panel98.PerformLayout();
+            this.panel62.ResumeLayout(false);
+            this.panel62.PerformLayout();
+            this.ogrtAktarimPaneli_panel.ResumeLayout(false);
+            this.ogrtAktarimPaneli_panel.PerformLayout();
+            this.isletmeAktarimPaneli_panel.ResumeLayout(false);
+            this.isletmeAktarimPaneli_panel.PerformLayout();
+            this.IsletmeDETAYtabControl1.ResumeLayout(false);
+            this.tabPage26.ResumeLayout(false);
+            this.splitContainer11.Panel1.ResumeLayout(false);
+            this.splitContainer11.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
+            this.splitContainer11.ResumeLayout(false);
+            this.panel72.ResumeLayout(false);
+            this.panel72.PerformLayout();
+            this.panel73.ResumeLayout(false);
+            this.groupBox26.ResumeLayout(false);
+            this.groupBox26.PerformLayout();
+            this.panel74.ResumeLayout(false);
+            this.panel74.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IsletmeDetayDataGridView1)).EndInit();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            this.groupBox27.ResumeLayout(false);
+            this.groupBox27.PerformLayout();
+            this.groupBox32.ResumeLayout(false);
+            this.groupBox32.PerformLayout();
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.groupBox28.ResumeLayout(false);
+            this.groupBox28.PerformLayout();
+            this.groupBox29.ResumeLayout(false);
+            this.groupBox29.PerformLayout();
+            this.groupBox30.ResumeLayout(false);
+            this.groupBox30.PerformLayout();
+            this.groupBox31.ResumeLayout(false);
+            this.groupBox31.PerformLayout();
+            this.panel75.ResumeLayout(false);
+            this.panel75.PerformLayout();
             this.OgretmenDETAYtabControl1.ResumeLayout(false);
             this.tabPage19.ResumeLayout(false);
             this.splitContainer10.Panel1.ResumeLayout(false);
@@ -12458,18 +12712,20 @@ namespace WindowsFormsApp1
             this.panel67.ResumeLayout(false);
             this.panel67.PerformLayout();
             this.panel68.ResumeLayout(false);
-            this.panel68.PerformLayout();
+            this.panel101.ResumeLayout(false);
+            this.panel101.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OgretmenBelgeRaporDataGridView)).EndInit();
             this.panel93.ResumeLayout(false);
             this.panel95.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.infoOgretmenFotografi_picturebox)).EndInit();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.panel71.ResumeLayout(false);
             this.panel71.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OgretmenDetaydataGridView2)).EndInit();
             this.panel69.ResumeLayout(false);
             this.panel69.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OgretmenDetaydataGridView1)).EndInit();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox17.ResumeLayout(false);
@@ -12643,152 +12899,6 @@ namespace WindowsFormsApp1
             this.tabPage18.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
-            this.YAZDIRtabControl1.ResumeLayout(false);
-            this.tabPage21.ResumeLayout(false);
-            this.yazdirYanPanel_panel.ResumeLayout(false);
-            this.yazdirNotFisi_panel.ResumeLayout(false);
-            this.yazdirNotFisi_panel.PerformLayout();
-            this.yazdirDevamsizlikRaporu_panel.ResumeLayout(false);
-            this.yazdirDevamsizlikRaporu_panel.PerformLayout();
-            this.yazdirAyliikGunlukRapor_panel.ResumeLayout(false);
-            this.panel79.ResumeLayout(false);
-            this.panel79.PerformLayout();
-            this.GorevTarihleri_panel.ResumeLayout(false);
-            this.GorevTarihleri_panel.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel27.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel80.ResumeLayout(false);
-            this.panel80.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.panel76.ResumeLayout(false);
-            this.panel76.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            this.yazdir_KisButonlari.ResumeLayout(false);
-            this.yazdir_YazButonlari.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.panel32.PerformLayout();
-            this.tabPage14.ResumeLayout(false);
-            this.panel97.ResumeLayout(false);
-            this.panel97.PerformLayout();
-            this.SETTINGStabControl1.ResumeLayout(false);
-            this.tabPage20.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.splitContainer8.Panel1.ResumeLayout(false);
-            this.splitContainer8.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
-            this.splitContainer8.ResumeLayout(false);
-            this.panel77.ResumeLayout(false);
-            this.panel77.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel60.ResumeLayout(false);
-            this.panel60.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.settingsOzelIllerPanel_panel.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.tabPage24.ResumeLayout(false);
-            this.panel59.ResumeLayout(false);
-            this.panel59.PerformLayout();
-            this.panel58.ResumeLayout(false);
-            this.panel58.PerformLayout();
-            this.panel57.ResumeLayout(false);
-            this.panel57.PerformLayout();
-            this.panel48.ResumeLayout(false);
-            this.panel48.PerformLayout();
-            this.tabPage23.ResumeLayout(false);
-            this.panel44.ResumeLayout(false);
-            this.panel46.ResumeLayout(false);
-            this.panel51.ResumeLayout(false);
-            this.panel52.ResumeLayout(false);
-            this.panel52.PerformLayout();
-            this.panel55.ResumeLayout(false);
-            this.panel55.PerformLayout();
-            this.panel49.ResumeLayout(false);
-            this.panel50.ResumeLayout(false);
-            this.panel50.PerformLayout();
-            this.panel54.ResumeLayout(false);
-            this.panel54.PerformLayout();
-            this.panel47.ResumeLayout(false);
-            this.panel56.ResumeLayout(false);
-            this.panel56.PerformLayout();
-            this.panel53.ResumeLayout(false);
-            this.panel53.PerformLayout();
-            this.panel45.ResumeLayout(false);
-            this.panel45.PerformLayout();
-            this.tabPage25.ResumeLayout(false);
-            this.tabPage25.PerformLayout();
-            this.ogrAktarimPaneli_panel.ResumeLayout(false);
-            this.ogrAktarimPaneli_panel.PerformLayout();
-            this.panel98.ResumeLayout(false);
-            this.panel98.PerformLayout();
-            this.panel62.ResumeLayout(false);
-            this.panel62.PerformLayout();
-            this.ogrtAktarimPaneli_panel.ResumeLayout(false);
-            this.ogrtAktarimPaneli_panel.PerformLayout();
-            this.isletmeAktarimPaneli_panel.ResumeLayout(false);
-            this.isletmeAktarimPaneli_panel.PerformLayout();
-            this.IsletmeDETAYtabControl1.ResumeLayout(false);
-            this.tabPage26.ResumeLayout(false);
-            this.splitContainer11.Panel1.ResumeLayout(false);
-            this.splitContainer11.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
-            this.splitContainer11.ResumeLayout(false);
-            this.panel72.ResumeLayout(false);
-            this.panel72.PerformLayout();
-            this.panel73.ResumeLayout(false);
-            this.groupBox26.ResumeLayout(false);
-            this.groupBox26.PerformLayout();
-            this.panel74.ResumeLayout(false);
-            this.panel74.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IsletmeDetayDataGridView1)).EndInit();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            this.groupBox27.ResumeLayout(false);
-            this.groupBox27.PerformLayout();
-            this.groupBox32.ResumeLayout(false);
-            this.groupBox32.PerformLayout();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
-            this.groupBox25.ResumeLayout(false);
-            this.groupBox25.PerformLayout();
-            this.groupBox28.ResumeLayout(false);
-            this.groupBox28.PerformLayout();
-            this.groupBox29.ResumeLayout(false);
-            this.groupBox29.PerformLayout();
-            this.groupBox30.ResumeLayout(false);
-            this.groupBox30.PerformLayout();
-            this.groupBox31.ResumeLayout(false);
-            this.groupBox31.PerformLayout();
-            this.panel75.ResumeLayout(false);
-            this.panel75.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -13014,7 +13124,6 @@ namespace WindowsFormsApp1
         private Panel panel17;
         private Panel panel28;
         private Panel panel30;
-        private Button button6;
         private Panel panel24;
         private Panel panel20;
         private Panel panel21;
@@ -13031,8 +13140,6 @@ namespace WindowsFormsApp1
         private Label label78;
         private Label label110;
         private ComboBox yazdirBelgesiCikartilacakKoordinatorOgretmen_combo;
-        private Panel panel25;
-        private Panel panel26;
         private Panel panel27;
         private SplitContainer splitContainer2;
         private Panel panel29;
@@ -13435,7 +13542,6 @@ namespace WindowsFormsApp1
         private TabPage tabPage14;
         private Panel panel97;
         private Label label108;
-        private Label label233;
         private TextBox QrTextBox;
         private GroupBox ustaogreticiGroupBox;
         private Label label238;
@@ -13796,5 +13902,18 @@ namespace WindowsFormsApp1
         private Button button8;
         private Button yazdir_HaftalikRapor_button;
         private Button yazdir_DegerlendirmeFormu_button;
+        private Panel panel100;
+        private Label label286;
+        private Button yazdir_DevamsizlikRaporu_button;
+        private Panel GorevHaftasi_panel;
+        private Label label287;
+        private ComboBox yazdirGorevHaftasiCheck_combo;
+        private RichTextBox GorevHaftasi_richtextbox;
+        private Panel panel26;
+        private Button button6;
+        private Panel panel25;
+        private DataGridView OgretmenBelgeRaporDataGridView;
+        private Panel panel101;
+        private Label label233;
     }
 }

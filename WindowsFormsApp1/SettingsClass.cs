@@ -30,5 +30,6 @@ namespace WindowsFormsApp1
         public string KoordinatorMuduryardimcisiIsmi { get; set; }
         public string okulMuduruIsmi { get; set; }
         public string EgitimOgretimYili { get; set; }
+        public string GorevHaftalari { get; set; }
     }
 }
