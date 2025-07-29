@@ -13,7 +13,7 @@
     </providers>
   </entityFramework>
 	<connectionStrings>
-		<add name="connect" connectionString="Data Source = XJASN;Initial Catalog = StajOtomasyon6; Integrated Security = True;" providerName="System.Data.SqlClient" />
+		<add name="connect" connectionString="Data Source = .\SQLEXPRESS;Initial Catalog = StajOtomasyon6; Integrated Security = True;" providerName="System.Data.SqlClient" />
 	</connectionStrings>
   <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
