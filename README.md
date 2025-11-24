@@ -76,5 +76,3 @@ Mevcut öğrenci, öğretmen veya işletme listelerinizi programa hızlıca ekle
 "Yazdır" sekmesini kullanarak staj döneminize ve ihtiyacınız olan belge türüne göre (Raporlar, Devamsızlık, Not Fişi, Değerlendirme Formu) belgeleri otomatik olarak oluşturabilir ve seçtiğiniz çıktı formatına (Yazıcı, PDF, Excel) gönderebilirsiniz. Basılan belgelerdeki QR kodları, programın alt kısmındaki QR okuyucu paneli aracılığıyla okutularak teslim alındı bilgisi veritabanına kaydedilir.
 
 ---
-
-Bu README dosyası, kullanıcıların programı indirip kurmalarına ve temel özelliklerini kullanmalarına yardımcı olacaktır. Başka sorularınız olursa çekinmeden sorabilirsiniz!
